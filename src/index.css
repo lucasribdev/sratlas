@@ -196,42 +196,14 @@ p {
   flex: 1;
   border: 1px solid #b9c5d0;
   border-radius: 8px;
-  background: #cad4de;
+  background: #16202a;
   overflow: hidden;
 }
 
-.map-placeholder__surface {
-  display: grid;
+.map-view {
   width: 100%;
-  min-height: 0;
-  place-items: center;
-  background:
-    linear-gradient(rgb(255 255 255 / 0.22) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(255 255 255 / 0.22) 1px, transparent 1px),
-    linear-gradient(135deg, #9db0bf, #d3dadf 55%, #8fa49a);
-  background-size:
-    48px 48px,
-    48px 48px,
-    auto;
-}
-
-.map-placeholder__content {
-  max-width: 360px;
-  border: 1px solid rgb(255 255 255 / 0.7);
-  border-radius: 8px;
-  background: rgb(248 250 252 / 0.9);
-  padding: 24px;
-  text-align: center;
-  box-shadow: 0 18px 48px rgb(30 41 59 / 0.16);
-}
-
-.map-placeholder__content h2 {
-  margin-top: 6px;
-  font-size: 1.5rem;
-}
-
-.map-placeholder__content p:last-child {
-  margin-top: 10px;
+  min-height: 100%;
+  flex: 1;
 }
 
 .visually-hidden {
@@ -282,19 +254,5 @@ p {
 
   .map-placeholder {
     min-height: calc(100svh - 24px);
-  }
-
-  .map-placeholder__surface {
-    align-items: end;
-    padding: 88px 18px 24px;
-  }
-
-  .map-placeholder__content {
-    width: 100%;
-    padding: 18px;
-  }
-
-  .map-placeholder__content h2 {
-    font-size: 1.25rem;
   }
 }
