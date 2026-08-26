@@ -1,0 +1,9 @@
+[
+  {
+    "id": "world",
+    "name": "World Map",
+    "imageUrl": "/maps/worldmapsurface.webp",
+    "width": 1076,
+    "height": 1056
+  }
+]
