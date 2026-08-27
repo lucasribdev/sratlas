@@ -1,6 +1,7 @@
-import { CRS, type LatLngBoundsExpression, type LatLngExpression } from 'leaflet'
+import { CRS } from 'leaflet'
 import { ImageOverlay, MapContainer } from 'react-leaflet'
 import maps from '../../data/maps.json'
+import { mapBoundsFromDimensions } from '../../lib/coordinates'
 
 type GameMap = {
   id: string
@@ -11,23 +12,25 @@ type GameMap = {
 }
 
 const initialMap = maps[0] as GameMap
-const imageBounds: LatLngBoundsExpression = [
-  [0, 0],
-  [initialMap.height, initialMap.width],
-]
-const mapCenter: LatLngExpression = [initialMap.height / 2, initialMap.width / 2]
+const imageBounds = mapBoundsFromDimensions(initialMap)
+const minZoom = -2
+const maxZoom = 2
 
 export function MapPlaceholder() {
   return (
     <div className="map-placeholder" aria-label={initialMap.name}>
       <MapContainer
-        center={mapCenter}
+        bounds={imageBounds}
+        boundsOptions={{ padding: [16, 16] }}
         className="map-view"
         crs={CRS.Simple}
-        maxZoom={2}
-        minZoom={-2}
+        maxBounds={imageBounds}
+        maxBoundsViscosity={0.9}
+        maxZoom={maxZoom}
+        minZoom={minZoom}
         scrollWheelZoom
-        zoom={0}
+        zoomDelta={0.5}
+        zoomSnap={0.25}
       >
         <ImageOverlay bounds={imageBounds} url={initialMap.imageUrl} />
       </MapContainer>
