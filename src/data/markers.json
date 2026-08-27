@@ -526,7 +526,7 @@
 
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 11,
+    "level": "11",
 
     "monsters": ["Glowsnail", "Cloudsheep"],
 
@@ -559,7 +559,7 @@
 
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 12,
+    "level": "12",
 
     "monsters": ["Squishling", "Cloudsheep", "Angeling"],
 
@@ -588,7 +588,7 @@
 
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 14,
+    "level": "14",
 
     "monsters": ["Squishling", "Black Cloudsheep"],
 
@@ -618,7 +618,7 @@
 
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 15,
+    "level": "15",
 
     "monsters": ["Black Cloudsheep", "Squishling"],
 
@@ -647,7 +647,7 @@
 
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 40,
+    "level": "40",
 
     "monsters": ["Ferni", "Big Slime"],
 
@@ -688,7 +688,7 @@
 
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 41,
+    "level": "41",
 
     "monsters": ["Soultree", "Soulpling"],
 
@@ -725,7 +725,7 @@
     "y": 28,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 39,
+    "level": "39",
     "monsters": ["Soultree", "Soulpling", "Ferni", "Humblebee"],
     "resources": [
       {
@@ -782,7 +782,7 @@
     "y": 22.9,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 0,
+    "level": "0",
     "monsters": [],
     "resources": [
       {
@@ -835,7 +835,7 @@
     "y": 49,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 38,
+    "level": "38",
     "monsters": ["Humblebee", "Soulpling"],
     "resources": [
       {
@@ -890,7 +890,7 @@
     "y": 54,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 37,
+    "level": "37",
     "monsters": ["Rainbow Cloudsheep"],
     "resources": [
       {
@@ -926,7 +926,7 @@
     "y": 39,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 73,
+    "level": "73",
     "monsters": ["Tallshroom", "Shroomie"],
     "resources": [
       {
@@ -987,7 +987,7 @@
     "y": 36,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 78,
+    "level": "78",
     "monsters": ["Lime Guardian"],
     "resources": [
       {
@@ -1047,7 +1047,7 @@
     "y": 50,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 73,
+    "level": "73",
     "monsters": ["Shroomie", "Tallshroom"],
     "resources": [
       {
@@ -1092,7 +1092,7 @@
     "y": 30,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 75,
+    "level": "75",
     "monsters": ["Kiwi", "Fernek", "Tallshroom"],
     "resources": [
       {
@@ -1154,7 +1154,7 @@
     "y": 22.5,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 75,
+    "level": "75",
     "monsters": ["Shroomie", "Tallshroom", "Fernek", "Kiwi"],
     "resources": [
       {
@@ -1201,7 +1201,7 @@
     "y": 13.5,
     "area": "Plains",
     "zoneType": "Surface zone",
-    "level": 76,
+    "level": "76",
     "monsters": ["Fernek", "Kiwi"],
     "resources": [
       {
