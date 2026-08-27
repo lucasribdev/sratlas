@@ -1,17 +1,9 @@
 import { CRS } from 'leaflet'
 import { ImageOverlay, MapContainer } from 'react-leaflet'
-import maps from '../../data/maps.json'
+import { maps } from '../../data/maps'
 import { mapBoundsFromDimensions } from '../../lib/coordinates'
 
-type GameMap = {
-  id: string
-  name: string
-  imageUrl: string
-  width: number
-  height: number
-}
-
-const initialMap = maps[0] as GameMap
+const initialMap = maps[0]
 const imageBounds = mapBoundsFromDimensions(initialMap)
 const minZoom = -2
 const maxZoom = 2

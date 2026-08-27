@@ -1,0 +1,134 @@
+[
+  {
+    "id": "placeholder-local-central",
+    "name": "Local placeholder",
+    "category": "local",
+    "mapId": "world",
+    "x": 50,
+    "y": 50,
+    "area": "World Map",
+    "description": "Placeholder controlado para validar a categoria Local.",
+    "tags": ["placeholder", "local"]
+  },
+  {
+    "id": "placeholder-dungeon-north",
+    "name": "Dungeon placeholder",
+    "category": "dungeon",
+    "mapId": "world",
+    "x": 48,
+    "y": 18,
+    "area": "Northern Region",
+    "description": "Placeholder controlado para validar a categoria Dungeon.",
+    "tags": ["placeholder", "dungeon"]
+  },
+  {
+    "id": "placeholder-teleport-east",
+    "name": "Teleport placeholder",
+    "category": "teleport",
+    "mapId": "world",
+    "x": 72,
+    "y": 44,
+    "area": "Eastern Region",
+    "description": "Placeholder controlado para validar a categoria Teleport.",
+    "tags": ["placeholder", "teleport"]
+  },
+  {
+    "id": "placeholder-npc-town",
+    "name": "NPC placeholder",
+    "category": "npc",
+    "mapId": "world",
+    "x": 39,
+    "y": 57,
+    "area": "Town Area",
+    "description": "Placeholder controlado para validar a categoria NPC.",
+    "tags": ["placeholder", "npc"]
+  },
+  {
+    "id": "placeholder-merchant-town",
+    "name": "Merchant placeholder",
+    "category": "merchant",
+    "mapId": "world",
+    "x": 42,
+    "y": 60,
+    "area": "Town Area",
+    "description": "Placeholder controlado para validar a categoria Merchant.",
+    "tags": ["placeholder", "merchant"]
+  },
+  {
+    "id": "placeholder-quest-npc-town",
+    "name": "Quest NPC placeholder",
+    "category": "quest-npc",
+    "mapId": "world",
+    "x": 45,
+    "y": 55,
+    "area": "Town Area",
+    "description": "Placeholder controlado para validar a categoria Quest NPC.",
+    "tags": ["placeholder", "quest"]
+  },
+  {
+    "id": "placeholder-monstro-west",
+    "name": "Monstro placeholder",
+    "category": "monstro",
+    "mapId": "world",
+    "x": 25,
+    "y": 48,
+    "area": "Western Region",
+    "description": "Placeholder controlado para validar a categoria Monstro.",
+    "tags": ["placeholder", "monstro"]
+  },
+  {
+    "id": "placeholder-elite-southwest",
+    "name": "Elite placeholder",
+    "category": "elite",
+    "mapId": "world",
+    "x": 31,
+    "y": 74,
+    "area": "Southwestern Region",
+    "description": "Placeholder controlado para validar a categoria Elite.",
+    "tags": ["placeholder", "elite"]
+  },
+  {
+    "id": "placeholder-boss-northeast",
+    "name": "Boss placeholder",
+    "category": "boss",
+    "mapId": "world",
+    "x": 79,
+    "y": 23,
+    "area": "Northeastern Region",
+    "description": "Placeholder controlado para validar a categoria Boss.",
+    "tags": ["placeholder", "boss"]
+  },
+  {
+    "id": "placeholder-recurso-south",
+    "name": "Recurso placeholder",
+    "category": "recurso",
+    "mapId": "world",
+    "x": 52,
+    "y": 82,
+    "area": "Southern Region",
+    "description": "Placeholder controlado para validar a categoria Recurso.",
+    "tags": ["placeholder", "recurso"]
+  },
+  {
+    "id": "placeholder-ponto-coleta-southeast",
+    "name": "Ponto de coleta placeholder",
+    "category": "ponto-coleta",
+    "mapId": "world",
+    "x": 68,
+    "y": 76,
+    "area": "Southeastern Region",
+    "description": "Placeholder controlado para validar a categoria Ponto de coleta.",
+    "tags": ["placeholder", "coleta"]
+  },
+  {
+    "id": "placeholder-outro-south",
+    "name": "Outro placeholder",
+    "category": "outro",
+    "mapId": "world",
+    "x": 58,
+    "y": 68,
+    "area": "World Map",
+    "description": "Placeholder controlado para validar a categoria Outro.",
+    "tags": ["placeholder", "outro"]
+  }
+]

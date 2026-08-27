@@ -1,0 +1,86 @@
+[
+  {
+    "id": "local",
+    "label": "Local",
+    "group": "Locations",
+    "color": "#2563eb",
+    "icon": "map-pin"
+  },
+  {
+    "id": "dungeon",
+    "label": "Dungeon",
+    "group": "Locations",
+    "color": "#7c3aed",
+    "icon": "door-open"
+  },
+  {
+    "id": "teleport",
+    "label": "Teleport",
+    "group": "Locations",
+    "color": "#0891b2",
+    "icon": "waypoints"
+  },
+  {
+    "id": "npc",
+    "label": "NPC",
+    "group": "NPCs",
+    "color": "#16a34a",
+    "icon": "user"
+  },
+  {
+    "id": "merchant",
+    "label": "Merchant",
+    "group": "NPCs",
+    "color": "#ca8a04",
+    "icon": "store"
+  },
+  {
+    "id": "quest-npc",
+    "label": "Quest NPC",
+    "group": "NPCs",
+    "color": "#db2777",
+    "icon": "scroll-text"
+  },
+  {
+    "id": "monstro",
+    "label": "Monstro",
+    "group": "Enemies",
+    "color": "#dc2626",
+    "icon": "swords"
+  },
+  {
+    "id": "elite",
+    "label": "Elite",
+    "group": "Enemies",
+    "color": "#ea580c",
+    "icon": "shield-alert"
+  },
+  {
+    "id": "boss",
+    "label": "Boss",
+    "group": "Enemies",
+    "color": "#991b1b",
+    "icon": "skull"
+  },
+  {
+    "id": "recurso",
+    "label": "Recurso",
+    "group": "Gathering",
+    "color": "#0d9488",
+    "icon": "gem"
+  },
+  {
+    "id": "ponto-coleta",
+    "label": "Ponto de coleta",
+    "group": "Gathering",
+    "color": "#65a30d",
+    "icon": "pickaxe"
+  },
+  {
+    "id": "outro",
+    "label": "Outro",
+    "group": "Other",
+    "color": "#64748b",
+    "icon": "circle"
+  }
+]
