@@ -45,6 +45,9 @@ Campos sugeridos:
 
 Campos minimos e campos opcionais recomendados:
 
+Para o passo a passo de manutencao, exemplos completos e regras de coordenadas,
+veja o [Guia de marcadores](./markers-guide.md).
+
 ```json
 {
   "id": "zone-ashen-hollow",
