@@ -515,5 +515,745 @@
       "trees",
       "temporary coordinates"
     ]
+  },
+  {
+    "id": "plains-1",
+    "name": "Plains 1",
+    "mapId": "world",
+
+    "x": 31.5,
+    "y": 49.5,
+
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 11,
+
+    "monsters": ["Glowsnail", "Cloudsheep"],
+
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Copper Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Shrimp", "Clam", "Trout"]
+      }
+    ],
+
+    "description": "",
+
+    "tags": []
+  },
+  {
+    "id": "plains-2",
+    "name": "Plains 2",
+    "mapId": "world",
+
+    "x": 33,
+    "y": 45,
+
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 12,
+
+    "monsters": ["Squishling", "Cloudsheep", "Angeling"],
+
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Copper Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+      }
+    ],
+
+    "description": "",
+
+    "tags": []
+  },
+  {
+    "id": "plains-3",
+    "name": "Plains 3",
+    "mapId": "world",
+
+    "x": 36.5,
+    "y": 39.5,
+
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 14,
+
+    "monsters": ["Squishling", "Black Cloudsheep"],
+
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Copper Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+      }
+    ],
+
+    "warpPoint": true,
+    "description": "",
+
+    "tags": []
+  },
+  {
+    "id": "plains-4",
+    "name": "Plains 4",
+    "mapId": "world",
+
+    "x": 34.6,
+    "y": 34.8,
+
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 15,
+
+    "monsters": ["Black Cloudsheep", "Squishling"],
+
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Copper Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+      }
+    ],
+
+    "description": "",
+
+    "tags": []
+  },
+  {
+    "id": "forest-1",
+    "name": "Forest 1",
+    "mapId": "world",
+
+    "x": 22.8,
+    "y": 40.5,
+
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 40,
+
+    "monsters": ["Ferni", "Big Slime"],
+
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Malachite Ore", "Emerald"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Sweet Fern",
+          "Forest Seal",
+          "Melon",
+          "Green Cherry (trees)",
+          "Hard Wood (trees)"
+        ]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+      }
+    ],
+
+    "warpPoint": true,
+
+    "description": "",
+
+    "tags": []
+  },
+  {
+    "id": "forest-2",
+    "name": "Forest 2",
+    "mapId": "world",
+
+    "x": 24,
+    "y": 33.5,
+
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 41,
+
+    "monsters": ["Soultree", "Soulpling"],
+
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Malachite Ore", "Emerald"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Sweet Fern",
+          "Forest Seal",
+          "Melon",
+          "Green Cherry (trees)",
+          "Hard Wood (trees)"
+        ]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+      }
+    ],
+
+    "description": "",
+
+    "tags": []
+  },
+  {
+    "id": "forest-3",
+    "name": "PlainsForest 3",
+    "mapId": "world",
+    "x": 25.1,
+    "y": 28,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 39,
+    "monsters": ["Soultree", "Soulpling", "Ferni", "Humblebee"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Malachite Ore", "Emerald"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Sweet Fern",
+          "Forest Seal",
+          "Melon",
+          "Green Cherry (trees)",
+          "Hard Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 39 with Soultree, Soulpling, Ferni, Humblebee, mining, fishing, and herbalism resources.",
+    "tags": [
+      "forest 3",
+      "forest",
+      "surface zone",
+      "level 39",
+      "soultree",
+      "soulpling",
+      "ferni",
+      "humblebee",
+      "mining",
+      "malachite ore",
+      "emerald",
+      "fishing",
+      "angel fish",
+      "ice salmon",
+      "chomper",
+      "clownfish",
+      "herbalism",
+      "sweet fern",
+      "forest seal",
+      "melon",
+      "green cherry",
+      "hard wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "swamp",
+    "name": "Swamp",
+    "mapId": "world",
+    "x": 27.3,
+    "y": 22.9,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 0,
+    "monsters": [],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Malachite Ore", "Emerald"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Sweet Fern",
+          "Forest Seal",
+          "Melon",
+          "Green Cherry (trees)",
+          "Hard Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone in Plains with mining, fishing, and herbalism resources.",
+    "tags": [
+      "swamp",
+      "plains",
+      "surface zone",
+      "level 0",
+      "mining",
+      "malachite ore",
+      "emerald",
+      "fishing",
+      "angel fish",
+      "ice salmon",
+      "chomper",
+      "clownfish",
+      "herbalism",
+      "sweet fern",
+      "forest seal",
+      "melon",
+      "green cherry",
+      "hard wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "forest-pond",
+    "name": "Forest pond",
+    "mapId": "world",
+    "x": 19.5,
+    "y": 49,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 38,
+    "monsters": ["Humblebee", "Soulpling"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Malachite Ore", "Emerald"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Sweet Fern",
+          "Forest Seal",
+          "Melon",
+          "Green Cherry (trees)",
+          "Hard Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 38 in Plains with Humblebee, Soulpling, mining, fishing, and herbalism resources.",
+    "tags": [
+      "plainsforest pond",
+      "plains",
+      "surface zone",
+      "level 38",
+      "humblebee",
+      "soulpling",
+      "mining",
+      "malachite ore",
+      "emerald",
+      "fishing",
+      "angel fish",
+      "ice salmon",
+      "chomper",
+      "clownfish",
+      "herbalism",
+      "sweet fern",
+      "forest seal",
+      "melon",
+      "green cherry",
+      "hard wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "lost-plains",
+    "name": "Lost plains",
+    "mapId": "world",
+    "x": 29.8,
+    "y": 54,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 37,
+    "monsters": ["Rainbow Cloudsheep"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Copper Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+      }
+    ],
+    "description": "Surface zone level 37 in Plains with Rainbow Cloudsheep, mining, and herbalism resources.",
+    "tags": [
+      "plainslost plains",
+      "plains",
+      "surface zone",
+      "level 37",
+      "rainbow cloudsheep",
+      "mining",
+      "copper ore",
+      "herbalism",
+      "cotton ball",
+      "oak wood",
+      "apple",
+      "trees"
+    ]
+  },
+  {
+    "id": "deep-forest-1",
+    "name": "Deep forest 1",
+    "mapId": "world",
+    "x": 14.9,
+    "y": 39,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 73,
+    "monsters": ["Tallshroom", "Shroomie"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Spookee",
+          "Abyssal Leech",
+          "Abyssal Urchin",
+          "Abyssal Octopus",
+          "Wolf Fish"
+        ]
+      }
+    ],
+    "description": "Surface zone level 73 in Plains with Tallshroom, Shroomie, mining, herbalism, and fishing resources.",
+    "tags": [
+      "plainsdeep forest 1",
+      "plains",
+      "surface zone",
+      "level 73",
+      "tallshroom",
+      "shroomie",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "eon wood",
+      "trees",
+      "fishing",
+      "spookee",
+      "abyssal leech",
+      "abyssal urchin",
+      "abyssal octopus",
+      "wolf fish"
+    ]
+  },
+  {
+    "id": "deep-forest-threshold",
+    "name": "Deep forest threshold",
+    "mapId": "world",
+    "x": 13,
+    "y": 36,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 78,
+    "monsters": ["Lime Guardian"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Spookee",
+          "Abyssal Leech",
+          "Abyssal Urchin",
+          "Abyssal Octopus",
+          "Wolf Fish"
+        ]
+      }
+    ],
+    "description": "Surface zone level 78 in Plains with Lime Guardian, mining, herbalism, and fishing resources.",
+    "tags": [
+      "plainsdeep forest threshold",
+      "plains",
+      "surface zone",
+      "level 78",
+      "lime guardian",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "eon wood",
+      "trees",
+      "fishing",
+      "spookee",
+      "abyssal leech",
+      "abyssal urchin",
+      "abyssal octopus",
+      "wolf fish"
+    ]
+  },
+  {
+    "id": "deep-tree-way",
+    "name": "Deep tree way",
+    "mapId": "world",
+    "x": 12,
+    "y": 50,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 73,
+    "monsters": ["Shroomie", "Tallshroom"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 73 in Plains with Shroomie, Tallshroom, mining, and herbalism resources.",
+    "tags": [
+      "plainsdeep tree way",
+      "plains",
+      "surface zone",
+      "level 73",
+      "shroomie",
+      "tallshroom",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "eon wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "deep-forest-2",
+    "name": "Deep forest 2",
+    "mapId": "world",
+    "x": 18.2,
+    "y": 30,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 75,
+    "monsters": ["Kiwi", "Fernek", "Tallshroom"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Spookee",
+          "Abyssal Leech",
+          "Abyssal Urchin",
+          "Abyssal Octopus",
+          "Wolf Fish"
+        ]
+      }
+    ],
+    "description": "Surface zone level 75 in Plains with Kiwi, Fernek, Tallshroom, mining, herbalism, and fishing resources.",
+    "tags": [
+      "plainsdeep forest 2",
+      "plains",
+      "surface zone",
+      "level 75",
+      "kiwi",
+      "fernek",
+      "tallshroom",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "eon wood",
+      "trees",
+      "fishing",
+      "spookee",
+      "abyssal leech",
+      "abyssal urchin",
+      "abyssal octopus",
+      "wolf fish"
+    ]
+  },
+  {
+    "id": "deep-forest-3",
+    "name": "Deep forest 3",
+    "mapId": "world",
+    "x": 21.5,
+    "y": 22.5,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 75,
+    "monsters": ["Shroomie", "Tallshroom", "Fernek", "Kiwi"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 75 in Plains with Shroomie, Tallshroom, Fernek, Kiwi, mining, and herbalism resources.",
+    "tags": [
+      "plainsdeep forest 3",
+      "plains",
+      "surface zone",
+      "level 75",
+      "shroomie",
+      "tallshroom",
+      "fernek",
+      "kiwi",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "eon wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "lost-peak",
+    "name": "Lost peak",
+    "mapId": "world",
+    "x": 28.2,
+    "y": 13.5,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": 76,
+    "monsters": ["Fernek", "Kiwi"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Spookee",
+          "Abyssal Leech",
+          "Abyssal Urchin",
+          "Abyssal Octopus",
+          "Wolf Fish"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "description": "Surface zone level 76 in Plains with Fernek, Kiwi, mining, herbalism, fishing resources, and a warp point.",
+    "tags": [
+      "plainslost peak",
+      "plains",
+      "surface zone",
+      "level 76",
+      "fernek",
+      "kiwi",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "eon wood",
+      "trees",
+      "fishing",
+      "spookee",
+      "abyssal leech",
+      "abyssal urchin",
+      "abyssal octopus",
+      "wolf fish",
+      "warp point"
+    ]
   }
 ]
