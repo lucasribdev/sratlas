@@ -10,6 +10,7 @@ import { percentageToLeafletLatLng } from '../../lib/coordinates'
 
 type MapMarkersProps = {
   map: GameMap
+  selectedCategoryIds: ReadonlySet<MarkerCategory['id']>
 }
 
 type MarkerPopupProps = {
@@ -63,8 +64,10 @@ function MarkerPopup({ marker, category, color }: MarkerPopupProps) {
   )
 }
 
-export function MapMarkers({ map }: MapMarkersProps) {
-  const mapMarkers = markers.filter((marker) => marker.mapId === map.id)
+export function MapMarkers({ map, selectedCategoryIds }: MapMarkersProps) {
+  const mapMarkers = markers.filter(
+    (marker) => marker.mapId === map.id && selectedCategoryIds.has(marker.category),
+  )
 
   return mapMarkers.map((marker) => {
     const category = categoriesById.get(marker.category)

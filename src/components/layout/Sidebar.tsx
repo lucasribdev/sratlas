@@ -1,6 +1,20 @@
-const categoryGroups = ['Locais', 'NPCs', 'Inimigos', 'Recursos']
+import type { MarkerCategory } from '../../domain/category'
 
-export function Sidebar() {
+type SidebarProps = {
+  categories: MarkerCategory[]
+  onClearCategories: () => void
+  onSelectAllCategories: () => void
+  onToggleCategory: (categoryId: MarkerCategory['id']) => void
+  selectedCategoryIds: ReadonlySet<MarkerCategory['id']>
+}
+
+export function Sidebar({
+  categories,
+  onClearCategories,
+  onSelectAllCategories,
+  onToggleCategory,
+  selectedCategoryIds,
+}: SidebarProps) {
   return (
     <aside className="sidebar" aria-label="Busca, filtros e resultados">
       <header className="sidebar-header">
@@ -16,16 +30,25 @@ export function Sidebar() {
       <section className="sidebar-section" aria-labelledby="filters-title">
         <div className="section-heading">
           <h2 id="filters-title">Filtros</h2>
-          <button type="button" disabled>
-            Limpar
-          </button>
+          <div className="filter-actions">
+            <button type="button" onClick={onSelectAllCategories}>
+              Todas
+            </button>
+            <button type="button" onClick={onClearCategories}>
+              Limpar
+            </button>
+          </div>
         </div>
 
         <div className="filter-list">
-          {categoryGroups.map((category) => (
-            <label className="filter-option" key={category}>
-              <input type="checkbox" checked disabled readOnly />
-              <span>{category}</span>
+          {categories.map((category) => (
+            <label className="filter-option" key={category.id}>
+              <input
+                type="checkbox"
+                checked={selectedCategoryIds.has(category.id)}
+                onChange={() => onToggleCategory(category.id)}
+              />
+              <span>{category.label}</span>
             </label>
           ))}
         </div>

@@ -137,6 +137,11 @@ p {
   font-weight: 700;
 }
 
+.filter-actions {
+  display: flex;
+  gap: 8px;
+}
+
 .filter-list {
   display: grid;
   gap: 10px;
