@@ -1,13 +1,13 @@
 [
   {
-    "id": "placeholder-local-central",
-    "name": "Local placeholder",
+    "id": "spawn",
+    "name": "Spawn",
     "category": "local",
     "mapId": "world",
     "x": 50,
-    "y": 50,
+    "y": 53,
     "area": "World Map",
-    "description": "Placeholder controlado para validar a categoria Local.",
+    "description": "Surface zone • Level 0",
     "tags": ["placeholder", "local"]
   },
   {

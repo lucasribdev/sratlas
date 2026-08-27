@@ -23,7 +23,7 @@ export function percentageToLeafletLatLng(
   validatePercentage(coordinates.x, 'x')
   validatePercentage(coordinates.y, 'y')
 
-  return [(coordinates.y / 100) * map.height, (coordinates.x / 100) * map.width]
+  return [map.height - (coordinates.y / 100) * map.height, (coordinates.x / 100) * map.width]
 }
 
 export function mapBoundsFromDimensions(map: MapDimensions): LatLngBoundsExpression {

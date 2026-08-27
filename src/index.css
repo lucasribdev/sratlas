@@ -206,6 +206,61 @@ p {
   flex: 1;
 }
 
+.map-marker {
+  display: grid;
+  place-items: center;
+}
+
+.map-marker__pin {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  background: var(--marker-color, #475569);
+  box-shadow:
+    0 0 0 2px rgb(15 23 42 / 0.25),
+    0 8px 16px rgb(15 23 42 / 0.32);
+}
+
+.marker-popup {
+  display: grid;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.marker-popup__heading {
+  display: grid;
+  gap: 6px;
+}
+
+.marker-popup h2 {
+  font-size: 1rem;
+}
+
+.marker-popup p {
+  color: #475569;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.marker-popup span {
+  width: fit-content;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--marker-color, #475569) 14%, #ffffff);
+  color: var(--marker-color, #475569);
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.marker-popup a {
+  color: #2563eb;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

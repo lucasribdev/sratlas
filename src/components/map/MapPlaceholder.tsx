@@ -2,6 +2,7 @@ import { CRS } from 'leaflet'
 import { ImageOverlay, MapContainer } from 'react-leaflet'
 import { maps } from '../../data/maps'
 import { mapBoundsFromDimensions } from '../../lib/coordinates'
+import { MapMarkers } from './MapMarkers'
 
 const initialMap = maps[0]
 const imageBounds = mapBoundsFromDimensions(initialMap)
@@ -25,6 +26,7 @@ export function MapPlaceholder() {
         zoomSnap={0.25}
       >
         <ImageOverlay bounds={imageBounds} url={initialMap.imageUrl} />
+        <MapMarkers map={initialMap} />
       </MapContainer>
     </div>
   )
