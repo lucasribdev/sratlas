@@ -10,6 +10,7 @@ const initialMap = maps[0]
 const imageBounds = mapBoundsFromDimensions(initialMap)
 const minZoom = -2
 const maxZoom = 2
+const selectedMarkerZoom = 1.5
 
 type MapPlaceholderProps = {
   markers: MapMarker[]
@@ -32,9 +33,13 @@ function SelectedMarkerController({ markers, selectedMarkerId }: SelectedMarkerC
       return
     }
 
-    map.flyTo(percentageToLeafletLatLng(selectedMarker, initialMap), Math.max(map.getZoom(), 0), {
-      duration: 0.5,
-    })
+    map.flyTo(
+      percentageToLeafletLatLng(selectedMarker, initialMap),
+      Math.max(map.getZoom(), selectedMarkerZoom),
+      {
+        duration: 0.5,
+      },
+    )
   }, [map, markers, selectedMarkerId])
 
   return null
