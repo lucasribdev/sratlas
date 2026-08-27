@@ -12,7 +12,7 @@ const minZoom = -2
 const maxZoom = 2
 const selectedMarkerZoom = 1.5
 
-type MapPlaceholderProps = {
+type GameMapViewProps = {
   markers: MapMarker[]
   onMarkerSelect: (markerId: MapMarker['id']) => void
   selectedMarkerId?: MapMarker['id']
@@ -45,7 +45,7 @@ function SelectedMarkerController({ markers, selectedMarkerId }: SelectedMarkerC
   return null
 }
 
-export function MapPlaceholder({ markers, onMarkerSelect, selectedMarkerId }: MapPlaceholderProps) {
+export function GameMapView({ markers, onMarkerSelect, selectedMarkerId }: GameMapViewProps) {
   return (
     <div className="map-placeholder" aria-label={initialMap.name}>
       <MapContainer

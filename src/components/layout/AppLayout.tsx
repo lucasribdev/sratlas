@@ -8,7 +8,7 @@ import {
   type QuickFilterId,
 } from '../../lib/marker-filters'
 import { markerMatchesSearch } from '../../lib/marker-search'
-import { MapPlaceholder } from '../map/MapPlaceholder'
+import { GameMapView } from '../map/GameMapView'
 import { Sidebar } from './Sidebar'
 
 const areaOptions = markerAreaOptions(markers)
@@ -112,7 +112,7 @@ export function AppLayout() {
           </button>
         </div>
 
-        <MapPlaceholder
+        <GameMapView
           markers={filteredMarkers}
           onMarkerSelect={selectMarker}
           selectedMarkerId={selectedMarkerId}
