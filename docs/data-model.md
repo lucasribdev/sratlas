@@ -4,10 +4,10 @@
 
 Separe mentalmente marcador de entidade:
 
-- **Marcador**: uma posicao no mapa.
+- **Marcador**: uma posicao no mapa. No MVP, tambem pode representar uma area ou zona do mapa.
 - **Entidade**: algo do jogo, como NPC, monstro, item, recurso, quest, cidade ou dungeon.
 
-No MVP, um marcador pode conter informacoes simples diretamente. Quando o projeto crescer, entidades devem ser separadas para evitar duplicacao.
+No MVP, um marcador pode conter informacoes simples diretamente, inclusive dados basicos de zona, monstros, recursos e ponto de warp. Quando o projeto crescer, entidades devem ser separadas para evitar duplicacao.
 
 ## Arquivos iniciais
 
@@ -66,20 +66,30 @@ Campos sugeridos:
 
 ## Marcadores
 
-Campos minimos:
+Campos minimos e campos opcionais recomendados:
 
 ```json
 {
-  "id": "boss-ironfang",
-  "name": "Ironfang",
-  "category": "boss",
+  "id": "zone-ashen-hollow",
+  "name": "Ashen Hollow",
+  "category": "area",
   "mapId": "world",
   "x": 58.2,
   "y": 31.7,
   "area": "Ashen Hollow",
-  "description": "Boss encontrado dentro de Ashen Hollow.",
-  "wikiUrl": "/wiki/Ironfang",
-  "tags": ["boss", "ashen hollow"]
+  "zoneType": "Surface zone",
+  "level": "12-15",
+  "monsters": ["Ironfang", "Ash Crawler", "Hollow Wisp"],
+  "resources": [
+    {
+      "type": "Fishing",
+      "items": ["Clam", "Shrimp", "Trout"]
+    }
+  ],
+  "warpPoint": true,
+  "description": "Area de superficie com monstros iniciais e ponto de warp.",
+  "wikiUrl": "/wiki/Ashen_Hollow",
+  "tags": ["area", "surface", "ashen hollow"]
 }
 ```
 
@@ -92,9 +102,39 @@ Campos minimos:
 | `x` | Sim | Coordenada horizontal percentual |
 | `y` | Sim | Coordenada vertical percentual |
 | `area` | Nao | Area ou regiao |
+| `zoneType` | Nao | Tipo da zona, por exemplo `Surface zone` |
+| `level` | Nao | Nivel recomendado ou nivel da zona |
+| `monsters` | Nao | Lista de monstros encontrados na area |
+| `resources` | Nao | Lista de grupos de recursos por profissao ou tipo de coleta |
+| `warpPoint` | Nao | Indica se a area tem ponto de warp |
 | `description` | Nao | Descricao curta |
 | `wikiUrl` | Nao | Link para wiki |
 | `tags` | Nao | Termos auxiliares de busca |
+
+Formato recomendado para `resources`:
+
+```json
+{
+  "type": "Fishing",
+  "items": ["Clam", "Shrimp", "Trout"]
+}
+```
+
+Use `zoneType`, `level`, `monsters`, `resources` e `warpPoint` quando o marcador representar uma area ou zona navegavel do mapa, e nao apenas um ponto isolado como NPC, boss, merchant ou entrada. Esses campos devem continuar simples no MVP para que os dados possam ficar em JSON estatico e sejam faceis de manter.
+
+Nao separe monstros, recursos ou entidades em arquivos/tabelas proprias ainda. Entidades separadas ficam para depois do MVP, quando houver dados suficientes e duplicacao real para justificar a mudanca.
+
+## Busca
+
+A busca inicial deve ser simples e funcionar sobre os dados estaticos em JSON. Para marcadores, os campos buscaveis devem incluir:
+
+- `name`
+- `area`
+- `tags`
+- `monsters`
+- `resources`
+
+Em `resources`, a busca deve considerar tanto `type` quanto os valores de `items`, por exemplo `Fishing`, `Clam`, `Shrimp` e `Trout`.
 
 ## Coordenadas
 
