@@ -1,4 +1,5 @@
-import { divIcon } from 'leaflet'
+import { useEffect, useRef } from 'react'
+import { divIcon, type Marker as LeafletMarker } from 'leaflet'
 import { Marker, Popup } from 'react-leaflet'
 import type { GameMap } from '../../domain/map'
 import type { MapMarker } from '../../domain/marker'
@@ -8,10 +9,18 @@ type MapMarkersProps = {
   map: GameMap
   markers: MapMarker[]
   onMarkerSelect: (markerId: MapMarker['id']) => void
+  selectedMarkerId?: MapMarker['id']
 }
 
 type MarkerPopupProps = {
   marker: MapMarker
+}
+
+type MapMarkerItemProps = {
+  map: GameMap
+  marker: MapMarker
+  onMarkerSelect: (markerId: MapMarker['id']) => void
+  selectedMarkerId?: MapMarker['id']
 }
 
 const markerIconsByColor = new Map<string, ReturnType<typeof divIcon>>()
@@ -132,25 +141,48 @@ function MarkerPopup({ marker }: MarkerPopupProps) {
   )
 }
 
-export function MapMarkers({ map, markers, onMarkerSelect }: MapMarkersProps) {
+function MapMarkerItem({ map, marker, onMarkerSelect, selectedMarkerId }: MapMarkerItemProps) {
+  const markerRef = useRef<LeafletMarker | null>(null)
+  const color = markerColor(marker)
+  const position = percentageToLeafletLatLng(marker, map)
+
+  useEffect(() => {
+    if (marker.id !== selectedMarkerId) {
+      return
+    }
+
+    const timeoutId = window.setTimeout(() => {
+      markerRef.current?.openPopup()
+    }, 550)
+
+    return () => window.clearTimeout(timeoutId)
+  }, [marker.id, selectedMarkerId])
+
+  return (
+    <Marker
+      icon={markerIcon(color)}
+      ref={markerRef}
+      eventHandlers={{ click: () => onMarkerSelect(marker.id) }}
+      position={position}
+      title={marker.name}
+    >
+      <Popup>
+        <MarkerPopup marker={marker} />
+      </Popup>
+    </Marker>
+  )
+}
+
+export function MapMarkers({ map, markers, onMarkerSelect, selectedMarkerId }: MapMarkersProps) {
   const mapMarkers = markers.filter((marker) => marker.mapId === map.id)
 
-  return mapMarkers.map((marker) => {
-    const color = markerColor(marker)
-    const position = percentageToLeafletLatLng(marker, map)
-
-    return (
-      <Marker
-        icon={markerIcon(color)}
-        key={marker.id}
-        eventHandlers={{ click: () => onMarkerSelect(marker.id) }}
-        position={position}
-        title={marker.name}
-      >
-        <Popup>
-          <MarkerPopup marker={marker} />
-        </Popup>
-      </Marker>
-    )
-  })
+  return mapMarkers.map((marker) => (
+    <MapMarkerItem
+      key={marker.id}
+      map={map}
+      marker={marker}
+      onMarkerSelect={onMarkerSelect}
+      selectedMarkerId={selectedMarkerId}
+    />
+  ))
 }

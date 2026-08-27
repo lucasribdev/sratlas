@@ -63,7 +63,12 @@ export function MapPlaceholder({ markers, onMarkerSelect, selectedMarkerId }: Ma
       >
         <ImageOverlay bounds={imageBounds} url={initialMap.imageUrl} />
         <SelectedMarkerController markers={markers} selectedMarkerId={selectedMarkerId} />
-        <MapMarkers map={initialMap} markers={markers} onMarkerSelect={onMarkerSelect} />
+        <MapMarkers
+          map={initialMap}
+          markers={markers}
+          onMarkerSelect={onMarkerSelect}
+          selectedMarkerId={selectedMarkerId}
+        />
       </MapContainer>
     </div>
   )
