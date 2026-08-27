@@ -3,8 +3,8 @@
     "id": "spawn",
     "name": "Spawn",
     "mapId": "world",
-    "x": 50.3,
-    "y": 53.5,
+    "x": 50,
+    "y": 53,
     "area": "Spawn",
     "zoneType": "Surface zone",
     "level": "0",
@@ -35,8 +35,8 @@
     "name": "Outskirts south",
     "mapId": "world",
     "x": 48,
-    "y": 61,
-    "area": "Outskirts south",
+    "y": 57.8,
+    "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "7",
     "monsters": ["Hopper", "Jel", "Pin Pin"],
@@ -78,171 +78,441 @@
     ]
   },
   {
-    "id": "plains-cave",
-    "name": "Plains cave",
+    "id": "outskirts-southeast",
+    "name": "Outskirts southeast",
     "mapId": "world",
-    "x": 42,
-    "y": 66,
-    "area": "Plains cave",
+    "x": 54.2,
+    "y": 57,
+    "area": "Outskirts",
     "zoneType": "Surface zone",
-    "level": "15",
-    "monsters": ["Cursed Slime", "Gilded Slime"],
+    "level": "6",
+    "monsters": ["Pin Pin", "Jel", "Hopper"],
     "resources": [
       {
         "type": "Mining",
+        "items": ["Stone", "Salt"]
+      },
+      {
+        "type": "Herbalism",
         "items": [
-          "Blue Shard",
-          "Red Shard",
-          "Yellow Shard",
-          "Red Crystal",
-          "Blue Crystal",
-          "Yellow Crystal"
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
         ]
       }
     ],
-    "description": "Surface zone level 15 with slime monsters and mining resources. Coordinates are temporary approximations for MVP visual validation.",
+    "description": "Surface zone level 6 with Pin Pin, Jel, Hopper, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
-      "plains cave",
+      "outskirts southeast",
       "surface zone",
-      "level 15",
-      "cursed slime",
-      "gilded slime",
+      "level 6",
+      "pin pin",
+      "jel",
+      "hopper",
       "mining",
-      "blue shard",
-      "red shard",
-      "yellow shard",
-      "red crystal",
-      "blue crystal",
-      "yellow crystal",
+      "stone",
+      "salt",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
       "temporary coordinates"
     ]
   },
   {
-    "id": "shell-beach",
-    "name": "Shell beach",
+    "id": "outskirts-pond",
+    "name": "Outskirts pond",
     "mapId": "world",
-    "x": 66,
-    "y": 73,
-    "area": "Ocean",
+    "x": 58.8,
+    "y": 55,
+    "area": "Outskirts",
     "zoneType": "Surface zone",
-    "level": "17",
-    "monsters": ["Pimchy", "Snapper", "Crusher"],
+    "level": "7",
+    "monsters": ["Slip", "Flows"],
     "resources": [
       {
-        "type": "Herbalism",
-        "items": ["Sea Grapes", "Coconut (trees)", "Coconut Wood (trees)"]
-      },
-      {
         "type": "Mining",
-        "items": ["Quartz", "Stone"]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Fishing",
+        "items": ["Clam", "Shrimp", "Trout", "Chomper"]
+      },
+      {
+        "type": "Herbalism",
         "items": [
-          "Glowfish",
-          "Electray",
-          "Starfish",
-          "Clownfish",
-          "Ice Salmon",
-          "Exotic Tuna",
-          "Seaweed",
-          "Clam",
-          "Shrimp"
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
         ]
       }
     ],
-    "description": "Ocean surface zone level 17 with Pimchy, Snapper, Crusher, and fishing, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "description": "Surface zone level 7 with Slip, Flows, mining, fishing, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
-      "shell beach",
-      "ocean",
+      "outskirts pond",
       "surface zone",
-      "level 17",
-      "pimchy",
-      "snapper",
-      "crusher",
-      "herbalism",
-      "sea grapes",
-      "coconut",
-      "coconut wood",
-      "trees",
+      "level 7",
+      "slip",
+      "flows",
       "mining",
-      "quartz",
       "stone",
+      "salt",
       "fishing",
-      "glowfish",
-      "electray",
-      "starfish",
-      "clownfish",
-      "ice salmon",
-      "exotic tuna",
-      "seaweed",
       "clam",
       "shrimp",
+      "trout",
+      "chomper",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
       "temporary coordinates"
     ]
   },
   {
-    "id": "lost-peak",
-    "name": "Lost peak",
+    "id": "outskirts-east",
+    "name": "Outskirts east",
     "mapId": "world",
-    "x": 38,
-    "y": 24,
-    "area": "Plains",
+    "x": 60.6,
+    "y": 49.6,
+    "area": "Outskirts",
     "zoneType": "Surface zone",
-    "level": "76",
-    "monsters": ["Fernek", "Kiwi"],
+    "level": "3",
+    "monsters": ["Jel", "Pin Pin", "Slime"],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
-        ]
-      },
-      {
-        "type": "Fishing",
-        "items": [
-          "Spookee",
-          "Abyssal Leech",
-          "Abyssal Urchin",
-          "Abyssal Octopus",
-          "Wolf Fish"
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
         ]
       }
     ],
-    "warpPoint": true,
-    "description": "Plains surface zone level 76 with Fernek, Kiwi, gathering resources, and a warp point. Coordinates are temporary approximations for MVP visual validation.",
+    "description": "Surface zone level 3 with Jel, Pin Pin, Slime, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
-      "lost peak",
-      "plains",
+      "outskirts east",
       "surface zone",
-      "level 76",
-      "fernek",
-      "kiwi",
+      "level 3",
+      "jel",
+      "pin pin",
+      "slime",
       "mining",
-      "mithril ore",
-      "dream fragment",
-      "dreamstone",
+      "stone",
+      "salt",
       "herbalism",
-      "ancient fern",
-      "censhroom",
-      "eon fruit",
-      "eon wood",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
       "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "outskirts-northeast",
+    "name": "Outskirts northeast",
+    "mapId": "world",
+    "x": 56.6,
+    "y": 45.3,
+    "area": "Outskirts",
+    "zoneType": "Surface zone",
+    "level": "5",
+    "monsters": ["Jel", "Bubble Spirit", "Pin Pin"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Stone", "Salt"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 5 with Jel, Bubble Spirit, Pin Pin, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "outskirts northeast",
+      "surface zone",
+      "level 5",
+      "jel",
+      "bubble spirit",
+      "pin pin",
+      "mining",
+      "stone",
+      "salt",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "outskirts-north",
+    "name": "Outskirts north",
+    "mapId": "world",
+    "x": 50.7,
+    "y": 43,
+    "area": "Outskirts",
+    "zoneType": "Surface zone",
+    "level": "5",
+    "monsters": ["Flows", "Jel"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Stone", "Salt"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 5 with Flows, Jel, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "outskirts north",
+      "surface zone",
+      "level 5",
+      "flows",
+      "jel",
+      "mining",
+      "stone",
+      "salt",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "outskirts-flower-field",
+    "name": "Outskirts flower field",
+    "mapId": "world",
+    "x": 46,
+    "y": 43.8,
+    "area": "Outskirts",
+    "zoneType": "Surface zone",
+    "level": "3",
+    "monsters": ["Slime", "Bubble Spirit", "Jel"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Stone", "Salt"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 3 with Slime, Bubble Spirit, Jel, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "outskirts flower field",
+      "flower field",
+      "surface zone",
+      "level 3",
+      "slime",
+      "bubble spirit",
+      "jel",
+      "mining",
+      "stone",
+      "salt",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "outskirts-northwest",
+    "name": "Outskirts northwest",
+    "mapId": "world",
+    "x": 41.3,
+    "y": 45.9,
+    "area": "Outskirts",
+    "zoneType": "Surface zone",
+    "level": "2",
+    "monsters": ["Bubble Spirit", "Slime", "Jel"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Stone", "Salt"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 2 with Bubble Spirit, Slime, Jel, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "outskirts northwest",
+      "surface zone",
+      "level 2",
+      "bubble spirit",
+      "slime",
+      "jel",
+      "mining",
+      "stone",
+      "salt",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "outskirts-west",
+    "name": "Outskirts west",
+    "mapId": "world",
+    "x": 39.2,
+    "y": 50.2,
+    "area": "Outskirts",
+    "zoneType": "Surface zone",
+    "level": "1",
+    "monsters": ["Slime"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Stone", "Salt"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Clam", "Shrimp", "Trout", "Chomper"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 1 with Slime, mining, fishing, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "outskirts west",
+      "surface zone",
+      "level 1",
+      "slime",
+      "mining",
+      "stone",
+      "salt",
       "fishing",
-      "spookee",
-      "abyssal leech",
-      "abyssal urchin",
-      "abyssal octopus",
-      "wolf fish",
-      "warp",
-      "warp point",
+      "clam",
+      "shrimp",
+      "trout",
+      "chomper",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "outskirts-southwest",
+    "name": "Outskirts southwest",
+    "mapId": "world",
+    "x": 41.8,
+    "y": 54.7,
+    "area": "Outskirts",
+    "zoneType": "Surface zone",
+    "level": "8",
+    "monsters": ["Glowsnail", "Jel", "Pin Pin", "Hopper"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Stone", "Salt"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
+        ]
+      }
+    ],
+    "description": "Surface zone level 8 with Glowsnail, Jel, Pin Pin, Hopper, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "outskirts southwest",
+      "surface zone",
+      "level 8",
+      "glowsnail",
+      "jel",
+      "pin pin",
+      "hopper",
+      "mining",
+      "stone",
+      "salt",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
       "temporary coordinates"
     ]
   }
