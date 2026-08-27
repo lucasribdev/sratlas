@@ -7,7 +7,16 @@
     "x": 50,
     "y": 53,
     "area": "World Map",
-    "description": "Surface zone • Level 0",
+    "zoneType": "Surface zone",
+    "level": "0",
+    "monsters": ["None"],
+    "resources": [
+      {
+        "type": "Fishing",
+        "items": ["Clam", "Shrimp", "Trout"]
+      }
+    ],
+    "warpPoint": true,
     "tags": ["placeholder", "local"]
   },
   {
