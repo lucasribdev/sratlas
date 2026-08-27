@@ -3,8 +3,8 @@
     "id": "spawn",
     "name": "Spawn",
     "mapId": "world",
-    "x": 50,
-    "y": 53,
+    "x": 50.3,
+    "y": 53.5,
     "area": "Spawn",
     "zoneType": "Surface zone",
     "level": "0",
@@ -47,7 +47,13 @@
       },
       {
         "type": "Herbalism",
-        "items": ["Wheat", "Green Herb", "Red Herb", "Blue Herb", "Wood (trees)"]
+        "items": [
+          "Wheat",
+          "Green Herb",
+          "Red Herb",
+          "Blue Herb",
+          "Wood (trees)"
+        ]
       }
     ],
     "description": "Surface zone level 7 with Hopper, Jel, Pin Pin, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
@@ -192,7 +198,12 @@
       },
       {
         "type": "Herbalism",
-        "items": ["Ancient Fern", "Censhroom", "Eon Fruit (trees)", "Eon Wood (trees)"]
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
       },
       {
         "type": "Fishing",

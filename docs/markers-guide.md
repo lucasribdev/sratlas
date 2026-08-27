@@ -9,7 +9,7 @@ ter dados suficientes para busca, filtros, popup e posicionamento no mapa.
 1. Abra `src/data/markers.json`.
 2. Copie um objeto existente parecido com a zona que voce quer adicionar.
 3. Cole o novo objeto dentro do array principal.
-4. Troque o `id`, `name`, `category`, `mapId`, `x` e `y`.
+4. Troque o `id`, `name`, `mapId`, `x` e `y`.
 5. Preencha os campos opcionais que ajudam o jogador a encontrar a zona.
 6. Confira se o JSON continua valido:
    - use aspas duplas;
@@ -27,14 +27,13 @@ Todo marcador novo deve ter:
 | --- | --- |
 | `id` | Identificador unico em `kebab-case`. |
 | `name` | Nome exibido para o jogador. |
-| `category` | Categoria geral do marcador. Para zonas, use `zone`. |
 | `mapId` | Id do mapa em `src/data/maps.json`, por exemplo `world`. |
 | `x` | Coordenada horizontal percentual, de `0` a `100`. |
 | `y` | Coordenada vertical percentual, de `0` a `100`. |
 
-No MVP, alguns estilos e filtros ainda sao derivados de `warpPoint`,
-`resources` e `monsters`. Mesmo assim, mantenha `category` preenchido nos novos
-marcadores para preservar o contrato dos dados conforme o arquivo evoluir.
+No MVP, o estilo visual e os filtros rapidos sao derivados dos dados reais do
+marcador: `warpPoint`, `resources`, `monsters` e um fallback generico para
+zona/local quando nenhum desses campos existir.
 
 ## Campos opcionais
 
@@ -156,7 +155,6 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
 {
   "id": "mistwood-crossing",
   "name": "Mistwood Crossing",
-  "category": "zone",
   "mapId": "world",
   "x": 57.4,
   "y": 44.8,
@@ -203,10 +201,12 @@ Antes de abrir PR ou fechar uma issue de dados:
 
 ## Checklist rapido
 
-- `id`, `name`, `category`, `mapId`, `x` e `y` preenchidos.
+- `id`, `name`, `mapId`, `x` e `y` preenchidos.
 - `x` e `y` calculados em percentual a partir do canto superior esquerdo.
 - `area` preenchida quando a zona deve aparecer no filtro por regiao.
 - `resources` agrupado por `Fishing`, `Mining` e `Herbalism`.
+- `warpPoint`, `resources` e `monsters` preenchidos quando devem afetar estilo
+  visual ou filtros.
 - `tags` usadas apenas para termos extras de busca.
 - Marcador aparece, e o clique centraliza o mapa.
 - Dados novos foram adicionados apenas em JSON, sem alterar codigo.
