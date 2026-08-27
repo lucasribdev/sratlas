@@ -1,8 +1,9 @@
+import { useEffect } from 'react'
 import { CRS } from 'leaflet'
-import { ImageOverlay, MapContainer } from 'react-leaflet'
+import { ImageOverlay, MapContainer, useMap } from 'react-leaflet'
 import { maps } from '../../data/maps'
-import type { MarkerCategory } from '../../domain/category'
-import { mapBoundsFromDimensions } from '../../lib/coordinates'
+import type { MapMarker } from '../../domain/marker'
+import { mapBoundsFromDimensions, percentageToLeafletLatLng } from '../../lib/coordinates'
 import { MapMarkers } from './MapMarkers'
 
 const initialMap = maps[0]
@@ -11,10 +12,35 @@ const minZoom = -2
 const maxZoom = 2
 
 type MapPlaceholderProps = {
-  selectedCategoryIds: ReadonlySet<MarkerCategory['id']>
+  markers: MapMarker[]
+  onMarkerSelect: (markerId: MapMarker['id']) => void
+  selectedMarkerId?: MapMarker['id']
 }
 
-export function MapPlaceholder({ selectedCategoryIds }: MapPlaceholderProps) {
+type SelectedMarkerControllerProps = {
+  markers: MapMarker[]
+  selectedMarkerId?: MapMarker['id']
+}
+
+function SelectedMarkerController({ markers, selectedMarkerId }: SelectedMarkerControllerProps) {
+  const map = useMap()
+
+  useEffect(() => {
+    const selectedMarker = markers.find((marker) => marker.id === selectedMarkerId)
+
+    if (!selectedMarker) {
+      return
+    }
+
+    map.flyTo(percentageToLeafletLatLng(selectedMarker, initialMap), Math.max(map.getZoom(), 0), {
+      duration: 0.5,
+    })
+  }, [map, markers, selectedMarkerId])
+
+  return null
+}
+
+export function MapPlaceholder({ markers, onMarkerSelect, selectedMarkerId }: MapPlaceholderProps) {
   return (
     <div className="map-placeholder" aria-label={initialMap.name}>
       <MapContainer
@@ -31,7 +57,8 @@ export function MapPlaceholder({ selectedCategoryIds }: MapPlaceholderProps) {
         zoomSnap={0.25}
       >
         <ImageOverlay bounds={imageBounds} url={initialMap.imageUrl} />
-        <MapMarkers map={initialMap} selectedCategoryIds={selectedCategoryIds} />
+        <SelectedMarkerController markers={markers} selectedMarkerId={selectedMarkerId} />
+        <MapMarkers map={initialMap} markers={markers} onMarkerSelect={onMarkerSelect} />
       </MapContainer>
     </div>
   )

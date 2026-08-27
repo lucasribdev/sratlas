@@ -58,6 +58,10 @@ input:disabled {
   gap: 6px;
 }
 
+.sidebar-close {
+  display: none;
+}
+
 .app-kicker {
   margin: 0;
   color: #2f7f68;
@@ -147,6 +151,20 @@ p {
   gap: 10px;
 }
 
+.filter-group {
+  display: grid;
+  gap: 10px;
+}
+
+.filter-group h3 {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 .filter-option {
   display: flex;
   align-items: center;
@@ -159,6 +177,12 @@ p {
   width: 16px;
   height: 16px;
   accent-color: #2f7f68;
+}
+
+.filter-note {
+  color: #64748b;
+  font-size: 0.8125rem;
+  line-height: 1.4;
 }
 
 .result-count {
@@ -181,6 +205,52 @@ p {
   padding: 16px;
   font-size: 0.925rem;
   line-height: 1.5;
+}
+
+.result-list {
+  display: grid;
+  max-height: 280px;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  list-style: none;
+}
+
+.result-item {
+  border: 1px solid #d8e0e8;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.result-item button {
+  display: grid;
+  width: 100%;
+  gap: 3px;
+  border: 0;
+  background: transparent;
+  padding: 10px 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.result-item button:hover,
+.result-item button:focus-visible {
+  background: #eef6f3;
+  outline: none;
+}
+
+.result-item strong {
+  color: #1d2733;
+  font-size: 0.925rem;
+  line-height: 1.25;
+}
+
+.result-item span {
+  color: #64748b;
+  font-size: 0.8rem;
+  line-height: 1.35;
 }
 
 .map-panel {
@@ -250,7 +320,6 @@ p {
   line-height: 1.4;
 }
 
-.marker-popup__category,
 .marker-popup__warp {
   width: fit-content;
   border-radius: 999px;
@@ -351,7 +420,35 @@ p {
   }
 
   .sidebar {
-    display: none;
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 4;
+    display: flex;
+    width: min(360px, calc(100vw - 48px));
+    max-height: 100svh;
+    overflow: auto;
+    transform: translateX(-100%);
+    transition: transform 160ms ease;
+  }
+
+  .sidebar--mobile-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+  }
+
+  .sidebar-close {
+    display: inline-flex;
+    border: 1px solid #c4ced8;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #475569;
+    padding: 8px 10px;
+    font-size: 0.8125rem;
+    font-weight: 700;
   }
 
   .map-panel {

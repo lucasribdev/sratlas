@@ -15,8 +15,8 @@ O MVP deve permitir:
 - abrir o mapa;
 - navegar com pan e zoom;
 - ver marcadores;
-- filtrar por categoria;
-- pesquisar por nome;
+- filtrar por area/regiao e dados do marcador;
+- pesquisar por nome, area, monstros e recursos;
 - clicar em um marcador para ver detalhes;
 - abrir a pagina correspondente na wiki quando existir.
 

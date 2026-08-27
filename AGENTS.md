@@ -42,11 +42,9 @@ src/
     layout/
   data/
     maps.json
-    categories.json
     markers.json
   domain/
     marker.ts
-    category.ts
     map.ts
   lib/
     coordinates.ts
@@ -66,7 +64,7 @@ public/
 - O usuario deve conseguir encontrar NPCs, inimigos, areas e recursos com poucos cliques.
 - A busca e os filtros devem trabalhar juntos.
 - Clicar em um resultado de busca deve centralizar o mapa no marcador.
-- Todo marcador deve ter nome, categoria, mapa e coordenadas.
+- Todo marcador deve ter nome, mapa e coordenadas.
 - Link de wiki deve ser opcional, mas suportado desde o inicio.
 - Nao crie features de contribuicao publica antes de existir moderacao ou fluxo editorial.
 
@@ -85,7 +83,7 @@ public/
 - Desktop: sidebar com busca, filtros e resultados; mapa ocupa o restante.
 - Mobile: mapa como tela principal; busca no topo; filtros em drawer; detalhe em bottom sheet ou popup simples.
 - Evite telas explicativas. O mapa deve ser a primeira experiencia.
-- Use categorias visuais claras, com cores e icones distintos.
+- Use estilo visual claro derivado dos dados reais do marcador, como ponto de warp, recursos e monstros.
 - Nao sobrecarregue o mapa com informacao textual permanente.
 
 ## Qualidade

@@ -64,7 +64,7 @@ Status: MVP
 
 ## Milestone 3: Dados e marcadores
 
-Objetivo: carregar categorias e marcadores a partir de JSON estatico.
+Objetivo: carregar mapas e marcadores a partir de JSON estatico.
 
 ### Issues
 
@@ -74,9 +74,9 @@ Definir o mapa inicial, imagem e dimensoes.
 
 Status: MVP
 
-#### 10. Criar `categories.json`
+#### 10. Definir regra visual dos marcadores
 
-Definir categorias, cores e icones iniciais.
+Definir cores dos marcadores a partir de `warpPoint`, `resources`, `monsters` e fallback generico.
 
 Status: MVP
 
@@ -88,7 +88,7 @@ Status: MVP
 
 #### 12. Criar tipos TypeScript para dados
 
-Tipar mapas, categorias e marcadores.
+Tipar mapas e marcadores.
 
 Status: MVP
 
@@ -100,7 +100,7 @@ Status: MVP
 
 #### 14. Criar popup de marcador
 
-Mostrar nome, categoria, area, descricao curta e link da wiki.
+Mostrar nome, area, dados reais do marcador, descricao curta e link da wiki.
 
 Status: MVP
 
@@ -110,9 +110,9 @@ Objetivo: permitir que jogadores encontrem rapidamente pontos importantes.
 
 ### Issues
 
-#### 15. Criar filtro por categoria
+#### 15. Criar filtros rapidos por dados
 
-Permitir ligar/desligar categorias.
+Permitir filtrar por ponto de warp, monstros e tipos de recurso presentes nos marcadores.
 
 Status: MVP
 
@@ -184,7 +184,7 @@ Status: MVP
 
 #### 25. Validar dados iniciais
 
-Checar IDs duplicados, categorias inexistentes e coordenadas fora de faixa.
+Checar IDs duplicados, coordenadas fora de faixa e campos obrigatorios ausentes.
 
 Status: MVP
 

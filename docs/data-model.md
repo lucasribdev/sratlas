@@ -16,7 +16,6 @@ Estrutura recomendada para o MVP:
 ```text
 src/data/
   maps.json
-  categories.json
   markers.json
 ```
 
@@ -42,28 +41,6 @@ Campos sugeridos:
 | `width` | Sim | Largura original da imagem |
 | `height` | Sim | Altura original da imagem |
 
-## Categorias
-
-Campos sugeridos:
-
-```json
-{
-  "id": "boss",
-  "label": "Boss",
-  "group": "Enemies",
-  "color": "#dc2626",
-  "icon": "skull"
-}
-```
-
-| Campo | Obrigatorio | Descricao |
-| --- | --- | --- |
-| `id` | Sim | Identificador usado nos marcadores |
-| `label` | Sim | Nome exibido |
-| `group` | Nao | Agrupamento visual |
-| `color` | Sim | Cor da categoria |
-| `icon` | Nao | Nome do icone |
-
 ## Marcadores
 
 Campos minimos e campos opcionais recomendados:
@@ -72,7 +49,6 @@ Campos minimos e campos opcionais recomendados:
 {
   "id": "zone-ashen-hollow",
   "name": "Ashen Hollow",
-  "category": "area",
   "mapId": "world",
   "x": 58.2,
   "y": 31.7,
@@ -97,7 +73,6 @@ Campos minimos e campos opcionais recomendados:
 | --- | --- | --- |
 | `id` | Sim | Identificador unico |
 | `name` | Sim | Nome exibido |
-| `category` | Sim | Categoria existente em `categories.json` |
 | `mapId` | Sim | Mapa onde o marcador aparece |
 | `x` | Sim | Coordenada horizontal percentual |
 | `y` | Sim | Coordenada vertical percentual |
@@ -130,11 +105,40 @@ A busca inicial deve ser simples e funcionar sobre os dados estaticos em JSON. P
 
 - `name`
 - `area`
+- `zoneType`
 - `tags`
 - `monsters`
 - `resources`
 
 Em `resources`, a busca deve considerar tanto `type` quanto os valores de `items`, por exemplo `Fishing`, `Clam`, `Shrimp` e `Trout`.
+
+## Filtros do MVP
+
+O filtro principal da UI deve ser por area/regiao, usando os valores unicos de `area`
+presentes em `markers.json`.
+
+Filtros rapidos devem ser calculados diretamente dos marcadores:
+
+- Warp point: `warpPoint: true`;
+- Has monsters: `monsters` nao vazio;
+- Fishing: algum grupo `resources[].type === "Fishing"`;
+- Mining: algum grupo `resources[].type === "Mining"`;
+- Herbalism: algum grupo `resources[].type === "Herbalism"`.
+
+Nao crie agrupamento visual separado para cada monstro ou recurso. Nao separe entidades ainda.
+
+## Estilo visual dos marcadores
+
+No MVP, o estilo visual do marcador deve ser derivado dos dados reais do proprio
+marcador, sem campo dedicado no JSON:
+
+- `warpPoint: true`;
+- presenca de `resources`;
+- presenca de `monsters`;
+- fallback generico para zona/local.
+
+Essa regra evita manter uma classificacao paralela aos dados usados em busca, filtros e
+popup.
 
 ## Coordenadas
 
@@ -166,7 +170,6 @@ Map
 
 Marker
   belongs to Map
-  belongs to Category
   may reference Entity
 
 Entity
@@ -188,7 +191,6 @@ Relacoes importantes:
 Caso um backend seja adicionado:
 
 - `maps`
-- `marker_categories`
 - `markers`
 - `locations`
 - `npcs`

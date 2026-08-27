@@ -1,60 +1,122 @@
 import { useState } from 'react'
-import { categories } from '../../data/categories'
-import type { MarkerCategory } from '../../domain/category'
+import { markers } from '../../data/markers'
+import type { MapMarker } from '../../domain/marker'
+import {
+  markerAreaOptions,
+  markerMatchesQuickFilter,
+  quickFilters,
+  type QuickFilterId,
+} from '../../lib/marker-filters'
+import { markerMatchesSearch } from '../../lib/marker-search'
 import { MapPlaceholder } from '../map/MapPlaceholder'
 import { Sidebar } from './Sidebar'
 
-const allCategoryIds = categories.map((category) => category.id)
+const areaOptions = markerAreaOptions(markers)
 
 export function AppLayout() {
-  const [selectedCategoryIds, setSelectedCategoryIds] = useState<Set<MarkerCategory['id']>>(
-    () => new Set(allCategoryIds),
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedAreas, setSelectedAreas] = useState<Set<string>>(() => new Set())
+  const [selectedQuickFilters, setSelectedQuickFilters] = useState<Set<QuickFilterId>>(
+    () => new Set(),
+  )
+  const [selectedMarkerId, setSelectedMarkerId] = useState<MapMarker['id']>()
+  const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false)
+
+  const filteredMarkers = markers.filter(
+    (marker) =>
+      markerMatchesSearch(marker, searchQuery) &&
+      (selectedAreas.size === 0 || (marker.area ? selectedAreas.has(marker.area) : false)) &&
+      Array.from(selectedQuickFilters).every((filterId) =>
+        markerMatchesQuickFilter(marker, filterId),
+      ),
   )
 
-  function toggleCategory(categoryId: MarkerCategory['id']) {
-    setSelectedCategoryIds((currentCategoryIds) => {
-      const nextCategoryIds = new Set(currentCategoryIds)
+  function toggleArea(area: string) {
+    setSelectedAreas((currentAreas) => {
+      const nextAreas = new Set(currentAreas)
 
-      if (nextCategoryIds.has(categoryId)) {
-        nextCategoryIds.delete(categoryId)
+      if (nextAreas.has(area)) {
+        nextAreas.delete(area)
       } else {
-        nextCategoryIds.add(categoryId)
+        nextAreas.add(area)
       }
 
-      return nextCategoryIds
+      return nextAreas
     })
   }
 
-  function selectAllCategories() {
-    setSelectedCategoryIds(new Set(allCategoryIds))
+  function toggleQuickFilter(filterId: QuickFilterId) {
+    setSelectedQuickFilters((currentFilterIds) => {
+      const nextFilterIds = new Set(currentFilterIds)
+
+      if (nextFilterIds.has(filterId)) {
+        nextFilterIds.delete(filterId)
+      } else {
+        nextFilterIds.add(filterId)
+      }
+
+      return nextFilterIds
+    })
   }
 
-  function clearCategories() {
-    setSelectedCategoryIds(new Set())
+  function selectAllAreas() {
+    setSelectedAreas(new Set(areaOptions))
+  }
+
+  function clearFilters() {
+    setSelectedAreas(new Set())
+    setSelectedQuickFilters(new Set())
+  }
+
+  function selectMarker(markerId: MapMarker['id']) {
+    setSelectedMarkerId(markerId)
+    setIsMobileFiltersOpen(false)
   }
 
   return (
     <main className="app-shell">
       <Sidebar
-        categories={categories}
-        onClearCategories={clearCategories}
-        onSelectAllCategories={selectAllCategories}
-        onToggleCategory={toggleCategory}
-        selectedCategoryIds={selectedCategoryIds}
+        areaOptions={areaOptions}
+        isMobileOpen={isMobileFiltersOpen}
+        onClearFilters={clearFilters}
+        onCloseMobileFilters={() => setIsMobileFiltersOpen(false)}
+        onMarkerSelect={selectMarker}
+        onSearchQueryChange={setSearchQuery}
+        onSelectAllAreas={selectAllAreas}
+        onToggleArea={toggleArea}
+        onToggleQuickFilter={toggleQuickFilter}
+        quickFilters={quickFilters}
+        markers={filteredMarkers}
+        searchQuery={searchQuery}
+        selectedAreas={selectedAreas}
+        selectedQuickFilters={selectedQuickFilters}
       />
 
       <section className="map-panel" aria-label="Area principal do mapa">
         <div className="mobile-toolbar" aria-label="Controles compactos">
           <label className="search-control search-control--compact">
             <span className="visually-hidden">Buscar no mapa</span>
-            <input type="search" placeholder="Buscar NPC, area ou recurso" disabled />
+            <input
+              type="search"
+              placeholder="Buscar NPC, area ou recurso"
+              value={searchQuery}
+              onChange={(event) => setSearchQuery(event.target.value)}
+            />
           </label>
-          <button className="toolbar-button" type="button" disabled>
+          <button
+            className="toolbar-button"
+            type="button"
+            onClick={() => setIsMobileFiltersOpen(true)}
+          >
             Filtros
           </button>
         </div>
 
-        <MapPlaceholder selectedCategoryIds={selectedCategoryIds} />
+        <MapPlaceholder
+          markers={filteredMarkers}
+          onMarkerSelect={selectMarker}
+          selectedMarkerId={selectedMarkerId}
+        />
       </section>
     </main>
   )

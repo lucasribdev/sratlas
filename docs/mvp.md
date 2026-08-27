@@ -26,7 +26,8 @@ Jogadores que querem localizar algo no mundo do jogo sem procurar em varias pagi
 | Mapa navegavel com pan e zoom | MVP |
 | Marcadores no mapa | MVP |
 | Popup ou painel de detalhes | MVP |
-| Filtro por categoria | MVP |
+| Filtro por area/regiao | MVP |
+| Filtros rapidos por dados da area | MVP |
 | Busca por nome | MVP |
 | Lista de resultados da busca | MVP |
 | Link para wiki | MVP |
@@ -43,38 +44,13 @@ Jogadores que querem localizar algo no mundo do jogo sem procurar em varias pagi
 | Comentarios | Opcional |
 | Rotas automaticas | Opcional |
 
-## Categorias iniciais
-
-Versao enxuta recomendada:
-
-- Local
-- Dungeon
-- Teleport
-- NPC
-- Merchant
-- Quest NPC
-- Monstro
-- Elite
-- Boss
-- Recurso
-- Ponto de coleta
-- Outro
-
-Se a interface ficar carregada, agrupe visualmente:
-
-- Locations: Local, Dungeon, Teleport
-- NPCs: NPC, Merchant, Quest NPC
-- Enemies: Monstro, Elite, Boss
-- Gathering: Recurso, Ponto de coleta
-- Other: Outro
-
 ## Tela principal
 
 Desktop:
 
 ```text
 Busca
-Sidebar: filtros, categorias e resultados
+Sidebar: filtros por area, filtros rapidos e resultados
 Mapa: marcadores, zoom e detalhe selecionado
 ```
 
@@ -91,11 +67,11 @@ Detalhe do marcador em popup ou bottom sheet
 
 1. Usuario abre o mapa.
 2. O mapa carrega com marcadores visiveis.
-3. Usuario filtra por categoria ou pesquisa por nome.
+3. Usuario filtra por area/regiao, liga filtros rapidos ou pesquisa por texto.
 4. A lista de resultados atualiza.
 5. Usuario clica em um marcador ou resultado.
 6. O mapa centraliza no marcador selecionado.
-7. O detalhe mostra nome, categoria, area, descricao curta e link da wiki.
+7. O detalhe mostra nome, area, tipo de zona, dados reais do marcador, descricao curta e link da wiki.
 
 ## Busca e filtros
 
@@ -103,23 +79,39 @@ Busca do MVP:
 
 - campo unico;
 - busca por nome;
-- busca tambem por area e tags;
+- busca tambem por area, tipo de zona, tags, monstros e recursos;
 - case-insensitive;
 - resultado clicavel;
 - mensagem simples para nenhum resultado.
 
 Filtros do MVP:
 
-- checkboxes por categoria;
-- opcao para selecionar todas;
+- checkboxes por area/regiao derivados dos marcadores;
+- filtros rapidos derivados dos campos dos marcadores:
+  - Warp point: `warpPoint: true`;
+  - Has monsters: `monsters` nao vazio;
+  - Fishing: algum grupo `resources[].type === "Fishing"`;
+  - Mining: algum grupo `resources[].type === "Mining"`;
+  - Herbalism: algum grupo `resources[].type === "Herbalism"`;
+- opcao para selecionar todas as areas;
 - opcao para limpar;
 - filtros combinam com a busca.
+
+Estilo visual dos marcadores:
+
+- usar `warpPoint: true` quando existir;
+- senao, usar a presenca de `resources`;
+- senao, usar a presenca de `monsters`;
+- senao, usar fallback generico para zona/local.
 
 Regra:
 
 ```text
-um marcador aparece se a categoria esta ativa
-E o texto buscado corresponde ao nome, area ou tags
+um marcador aparece se a area esta ativa, ou nenhuma area esta selecionada
+E todos os filtros rapidos ativos correspondem aos dados do marcador
+E o texto buscado corresponde aos campos buscaveis
+
+Sem busca e sem filtros ativos, todos os marcadores aparecem.
 ```
 
 ## Criterios de pronto
@@ -143,9 +135,10 @@ Primeiro lancamento possivel:
 
 - um mapa do mundo;
 - 30 a 50 marcadores reais;
-- categorias principais;
+- areas principais;
 - busca por nome;
-- filtro por categoria;
+- filtro por area/regiao;
+- filtros rapidos;
 - popup simples;
 - link para wiki;
 - dados em JSON.

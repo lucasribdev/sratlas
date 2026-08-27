@@ -2,14 +2,13 @@
   {
     "id": "spawn",
     "name": "Spawn",
-    "category": "local",
     "mapId": "world",
     "x": 50,
     "y": 53,
-    "area": "World Map",
+    "area": "Spawn",
     "zoneType": "Surface zone",
     "level": "0",
-    "monsters": ["None"],
+    "monsters": [],
     "resources": [
       {
         "type": "Fishing",
@@ -17,127 +16,223 @@
       }
     ],
     "warpPoint": true,
-    "tags": ["placeholder", "local"]
+    "description": "Surface zone level 0 with fishing resources and a warp point. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "spawn",
+      "surface zone",
+      "level 0",
+      "fishing",
+      "clam",
+      "shrimp",
+      "trout",
+      "warp",
+      "warp point",
+      "temporary coordinates"
+    ]
   },
   {
-    "id": "placeholder-dungeon-north",
-    "name": "Dungeon placeholder",
-    "category": "dungeon",
+    "id": "outskirts-south",
+    "name": "Outskirts south",
     "mapId": "world",
     "x": 48,
-    "y": 18,
-    "area": "Northern Region",
-    "description": "Placeholder controlado para validar a categoria Dungeon.",
-    "tags": ["placeholder", "dungeon"]
+    "y": 61,
+    "area": "Outskirts south",
+    "zoneType": "Surface zone",
+    "level": "7",
+    "monsters": ["Hopper", "Jel", "Pin Pin"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Stone", "Salt"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Wheat", "Green Herb", "Red Herb", "Blue Herb", "Wood (trees)"]
+      }
+    ],
+    "description": "Surface zone level 7 with Hopper, Jel, Pin Pin, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "outskirts south",
+      "surface zone",
+      "level 7",
+      "hopper",
+      "jel",
+      "pin pin",
+      "mining",
+      "stone",
+      "salt",
+      "herbalism",
+      "wheat",
+      "green herb",
+      "red herb",
+      "blue herb",
+      "wood",
+      "trees",
+      "temporary coordinates"
+    ]
   },
   {
-    "id": "placeholder-teleport-east",
-    "name": "Teleport placeholder",
-    "category": "teleport",
-    "mapId": "world",
-    "x": 72,
-    "y": 44,
-    "area": "Eastern Region",
-    "description": "Placeholder controlado para validar a categoria Teleport.",
-    "tags": ["placeholder", "teleport"]
-  },
-  {
-    "id": "placeholder-npc-town",
-    "name": "NPC placeholder",
-    "category": "npc",
-    "mapId": "world",
-    "x": 39,
-    "y": 57,
-    "area": "Town Area",
-    "description": "Placeholder controlado para validar a categoria NPC.",
-    "tags": ["placeholder", "npc"]
-  },
-  {
-    "id": "placeholder-merchant-town",
-    "name": "Merchant placeholder",
-    "category": "merchant",
+    "id": "plains-cave",
+    "name": "Plains cave",
     "mapId": "world",
     "x": 42,
-    "y": 60,
-    "area": "Town Area",
-    "description": "Placeholder controlado para validar a categoria Merchant.",
-    "tags": ["placeholder", "merchant"]
+    "y": 66,
+    "area": "Plains cave",
+    "zoneType": "Surface zone",
+    "level": "15",
+    "monsters": ["Cursed Slime", "Gilded Slime"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          "Blue Shard",
+          "Red Shard",
+          "Yellow Shard",
+          "Red Crystal",
+          "Blue Crystal",
+          "Yellow Crystal"
+        ]
+      }
+    ],
+    "description": "Surface zone level 15 with slime monsters and mining resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "plains cave",
+      "surface zone",
+      "level 15",
+      "cursed slime",
+      "gilded slime",
+      "mining",
+      "blue shard",
+      "red shard",
+      "yellow shard",
+      "red crystal",
+      "blue crystal",
+      "yellow crystal",
+      "temporary coordinates"
+    ]
   },
   {
-    "id": "placeholder-quest-npc-town",
-    "name": "Quest NPC placeholder",
-    "category": "quest-npc",
+    "id": "shell-beach",
+    "name": "Shell beach",
     "mapId": "world",
-    "x": 45,
-    "y": 55,
-    "area": "Town Area",
-    "description": "Placeholder controlado para validar a categoria Quest NPC.",
-    "tags": ["placeholder", "quest"]
+    "x": 66,
+    "y": 73,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "17",
+    "monsters": ["Pimchy", "Snapper", "Crusher"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Sea Grapes", "Coconut (trees)", "Coconut Wood (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Quartz", "Stone"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Glowfish",
+          "Electray",
+          "Starfish",
+          "Clownfish",
+          "Ice Salmon",
+          "Exotic Tuna",
+          "Seaweed",
+          "Clam",
+          "Shrimp"
+        ]
+      }
+    ],
+    "description": "Ocean surface zone level 17 with Pimchy, Snapper, Crusher, and fishing, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "shell beach",
+      "ocean",
+      "surface zone",
+      "level 17",
+      "pimchy",
+      "snapper",
+      "crusher",
+      "herbalism",
+      "sea grapes",
+      "coconut",
+      "coconut wood",
+      "trees",
+      "mining",
+      "quartz",
+      "stone",
+      "fishing",
+      "glowfish",
+      "electray",
+      "starfish",
+      "clownfish",
+      "ice salmon",
+      "exotic tuna",
+      "seaweed",
+      "clam",
+      "shrimp",
+      "temporary coordinates"
+    ]
   },
   {
-    "id": "placeholder-monstro-west",
-    "name": "Monstro placeholder",
-    "category": "monstro",
+    "id": "lost-peak",
+    "name": "Lost peak",
     "mapId": "world",
-    "x": 25,
-    "y": 48,
-    "area": "Western Region",
-    "description": "Placeholder controlado para validar a categoria Monstro.",
-    "tags": ["placeholder", "monstro"]
-  },
-  {
-    "id": "placeholder-elite-southwest",
-    "name": "Elite placeholder",
-    "category": "elite",
-    "mapId": "world",
-    "x": 31,
-    "y": 74,
-    "area": "Southwestern Region",
-    "description": "Placeholder controlado para validar a categoria Elite.",
-    "tags": ["placeholder", "elite"]
-  },
-  {
-    "id": "placeholder-boss-northeast",
-    "name": "Boss placeholder",
-    "category": "boss",
-    "mapId": "world",
-    "x": 79,
-    "y": 23,
-    "area": "Northeastern Region",
-    "description": "Placeholder controlado para validar a categoria Boss.",
-    "tags": ["placeholder", "boss"]
-  },
-  {
-    "id": "placeholder-recurso-south",
-    "name": "Recurso placeholder",
-    "category": "recurso",
-    "mapId": "world",
-    "x": 52,
-    "y": 82,
-    "area": "Southern Region",
-    "description": "Placeholder controlado para validar a categoria Recurso.",
-    "tags": ["placeholder", "recurso"]
-  },
-  {
-    "id": "placeholder-ponto-coleta-southeast",
-    "name": "Ponto de coleta placeholder",
-    "category": "ponto-coleta",
-    "mapId": "world",
-    "x": 68,
-    "y": 76,
-    "area": "Southeastern Region",
-    "description": "Placeholder controlado para validar a categoria Ponto de coleta.",
-    "tags": ["placeholder", "coleta"]
-  },
-  {
-    "id": "placeholder-outro-south",
-    "name": "Outro placeholder",
-    "category": "outro",
-    "mapId": "world",
-    "x": 58,
-    "y": 68,
-    "area": "World Map",
-    "description": "Placeholder controlado para validar a categoria Outro.",
-    "tags": ["placeholder", "outro"]
+    "x": 38,
+    "y": 24,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": "76",
+    "monsters": ["Fernek", "Kiwi"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Ancient Fern", "Censhroom", "Eon Fruit (trees)", "Eon Wood (trees)"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Spookee",
+          "Abyssal Leech",
+          "Abyssal Urchin",
+          "Abyssal Octopus",
+          "Wolf Fish"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "description": "Plains surface zone level 76 with Fernek, Kiwi, gathering resources, and a warp point. Coordinates are temporary approximations for MVP visual validation.",
+    "tags": [
+      "lost peak",
+      "plains",
+      "surface zone",
+      "level 76",
+      "fernek",
+      "kiwi",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "eon wood",
+      "trees",
+      "fishing",
+      "spookee",
+      "abyssal leech",
+      "abyssal urchin",
+      "abyssal octopus",
+      "wolf fish",
+      "warp",
+      "warp point",
+      "temporary coordinates"
+    ]
   }
 ]
