@@ -10,10 +10,8 @@ import { cn } from '../../lib/utils'
 
 type SidebarProps = {
   areaOptions: string[]
-  isMobileOpen: boolean
   markers: MapMarker[]
   onClearFilters: () => void
-  onCloseMobileFilters: () => void
   onMarkerSelect: (markerId: MapMarker['id']) => void
   onSearchQueryChange: (query: string) => void
   onSelectAllAreas: () => void
@@ -27,10 +25,8 @@ type SidebarProps = {
 
 export function Sidebar({
   areaOptions,
-  isMobileOpen,
   markers,
   onClearFilters,
-  onCloseMobileFilters,
   onMarkerSelect,
   onSearchQueryChange,
   onSelectAllAreas,
@@ -44,29 +40,16 @@ export function Sidebar({
   return (
     <aside
       className={cn(
-        'z-[1] flex w-[360px] min-w-80 flex-col gap-5 border-r border-border bg-background p-6 shadow-[8px_0_24px_rgb(30_41_59_/_0.08)]',
-        'max-[760px]:fixed max-[760px]:inset-y-0 max-[760px]:left-0 max-[760px]:z-[1100] max-[760px]:w-[min(360px,calc(100vw-48px))] max-[760px]:max-h-svh max-[760px]:overflow-auto max-[760px]:transition-transform max-[760px]:duration-150',
-        isMobileOpen
-          ? 'max-[760px]:translate-x-0'
-          : 'max-[760px]:-translate-x-[calc(100%+16px)]',
+        'flex h-full w-full min-w-0 flex-col gap-5 bg-background p-5',
+        'min-[761px]:w-[360px] min-[761px]:min-w-80 min-[761px]:border-r min-[761px]:border-border min-[761px]:p-6 min-[761px]:shadow-[8px_0_24px_rgb(30_41_59_/_0.08)]',
       )}
       aria-label="Busca, filtros e resultados"
     >
-      <header className="grid gap-1.5 max-[760px]:grid-cols-[minmax(0,1fr)_auto] max-[760px]:items-start">
+      <header className="grid gap-1.5">
         <div className="grid gap-1">
           <p className="text-xs font-bold tracking-normal text-primary uppercase">Soul's Remnant</p>
           <h1 className="text-2xl leading-tight font-bold text-foreground">Mapa Interativo</h1>
         </div>
-        <Button
-          className="hidden max-[760px]:inline-flex"
-          type="button"
-          variant="outline"
-          size="sm"
-          onClick={onCloseMobileFilters}
-          aria-label="Fechar filtros"
-        >
-          Fechar
-        </Button>
       </header>
 
       <label className="grid gap-2 text-sm font-semibold text-foreground">

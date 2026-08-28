@@ -77,13 +77,6 @@ input:disabled {
   cursor: not-allowed;
 }
 
-.app-shell {
-  display: flex;
-  min-height: 100svh;
-  overflow: hidden;
-  background: #eef2f5;
-}
-
 h1,
 h2 {
   margin: 0;
@@ -110,55 +103,10 @@ p {
   line-height: 1.5;
 }
 
-.search-control {
-  display: grid;
-  gap: 8px;
-  color: #334155;
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.search-control input {
-  width: 100%;
-  border: 1px solid #c4ced8;
-  border-radius: 8px;
-  background: #ffffff;
-  color: #1d2733;
-  padding: 12px 14px;
-}
-
-.search-control input::placeholder {
-  color: #7a8795;
-}
-
-.toolbar-button {
-  border: 1px solid #c4ced8;
-  border-radius: 8px;
-  background: #ffffff;
-  color: #475569;
-  padding: 9px 12px;
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.map-panel {
-  position: relative;
-  display: flex;
-  min-width: 0;
-  flex: 1;
-  padding: 18px;
-}
-
-.mobile-toolbar {
-  display: none;
-}
-
 .map-placeholder {
   display: flex;
   min-width: 0;
   flex: 1;
-  border: 1px solid #b9c5d0;
-  border-radius: 8px;
   background: #16202a;
   overflow: hidden;
 }
@@ -289,53 +237,6 @@ p {
   font-size: 0.875rem;
   font-weight: 700;
   text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-@media (max-width: 760px) {
-  .app-shell {
-    display: block;
-  }
-
-  .map-panel {
-    min-height: 100svh;
-    padding: 12px;
-  }
-
-  .mobile-toolbar {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    right: 24px;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 8px;
-  }
-
-  .search-control--compact {
-    gap: 0;
-  }
-
-  .search-control--compact input,
-  .toolbar-button {
-    min-height: 44px;
-    box-shadow: 0 10px 24px rgb(30 41 59 / 0.14);
-  }
-
-  .map-placeholder {
-    min-height: calc(100svh - 24px);
-  }
 }
 
 @theme inline {

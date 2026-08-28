@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { SlidersHorizontal } from 'lucide-react'
 import { markers } from '../../data/markers'
 import type { MapMarker } from '../../domain/marker'
 import {
@@ -9,6 +10,16 @@ import {
 } from '../../lib/marker-filters'
 import { markerMatchesSearch } from '../../lib/marker-search'
 import { GameMapView } from '../map/GameMapView'
+import { Button } from '../ui/button'
+import { Input } from '../ui/input'
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '../ui/sheet'
 import { Sidebar } from './Sidebar'
 
 const areaOptions = markerAreaOptions(markers)
@@ -74,42 +85,78 @@ export function AppLayout() {
   }
 
   return (
-    <main className="app-shell">
-      <Sidebar
-        areaOptions={areaOptions}
-        isMobileOpen={isMobileFiltersOpen}
-        onClearFilters={clearFilters}
-        onCloseMobileFilters={() => setIsMobileFiltersOpen(false)}
-        onMarkerSelect={selectMarker}
-        onSearchQueryChange={setSearchQuery}
-        onSelectAllAreas={selectAllAreas}
-        onToggleArea={toggleArea}
-        onToggleQuickFilter={toggleQuickFilter}
-        quickFilters={quickFilters}
-        markers={filteredMarkers}
-        searchQuery={searchQuery}
-        selectedAreas={selectedAreas}
-        selectedQuickFilters={selectedQuickFilters}
-      />
+    <main className="flex h-svh min-h-svh overflow-hidden bg-muted">
+      <div className="hidden min-[761px]:flex">
+        <Sidebar
+          areaOptions={areaOptions}
+          onClearFilters={clearFilters}
+          onMarkerSelect={selectMarker}
+          onSearchQueryChange={setSearchQuery}
+          onSelectAllAreas={selectAllAreas}
+          onToggleArea={toggleArea}
+          onToggleQuickFilter={toggleQuickFilter}
+          quickFilters={quickFilters}
+          markers={filteredMarkers}
+          searchQuery={searchQuery}
+          selectedAreas={selectedAreas}
+          selectedQuickFilters={selectedQuickFilters}
+        />
+      </div>
 
-      <section className="map-panel" aria-label="Area principal do mapa">
-        <div className="mobile-toolbar" aria-label="Controles compactos">
-          <label className="search-control search-control--compact">
-            <span className="visually-hidden">Buscar no mapa</span>
-            <input
+      <section className="relative flex min-w-0 flex-1" aria-label="Area principal do mapa">
+        <div
+          className="absolute top-3 right-3 left-3 z-[500] grid grid-cols-[minmax(0,1fr)_auto] gap-2 min-[761px]:hidden"
+          aria-label="Controles compactos"
+        >
+          <label className="grid min-w-0">
+            <span className="sr-only">Buscar no mapa</span>
+            <Input
+              className="h-11 bg-background shadow-lg shadow-slate-950/15"
               type="search"
               placeholder="Buscar NPC, area ou recurso"
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
             />
           </label>
-          <button
-            className="toolbar-button"
-            type="button"
-            onClick={() => setIsMobileFiltersOpen(true)}
-          >
-            Filtros
-          </button>
+          <Sheet open={isMobileFiltersOpen} onOpenChange={setIsMobileFiltersOpen}>
+            <SheetTrigger
+              render={
+                <Button
+                  className="h-11 shadow-lg shadow-slate-950/15"
+                  type="button"
+                  variant="outline"
+                />
+              }
+            >
+              <SlidersHorizontal aria-hidden="true" />
+              Filtros
+            </SheetTrigger>
+            <SheetContent
+              className="w-[min(390px,calc(100vw-32px))] max-w-none gap-0 p-0"
+              side="left"
+            >
+              <SheetHeader className="sr-only">
+                <SheetTitle>Busca, filtros e resultados</SheetTitle>
+                <SheetDescription>
+                  Painel para buscar marcadores, combinar filtros e abrir resultados no mapa.
+                </SheetDescription>
+              </SheetHeader>
+              <Sidebar
+                areaOptions={areaOptions}
+                onClearFilters={clearFilters}
+                onMarkerSelect={selectMarker}
+                onSearchQueryChange={setSearchQuery}
+                onSelectAllAreas={selectAllAreas}
+                onToggleArea={toggleArea}
+                onToggleQuickFilter={toggleQuickFilter}
+                quickFilters={quickFilters}
+                markers={filteredMarkers}
+                searchQuery={searchQuery}
+                selectedAreas={selectedAreas}
+                selectedQuickFilters={selectedQuickFilters}
+              />
+            </SheetContent>
+          </Sheet>
         </div>
 
         <GameMapView
