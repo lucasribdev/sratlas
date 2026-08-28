@@ -66,7 +66,6 @@ veja o [Guia de marcadores](./markers-guide.md).
     }
   ],
   "warpPoint": true,
-  "description": "Area de superficie com monstros iniciais e ponto de warp.",
   "wikiUrl": "/wiki/Ashen_Hollow",
   "tags": ["area", "surface", "ashen hollow"]
 }
@@ -85,7 +84,6 @@ veja o [Guia de marcadores](./markers-guide.md).
 | `monsters` | Nao | Lista de monstros encontrados na area |
 | `resources` | Nao | Lista de grupos de recursos por profissao ou tipo de coleta |
 | `warpPoint` | Nao | Indica se a area tem ponto de warp |
-| `description` | Nao | Descricao curta |
 | `wikiUrl` | Nao | Link para wiki |
 | `tags` | Nao | Termos auxiliares de busca |
 
@@ -98,7 +96,12 @@ Formato recomendado para `resources`:
 }
 ```
 
-Use `zoneType`, `level`, `monsters`, `resources` e `warpPoint` quando o marcador representar uma area ou zona navegavel do mapa, e nao apenas um ponto isolado como NPC, boss, merchant ou entrada. Esses campos devem continuar simples no MVP para que os dados possam ficar em JSON estatico e sejam faceis de manter.
+Use `area`, `zoneType`, `level`, `monsters`, `resources`, `warpPoint`, `wikiUrl`
+e `tags` para registrar dados importantes do marcador de forma estruturada. Use
+esses campos quando o marcador representar uma area ou zona navegavel do mapa, e
+nao apenas um ponto isolado como NPC, boss, merchant ou entrada. Esses campos
+devem continuar simples no MVP para que os dados possam ficar em JSON estatico e
+sejam faceis de manter.
 
 Nao separe monstros, recursos ou entidades em arquivos/tabelas proprias ainda. Entidades separadas ficam para depois do MVP, quando houver dados suficientes e duplicacao real para justificar a mudanca.
 

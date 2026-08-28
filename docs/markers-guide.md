@@ -48,9 +48,11 @@ marcador:
 | `monsters` | Lista simples de monstros encontrados na zona. |
 | `resources` | Grupos de recursos por tipo de coleta. |
 | `warpPoint` | `true` quando a zona tem ponto de warp. Omita quando nao tiver. |
-| `description` | Descricao curta com os dados mais importantes da zona. |
 | `wikiUrl` | Link opcional para a wiki. |
 | `tags` | Termos extras para melhorar a busca. |
+
+Dados importantes devem entrar em campos estruturados do marcador: `area`,
+`zoneType`, `level`, `monsters`, `resources`, `warpPoint`, `wikiUrl` e `tags`.
 
 Nao separe NPCs, monstros, itens ou recursos em outros arquivos ainda. Isso fica
 para depois do MVP, quando houver duplicacao real e dados suficientes.
@@ -141,8 +143,8 @@ No MVP, coordenadas aproximadas sao aceitaveis quando ainda nao houver medicao
 precisa. Nesse caso:
 
 - posicione o marcador no centro aproximado da zona;
-- deixe a descricao indicar que a coordenada e temporaria, se isso ajudar a
-  revisao;
+- use `tags` para indicar coordenadas temporarias somente se isso ajudar a
+  revisao ou a busca;
 - ajuste depois quando houver imagem, print ou referencia melhor;
 - nao bloqueie a inclusao de uma zona util apenas por falta de coordenada
   perfeita.
@@ -177,7 +179,6 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
     }
   ],
   "warpPoint": true,
-  "description": "Mistwood surface zone with monsters, gathering resources, and a warp point. Coordinates are approximate for MVP validation.",
   "wikiUrl": "/wiki/Mistwood_Crossing",
   "tags": ["mist wood", "crossing", "forest", "temporary coordinates"]
 }
@@ -195,7 +196,7 @@ Antes de abrir PR ou fechar uma issue de dados:
    a intencao for ativar filtros rapidos.
 6. Pesquise pelo nome da zona, area, monstro e recurso principal.
 7. Clique no resultado e confirme que o mapa centraliza no marcador.
-8. Abra o popup e confira nome, dados da zona, descricao e link da wiki quando
+8. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
    existir.
 9. Verifique pelo menos uma tela desktop e uma mobile.
 

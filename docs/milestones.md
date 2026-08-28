@@ -100,7 +100,7 @@ Status: MVP
 
 #### 14. Criar popup de marcador
 
-Mostrar nome, area, dados reais do marcador, descricao curta e link da wiki.
+Mostrar nome, area, dados estruturados do marcador e link da wiki.
 
 Status: MVP
 

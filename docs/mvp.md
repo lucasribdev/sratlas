@@ -71,7 +71,7 @@ Detalhe do marcador em popup ou bottom sheet
 4. A lista de resultados atualiza.
 5. Usuario clica em um marcador ou resultado.
 6. O mapa centraliza no marcador selecionado.
-7. O detalhe mostra nome, area, tipo de zona, dados reais do marcador, descricao curta e link da wiki.
+7. O detalhe mostra nome, area, tipo de zona, dados estruturados do marcador e link da wiki.
 
 ## Busca e filtros
 
