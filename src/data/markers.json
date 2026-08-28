@@ -2967,5 +2967,1053 @@
       "warp",
       "warp point"
     ]
+  },
+  {
+    "id": "pyramid",
+    "name": "Pyramid",
+    "mapId": "world",
+    "x": 88.6,
+    "y": 37.6,
+    "area": "Pyramid",
+    "zoneType": "Surface zone",
+    "level": "0",
+    "monsters": [],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Bismuth", "Ruby"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Desert Sage",
+          "Desert Flower",
+          "Desert Rose",
+          "Cactus Fruit (trees)",
+          "Cactus (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "pyramid",
+      "desert",
+      "surface zone",
+      "level 0",
+      "mining",
+      "bismuth",
+      "ruby",
+      "herbalism",
+      "desert sage",
+      "desert flower",
+      "desert rose",
+      "cactus fruit",
+      "trees",
+      "cactus",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "banana-farm",
+    "name": "Banana farm",
+    "mapId": "world",
+    "x": 68.6,
+    "y": 56.4,
+    "area": "Banana farm",
+    "zoneType": "Surface zone",
+    "level": "25",
+    "monsters": ["Bananek", "Overripe Bananek"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Iron Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Aloe Vera", "Pineapple", "Acacia Wood (trees)"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "banana farm",
+      "surface zone",
+      "level 25",
+      "bananek",
+      "overripe bananek",
+      "mining",
+      "iron ore",
+      "herbalism",
+      "aloe vera",
+      "pineapple",
+      "acacia wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "misty-forest-1",
+    "name": "Misty forest 1",
+    "mapId": "world",
+    "x": 64,
+    "y": 63,
+    "area": "Misty Forest",
+    "zoneType": "Surface zone",
+    "level": "27",
+    "monsters": ["Monoghoul"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Petrified Wood"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Lantern Bulb", "Misty Fruit (trees)", "Misty Wood (trees)"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "misty forest 1",
+      "misty forest",
+      "surface zone",
+      "level 27",
+      "monoghoul",
+      "mining",
+      "petrified wood",
+      "herbalism",
+      "lantern bulb",
+      "misty fruit",
+      "trees",
+      "misty wood",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "misty-forest-2",
+    "name": "Misty forest 2",
+    "mapId": "world",
+    "x": 57.8,
+    "y": 65.3,
+    "area": "Misty Forest",
+    "zoneType": "Surface zone",
+    "level": "27",
+    "monsters": ["Sadling", "Monoghoul"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Petrified Wood"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Lantern Bulb", "Misty Fruit (trees)", "Misty Wood (trees)"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Clownfish", "Seaweed", "Starfish"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "misty forest 2",
+      "misty forest",
+      "surface zone",
+      "level 27",
+      "sadling",
+      "monoghoul",
+      "mining",
+      "petrified wood",
+      "herbalism",
+      "lantern bulb",
+      "misty fruit",
+      "trees",
+      "misty wood",
+      "fishing",
+      "clownfish",
+      "seaweed",
+      "starfish",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "misty-forest-3",
+    "name": "Misty forest 3",
+    "mapId": "world",
+    "x": 49.5,
+    "y": 63.8,
+    "area": "Misty Forest",
+    "zoneType": "Surface zone",
+    "level": "29",
+    "monsters": ["Sadling", "Dark Pumpkin"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Petrified Wood"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Lantern Bulb", "Misty Fruit (trees)", "Misty Wood (trees)"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "misty forest 3",
+      "misty forest",
+      "surface zone",
+      "level 29",
+      "sadling",
+      "dark pumpkin",
+      "mining",
+      "petrified wood",
+      "herbalism",
+      "lantern bulb",
+      "misty fruit",
+      "trees",
+      "misty wood",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "lost-forest",
+    "name": "Lost Forest",
+    "mapId": "world",
+    "x": 53,
+    "y": 67.2,
+    "area": "Lost Forest",
+    "zoneType": "Surface zone",
+    "level": "30",
+    "monsters": ["Monoghoul", "Denial", "Sadling"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Petrified Wood"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Lantern Bulb", "Misty Fruit (trees)", "Misty Wood (trees)"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Clownfish", "Seaweed", "Starfish"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "lost forest",
+      "misty forest",
+      "surface zone",
+      "level 30",
+      "monoghoul",
+      "denial",
+      "sadling",
+      "mining",
+      "petrified wood",
+      "herbalism",
+      "lantern bulb",
+      "misty fruit",
+      "trees",
+      "misty wood",
+      "fishing",
+      "clownfish",
+      "seaweed",
+      "starfish",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "sulfuric-plains-1",
+    "name": "Sulfuric plains 1",
+    "mapId": "world",
+    "x": 44,
+    "y": 63,
+    "area": "Sulfuric Plains",
+    "zoneType": "Surface zone",
+    "level": "32",
+    "monsters": ["Stinky Sheep"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Sulfuric powder"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Silver Leaf",
+          "Yellow Garlic",
+          "Sulfuric Wood (trees)",
+          "Spot Tomato (trees)"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "sulfuric plains 1",
+      "sulfuric plains",
+      "surface zone",
+      "level 32",
+      "stinky sheep",
+      "mining",
+      "sulfuric powder",
+      "herbalism",
+      "silver leaf",
+      "yellow garlic",
+      "sulfuric wood",
+      "trees",
+      "spot tomato",
+      "warp",
+      "warp point",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "sulfuric-plains-2",
+    "name": "Sulfuric plains 2",
+    "mapId": "world",
+    "x": 40.4,
+    "y": 61.2,
+    "area": "Sulfuric Plains",
+    "zoneType": "Surface zone",
+    "level": "33",
+    "monsters": ["Spot Slime", "Stinky Sheep"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Sulfuric powder"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Silver Leaf",
+          "Yellow Garlic",
+          "Sulfuric Wood (trees)",
+          "Spot Tomato (trees)"
+        ]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Trout", "Sulfur Squid", "Clownfish", "Seaweed"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "sulfuric plains 2",
+      "sulfuric plains",
+      "surface zone",
+      "level 33",
+      "spot slime",
+      "stinky sheep",
+      "mining",
+      "sulfuric powder",
+      "herbalism",
+      "silver leaf",
+      "yellow garlic",
+      "sulfuric wood",
+      "trees",
+      "spot tomato",
+      "fishing",
+      "trout",
+      "sulfur squid",
+      "clownfish",
+      "seaweed",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "sulfuric-plains-3",
+    "name": "Sulfuric plains 3",
+    "mapId": "world",
+    "x": 37,
+    "y": 58,
+    "area": "Sulfuric Plains",
+    "zoneType": "Surface zone",
+    "level": "35",
+    "monsters": ["Licke", "Spot Slime"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Sulfuric powder"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Silver Leaf",
+          "Yellow Garlic",
+          "Sulfuric Wood (trees)",
+          "Spot Tomato (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "sulfuric plains 3",
+      "sulfuric plains",
+      "surface zone",
+      "level 35",
+      "licke",
+      "spot slime",
+      "mining",
+      "sulfuric powder",
+      "herbalism",
+      "silver leaf",
+      "yellow garlic",
+      "sulfuric wood",
+      "trees",
+      "spot tomato",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "sulfuric-path",
+    "name": "Sulfuric path",
+    "mapId": "world",
+    "x": 38.5,
+    "y": 63.7,
+    "area": "Sulfuric Path",
+    "zoneType": "Surface zone",
+    "level": "34",
+    "monsters": ["Spot Slime", "Lumen Sprite", "Licke"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Sulfuric powder"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Silver Leaf",
+          "Yellow Garlic",
+          "Sulfuric Wood (trees)",
+          "Spot Tomato (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "sulfuric path",
+      "surface zone",
+      "level 34",
+      "spot slime",
+      "lumen sprite",
+      "licke",
+      "mining",
+      "sulfuric powder",
+      "herbalism",
+      "silver leaf",
+      "yellow garlic",
+      "sulfuric wood",
+      "trees",
+      "spot tomato",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "sulfuric-path-2",
+    "name": "Sulfuric path 2",
+    "mapId": "world",
+    "x": 37,
+    "y": 67,
+    "area": "Sulfuric Path",
+    "zoneType": "Surface zone",
+    "level": "33",
+    "monsters": ["Anger", "Licke"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Sulfuric powder"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Silver Leaf",
+          "Yellow Garlic",
+          "Sulfuric Wood (trees)",
+          "Spot Tomato (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "sulfuric path 2",
+      "sulfuric path",
+      "surface zone",
+      "level 33",
+      "anger",
+      "licke",
+      "mining",
+      "sulfuric powder",
+      "herbalism",
+      "silver leaf",
+      "yellow garlic",
+      "sulfuric wood",
+      "trees",
+      "spot tomato",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "rocky-path-3",
+    "name": "Rocky path 3",
+    "mapId": "world",
+    "x": 24,
+    "y": 59,
+    "area": "Rocky Path",
+    "zoneType": "Surface zone",
+    "level": "70",
+    "monsters": ["Cat Guardian", "Rocky", "Cat Golem"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Gold Ore", "Amber"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Fire Fish",
+          "Lava Octopus",
+          "Wolf Fish",
+          "Spookee",
+          "Moss Snail"
+        ]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ashen Onion",
+          "Red Soy",
+          "Red Dandelion",
+          "Rocky Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "rocky path 3",
+      "rocky path",
+      "surface zone",
+      "level 70",
+      "cat guardian",
+      "rocky",
+      "cat golem",
+      "mining",
+      "gold ore",
+      "amber",
+      "fishing",
+      "fire fish",
+      "lava octopus",
+      "wolf fish",
+      "spookee",
+      "moss snail",
+      "herbalism",
+      "ashen onion",
+      "red soy",
+      "red dandelion",
+      "rocky wood",
+      "trees",
+      "warp",
+      "warp point",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "rocky-path-1",
+    "name": "Rocky path 1",
+    "mapId": "world",
+    "x": 29,
+    "y": 65,
+    "area": "Rocky Path",
+    "zoneType": "Surface zone",
+    "level": "65",
+    "monsters": ["Rokkak", "Rocky"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Gold Ore", "Amber"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ashen Onion",
+          "Red Soy",
+          "Red Dandelion",
+          "Rocky Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "rocky path 1",
+      "rocky path",
+      "surface zone",
+      "level 65",
+      "rokkak",
+      "rocky",
+      "mining",
+      "gold ore",
+      "amber",
+      "herbalism",
+      "ashen onion",
+      "red soy",
+      "red dandelion",
+      "rocky wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "rocky-path-2",
+    "name": "Rocky path 2",
+    "mapId": "world",
+    "x": 35.6,
+    "y": 70,
+    "area": "Rocky Path",
+    "zoneType": "Surface zone",
+    "level": "67",
+    "monsters": ["Cat Golem", "Rokkak", "Rocky"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Gold Ore", "Amber"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ashen Onion",
+          "Red Soy",
+          "Red Dandelion",
+          "Rocky Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "rocky path 2",
+      "rocky path",
+      "surface zone",
+      "level 67",
+      "cat golem",
+      "rokkak",
+      "rocky",
+      "mining",
+      "gold ore",
+      "amber",
+      "herbalism",
+      "ashen onion",
+      "red soy",
+      "red dandelion",
+      "rocky wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "detour",
+    "name": "Detour",
+    "mapId": "world",
+    "x": 17,
+    "y": 57,
+    "area": "Rocky Path",
+    "zoneType": "Surface zone",
+    "level": "70",
+    "monsters": ["Ashball", "Cat Guardian"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Gold Ore", "Amber"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ashen Onion",
+          "Red Soy",
+          "Red Dandelion",
+          "Rocky Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "detour",
+      "rocky path",
+      "surface zone",
+      "level 70",
+      "ashball",
+      "cat guardian",
+      "mining",
+      "gold ore",
+      "amber",
+      "herbalism",
+      "ashen onion",
+      "red soy",
+      "red dandelion",
+      "rocky wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "cat-golem-den",
+    "name": "Cat Golem Den",
+    "mapId": "world",
+    "x": 33.2,
+    "y": 71.4,
+    "area": "Detour",
+    "zoneType": "Surface zone",
+    "level": "69",
+    "monsters": ["Cat Golem", "Cat Guardian"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Gold Ore", "Amber"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Fire Fish",
+          "Lava Octopus",
+          "Wolf Fish",
+          "Spookee",
+          "Moss Snail"
+        ]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ashen Onion",
+          "Red Soy",
+          "Red Dandelion",
+          "Rocky Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "cat golem den",
+      "detour",
+      "surface zone",
+      "level 69",
+      "cat golem",
+      "cat guardian",
+      "mining",
+      "gold ore",
+      "amber",
+      "fishing",
+      "fire fish",
+      "lava octopus",
+      "wolf fish",
+      "spookee",
+      "moss snail",
+      "herbalism",
+      "ashen onion",
+      "red soy",
+      "red dandelion",
+      "rocky wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "snowy-mountain-4",
+    "name": "Snowy mountain 4",
+    "mapId": "world",
+    "x": 40.6,
+    "y": 73.7,
+    "area": "Snowy Mountain",
+    "zoneType": "Surface zone",
+    "level": "61",
+    "monsters": ["Blizzy", "Snowball"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Titanium Ore", "Sapphire"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Dew Bloom",
+          "Blue Ginseng",
+          "Ice Flax Seed",
+          "Blue Cinnamon Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "snowy mountain 4",
+      "snowy mountain",
+      "surface zone",
+      "level 61",
+      "blizzy",
+      "snowball",
+      "mining",
+      "titanium ore",
+      "sapphire",
+      "herbalism",
+      "dew bloom",
+      "blue ginseng",
+      "ice flax seed",
+      "blue cinnamon wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "snowy-mountain-5",
+    "name": "Snowy mountain 5",
+    "mapId": "world",
+    "x": 49.8,
+    "y": 75.2,
+    "area": "Snowy Mountain",
+    "zoneType": "Surface zone",
+    "level": "60",
+    "monsters": ["Frostfruit", "Snowball", "Blizzy"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Titanium Ore", "Sapphire"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Ice Jelly", "Electray", "Ice Salmon", "Glowfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Dew Bloom",
+          "Blue Ginseng",
+          "Ice Flax Seed",
+          "Blue Cinnamon Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "snowy mountain 5",
+      "snowy mountain",
+      "surface zone",
+      "level 60",
+      "frostfruit",
+      "snowball",
+      "blizzy",
+      "mining",
+      "titanium ore",
+      "sapphire",
+      "fishing",
+      "ice jelly",
+      "electray",
+      "ice salmon",
+      "glowfish",
+      "herbalism",
+      "dew bloom",
+      "blue ginseng",
+      "ice flax seed",
+      "blue cinnamon wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "snowy-mountain-1",
+    "name": "Snowy mountain 1",
+    "mapId": "world",
+    "x": 58.6,
+    "y": 76.2,
+    "area": "Snowy Mountain",
+    "zoneType": "Surface zone",
+    "level": "58",
+    "monsters": ["Slibbit"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Titanium Ore", "Sapphire"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Ice Jelly", "Electray", "Ice Salmon", "Glowfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Dew Bloom",
+          "Blue Ginseng",
+          "Ice Flax Seed",
+          "Blue Cinnamon Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "snowy mountain 1",
+      "snowy mountain",
+      "surface zone",
+      "level 58",
+      "slibbit",
+      "mining",
+      "titanium ore",
+      "sapphire",
+      "fishing",
+      "ice jelly",
+      "electray",
+      "ice salmon",
+      "glowfish",
+      "herbalism",
+      "dew bloom",
+      "blue ginseng",
+      "ice flax seed",
+      "blue cinnamon wood",
+      "trees",
+      "warp",
+      "warp point",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "snowy-mountain-2",
+    "name": "Snowy mountain 2",
+    "mapId": "world",
+    "x": 66.4,
+    "y": 72.8,
+    "area": "Snowy Mountain",
+    "zoneType": "Surface zone",
+    "level": "59",
+    "monsters": ["Slibbit", "Blizzy"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Titanium Ore", "Sapphire"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Dew Bloom",
+          "Blue Ginseng",
+          "Ice Flax Seed",
+          "Blue Cinnamon Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "snowy mountain 2",
+      "snowy mountain",
+      "surface zone",
+      "level 59",
+      "slibbit",
+      "blizzy",
+      "mining",
+      "titanium ore",
+      "sapphire",
+      "herbalism",
+      "dew bloom",
+      "blue ginseng",
+      "ice flax seed",
+      "blue cinnamon wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "snowy-mountain-3",
+    "name": "Snowy mountain 3",
+    "mapId": "world",
+    "x": 75,
+    "y": 71,
+    "area": "Snowy Mountain",
+    "zoneType": "Surface zone",
+    "level": "63",
+    "monsters": ["Snowball", "Blizzy"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Titanium Ore", "Sapphire"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Ice Jelly", "Electray", "Ice Salmon", "Glowfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Dew Bloom",
+          "Blue Ginseng",
+          "Ice Flax Seed",
+          "Blue Cinnamon Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "snowy mountain 3",
+      "snowy mountain",
+      "surface zone",
+      "level 63",
+      "snowball",
+      "blizzy",
+      "mining",
+      "titanium ore",
+      "sapphire",
+      "fishing",
+      "ice jelly",
+      "electray",
+      "ice salmon",
+      "glowfish",
+      "herbalism",
+      "dew bloom",
+      "blue ginseng",
+      "ice flax seed",
+      "blue cinnamon wood",
+      "trees",
+      "temporary coordinates"
+    ]
+  },
+  {
+    "id": "traveler-rest",
+    "name": "Traveler rest",
+    "mapId": "world",
+    "x": 45,
+    "y": 75.5,
+    "area": "Traveler rest",
+    "zoneType": "Surface zone",
+    "level": "62",
+    "monsters": ["Icyghoul"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Titanium Ore", "Sapphire"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Ice Jelly", "Electray", "Ice Salmon", "Glowfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Dew Bloom",
+          "Blue Ginseng",
+          "Ice Flax Seed",
+          "Blue Cinnamon Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "traveler rest",
+      "snowy mountain",
+      "surface zone",
+      "level 62",
+      "icyghoul",
+      "mining",
+      "titanium ore",
+      "sapphire",
+      "fishing",
+      "ice jelly",
+      "electray",
+      "ice salmon",
+      "glowfish",
+      "herbalism",
+      "dew bloom",
+      "blue ginseng",
+      "ice flax seed",
+      "blue cinnamon wood",
+      "trees",
+      "temporary coordinates"
+    ]
   }
 ]
