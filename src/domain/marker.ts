@@ -19,7 +19,6 @@ export type MapMarker = {
   monsters?: string[]
   resources?: MarkerResourceGroup[]
   warpPoint?: boolean
-  description?: string
   wikiUrl?: string
   tags?: string[]
 }

@@ -12,11 +12,14 @@
     "resources": [
       {
         "type": "Fishing",
-        "items": ["Clam", "Shrimp", "Trout"]
+        "items": [
+          "Clam",
+          "Shrimp",
+          "Trout"
+        ]
       }
     ],
     "warpPoint": true,
-    "description": "Surface zone level 0 with fishing resources and a warp point. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "spawn",
       "surface zone",
@@ -39,11 +42,18 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "7",
-    "monsters": ["Hopper", "Jel", "Pin Pin"],
+    "monsters": [
+      "Hopper",
+      "Jel",
+      "Pin Pin"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Herbalism",
@@ -56,7 +66,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 7 with Hopper, Jel, Pin Pin, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts south",
       "surface zone",
@@ -86,11 +95,18 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "6",
-    "monsters": ["Pin Pin", "Jel", "Hopper"],
+    "monsters": [
+      "Pin Pin",
+      "Jel",
+      "Hopper"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Herbalism",
@@ -103,7 +119,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 6 with Pin Pin, Jel, Hopper, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts southeast",
       "surface zone",
@@ -133,15 +148,26 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "7",
-    "monsters": ["Slip", "Flows"],
+    "monsters": [
+      "Slip",
+      "Flows"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Fishing",
-        "items": ["Clam", "Shrimp", "Trout", "Chomper"]
+        "items": [
+          "Clam",
+          "Shrimp",
+          "Trout",
+          "Chomper"
+        ]
       },
       {
         "type": "Herbalism",
@@ -154,7 +180,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 7 with Slip, Flows, mining, fishing, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts pond",
       "surface zone",
@@ -188,11 +213,18 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "3",
-    "monsters": ["Jel", "Pin Pin", "Slime"],
+    "monsters": [
+      "Jel",
+      "Pin Pin",
+      "Slime"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Herbalism",
@@ -205,7 +237,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 3 with Jel, Pin Pin, Slime, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts east",
       "surface zone",
@@ -235,11 +266,18 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "5",
-    "monsters": ["Jel", "Bubble Spirit", "Pin Pin"],
+    "monsters": [
+      "Jel",
+      "Bubble Spirit",
+      "Pin Pin"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Herbalism",
@@ -252,7 +290,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 5 with Jel, Bubble Spirit, Pin Pin, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts northeast",
       "surface zone",
@@ -282,11 +319,17 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "5",
-    "monsters": ["Flows", "Jel"],
+    "monsters": [
+      "Flows",
+      "Jel"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Herbalism",
@@ -299,7 +342,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 5 with Flows, Jel, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts north",
       "surface zone",
@@ -328,11 +370,18 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "3",
-    "monsters": ["Slime", "Bubble Spirit", "Jel"],
+    "monsters": [
+      "Slime",
+      "Bubble Spirit",
+      "Jel"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Herbalism",
@@ -345,7 +394,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 3 with Slime, Bubble Spirit, Jel, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts flower field",
       "flower field",
@@ -376,11 +424,18 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "2",
-    "monsters": ["Bubble Spirit", "Slime", "Jel"],
+    "monsters": [
+      "Bubble Spirit",
+      "Slime",
+      "Jel"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Herbalism",
@@ -393,7 +448,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 2 with Bubble Spirit, Slime, Jel, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts northwest",
       "surface zone",
@@ -423,15 +477,25 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "1",
-    "monsters": ["Slime"],
+    "monsters": [
+      "Slime"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Fishing",
-        "items": ["Clam", "Shrimp", "Trout", "Chomper"]
+        "items": [
+          "Clam",
+          "Shrimp",
+          "Trout",
+          "Chomper"
+        ]
       },
       {
         "type": "Herbalism",
@@ -444,7 +508,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 1 with Slime, mining, fishing, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts west",
       "surface zone",
@@ -477,11 +540,19 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "8",
-    "monsters": ["Glowsnail", "Jel", "Pin Pin", "Hopper"],
+    "monsters": [
+      "Glowsnail",
+      "Jel",
+      "Pin Pin",
+      "Hopper"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Stone", "Salt"]
+        "items": [
+          "Stone",
+          "Salt"
+        ]
       },
       {
         "type": "Herbalism",
@@ -494,7 +565,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 8 with Glowsnail, Jel, Pin Pin, Hopper, mining, and herbalism resources. Coordinates are temporary approximations for MVP visual validation.",
     "tags": [
       "outskirts southwest",
       "surface zone",
@@ -520,141 +590,156 @@
     "id": "plains-1",
     "name": "Plains 1",
     "mapId": "world",
-
     "x": 31.5,
     "y": 49.5,
-
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "11",
-
-    "monsters": ["Glowsnail", "Cloudsheep"],
-
+    "monsters": [
+      "Glowsnail",
+      "Cloudsheep"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Copper Ore"]
+        "items": [
+          "Copper Ore"
+        ]
       },
       {
         "type": "Herbalism",
-        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+        "items": [
+          "Cotton Ball",
+          "Oak Wood (trees)",
+          "Apple (trees)"
+        ]
       },
       {
         "type": "Fishing",
-        "items": ["Shrimp", "Clam", "Trout"]
+        "items": [
+          "Shrimp",
+          "Clam",
+          "Trout"
+        ]
       }
     ],
-
-    "description": "",
-
     "tags": []
   },
   {
     "id": "plains-2",
     "name": "Plains 2",
     "mapId": "world",
-
     "x": 33,
     "y": 45,
-
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "12",
-
-    "monsters": ["Squishling", "Cloudsheep", "Angeling"],
-
+    "monsters": [
+      "Squishling",
+      "Cloudsheep",
+      "Angeling"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Copper Ore"]
+        "items": [
+          "Copper Ore"
+        ]
       },
       {
         "type": "Herbalism",
-        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+        "items": [
+          "Cotton Ball",
+          "Oak Wood (trees)",
+          "Apple (trees)"
+        ]
       }
     ],
-
-    "description": "",
-
     "tags": []
   },
   {
     "id": "plains-3",
     "name": "Plains 3",
     "mapId": "world",
-
     "x": 36.5,
     "y": 39.5,
-
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "14",
-
-    "monsters": ["Squishling", "Black Cloudsheep"],
-
+    "monsters": [
+      "Squishling",
+      "Black Cloudsheep"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Copper Ore"]
+        "items": [
+          "Copper Ore"
+        ]
       },
       {
         "type": "Herbalism",
-        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+        "items": [
+          "Cotton Ball",
+          "Oak Wood (trees)",
+          "Apple (trees)"
+        ]
       }
     ],
-
     "warpPoint": true,
-    "description": "",
-
     "tags": []
   },
   {
     "id": "plains-4",
     "name": "Plains 4",
     "mapId": "world",
-
     "x": 34.6,
     "y": 34.8,
-
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "15",
-
-    "monsters": ["Black Cloudsheep", "Squishling"],
-
+    "monsters": [
+      "Black Cloudsheep",
+      "Squishling"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Copper Ore"]
+        "items": [
+          "Copper Ore"
+        ]
       },
       {
         "type": "Herbalism",
-        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+        "items": [
+          "Cotton Ball",
+          "Oak Wood (trees)",
+          "Apple (trees)"
+        ]
       }
     ],
-
-    "description": "",
-
     "tags": []
   },
   {
     "id": "forest-1",
     "name": "Forest 1",
     "mapId": "world",
-
     "x": 22.8,
     "y": 40.5,
-
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "40",
-
-    "monsters": ["Ferni", "Big Slime"],
-
+    "monsters": [
+      "Ferni",
+      "Big Slime"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Malachite Ore", "Emerald"]
+        "items": [
+          "Malachite Ore",
+          "Emerald"
+        ]
       },
       {
         "type": "Herbalism",
@@ -668,34 +753,37 @@
       },
       {
         "type": "Fishing",
-        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+        "items": [
+          "Angel Fish",
+          "Ice Salmon",
+          "Chomper",
+          "Clownfish"
+        ]
       }
     ],
-
     "warpPoint": true,
-
-    "description": "",
-
     "tags": []
   },
   {
     "id": "forest-2",
     "name": "Forest 2",
     "mapId": "world",
-
     "x": 24,
     "y": 33.5,
-
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "41",
-
-    "monsters": ["Soultree", "Soulpling"],
-
+    "monsters": [
+      "Soultree",
+      "Soulpling"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Malachite Ore", "Emerald"]
+        "items": [
+          "Malachite Ore",
+          "Emerald"
+        ]
       },
       {
         "type": "Herbalism",
@@ -709,12 +797,14 @@
       },
       {
         "type": "Fishing",
-        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+        "items": [
+          "Angel Fish",
+          "Ice Salmon",
+          "Chomper",
+          "Clownfish"
+        ]
       }
     ],
-
-    "description": "",
-
     "tags": []
   },
   {
@@ -726,15 +816,28 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "39",
-    "monsters": ["Soultree", "Soulpling", "Ferni", "Humblebee"],
+    "monsters": [
+      "Soultree",
+      "Soulpling",
+      "Ferni",
+      "Humblebee"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Malachite Ore", "Emerald"]
+        "items": [
+          "Malachite Ore",
+          "Emerald"
+        ]
       },
       {
         "type": "Fishing",
-        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+        "items": [
+          "Angel Fish",
+          "Ice Salmon",
+          "Chomper",
+          "Clownfish"
+        ]
       },
       {
         "type": "Herbalism",
@@ -747,7 +850,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 39 with Soultree, Soulpling, Ferni, Humblebee, mining, fishing, and herbalism resources.",
     "tags": [
       "forest 3",
       "forest",
@@ -787,11 +889,19 @@
     "resources": [
       {
         "type": "Mining",
-        "items": ["Malachite Ore", "Emerald"]
+        "items": [
+          "Malachite Ore",
+          "Emerald"
+        ]
       },
       {
         "type": "Fishing",
-        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+        "items": [
+          "Angel Fish",
+          "Ice Salmon",
+          "Chomper",
+          "Clownfish"
+        ]
       },
       {
         "type": "Herbalism",
@@ -804,7 +914,6 @@
         ]
       }
     ],
-    "description": "Surface zone in Plains with mining, fishing, and herbalism resources.",
     "tags": [
       "swamp",
       "plains",
@@ -836,15 +945,26 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "38",
-    "monsters": ["Humblebee", "Soulpling"],
+    "monsters": [
+      "Humblebee",
+      "Soulpling"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Malachite Ore", "Emerald"]
+        "items": [
+          "Malachite Ore",
+          "Emerald"
+        ]
       },
       {
         "type": "Fishing",
-        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+        "items": [
+          "Angel Fish",
+          "Ice Salmon",
+          "Chomper",
+          "Clownfish"
+        ]
       },
       {
         "type": "Herbalism",
@@ -857,7 +977,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 38 in Plains with Humblebee, Soulpling, mining, fishing, and herbalism resources.",
     "tags": [
       "plainsforest pond",
       "plains",
@@ -891,18 +1010,25 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "37",
-    "monsters": ["Rainbow Cloudsheep"],
+    "monsters": [
+      "Rainbow Cloudsheep"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Copper Ore"]
+        "items": [
+          "Copper Ore"
+        ]
       },
       {
         "type": "Herbalism",
-        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
+        "items": [
+          "Cotton Ball",
+          "Oak Wood (trees)",
+          "Apple (trees)"
+        ]
       }
     ],
-    "description": "Surface zone level 37 in Plains with Rainbow Cloudsheep, mining, and herbalism resources.",
     "tags": [
       "plainslost plains",
       "plains",
@@ -927,11 +1053,18 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "73",
-    "monsters": ["Tallshroom", "Shroomie"],
+    "monsters": [
+      "Tallshroom",
+      "Shroomie"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+        "items": [
+          "Mithril Ore",
+          "Dream Fragment",
+          "Dreamstone"
+        ]
       },
       {
         "type": "Herbalism",
@@ -953,7 +1086,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 73 in Plains with Tallshroom, Shroomie, mining, herbalism, and fishing resources.",
     "tags": [
       "plainsdeep forest 1",
       "plains",
@@ -988,11 +1120,17 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "78",
-    "monsters": ["Lime Guardian"],
+    "monsters": [
+      "Lime Guardian"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+        "items": [
+          "Mithril Ore",
+          "Dream Fragment",
+          "Dreamstone"
+        ]
       },
       {
         "type": "Herbalism",
@@ -1014,7 +1152,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 78 in Plains with Lime Guardian, mining, herbalism, and fishing resources.",
     "tags": [
       "plainsdeep forest threshold",
       "plains",
@@ -1048,11 +1185,18 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "73",
-    "monsters": ["Shroomie", "Tallshroom"],
+    "monsters": [
+      "Shroomie",
+      "Tallshroom"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+        "items": [
+          "Mithril Ore",
+          "Dream Fragment",
+          "Dreamstone"
+        ]
       },
       {
         "type": "Herbalism",
@@ -1064,7 +1208,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 73 in Plains with Shroomie, Tallshroom, mining, and herbalism resources.",
     "tags": [
       "plainsdeep tree way",
       "plains",
@@ -1093,11 +1236,19 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "75",
-    "monsters": ["Kiwi", "Fernek", "Tallshroom"],
+    "monsters": [
+      "Kiwi",
+      "Fernek",
+      "Tallshroom"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+        "items": [
+          "Mithril Ore",
+          "Dream Fragment",
+          "Dreamstone"
+        ]
       },
       {
         "type": "Herbalism",
@@ -1119,7 +1270,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 75 in Plains with Kiwi, Fernek, Tallshroom, mining, herbalism, and fishing resources.",
     "tags": [
       "plainsdeep forest 2",
       "plains",
@@ -1155,11 +1305,20 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "75",
-    "monsters": ["Shroomie", "Tallshroom", "Fernek", "Kiwi"],
+    "monsters": [
+      "Shroomie",
+      "Tallshroom",
+      "Fernek",
+      "Kiwi"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+        "items": [
+          "Mithril Ore",
+          "Dream Fragment",
+          "Dreamstone"
+        ]
       },
       {
         "type": "Herbalism",
@@ -1171,7 +1330,6 @@
         ]
       }
     ],
-    "description": "Surface zone level 75 in Plains with Shroomie, Tallshroom, Fernek, Kiwi, mining, and herbalism resources.",
     "tags": [
       "plainsdeep forest 3",
       "plains",
@@ -1202,11 +1360,18 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "76",
-    "monsters": ["Fernek", "Kiwi"],
+    "monsters": [
+      "Fernek",
+      "Kiwi"
+    ],
     "resources": [
       {
         "type": "Mining",
-        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+        "items": [
+          "Mithril Ore",
+          "Dream Fragment",
+          "Dreamstone"
+        ]
       },
       {
         "type": "Herbalism",
@@ -1229,7 +1394,6 @@
       }
     ],
     "warpPoint": true,
-    "description": "Surface zone level 76 in Plains with Fernek, Kiwi, mining, herbalism, fishing resources, and a warp point.",
     "tags": [
       "plainslost peak",
       "plains",

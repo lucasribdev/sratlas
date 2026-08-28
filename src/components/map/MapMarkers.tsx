@@ -101,10 +101,6 @@ function MarkerPopup({ marker }: MarkerPopupProps) {
         ) : null}
       </div>
 
-      {marker.description ? (
-        <p className="text-sm leading-snug text-muted-foreground">{marker.description}</p>
-      ) : null}
-
       {monsters.length > 0 ? (
         <>
           <Separator />
