@@ -188,7 +188,7 @@ function MapMarkerItem({ map, marker, onMarkerSelect, selectedMarkerId }: MapMar
       position={position}
       title={marker.name}
     >
-      <Popup>
+      <Popup autoPanPaddingBottomRight={[16, 16]} autoPanPaddingTopLeft={[16, 72]}>
         <MarkerPopup marker={marker} />
       </Popup>
     </Marker>

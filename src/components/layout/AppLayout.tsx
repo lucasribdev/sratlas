@@ -132,7 +132,7 @@ export function AppLayout() {
               Filtros
             </SheetTrigger>
             <SheetContent
-              className="w-[min(390px,calc(100vw-32px))] max-w-none gap-0 p-0"
+              className="w-[min(390px,calc(100vw-32px))] max-w-none gap-0 p-0 data-[side=left]:w-[min(390px,calc(100vw-32px))]"
               side="left"
             >
               <SheetHeader className="sr-only">
