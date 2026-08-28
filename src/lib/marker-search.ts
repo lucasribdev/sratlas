@@ -1,4 +1,4 @@
-import type { MapMarker } from '../domain/marker'
+import type { MapMarker } from '@/domain/marker'
 
 function normalizeSearchText(value: string) {
   return value.trim().toLocaleLowerCase().replace(/\s+/g, ' ')

@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react'
 import { divIcon, type Marker as LeafletMarker } from 'leaflet'
 import { Marker, Popup } from 'react-leaflet'
-import type { GameMap } from '../../domain/map'
-import type { MapMarker } from '../../domain/marker'
-import { percentageToLeafletLatLng } from '../../lib/coordinates'
-import { cn } from '../../lib/utils'
-import { Badge } from '../ui/badge'
-import { Separator } from '../ui/separator'
+import type { GameMap } from '@/domain/map'
+import type { MapMarker } from '@/domain/marker'
+import { Badge } from '@/components/ui/badge'
+import { Separator } from '@/components/ui/separator'
+import { percentageToLeafletLatLng } from '@/lib/coordinates'
+import { cn } from '@/lib/utils'
 
 type MapMarkersProps = {
   map: GameMap

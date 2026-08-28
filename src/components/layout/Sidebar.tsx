@@ -1,12 +1,12 @@
-import type { MapMarker } from '../../domain/marker'
-import type { QuickFilterId } from '../../lib/marker-filters'
-import { Badge } from '../ui/badge'
-import { Button } from '../ui/button'
-import { Checkbox } from '../ui/checkbox'
-import { Input } from '../ui/input'
-import { ScrollArea } from '../ui/scroll-area'
-import { Separator } from '../ui/separator'
-import { cn } from '../../lib/utils'
+import type { MapMarker } from '@/domain/marker'
+import type { QuickFilterId } from '@/lib/marker-filters'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { Checkbox } from '@/components/ui/checkbox'
+import { Input } from '@/components/ui/input'
+import { ScrollArea } from '@/components/ui/scroll-area'
+import { Separator } from '@/components/ui/separator'
+import { cn } from '@/lib/utils'
 
 type SidebarProps = {
   areaOptions: string[]

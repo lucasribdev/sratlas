@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import { SlidersHorizontal } from 'lucide-react'
-import { markers } from '../../data/markers'
-import type { MapMarker } from '../../domain/marker'
+import { markers } from '@/data/markers'
+import type { MapMarker } from '@/domain/marker'
 import {
   markerAreaOptions,
   markerMatchesQuickFilter,
   quickFilters,
   type QuickFilterId,
-} from '../../lib/marker-filters'
-import { markerMatchesSearch } from '../../lib/marker-search'
-import { GameMapView } from '../map/GameMapView'
-import { Button } from '../ui/button'
-import { Input } from '../ui/input'
+} from '@/lib/marker-filters'
+import { markerMatchesSearch } from '@/lib/marker-search'
+import { GameMapView } from '@/components/map/GameMapView'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 import {
   Sheet,
   SheetContent,
@@ -19,7 +19,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '../ui/sheet'
+} from '@/components/ui/sheet'
 import { Sidebar } from './Sidebar'
 
 const areaOptions = markerAreaOptions(markers)

@@ -1,4 +1,4 @@
-import type { MapMarker } from '../domain/marker'
+import type { MapMarker } from '@/domain/marker'
 
 export const quickFilters = [
   { id: 'warp-point', label: 'Warp point' },

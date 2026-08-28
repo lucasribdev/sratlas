@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import { CRS } from 'leaflet'
 import { ImageOverlay, MapContainer, useMap } from 'react-leaflet'
-import { maps } from '../../data/maps'
-import type { MapMarker } from '../../domain/marker'
-import { mapBoundsFromDimensions, percentageToLeafletLatLng } from '../../lib/coordinates'
+import { maps } from '@/data/maps'
+import type { MapMarker } from '@/domain/marker'
+import { mapBoundsFromDimensions, percentageToLeafletLatLng } from '@/lib/coordinates'
 import { MapMarkers } from './MapMarkers'
 
 const initialMap = maps[0]
