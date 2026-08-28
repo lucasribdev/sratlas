@@ -120,123 +120,61 @@ p {
 .map-marker {
   display: grid;
   place-items: center;
+  border: 0;
+  background: transparent;
 }
 
 .map-marker__pin {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #ffffff;
   border-radius: 999px;
   background: var(--marker-color, #475569);
+  outline: 0 solid transparent;
   box-shadow:
-    0 0 0 2px rgb(15 23 42 / 0.25),
-    0 8px 16px rgb(15 23 42 / 0.32);
+    0 0 0 2px rgb(15 23 42 / 0.28),
+    0 8px 14px rgb(15 23 42 / 0.34);
+  transition:
+    box-shadow 160ms ease,
+    outline-width 160ms ease,
+    transform 160ms ease;
 }
 
-.marker-popup {
-  display: grid;
-  gap: 8px;
-  min-width: 180px;
-  max-width: 260px;
+.map-marker:hover .map-marker__pin,
+.leaflet-marker-icon:focus-visible .map-marker__pin {
+  box-shadow:
+    0 0 0 3px rgb(255 255 255 / 0.9),
+    0 0 0 6px color-mix(in srgb, var(--marker-color, #475569) 34%, transparent),
+    0 10px 18px rgb(15 23 42 / 0.36);
+  transform: scale(1.08);
 }
 
-.marker-popup__heading {
-  display: grid;
-  gap: 6px;
+.map-marker--selected {
+  z-index: 650 !important;
 }
 
-.marker-popup h2 {
-  font-size: 1rem;
+.map-marker--selected .map-marker__pin {
+  outline: 3px solid color-mix(in srgb, var(--marker-color, #475569) 32%, transparent);
+  box-shadow:
+    0 0 0 3px #ffffff,
+    0 0 0 7px color-mix(in srgb, var(--marker-color, #475569) 28%, transparent),
+    0 12px 22px rgb(15 23 42 / 0.38);
+  transform: scale(1.16);
 }
 
-.marker-popup__description {
-  color: #475569;
-  font-size: 0.875rem;
-  line-height: 1.4;
+.leaflet-popup-content {
+  margin: 12px 14px;
 }
 
-.marker-popup__warp {
-  width: fit-content;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--marker-color, #475569) 14%, #ffffff);
-  color: var(--marker-color, #475569);
-  padding: 3px 8px;
-  font-size: 0.75rem;
-  font-weight: 700;
-}
-
-.marker-popup__details {
-  display: grid;
-  gap: 5px;
-}
-
-.marker-popup__details div {
-  display: grid;
-  gap: 2px;
-}
-
-.marker-popup dt,
-.marker-popup__section h3 {
-  color: #64748b;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
-.marker-popup dd,
-.marker-popup__section li,
-.marker-popup__resources span {
-  color: #334155;
-  font-size: 0.8125rem;
-  line-height: 1.35;
-}
-
-.marker-popup__section {
-  display: grid;
-  gap: 5px;
-}
-
-.marker-popup__section ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+.leaflet-popup-content p,
+.leaflet-popup-content ul {
   margin: 0;
+}
+
+.leaflet-popup-content ul {
   padding: 0;
   list-style: none;
-}
-
-.marker-popup__section li {
-  border-radius: 4px;
-  background: #f1f5f9;
-  padding: 2px 6px;
-}
-
-.marker-popup__resources {
-  display: grid;
-  gap: 4px;
-}
-
-.marker-popup__resources div {
-  display: grid;
-  gap: 1px;
-}
-
-.marker-popup__resources strong {
-  color: #0f172a;
-  font-size: 0.8125rem;
-}
-
-.marker-popup__warp {
-  --marker-color: #0891b2;
-}
-
-.marker-popup a {
-  color: #2563eb;
-  font-size: 0.875rem;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 @theme inline {
