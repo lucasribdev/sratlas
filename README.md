@@ -35,6 +35,7 @@ O MVP deve permitir:
 - [Plano do MVP](./docs/mvp.md)
 - [Modelo de dados](./docs/data-model.md)
 - [Guia de marcadores](./docs/markers-guide.md)
+- [Base UI e manutencao visual](./docs/ui.md)
 - [Milestones e issues](./docs/milestones.md)
 - [Instrucoes para agentes](./AGENTS.md)
 
