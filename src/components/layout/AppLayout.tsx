@@ -15,7 +15,6 @@ import { Input } from '@/components/ui/input'
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -137,9 +136,6 @@ export function AppLayout() {
             >
               <SheetHeader className="sr-only">
                 <SheetTitle>Busca, filtros e resultados</SheetTitle>
-                <SheetDescription>
-                  Painel para buscar marcadores, combinar filtros e abrir resultados no mapa.
-                </SheetDescription>
               </SheetHeader>
               <Sidebar
                 areaOptions={areaOptions}

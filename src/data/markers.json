@@ -12,11 +12,7 @@
     "resources": [
       {
         "type": "Fishing",
-        "items": [
-          "Clam",
-          "Shrimp",
-          "Trout"
-        ]
+        "items": ["Clam", "Shrimp", "Trout"]
       }
     ],
     "warpPoint": true,
@@ -42,18 +38,11 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "7",
-    "monsters": [
-      "Hopper",
-      "Jel",
-      "Pin Pin"
-    ],
+    "monsters": ["Hopper", "Jel", "Pin Pin"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
@@ -95,18 +84,11 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "6",
-    "monsters": [
-      "Pin Pin",
-      "Jel",
-      "Hopper"
-    ],
+    "monsters": ["Pin Pin", "Jel", "Hopper"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
@@ -148,26 +130,15 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "7",
-    "monsters": [
-      "Slip",
-      "Flows"
-    ],
+    "monsters": ["Slip", "Flows"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Fishing",
-        "items": [
-          "Clam",
-          "Shrimp",
-          "Trout",
-          "Chomper"
-        ]
+        "items": ["Clam", "Shrimp", "Trout", "Chomper"]
       },
       {
         "type": "Herbalism",
@@ -213,18 +184,11 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "3",
-    "monsters": [
-      "Jel",
-      "Pin Pin",
-      "Slime"
-    ],
+    "monsters": ["Jel", "Pin Pin", "Slime"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
@@ -266,18 +230,11 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "5",
-    "monsters": [
-      "Jel",
-      "Bubble Spirit",
-      "Pin Pin"
-    ],
+    "monsters": ["Jel", "Bubble Spirit", "Pin Pin"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
@@ -319,17 +276,11 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "5",
-    "monsters": [
-      "Flows",
-      "Jel"
-    ],
+    "monsters": ["Flows", "Jel"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
@@ -370,18 +321,11 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "3",
-    "monsters": [
-      "Slime",
-      "Bubble Spirit",
-      "Jel"
-    ],
+    "monsters": ["Slime", "Bubble Spirit", "Jel"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
@@ -424,18 +368,11 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "2",
-    "monsters": [
-      "Bubble Spirit",
-      "Slime",
-      "Jel"
-    ],
+    "monsters": ["Bubble Spirit", "Slime", "Jel"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
@@ -477,25 +414,15 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "1",
-    "monsters": [
-      "Slime"
-    ],
+    "monsters": ["Slime"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Fishing",
-        "items": [
-          "Clam",
-          "Shrimp",
-          "Trout",
-          "Chomper"
-        ]
+        "items": ["Clam", "Shrimp", "Trout", "Chomper"]
       },
       {
         "type": "Herbalism",
@@ -540,19 +467,11 @@
     "area": "Outskirts",
     "zoneType": "Surface zone",
     "level": "8",
-    "monsters": [
-      "Glowsnail",
-      "Jel",
-      "Pin Pin",
-      "Hopper"
-    ],
+    "monsters": ["Glowsnail", "Jel", "Pin Pin", "Hopper"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Stone",
-          "Salt"
-        ]
+        "items": ["Stone", "Salt"]
       },
       {
         "type": "Herbalism",
@@ -595,35 +514,40 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "11",
-    "monsters": [
-      "Glowsnail",
-      "Cloudsheep"
-    ],
+    "monsters": ["Glowsnail", "Cloudsheep"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Copper Ore"
-        ]
+        "items": ["Copper Ore"]
       },
       {
         "type": "Herbalism",
-        "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
-        ]
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
       },
       {
         "type": "Fishing",
-        "items": [
-          "Shrimp",
-          "Clam",
-          "Trout"
-        ]
+        "items": ["Shrimp", "Clam", "Trout"]
       }
     ],
-    "tags": []
+    "tags": [
+      "plains 1",
+      "plains",
+      "surface zone",
+      "level 11",
+      "glowsnail",
+      "cloudsheep",
+      "mining",
+      "copper ore",
+      "herbalism",
+      "cotton ball",
+      "oak wood",
+      "trees",
+      "apple",
+      "fishing",
+      "shrimp",
+      "clam",
+      "trout"
+    ]
   },
   {
     "id": "plains-2",
@@ -634,28 +558,33 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "12",
-    "monsters": [
-      "Squishling",
-      "Cloudsheep",
-      "Angeling"
-    ],
+    "monsters": ["Squishling", "Cloudsheep", "Angeling"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Copper Ore"
-        ]
+        "items": ["Copper Ore"]
       },
       {
         "type": "Herbalism",
-        "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
-        ]
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
       }
     ],
-    "tags": []
+    "tags": [
+      "plains 2",
+      "plains",
+      "surface zone",
+      "level 12",
+      "squishling",
+      "cloudsheep",
+      "angeling",
+      "mining",
+      "copper ore",
+      "herbalism",
+      "cotton ball",
+      "oak wood",
+      "trees",
+      "apple"
+    ]
   },
   {
     "id": "plains-3",
@@ -666,28 +595,35 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "14",
-    "monsters": [
-      "Squishling",
-      "Black Cloudsheep"
-    ],
+    "monsters": ["Squishling", "Black Cloudsheep"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Copper Ore"
-        ]
+        "items": ["Copper Ore"]
       },
       {
         "type": "Herbalism",
-        "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
-        ]
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
       }
     ],
     "warpPoint": true,
-    "tags": []
+    "tags": [
+      "plains 3",
+      "plains",
+      "surface zone",
+      "level 14",
+      "squishling",
+      "black cloudsheep",
+      "mining",
+      "copper ore",
+      "herbalism",
+      "cotton ball",
+      "oak wood",
+      "trees",
+      "apple",
+      "warp",
+      "warp point"
+    ]
   },
   {
     "id": "plains-4",
@@ -698,27 +634,32 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "15",
-    "monsters": [
-      "Black Cloudsheep",
-      "Squishling"
-    ],
+    "monsters": ["Black Cloudsheep", "Squishling"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Copper Ore"
-        ]
+        "items": ["Copper Ore"]
       },
       {
         "type": "Herbalism",
-        "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
-        ]
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
       }
     ],
-    "tags": []
+    "tags": [
+      "plains 4",
+      "plains",
+      "surface zone",
+      "level 15",
+      "black cloudsheep",
+      "squishling",
+      "mining",
+      "copper ore",
+      "herbalism",
+      "cotton ball",
+      "oak wood",
+      "trees",
+      "apple"
+    ]
   },
   {
     "id": "forest-1",
@@ -726,20 +667,14 @@
     "mapId": "world",
     "x": 22.8,
     "y": 40.5,
-    "area": "Plains",
+    "area": "Forest",
     "zoneType": "Surface zone",
     "level": "40",
-    "monsters": [
-      "Ferni",
-      "Big Slime"
-    ],
+    "monsters": ["Ferni", "Big Slime"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Malachite Ore",
-          "Emerald"
-        ]
+        "items": ["Malachite Ore", "Emerald"]
       },
       {
         "type": "Herbalism",
@@ -753,16 +688,35 @@
       },
       {
         "type": "Fishing",
-        "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
-        ]
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
       }
     ],
     "warpPoint": true,
-    "tags": []
+    "tags": [
+      "forest 1",
+      "forest",
+      "surface zone",
+      "level 40",
+      "ferni",
+      "big slime",
+      "mining",
+      "malachite ore",
+      "emerald",
+      "herbalism",
+      "sweet fern",
+      "forest seal",
+      "melon",
+      "green cherry",
+      "trees",
+      "hard wood",
+      "fishing",
+      "angel fish",
+      "ice salmon",
+      "chomper",
+      "clownfish",
+      "warp",
+      "warp point"
+    ]
   },
   {
     "id": "forest-2",
@@ -770,20 +724,14 @@
     "mapId": "world",
     "x": 24,
     "y": 33.5,
-    "area": "Plains",
+    "area": "Forest",
     "zoneType": "Surface zone",
     "level": "41",
-    "monsters": [
-      "Soultree",
-      "Soulpling"
-    ],
+    "monsters": ["Soultree", "Soulpling"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Malachite Ore",
-          "Emerald"
-        ]
+        "items": ["Malachite Ore", "Emerald"]
       },
       {
         "type": "Herbalism",
@@ -797,47 +745,51 @@
       },
       {
         "type": "Fishing",
-        "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
-        ]
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
       }
     ],
-    "tags": []
+    "tags": [
+      "forest 2",
+      "forest",
+      "surface zone",
+      "level 41",
+      "soultree",
+      "soulpling",
+      "mining",
+      "malachite ore",
+      "emerald",
+      "herbalism",
+      "sweet fern",
+      "forest seal",
+      "melon",
+      "green cherry",
+      "trees",
+      "hard wood",
+      "fishing",
+      "angel fish",
+      "ice salmon",
+      "chomper",
+      "clownfish"
+    ]
   },
   {
     "id": "forest-3",
-    "name": "PlainsForest 3",
+    "name": "Forest 3",
     "mapId": "world",
     "x": 25.1,
     "y": 28,
-    "area": "Plains",
+    "area": "Forest",
     "zoneType": "Surface zone",
     "level": "39",
-    "monsters": [
-      "Soultree",
-      "Soulpling",
-      "Ferni",
-      "Humblebee"
-    ],
+    "monsters": ["Soultree", "Soulpling", "Ferni", "Humblebee"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Malachite Ore",
-          "Emerald"
-        ]
+        "items": ["Malachite Ore", "Emerald"]
       },
       {
         "type": "Fishing",
-        "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
-        ]
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
       },
       {
         "type": "Herbalism",
@@ -889,19 +841,11 @@
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Malachite Ore",
-          "Emerald"
-        ]
+        "items": ["Malachite Ore", "Emerald"]
       },
       {
         "type": "Fishing",
-        "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
-        ]
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
       },
       {
         "type": "Herbalism",
@@ -942,29 +886,18 @@
     "mapId": "world",
     "x": 19.5,
     "y": 49,
-    "area": "Plains",
+    "area": "Forest",
     "zoneType": "Surface zone",
     "level": "38",
-    "monsters": [
-      "Humblebee",
-      "Soulpling"
-    ],
+    "monsters": ["Humblebee", "Soulpling"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Malachite Ore",
-          "Emerald"
-        ]
+        "items": ["Malachite Ore", "Emerald"]
       },
       {
         "type": "Fishing",
-        "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
-        ]
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
       },
       {
         "type": "Herbalism",
@@ -1010,23 +943,15 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "37",
-    "monsters": [
-      "Rainbow Cloudsheep"
-    ],
+    "monsters": ["Rainbow Cloudsheep"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Copper Ore"
-        ]
+        "items": ["Copper Ore"]
       },
       {
         "type": "Herbalism",
-        "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
-        ]
+        "items": ["Cotton Ball", "Oak Wood (trees)", "Apple (trees)"]
       }
     ],
     "tags": [
@@ -1053,18 +978,11 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "73",
-    "monsters": [
-      "Tallshroom",
-      "Shroomie"
-    ],
+    "monsters": ["Tallshroom", "Shroomie"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
-        ]
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
       },
       {
         "type": "Herbalism",
@@ -1120,17 +1038,11 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "78",
-    "monsters": [
-      "Lime Guardian"
-    ],
+    "monsters": ["Lime Guardian"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
-        ]
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
       },
       {
         "type": "Herbalism",
@@ -1185,18 +1097,11 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "73",
-    "monsters": [
-      "Shroomie",
-      "Tallshroom"
-    ],
+    "monsters": ["Shroomie", "Tallshroom"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
-        ]
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
       },
       {
         "type": "Herbalism",
@@ -1236,19 +1141,11 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "75",
-    "monsters": [
-      "Kiwi",
-      "Fernek",
-      "Tallshroom"
-    ],
+    "monsters": ["Kiwi", "Fernek", "Tallshroom"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
-        ]
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
       },
       {
         "type": "Herbalism",
@@ -1305,20 +1202,11 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "75",
-    "monsters": [
-      "Shroomie",
-      "Tallshroom",
-      "Fernek",
-      "Kiwi"
-    ],
+    "monsters": ["Shroomie", "Tallshroom", "Fernek", "Kiwi"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
-        ]
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
       },
       {
         "type": "Herbalism",
@@ -1360,18 +1248,11 @@
     "area": "Plains",
     "zoneType": "Surface zone",
     "level": "76",
-    "monsters": [
-      "Fernek",
-      "Kiwi"
-    ],
+    "monsters": ["Fernek", "Kiwi"],
     "resources": [
       {
         "type": "Mining",
-        "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
-        ]
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
       },
       {
         "type": "Herbalism",
@@ -1417,6 +1298,1673 @@
       "abyssal urchin",
       "abyssal octopus",
       "wolf fish",
+      "warp point"
+    ]
+  },
+  {
+    "id": "market-hub-entrance",
+    "name": "Market hub entrance",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Spawn",
+    "zoneType": "Surface zone",
+    "level": "0",
+    "monsters": [],
+    "resources": [],
+    "warpPoint": true,
+    "tags": [
+      "market hub entrance",
+      "spawn",
+      "surface zone",
+      "level 0",
+      "warp",
+      "warp point"
+    ]
+  },
+  {
+    "id": "plains-cave",
+    "name": "Plains cave",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Plains",
+    "zoneType": "Surface zone",
+    "level": "15",
+    "monsters": ["Cursed Slime", "Gilded Slime"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          "Blue Shard",
+          "Red Shard",
+          "Yellow Shard",
+          "Red Crystal",
+          "Blue Crystal",
+          "Yellow Crystal"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "plains cave",
+      "plains",
+      "surface zone",
+      "level 15",
+      "cursed slime",
+      "gilded slime",
+      "mining",
+      "blue shard",
+      "red shard",
+      "yellow shard",
+      "red crystal",
+      "blue crystal",
+      "yellow crystal"
+    ]
+  },
+  {
+    "id": "beach-cave",
+    "name": "Beach cave",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Plains cave",
+    "zoneType": "Surface zone",
+    "level": "21",
+    "monsters": ["Troppo", "Droppo"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          "Blue Shard",
+          "Red Shard",
+          "Yellow Shard",
+          "Red Crystal",
+          "Blue Crystal",
+          "Yellow Crystal"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "beach cave",
+      "plains cave",
+      "surface zone",
+      "level 21",
+      "troppo",
+      "droppo",
+      "mining",
+      "blue shard",
+      "red shard",
+      "yellow shard",
+      "red crystal",
+      "blue crystal",
+      "yellow crystal"
+    ]
+  },
+  {
+    "id": "forest-seeding-ground",
+    "name": "Forest seeding ground",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Forest",
+    "zoneType": "Surface zone",
+    "level": "38",
+    "monsters": ["Soulpling", "Humblebee"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Malachite Ore", "Emerald"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Sweet Fern", "Forest Seal", "Melon", "Hard Wood (trees)"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "forest seeding ground",
+      "forest",
+      "surface zone",
+      "level 38",
+      "soulpling",
+      "humblebee",
+      "mining",
+      "malachite ore",
+      "emerald",
+      "fishing",
+      "angel fish",
+      "ice salmon",
+      "chomper",
+      "clownfish",
+      "herbalism",
+      "sweet fern",
+      "forest seal",
+      "melon",
+      "hard wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "forest-lake",
+    "name": "Forest Lake",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Forest",
+    "zoneType": "Surface zone",
+    "level": "40",
+    "monsters": ["Soulpling", "Soultree", "Humblebee", "Water Spot"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Malachite Ore", "Emerald"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Angel Fish", "Ice Salmon", "Chomper", "Clownfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Sweet Fern",
+          "Forest Seal",
+          "Melon",
+          "Green Cherry (trees)",
+          "Hard Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "forest lake",
+      "forest",
+      "surface zone",
+      "level 40",
+      "soulpling",
+      "soultree",
+      "humblebee",
+      "water spot",
+      "mining",
+      "malachite ore",
+      "emerald",
+      "fishing",
+      "angel fish",
+      "ice salmon",
+      "chomper",
+      "clownfish",
+      "herbalism",
+      "sweet fern",
+      "forest seal",
+      "melon",
+      "green cherry",
+      "hard wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "giant-tree",
+    "name": "Giant tree",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Deep forest",
+    "zoneType": "Surface zone",
+    "level": "0",
+    "monsters": [],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "giant tree",
+      "deep forest",
+      "surface zone",
+      "level 0",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "trees",
+      "eon wood"
+    ]
+  },
+  {
+    "id": "deep-forest-den",
+    "name": "Deep forest den",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Deep forest",
+    "zoneType": "Surface zone",
+    "level": "76",
+    "monsters": ["Blossnek", "Fernek"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Mithril Ore", "Dream Fragment", "Dreamstone"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Ancient Fern",
+          "Censhroom",
+          "Eon Fruit (trees)",
+          "Eon Wood (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "deep forest den",
+      "deep forest",
+      "surface zone",
+      "level 76",
+      "blossnek",
+      "fernek",
+      "mining",
+      "mithril ore",
+      "dream fragment",
+      "dreamstone",
+      "herbalism",
+      "ancient fern",
+      "censhroom",
+      "eon fruit",
+      "trees",
+      "eon wood"
+    ]
+  },
+  {
+    "id": "seashell-cove",
+    "name": "Seashell Cove",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "20",
+    "monsters": ["Droppo", "Crusher", "Troppo"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Sea Grapes", "Coconut (trees)", "Coconut Wood (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Quartz", "Stone"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Glowfish",
+          "Electray",
+          "Starfish",
+          "Clownfish",
+          "Ice Salmon",
+          "Exotic Tuna",
+          "Seaweed",
+          "Clam",
+          "Shrimp"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "seashell cove",
+      "ocean",
+      "surface zone",
+      "level 20",
+      "droppo",
+      "crusher",
+      "troppo",
+      "herbalism",
+      "sea grapes",
+      "coconut",
+      "trees",
+      "coconut wood",
+      "mining",
+      "quartz",
+      "stone",
+      "fishing",
+      "glowfish",
+      "electray",
+      "starfish",
+      "clownfish",
+      "ice salmon",
+      "exotic tuna",
+      "seaweed",
+      "clam",
+      "shrimp"
+    ]
+  },
+  {
+    "id": "shell-beach",
+    "name": "Shell beach",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "17",
+    "monsters": ["Pimchy", "Snapper", "Crusher"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Sea Grapes", "Coconut (trees)", "Coconut Wood (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Quartz", "Stone"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Glowfish",
+          "Electray",
+          "Starfish",
+          "Clownfish",
+          "Ice Salmon",
+          "Exotic Tuna",
+          "Seaweed",
+          "Clam",
+          "Shrimp"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "shell beach",
+      "ocean",
+      "surface zone",
+      "level 17",
+      "pimchy",
+      "snapper",
+      "crusher",
+      "herbalism",
+      "sea grapes",
+      "coconut",
+      "trees",
+      "coconut wood",
+      "mining",
+      "quartz",
+      "stone",
+      "fishing",
+      "glowfish",
+      "electray",
+      "starfish",
+      "clownfish",
+      "ice salmon",
+      "exotic tuna",
+      "seaweed",
+      "clam",
+      "shrimp"
+    ]
+  },
+  {
+    "id": "around-the-seashore",
+    "name": "Around the Seashore",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "19",
+    "monsters": ["Crusher", "Snapper"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Sea Grapes", "Coconut (trees)", "Coconut Wood (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Quartz", "Stone"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Glowfish",
+          "Electray",
+          "Starfish",
+          "Clownfish",
+          "Ice Salmon",
+          "Exotic Tuna",
+          "Seaweed",
+          "Clam",
+          "Shrimp"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "around the seashore",
+      "ocean",
+      "surface zone",
+      "level 19",
+      "crusher",
+      "snapper",
+      "herbalism",
+      "sea grapes",
+      "coconut",
+      "trees",
+      "coconut wood",
+      "mining",
+      "quartz",
+      "stone",
+      "fishing",
+      "glowfish",
+      "electray",
+      "starfish",
+      "clownfish",
+      "ice salmon",
+      "exotic tuna",
+      "seaweed",
+      "clam",
+      "shrimp"
+    ]
+  },
+  {
+    "id": "snapper-shore",
+    "name": "Snapper Shore",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "18",
+    "monsters": ["Snapper", "Crusher"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Sea Grapes", "Coconut (trees)", "Coconut Wood (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Quartz", "Stone"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Glowfish",
+          "Electray",
+          "Starfish",
+          "Clownfish",
+          "Ice Salmon",
+          "Exotic Tuna",
+          "Seaweed",
+          "Clam",
+          "Shrimp"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "snapper shore",
+      "ocean",
+      "surface zone",
+      "level 18",
+      "snapper",
+      "crusher",
+      "herbalism",
+      "sea grapes",
+      "coconut",
+      "trees",
+      "coconut wood",
+      "mining",
+      "quartz",
+      "stone",
+      "fishing",
+      "glowfish",
+      "electray",
+      "starfish",
+      "clownfish",
+      "ice salmon",
+      "exotic tuna",
+      "seaweed",
+      "clam",
+      "shrimp"
+    ]
+  },
+  {
+    "id": "ocean-1",
+    "name": "Ocean 1",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "46",
+    "monsters": ["Giga"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Poceanto", "Blue Pepper (trees)", "Corals (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Cobalt Ore", "Aquamarine"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Exotic Tuna",
+          "Wolf Fish",
+          "Seaweed",
+          "Electray",
+          "Angel Fish"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "ocean 1",
+      "ocean",
+      "surface zone",
+      "level 46",
+      "giga",
+      "herbalism",
+      "poceanto",
+      "blue pepper",
+      "trees",
+      "corals",
+      "mining",
+      "cobalt ore",
+      "aquamarine",
+      "fishing",
+      "exotic tuna",
+      "wolf fish",
+      "seaweed",
+      "electray",
+      "angel fish"
+    ]
+  },
+  {
+    "id": "ocean-4",
+    "name": "Ocean 4",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "47",
+    "monsters": ["Giga", "Bubble Snake", "Sweel"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Poceanto", "Blue Pepper (trees)", "Corals (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Cobalt Ore", "Aquamarine"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Exotic Tuna",
+          "Wolf Fish",
+          "Seaweed",
+          "Electray",
+          "Angel Fish"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "ocean 4",
+      "ocean",
+      "surface zone",
+      "level 47",
+      "giga",
+      "bubble snake",
+      "sweel",
+      "herbalism",
+      "poceanto",
+      "blue pepper",
+      "trees",
+      "corals",
+      "mining",
+      "cobalt ore",
+      "aquamarine",
+      "fishing",
+      "exotic tuna",
+      "wolf fish",
+      "seaweed",
+      "electray",
+      "angel fish"
+    ]
+  },
+  {
+    "id": "ocean-3",
+    "name": "Ocean 3",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "45",
+    "monsters": ["Giga", "Sweel"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Poceanto", "Blue Pepper (trees)", "Corals (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Cobalt Ore", "Aquamarine"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Exotic Tuna",
+          "Wolf Fish",
+          "Seaweed",
+          "Electray",
+          "Angel Fish"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "ocean 3",
+      "ocean",
+      "surface zone",
+      "level 45",
+      "giga",
+      "sweel",
+      "herbalism",
+      "poceanto",
+      "blue pepper",
+      "trees",
+      "corals",
+      "mining",
+      "cobalt ore",
+      "aquamarine",
+      "fishing",
+      "exotic tuna",
+      "wolf fish",
+      "seaweed",
+      "electray",
+      "angel fish"
+    ]
+  },
+  {
+    "id": "ocean-2",
+    "name": "Ocean 2",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "44",
+    "monsters": ["Sweel", "Giga", "Bubble Snake"],
+    "resources": [
+      {
+        "type": "Herbalism",
+        "items": ["Poceanto", "Blue Pepper (trees)", "Corals (trees)"]
+      },
+      {
+        "type": "Mining",
+        "items": ["Cobalt Ore", "Aquamarine"]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Exotic Tuna",
+          "Wolf Fish",
+          "Seaweed",
+          "Electray",
+          "Angel Fish"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "ocean 2",
+      "ocean",
+      "surface zone",
+      "level 44",
+      "sweel",
+      "giga",
+      "bubble snake",
+      "herbalism",
+      "poceanto",
+      "blue pepper",
+      "trees",
+      "corals",
+      "mining",
+      "cobalt ore",
+      "aquamarine",
+      "fishing",
+      "exotic tuna",
+      "wolf fish",
+      "seaweed",
+      "electray",
+      "angel fish",
+      "warp",
+      "warp point"
+    ]
+  },
+  {
+    "id": "deep-ocean-2",
+    "name": "Deep ocean 2",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "83",
+    "monsters": ["Ancient Soul", "Soulfish", "Coral", "Upsivase"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Arcane Crystal", "Ocean Shard", "Ocean Heart"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Arcane Pearl",
+          "Angelic Algae",
+          "Forbidden Fruit (trees)",
+          "Depth Vine (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "deep ocean 2",
+      "ocean",
+      "surface zone",
+      "level 83",
+      "ancient soul",
+      "soulfish",
+      "coral",
+      "upsivase",
+      "mining",
+      "arcane crystal",
+      "ocean shard",
+      "ocean heart",
+      "herbalism",
+      "arcane pearl",
+      "angelic algae",
+      "forbidden fruit",
+      "trees",
+      "depth vine"
+    ]
+  },
+  {
+    "id": "deep-ocean-1",
+    "name": "Deep ocean 1",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "81",
+    "monsters": ["Coral", "Soulfish", "Upsivase", "Ancient Soul"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Arcane Crystal", "Ocean Shard", "Ocean Heart"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Arcane Pearl",
+          "Angelic Algae",
+          "Forbidden Fruit (trees)",
+          "Depth Vine (trees)"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "deep ocean 1",
+      "ocean",
+      "surface zone",
+      "level 81",
+      "coral",
+      "soulfish",
+      "upsivase",
+      "ancient soul",
+      "mining",
+      "arcane crystal",
+      "ocean shard",
+      "ocean heart",
+      "herbalism",
+      "arcane pearl",
+      "angelic algae",
+      "forbidden fruit",
+      "trees",
+      "depth vine",
+      "warp",
+      "warp point"
+    ]
+  },
+  {
+    "id": "deep-ocean-3",
+    "name": "Deep ocean 3",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "79",
+    "monsters": ["Soulfish", "Upsivase"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Arcane Crystal", "Ocean Shard", "Ocean Heart"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Arcane Pearl",
+          "Angelic Algae",
+          "Forbidden Fruit (trees)",
+          "Depth Vine (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "deep ocean 3",
+      "ocean",
+      "surface zone",
+      "level 79",
+      "soulfish",
+      "upsivase",
+      "mining",
+      "arcane crystal",
+      "ocean shard",
+      "ocean heart",
+      "herbalism",
+      "arcane pearl",
+      "angelic algae",
+      "forbidden fruit",
+      "trees",
+      "depth vine"
+    ]
+  },
+  {
+    "id": "deep-ocean-4",
+    "name": "Deep ocean 4",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "79",
+    "monsters": ["Soulfish", "Upsivase"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Arcane Crystal", "Ocean Shard", "Ocean Heart"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Arcane Pearl",
+          "Angelic Algae",
+          "Forbidden Fruit (trees)",
+          "Depth Vine (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "deep ocean 4",
+      "ocean",
+      "surface zone",
+      "level 79",
+      "soulfish",
+      "upsivase",
+      "mining",
+      "arcane crystal",
+      "ocean shard",
+      "ocean heart",
+      "herbalism",
+      "arcane pearl",
+      "angelic algae",
+      "forbidden fruit",
+      "trees",
+      "depth vine"
+    ]
+  },
+  {
+    "id": "cold-ocean-cave",
+    "name": "Cold ocean cave",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "44",
+    "monsters": ["Froni", "Sweel"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          "Blue Shard",
+          "Red Shard",
+          "Yellow Shard",
+          "Red Crystal",
+          "Blue Crystal",
+          "Yellow Crystal"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "cold ocean cave",
+      "ocean",
+      "surface zone",
+      "level 44",
+      "froni",
+      "sweel",
+      "mining",
+      "blue shard",
+      "red shard",
+      "yellow shard",
+      "red crystal",
+      "blue crystal",
+      "yellow crystal"
+    ]
+  },
+  {
+    "id": "great-trench",
+    "name": "Great trench",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Ocean",
+    "zoneType": "Surface zone",
+    "level": "0",
+    "monsters": [],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Arcane Crystal", "Ocean Shard", "Ocean Heart"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Arcane Pearl",
+          "Angelic Algae",
+          "Forbidden Fruit (trees)",
+          "Depth Vine (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "great trench",
+      "ocean",
+      "surface zone",
+      "level 0",
+      "mining",
+      "arcane crystal",
+      "ocean shard",
+      "ocean heart",
+      "herbalism",
+      "arcane pearl",
+      "angelic algae",
+      "forbidden fruit",
+      "trees",
+      "depth vine"
+    ]
+  },
+  {
+    "id": "savannah-1",
+    "name": "Savannah 1",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "22",
+    "monsters": ["Licki", "Bananek"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Iron Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Aloe Vera", "Pineapple", "Acacia Wood (trees)"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "savannah 1",
+      "desert",
+      "surface zone",
+      "level 22",
+      "licki",
+      "bananek",
+      "mining",
+      "iron ore",
+      "herbalism",
+      "aloe vera",
+      "pineapple",
+      "acacia wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "savannah-2",
+    "name": "Savannah 2",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "23",
+    "monsters": ["Bananek", "Citruslime", "Licki"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Iron Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Aloe Vera", "Pineapple", "Acacia Wood (trees)"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "savannah 2",
+      "desert",
+      "surface zone",
+      "level 23",
+      "bananek",
+      "citruslime",
+      "licki",
+      "mining",
+      "iron ore",
+      "herbalism",
+      "aloe vera",
+      "pineapple",
+      "acacia wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "savannah-3",
+    "name": "Savannah 3",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "24",
+    "monsters": ["Citruslime", "Bananek"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Iron Ore"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Aloe Vera", "Pineapple", "Acacia Wood (trees)"]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "savannah 3",
+      "desert",
+      "surface zone",
+      "level 24",
+      "citruslime",
+      "bananek",
+      "mining",
+      "iron ore",
+      "herbalism",
+      "aloe vera",
+      "pineapple",
+      "acacia wood",
+      "trees",
+      "warp",
+      "warp point"
+    ]
+  },
+  {
+    "id": "desert-4",
+    "name": "Desert 4",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "50",
+    "monsters": ["Cactus", "Rokkik"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Bismuth", "Ruby"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Glowfish", "Angel Fish", "Chomper"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Desert Sage",
+          "Desert Flower",
+          "Desert Rose",
+          "Cactus Fruit (trees)",
+          "Cactus (trees)"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "desert 4",
+      "desert",
+      "surface zone",
+      "level 50",
+      "cactus",
+      "rokkik",
+      "mining",
+      "bismuth",
+      "ruby",
+      "fishing",
+      "glowfish",
+      "angel fish",
+      "chomper",
+      "herbalism",
+      "desert sage",
+      "desert flower",
+      "desert rose",
+      "cactus fruit",
+      "trees",
+      "warp",
+      "warp point"
+    ]
+  },
+  {
+    "id": "desert-3",
+    "name": "Desert 3",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "51",
+    "monsters": ["Rokkik", "Cactus", "Slabbit"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Bismuth", "Ruby"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Desert Sage",
+          "Desert Flower",
+          "Desert Rose",
+          "Cactus Fruit (trees)",
+          "Cactus (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "desert 3",
+      "desert",
+      "surface zone",
+      "level 51",
+      "rokkik",
+      "cactus",
+      "slabbit",
+      "mining",
+      "bismuth",
+      "ruby",
+      "herbalism",
+      "desert sage",
+      "desert flower",
+      "desert rose",
+      "cactus fruit",
+      "trees"
+    ]
+  },
+  {
+    "id": "desert-2",
+    "name": "Desert 2",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "54",
+    "monsters": ["Rokkik", "Slabbit", "Dragonfruit", "Desert Bandit"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Bismuth", "Ruby"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Desert Sage",
+          "Desert Flower",
+          "Desert Rose",
+          "Cactus Fruit (trees)",
+          "Cactus (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "desert 2",
+      "desert",
+      "surface zone",
+      "level 54",
+      "rokkik",
+      "slabbit",
+      "dragonfruit",
+      "desert bandit",
+      "mining",
+      "bismuth",
+      "ruby",
+      "herbalism",
+      "desert sage",
+      "desert flower",
+      "desert rose",
+      "cactus fruit",
+      "trees",
+      "cactus"
+    ]
+  },
+  {
+    "id": "desert-1",
+    "name": "Desert 1",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "55",
+    "monsters": ["Dragonfruit", "Slabbit", "Desert Bandit"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Bismuth", "Ruby"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Desert Sage",
+          "Desert Flower",
+          "Desert Rose",
+          "Cactus Fruit (trees)",
+          "Cactus (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "desert 1",
+      "desert",
+      "surface zone",
+      "level 55",
+      "dragonfruit",
+      "slabbit",
+      "desert bandit",
+      "mining",
+      "bismuth",
+      "ruby",
+      "herbalism",
+      "desert sage",
+      "desert flower",
+      "desert rose",
+      "cactus fruit",
+      "trees",
+      "cactus"
+    ]
+  },
+  {
+    "id": "windy-savannah",
+    "name": "Windy savannah",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "22",
+    "monsters": ["Licki", "Citruslime"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Iron Ore"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Moss Snail", "Electray", "Glowfish"]
+      },
+      {
+        "type": "Herbalism",
+        "items": ["Aloe Vera", "Pineapple", "Acacia Wood (trees)"]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "windy savannah",
+      "desert",
+      "surface zone",
+      "level 22",
+      "licki",
+      "citruslime",
+      "mining",
+      "iron ore",
+      "fishing",
+      "moss snail",
+      "electray",
+      "glowfish",
+      "herbalism",
+      "aloe vera",
+      "pineapple",
+      "acacia wood",
+      "trees"
+    ]
+  },
+  {
+    "id": "desert-8",
+    "name": "Desert 8",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "0",
+    "monsters": [],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          "Starmetal",
+          "Bismuth",
+          "Black Diamond Fragment",
+          "Ruby",
+          "Black Diamond"
+        ]
+      },
+      {
+        "type": "Fishing",
+        "items": [
+          "Lava Octopus",
+          "Fire Fish",
+          "Glowfish",
+          "Desert Eel",
+          "Angel Fish",
+          "Chomper"
+        ]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Desert Sage",
+          "Desert Flower",
+          "Desert Rose",
+          "Epochal Lily",
+          "Memory Agave",
+          "Cactus Fruit (trees)",
+          "Sculpted Cactus (trees)",
+          "History Fruit (trees)",
+          "Cactus (trees)"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "desert 8",
+      "desert",
+      "surface zone",
+      "level 0",
+      "mining",
+      "starmetal",
+      "bismuth",
+      "black diamond fragment",
+      "ruby",
+      "black diamond",
+      "fishing",
+      "lava octopus",
+      "fire fish",
+      "glowfish",
+      "desert eel",
+      "angel fish",
+      "chomper",
+      "herbalism",
+      "desert sage",
+      "desert flower",
+      "desert rose",
+      "epochal lily",
+      "memory agave",
+      "cactus fruit",
+      "trees",
+      "sculpted cactus",
+      "history fruit",
+      "cactus",
+      "warp",
+      "warp point"
+    ]
+  },
+  {
+    "id": "desert-7",
+    "name": "Desert 7",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "88",
+    "monsters": ["Pyramid Guardian", "Lime Slime"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Starmetal", "Black Diamond Fragment", "Black Diamond"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Memory Agave",
+          "Epochal Lily",
+          "Sculpted Cactus (trees)",
+          "History Fruit (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "desert 7",
+      "desert",
+      "surface zone",
+      "level 88",
+      "pyramid guardian",
+      "lime slime",
+      "mining",
+      "starmetal",
+      "black diamond fragment",
+      "black diamond",
+      "herbalism",
+      "memory agave",
+      "epochal lily",
+      "sculpted cactus",
+      "trees",
+      "history fruit"
+    ]
+  },
+  {
+    "id": "desert-5",
+    "name": "Desert 5",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "86",
+    "monsters": [
+      "Blaze",
+      "Haunted Flame",
+      "Lost Bard",
+      "Saowl",
+      "Pyramid Guardian",
+      "Lime Slime"
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Starmetal", "Black Diamond Fragment", "Black Diamond"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Memory Agave",
+          "Epochal Lily",
+          "Sculpted Cactus (trees)",
+          "History Fruit (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "desert 5",
+      "desert",
+      "surface zone",
+      "level 86",
+      "blaze",
+      "haunted flame",
+      "lost bard",
+      "saowl",
+      "pyramid guardian",
+      "lime slime",
+      "mining",
+      "starmetal",
+      "black diamond fragment",
+      "black diamond",
+      "herbalism",
+      "memory agave",
+      "epochal lily",
+      "sculpted cactus",
+      "trees",
+      "history fruit"
+    ]
+  },
+  {
+    "id": "desert-6",
+    "name": "Desert 6",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "0",
+    "monsters": [],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Starmetal", "Black Diamond Fragment", "Black Diamond"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Memory Agave",
+          "Epochal Lily",
+          "Sculpted Cactus (trees)",
+          "History Fruit (trees)"
+        ]
+      }
+    ],
+    "warpPoint": false,
+    "tags": [
+      "desert 6",
+      "desert",
+      "surface zone",
+      "level 0",
+      "mining",
+      "starmetal",
+      "black diamond fragment",
+      "black diamond",
+      "herbalism",
+      "memory agave",
+      "epochal lily",
+      "sculpted cactus",
+      "trees",
+      "history fruit"
+    ]
+  },
+  {
+    "id": "desert-coast",
+    "name": "Desert coast",
+    "mapId": "world",
+    "x": 0,
+    "y": 0,
+    "area": "Desert",
+    "zoneType": "Surface zone",
+    "level": "85",
+    "monsters": ["Saowl", "Pyramid Guardian"],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": ["Starmetal", "Black Diamond Fragment", "Black Diamond"]
+      },
+      {
+        "type": "Fishing",
+        "items": ["Abyssal Octopus", "Spookee", "Abyssal Urchin"]
+      },
+      {
+        "type": "Herbalism",
+        "items": [
+          "Memory Agave",
+          "Epochal Lily",
+          "Sculpted Cactus (trees)",
+          "History Fruit (trees)"
+        ]
+      }
+    ],
+    "warpPoint": true,
+    "tags": [
+      "desert coast",
+      "desert",
+      "surface zone",
+      "level 85",
+      "saowl",
+      "pyramid guardian",
+      "mining",
+      "starmetal",
+      "black diamond fragment",
+      "black diamond",
+      "fishing",
+      "abyssal octopus",
+      "spookee",
+      "abyssal urchin",
+      "herbalism",
+      "memory agave",
+      "epochal lily",
+      "sculpted cactus",
+      "trees",
+      "history fruit",
+      "warp",
       "warp point"
     ]
   }

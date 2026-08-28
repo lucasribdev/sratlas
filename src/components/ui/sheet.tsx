@@ -111,19 +111,6 @@ function SheetTitle({ className, ...props }: SheetPrimitive.Title.Props) {
   )
 }
 
-function SheetDescription({
-  className,
-  ...props
-}: SheetPrimitive.Description.Props) {
-  return (
-    <SheetPrimitive.Description
-      data-slot="sheet-description"
-      className={cn("text-sm text-muted-foreground", className)}
-      {...props}
-    />
-  )
-}
-
 export {
   Sheet,
   SheetTrigger,
@@ -132,5 +119,4 @@ export {
   SheetHeader,
   SheetFooter,
   SheetTitle,
-  SheetDescription,
 }
