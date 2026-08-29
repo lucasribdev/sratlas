@@ -40,7 +40,7 @@ export function Sidebar({
   return (
     <aside
       className={cn(
-        'flex h-full w-full min-w-0 flex-col gap-5 bg-background p-5',
+        'flex h-full min-h-0 w-full min-w-0 flex-col gap-4 overflow-hidden bg-background p-5',
         'min-[761px]:w-[360px] min-[761px]:min-w-80 min-[761px]:border-r min-[761px]:border-border min-[761px]:p-6 min-[761px]:shadow-[8px_0_24px_rgb(30_41_59_/_0.08)]',
       )}
       aria-label="Busca, filtros e resultados"
@@ -65,7 +65,10 @@ export function Sidebar({
 
       <Separator />
 
-      <section className="grid gap-4" aria-labelledby="filters-title">
+      <section
+        className="grid max-h-[clamp(7.5rem,22svh,12rem)] min-h-0 shrink-0 gap-4 overflow-y-auto pr-1 min-[761px]:max-h-[clamp(8rem,24svh,14rem)]"
+        aria-labelledby="filters-title"
+      >
         <div className="flex items-center justify-between gap-3">
           <h2 id="filters-title" className="text-sm leading-tight font-bold text-foreground">
             Filtros
@@ -119,7 +122,7 @@ export function Sidebar({
 
       <Separator />
 
-      <section className="grid min-h-0 gap-3" aria-labelledby="results-title">
+      <section className="flex min-h-0 flex-1 flex-col gap-3" aria-labelledby="results-title">
         <div className="flex items-center justify-between gap-3">
           <h2 id="results-title" className="text-sm leading-tight font-bold text-foreground">
             Resultados
@@ -130,8 +133,8 @@ export function Sidebar({
         </div>
 
         {markers.length > 0 ? (
-          <ScrollArea className="max-h-[280px] overflow-hidden rounded-lg">
-            <ol className="grid gap-2 p-0">
+          <ScrollArea className="min-h-0 flex-1 overflow-hidden rounded-lg">
+            <ol className="grid gap-2 pr-2">
               {markers.map((marker) => {
                 const details = [marker.area, marker.zoneType, marker.level ? `Level ${marker.level}` : undefined]
                   .filter(Boolean)

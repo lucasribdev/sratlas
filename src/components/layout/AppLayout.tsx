@@ -85,7 +85,7 @@ export function AppLayout() {
 
   return (
     <main className="flex h-svh min-h-svh overflow-hidden bg-muted">
-      <div className="hidden min-[761px]:flex">
+      <div className="hidden min-h-0 min-[761px]:flex">
         <Sidebar
           areaOptions={areaOptions}
           onClearFilters={clearFilters}
@@ -102,7 +102,7 @@ export function AppLayout() {
         />
       </div>
 
-      <section className="relative flex min-w-0 flex-1" aria-label="Area principal do mapa">
+      <section className="relative flex min-h-0 min-w-0 flex-1" aria-label="Area principal do mapa">
         <div
           className="absolute top-3 right-3 left-3 z-[500] grid grid-cols-[minmax(0,1fr)_auto] gap-2 min-[761px]:hidden"
           aria-label="Controles compactos"
