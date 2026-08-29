@@ -168,7 +168,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -253,7 +254,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -362,7 +364,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -447,7 +450,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -532,7 +536,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -612,7 +617,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -703,7 +709,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -788,7 +795,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -903,7 +911,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -993,7 +1002,8 @@
           {
             "name": "Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wood.png/16px-Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -1049,12 +1059,14 @@
           {
             "name": "Oak Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Oak_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png",
+            "chancePercent": 100
           },
           {
             "name": "Apple (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Apple",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png",
+            "chancePercent": 100
           }
         ]
       },
@@ -1149,12 +1161,14 @@
           {
             "name": "Oak Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Oak_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png",
+            "chancePercent": 100
           },
           {
             "name": "Apple (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Apple",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -1216,12 +1230,14 @@
           {
             "name": "Oak Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Oak_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png",
+            "chancePercent": 100
           },
           {
             "name": "Apple (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Apple",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -1296,12 +1312,14 @@
           {
             "name": "Oak Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Oak_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png",
+            "chancePercent": 100
           },
           {
             "name": "Apple (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Apple",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -1851,12 +1869,14 @@
           {
             "name": "Oak Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Oak_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Oak_Wood.png/16px-Oak_Wood.png",
+            "chancePercent": 100
           },
           {
             "name": "Apple (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Apple",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Apple.png/16px-Apple.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -4812,9 +4832,7 @@
         "type": "Fishing",
         "items": [
           {
-            "name": "Moss Snail",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Moss_Snail",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Moss_Snail.png/16px-Moss_Snail.png"
+            "name": "Moss Snail"
           },
           {
             "name": "Electray",
@@ -5485,12 +5503,14 @@
           {
             "name": "Misty Fruit (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Misty_Fruit",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Misty_Fruit.png/16px-Misty_Fruit.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Misty_Fruit.png/16px-Misty_Fruit.png",
+            "chancePercent": 100
           },
           {
             "name": "Misty Wood (trees)",
             "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Misty_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Misty_Wood.png/16px-Misty_Wood.png"
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Misty_Wood.png/16px-Misty_Wood.png",
+            "chancePercent": 100
           }
         ]
       }
@@ -5757,9 +5777,7 @@
         "type": "Herbalism",
         "items": [
           {
-            "name": "Silver Leaf",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Silver_Leaf.png/16px-Silver_Leaf.png"
+            "name": "Silver Leaf"
           },
           {
             "name": "Yellow Garlic",
@@ -5767,9 +5785,7 @@
             "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Sulfuric_Wood.png/16px-Sulfuric_Wood.png"
+            "name": "Sulfuric Wood (trees)"
           },
           {
             "name": "Spot Tomato (trees)",
@@ -5824,9 +5840,7 @@
         "type": "Herbalism",
         "items": [
           {
-            "name": "Silver Leaf",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Silver_Leaf.png/16px-Silver_Leaf.png"
+            "name": "Silver Leaf"
           },
           {
             "name": "Yellow Garlic",
@@ -5834,9 +5848,7 @@
             "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Sulfuric_Wood.png/16px-Sulfuric_Wood.png"
+            "name": "Sulfuric Wood (trees)"
           },
           {
             "name": "Spot Tomato (trees)",
@@ -5914,9 +5926,7 @@
         "type": "Herbalism",
         "items": [
           {
-            "name": "Silver Leaf",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Silver_Leaf.png/16px-Silver_Leaf.png"
+            "name": "Silver Leaf"
           },
           {
             "name": "Yellow Garlic",
@@ -5924,9 +5934,7 @@
             "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Sulfuric_Wood.png/16px-Sulfuric_Wood.png"
+            "name": "Sulfuric Wood (trees)"
           },
           {
             "name": "Spot Tomato (trees)",
@@ -5984,9 +5992,7 @@
         "type": "Herbalism",
         "items": [
           {
-            "name": "Silver Leaf",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Silver_Leaf.png/16px-Silver_Leaf.png"
+            "name": "Silver Leaf"
           },
           {
             "name": "Yellow Garlic",
@@ -5994,9 +6000,7 @@
             "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Sulfuric_Wood.png/16px-Sulfuric_Wood.png"
+            "name": "Sulfuric Wood (trees)"
           },
           {
             "name": "Spot Tomato (trees)",
@@ -6049,9 +6053,7 @@
         "type": "Herbalism",
         "items": [
           {
-            "name": "Silver Leaf",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Silver_Leaf.png/16px-Silver_Leaf.png"
+            "name": "Silver Leaf"
           },
           {
             "name": "Yellow Garlic",
@@ -6059,9 +6061,7 @@
             "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Wood",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Sulfuric_Wood.png/16px-Sulfuric_Wood.png"
+            "name": "Sulfuric Wood (trees)"
           },
           {
             "name": "Spot Tomato (trees)",
@@ -6144,9 +6144,7 @@
             "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Spookee.png/16px-Spookee.png"
           },
           {
-            "name": "Moss Snail",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Moss_Snail",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Moss_Snail.png/16px-Moss_Snail.png"
+            "name": "Moss Snail"
           }
         ]
       },
@@ -6459,9 +6457,7 @@
             "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Spookee.png/16px-Spookee.png"
           },
           {
-            "name": "Moss Snail",
-            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Moss_Snail",
-            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Moss_Snail.png/16px-Moss_Snail.png"
+            "name": "Moss Snail"
           }
         ]
       },
