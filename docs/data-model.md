@@ -15,9 +15,31 @@ Estrutura recomendada para o MVP:
 
 ```text
 src/data/
+  areas.json
   maps.json
   markers.json
 ```
+
+## Areas
+
+`src/data/areas.json` guarda metadados visuais das areas usadas pelos marcadores.
+No MVP, ele deve ficar simples e estatico:
+
+```json
+{
+  "name": "Outskirts",
+  "color": "#2f7f68"
+}
+```
+
+| Campo | Obrigatorio | Descricao |
+| --- | --- | --- |
+| `name` | Sim | Nome da area exatamente como usado em `markers.json` |
+| `color` | Sim | Cor hexadecimal usada nos marcadores dessa area |
+
+A cor do marcador deve depender de `marker.area`. Nao repita cor dentro de cada
+marcador. Se a area do marcador nao existir em `areas.json`, ou se o marcador
+nao tiver `area`, a UI deve usar fallback neutro.
 
 ## Mapas
 
@@ -135,16 +157,15 @@ Nao crie agrupamento visual separado para cada monstro ou recurso. Nao separe en
 
 ## Estilo visual dos marcadores
 
-No MVP, o estilo visual do marcador deve ser derivado dos dados reais do proprio
-marcador, sem campo dedicado no JSON:
+No MVP, a cor do marcador deve ser derivada da area do marcador:
 
-- `warpPoint: true`;
-- presenca de `resources`;
-- presenca de `monsters`;
-- fallback generico para zona/local.
+- `marker.area` aponta para uma entrada em `src/data/areas.json`;
+- `areas.json` define a cor daquela area;
+- se nao houver cor cadastrada para a area, use fallback neutro;
+- `warpPoint: true` nao muda a cor base, apenas adiciona borda/anel visual.
 
-Essa regra evita manter uma classificacao paralela aos dados usados em busca, filtros e
-popup.
+Essa regra evita repetir cor em cada marcador e mantem o JSON de marcadores
+focado em dados do mapa, busca, filtros e popup.
 
 ## Coordenadas
 

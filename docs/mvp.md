@@ -99,10 +99,10 @@ Filtros do MVP:
 
 Estilo visual dos marcadores:
 
-- usar `warpPoint: true` quando existir;
-- senao, usar a presenca de `resources`;
-- senao, usar a presenca de `monsters`;
-- senao, usar fallback generico para zona/local.
+- cor baseada em `marker.area`, resolvida em `src/data/areas.json`;
+- fallback neutro quando a area nao tiver cor cadastrada;
+- `warpPoint: true` adiciona anel/borda extra, sem trocar a cor da area;
+- nao repetir cor em cada marcador.
 
 Regra:
 

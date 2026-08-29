@@ -3,6 +3,7 @@ import { divIcon, type Marker as LeafletMarker } from 'leaflet'
 import { Marker, Popup } from 'react-leaflet'
 import type { GameMap } from '@/domain/map'
 import type { MapMarker } from '@/domain/marker'
+import { areaColorForMarker } from '@/data/areas'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { percentageToLeafletLatLng } from '@/lib/coordinates'
@@ -28,27 +29,8 @@ type MapMarkerItemProps = {
 
 const markerIconsByKey = new Map<string, ReturnType<typeof divIcon>>()
 
-function markerColor(marker: MapMarker) {
-  const hasResources = marker.resources?.some((resource) => resource.items.some(Boolean))
-  const hasMonsters = marker.monsters?.some(Boolean)
-
-  if (marker.warpPoint) {
-    return '#0891b2'
-  }
-
-  if (hasResources) {
-    return '#2f7f68'
-  }
-
-  if (hasMonsters) {
-    return '#dc2626'
-  }
-
-  return '#475569'
-}
-
-function markerIcon(color: string, isSelected: boolean) {
-  const iconKey = `${color}:${isSelected ? 'selected' : 'idle'}`
+function markerIcon(color: string, isSelected: boolean, isWarpPoint: boolean) {
+  const iconKey = `${color}:${isSelected ? 'selected' : 'idle'}:${isWarpPoint ? 'warp' : 'plain'}`
   const cachedIcon = markerIconsByKey.get(iconKey)
 
   if (cachedIcon) {
@@ -56,10 +38,14 @@ function markerIcon(color: string, isSelected: boolean) {
   }
 
   const icon = divIcon({
-    className: cn('map-marker', isSelected && 'map-marker--selected'),
+    className: cn(
+      'map-marker',
+      isSelected && 'map-marker--selected',
+      isWarpPoint && 'map-marker--warp-point',
+    ),
     html: `<span class="map-marker__pin" style="--marker-color: ${color}"></span>`,
-    iconAnchor: [11, 11],
-    iconSize: [22, 22],
+    iconAnchor: [13, 13],
+    iconSize: [26, 26],
     popupAnchor: [0, -12],
   })
 
@@ -160,7 +146,7 @@ function MarkerPopup({ marker }: MarkerPopupProps) {
 
 function MapMarkerItem({ map, marker, onMarkerSelect, selectedMarkerId }: MapMarkerItemProps) {
   const markerRef = useRef<LeafletMarker | null>(null)
-  const color = markerColor(marker)
+  const color = areaColorForMarker(marker)
   const position = percentageToLeafletLatLng(marker, map)
   const isSelected = marker.id === selectedMarkerId
 
@@ -178,7 +164,7 @@ function MapMarkerItem({ map, marker, onMarkerSelect, selectedMarkerId }: MapMar
 
   return (
     <Marker
-      icon={markerIcon(color, isSelected)}
+      icon={markerIcon(color, isSelected, marker.warpPoint === true)}
       ref={markerRef}
       eventHandlers={{ click: () => onMarkerSelect(marker.id) }}
       position={position}

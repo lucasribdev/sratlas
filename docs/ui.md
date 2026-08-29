@@ -71,8 +71,9 @@ da CLI como `docs`, `view` ou `--dry-run`.
   areas e recursos com poucos cliques.
 - Use tokens de tema (`bg-background`, `text-foreground`, `border-border`,
   `bg-card`, `text-muted-foreground`, `ring-ring`) em vez de cores ad hoc.
-- Use cores especificas somente quando elas comunicarem dados do mapa, como tipo
-  de marcador, ponto de warp, recursos ou monstros.
+- Use cores especificas somente quando elas comunicarem dados do mapa. Para
+  marcadores, a cor vem da area cadastrada em `src/data/areas.json`; ponto de
+  warp usa anel/borda adicional, sem alterar a cor base da area.
 - Nao adicione efeitos visuais grandes, gradientes decorativos ou blocos de texto
   permanentes sobre o mapa sem necessidade clara.
 

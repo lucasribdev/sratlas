@@ -66,6 +66,7 @@
 }
 
 .map-marker__pin {
+  position: relative;
   display: block;
   width: 16px;
   height: 16px;
@@ -82,11 +83,22 @@
     transform 160ms ease;
 }
 
+.map-marker--warp-point .map-marker__pin::after {
+  position: absolute;
+  inset: -7px;
+  border: 2px solid #ffffff;
+  border-radius: inherit;
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--marker-color, #64748b) 42%, transparent),
+    0 0 12px color-mix(in srgb, var(--marker-color, #64748b) 48%, transparent);
+  content: '';
+}
+
 .map-marker:hover .map-marker__pin,
 .leaflet-marker-icon:focus-visible .map-marker__pin {
   box-shadow:
     0 0 0 3px rgb(255 255 255 / 0.9),
-    0 0 0 6px color-mix(in srgb, var(--marker-color, #475569) 34%, transparent),
+    0 0 0 6px color-mix(in srgb, var(--marker-color, #64748b) 34%, transparent),
     0 10px 18px rgb(15 23 42 / 0.36);
   transform: scale(1.08);
 }
@@ -96,10 +108,10 @@
 }
 
 .map-marker--selected .map-marker__pin {
-  outline: 3px solid color-mix(in srgb, var(--marker-color, #475569) 32%, transparent);
+  outline: 3px solid color-mix(in srgb, var(--marker-color, #64748b) 32%, transparent);
   box-shadow:
     0 0 0 3px #ffffff,
-    0 0 0 7px color-mix(in srgb, var(--marker-color, #475569) 28%, transparent),
+    0 0 0 7px color-mix(in srgb, var(--marker-color, #64748b) 28%, transparent),
     0 12px 22px rgb(15 23 42 / 0.38);
   transform: scale(1.16);
 }

@@ -31,9 +31,10 @@ Todo marcador novo deve ter:
 | `x` | Coordenada horizontal percentual, de `0` a `100`. |
 | `y` | Coordenada vertical percentual, de `0` a `100`. |
 
-No MVP, o estilo visual e os filtros rapidos sao derivados dos dados reais do
-marcador: `warpPoint`, `resources`, `monsters` e um fallback generico para
-zona/local quando nenhum desses campos existir.
+No MVP, a cor visual do marcador vem da area cadastrada em
+`src/data/areas.json`. O marcador continua usando apenas o campo `area`; nao
+adicione cor em cada marcador. Quando `warpPoint` for `true`, a UI adiciona um
+anel/borda extra ao marcador sem trocar a cor da area.
 
 ## Campos opcionais
 
@@ -56,6 +57,25 @@ Dados importantes devem entrar em campos estruturados do marcador: `area`,
 
 Nao separe NPCs, monstros, itens ou recursos em outros arquivos ainda. Isso fica
 para depois do MVP, quando houver duplicacao real e dados suficientes.
+
+## Cores por area
+
+Para definir ou ajustar a cor de uma area, edite `src/data/areas.json`:
+
+```json
+{
+  "name": "Outskirts",
+  "color": "#2f7f68"
+}
+```
+
+Regras:
+
+- `name` deve corresponder ao valor usado em `marker.area`.
+- `color` deve ser uma cor hexadecimal.
+- nao adicione `color`, `markerColor` ou campos parecidos em `markers.json`;
+- marcadores de areas sem cadastro de cor usam fallback neutro;
+- `warpPoint: true` adiciona anel/borda extra ao marcador.
 
 ## Recursos
 
@@ -194,11 +214,13 @@ Antes de abrir PR ou fechar uma issue de dados:
 4. Confira se `x` e `y` estao entre `0` e `100`.
 5. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
    a intencao for ativar filtros rapidos.
-6. Pesquise pelo nome da zona, area, monstro e recurso principal.
-7. Clique no resultado e confirme que o mapa centraliza no marcador.
-8. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
+6. Se a area for nova, confira se existe entrada correspondente em
+   `src/data/areas.json` ou aceite o fallback neutro temporariamente.
+7. Pesquise pelo nome da zona, area, monstro e recurso principal.
+8. Clique no resultado e confirme que o mapa centraliza no marcador.
+9. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
    existir.
-9. Verifique pelo menos uma tela desktop e uma mobile.
+10. Verifique pelo menos uma tela desktop e uma mobile.
 
 ## Checklist rapido
 
@@ -206,8 +228,9 @@ Antes de abrir PR ou fechar uma issue de dados:
 - `x` e `y` calculados em percentual a partir do canto superior esquerdo.
 - `area` preenchida quando a zona deve aparecer no filtro por regiao.
 - `resources` agrupado por `Fishing`, `Mining` e `Herbalism`.
-- `warpPoint`, `resources` e `monsters` preenchidos quando devem afetar estilo
-  visual ou filtros.
+- area cadastrada em `src/data/areas.json` quando precisa de cor propria.
+- `warpPoint` preenchido quando deve exibir anel/borda extra.
+- `resources` e `monsters` preenchidos quando devem afetar filtros.
 - `tags` usadas apenas para termos extras de busca.
 - Marcador aparece, e o clique centraliza o mapa.
 - Dados novos foram adicionados apenas em JSON, sem alterar codigo.
