@@ -1,32 +1,32 @@
-import type { MapMarker } from '@/domain/marker'
-import type { QuickFilterId } from '@/lib/marker-filters'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { Checkbox } from '@/components/ui/checkbox'
-import { Input } from '@/components/ui/input'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Separator } from '@/components/ui/separator'
-import { cn } from '@/lib/utils'
+import type { MapMarker } from "@/domain/marker";
+import type { QuickFilterId } from "@/lib/marker-filters";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 type SidebarProps = {
-  areaOptions: string[]
-  markers: MapMarker[]
-  onClearFilters: () => void
-  onMarkerSelect: (markerId: MapMarker['id']) => void
-  onSearchQueryChange: (query: string) => void
-  onSelectAllAreas: () => void
-  onToggleArea: (area: string) => void
-  onToggleQuickFilter: (filterId: QuickFilterId) => void
-  quickFilters: ReadonlyArray<{ id: QuickFilterId; label: string }>
-  searchQuery: string
-  selectedAreas: ReadonlySet<string>
-  selectedQuickFilters: ReadonlySet<QuickFilterId>
-}
+  areaOptions: string[];
+  markers: MapMarker[];
+  onClearAreas: () => void;
+  onMarkerSelect: (markerId: MapMarker["id"]) => void;
+  onSearchQueryChange: (query: string) => void;
+  onSelectAllAreas: () => void;
+  onToggleArea: (area: string) => void;
+  onToggleQuickFilter: (filterId: QuickFilterId) => void;
+  quickFilters: ReadonlyArray<{ id: QuickFilterId; label: string }>;
+  searchQuery: string;
+  selectedAreas: ReadonlySet<string>;
+  selectedQuickFilters: ReadonlySet<QuickFilterId>;
+};
 
 export function Sidebar({
   areaOptions,
   markers,
-  onClearFilters,
+  onClearAreas,
   onMarkerSelect,
   onSearchQueryChange,
   onSelectAllAreas,
@@ -40,15 +40,19 @@ export function Sidebar({
   return (
     <aside
       className={cn(
-        'flex h-full min-h-0 w-full min-w-0 flex-col gap-4 overflow-hidden bg-background p-5',
-        'min-[761px]:w-[360px] min-[761px]:min-w-80 min-[761px]:border-r min-[761px]:border-border min-[761px]:p-6 min-[761px]:shadow-[8px_0_24px_rgb(30_41_59_/_0.08)]',
+        "flex h-full min-h-0 w-full min-w-0 flex-col gap-4 overflow-hidden bg-background p-5",
+        "min-[761px]:w-[360px] min-[761px]:min-w-80 min-[761px]:border-r min-[761px]:border-border min-[761px]:p-6 min-[761px]:shadow-[8px_0_24px_rgb(30_41_59_/_0.08)]",
       )}
       aria-label="Search, filters, and results"
     >
       <header className="grid gap-1.5">
         <div className="grid gap-1">
-          <p className="text-xs font-bold tracking-normal text-primary uppercase">Soul's Remnant</p>
-          <h1 className="text-2xl leading-tight font-bold text-foreground">Interactive Map</h1>
+          <p className="text-xs font-bold tracking-normal text-primary uppercase">
+            Soul's Remnant
+          </p>
+          <h1 className="text-2xl leading-tight font-bold text-foreground">
+            Interactive Map
+          </h1>
         </div>
       </header>
 
@@ -57,7 +61,7 @@ export function Sidebar({
         <Input
           className="h-10 bg-card"
           type="search"
-          placeholder="Search NPC, area, or resource"
+          placeholder="Search area, resource or monster"
           value={searchQuery}
           onChange={(event) => onSearchQueryChange(event.target.value)}
         />
@@ -70,21 +74,36 @@ export function Sidebar({
         aria-labelledby="filters-title"
       >
         <div className="flex items-center justify-between gap-3">
-          <h2 id="filters-title" className="text-sm leading-tight font-bold text-foreground">
+          <h2
+            id="filters-title"
+            className="text-sm leading-tight font-bold text-foreground"
+          >
             Filters
           </h2>
           <div className="flex gap-2">
-            <Button type="button" variant="outline" size="sm" onClick={onSelectAllAreas}>
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={onSelectAllAreas}
+            >
               All areas
             </Button>
-            <Button type="button" variant="outline" size="sm" onClick={onClearFilters}>
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={onClearAreas}
+            >
               Clear
             </Button>
           </div>
         </div>
 
         <div className="grid gap-2.5" aria-label="Areas and regions">
-          <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">Areas</h3>
+          <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">
+            Areas
+          </h3>
           <div className="grid gap-2">
             {areaOptions.map((area) => (
               <label
@@ -102,7 +121,9 @@ export function Sidebar({
         </div>
 
         <div className="grid gap-2.5" aria-label="Quick filters">
-          <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">Quick</h3>
+          <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">
+            Quick
+          </h3>
           <div className="grid gap-2">
             {quickFilters.map((filter) => (
               <label
@@ -122,12 +143,21 @@ export function Sidebar({
 
       <Separator />
 
-      <section className="flex min-h-0 flex-1 flex-col gap-3" aria-labelledby="results-title">
+      <section
+        className="flex min-h-0 flex-1 flex-col gap-3"
+        aria-labelledby="results-title"
+      >
         <div className="flex items-center justify-between gap-3">
-          <h2 id="results-title" className="text-sm leading-tight font-bold text-foreground">
+          <h2
+            id="results-title"
+            className="text-sm leading-tight font-bold text-foreground"
+          >
             Results
           </h2>
-          <Badge variant="secondary" className="min-w-7 justify-center rounded-full">
+          <Badge
+            variant="secondary"
+            className="min-w-7 justify-center rounded-full"
+          >
             {markers.length}
           </Badge>
         </div>
@@ -136,9 +166,13 @@ export function Sidebar({
           <ScrollArea className="min-h-0 flex-1 overflow-hidden rounded-lg">
             <ol className="grid gap-2 pr-2">
               {markers.map((marker) => {
-                const details = [marker.area, marker.zoneType, marker.level ? `Level ${marker.level}` : undefined]
+                const details = [
+                  marker.area,
+                  marker.zoneType,
+                  marker.level ? `Level ${marker.level}` : undefined,
+                ]
                   .filter(Boolean)
-                  .join(' · ')
+                  .join(" · ");
 
                 return (
                   <li
@@ -154,11 +188,13 @@ export function Sidebar({
                         {marker.name}
                       </strong>
                       {details ? (
-                        <span className="text-xs leading-snug text-muted-foreground">{details}</span>
+                        <span className="text-xs leading-snug text-muted-foreground">
+                          {details}
+                        </span>
                       ) : null}
                     </button>
                   </li>
-                )
+                );
               })}
             </ol>
           </ScrollArea>
@@ -169,5 +205,5 @@ export function Sidebar({
         )}
       </section>
     </aside>
-  )
+  );
 }

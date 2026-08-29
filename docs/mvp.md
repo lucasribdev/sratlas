@@ -87,6 +87,7 @@ Busca do MVP:
 Filtros do MVP:
 
 - checkboxes por area/regiao derivados dos marcadores;
+- todas as areas iniciam selecionadas;
 - filtros rapidos derivados dos campos dos marcadores:
   - Warp point: `warpPoint: true`;
   - Has monsters: `monsters` nao vazio;
@@ -94,7 +95,7 @@ Filtros do MVP:
   - Mining: algum grupo `resources[].type === "Mining"`;
   - Herbalism: algum grupo `resources[].type === "Herbalism"`;
 - opcao para selecionar todas as areas;
-- opcao para limpar;
+- opcao para limpar a selecao de areas sem alterar a busca ou os filtros rapidos;
 - filtros combinam com a busca.
 
 Estilo visual dos marcadores:
@@ -107,11 +108,12 @@ Estilo visual dos marcadores:
 Regra:
 
 ```text
-um marcador aparece se a area esta ativa, ou nenhuma area esta selecionada
+um marcador aparece se a area esta ativa
 E todos os filtros rapidos ativos correspondem aos dados do marcador
 E o texto buscado corresponde aos campos buscaveis
 
-Sem busca e sem filtros ativos, todos os marcadores aparecem.
+Sem busca e sem filtros rapidos ativos, todas as areas (selecionadas por padrao) mostram todos os marcadores.
+Se nenhuma area estiver selecionada, nenhum marcador aparece.
 ```
 
 ## Criterios de pronto
