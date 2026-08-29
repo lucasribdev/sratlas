@@ -83,6 +83,10 @@
     transform 160ms ease;
 }
 
+.map-marker__pin::after {
+  pointer-events: none;
+}
+
 .map-marker--warp-point .map-marker__pin::after {
   position: absolute;
   inset: -7px;
@@ -92,6 +96,15 @@
     0 0 0 2px color-mix(in srgb, var(--marker-color, #64748b) 42%, transparent),
     0 0 12px color-mix(in srgb, var(--marker-color, #64748b) 48%, transparent);
   content: '';
+}
+
+.map-marker--warp-point:hover .map-marker__pin::after,
+.leaflet-marker-icon.map-marker--warp-point:focus-visible .map-marker__pin::after {
+  inset: -8px;
+  box-shadow:
+    0 0 0 2px rgb(255 255 255 / 0.86),
+    0 0 0 5px color-mix(in srgb, var(--marker-color, #64748b) 30%, transparent),
+    0 0 16px color-mix(in srgb, var(--marker-color, #64748b) 52%, transparent);
 }
 
 .map-marker:hover .map-marker__pin,
@@ -114,6 +127,14 @@
     0 0 0 7px color-mix(in srgb, var(--marker-color, #64748b) 28%, transparent),
     0 12px 22px rgb(15 23 42 / 0.38);
   transform: scale(1.16);
+}
+
+.map-marker--selected.map-marker--warp-point .map-marker__pin::after {
+  inset: -9px;
+  border-color: #ffffff;
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--marker-color, #64748b) 34%, transparent),
+    0 0 18px color-mix(in srgb, var(--marker-color, #64748b) 56%, transparent);
 }
 
 .leaflet-popup-content {

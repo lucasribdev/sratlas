@@ -3,10 +3,10 @@ import { divIcon, type Marker as LeafletMarker } from 'leaflet'
 import { Marker, Popup } from 'react-leaflet'
 import type { GameMap } from '@/domain/map'
 import type { MapMarker } from '@/domain/marker'
-import { areaColorForMarker } from '@/data/areas'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { percentageToLeafletLatLng } from '@/lib/coordinates'
+import { markerVisualStyle } from '@/lib/marker-style'
 import { cn } from '@/lib/utils'
 
 type MapMarkersProps = {
@@ -29,8 +29,8 @@ type MapMarkerItemProps = {
 
 const markerIconsByKey = new Map<string, ReturnType<typeof divIcon>>()
 
-function markerIcon(color: string, isSelected: boolean, isWarpPoint: boolean) {
-  const iconKey = `${color}:${isSelected ? 'selected' : 'idle'}:${isWarpPoint ? 'warp' : 'plain'}`
+function markerIcon(style: ReturnType<typeof markerVisualStyle>) {
+  const iconKey = `${style.color}:${style.className ?? 'plain'}`
   const cachedIcon = markerIconsByKey.get(iconKey)
 
   if (cachedIcon) {
@@ -38,12 +38,8 @@ function markerIcon(color: string, isSelected: boolean, isWarpPoint: boolean) {
   }
 
   const icon = divIcon({
-    className: cn(
-      'map-marker',
-      isSelected && 'map-marker--selected',
-      isWarpPoint && 'map-marker--warp-point',
-    ),
-    html: `<span class="map-marker__pin" style="--marker-color: ${color}"></span>`,
+    className: cn('map-marker', style.className),
+    html: `<span class="map-marker__pin" style="--marker-color: ${style.color}"></span>`,
     iconAnchor: [13, 13],
     iconSize: [26, 26],
     popupAnchor: [0, -12],
@@ -146,9 +142,9 @@ function MarkerPopup({ marker }: MarkerPopupProps) {
 
 function MapMarkerItem({ map, marker, onMarkerSelect, selectedMarkerId }: MapMarkerItemProps) {
   const markerRef = useRef<LeafletMarker | null>(null)
-  const color = areaColorForMarker(marker)
   const position = percentageToLeafletLatLng(marker, map)
   const isSelected = marker.id === selectedMarkerId
+  const visualStyle = markerVisualStyle(marker, { selected: isSelected })
 
   useEffect(() => {
     if (!isSelected) {
@@ -164,7 +160,7 @@ function MapMarkerItem({ map, marker, onMarkerSelect, selectedMarkerId }: MapMar
 
   return (
     <Marker
-      icon={markerIcon(color, isSelected, marker.warpPoint === true)}
+      icon={markerIcon(visualStyle)}
       ref={markerRef}
       eventHandlers={{ click: () => onMarkerSelect(marker.id) }}
       position={position}
