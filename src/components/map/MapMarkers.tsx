@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { divIcon, type Marker as LeafletMarker } from "leaflet";
-import { Marker, Popup } from "react-leaflet";
+import { Marker, Popup, Tooltip } from "react-leaflet";
 import type { GameMap } from "@/domain/map";
 import type {
   MapMarker,
@@ -262,6 +262,14 @@ function MapMarkerItem({
       position={position}
       title={marker.name}
     >
+      <Tooltip
+        className="map-marker-tooltip"
+        direction="top"
+        offset={[0, -14]}
+        opacity={1}
+      >
+        {marker.name}
+      </Tooltip>
       <Popup
         className="map-popup"
         autoPanPaddingBottomRight={[16, 16]}
