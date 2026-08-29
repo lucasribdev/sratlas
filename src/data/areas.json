@@ -1,47 +1,7 @@
 [
   {
-    "name": "Banana farm",
-    "color": "#eda600"
-  },
-  {
-    "name": "Cold ocean cave",
-    "color": "#006189"
-  },
-  {
-    "name": "Deep forest den",
-    "color": "#00892a"
-  },
-  {
-    "name": "Desert",
-    "color": "#ffc23d"
-  },
-  {
-    "name": "Detour",
-    "color": "#c35c00"
-  },
-  {
-    "name": "Forest",
-    "color": "#00915d"
-  },
-  {
-    "name": "Giant tree",
-    "color": "#00edaa"
-  },
-  {
-    "name": "Great trench",
-    "color": "#006fed"
-  },
-  {
-    "name": "Lost Forest",
-    "color": "#770d8f"
-  },
-  {
-    "name": "Misty Forest",
-    "color": "#c337e6"
-  },
-  {
-    "name": "Ocean",
-    "color": "#40bfff"
+    "name": "Spawn",
+    "color": "#00d69f"
   },
   {
     "name": "Outskirts",
@@ -56,28 +16,68 @@
     "color": "#767676"
   },
   {
+    "name": "Forest",
+    "color": "#00915d"
+  },
+  {
+    "name": "Giant tree",
+    "color": "#00edaa"
+  },
+  {
+    "name": "Deep forest den",
+    "color": "#00892a"
+  },
+  {
+    "name": "Ocean",
+    "color": "#40bfff"
+  },
+  {
+    "name": "Cold ocean cave",
+    "color": "#006189"
+  },
+  {
+    "name": "Great trench",
+    "color": "#006fed"
+  },
+  {
+    "name": "Desert",
+    "color": "#ffc23d"
+  },
+  {
     "name": "Pyramid",
     "color": "#eda600"
   },
   {
-    "name": "Rocky Path",
-    "color": "#ffbb94"
+    "name": "Banana farm",
+    "color": "#eda600"
   },
   {
-    "name": "Snowy Mountain",
-    "color": "#fff"
+    "name": "Misty Forest",
+    "color": "#c337e6"
   },
   {
-    "name": "Spawn",
-    "color": "#00d69f"
+    "name": "Lost Forest",
+    "color": "#770d8f"
+  },
+  {
+    "name": "Sulfuric Plains",
+    "color": "#ff3863"
   },
   {
     "name": "Sulfuric Path",
     "color": "#9f0033"
   },
   {
-    "name": "Sulfuric Plains",
-    "color": "#ff3863"
+    "name": "Rocky Path",
+    "color": "#ffbb94"
+  },
+  {
+    "name": "Detour",
+    "color": "#c35c00"
+  },
+  {
+    "name": "Snowy Mountain",
+    "color": "#fff"
   },
   {
     "name": "Traveler rest",

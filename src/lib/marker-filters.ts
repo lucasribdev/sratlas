@@ -1,4 +1,5 @@
 import type { MapMarker } from '@/domain/marker'
+import { areas } from '@/data/areas'
 
 export const quickFilters = [
   { id: 'warp-point', label: 'Warp point' },
@@ -30,7 +31,13 @@ export function markerMatchesQuickFilter(marker: MapMarker, filterId: QuickFilte
 }
 
 export function markerAreaOptions(markers: MapMarker[]) {
-  return Array.from(
-    new Set(markers.map((marker) => marker.area?.trim()).filter((area): area is string => Boolean(area))),
-  ).sort((firstArea, secondArea) => firstArea.localeCompare(secondArea))
+  const markerAreas = new Set(
+    markers.map((marker) => marker.area?.trim()).filter((area): area is string => Boolean(area)),
+  )
+  const orderedAreas = areas.map((area) => area.name).filter((area) => markerAreas.delete(area))
+  const unmatchedAreas = [...markerAreas].sort((firstArea, secondArea) =>
+    firstArea.localeCompare(secondArea),
+  )
+
+  return [...orderedAreas, ...unmatchedAreas]
 }
