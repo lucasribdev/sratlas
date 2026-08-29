@@ -1,13 +1,19 @@
 import { useEffect } from 'react'
 import { CRS } from 'leaflet'
 import { ImageOverlay, MapContainer, useMap } from 'react-leaflet'
-import { maps } from '@/data/maps'
 import { markers as allMarkers } from '@/data/markers'
+import type { GameMap } from '@/domain/map'
 import type { MapMarker } from '@/domain/marker'
 import { mapBoundsFromDimensions, percentageToLeafletLatLng } from '@/lib/coordinates'
 import { MapMarkers } from './MapMarkers'
 
-const initialMap = maps[0]
+const initialMap: GameMap = {
+  id: 'world',
+  name: 'World Map',
+  imageUrl: '/maps/worldmapsurface.webp',
+  width: 1076,
+  height: 1056,
+}
 const imageBounds = mapBoundsFromDimensions(initialMap)
 const minZoom = -2
 const maxZoom = 2
