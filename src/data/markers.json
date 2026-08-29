@@ -13,9 +13,24 @@
       {
         "type": "Fishing",
         "items": [
-          "Clam",
-          "Shrimp",
-          "Trout"
+          {
+            "name": "Clam",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+            "chancePercent": 62.5
+          },
+          {
+            "name": "Shrimp",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shrimp",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shrimp.png/16px-Shrimp.png",
+            "chancePercent": 21.9
+          },
+          {
+            "name": "Trout",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Trout",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Trout.png/16px-Trout.png",
+            "chancePercent": 15.6
+          }
         ]
       }
     ],
@@ -25,7 +40,59 @@
       "warp",
       "warp point"
     ],
-    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Spawn_Grounds"
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Spawn_Grounds",
+    "interactables": [
+      {
+        "name": "Quest Master",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quest_Master",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Quest_Master.png/16px-Quest_Master.png"
+      },
+      {
+        "name": "Auctioneer",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Auctioneer",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Auctioneer.png/16px-Auctioneer.png"
+      },
+      {
+        "name": "Kmitty",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Kmitty",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Kmitty.png/16px-Kmitty.png"
+      },
+      {
+        "name": "Gevil",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Gevil",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Gevil.png/16px-Gevil.png"
+      },
+      {
+        "name": "Shop Keeper",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shop_Keeper",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shop_Keeper.png/16px-Shop_Keeper.png"
+      },
+      {
+        "name": "Tailor",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Tailor",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Tailor.png/16px-Tailor.png"
+      },
+      {
+        "name": "Smith",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Smith",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Smith.png/16px-Smith.png"
+      },
+      {
+        "name": "Mysterious Man",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mysterious_Man",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Mysterious_Man.png/16px-Mysterious_Man.png"
+      },
+      {
+        "name": "Shepherd",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shepherd",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shepherd.png/16px-Shepherd.png"
+      },
+      {
+        "name": "???",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/%3F%3F%3F",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Placeholder.png/16px-Placeholder.png"
+      }
+    ]
   },
   {
     "id": "outskirts-south",
@@ -37,32 +104,78 @@
     "zoneType": "Surface zone",
     "level": "7",
     "monsters": [
-      "Hopper",
-      "Jel",
-      "Pin Pin"
+      {
+        "name": "Hopper",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Hopper",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Hopper.png/16px-Hopper.png"
+      },
+      {
+        "name": "Jel",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Jel",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Jel.png/16px-Jel.png"
+      },
+      {
+        "name": "Pin Pin",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pin_Pin",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Pin_Pin.png/16px-Pin_Pin.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 7"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_South",
+    "interactables": []
   },
   {
     "id": "outskirts-southeast",
@@ -74,32 +187,78 @@
     "zoneType": "Surface zone",
     "level": "6",
     "monsters": [
-      "Pin Pin",
-      "Jel",
-      "Hopper"
+      {
+        "name": "Pin Pin",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pin_Pin",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Pin_Pin.png/16px-Pin_Pin.png"
+      },
+      {
+        "name": "Jel",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Jel",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Jel.png/16px-Jel.png"
+      },
+      {
+        "name": "Hopper",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Hopper",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Hopper.png/16px-Hopper.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 6"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Southeast",
+    "interactables": []
   },
   {
     "id": "outskirts-pond",
@@ -111,40 +270,102 @@
     "zoneType": "Surface zone",
     "level": "7",
     "monsters": [
-      "Slip",
-      "Flows"
+      {
+        "name": "Slip",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Slip",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Slip.png/16px-Slip.png"
+      },
+      {
+        "name": "Flows",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Flows",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Flows.png/16px-Flows.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Clam",
-          "Shrimp",
-          "Trout",
-          "Chomper"
+          {
+            "name": "Clam",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+            "chancePercent": 37
+          },
+          {
+            "name": "Shrimp",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shrimp",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shrimp.png/16px-Shrimp.png",
+            "chancePercent": 27.8
+          },
+          {
+            "name": "Trout",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Trout",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Trout.png/16px-Trout.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Chomper",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Chomper",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Chomper.png/16px-Chomper.png",
+            "chancePercent": 13
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 7"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Pond",
+    "interactables": []
   },
   {
     "id": "outskirts-east",
@@ -156,32 +377,78 @@
     "zoneType": "Surface zone",
     "level": "3",
     "monsters": [
-      "Jel",
-      "Pin Pin",
-      "Slime"
+      {
+        "name": "Jel",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Jel",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Jel.png/16px-Jel.png"
+      },
+      {
+        "name": "Pin Pin",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pin_Pin",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Pin_Pin.png/16px-Pin_Pin.png"
+      },
+      {
+        "name": "Slime",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Slime",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Slime.png/16px-Slime.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 3"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_East",
+    "interactables": []
   },
   {
     "id": "outskirts-northeast",
@@ -193,32 +460,78 @@
     "zoneType": "Surface zone",
     "level": "5",
     "monsters": [
-      "Jel",
-      "Bubble Spirit",
-      "Pin Pin"
+      {
+        "name": "Jel",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Jel",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Jel.png/16px-Jel.png"
+      },
+      {
+        "name": "Bubble Spirit",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Bubble_Spirit",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Bubble_Spirit.png/16px-Bubble_Spirit.png"
+      },
+      {
+        "name": "Pin Pin",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pin_Pin",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Pin_Pin.png/16px-Pin_Pin.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 5"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Northeast",
+    "interactables": []
   },
   {
     "id": "outskirts-north",
@@ -230,30 +543,78 @@
     "zoneType": "Surface zone",
     "level": "5",
     "monsters": [
-      "Flows",
-      "Jel"
+      {
+        "name": "Flows",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Flows",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Flows.png/16px-Flows.png"
+      },
+      {
+        "name": "Jel",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Jel",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Jel.png/16px-Jel.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 5"
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_North",
+    "interactables": [
+      {
+        "name": "Shepherd",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shepherd",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shepherd.png/16px-Shepherd.png"
+      }
     ]
   },
   {
@@ -266,32 +627,78 @@
     "zoneType": "Surface zone",
     "level": "3",
     "monsters": [
-      "Slime",
-      "Bubble Spirit",
-      "Jel"
+      {
+        "name": "Slime",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Slime",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Slime.png/16px-Slime.png"
+      },
+      {
+        "name": "Bubble Spirit",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Bubble_Spirit",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Bubble_Spirit.png/16px-Bubble_Spirit.png"
+      },
+      {
+        "name": "Jel",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Jel",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Jel.png/16px-Jel.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 3"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Flower_Field",
+    "interactables": []
   },
   {
     "id": "outskirts-northwest",
@@ -303,31 +710,88 @@
     "zoneType": "Surface zone",
     "level": "2",
     "monsters": [
-      "Bubble Spirit",
-      "Slime",
-      "Jel"
+      {
+        "name": "Bubble Spirit",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Bubble_Spirit",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Bubble_Spirit.png/16px-Bubble_Spirit.png"
+      },
+      {
+        "name": "Slime",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Slime",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Slime.png/16px-Slime.png"
+      },
+      {
+        "name": "Jel",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Jel",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Jel.png/16px-Jel.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 2"
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Northwest",
+    "interactables": [
+      {
+        "name": "???",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/%3F%3F%3F",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Placeholder.png/16px-Placeholder.png"
+      },
+      {
+        "name": "Shepherd",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shepherd",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shepherd.png/16px-Shepherd.png"
+      }
     ]
   },
   {
@@ -340,39 +804,97 @@
     "zoneType": "Surface zone",
     "level": "1",
     "monsters": [
-      "Slime"
+      {
+        "name": "Slime",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Slime",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Slime.png/16px-Slime.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Clam",
-          "Shrimp",
-          "Trout",
-          "Chomper"
+          {
+            "name": "Clam",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+            "chancePercent": 37
+          },
+          {
+            "name": "Shrimp",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shrimp",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shrimp.png/16px-Shrimp.png",
+            "chancePercent": 27.8
+          },
+          {
+            "name": "Trout",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Trout",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Trout.png/16px-Trout.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Chomper",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Chomper",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Chomper.png/16px-Chomper.png",
+            "chancePercent": 13
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 1"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_West",
+    "interactables": []
   },
   {
     "id": "outskirts-southwest",
@@ -384,33 +906,83 @@
     "zoneType": "Surface zone",
     "level": "8",
     "monsters": [
-      "Glowsnail",
-      "Jel",
-      "Pin Pin",
-      "Hopper"
+      {
+        "name": "Glowsnail",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Glowsnail",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Glowsnail.png/16px-Glowsnail.png"
+      },
+      {
+        "name": "Jel",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Jel",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Jel.png/16px-Jel.png"
+      },
+      {
+        "name": "Pin Pin",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pin_Pin",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Pin_Pin.png/16px-Pin_Pin.png"
+      },
+      {
+        "name": "Hopper",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Hopper",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Hopper.png/16px-Hopper.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Stone",
-          "Salt"
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+            "chancePercent": 65.2
+          },
+          {
+            "name": "Salt",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Salt",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Salt.png/16px-Salt.png",
+            "chancePercent": 34.8
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Wheat",
-          "Green Herb",
-          "Red Herb",
-          "Blue Herb",
-          "Wood (trees)"
+          {
+            "name": "Wheat",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Wheat",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Wheat.png/16px-Wheat.png",
+            "chancePercent": 33.3
+          },
+          {
+            "name": "Green Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Red Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Red_Herb.png/16px-Red_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Blue Herb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Herb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Blue_Herb.png/16px-Blue_Herb.png",
+            "chancePercent": 22.2
+          },
+          {
+            "name": "Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 8"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Southwest",
+    "interactables": []
   },
   {
     "id": "plains-1",
@@ -422,35 +994,85 @@
     "zoneType": "Surface zone",
     "level": "11",
     "monsters": [
-      "Glowsnail",
-      "Cloudsheep"
+      {
+        "name": "Glowsnail",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Glowsnail",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Glowsnail.png/16px-Glowsnail.png"
+      },
+      {
+        "name": "Cloudsheep",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cloudsheep",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Cloudsheep.png/16px-Cloudsheep.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Copper Ore"
+          {
+            "name": "Copper Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Copper_Ore",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Copper_Ore.png/16px-Copper_Ore.png",
+            "chancePercent": 100
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
+          {
+            "name": "Cotton Ball",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cotton_Ball",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Cotton_Ball.png/16px-Cotton_Ball.png",
+            "chancePercent": 100
+          },
+          {
+            "name": "Oak Wood (trees)"
+          },
+          {
+            "name": "Apple (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Shrimp",
-          "Clam",
-          "Trout"
+          {
+            "name": "Shrimp",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shrimp",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shrimp.png/16px-Shrimp.png",
+            "chancePercent": 43.8
+          },
+          {
+            "name": "Clam",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+            "chancePercent": 31.3
+          },
+          {
+            "name": "Trout",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Trout",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Trout.png/16px-Trout.png",
+            "chancePercent": 25
+          }
         ]
       }
     ],
     "tags": [
       "level 11"
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_1",
+    "interactables": [
+      {
+        "name": "Shepherd",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shepherd",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shepherd.png/16px-Shepherd.png"
+      },
+      {
+        "name": "???",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/%3F%3F%3F",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Placeholder.png/16px-Placeholder.png"
+      }
     ]
   },
   {
@@ -463,28 +1085,62 @@
     "zoneType": "Surface zone",
     "level": "12",
     "monsters": [
-      "Squishling",
-      "Cloudsheep",
-      "Angeling"
+      {
+        "name": "Squishling",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Squishling",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Squishling.png/16px-Squishling.png"
+      },
+      {
+        "name": "Cloudsheep",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cloudsheep",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Cloudsheep.png/16px-Cloudsheep.png"
+      },
+      {
+        "name": "Angeling",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Angeling",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Angeling.png/16px-Angeling.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Copper Ore"
+          {
+            "name": "Copper Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Copper_Ore",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Copper_Ore.png/16px-Copper_Ore.png",
+            "chancePercent": 100
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
+          {
+            "name": "Cotton Ball",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cotton_Ball",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Cotton_Ball.png/16px-Cotton_Ball.png",
+            "chancePercent": 100
+          },
+          {
+            "name": "Oak Wood (trees)"
+          },
+          {
+            "name": "Apple (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 12"
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_2",
+    "interactables": [
+      {
+        "name": "Shepherd",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shepherd",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shepherd.png/16px-Shepherd.png"
+      }
     ]
   },
   {
@@ -497,22 +1153,44 @@
     "zoneType": "Surface zone",
     "level": "14",
     "monsters": [
-      "Squishling",
-      "Black Cloudsheep"
+      {
+        "name": "Squishling",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Squishling",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Squishling.png/16px-Squishling.png"
+      },
+      {
+        "name": "Black Cloudsheep",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Black_Cloudsheep",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Black_Cloudsheep.png/16px-Black_Cloudsheep.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Copper Ore"
+          {
+            "name": "Copper Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Copper_Ore",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Copper_Ore.png/16px-Copper_Ore.png",
+            "chancePercent": 100
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
+          {
+            "name": "Cotton Ball",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cotton_Ball",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Cotton_Ball.png/16px-Cotton_Ball.png",
+            "chancePercent": 100
+          },
+          {
+            "name": "Oak Wood (trees)"
+          },
+          {
+            "name": "Apple (trees)"
+          }
         ]
       }
     ],
@@ -521,6 +1199,24 @@
       "level 14",
       "warp",
       "warp point"
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_3",
+    "interactables": [
+      {
+        "name": "Shepherd",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shepherd",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shepherd.png/16px-Shepherd.png"
+      },
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      },
+      {
+        "name": "Plains Dungeon",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_Dungeon",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Plains_Dungeon.png/16px-Plains_Dungeon.png"
+      }
     ]
   },
   {
@@ -533,28 +1229,50 @@
     "zoneType": "Surface zone",
     "level": "15",
     "monsters": [
-      "Black Cloudsheep",
-      "Squishling"
+      {
+        "name": "Black Cloudsheep"
+      },
+      {
+        "name": "Squishling",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Squishling",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Squishling.png/16px-Squishling.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Copper Ore"
+          {
+            "name": "Copper Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Copper_Ore",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Copper_Ore.png/16px-Copper_Ore.png",
+            "chancePercent": 100
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
+          {
+            "name": "Cotton Ball",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cotton_Ball",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Cotton_Ball.png/16px-Cotton_Ball.png",
+            "chancePercent": 100
+          },
+          {
+            "name": "Oak Wood (trees)"
+          },
+          {
+            "name": "Apple (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 15"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_4",
+    "interactables": []
   },
   {
     "id": "forest-1",
@@ -566,34 +1284,64 @@
     "zoneType": "Surface zone",
     "level": "40",
     "monsters": [
-      "Ferni",
-      "Big Slime"
+      {
+        "name": "Ferni"
+      },
+      {
+        "name": "Big Slime"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Malachite Ore",
-          "Emerald"
+          {
+            "name": "Malachite Ore"
+          },
+          {
+            "name": "Emerald",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Emerald"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Sweet Fern",
-          "Forest Seal",
-          "Melon",
-          "Green Cherry (trees)",
-          "Hard Wood (trees)"
+          {
+            "name": "Sweet Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sweet_Fern"
+          },
+          {
+            "name": "Forest Seal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_Seal"
+          },
+          {
+            "name": "Melon",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Melon"
+          },
+          {
+            "name": "Green Cherry (trees)"
+          },
+          {
+            "name": "Hard Wood (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
+          {
+            "name": "Angel Fish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Chomper"
+          },
+          {
+            "name": "Clownfish"
+          }
         ]
       }
     ],
@@ -602,7 +1350,9 @@
       "level 40",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_1",
+    "interactables": []
   },
   {
     "id": "forest-2",
@@ -614,40 +1364,72 @@
     "zoneType": "Surface zone",
     "level": "41",
     "monsters": [
-      "Soultree",
-      "Soulpling"
+      {
+        "name": "Soultree"
+      },
+      {
+        "name": "Soulpling"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Malachite Ore",
-          "Emerald"
+          {
+            "name": "Malachite Ore"
+          },
+          {
+            "name": "Emerald",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Emerald"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Sweet Fern",
-          "Forest Seal",
-          "Melon",
-          "Green Cherry (trees)",
-          "Hard Wood (trees)"
+          {
+            "name": "Sweet Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sweet_Fern"
+          },
+          {
+            "name": "Forest Seal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_Seal"
+          },
+          {
+            "name": "Melon",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Melon"
+          },
+          {
+            "name": "Green Cherry (trees)"
+          },
+          {
+            "name": "Hard Wood (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
+          {
+            "name": "Angel Fish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Chomper"
+          },
+          {
+            "name": "Clownfish"
+          }
         ]
       }
     ],
     "tags": [
       "level 41"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_2",
+    "interactables": []
   },
   {
     "id": "forest-3",
@@ -659,42 +1441,78 @@
     "zoneType": "Surface zone",
     "level": "39",
     "monsters": [
-      "Soultree",
-      "Soulpling",
-      "Ferni",
-      "Humblebee"
+      {
+        "name": "Soultree"
+      },
+      {
+        "name": "Soulpling"
+      },
+      {
+        "name": "Ferni"
+      },
+      {
+        "name": "Humblebee"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Malachite Ore",
-          "Emerald"
+          {
+            "name": "Malachite Ore"
+          },
+          {
+            "name": "Emerald",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Emerald"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
+          {
+            "name": "Angel Fish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Chomper"
+          },
+          {
+            "name": "Clownfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Sweet Fern",
-          "Forest Seal",
-          "Melon",
-          "Green Cherry (trees)",
-          "Hard Wood (trees)"
+          {
+            "name": "Sweet Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sweet_Fern"
+          },
+          {
+            "name": "Forest Seal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_Seal"
+          },
+          {
+            "name": "Melon",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Melon"
+          },
+          {
+            "name": "Green Cherry (trees)"
+          },
+          {
+            "name": "Hard Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 39"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_3",
+    "interactables": []
   },
   {
     "id": "swamp",
@@ -710,33 +1528,61 @@
       {
         "type": "Mining",
         "items": [
-          "Malachite Ore",
-          "Emerald"
+          {
+            "name": "Malachite Ore"
+          },
+          {
+            "name": "Emerald",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Emerald"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
+          {
+            "name": "Angel Fish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Chomper"
+          },
+          {
+            "name": "Clownfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Sweet Fern",
-          "Forest Seal",
-          "Melon",
-          "Green Cherry (trees)",
-          "Hard Wood (trees)"
+          {
+            "name": "Sweet Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sweet_Fern"
+          },
+          {
+            "name": "Forest Seal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_Seal"
+          },
+          {
+            "name": "Melon",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Melon"
+          },
+          {
+            "name": "Green Cherry (trees)"
+          },
+          {
+            "name": "Hard Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "level 0"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Swamp",
+    "interactables": []
   },
   {
     "id": "forest-pond",
@@ -748,34 +1594,64 @@
     "zoneType": "Surface zone",
     "level": "38",
     "monsters": [
-      "Humblebee",
-      "Soulpling"
+      {
+        "name": "Humblebee"
+      },
+      {
+        "name": "Soulpling"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Malachite Ore",
-          "Emerald"
+          {
+            "name": "Malachite Ore"
+          },
+          {
+            "name": "Emerald",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Emerald"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
+          {
+            "name": "Angel Fish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Chomper"
+          },
+          {
+            "name": "Clownfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Sweet Fern",
-          "Forest Seal",
-          "Melon",
-          "Green Cherry (trees)",
-          "Hard Wood (trees)"
+          {
+            "name": "Sweet Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sweet_Fern"
+          },
+          {
+            "name": "Forest Seal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_Seal"
+          },
+          {
+            "name": "Melon",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Melon"
+          },
+          {
+            "name": "Green Cherry (trees)"
+          },
+          {
+            "name": "Hard Wood (trees)"
+          }
         ]
       }
     ],
@@ -783,7 +1659,9 @@
       "plainsforest pond",
       "plains",
       "level 38"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_Pond",
+    "interactables": []
   },
   {
     "id": "lost-plains",
@@ -795,27 +1673,53 @@
     "zoneType": "Surface zone",
     "level": "37",
     "monsters": [
-      "Rainbow Cloudsheep"
+      {
+        "name": "Rainbow Cloudsheep",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Rainbow_Cloudsheep",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Rainbow_Cloudsheep.png/16px-Rainbow_Cloudsheep.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Copper Ore"
+          {
+            "name": "Copper Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Copper_Ore",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Copper_Ore.png/16px-Copper_Ore.png",
+            "chancePercent": 100
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Cotton Ball",
-          "Oak Wood (trees)",
-          "Apple (trees)"
+          {
+            "name": "Cotton Ball",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cotton_Ball",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Cotton_Ball.png/16px-Cotton_Ball.png",
+            "chancePercent": 100
+          },
+          {
+            "name": "Oak Wood (trees)"
+          },
+          {
+            "name": "Apple (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "plainslost plains",
       "level 37"
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lost_Plains",
+    "interactables": [
+      {
+        "name": "Shepherd",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shepherd",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shepherd.png/16px-Shepherd.png"
+      }
     ]
   },
   {
@@ -828,42 +1732,77 @@
     "zoneType": "Surface zone",
     "level": "73",
     "monsters": [
-      "Tallshroom",
-      "Shroomie"
+      {
+        "name": "Tallshroom"
+      },
+      {
+        "name": "Shroomie"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
+          {
+            "name": "Mithril Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mithril_Ore"
+          },
+          {
+            "name": "Dream Fragment",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dream_Fragment"
+          },
+          {
+            "name": "Dreamstone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dreamstone"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
+          {
+            "name": "Ancient Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ancient_Fern"
+          },
+          {
+            "name": "Censhroom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Censhroom"
+          },
+          {
+            "name": "Eon Fruit (trees)"
+          },
+          {
+            "name": "Eon Wood (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Spookee",
-          "Abyssal Leech",
-          "Abyssal Urchin",
-          "Abyssal Octopus",
-          "Wolf Fish"
+          {
+            "name": "Spookee"
+          },
+          {
+            "name": "Abyssal Leech"
+          },
+          {
+            "name": "Abyssal Urchin"
+          },
+          {
+            "name": "Abyssal Octopus"
+          },
+          {
+            "name": "Wolf Fish"
+          }
         ]
       }
     ],
     "tags": [
       "plainsdeep forest 1",
       "level 73"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Forest_1",
+    "interactables": []
   },
   {
     "id": "deep-forest-threshold",
@@ -875,34 +1814,60 @@
     "zoneType": "Surface zone",
     "level": "78",
     "monsters": [
-      "Lime Guardian"
+      {
+        "name": "Lime Guardian"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
+          {
+            "name": "Mithril Ore"
+          },
+          {
+            "name": "Dream Fragment"
+          },
+          {
+            "name": "Dreamstone"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
+          {
+            "name": "Ancient Fern"
+          },
+          {
+            "name": "Censhroom"
+          },
+          {
+            "name": "Eon Fruit (trees)"
+          },
+          {
+            "name": "Eon Wood (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Spookee",
-          "Abyssal Leech",
-          "Abyssal Urchin",
-          "Abyssal Octopus",
-          "Wolf Fish"
+          {
+            "name": "Spookee"
+          },
+          {
+            "name": "Abyssal Leech"
+          },
+          {
+            "name": "Abyssal Urchin"
+          },
+          {
+            "name": "Abyssal Octopus"
+          },
+          {
+            "name": "Wolf Fish"
+          }
         ]
       }
     ],
@@ -921,32 +1886,57 @@
     "zoneType": "Surface zone",
     "level": "73",
     "monsters": [
-      "Shroomie",
-      "Tallshroom"
+      {
+        "name": "Shroomie"
+      },
+      {
+        "name": "Tallshroom"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
+          {
+            "name": "Mithril Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mithril_Ore"
+          },
+          {
+            "name": "Dream Fragment",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dream_Fragment"
+          },
+          {
+            "name": "Dreamstone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dreamstone"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
+          {
+            "name": "Ancient Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ancient_Fern"
+          },
+          {
+            "name": "Censhroom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Censhroom"
+          },
+          {
+            "name": "Eon Fruit (trees)"
+          },
+          {
+            "name": "Eon Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "plainsdeep tree way",
       "level 73"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Tree_Way",
+    "interactables": []
   },
   {
     "id": "deep-forest-2",
@@ -958,43 +1948,80 @@
     "zoneType": "Surface zone",
     "level": "75",
     "monsters": [
-      "Kiwi",
-      "Fernek",
-      "Tallshroom"
+      {
+        "name": "Kiwi"
+      },
+      {
+        "name": "Fernek"
+      },
+      {
+        "name": "Tallshroom"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
+          {
+            "name": "Mithril Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mithril_Ore"
+          },
+          {
+            "name": "Dream Fragment",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dream_Fragment"
+          },
+          {
+            "name": "Dreamstone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dreamstone"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
+          {
+            "name": "Ancient Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ancient_Fern"
+          },
+          {
+            "name": "Censhroom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Censhroom"
+          },
+          {
+            "name": "Eon Fruit (trees)"
+          },
+          {
+            "name": "Eon Wood (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Spookee",
-          "Abyssal Leech",
-          "Abyssal Urchin",
-          "Abyssal Octopus",
-          "Wolf Fish"
+          {
+            "name": "Spookee"
+          },
+          {
+            "name": "Abyssal Leech"
+          },
+          {
+            "name": "Abyssal Urchin"
+          },
+          {
+            "name": "Abyssal Octopus"
+          },
+          {
+            "name": "Wolf Fish"
+          }
         ]
       }
     ],
     "tags": [
       "plainsdeep forest 2",
       "level 75"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Forest_2",
+    "interactables": []
   },
   {
     "id": "deep-forest-3",
@@ -1006,34 +2033,63 @@
     "zoneType": "Surface zone",
     "level": "75",
     "monsters": [
-      "Shroomie",
-      "Tallshroom",
-      "Fernek",
-      "Kiwi"
+      {
+        "name": "Shroomie"
+      },
+      {
+        "name": "Tallshroom"
+      },
+      {
+        "name": "Fernek"
+      },
+      {
+        "name": "Kiwi"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
+          {
+            "name": "Mithril Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mithril_Ore"
+          },
+          {
+            "name": "Dream Fragment",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dream_Fragment"
+          },
+          {
+            "name": "Dreamstone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dreamstone"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
+          {
+            "name": "Ancient Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ancient_Fern"
+          },
+          {
+            "name": "Censhroom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Censhroom"
+          },
+          {
+            "name": "Eon Fruit (trees)"
+          },
+          {
+            "name": "Eon Wood (trees)"
+          }
         ]
       }
     ],
     "tags": [
       "plainsdeep forest 3",
       "level 75"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Forest_3",
+    "interactables": []
   },
   {
     "id": "lost-peak",
@@ -1045,35 +2101,68 @@
     "zoneType": "Surface zone",
     "level": "76",
     "monsters": [
-      "Fernek",
-      "Kiwi"
+      {
+        "name": "Fernek"
+      },
+      {
+        "name": "Kiwi"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
+          {
+            "name": "Mithril Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mithril_Ore"
+          },
+          {
+            "name": "Dream Fragment",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dream_Fragment"
+          },
+          {
+            "name": "Dreamstone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dreamstone"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
+          {
+            "name": "Ancient Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ancient_Fern"
+          },
+          {
+            "name": "Censhroom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Censhroom"
+          },
+          {
+            "name": "Eon Fruit (trees)"
+          },
+          {
+            "name": "Eon Wood (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Spookee",
-          "Abyssal Leech",
-          "Abyssal Urchin",
-          "Abyssal Octopus",
-          "Wolf Fish"
+          {
+            "name": "Spookee"
+          },
+          {
+            "name": "Abyssal Leech"
+          },
+          {
+            "name": "Abyssal Urchin"
+          },
+          {
+            "name": "Abyssal Octopus"
+          },
+          {
+            "name": "Wolf Fish"
+          }
         ]
       }
     ],
@@ -1082,7 +2171,9 @@
       "plainslost peak",
       "level 76",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lost_Peak",
+    "interactables": []
   },
   {
     "id": "market-hub-entrance",
@@ -1100,6 +2191,14 @@
       "level 0",
       "warp",
       "warp point"
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Market_Hub_Entrance",
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
     ]
   },
   {
@@ -1112,19 +2211,35 @@
     "zoneType": "Surface zone",
     "level": "15",
     "monsters": [
-      "Cursed Slime",
-      "Gilded Slime"
+      {
+        "name": "Cursed Slime"
+      },
+      {
+        "name": "Gilded Slime"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Blue Shard",
-          "Red Shard",
-          "Yellow Shard",
-          "Red Crystal",
-          "Blue Crystal",
-          "Yellow Crystal"
+          {
+            "name": "Blue Shard"
+          },
+          {
+            "name": "Red Shard"
+          },
+          {
+            "name": "Yellow Shard"
+          },
+          {
+            "name": "Red Crystal"
+          },
+          {
+            "name": "Blue Crystal"
+          },
+          {
+            "name": "Yellow Crystal"
+          }
         ]
       }
     ],
@@ -1143,19 +2258,35 @@
     "zoneType": "Surface zone",
     "level": "21",
     "monsters": [
-      "Troppo",
-      "Droppo"
+      {
+        "name": "Troppo"
+      },
+      {
+        "name": "Droppo"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Blue Shard",
-          "Red Shard",
-          "Yellow Shard",
-          "Red Crystal",
-          "Blue Crystal",
-          "Yellow Crystal"
+          {
+            "name": "Blue Shard"
+          },
+          {
+            "name": "Red Shard"
+          },
+          {
+            "name": "Yellow Shard"
+          },
+          {
+            "name": "Red Crystal"
+          },
+          {
+            "name": "Blue Crystal"
+          },
+          {
+            "name": "Yellow Crystal"
+          }
         ]
       }
     ],
@@ -1174,33 +2305,57 @@
     "zoneType": "Surface zone",
     "level": "38",
     "monsters": [
-      "Soulpling",
-      "Humblebee"
+      {
+        "name": "Soulpling"
+      },
+      {
+        "name": "Humblebee"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Malachite Ore",
-          "Emerald"
+          {
+            "name": "Malachite Ore"
+          },
+          {
+            "name": "Emerald"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
+          {
+            "name": "Angel Fish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Chomper"
+          },
+          {
+            "name": "Clownfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Sweet Fern",
-          "Forest Seal",
-          "Melon",
-          "Hard Wood (trees)"
+          {
+            "name": "Sweet Fern"
+          },
+          {
+            "name": "Forest Seal"
+          },
+          {
+            "name": "Melon"
+          },
+          {
+            "name": "Hard Wood (trees)"
+          }
         ]
       }
     ],
@@ -1219,36 +2374,66 @@
     "zoneType": "Surface zone",
     "level": "40",
     "monsters": [
-      "Soulpling",
-      "Soultree",
-      "Humblebee",
-      "Water Spot"
+      {
+        "name": "Soulpling"
+      },
+      {
+        "name": "Soultree"
+      },
+      {
+        "name": "Humblebee"
+      },
+      {
+        "name": "Water Spot"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Malachite Ore",
-          "Emerald"
+          {
+            "name": "Malachite Ore"
+          },
+          {
+            "name": "Emerald"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Angel Fish",
-          "Ice Salmon",
-          "Chomper",
-          "Clownfish"
+          {
+            "name": "Angel Fish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Chomper"
+          },
+          {
+            "name": "Clownfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Sweet Fern",
-          "Forest Seal",
-          "Melon",
-          "Green Cherry (trees)",
-          "Hard Wood (trees)"
+          {
+            "name": "Sweet Fern"
+          },
+          {
+            "name": "Forest Seal"
+          },
+          {
+            "name": "Melon"
+          },
+          {
+            "name": "Green Cherry (trees)"
+          },
+          {
+            "name": "Hard Wood (trees)"
+          }
         ]
       }
     ],
@@ -1271,18 +2456,37 @@
       {
         "type": "Mining",
         "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
+          {
+            "name": "Mithril Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mithril_Ore"
+          },
+          {
+            "name": "Dream Fragment",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dream_Fragment"
+          },
+          {
+            "name": "Dreamstone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dreamstone"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
+          {
+            "name": "Ancient Fern",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ancient_Fern"
+          },
+          {
+            "name": "Censhroom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Censhroom"
+          },
+          {
+            "name": "Eon Fruit (trees)"
+          },
+          {
+            "name": "Eon Wood (trees)"
+          }
         ]
       }
     ],
@@ -1290,7 +2494,9 @@
     "tags": [
       "deep forest",
       "level 0"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Giant_Tree",
+    "interactables": []
   },
   {
     "id": "deep-forest-den",
@@ -1302,25 +2508,43 @@
     "zoneType": "Surface zone",
     "level": "76",
     "monsters": [
-      "Blossnek",
-      "Fernek"
+      {
+        "name": "Blossnek"
+      },
+      {
+        "name": "Fernek"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Mithril Ore",
-          "Dream Fragment",
-          "Dreamstone"
+          {
+            "name": "Mithril Ore"
+          },
+          {
+            "name": "Dream Fragment"
+          },
+          {
+            "name": "Dreamstone"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ancient Fern",
-          "Censhroom",
-          "Eon Fruit (trees)",
-          "Eon Wood (trees)"
+          {
+            "name": "Ancient Fern"
+          },
+          {
+            "name": "Censhroom"
+          },
+          {
+            "name": "Eon Fruit (trees)"
+          },
+          {
+            "name": "Eon Wood (trees)"
+          }
         ]
       }
     ],
@@ -1339,45 +2563,91 @@
     "zoneType": "Surface zone",
     "level": "20",
     "monsters": [
-      "Droppo",
-      "Crusher",
-      "Troppo"
+      {
+        "name": "Droppo"
+      },
+      {
+        "name": "Crusher"
+      },
+      {
+        "name": "Troppo"
+      }
     ],
     "resources": [
       {
         "type": "Herbalism",
         "items": [
-          "Sea Grapes",
-          "Coconut (trees)",
-          "Coconut Wood (trees)"
+          {
+            "name": "Sea Grapes",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sea_Grapes"
+          },
+          {
+            "name": "Coconut (trees)"
+          },
+          {
+            "name": "Coconut Wood (trees)"
+          }
         ]
       },
       {
         "type": "Mining",
         "items": [
-          "Quartz",
-          "Stone"
+          {
+            "name": "Quartz",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quartz"
+          },
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Glowfish",
-          "Electray",
-          "Starfish",
-          "Clownfish",
-          "Ice Salmon",
-          "Exotic Tuna",
-          "Seaweed",
-          "Clam",
-          "Shrimp"
+          {
+            "name": "Glowfish",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Glowfish"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Starfish",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Starfish"
+          },
+          {
+            "name": "Clownfish",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clownfish"
+          },
+          {
+            "name": "Ice Salmon",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ice_Salmon"
+          },
+          {
+            "name": "Exotic Tuna",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Exotic_Tuna"
+          },
+          {
+            "name": "Seaweed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Seaweed"
+          },
+          {
+            "name": "Clam",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam"
+          },
+          {
+            "name": "Shrimp"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 20"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Seashell_Cove",
+    "interactables": []
   },
   {
     "id": "shell-beach",
@@ -1389,38 +2659,72 @@
     "zoneType": "Surface zone",
     "level": "17",
     "monsters": [
-      "Pimchy",
-      "Snapper",
-      "Crusher"
+      {
+        "name": "Pimchy"
+      },
+      {
+        "name": "Snapper"
+      },
+      {
+        "name": "Crusher"
+      }
     ],
     "resources": [
       {
         "type": "Herbalism",
         "items": [
-          "Sea Grapes",
-          "Coconut (trees)",
-          "Coconut Wood (trees)"
+          {
+            "name": "Sea Grapes"
+          },
+          {
+            "name": "Coconut (trees)"
+          },
+          {
+            "name": "Coconut Wood (trees)"
+          }
         ]
       },
       {
         "type": "Mining",
         "items": [
-          "Quartz",
-          "Stone"
+          {
+            "name": "Quartz"
+          },
+          {
+            "name": "Stone"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Glowfish",
-          "Electray",
-          "Starfish",
-          "Clownfish",
-          "Ice Salmon",
-          "Exotic Tuna",
-          "Seaweed",
-          "Clam",
-          "Shrimp"
+          {
+            "name": "Glowfish"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Starfish"
+          },
+          {
+            "name": "Clownfish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Exotic Tuna"
+          },
+          {
+            "name": "Seaweed"
+          },
+          {
+            "name": "Clam"
+          },
+          {
+            "name": "Shrimp"
+          }
         ]
       }
     ],
@@ -1439,44 +2743,88 @@
     "zoneType": "Surface zone",
     "level": "19",
     "monsters": [
-      "Crusher",
-      "Snapper"
+      {
+        "name": "Crusher"
+      },
+      {
+        "name": "Snapper"
+      }
     ],
     "resources": [
       {
         "type": "Herbalism",
         "items": [
-          "Sea Grapes",
-          "Coconut (trees)",
-          "Coconut Wood (trees)"
+          {
+            "name": "Sea Grapes",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sea_Grapes"
+          },
+          {
+            "name": "Coconut (trees)"
+          },
+          {
+            "name": "Coconut Wood (trees)"
+          }
         ]
       },
       {
         "type": "Mining",
         "items": [
-          "Quartz",
-          "Stone"
+          {
+            "name": "Quartz",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quartz"
+          },
+          {
+            "name": "Stone",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Glowfish",
-          "Electray",
-          "Starfish",
-          "Clownfish",
-          "Ice Salmon",
-          "Exotic Tuna",
-          "Seaweed",
-          "Clam",
-          "Shrimp"
+          {
+            "name": "Glowfish",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Glowfish"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Starfish",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Starfish"
+          },
+          {
+            "name": "Clownfish",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clownfish"
+          },
+          {
+            "name": "Ice Salmon",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ice_Salmon"
+          },
+          {
+            "name": "Exotic Tuna",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Exotic_Tuna"
+          },
+          {
+            "name": "Seaweed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Seaweed"
+          },
+          {
+            "name": "Clam",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam"
+          },
+          {
+            "name": "Shrimp"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 19"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Around_the_Seashore",
+    "interactables": []
   },
   {
     "id": "snapper-shore",
@@ -1488,37 +2836,69 @@
     "zoneType": "Surface zone",
     "level": "18",
     "monsters": [
-      "Snapper",
-      "Crusher"
+      {
+        "name": "Snapper"
+      },
+      {
+        "name": "Crusher"
+      }
     ],
     "resources": [
       {
         "type": "Herbalism",
         "items": [
-          "Sea Grapes",
-          "Coconut (trees)",
-          "Coconut Wood (trees)"
+          {
+            "name": "Sea Grapes"
+          },
+          {
+            "name": "Coconut (trees)"
+          },
+          {
+            "name": "Coconut Wood (trees)"
+          }
         ]
       },
       {
         "type": "Mining",
         "items": [
-          "Quartz",
-          "Stone"
+          {
+            "name": "Quartz"
+          },
+          {
+            "name": "Stone"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Glowfish",
-          "Electray",
-          "Starfish",
-          "Clownfish",
-          "Ice Salmon",
-          "Exotic Tuna",
-          "Seaweed",
-          "Clam",
-          "Shrimp"
+          {
+            "name": "Glowfish"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Starfish"
+          },
+          {
+            "name": "Clownfish"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Exotic Tuna"
+          },
+          {
+            "name": "Seaweed"
+          },
+          {
+            "name": "Clam"
+          },
+          {
+            "name": "Shrimp"
+          }
         ]
       }
     ],
@@ -1537,39 +2917,67 @@
     "zoneType": "Surface zone",
     "level": "46",
     "monsters": [
-      "Giga"
+      {
+        "name": "Giga"
+      }
     ],
     "resources": [
       {
         "type": "Herbalism",
         "items": [
-          "Poceanto",
-          "Blue Pepper (trees)",
-          "Corals (trees)"
+          {
+            "name": "Poceanto",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Poceanto"
+          },
+          {
+            "name": "Blue Pepper (trees)"
+          },
+          {
+            "name": "Corals (trees)"
+          }
         ]
       },
       {
         "type": "Mining",
         "items": [
-          "Cobalt Ore",
-          "Aquamarine"
+          {
+            "name": "Cobalt Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cobalt_Ore"
+          },
+          {
+            "name": "Aquamarine",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Aquamarine"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Exotic Tuna",
-          "Wolf Fish",
-          "Seaweed",
-          "Electray",
-          "Angel Fish"
+          {
+            "name": "Exotic Tuna"
+          },
+          {
+            "name": "Wolf Fish"
+          },
+          {
+            "name": "Seaweed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Seaweed"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Angel Fish"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 46"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_1",
+    "interactables": []
   },
   {
     "id": "ocean-4",
@@ -1581,41 +2989,73 @@
     "zoneType": "Surface zone",
     "level": "47",
     "monsters": [
-      "Giga",
-      "Bubble Snake",
-      "Sweel"
+      {
+        "name": "Giga"
+      },
+      {
+        "name": "Bubble Snake"
+      },
+      {
+        "name": "Sweel"
+      }
     ],
     "resources": [
       {
         "type": "Herbalism",
         "items": [
-          "Poceanto",
-          "Blue Pepper (trees)",
-          "Corals (trees)"
+          {
+            "name": "Poceanto",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Poceanto"
+          },
+          {
+            "name": "Blue Pepper (trees)"
+          },
+          {
+            "name": "Corals (trees)"
+          }
         ]
       },
       {
         "type": "Mining",
         "items": [
-          "Cobalt Ore",
-          "Aquamarine"
+          {
+            "name": "Cobalt Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cobalt_Ore"
+          },
+          {
+            "name": "Aquamarine",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Aquamarine"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Exotic Tuna",
-          "Wolf Fish",
-          "Seaweed",
-          "Electray",
-          "Angel Fish"
+          {
+            "name": "Exotic Tuna"
+          },
+          {
+            "name": "Wolf Fish"
+          },
+          {
+            "name": "Seaweed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Seaweed"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Angel Fish"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 47"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_4",
+    "interactables": []
   },
   {
     "id": "ocean-3",
@@ -1627,40 +3067,70 @@
     "zoneType": "Surface zone",
     "level": "45",
     "monsters": [
-      "Giga",
-      "Sweel"
+      {
+        "name": "Giga"
+      },
+      {
+        "name": "Sweel"
+      }
     ],
     "resources": [
       {
         "type": "Herbalism",
         "items": [
-          "Poceanto",
-          "Blue Pepper (trees)",
-          "Corals (trees)"
+          {
+            "name": "Poceanto",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Poceanto"
+          },
+          {
+            "name": "Blue Pepper (trees)"
+          },
+          {
+            "name": "Corals (trees)"
+          }
         ]
       },
       {
         "type": "Mining",
         "items": [
-          "Cobalt Ore",
-          "Aquamarine"
+          {
+            "name": "Cobalt Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cobalt_Ore"
+          },
+          {
+            "name": "Aquamarine",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Aquamarine"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Exotic Tuna",
-          "Wolf Fish",
-          "Seaweed",
-          "Electray",
-          "Angel Fish"
+          {
+            "name": "Exotic Tuna"
+          },
+          {
+            "name": "Wolf Fish"
+          },
+          {
+            "name": "Seaweed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Seaweed"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Angel Fish"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 45"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_3",
+    "interactables": []
   },
   {
     "id": "ocean-2",
@@ -1672,34 +3142,64 @@
     "zoneType": "Surface zone",
     "level": "44",
     "monsters": [
-      "Sweel",
-      "Giga",
-      "Bubble Snake"
+      {
+        "name": "Sweel"
+      },
+      {
+        "name": "Giga"
+      },
+      {
+        "name": "Bubble Snake"
+      }
     ],
     "resources": [
       {
         "type": "Herbalism",
         "items": [
-          "Poceanto",
-          "Blue Pepper (trees)",
-          "Corals (trees)"
+          {
+            "name": "Poceanto",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Poceanto"
+          },
+          {
+            "name": "Blue Pepper (trees)"
+          },
+          {
+            "name": "Corals (trees)"
+          }
         ]
       },
       {
         "type": "Mining",
         "items": [
-          "Cobalt Ore",
-          "Aquamarine"
+          {
+            "name": "Cobalt Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Cobalt_Ore"
+          },
+          {
+            "name": "Aquamarine",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Aquamarine"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Exotic Tuna",
-          "Wolf Fish",
-          "Seaweed",
-          "Electray",
-          "Angel Fish"
+          {
+            "name": "Exotic Tuna"
+          },
+          {
+            "name": "Wolf Fish"
+          },
+          {
+            "name": "Seaweed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Seaweed"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Angel Fish"
+          }
         ]
       }
     ],
@@ -1708,7 +3208,9 @@
       "level 44",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_2",
+    "interactables": []
   },
   {
     "id": "deep-ocean-2",
@@ -1720,34 +3222,63 @@
     "zoneType": "Surface zone",
     "level": "83",
     "monsters": [
-      "Ancient Soul",
-      "Soulfish",
-      "Coral",
-      "Upsivase"
+      {
+        "name": "Ancient Soul"
+      },
+      {
+        "name": "Soulfish"
+      },
+      {
+        "name": "Coral"
+      },
+      {
+        "name": "Upsivase"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Arcane Crystal",
-          "Ocean Shard",
-          "Ocean Heart"
+          {
+            "name": "Arcane Crystal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Crystal"
+          },
+          {
+            "name": "Ocean Shard",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Shard"
+          },
+          {
+            "name": "Ocean Heart",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Heart"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Arcane Pearl",
-          "Angelic Algae",
-          "Forbidden Fruit (trees)",
-          "Depth Vine (trees)"
+          {
+            "name": "Arcane Pearl",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Pearl"
+          },
+          {
+            "name": "Angelic Algae",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Angelic_Algae"
+          },
+          {
+            "name": "Forbidden Fruit (trees)"
+          },
+          {
+            "name": "Depth Vine (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 83"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_2",
+    "interactables": []
   },
   {
     "id": "deep-ocean-1",
@@ -1759,27 +3290,54 @@
     "zoneType": "Surface zone",
     "level": "81",
     "monsters": [
-      "Coral",
-      "Soulfish",
-      "Upsivase",
-      "Ancient Soul"
+      {
+        "name": "Coral"
+      },
+      {
+        "name": "Soulfish"
+      },
+      {
+        "name": "Upsivase"
+      },
+      {
+        "name": "Ancient Soul"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Arcane Crystal",
-          "Ocean Shard",
-          "Ocean Heart"
+          {
+            "name": "Arcane Crystal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Crystal"
+          },
+          {
+            "name": "Ocean Shard",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Shard"
+          },
+          {
+            "name": "Ocean Heart",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Heart"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Arcane Pearl",
-          "Angelic Algae",
-          "Forbidden Fruit (trees)",
-          "Depth Vine (trees)"
+          {
+            "name": "Arcane Pearl",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Pearl"
+          },
+          {
+            "name": "Angelic Algae",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Angelic_Algae"
+          },
+          {
+            "name": "Forbidden Fruit (trees)"
+          },
+          {
+            "name": "Depth Vine (trees)"
+          }
         ]
       }
     ],
@@ -1788,7 +3346,9 @@
       "level 81",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_1",
+    "interactables": []
   },
   {
     "id": "deep-ocean-3",
@@ -1800,32 +3360,57 @@
     "zoneType": "Surface zone",
     "level": "79",
     "monsters": [
-      "Soulfish",
-      "Upsivase"
+      {
+        "name": "Soulfish"
+      },
+      {
+        "name": "Upsivase"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Arcane Crystal",
-          "Ocean Shard",
-          "Ocean Heart"
+          {
+            "name": "Arcane Crystal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Crystal"
+          },
+          {
+            "name": "Ocean Shard",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Shard"
+          },
+          {
+            "name": "Ocean Heart",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Heart"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Arcane Pearl",
-          "Angelic Algae",
-          "Forbidden Fruit (trees)",
-          "Depth Vine (trees)"
+          {
+            "name": "Arcane Pearl",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Pearl"
+          },
+          {
+            "name": "Angelic Algae",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Angelic_Algae"
+          },
+          {
+            "name": "Forbidden Fruit (trees)"
+          },
+          {
+            "name": "Depth Vine (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 79"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_3",
+    "interactables": []
   },
   {
     "id": "deep-ocean-4",
@@ -1837,32 +3422,57 @@
     "zoneType": "Surface zone",
     "level": "79",
     "monsters": [
-      "Soulfish",
-      "Upsivase"
+      {
+        "name": "Soulfish"
+      },
+      {
+        "name": "Upsivase"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Arcane Crystal",
-          "Ocean Shard",
-          "Ocean Heart"
+          {
+            "name": "Arcane Crystal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Crystal"
+          },
+          {
+            "name": "Ocean Shard",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Shard"
+          },
+          {
+            "name": "Ocean Heart",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Heart"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Arcane Pearl",
-          "Angelic Algae",
-          "Forbidden Fruit (trees)",
-          "Depth Vine (trees)"
+          {
+            "name": "Arcane Pearl",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Pearl"
+          },
+          {
+            "name": "Angelic Algae",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Angelic_Algae"
+          },
+          {
+            "name": "Forbidden Fruit (trees)"
+          },
+          {
+            "name": "Depth Vine (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 79"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_4",
+    "interactables": []
   },
   {
     "id": "cold-ocean-cave",
@@ -1874,19 +3484,35 @@
     "zoneType": "Surface zone",
     "level": "44",
     "monsters": [
-      "Froni",
-      "Sweel"
+      {
+        "name": "Froni"
+      },
+      {
+        "name": "Sweel"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Blue Shard",
-          "Red Shard",
-          "Yellow Shard",
-          "Red Crystal",
-          "Blue Crystal",
-          "Yellow Crystal"
+          {
+            "name": "Blue Shard"
+          },
+          {
+            "name": "Red Shard"
+          },
+          {
+            "name": "Yellow Shard"
+          },
+          {
+            "name": "Red Crystal"
+          },
+          {
+            "name": "Blue Crystal"
+          },
+          {
+            "name": "Yellow Crystal"
+          }
         ]
       }
     ],
@@ -1909,25 +3535,46 @@
       {
         "type": "Mining",
         "items": [
-          "Arcane Crystal",
-          "Ocean Shard",
-          "Ocean Heart"
+          {
+            "name": "Arcane Crystal",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Crystal"
+          },
+          {
+            "name": "Ocean Shard",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Shard"
+          },
+          {
+            "name": "Ocean Heart",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_Heart"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Arcane Pearl",
-          "Angelic Algae",
-          "Forbidden Fruit (trees)",
-          "Depth Vine (trees)"
+          {
+            "name": "Arcane Pearl",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Arcane_Pearl"
+          },
+          {
+            "name": "Angelic Algae",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Angelic_Algae"
+          },
+          {
+            "name": "Forbidden Fruit (trees)"
+          },
+          {
+            "name": "Depth Vine (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 0"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Great_Trench",
+    "interactables": []
   },
   {
     "id": "savannah-1",
@@ -1939,29 +3586,46 @@
     "zoneType": "Surface zone",
     "level": "22",
     "monsters": [
-      "Licki",
-      "Bananek"
+      {
+        "name": "Licki"
+      },
+      {
+        "name": "Bananek"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Iron Ore"
+          {
+            "name": "Iron Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Iron_Ore"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Aloe Vera",
-          "Pineapple",
-          "Acacia Wood (trees)"
+          {
+            "name": "Aloe Vera",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Aloe_Vera"
+          },
+          {
+            "name": "Pineapple",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pineapple"
+          },
+          {
+            "name": "Acacia Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 22"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Savannah_1",
+    "interactables": []
   },
   {
     "id": "savannah-2",
@@ -1973,30 +3637,49 @@
     "zoneType": "Surface zone",
     "level": "23",
     "monsters": [
-      "Bananek",
-      "Citruslime",
-      "Licki"
+      {
+        "name": "Bananek"
+      },
+      {
+        "name": "Citruslime"
+      },
+      {
+        "name": "Licki"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Iron Ore"
+          {
+            "name": "Iron Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Iron_Ore"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Aloe Vera",
-          "Pineapple",
-          "Acacia Wood (trees)"
+          {
+            "name": "Aloe Vera",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Aloe_Vera"
+          },
+          {
+            "name": "Pineapple",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pineapple"
+          },
+          {
+            "name": "Acacia Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 23"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Savannah_2",
+    "interactables": []
   },
   {
     "id": "savannah-3",
@@ -2008,22 +3691,37 @@
     "zoneType": "Surface zone",
     "level": "24",
     "monsters": [
-      "Citruslime",
-      "Bananek"
+      {
+        "name": "Citruslime"
+      },
+      {
+        "name": "Bananek"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Iron Ore"
+          {
+            "name": "Iron Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Iron_Ore"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Aloe Vera",
-          "Pineapple",
-          "Acacia Wood (trees)"
+          {
+            "name": "Aloe Vera",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Aloe_Vera"
+          },
+          {
+            "name": "Pineapple",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pineapple"
+          },
+          {
+            "name": "Acacia Wood (trees)"
+          }
         ]
       }
     ],
@@ -2032,7 +3730,9 @@
       "level 24",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Savannah_3",
+    "interactables": []
   },
   {
     "id": "desert-4",
@@ -2044,33 +3744,59 @@
     "zoneType": "Surface zone",
     "level": "50",
     "monsters": [
-      "Cactus",
-      "Rokkik"
+      {
+        "name": "Cactus"
+      },
+      {
+        "name": "Rokkik"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Bismuth",
-          "Ruby"
+          {
+            "name": "Bismuth"
+          },
+          {
+            "name": "Ruby"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Glowfish",
-          "Angel Fish",
-          "Chomper"
+          {
+            "name": "Glowfish"
+          },
+          {
+            "name": "Angel Fish"
+          },
+          {
+            "name": "Chomper"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Desert Sage",
-          "Desert Flower",
-          "Desert Rose",
-          "Cactus Fruit (trees)",
-          "Cactus (trees)"
+          {
+            "name": "Desert Sage",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Sage"
+          },
+          {
+            "name": "Desert Flower",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Flower"
+          },
+          {
+            "name": "Desert Rose"
+          },
+          {
+            "name": "Cactus Fruit (trees)"
+          },
+          {
+            "name": "Cactus (trees)"
+          }
         ]
       }
     ],
@@ -2079,7 +3805,9 @@
       "level 50",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_4",
+    "interactables": []
   },
   {
     "id": "desert-3",
@@ -2091,33 +3819,57 @@
     "zoneType": "Surface zone",
     "level": "51",
     "monsters": [
-      "Rokkik",
-      "Cactus",
-      "Slabbit"
+      {
+        "name": "Rokkik"
+      },
+      {
+        "name": "Cactus"
+      },
+      {
+        "name": "Slabbit"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Bismuth",
-          "Ruby"
+          {
+            "name": "Bismuth"
+          },
+          {
+            "name": "Ruby"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Desert Sage",
-          "Desert Flower",
-          "Desert Rose",
-          "Cactus Fruit (trees)",
-          "Cactus (trees)"
+          {
+            "name": "Desert Sage",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Sage"
+          },
+          {
+            "name": "Desert Flower",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Flower"
+          },
+          {
+            "name": "Desert Rose"
+          },
+          {
+            "name": "Cactus Fruit (trees)"
+          },
+          {
+            "name": "Cactus (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 51"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_3",
+    "interactables": []
   },
   {
     "id": "desert-2",
@@ -2129,34 +3881,60 @@
     "zoneType": "Surface zone",
     "level": "54",
     "monsters": [
-      "Rokkik",
-      "Slabbit",
-      "Dragonfruit",
-      "Desert Bandit"
+      {
+        "name": "Rokkik"
+      },
+      {
+        "name": "Slabbit"
+      },
+      {
+        "name": "Dragonfruit"
+      },
+      {
+        "name": "Desert Bandit"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Bismuth",
-          "Ruby"
+          {
+            "name": "Bismuth"
+          },
+          {
+            "name": "Ruby"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Desert Sage",
-          "Desert Flower",
-          "Desert Rose",
-          "Cactus Fruit (trees)",
-          "Cactus (trees)"
+          {
+            "name": "Desert Sage",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Sage"
+          },
+          {
+            "name": "Desert Flower",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Flower"
+          },
+          {
+            "name": "Desert Rose"
+          },
+          {
+            "name": "Cactus Fruit (trees)"
+          },
+          {
+            "name": "Cactus (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 54"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_2",
+    "interactables": []
   },
   {
     "id": "desert-1",
@@ -2168,33 +3946,57 @@
     "zoneType": "Surface zone",
     "level": "55",
     "monsters": [
-      "Dragonfruit",
-      "Slabbit",
-      "Desert Bandit"
+      {
+        "name": "Dragonfruit"
+      },
+      {
+        "name": "Slabbit"
+      },
+      {
+        "name": "Desert Bandit"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Bismuth",
-          "Ruby"
+          {
+            "name": "Bismuth"
+          },
+          {
+            "name": "Ruby"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Desert Sage",
-          "Desert Flower",
-          "Desert Rose",
-          "Cactus Fruit (trees)",
-          "Cactus (trees)"
+          {
+            "name": "Desert Sage",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Sage"
+          },
+          {
+            "name": "Desert Flower",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Flower"
+          },
+          {
+            "name": "Desert Rose"
+          },
+          {
+            "name": "Cactus Fruit (trees)"
+          },
+          {
+            "name": "Cactus (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 55"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_1",
+    "interactables": []
   },
   {
     "id": "windy-savannah",
@@ -2206,37 +4008,60 @@
     "zoneType": "Surface zone",
     "level": "22",
     "monsters": [
-      "Licki",
-      "Citruslime"
+      {
+        "name": "Licki"
+      },
+      {
+        "name": "Citruslime"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Iron Ore"
+          {
+            "name": "Iron Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Iron_Ore"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Moss Snail",
-          "Electray",
-          "Glowfish"
+          {
+            "name": "Moss Snail"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Glowfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Aloe Vera",
-          "Pineapple",
-          "Acacia Wood (trees)"
+          {
+            "name": "Aloe Vera",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Aloe_Vera"
+          },
+          {
+            "name": "Pineapple",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pineapple"
+          },
+          {
+            "name": "Acacia Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 22"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Windy_Savannah",
+    "interactables": []
   },
   {
     "id": "desert-8",
@@ -2252,36 +4077,82 @@
       {
         "type": "Mining",
         "items": [
-          "Starmetal",
-          "Bismuth",
-          "Black Diamond Fragment",
-          "Ruby",
-          "Black Diamond"
+          {
+            "name": "Starmetal"
+          },
+          {
+            "name": "Bismuth"
+          },
+          {
+            "name": "Black Diamond Fragment"
+          },
+          {
+            "name": "Ruby"
+          },
+          {
+            "name": "Black Diamond"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Lava Octopus",
-          "Fire Fish",
-          "Glowfish",
-          "Desert Eel",
-          "Angel Fish",
-          "Chomper"
+          {
+            "name": "Lava Octopus",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lava_Octopus"
+          },
+          {
+            "name": "Fire Fish",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Fire_Fish"
+          },
+          {
+            "name": "Glowfish"
+          },
+          {
+            "name": "Desert Eel",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Eel"
+          },
+          {
+            "name": "Angel Fish",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Angel_Fish"
+          },
+          {
+            "name": "Chomper"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Desert Sage",
-          "Desert Flower",
-          "Desert Rose",
-          "Epochal Lily",
-          "Memory Agave",
-          "Cactus Fruit (trees)",
-          "Sculpted Cactus (trees)",
-          "History Fruit (trees)",
-          "Cactus (trees)"
+          {
+            "name": "Desert Sage"
+          },
+          {
+            "name": "Desert Flower"
+          },
+          {
+            "name": "Desert Rose"
+          },
+          {
+            "name": "Epochal Lily",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Epochal_Lily"
+          },
+          {
+            "name": "Memory Agave",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Memory_Agave"
+          },
+          {
+            "name": "Cactus Fruit (trees)"
+          },
+          {
+            "name": "Sculpted Cactus (trees)"
+          },
+          {
+            "name": "History Fruit (trees)"
+          },
+          {
+            "name": "Cactus (trees)"
+          }
         ]
       }
     ],
@@ -2290,7 +4161,9 @@
       "level 0",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_8",
+    "interactables": []
   },
   {
     "id": "desert-7",
@@ -2302,32 +4175,52 @@
     "zoneType": "Surface zone",
     "level": "88",
     "monsters": [
-      "Pyramid Guardian",
-      "Lime Slime"
+      {
+        "name": "Pyramid Guardian"
+      },
+      {
+        "name": "Lime Slime"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Starmetal",
-          "Black Diamond Fragment",
-          "Black Diamond"
+          {
+            "name": "Starmetal"
+          },
+          {
+            "name": "Black Diamond Fragment"
+          },
+          {
+            "name": "Black Diamond"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Memory Agave",
-          "Epochal Lily",
-          "Sculpted Cactus (trees)",
-          "History Fruit (trees)"
+          {
+            "name": "Memory Agave"
+          },
+          {
+            "name": "Epochal Lily"
+          },
+          {
+            "name": "Sculpted Cactus (trees)"
+          },
+          {
+            "name": "History Fruit (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 88"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_7",
+    "interactables": []
   },
   {
     "id": "desert-5",
@@ -2339,36 +4232,64 @@
     "zoneType": "Surface zone",
     "level": "86",
     "monsters": [
-      "Blaze",
-      "Haunted Flame",
-      "Lost Bard",
-      "Saowl",
-      "Pyramid Guardian",
-      "Lime Slime"
+      {
+        "name": "Blaze"
+      },
+      {
+        "name": "Haunted Flame"
+      },
+      {
+        "name": "Lost Bard"
+      },
+      {
+        "name": "Saowl"
+      },
+      {
+        "name": "Pyramid Guardian"
+      },
+      {
+        "name": "Lime Slime"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Starmetal",
-          "Black Diamond Fragment",
-          "Black Diamond"
+          {
+            "name": "Starmetal"
+          },
+          {
+            "name": "Black Diamond Fragment"
+          },
+          {
+            "name": "Black Diamond"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Memory Agave",
-          "Epochal Lily",
-          "Sculpted Cactus (trees)",
-          "History Fruit (trees)"
+          {
+            "name": "Memory Agave"
+          },
+          {
+            "name": "Epochal Lily"
+          },
+          {
+            "name": "Sculpted Cactus (trees)"
+          },
+          {
+            "name": "History Fruit (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 86"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_5",
+    "interactables": []
   },
   {
     "id": "desert-6",
@@ -2384,25 +4305,41 @@
       {
         "type": "Mining",
         "items": [
-          "Starmetal",
-          "Black Diamond Fragment",
-          "Black Diamond"
+          {
+            "name": "Starmetal"
+          },
+          {
+            "name": "Black Diamond Fragment"
+          },
+          {
+            "name": "Black Diamond"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Memory Agave",
-          "Epochal Lily",
-          "Sculpted Cactus (trees)",
-          "History Fruit (trees)"
+          {
+            "name": "Memory Agave"
+          },
+          {
+            "name": "Epochal Lily"
+          },
+          {
+            "name": "Sculpted Cactus (trees)"
+          },
+          {
+            "name": "History Fruit (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 0"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_6",
+    "interactables": []
   },
   {
     "id": "desert-coast",
@@ -2414,33 +4351,57 @@
     "zoneType": "Surface zone",
     "level": "85",
     "monsters": [
-      "Saowl",
-      "Pyramid Guardian"
+      {
+        "name": "Saowl"
+      },
+      {
+        "name": "Pyramid Guardian"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Starmetal",
-          "Black Diamond Fragment",
-          "Black Diamond"
+          {
+            "name": "Starmetal"
+          },
+          {
+            "name": "Black Diamond Fragment"
+          },
+          {
+            "name": "Black Diamond"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Abyssal Octopus",
-          "Spookee",
-          "Abyssal Urchin"
+          {
+            "name": "Abyssal Octopus"
+          },
+          {
+            "name": "Spookee"
+          },
+          {
+            "name": "Abyssal Urchin"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Memory Agave",
-          "Epochal Lily",
-          "Sculpted Cactus (trees)",
-          "History Fruit (trees)"
+          {
+            "name": "Memory Agave"
+          },
+          {
+            "name": "Epochal Lily"
+          },
+          {
+            "name": "Sculpted Cactus (trees)"
+          },
+          {
+            "name": "History Fruit (trees)"
+          }
         ]
       }
     ],
@@ -2449,7 +4410,9 @@
       "level 85",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Coast",
+    "interactables": []
   },
   {
     "id": "pyramid",
@@ -2465,25 +4428,43 @@
       {
         "type": "Mining",
         "items": [
-          "Bismuth",
-          "Ruby"
+          {
+            "name": "Bismuth"
+          },
+          {
+            "name": "Ruby"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Desert Sage",
-          "Desert Flower",
-          "Desert Rose",
-          "Cactus Fruit (trees)",
-          "Cactus (trees)"
+          {
+            "name": "Desert Sage",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Sage"
+          },
+          {
+            "name": "Desert Flower",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Flower"
+          },
+          {
+            "name": "Desert Rose"
+          },
+          {
+            "name": "Cactus Fruit (trees)"
+          },
+          {
+            "name": "Cactus (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 0"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pyramid",
+    "interactables": []
   },
   {
     "id": "banana-farm",
@@ -2495,22 +4476,34 @@
     "zoneType": "Surface zone",
     "level": "25",
     "monsters": [
-      "Bananek",
-      "Overripe Bananek"
+      {
+        "name": "Bananek"
+      },
+      {
+        "name": "Overripe Bananek"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Iron Ore"
+          {
+            "name": "Iron Ore"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Aloe Vera",
-          "Pineapple",
-          "Acacia Wood (trees)"
+          {
+            "name": "Aloe Vera"
+          },
+          {
+            "name": "Pineapple"
+          },
+          {
+            "name": "Acacia Wood (trees)"
+          }
         ]
       }
     ],
@@ -2529,28 +4522,48 @@
     "zoneType": "Surface zone",
     "level": "27",
     "monsters": [
-      "Monoghoul"
+      {
+        "name": "Monoghoul",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Monoghoul",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Monoghoul.png/16px-Monoghoul.png"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Petrified Wood"
+          {
+            "name": "Petrified Wood",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Petrified_Wood",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Petrified_Wood.png/16px-Petrified_Wood.png",
+            "chancePercent": 100
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Lantern Bulb",
-          "Misty Fruit (trees)",
-          "Misty Wood (trees)"
+          {
+            "name": "Lantern Bulb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lantern_Bulb",
+            "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Lantern_Bulb.png/16px-Lantern_Bulb.png",
+            "chancePercent": 100
+          },
+          {
+            "name": "Misty Fruit (trees)"
+          },
+          {
+            "name": "Misty Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 27"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Misty_Forest_1",
+    "interactables": []
   },
   {
     "id": "misty-forest-2",
@@ -2562,37 +4575,59 @@
     "zoneType": "Surface zone",
     "level": "27",
     "monsters": [
-      "Sadling",
-      "Monoghoul"
+      {
+        "name": "Sadling"
+      },
+      {
+        "name": "Monoghoul"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Petrified Wood"
+          {
+            "name": "Petrified Wood",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Petrified_Wood"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Lantern Bulb",
-          "Misty Fruit (trees)",
-          "Misty Wood (trees)"
+          {
+            "name": "Lantern Bulb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lantern_Bulb"
+          },
+          {
+            "name": "Misty Fruit (trees)"
+          },
+          {
+            "name": "Misty Wood (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Clownfish",
-          "Seaweed",
-          "Starfish"
+          {
+            "name": "Clownfish"
+          },
+          {
+            "name": "Seaweed"
+          },
+          {
+            "name": "Starfish"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 27"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Misty_Forest_2",
+    "interactables": []
   },
   {
     "id": "misty-forest-3",
@@ -2604,29 +4639,45 @@
     "zoneType": "Surface zone",
     "level": "29",
     "monsters": [
-      "Sadling",
-      "Dark Pumpkin"
+      {
+        "name": "Sadling"
+      },
+      {
+        "name": "Dark Pumpkin"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Petrified Wood"
+          {
+            "name": "Petrified Wood",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Petrified_Wood"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Lantern Bulb",
-          "Misty Fruit (trees)",
-          "Misty Wood (trees)"
+          {
+            "name": "Lantern Bulb",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lantern_Bulb"
+          },
+          {
+            "name": "Misty Fruit (trees)"
+          },
+          {
+            "name": "Misty Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 29"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Misty_Forest_3",
+    "interactables": []
   },
   {
     "id": "lost-forest",
@@ -2638,31 +4689,51 @@
     "zoneType": "Surface zone",
     "level": "30",
     "monsters": [
-      "Monoghoul",
-      "Denial",
-      "Sadling"
+      {
+        "name": "Monoghoul"
+      },
+      {
+        "name": "Denial"
+      },
+      {
+        "name": "Sadling"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Petrified Wood"
+          {
+            "name": "Petrified Wood"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Lantern Bulb",
-          "Misty Fruit (trees)",
-          "Misty Wood (trees)"
+          {
+            "name": "Lantern Bulb"
+          },
+          {
+            "name": "Misty Fruit (trees)"
+          },
+          {
+            "name": "Misty Wood (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Clownfish",
-          "Seaweed",
-          "Starfish"
+          {
+            "name": "Clownfish"
+          },
+          {
+            "name": "Seaweed"
+          },
+          {
+            "name": "Starfish"
+          }
         ]
       }
     ],
@@ -2682,22 +4753,37 @@
     "zoneType": "Surface zone",
     "level": "32",
     "monsters": [
-      "Stinky Sheep"
+      {
+        "name": "Stinky Sheep"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Sulfuric powder"
+          {
+            "name": "Sulfuric powder",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Powder"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Silver Leaf",
-          "Yellow Garlic",
-          "Sulfuric Wood (trees)",
-          "Spot Tomato (trees)"
+          {
+            "name": "Silver Leaf",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf"
+          },
+          {
+            "name": "Yellow Garlic",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Yellow_Garlic"
+          },
+          {
+            "name": "Sulfuric Wood (trees)"
+          },
+          {
+            "name": "Spot Tomato (trees)"
+          }
         ]
       }
     ],
@@ -2706,7 +4792,9 @@
       "level 32",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Plains_1",
+    "interactables": []
   },
   {
     "id": "sulfuric-plains-2",
@@ -2718,39 +4806,66 @@
     "zoneType": "Surface zone",
     "level": "33",
     "monsters": [
-      "Spot Slime",
-      "Stinky Sheep"
+      {
+        "name": "Spot Slime"
+      },
+      {
+        "name": "Stinky Sheep"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Sulfuric powder"
+          {
+            "name": "Sulfuric powder",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Powder"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Silver Leaf",
-          "Yellow Garlic",
-          "Sulfuric Wood (trees)",
-          "Spot Tomato (trees)"
+          {
+            "name": "Silver Leaf",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf"
+          },
+          {
+            "name": "Yellow Garlic",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Yellow_Garlic"
+          },
+          {
+            "name": "Sulfuric Wood (trees)"
+          },
+          {
+            "name": "Spot Tomato (trees)"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Trout",
-          "Sulfur Squid",
-          "Clownfish",
-          "Seaweed"
+          {
+            "name": "Trout"
+          },
+          {
+            "name": "Sulfur Squid"
+          },
+          {
+            "name": "Clownfish"
+          },
+          {
+            "name": "Seaweed"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 33"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Plains_2",
+    "interactables": []
   },
   {
     "id": "sulfuric-plains-3",
@@ -2762,30 +4877,49 @@
     "zoneType": "Surface zone",
     "level": "35",
     "monsters": [
-      "Licke",
-      "Spot Slime"
+      {
+        "name": "Licke"
+      },
+      {
+        "name": "Spot Slime"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Sulfuric powder"
+          {
+            "name": "Sulfuric powder",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Powder"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Silver Leaf",
-          "Yellow Garlic",
-          "Sulfuric Wood (trees)",
-          "Spot Tomato (trees)"
+          {
+            "name": "Silver Leaf",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf"
+          },
+          {
+            "name": "Yellow Garlic",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Yellow_Garlic"
+          },
+          {
+            "name": "Sulfuric Wood (trees)"
+          },
+          {
+            "name": "Spot Tomato (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 35"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Plains_3",
+    "interactables": []
   },
   {
     "id": "sulfuric-path",
@@ -2797,31 +4931,52 @@
     "zoneType": "Surface zone",
     "level": "34",
     "monsters": [
-      "Spot Slime",
-      "Lumen Sprite",
-      "Licke"
+      {
+        "name": "Spot Slime"
+      },
+      {
+        "name": "Lumen Sprite"
+      },
+      {
+        "name": "Licke"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Sulfuric powder"
+          {
+            "name": "Sulfuric powder",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Powder"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Silver Leaf",
-          "Yellow Garlic",
-          "Sulfuric Wood (trees)",
-          "Spot Tomato (trees)"
+          {
+            "name": "Silver Leaf",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf"
+          },
+          {
+            "name": "Yellow Garlic",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Yellow_Garlic"
+          },
+          {
+            "name": "Sulfuric Wood (trees)"
+          },
+          {
+            "name": "Spot Tomato (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 34"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Path",
+    "interactables": []
   },
   {
     "id": "sulfuric-path-2",
@@ -2833,30 +4988,49 @@
     "zoneType": "Surface zone",
     "level": "33",
     "monsters": [
-      "Anger",
-      "Licke"
+      {
+        "name": "Anger"
+      },
+      {
+        "name": "Licke"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Sulfuric powder"
+          {
+            "name": "Sulfuric powder",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Powder"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Silver Leaf",
-          "Yellow Garlic",
-          "Sulfuric Wood (trees)",
-          "Spot Tomato (trees)"
+          {
+            "name": "Silver Leaf",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Silver_Leaf"
+          },
+          {
+            "name": "Yellow Garlic",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Yellow_Garlic"
+          },
+          {
+            "name": "Sulfuric Wood (trees)"
+          },
+          {
+            "name": "Spot Tomato (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 33"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Path_2",
+    "interactables": []
   },
   {
     "id": "rocky-path-3",
@@ -2868,35 +5042,68 @@
     "zoneType": "Surface zone",
     "level": "70",
     "monsters": [
-      "Cat Guardian",
-      "Rocky",
-      "Cat Golem"
+      {
+        "name": "Cat Guardian"
+      },
+      {
+        "name": "Rocky"
+      },
+      {
+        "name": "Cat Golem"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Gold Ore",
-          "Amber"
+          {
+            "name": "Gold Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Gold_Ore"
+          },
+          {
+            "name": "Amber",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Amber"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Fire Fish",
-          "Lava Octopus",
-          "Wolf Fish",
-          "Spookee",
-          "Moss Snail"
+          {
+            "name": "Fire Fish"
+          },
+          {
+            "name": "Lava Octopus"
+          },
+          {
+            "name": "Wolf Fish"
+          },
+          {
+            "name": "Spookee"
+          },
+          {
+            "name": "Moss Snail"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ashen Onion",
-          "Red Soy",
-          "Red Dandelion",
-          "Rocky Wood (trees)"
+          {
+            "name": "Ashen Onion",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ashen_Onion"
+          },
+          {
+            "name": "Red Soy",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Soy"
+          },
+          {
+            "name": "Red Dandelion",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Dandelion"
+          },
+          {
+            "name": "Rocky Wood (trees)"
+          }
         ]
       }
     ],
@@ -2905,7 +5112,9 @@
       "level 70",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Rocky_Path_3",
+    "interactables": []
   },
   {
     "id": "rocky-path-1",
@@ -2917,31 +5126,54 @@
     "zoneType": "Surface zone",
     "level": "65",
     "monsters": [
-      "Rokkak",
-      "Rocky"
+      {
+        "name": "Rokkak"
+      },
+      {
+        "name": "Rocky"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Gold Ore",
-          "Amber"
+          {
+            "name": "Gold Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Gold_Ore"
+          },
+          {
+            "name": "Amber",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Amber"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ashen Onion",
-          "Red Soy",
-          "Red Dandelion",
-          "Rocky Wood (trees)"
+          {
+            "name": "Ashen Onion",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ashen_Onion"
+          },
+          {
+            "name": "Red Soy",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Soy"
+          },
+          {
+            "name": "Red Dandelion",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Dandelion"
+          },
+          {
+            "name": "Rocky Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 65"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Rocky_Path_1",
+    "interactables": []
   },
   {
     "id": "rocky-path-2",
@@ -2953,32 +5185,57 @@
     "zoneType": "Surface zone",
     "level": "67",
     "monsters": [
-      "Cat Golem",
-      "Rokkak",
-      "Rocky"
+      {
+        "name": "Cat Golem"
+      },
+      {
+        "name": "Rokkak"
+      },
+      {
+        "name": "Rocky"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Gold Ore",
-          "Amber"
+          {
+            "name": "Gold Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Gold_Ore"
+          },
+          {
+            "name": "Amber",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Amber"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ashen Onion",
-          "Red Soy",
-          "Red Dandelion",
-          "Rocky Wood (trees)"
+          {
+            "name": "Ashen Onion",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ashen_Onion"
+          },
+          {
+            "name": "Red Soy",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Soy"
+          },
+          {
+            "name": "Red Dandelion",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Red_Dandelion"
+          },
+          {
+            "name": "Rocky Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 67"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Rocky_Path_2",
+    "interactables": []
   },
   {
     "id": "detour",
@@ -2990,24 +5247,40 @@
     "zoneType": "Surface zone",
     "level": "70",
     "monsters": [
-      "Ashball",
-      "Cat Guardian"
+      {
+        "name": "Ashball"
+      },
+      {
+        "name": "Cat Guardian"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Gold Ore",
-          "Amber"
+          {
+            "name": "Gold Ore"
+          },
+          {
+            "name": "Amber"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ashen Onion",
-          "Red Soy",
-          "Red Dandelion",
-          "Rocky Wood (trees)"
+          {
+            "name": "Ashen Onion"
+          },
+          {
+            "name": "Red Soy"
+          },
+          {
+            "name": "Red Dandelion"
+          },
+          {
+            "name": "Rocky Wood (trees)"
+          }
         ]
       }
     ],
@@ -3026,34 +5299,60 @@
     "zoneType": "Surface zone",
     "level": "69",
     "monsters": [
-      "Cat Golem",
-      "Cat Guardian"
+      {
+        "name": "Cat Golem"
+      },
+      {
+        "name": "Cat Guardian"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Gold Ore",
-          "Amber"
+          {
+            "name": "Gold Ore"
+          },
+          {
+            "name": "Amber"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Fire Fish",
-          "Lava Octopus",
-          "Wolf Fish",
-          "Spookee",
-          "Moss Snail"
+          {
+            "name": "Fire Fish"
+          },
+          {
+            "name": "Lava Octopus"
+          },
+          {
+            "name": "Wolf Fish"
+          },
+          {
+            "name": "Spookee"
+          },
+          {
+            "name": "Moss Snail"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Ashen Onion",
-          "Red Soy",
-          "Red Dandelion",
-          "Rocky Wood (trees)"
+          {
+            "name": "Ashen Onion"
+          },
+          {
+            "name": "Red Soy"
+          },
+          {
+            "name": "Red Dandelion"
+          },
+          {
+            "name": "Rocky Wood (trees)"
+          }
         ]
       }
     ],
@@ -3072,31 +5371,54 @@
     "zoneType": "Surface zone",
     "level": "61",
     "monsters": [
-      "Blizzy",
-      "Snowball"
+      {
+        "name": "Blizzy"
+      },
+      {
+        "name": "Snowball"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Titanium Ore",
-          "Sapphire"
+          {
+            "name": "Titanium Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Titanium_Ore"
+          },
+          {
+            "name": "Sapphire",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sapphire"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Dew Bloom",
-          "Blue Ginseng",
-          "Ice Flax Seed",
-          "Blue Cinnamon Wood (trees)"
+          {
+            "name": "Dew Bloom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dew_Bloom"
+          },
+          {
+            "name": "Blue Ginseng",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Ginseng"
+          },
+          {
+            "name": "Ice Flax Seed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ice_Flax_Seed"
+          },
+          {
+            "name": "Blue Cinnamon Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 61"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Snowy_Mountain_4",
+    "interactables": []
   },
   {
     "id": "snowy-mountain-5",
@@ -3108,34 +5430,60 @@
     "zoneType": "Surface zone",
     "level": "60",
     "monsters": [
-      "Frostfruit",
-      "Snowball",
-      "Blizzy"
+      {
+        "name": "Frostfruit"
+      },
+      {
+        "name": "Snowball"
+      },
+      {
+        "name": "Blizzy"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Titanium Ore",
-          "Sapphire"
+          {
+            "name": "Titanium Ore"
+          },
+          {
+            "name": "Sapphire"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Ice Jelly",
-          "Electray",
-          "Ice Salmon",
-          "Glowfish"
+          {
+            "name": "Ice Jelly"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Glowfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Dew Bloom",
-          "Blue Ginseng",
-          "Ice Flax Seed",
-          "Blue Cinnamon Wood (trees)"
+          {
+            "name": "Dew Bloom"
+          },
+          {
+            "name": "Blue Ginseng"
+          },
+          {
+            "name": "Ice Flax Seed"
+          },
+          {
+            "name": "Blue Cinnamon Wood (trees)"
+          }
         ]
       }
     ],
@@ -3154,32 +5502,59 @@
     "zoneType": "Surface zone",
     "level": "58",
     "monsters": [
-      "Slibbit"
+      {
+        "name": "Slibbit"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Titanium Ore",
-          "Sapphire"
+          {
+            "name": "Titanium Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Titanium_Ore"
+          },
+          {
+            "name": "Sapphire",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sapphire"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Ice Jelly",
-          "Electray",
-          "Ice Salmon",
-          "Glowfish"
+          {
+            "name": "Ice Jelly"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Glowfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Dew Bloom",
-          "Blue Ginseng",
-          "Ice Flax Seed",
-          "Blue Cinnamon Wood (trees)"
+          {
+            "name": "Dew Bloom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dew_Bloom"
+          },
+          {
+            "name": "Blue Ginseng",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Ginseng"
+          },
+          {
+            "name": "Ice Flax Seed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ice_Flax_Seed"
+          },
+          {
+            "name": "Blue Cinnamon Wood (trees)"
+          }
         ]
       }
     ],
@@ -3188,7 +5563,9 @@
       "level 58",
       "warp",
       "warp point"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Snowy_Mountain_1",
+    "interactables": []
   },
   {
     "id": "snowy-mountain-2",
@@ -3200,31 +5577,54 @@
     "zoneType": "Surface zone",
     "level": "59",
     "monsters": [
-      "Slibbit",
-      "Blizzy"
+      {
+        "name": "Slibbit"
+      },
+      {
+        "name": "Blizzy"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Titanium Ore",
-          "Sapphire"
+          {
+            "name": "Titanium Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Titanium_Ore"
+          },
+          {
+            "name": "Sapphire",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sapphire"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Dew Bloom",
-          "Blue Ginseng",
-          "Ice Flax Seed",
-          "Blue Cinnamon Wood (trees)"
+          {
+            "name": "Dew Bloom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dew_Bloom"
+          },
+          {
+            "name": "Blue Ginseng",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Ginseng"
+          },
+          {
+            "name": "Ice Flax Seed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ice_Flax_Seed"
+          },
+          {
+            "name": "Blue Cinnamon Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 59"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Snowy_Mountain_2",
+    "interactables": []
   },
   {
     "id": "snowy-mountain-3",
@@ -3236,40 +5636,71 @@
     "zoneType": "Surface zone",
     "level": "63",
     "monsters": [
-      "Snowball",
-      "Blizzy"
+      {
+        "name": "Snowball"
+      },
+      {
+        "name": "Blizzy"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Titanium Ore",
-          "Sapphire"
+          {
+            "name": "Titanium Ore",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Titanium_Ore"
+          },
+          {
+            "name": "Sapphire",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sapphire"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Ice Jelly",
-          "Electray",
-          "Ice Salmon",
-          "Glowfish"
+          {
+            "name": "Ice Jelly"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Glowfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Dew Bloom",
-          "Blue Ginseng",
-          "Ice Flax Seed",
-          "Blue Cinnamon Wood (trees)"
+          {
+            "name": "Dew Bloom",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Dew_Bloom"
+          },
+          {
+            "name": "Blue Ginseng",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Blue_Ginseng"
+          },
+          {
+            "name": "Ice Flax Seed",
+            "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ice_Flax_Seed"
+          },
+          {
+            "name": "Blue Cinnamon Wood (trees)"
+          }
         ]
       }
     ],
     "warpPoint": false,
     "tags": [
       "level 63"
-    ]
+    ],
+    "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Snowy_Mountain_3",
+    "interactables": []
   },
   {
     "id": "traveler-rest",
@@ -3281,32 +5712,54 @@
     "zoneType": "Surface zone",
     "level": "62",
     "monsters": [
-      "Icyghoul"
+      {
+        "name": "Icyghoul"
+      }
     ],
     "resources": [
       {
         "type": "Mining",
         "items": [
-          "Titanium Ore",
-          "Sapphire"
+          {
+            "name": "Titanium Ore"
+          },
+          {
+            "name": "Sapphire"
+          }
         ]
       },
       {
         "type": "Fishing",
         "items": [
-          "Ice Jelly",
-          "Electray",
-          "Ice Salmon",
-          "Glowfish"
+          {
+            "name": "Ice Jelly"
+          },
+          {
+            "name": "Electray"
+          },
+          {
+            "name": "Ice Salmon"
+          },
+          {
+            "name": "Glowfish"
+          }
         ]
       },
       {
         "type": "Herbalism",
         "items": [
-          "Dew Bloom",
-          "Blue Ginseng",
-          "Ice Flax Seed",
-          "Blue Cinnamon Wood (trees)"
+          {
+            "name": "Dew Bloom"
+          },
+          {
+            "name": "Blue Ginseng"
+          },
+          {
+            "name": "Ice Flax Seed"
+          },
+          {
+            "name": "Blue Cinnamon Wood (trees)"
+          }
         ]
       }
     ],

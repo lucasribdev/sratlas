@@ -2,7 +2,12 @@ import { useEffect, useRef } from "react";
 import { divIcon, type Marker as LeafletMarker } from "leaflet";
 import { Marker, Popup } from "react-leaflet";
 import type { GameMap } from "@/domain/map";
-import type { MapMarker } from "@/domain/marker";
+import type {
+  MapMarker,
+  MarkerInteractable,
+  MarkerMonster,
+  MarkerResourceItem,
+} from "@/domain/marker";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { percentageToLeafletLatLng } from "@/lib/coordinates";
@@ -19,6 +24,8 @@ type MapMarkersProps = {
 type MarkerPopupProps = {
   marker: MapMarker;
 };
+
+type PopupEntry = MarkerMonster | MarkerResourceItem | MarkerInteractable;
 
 type MapMarkerItemProps = {
   map: GameMap;
@@ -50,10 +57,59 @@ function markerIcon(style: ReturnType<typeof markerVisualStyle>) {
   return icon;
 }
 
+function PopupEntryRow({ entry }: { entry: PopupEntry }) {
+  const label = (
+    <span className="min-w-0 flex-1 truncate text-xs leading-5">
+      {entry.name}
+    </span>
+  );
+
+  return (
+    <span className="inline-flex min-w-0 max-w-[12rem] items-center gap-1.5 rounded-sm bg-secondary px-1.5 py-0.5 text-secondary-foreground">
+      {entry.imageUrl ? (
+        <img
+          alt=""
+          className="size-4 shrink-0 rounded-[2px] object-contain"
+          height={16}
+          loading="lazy"
+          src={entry.imageUrl}
+          width={16}
+        />
+      ) : null}
+      {entry.wikiUrl ? (
+        <a
+          className="min-w-0 flex-1 truncate text-xs leading-5 font-medium text-primary underline-offset-4 hover:underline focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+          href={entry.wikiUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {entry.name}
+        </a>
+      ) : (
+        label
+      )}
+      {"chancePercent" in entry && entry.chancePercent !== undefined ? (
+        <Badge
+          className="h-4 rounded-sm px-1 text-[0.625rem] leading-none font-semibold"
+          variant="outline"
+        >
+          {entry.chancePercent}%
+        </Badge>
+      ) : null}
+    </span>
+  );
+}
+
 function MarkerPopup({ marker }: MarkerPopupProps) {
-  const monsters = marker.monsters?.filter(Boolean) ?? [];
+  const monsters =
+    marker.monsters?.filter((monster) => monster.name.trim()) ?? [];
   const resourceGroups =
-    marker.resources?.filter((resource) => resource.items.some(Boolean)) ?? [];
+    marker.resources?.filter((resource) =>
+      resource.items.some((item) => item.name.trim()),
+    ) ?? [];
+  const interactables =
+    marker.interactables?.filter((interactable) => interactable.name.trim()) ??
+    [];
   const metadataBadges = [
     marker.warpPoint ? "Warp point" : undefined,
     marker.area,
@@ -95,13 +151,8 @@ function MarkerPopup({ marker }: MarkerPopupProps) {
             </h3>
             <ul className="flex flex-wrap gap-1.5">
               {monsters.map((monster) => (
-                <li key={monster}>
-                  <Badge
-                    className="rounded-sm px-1.5 py-0 text-[0.75rem] leading-5 font-medium"
-                    variant="secondary"
-                  >
-                    {monster}
-                  </Badge>
+                <li className="min-w-0" key={monster.name}>
+                  <PopupEntryRow entry={monster} />
                 </li>
               ))}
             </ul>
@@ -117,18 +168,48 @@ function MarkerPopup({ marker }: MarkerPopupProps) {
               Resources
             </h3>
             <div className="grid gap-1.5">
-              {resourceGroups.map((resource) => (
-                <p
-                  className="text-xs leading-snug text-muted-foreground"
-                  key={resource.type}
-                >
-                  <strong className="font-semibold text-foreground">
-                    {resource.type}
-                  </strong>
-                  <span>{`: ${resource.items.filter(Boolean).join(", ")}`}</span>
-                </p>
-              ))}
+              {resourceGroups.map((resource, resourceIndex) => {
+                const items = resource.items.filter((item) =>
+                  item.name.trim(),
+                );
+
+                return (
+                  <div
+                    className="grid gap-1"
+                    key={`${resource.type}-${resourceIndex}`}
+                  >
+                    <h4 className="text-xs leading-snug font-semibold text-foreground">
+                      {resource.type}
+                    </h4>
+                    <ul className="flex flex-wrap gap-1.5">
+                      {items.map((item) => (
+                        <li className="min-w-0" key={item.name}>
+                          <PopupEntryRow entry={item} />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
             </div>
+          </section>
+        </>
+      ) : null}
+
+      {interactables.length > 0 ? (
+        <>
+          <Separator />
+          <section className="grid gap-1.5" aria-label="Interactables">
+            <h3 className="text-[0.6875rem] leading-none font-bold tracking-normal text-muted-foreground uppercase">
+              Interactables
+            </h3>
+            <ul className="flex flex-wrap gap-1.5">
+              {interactables.map((interactable) => (
+                <li className="min-w-0" key={interactable.name}>
+                  <PopupEntryRow entry={interactable} />
+                </li>
+              ))}
+            </ul>
           </section>
         </>
       ) : null}
