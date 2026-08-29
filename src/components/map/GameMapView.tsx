@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { CRS } from 'leaflet'
 import { ImageOverlay, MapContainer, useMap } from 'react-leaflet'
 import { maps } from '@/data/maps'
+import { markers as allMarkers } from '@/data/markers'
 import type { MapMarker } from '@/domain/marker'
 import { mapBoundsFromDimensions, percentageToLeafletLatLng } from '@/lib/coordinates'
 import { MapMarkers } from './MapMarkers'
@@ -19,15 +20,14 @@ type GameMapViewProps = {
 }
 
 type SelectedMarkerControllerProps = {
-  markers: MapMarker[]
   selectedMarkerId?: MapMarker['id']
 }
 
-function SelectedMarkerController({ markers, selectedMarkerId }: SelectedMarkerControllerProps) {
+function SelectedMarkerController({ selectedMarkerId }: SelectedMarkerControllerProps) {
   const map = useMap()
 
   useEffect(() => {
-    const selectedMarker = markers.find((marker) => marker.id === selectedMarkerId)
+    const selectedMarker = allMarkers.find((marker) => marker.id === selectedMarkerId)
 
     if (!selectedMarker) {
       return
@@ -40,7 +40,7 @@ function SelectedMarkerController({ markers, selectedMarkerId }: SelectedMarkerC
         duration: 0.5,
       },
     )
-  }, [map, markers, selectedMarkerId])
+  }, [map, selectedMarkerId])
 
   return null
 }
@@ -62,7 +62,7 @@ export function GameMapView({ markers, onMarkerSelect, selectedMarkerId }: GameM
         zoomSnap={0.25}
       >
         <ImageOverlay bounds={imageBounds} url={initialMap.imageUrl} />
-        <SelectedMarkerController markers={markers} selectedMarkerId={selectedMarkerId} />
+        <SelectedMarkerController selectedMarkerId={selectedMarkerId} />
         <MapMarkers
           map={initialMap}
           markers={markers}
