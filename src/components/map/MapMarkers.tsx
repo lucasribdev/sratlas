@@ -263,8 +263,11 @@ function MapMarkerItem({
       title={marker.name}
     >
       <Popup
+        className="map-popup"
         autoPanPaddingBottomRight={[16, 16]}
-        autoPanPaddingTopLeft={[16, 72]}
+        autoPanPaddingTopLeft={[16, 120]}
+        maxHeight={360}
+        maxWidth={300}
       >
         <MarkerPopup marker={marker} />
       </Popup>

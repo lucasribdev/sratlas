@@ -87,7 +87,7 @@ export function Sidebar({
               size="sm"
               onClick={onSelectAllAreas}
             >
-              All areas
+              Select all areas
             </Button>
             <Button
               type="button"
@@ -95,7 +95,7 @@ export function Sidebar({
               size="sm"
               onClick={onClearAreas}
             >
-              Clear
+              Clear areas
             </Button>
           </div>
         </div>

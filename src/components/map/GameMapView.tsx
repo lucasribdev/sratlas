@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { CRS } from 'leaflet'
+import { CRS, type LatLngBoundsExpression } from 'leaflet'
 import { ImageOverlay, MapContainer, useMap } from 'react-leaflet'
 import { markers as allMarkers } from '@/data/markers'
 import type { GameMap } from '@/domain/map'
@@ -15,6 +15,11 @@ const initialMap: GameMap = {
   height: 1056,
 }
 const imageBounds = mapBoundsFromDimensions(initialMap)
+const mapPanMargin = 320
+const panBounds: LatLngBoundsExpression = [
+  [-mapPanMargin, -mapPanMargin],
+  [initialMap.height + mapPanMargin, initialMap.width + mapPanMargin],
+]
 const minZoom = -2
 const maxZoom = 2
 const selectedMarkerZoom = 1.5
@@ -59,7 +64,7 @@ export function GameMapView({ markers, onMarkerSelect, selectedMarkerId }: GameM
         boundsOptions={{ padding: [16, 16] }}
         className="map-view"
         crs={CRS.Simple}
-        maxBounds={imageBounds}
+        maxBounds={panBounds}
         maxBoundsViscosity={0.9}
         maxZoom={maxZoom}
         minZoom={minZoom}

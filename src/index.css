@@ -141,6 +141,17 @@
   margin: 12px 14px;
 }
 
+.map-popup .leaflet-popup-content-wrapper {
+  max-height: min(360px, calc(100svh - 7.5rem));
+  overflow: hidden;
+}
+
+.map-popup .leaflet-popup-content {
+  max-height: calc(min(360px, 100svh - 7.5rem) - 24px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
 .leaflet-popup-content p,
 .leaflet-popup-content ul {
   margin: 0;
