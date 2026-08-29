@@ -13,9 +13,10 @@ function markerSearchFields(marker: MapMarker) {
     marker.zoneType,
     ...(marker.tags ?? []),
     ...(marker.monsters ?? []).map((monster) => monster.name),
+    ...(marker.interactables ?? []).map((interactable) => interactable.name),
     ...resources.flatMap((resource) => [
       resource.type,
-      ...resource.items.map((item) => item.name),
+      ...(resource.items ?? []).map((item) => item.name),
     ]),
   ].filter((value): value is string => Boolean(value))
 }
