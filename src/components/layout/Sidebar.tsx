@@ -43,21 +43,21 @@ export function Sidebar({
         'flex h-full min-h-0 w-full min-w-0 flex-col gap-4 overflow-hidden bg-background p-5',
         'min-[761px]:w-[360px] min-[761px]:min-w-80 min-[761px]:border-r min-[761px]:border-border min-[761px]:p-6 min-[761px]:shadow-[8px_0_24px_rgb(30_41_59_/_0.08)]',
       )}
-      aria-label="Busca, filtros e resultados"
+      aria-label="Search, filters, and results"
     >
       <header className="grid gap-1.5">
         <div className="grid gap-1">
           <p className="text-xs font-bold tracking-normal text-primary uppercase">Soul's Remnant</p>
-          <h1 className="text-2xl leading-tight font-bold text-foreground">Mapa Interativo</h1>
+          <h1 className="text-2xl leading-tight font-bold text-foreground">Interactive Map</h1>
         </div>
       </header>
 
       <label className="grid gap-2 text-sm font-semibold text-foreground">
-        <span>Busca</span>
+        <span>Search</span>
         <Input
           className="h-10 bg-card"
           type="search"
-          placeholder="Buscar NPC, area ou recurso"
+          placeholder="Search NPC, area, or resource"
           value={searchQuery}
           onChange={(event) => onSearchQueryChange(event.target.value)}
         />
@@ -71,19 +71,19 @@ export function Sidebar({
       >
         <div className="flex items-center justify-between gap-3">
           <h2 id="filters-title" className="text-sm leading-tight font-bold text-foreground">
-            Filtros
+            Filters
           </h2>
           <div className="flex gap-2">
             <Button type="button" variant="outline" size="sm" onClick={onSelectAllAreas}>
-              Todas areas
+              All areas
             </Button>
             <Button type="button" variant="outline" size="sm" onClick={onClearFilters}>
-              Limpar
+              Clear
             </Button>
           </div>
         </div>
 
-        <div className="grid gap-2.5" aria-label="Areas e regioes">
+        <div className="grid gap-2.5" aria-label="Areas and regions">
           <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">Areas</h3>
           <div className="grid gap-2">
             {areaOptions.map((area) => (
@@ -101,8 +101,8 @@ export function Sidebar({
           </div>
         </div>
 
-        <div className="grid gap-2.5" aria-label="Filtros rapidos">
-          <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">Rapidos</h3>
+        <div className="grid gap-2.5" aria-label="Quick filters">
+          <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">Quick</h3>
           <div className="grid gap-2">
             {quickFilters.map((filter) => (
               <label
@@ -125,7 +125,7 @@ export function Sidebar({
       <section className="flex min-h-0 flex-1 flex-col gap-3" aria-labelledby="results-title">
         <div className="flex items-center justify-between gap-3">
           <h2 id="results-title" className="text-sm leading-tight font-bold text-foreground">
-            Resultados
+            Results
           </h2>
           <Badge variant="secondary" className="min-w-7 justify-center rounded-full">
             {markers.length}
@@ -164,7 +164,7 @@ export function Sidebar({
           </ScrollArea>
         ) : (
           <div className="rounded-lg border border-dashed border-border bg-card p-4 text-sm leading-relaxed text-muted-foreground">
-            Nenhum marcador encontrado para a busca e filtros atuais.
+            No markers match the current search and filters.
           </div>
         )}
       </section>

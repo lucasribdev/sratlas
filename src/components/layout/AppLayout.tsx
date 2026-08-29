@@ -102,17 +102,17 @@ export function AppLayout() {
         />
       </div>
 
-      <section className="relative flex min-h-0 min-w-0 flex-1" aria-label="Area principal do mapa">
+      <section className="relative flex min-h-0 min-w-0 flex-1" aria-label="Main map area">
         <div
           className="absolute top-3 right-3 left-3 z-[500] grid grid-cols-[minmax(0,1fr)_auto] gap-2 min-[761px]:hidden"
-          aria-label="Controles compactos"
+          aria-label="Compact controls"
         >
           <label className="grid min-w-0">
-            <span className="sr-only">Buscar no mapa</span>
+            <span className="sr-only">Search the map</span>
             <Input
               className="h-11 bg-background shadow-lg shadow-slate-950/15"
               type="search"
-              placeholder="Buscar NPC, area ou recurso"
+              placeholder="Search NPC, area, or resource"
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
             />
@@ -128,14 +128,14 @@ export function AppLayout() {
               }
             >
               <SlidersHorizontal aria-hidden="true" />
-              Filtros
+              Filters
             </SheetTrigger>
             <SheetContent
               className="w-[min(390px,calc(100vw-32px))] max-w-none gap-0 p-0 data-[side=left]:w-[min(390px,calc(100vw-32px))]"
               side="left"
             >
               <SheetHeader className="sr-only">
-                <SheetTitle>Busca, filtros e resultados</SheetTitle>
+                <SheetTitle>Search, filters, and results</SheetTitle>
               </SheetHeader>
               <Sidebar
                 areaOptions={areaOptions}
