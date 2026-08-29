@@ -1,7 +1,47 @@
 [
   {
-    "name": "Spawn",
-    "color": "#0891b2"
+    "name": "Banana farm",
+    "color": "#eab308"
+  },
+  {
+    "name": "Cold ocean cave",
+    "color": "#0284c7"
+  },
+  {
+    "name": "Deep forest den",
+    "color": "#166534"
+  },
+  {
+    "name": "Desert",
+    "color": "#ca8a04"
+  },
+  {
+    "name": "Detour",
+    "color": "#9333ea"
+  },
+  {
+    "name": "Forest",
+    "color": "#15803d"
+  },
+  {
+    "name": "Giant tree",
+    "color": "#65a30d"
+  },
+  {
+    "name": "Great trench",
+    "color": "#1d4ed8"
+  },
+  {
+    "name": "Lost Forest",
+    "color": "#047857"
+  },
+  {
+    "name": "Misty Forest",
+    "color": "#0f766e"
+  },
+  {
+    "name": "Ocean",
+    "color": "#2563eb"
   },
   {
     "name": "Outskirts",
@@ -12,76 +52,35 @@
     "color": "#7c8f2a"
   },
   {
-    "name": "Forest",
-    "color": "#15803d"
-  },
-  {
     "name": "Plains cave",
     "color": "#78716c"
-  },
-  {
-    "name": "Giant tree",
-    "color": "#65a30d"
-  },
-  {
-    "name": "Deep forest den",
-    "color": "#166534"
-  },
-  {
-    "name": "Ocean",
-    "color": "#2563eb"
-  },
-  {
-    "name": "Cold ocean cave",
-    "color": "#0284c7"
-  },
-  {
-    "name": "Great trench",
-    "color": "#1d4ed8"
-  },
-  {
-    "name": "Desert",
-    "color": "#ca8a04"
   },
   {
     "name": "Pyramid",
     "color": "#a16207"
   },
   {
-    "name": "Banana farm",
-    "color": "#eab308"
-  },
-  {
-    "name": "Misty Forest",
-    "color": "#0f766e"
-  },
-  {
-    "name": "Lost Forest",
-    "color": "#047857"
-  },
-  {
-    "name": "Sulfuric Plains",
-    "color": "#84cc16"
-  },
-  {
-    "name": "Sulfuric Path",
-    "color": "#4d7c0f"
-  },
-  {
     "name": "Rocky Path",
     "color": "#57534e"
-  },
-  {
-    "name": "Detour",
-    "color": "#9333ea"
   },
   {
     "name": "Snowy Mountain",
     "color": "#38bdf8"
   },
   {
+    "name": "Spawn",
+    "color": "#0891b2"
+  },
+  {
+    "name": "Sulfuric Path",
+    "color": "#4d7c0f"
+  },
+  {
+    "name": "Sulfuric Plains",
+    "color": "#84cc16"
+  },
+  {
     "name": "Traveler rest",
     "color": "#f97316"
   }
 ]
-
