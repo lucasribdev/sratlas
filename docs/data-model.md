@@ -88,8 +88,7 @@ veja o [Guia de marcadores](./markers-guide.md).
     }
   ],
   "warpPoint": true,
-  "wikiUrl": "/wiki/Ashen_Hollow",
-  "tags": ["area", "surface", "ashen hollow"]
+  "wikiUrl": "/wiki/Ashen_Hollow"
 }
 ```
 
@@ -107,7 +106,7 @@ veja o [Guia de marcadores](./markers-guide.md).
 | `resources` | Nao | Lista de grupos de recursos por profissao ou tipo de coleta |
 | `warpPoint` | Nao | Indica se a area tem ponto de warp |
 | `wikiUrl` | Nao | Link para wiki |
-| `tags` | Nao | Termos auxiliares de busca |
+| `tags` | Nao | Termos auxiliares de busca que nao duplicam campos estruturados |
 
 Formato recomendado para `resources`:
 

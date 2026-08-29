@@ -111,7 +111,7 @@ itens em um unico grupo por tipo de coleta.
 ## Tags
 
 Use `tags` apenas para termos de busca que nao aparecem naturalmente em outros
-campos. Bons usos:
+campos estruturados. Bons usos:
 
 - sinonimos;
 - termos alternativos;
@@ -121,9 +121,10 @@ campos. Bons usos:
 - termos importantes que nao aparecem em `name`, `area`, `zoneType`,
   `monsters` ou `resources`.
 
-Evite duplicar tudo sem necessidade. Se o marcador ja tem `"Fishing"` em
-`resources[].type`, nao precisa adicionar `"fishing"` em `tags` a menos que isso
-resolva um caso real de busca.
+Nao duplique `name`, `area`, `zoneType`, `monsters`, `resources[].type` ou
+`resources[].items` em `tags`: esses valores ja participam da busca. Se o
+marcador ja tem `"Fishing"` em `resources[].type`, nao precisa adicionar
+`"fishing"` em `tags`.
 
 ## Coordenadas
 
@@ -163,8 +164,8 @@ No MVP, coordenadas aproximadas sao aceitaveis quando ainda nao houver medicao
 precisa. Nesse caso:
 
 - posicione o marcador no centro aproximado da zona;
-- use `tags` para indicar coordenadas temporarias somente se isso ajudar a
-  revisao ou a busca;
+- registre a pendencia fora das `tags`, pois notas editoriais nao devem afetar a
+  busca;
 - ajuste depois quando houver imagem, print ou referencia melhor;
 - nao bloqueie a inclusao de uma zona util apenas por falta de coordenada
   perfeita.
@@ -200,7 +201,7 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
   ],
   "warpPoint": true,
   "wikiUrl": "/wiki/Mistwood_Crossing",
-  "tags": ["mist wood", "crossing", "forest", "temporary coordinates"]
+  "tags": ["mist wood"]
 }
 ```
 
