@@ -116,7 +116,7 @@ export function AppLayout() {
             <Input
               className="h-11 bg-background shadow-lg shadow-slate-950/15"
               type="search"
-              placeholder="Search area, resource or monster"
+              placeholder="Search NPC, resource, monster or area"
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
             />

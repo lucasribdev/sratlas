@@ -61,7 +61,7 @@ export function Sidebar({
         <Input
           className="h-10 bg-card"
           type="search"
-          placeholder="Search area, resource or monster"
+          placeholder="Search NPC, resource, monster or area"
           value={searchQuery}
           onChange={(event) => onSearchQueryChange(event.target.value)}
         />
