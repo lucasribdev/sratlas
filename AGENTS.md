@@ -70,13 +70,17 @@ public/
 
 ## Regras de dados
 
+- `src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa.
+- `src/data/maps.json` e apenas auxiliar de importacao/metadados da imagem; nao trate como fonte runtime de entidades ou marcadores.
 - Coordenadas de marcadores devem ser percentuais, de `0` a `100`.
 - Origem das coordenadas: canto superior esquerdo do mapa.
 - `x = 0` fica na esquerda; `x = 100` fica na direita.
 - `y = 0` fica no topo; `y = 100` fica na base.
 - Marcadores representam posicoes no mapa.
 - Entidades representam coisas do jogo, como NPCs, monstros, itens, quests e recursos.
-- No MVP, o marcador pode conter dados simples diretamente. Depois, separe entidades para evitar duplicacao.
+- No MVP, o marcador contem dados ricos diretamente, incluindo `wikiUrl`, `interactables[]`, `monsters[]` e `resources[].items[]`.
+- Nao volte para formatos antigos em que `monsters` ou `resources[].items` eram arrays de strings.
+- Depois do MVP, separe entidades para evitar duplicacao apenas quando houver necessidade real.
 
 ## UX
 

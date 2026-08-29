@@ -34,6 +34,7 @@ O MVP deve permitir:
 
 - [Plano do MVP](./docs/mvp.md)
 - [Modelo de dados](./docs/data-model.md)
+- [Schema dos dados](./docs/data-schema.md)
 - [Guia de marcadores](./docs/markers-guide.md)
 - [Base UI e manutencao visual](./docs/ui.md)
 - [Milestones e issues](./docs/milestones.md)
@@ -51,7 +52,10 @@ pnpm lint
 ## Decisoes importantes
 
 - Comecar sem backend.
+- Manter login, painel administrativo e sincronizacao automatica com a wiki fora do MVP.
 - Usar Leaflet com uma imagem do mapa do jogo.
 - Salvar coordenadas dos marcadores em percentual relativo ao mapa.
-- Manter dados editaveis em arquivos JSON no inicio.
+- Tratar `src/data/markers.json` como fonte confiavel e runtime dos dados do mapa.
+- Usar `src/data/maps.json` apenas como auxiliar de importacao/metadados da imagem, nao como fonte runtime de marcadores ou entidades.
+- Manter dados editaveis em JSON estatico no inicio.
 - Separar "marcador" de "entidade" quando o projeto crescer.

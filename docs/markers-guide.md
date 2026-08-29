@@ -4,6 +4,17 @@ Este guia explica como adicionar e manter zonas em `src/data/markers.json` sem
 alterar codigo. O MVP usa dados estaticos em JSON, entao cada novo marcador deve
 ter dados suficientes para busca, filtros, popup e posicionamento no mapa.
 
+`src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa. A UI
+le esse arquivo para montar marcadores, busca, filtros e detalhes. `src/data/maps.json`
+e apenas auxiliar de importacao/metadados da imagem do mapa; nao coloque nele
+dados de monstros, recursos, interactables ou entidades.
+
+Para a lista completa de campos e exemplos isolados de monster, resource item e
+interactable, veja o [Schema dos dados](./data-schema.md).
+
+Backend, login, painel administrativo e sincronizacao automatica com a wiki
+continuam fora do MVP.
+
 ## Como adicionar uma nova zona
 
 1. Abra `src/data/markers.json`.
@@ -46,14 +57,20 @@ marcador:
 | `area` | Regiao usada no filtro principal, como `Ocean` ou `Plains`. |
 | `zoneType` | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`. |
 | `level` | Nivel recomendado ou nivel da zona. Pode ser `"17"` ou `"12-15"`. |
-| `monsters` | Lista simples de monstros encontrados na zona. |
+| `monsters` | Lista rica de monstros encontrados na zona. |
 | `resources` | Grupos de recursos por tipo de coleta. |
 | `warpPoint` | `true` quando a zona tem ponto de warp. Omita quando nao tiver. |
 | `wikiUrl` | Link opcional para a wiki. |
+| `interactables` | Lista rica de NPCs, objetos ou pontos interativos. |
 | `tags` | Termos extras para melhorar a busca. |
 
 Dados importantes devem entrar em campos estruturados do marcador: `area`,
-`zoneType`, `level`, `monsters`, `resources`, `warpPoint`, `wikiUrl` e `tags`.
+`zoneType`, `level`, `monsters`, `resources`, `interactables`, `warpPoint`,
+`wikiUrl` e `tags`.
+
+Nao use o formato antigo com `monsters` como array de strings nem
+`resources[].items` como array de strings. Esses campos agora guardam objetos
+ricos diretamente no marker.
 
 Nao separe NPCs, monstros, itens ou recursos em outros arquivos ainda. Isso fica
 para depois do MVP, quando houver duplicacao real e dados suficientes.
@@ -92,15 +109,42 @@ Formato recomendado:
 "resources": [
   {
     "type": "Fishing",
-    "items": ["Clam", "Shrimp", "Trout"]
+    "items": [
+      {
+        "name": "Clam",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+        "chancePercent": 62.5
+      },
+      {
+        "name": "Shrimp",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shrimp",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shrimp.png/16px-Shrimp.png",
+        "chancePercent": 21.9
+      }
+    ]
   },
   {
     "type": "Mining",
-    "items": ["Stone", "Salt"]
+    "items": [
+      {
+        "name": "Stone",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+        "chancePercent": 65.2
+      }
+    ]
   },
   {
     "type": "Herbalism",
-    "items": ["Green Herb", "Red Herb", "Blue Herb"]
+    "items": [
+      {
+        "name": "Green Herb",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+        "chancePercent": 22.2
+      }
+    ]
   }
 ]
 ```
@@ -184,23 +228,62 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
   "area": "Mistwood",
   "zoneType": "Surface zone",
   "level": "24-28",
-  "monsters": ["Mossling", "Elder Wisp"],
+  "monsters": [
+    {
+      "name": "Mossling",
+      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mossling",
+      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Mossling.png/16px-Mossling.png"
+    },
+    {
+      "name": "Elder Wisp",
+      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Elder_Wisp",
+      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Elder_Wisp.png/16px-Elder_Wisp.png"
+    }
+  ],
   "resources": [
     {
       "type": "Fishing",
-      "items": ["Trout", "Glowfish"]
+      "items": [
+        {
+          "name": "Trout",
+          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Trout",
+          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Trout.png/16px-Trout.png",
+          "chancePercent": 15.6
+        }
+      ]
     },
     {
       "type": "Mining",
-      "items": ["Stone", "Iron Ore"]
+      "items": [
+        {
+          "name": "Iron Ore",
+          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Iron_Ore",
+          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Iron_Ore.png/16px-Iron_Ore.png",
+          "chancePercent": 34.8
+        }
+      ]
     },
     {
       "type": "Herbalism",
-      "items": ["Green Herb", "Moonleaf"]
+      "items": [
+        {
+          "name": "Moonleaf",
+          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Moonleaf",
+          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Moonleaf.png/16px-Moonleaf.png",
+          "chancePercent": 22.2
+        }
+      ]
+    }
+  ],
+  "interactables": [
+    {
+      "name": "Quest Master",
+      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quest_Master",
+      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Quest_Master.png/16px-Quest_Master.png"
     }
   ],
   "warpPoint": true,
-  "wikiUrl": "/wiki/Mistwood_Crossing",
+  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mistwood_Crossing",
   "tags": ["mist wood"]
 }
 ```
@@ -213,15 +296,17 @@ Antes de abrir PR ou fechar uma issue de dados:
 2. Confira se o `id` e unico.
 3. Confira se `mapId` existe em `src/data/maps.json`.
 4. Confira se `x` e `y` estao entre `0` e `100`.
-5. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
+5. Confira se `monsters`, `resources[].items` e `interactables` usam objetos
+   ricos com `name`, nao strings soltas.
+6. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
    a intencao for ativar filtros rapidos.
-6. Se a area for nova, confira se existe entrada correspondente em
+7. Se a area for nova, confira se existe entrada correspondente em
    `src/data/areas.json` ou aceite o fallback neutro temporariamente.
-7. Pesquise pelo nome da zona, area, monstro e recurso principal.
-8. Clique no resultado e confirme que o mapa centraliza no marcador.
-9. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
+8. Pesquise pelo nome da zona, area, monstro, interactable e recurso principal.
+9. Clique no resultado e confirme que o mapa centraliza no marcador.
+10. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
    existir.
-10. Verifique pelo menos uma tela desktop e uma mobile.
+11. Verifique pelo menos uma tela desktop e uma mobile.
 
 ## Checklist rapido
 
@@ -229,6 +314,7 @@ Antes de abrir PR ou fechar uma issue de dados:
 - `x` e `y` calculados em percentual a partir do canto superior esquerdo.
 - `area` preenchida quando a zona deve aparecer no filtro por regiao.
 - `resources` agrupado por `Fishing`, `Mining` e `Herbalism`.
+- `monsters`, `resources[].items` e `interactables` preenchidos como objetos ricos.
 - area cadastrada em `src/data/areas.json` quando precisa de cor propria.
 - `warpPoint` preenchido quando deve exibir anel/borda extra.
 - `resources` e `monsters` preenchidos quando devem afetar filtros.

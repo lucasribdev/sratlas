@@ -7,7 +7,15 @@ Separe mentalmente marcador de entidade:
 - **Marcador**: uma posicao no mapa. No MVP, tambem pode representar uma area ou zona do mapa.
 - **Entidade**: algo do jogo, como NPC, monstro, item, recurso, quest, cidade ou dungeon.
 
-No MVP, um marcador pode conter informacoes simples diretamente, inclusive dados basicos de zona, monstros, recursos e ponto de warp. Quando o projeto crescer, entidades devem ser separadas para evitar duplicacao.
+No MVP, um marcador contem dados ricos diretamente, inclusive dados de zona,
+monstros, recursos, interactables e ponto de warp. Quando o projeto crescer,
+entidades devem ser separadas para evitar duplicacao.
+
+Hoje, `src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa.
+Ele contem os dados ricos usados pela UI, busca, filtros e popup diretamente no
+marker. `src/data/maps.json` fica como arquivo auxiliar de importacao/metadados
+da imagem do mapa; nao use esse arquivo como fonte runtime de entidades,
+marcadores, monstros, recursos ou interactables.
 
 ## Arquivos iniciais
 
@@ -43,6 +51,9 @@ nao tiver `area`, a UI deve usar fallback neutro.
 
 ## Mapas
 
+`src/data/maps.json` descreve a imagem base usada pelo Leaflet. No MVP, ele e um
+arquivo auxiliar de importacao/metadados, nao a fonte runtime dos dados de jogo.
+
 Campos sugeridos:
 
 ```json
@@ -68,7 +79,8 @@ Campos sugeridos:
 Campos minimos e campos opcionais recomendados:
 
 Para o passo a passo de manutencao, exemplos completos e regras de coordenadas,
-veja o [Guia de marcadores](./markers-guide.md).
+veja o [Guia de marcadores](./markers-guide.md). Para a referencia de campos,
+veja o [Schema dos dados](./data-schema.md).
 
 ```json
 {
@@ -80,15 +92,35 @@ veja o [Guia de marcadores](./markers-guide.md).
   "area": "Ashen Hollow",
   "zoneType": "Surface zone",
   "level": "12-15",
-  "monsters": ["Ironfang", "Ash Crawler", "Hollow Wisp"],
+  "monsters": [
+    {
+      "name": "Ironfang",
+      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ironfang",
+      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Ironfang.png/16px-Ironfang.png"
+    }
+  ],
   "resources": [
     {
       "type": "Fishing",
-      "items": ["Clam", "Shrimp", "Trout"]
+      "items": [
+        {
+          "name": "Clam",
+          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
+          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+          "chancePercent": 62.5
+        }
+      ]
+    }
+  ],
+  "interactables": [
+    {
+      "name": "Quest Master",
+      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quest_Master",
+      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Quest_Master.png/16px-Quest_Master.png"
     }
   ],
   "warpPoint": true,
-  "wikiUrl": "/wiki/Ashen_Hollow"
+  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ashen_Hollow"
 }
 ```
 
@@ -102,10 +134,11 @@ veja o [Guia de marcadores](./markers-guide.md).
 | `area` | Nao | Area ou regiao |
 | `zoneType` | Nao | Tipo da zona, por exemplo `Surface zone` |
 | `level` | Nao | Nivel recomendado ou nivel da zona |
-| `monsters` | Nao | Lista de monstros encontrados na area |
+| `monsters` | Nao | Lista de monstros ricos encontrados na area |
 | `resources` | Nao | Lista de grupos de recursos por profissao ou tipo de coleta |
 | `warpPoint` | Nao | Indica se a area tem ponto de warp |
 | `wikiUrl` | Nao | Link para wiki |
+| `interactables` | Nao | Lista de NPCs, objetos ou pontos interativos ricos |
 | `tags` | Nao | Termos auxiliares de busca que nao duplicam campos estruturados |
 
 Formato recomendado para `resources`:
@@ -113,16 +146,27 @@ Formato recomendado para `resources`:
 ```json
 {
   "type": "Fishing",
-  "items": ["Clam", "Shrimp", "Trout"]
+  "items": [
+    {
+      "name": "Clam",
+      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
+      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+      "chancePercent": 62.5
+    }
+  ]
 }
 ```
 
-Use `area`, `zoneType`, `level`, `monsters`, `resources`, `warpPoint`, `wikiUrl`
-e `tags` para registrar dados importantes do marcador de forma estruturada. Use
-esses campos quando o marcador representar uma area ou zona navegavel do mapa, e
-nao apenas um ponto isolado como NPC, boss, merchant ou entrada. Esses campos
-devem continuar simples no MVP para que os dados possam ficar em JSON estatico e
-sejam faceis de manter.
+`monsters`, `resources[].items` e `interactables` nao devem ser arrays de
+strings. Use objetos ricos com `name` e, quando houver, `wikiUrl`, `imageUrl` e
+`chancePercent` nos itens de recurso.
+
+Use `area`, `zoneType`, `level`, `monsters`, `resources`, `interactables`,
+`warpPoint`, `wikiUrl` e `tags` para registrar dados importantes do marcador de
+forma estruturada. Use esses campos quando o marcador representar uma area ou
+zona navegavel do mapa, e nao apenas um ponto isolado como NPC, boss, merchant ou
+entrada. Esses campos devem continuar no JSON estatico do marcador durante o MVP
+para que sejam faceis de manter.
 
 Nao separe monstros, recursos ou entidades em arquivos/tabelas proprias ainda. Entidades separadas ficam para depois do MVP, quando houver dados suficientes e duplicacao real para justificar a mudanca.
 
@@ -136,8 +180,11 @@ A busca inicial deve ser simples e funcionar sobre os dados estaticos em JSON. P
 - `tags`
 - `monsters`
 - `resources`
+- `interactables`
 
-Em `resources`, a busca deve considerar tanto `type` quanto os valores de `items`, por exemplo `Fishing`, `Clam`, `Shrimp` e `Trout`.
+Em `resources`, a busca deve considerar tanto `type` quanto
+`resources[].items[].name`, por exemplo `Fishing`, `Clam`, `Shrimp` e `Trout`.
+Em `monsters` e `interactables`, a busca deve considerar pelo menos `name`.
 
 ## Filtros do MVP
 
@@ -231,6 +278,8 @@ Caso um backend seja adicionado:
 - `revisions`
 
 Nao crie essas tabelas no MVP. Use esta lista apenas como direcao arquitetural.
+Backend, login, painel administrativo e sincronizacao automatica com a wiki
+continuam fora do MVP.
 
 ## Integracao com wiki
 
@@ -238,7 +287,7 @@ No MVP, basta suportar:
 
 ```json
 {
-  "wikiUrl": "/wiki/Ironfang"
+  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ironfang"
 }
 ```
 
@@ -248,7 +297,7 @@ Depois, pode evoluir para:
 {
   "wikiSlug": "Ironfang",
   "wikiPageId": "123",
-  "wikiUrl": "/wiki/Ironfang",
+  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ironfang",
   "lastSyncedAt": "2026-08-26T00:00:00.000Z"
 }
 ```
