@@ -1,10 +1,10 @@
 import type { MapMarker } from "@/domain/marker";
-import type { QuickFilterId } from "@/lib/marker-filters";
+import type { SearchEntry } from "@/lib/search-index";
 import { ThemeSelector } from "@/components/layout/ThemeSelector";
+import { SearchAutocomplete } from "@/components/search/SearchAutocomplete";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
@@ -15,13 +15,12 @@ type SidebarProps = {
   onClearAreas: () => void;
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
   onSearchQueryChange: (query: string) => void;
+  onSearchSuggestionSelect: (entry: SearchEntry) => void;
   onSelectAllAreas: () => void;
   onToggleArea: (area: string) => void;
-  onToggleQuickFilter: (filterId: QuickFilterId) => void;
-  quickFilters: ReadonlyArray<{ id: QuickFilterId; label: string }>;
   searchQuery: string;
+  searchSuggestions: SearchEntry[];
   selectedAreas: ReadonlySet<string>;
-  selectedQuickFilters: ReadonlySet<QuickFilterId>;
 };
 
 export function Sidebar({
@@ -30,13 +29,12 @@ export function Sidebar({
   onClearAreas,
   onMarkerSelect,
   onSearchQueryChange,
+  onSearchSuggestionSelect,
   onSelectAllAreas,
   onToggleArea,
-  onToggleQuickFilter,
-  quickFilters,
   searchQuery,
+  searchSuggestions,
   selectedAreas,
-  selectedQuickFilters,
 }: SidebarProps) {
   const allAreasSelected =
     areaOptions.length > 0 &&
@@ -65,21 +63,20 @@ export function Sidebar({
         </div>
       </header>
 
-      <label className="grid gap-2 text-sm font-semibold text-foreground">
-        <span>Search</span>
-        <Input
-          className="h-10 bg-card"
-          type="search"
-          placeholder="Search NPC, resource, monster or area"
-          value={searchQuery}
-          onChange={(event) => onSearchQueryChange(event.target.value)}
-        />
-      </label>
+      <SearchAutocomplete
+        inputClassName="h-10 bg-card"
+        label="Search"
+        onQueryChange={onSearchQueryChange}
+        onSelect={onSearchSuggestionSelect}
+        placeholder="Search NPC, resource, monster or area"
+        query={searchQuery}
+        suggestions={searchSuggestions}
+      />
 
       <Separator />
 
       <section
-        className="grid max-h-[clamp(7.5rem,22svh,12rem)] min-h-0 shrink-0 gap-4 overflow-y-auto pr-1 min-[761px]:max-h-[clamp(8rem,24svh,14rem)]"
+        className="grid max-h-[clamp(7.5rem,22svh,12rem)] min-h-0 shrink-0 grid-rows-[auto_minmax(0,1fr)] gap-3 min-[761px]:max-h-[clamp(8rem,24svh,14rem)]"
         aria-labelledby="filters-title"
       >
         <div className="flex items-center justify-between gap-3">
@@ -91,69 +88,54 @@ export function Sidebar({
           </h2>
         </div>
 
-        <div className="grid gap-2.5" aria-label="Areas and regions">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">
-              Areas
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              <Button
-                type="button"
-                variant="outline"
-                size="sm"
-                aria-label="Select all areas"
-                disabled={allAreasSelected}
-                onClick={onSelectAllAreas}
-              >
-                Select all
-              </Button>
-              <Button
-                type="button"
-                variant="outline"
-                size="sm"
-                aria-label="Clear all selected areas"
-                disabled={noAreasSelected}
-                onClick={onClearAreas}
-              >
-                Clear all
-              </Button>
+        <ScrollArea className="min-h-0 overflow-hidden rounded-sm">
+          <div className="grid gap-4 pr-2">
+            <div className="grid gap-2.5" aria-label="Areas and regions">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">
+                  Areas
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    aria-label="Select all areas"
+                    disabled={allAreasSelected}
+                    onClick={onSelectAllAreas}
+                  >
+                    Select all
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    aria-label="Clear all selected areas"
+                    disabled={noAreasSelected}
+                    onClick={onClearAreas}
+                  >
+                    Clear all
+                  </Button>
+                </div>
+              </div>
+              <div className="grid gap-2">
+                {areaOptions.map((area) => (
+                  <label
+                    className="group/field flex items-center gap-2.5 text-sm text-foreground"
+                    key={area}
+                  >
+                    <Checkbox
+                      checked={selectedAreas.has(area)}
+                      onCheckedChange={() => onToggleArea(area)}
+                    />
+                    <span>{area}</span>
+                  </label>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="grid gap-2">
-            {areaOptions.map((area) => (
-              <label
-                className="group/field flex items-center gap-2.5 text-sm text-foreground"
-                key={area}
-              >
-                <Checkbox
-                  checked={selectedAreas.has(area)}
-                  onCheckedChange={() => onToggleArea(area)}
-                />
-                <span>{area}</span>
-              </label>
-            ))}
-          </div>
-        </div>
 
-        <div className="grid gap-2.5" aria-label="Quick filters">
-          <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">
-            Quick
-          </h3>
-          <div className="grid gap-2">
-            {quickFilters.map((filter) => (
-              <label
-                className="group/field flex items-center gap-2.5 text-sm text-foreground"
-                key={filter.id}
-              >
-                <Checkbox
-                  checked={selectedQuickFilters.has(filter.id)}
-                  onCheckedChange={() => onToggleQuickFilter(filter.id)}
-                />
-                <span>{filter.label}</span>
-              </label>
-            ))}
           </div>
-        </div>
+        </ScrollArea>
       </section>
 
       <Separator />

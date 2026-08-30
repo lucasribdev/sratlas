@@ -78,7 +78,7 @@ public/
 - `y = 0` fica no topo; `y = 100` fica na base.
 - Marcadores representam posicoes no mapa.
 - Entidades representam coisas do jogo, como NPCs, monstros, itens, quests e recursos.
-- No MVP, o marcador contem dados ricos diretamente, incluindo `wikiUrl`, `interactables[]`, `monsters[]` e `resources[].items[]`.
+- No MVP, o marcador contem dados ricos diretamente, incluindo `wikiSlug`, `interactables[]`, `monsters[]` e `resources[].items[]`.
 - Nao volte para formatos antigos em que `monsters` ou `resources[].items` eram arrays de strings.
 - Depois do MVP, separe entidades para evitar duplicacao apenas quando houver necessidade real.
 

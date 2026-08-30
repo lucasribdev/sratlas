@@ -95,8 +95,8 @@ veja o [Schema dos dados](./data-schema.md).
   "monsters": [
     {
       "name": "Ironfang",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ironfang",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Ironfang.png/16px-Ironfang.png"
+      "wikiSlug": "Ironfang",
+      "image": "Ironfang.png/16px-Ironfang.png"
     }
   ],
   "resources": [
@@ -105,8 +105,8 @@ veja o [Schema dos dados](./data-schema.md).
       "items": [
         {
           "name": "Clam",
-          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
-          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+          "wikiSlug": "Clam",
+          "image": "Clam.png/16px-Clam.png",
           "chancePercent": 62.5
         }
       ]
@@ -115,12 +115,12 @@ veja o [Schema dos dados](./data-schema.md).
   "interactables": [
     {
       "name": "Quest Master",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quest_Master",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Quest_Master.png/16px-Quest_Master.png"
+      "wikiSlug": "Quest_Master",
+      "image": "Quest_Master.png/16px-Quest_Master.png"
     }
   ],
   "warpPoint": true,
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ashen_Hollow"
+  "wikiSlug": "Ashen_Hollow"
 }
 ```
 
@@ -137,7 +137,7 @@ veja o [Schema dos dados](./data-schema.md).
 | `monsters` | Nao | Lista de monstros ricos encontrados na area |
 | `resources` | Nao | Lista de grupos de recursos por profissao ou tipo de coleta |
 | `warpPoint` | Nao | Indica se a area tem ponto de warp |
-| `wikiUrl` | Nao | Link para wiki |
+| `wikiSlug` | Nao | Slug da pagina da wiki |
 | `interactables` | Nao | Lista de NPCs, objetos ou pontos interativos ricos |
 | `tags` | Nao | Termos auxiliares de busca que nao duplicam campos estruturados |
 
@@ -149,8 +149,8 @@ Formato recomendado para `resources`:
   "items": [
     {
       "name": "Clam",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+      "wikiSlug": "Clam",
+      "image": "Clam.png/16px-Clam.png",
       "chancePercent": 62.5
     }
   ]
@@ -158,11 +158,11 @@ Formato recomendado para `resources`:
 ```
 
 `monsters`, `resources[].items` e `interactables` nao devem ser arrays de
-strings. Use objetos ricos com `name` e, quando houver, `wikiUrl`, `imageUrl` e
+strings. Use objetos ricos com `name` e, quando houver, `wikiSlug`, `image` e
 `chancePercent` nos itens de recurso.
 
 Use `area`, `zoneType`, `level`, `monsters`, `resources`, `interactables`,
-`warpPoint`, `wikiUrl` e `tags` para registrar dados importantes do marcador de
+`warpPoint`, `wikiSlug` e `tags` para registrar dados importantes do marcador de
 forma estruturada. Use esses campos quando o marcador representar uma area ou
 zona navegavel do mapa, e nao apenas um ponto isolado como NPC, boss, merchant ou
 entrada. Esses campos devem continuar no JSON estatico do marcador durante o MVP
@@ -186,20 +186,17 @@ Em `resources`, a busca deve considerar tanto `type` quanto
 `resources[].items[].name`, por exemplo `Fishing`, `Clam`, `Shrimp` e `Trout`.
 Em `monsters` e `interactables`, a busca deve considerar pelo menos `name`.
 
+For autocomplete details, searchable entity types, index generation, and
+selection behavior, see [Search Autocomplete](./search-autocomplete.md).
+
 ## Filtros do MVP
 
 O filtro principal da UI deve ser por area/regiao, usando os valores unicos de `area`
 presentes em `markers.json`.
 
-Filtros rapidos devem ser calculados diretamente dos marcadores:
-
-- Warp point: `warpPoint: true`;
-- Has monsters: `monsters` nao vazio;
-- Fishing: algum grupo `resources[].type === "Fishing"`;
-- Mining: algum grupo `resources[].type === "Mining"`;
-- Herbalism: algum grupo `resources[].type === "Herbalism"`.
-
-Nao crie agrupamento visual separado para cada monstro ou recurso. Nao separe entidades ainda.
+A busca cobre os campos estruturados dos marcadores, incluindo warp points por
+nome/tag, monstros, tipos de recursos e itens. Nao crie agrupamento visual
+separado para cada monstro ou recurso. Nao separe entidades ainda.
 
 ## Estilo visual dos marcadores
 
@@ -287,17 +284,17 @@ No MVP, basta suportar:
 
 ```json
 {
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ironfang"
+  "wikiSlug": "Ironfang"
 }
 ```
 
+Os links finais da wiki sao gerados por helpers centralizados a partir do slug.
 Depois, pode evoluir para:
 
 ```json
 {
   "wikiSlug": "Ironfang",
   "wikiPageId": "123",
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ironfang",
   "lastSyncedAt": "2026-08-26T00:00:00.000Z"
 }
 ```
