@@ -35,11 +35,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 0",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 0", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Spawn_Grounds",
     "interactables": [
       {
@@ -174,9 +170,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 7"
-    ],
+    "tags": ["level 7"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_South",
     "interactables": []
   },
@@ -260,9 +254,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 6"
-    ],
+    "tags": ["level 6"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Southeast",
     "interactables": []
   },
@@ -370,9 +362,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 7"
-    ],
+    "tags": ["level 7"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Pond",
     "interactables": []
   },
@@ -456,9 +446,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 3"
-    ],
+    "tags": ["level 3"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_East",
     "interactables": []
   },
@@ -542,9 +530,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 5"
-    ],
+    "tags": ["level 5"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Northeast",
     "interactables": []
   },
@@ -623,9 +609,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 5"
-    ],
+    "tags": ["level 5"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_North",
     "interactables": [
       {
@@ -715,9 +699,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 3"
-    ],
+    "tags": ["level 3"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Flower_Field",
     "interactables": []
   },
@@ -801,9 +783,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 2"
-    ],
+    "tags": ["level 2"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Northwest",
     "interactables": [
       {
@@ -917,9 +897,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 1"
-    ],
+    "tags": ["level 1"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_West",
     "interactables": []
   },
@@ -1008,9 +986,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 8"
-    ],
+    "tags": ["level 8"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_Southwest",
     "interactables": []
   },
@@ -1094,9 +1070,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 11"
-    ],
+    "tags": ["level 11"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_1",
     "interactables": [
       {
@@ -1173,9 +1147,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 12"
-    ],
+    "tags": ["level 12"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_2",
     "interactables": [
       {
@@ -1243,11 +1215,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 14",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 14", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_3",
     "interactables": [
       {
@@ -1324,9 +1292,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 15"
-    ],
+    "tags": ["level 15"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Plains_4",
     "interactables": []
   },
@@ -1424,13 +1390,20 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 40",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 40", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_1",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Shop Keeper",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shop_Keeper",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shop_Keeper.png/16px-Shop_Keeper.png"
+      },
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
+    ]
   },
   {
     "id": "forest-2",
@@ -1525,9 +1498,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 41"
-    ],
+    "tags": ["level 41"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_2",
     "interactables": []
   },
@@ -1634,9 +1605,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 39"
-    ],
+    "tags": ["level 39"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_3",
     "interactables": []
   },
@@ -1722,9 +1691,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 0"
-    ],
+    "tags": ["level 0"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Swamp",
     "interactables": []
   },
@@ -1821,11 +1788,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsforest pond",
-      "plains",
-      "level 38"
-    ],
+    "tags": ["plainsforest pond", "plains", "level 38"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Forest_Pond",
     "interactables": []
   },
@@ -1881,10 +1844,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainslost plains",
-      "level 37"
-    ],
+    "tags": ["plainslost plains", "level 37"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lost_Plains",
     "interactables": [
       {
@@ -1992,10 +1952,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsdeep forest 1",
-      "level 73"
-    ],
+    "tags": ["plainsdeep forest 1", "level 73"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Forest_1",
     "interactables": []
   },
@@ -2092,10 +2049,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsdeep forest threshold",
-      "level 78"
-    ]
+    "tags": ["plainsdeep forest threshold", "level 78"]
   },
   {
     "id": "deep-tree-way",
@@ -2165,10 +2119,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsdeep tree way",
-      "level 73"
-    ],
+    "tags": ["plainsdeep tree way", "level 73"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Tree_Way",
     "interactables": []
   },
@@ -2275,10 +2226,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsdeep forest 2",
-      "level 75"
-    ],
+    "tags": ["plainsdeep forest 2", "level 75"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Forest_2",
     "interactables": []
   },
@@ -2360,10 +2308,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsdeep forest 3",
-      "level 75"
-    ],
+    "tags": ["plainsdeep forest 3", "level 75"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Forest_3",
     "interactables": []
   },
@@ -2466,11 +2411,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "plainslost peak",
-      "level 76",
-      "warp point"
-    ],
+    "tags": ["plainslost peak", "level 76", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lost_Peak",
     "interactables": []
   },
@@ -2486,11 +2427,7 @@
     "monsters": [],
     "resources": [],
     "warpPoint": true,
-    "tags": [
-      "level 0",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 0", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Market_Hub_Entrance",
     "interactables": [
       {
@@ -2559,9 +2496,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 15"
-    ]
+    "tags": ["level 15"]
   },
   {
     "id": "beach-cave",
@@ -2622,9 +2557,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 21"
-    ]
+    "tags": ["level 21"]
   },
   {
     "id": "forest-seeding-ground",
@@ -2715,9 +2648,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 38"
-    ]
+    "tags": ["level 38"]
   },
   {
     "id": "forest-lake",
@@ -2823,9 +2754,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 40"
-    ]
+    "tags": ["level 40"]
   },
   {
     "id": "giant-tree",
@@ -2885,10 +2814,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "deep forest",
-      "level 0"
-    ],
+    "tags": ["deep forest", "level 0"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Giant_Tree",
     "interactables": []
   },
@@ -2961,9 +2887,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 76"
-    ]
+    "tags": ["level 76"]
   },
   {
     "id": "seashell-cove",
@@ -3079,9 +3003,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 20"
-    ],
+    "tags": ["level 20"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Seashell_Cove",
     "interactables": []
   },
@@ -3199,9 +3121,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 17"
-    ]
+    "tags": ["level 17"]
   },
   {
     "id": "around-the-seashore",
@@ -3312,9 +3232,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 19"
-    ],
+    "tags": ["level 19"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Around_the_Seashore",
     "interactables": []
   },
@@ -3427,9 +3345,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 18"
-    ]
+    "tags": ["level 18"]
   },
   {
     "id": "ocean-1",
@@ -3515,9 +3431,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 46"
-    ],
+    "tags": ["level 46"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_1",
     "interactables": []
   },
@@ -3615,9 +3529,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 47"
-    ],
+    "tags": ["level 47"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_4",
     "interactables": []
   },
@@ -3710,9 +3622,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 45"
-    ],
+    "tags": ["level 45"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_3",
     "interactables": []
   },
@@ -3810,13 +3720,20 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 44",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 44", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ocean_2",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      },
+      {
+        "name": "Tailor",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Tailor",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Tailor.png/16px-Tailor.png"
+      }
+    ]
   },
   {
     "id": "deep-ocean-2",
@@ -3897,9 +3814,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 83"
-    ],
+    "tags": ["level 83"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_2",
     "interactables": []
   },
@@ -3982,11 +3897,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 81",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 81", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_1",
     "interactables": []
   },
@@ -4059,9 +3970,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 79"
-    ],
+    "tags": ["level 79"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_3",
     "interactables": []
   },
@@ -4134,9 +4043,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 79"
-    ],
+    "tags": ["level 79"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_4",
     "interactables": []
   },
@@ -4199,9 +4106,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 44"
-    ]
+    "tags": ["level 44"]
   },
   {
     "id": "great-trench",
@@ -4261,9 +4166,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 0"
-    ],
+    "tags": ["level 0"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Great_Trench",
     "interactables": []
   },
@@ -4321,9 +4224,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 22"
-    ],
+    "tags": ["level 22"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Savannah_1",
     "interactables": []
   },
@@ -4386,9 +4287,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 23"
-    ],
+    "tags": ["level 23"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Savannah_2",
     "interactables": []
   },
@@ -4446,13 +4345,20 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 24",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 24", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Savannah_3",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      },
+      {
+        "name": "Smith",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Smith",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Smith.png/16px-Smith.png"
+      }
+    ]
   },
   {
     "id": "desert-4",
@@ -4543,11 +4449,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 50",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 50", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_4",
     "interactables": []
   },
@@ -4625,9 +4527,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 51"
-    ],
+    "tags": ["level 51"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_3",
     "interactables": []
   },
@@ -4710,9 +4610,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 54"
-    ],
+    "tags": ["level 54"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_2",
     "interactables": []
   },
@@ -4790,9 +4688,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 55"
-    ],
+    "tags": ["level 55"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_1",
     "interactables": []
   },
@@ -4868,9 +4764,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 22"
-    ],
+    "tags": ["level 22"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Windy_Savannah",
     "interactables": []
   },
@@ -5002,11 +4896,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 0",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 0", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_8",
     "interactables": []
   },
@@ -5079,9 +4969,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 88"
-    ],
+    "tags": ["level 88"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_7",
     "interactables": []
   },
@@ -5174,9 +5062,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 86"
-    ],
+    "tags": ["level 86"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_5",
     "interactables": []
   },
@@ -5238,9 +5124,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 0"
-    ],
+    "tags": ["level 0"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_6",
     "interactables": []
   },
@@ -5333,11 +5217,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 85",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 85", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Coast",
     "interactables": []
   },
@@ -5399,9 +5279,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 0"
-    ],
+    "tags": ["level 0"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Pyramid",
     "interactables": []
   },
@@ -5459,9 +5337,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 25"
-    ]
+    "tags": ["level 25"]
   },
   {
     "id": "misty-forest-1",
@@ -5516,9 +5392,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 27"
-    ],
+    "tags": ["level 27"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Misty_Forest_1",
     "interactables": []
   },
@@ -5596,9 +5470,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 27"
-    ],
+    "tags": ["level 27"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Misty_Forest_2",
     "interactables": []
   },
@@ -5656,9 +5528,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 29"
-    ],
+    "tags": ["level 29"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Misty_Forest_3",
     "interactables": []
   },
@@ -5741,10 +5611,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "misty forest",
-      "level 30"
-    ]
+    "tags": ["misty forest", "level 30"]
   },
   {
     "id": "sulfuric-plains-1",
@@ -5796,13 +5663,15 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 32",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 32", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Plains_1",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
+    ]
   },
   {
     "id": "sulfuric-plains-2",
@@ -5884,9 +5753,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 33"
-    ],
+    "tags": ["level 33"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Plains_2",
     "interactables": []
   },
@@ -5945,9 +5812,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 35"
-    ],
+    "tags": ["level 35"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Plains_3",
     "interactables": []
   },
@@ -6011,9 +5876,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 34"
-    ],
+    "tags": ["level 34"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Path",
     "interactables": []
   },
@@ -6072,9 +5935,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 33"
-    ],
+    "tags": ["level 33"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Sulfuric_Path_2",
     "interactables": []
   },
@@ -6175,11 +6036,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 70",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 70", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Rocky_Path_3",
     "interactables": []
   },
@@ -6247,9 +6104,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 65"
-    ],
+    "tags": ["level 65"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Rocky_Path_1",
     "interactables": []
   },
@@ -6322,9 +6177,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 67"
-    ],
+    "tags": ["level 67"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Rocky_Path_2",
     "interactables": []
   },
@@ -6392,9 +6245,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 70"
-    ]
+    "tags": ["level 70"]
   },
   {
     "id": "cat-golem-den",
@@ -6488,9 +6339,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 69"
-    ]
+    "tags": ["level 69"]
   },
   {
     "id": "snowy-mountain-4",
@@ -6556,9 +6405,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 61"
-    ],
+    "tags": ["level 61"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Snowy_Mountain_4",
     "interactables": []
   },
@@ -6656,9 +6503,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 60"
-    ]
+    "tags": ["level 60"]
   },
   {
     "id": "snowy-mountain-1",
@@ -6744,13 +6589,20 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 58",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 58", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Snowy_Mountain_1",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      },
+      {
+        "name": "Ferryman",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Ferryman",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Ferryman.png/16px-Ferryman.png"
+      }
+    ]
   },
   {
     "id": "snowy-mountain-2",
@@ -6816,9 +6668,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 59"
-    ],
+    "tags": ["level 59"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Snowy_Mountain_2",
     "interactables": []
   },
@@ -6911,9 +6761,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 63"
-    ],
+    "tags": ["level 63"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Snowy_Mountain_3",
     "interactables": []
   },
@@ -7001,9 +6849,6 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "snowy mountain",
-      "level 62"
-    ]
+    "tags": ["snowy mountain", "level 62"]
   }
 ]
