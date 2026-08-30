@@ -114,7 +114,7 @@ export function AppLayout() {
           <label className="grid min-w-0">
             <span className="sr-only">Search the map</span>
             <Input
-              className="h-11 bg-background shadow-lg shadow-slate-950/15"
+              className="h-11 !border-border !bg-card text-card-foreground shadow-lg shadow-slate-950/15 placeholder:text-muted-foreground dark:!border-border dark:!bg-card"
               type="search"
               placeholder="Search NPC, resource, monster or area"
               value={searchQuery}
@@ -128,7 +128,7 @@ export function AppLayout() {
             <SheetTrigger
               render={
                 <Button
-                  className="h-11 shadow-lg shadow-slate-950/15"
+                  className="h-11 !border-border !bg-card text-card-foreground shadow-lg shadow-slate-950/15 hover:!bg-muted dark:!border-border dark:!bg-card dark:hover:!bg-muted"
                   type="button"
                   variant="outline"
                 />

@@ -52,7 +52,7 @@ export function Sidebar({
       aria-label="Search, filters, and results"
     >
       <header className="grid gap-1.5">
-        <div className="flex items-start justify-between gap-4">
+        <div className="flex items-start justify-between gap-4 pr-10 min-[761px]:pr-0">
           <div className="grid gap-1">
             <p className="text-xs font-bold tracking-normal text-primary uppercase">
               Interactive Map

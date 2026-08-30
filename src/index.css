@@ -58,6 +58,12 @@
   flex: 1;
 }
 
+@media (max-width: 760px) {
+  .map-view .leaflet-top.leaflet-left {
+    top: 4.25rem;
+  }
+}
+
 .map-marker {
   display: grid;
   place-items: center;
