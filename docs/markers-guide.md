@@ -102,7 +102,7 @@ Regras:
 ## Recursos
 
 Preencha `resources` agrupando os itens por tipo de coleta. Os tipos usados pelos
-filtros rapidos do MVP sao exatamente:
+dados atuais sao:
 
 - `Fishing`
 - `Mining`
@@ -304,7 +304,7 @@ Antes de abrir PR ou fechar uma issue de dados:
 5. Confira se `monsters`, `resources[].items` e `interactables` usam objetos
    ricos com `name`, nao strings soltas.
 6. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
-   a intencao for ativar filtros rapidos.
+   a intencao for cadastrar pontos de coleta.
 7. Se a area for nova, confira se existe entrada correspondente em
    `src/data/areas.json` ou aceite o fallback neutro temporariamente.
 8. Pesquise pelo nome da zona, area, monstro, interactable e recurso principal.

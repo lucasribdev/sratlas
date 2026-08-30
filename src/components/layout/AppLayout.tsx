@@ -2,12 +2,7 @@ import { useMemo, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
 import { markers } from "@/data/markers";
 import type { MapMarker } from "@/domain/marker";
-import {
-  markerAreaOptions,
-  markerMatchesQuickFilter,
-  quickFilters,
-  type QuickFilterId,
-} from "@/lib/marker-filters";
+import { markerAreaOptions } from "@/lib/marker-filters";
 import { markerMatchesSearch } from "@/lib/marker-search";
 import { buildSearchIndex, getSearchSuggestions, type SearchEntry } from "@/lib/search-index";
 import { resolveSearchEntrySelection } from "@/lib/search-selection";
@@ -31,9 +26,6 @@ export function AppLayout() {
   const [selectedAreas, setSelectedAreas] = useState<Set<string>>(
     () => new Set(areaOptions),
   );
-  const [selectedQuickFilters, setSelectedQuickFilters] = useState<
-    Set<QuickFilterId>
-  >(() => new Set());
   const [selectedMarkerId, setSelectedMarkerId] = useState<MapMarker["id"]>();
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
@@ -45,10 +37,7 @@ export function AppLayout() {
   const filteredMarkers = markers.filter(
     (marker) =>
       markerMatchesSearch(marker, searchQuery) &&
-      (marker.area ? selectedAreas.has(marker.area) : false) &&
-      Array.from(selectedQuickFilters).every((filterId) =>
-        markerMatchesQuickFilter(marker, filterId),
-      ),
+      (marker.area ? selectedAreas.has(marker.area) : false),
   );
 
   function toggleArea(area: string) {
@@ -62,20 +51,6 @@ export function AppLayout() {
       }
 
       return nextAreas;
-    });
-  }
-
-  function toggleQuickFilter(filterId: QuickFilterId) {
-    setSelectedQuickFilters((currentFilterIds) => {
-      const nextFilterIds = new Set(currentFilterIds);
-
-      if (nextFilterIds.has(filterId)) {
-        nextFilterIds.delete(filterId);
-      } else {
-        nextFilterIds.add(filterId);
-      }
-
-      return nextFilterIds;
     });
   }
 
@@ -96,7 +71,6 @@ export function AppLayout() {
     const selection = resolveSearchEntrySelection(entry);
 
     setSearchQuery(selection.searchQuery);
-    setSelectedQuickFilters(selection.selectedQuickFilters);
 
     if (selection.selectedMarkerId) {
       selectMarker(selection.selectedMarkerId);
@@ -117,13 +91,10 @@ export function AppLayout() {
           onSearchSuggestionSelect={selectSearchEntry}
           onSelectAllAreas={selectAllAreas}
           onToggleArea={toggleArea}
-          onToggleQuickFilter={toggleQuickFilter}
-          quickFilters={quickFilters}
           markers={filteredMarkers}
           searchQuery={searchQuery}
           searchSuggestions={searchSuggestions}
           selectedAreas={selectedAreas}
-          selectedQuickFilters={selectedQuickFilters}
         />
       </div>
 
@@ -177,13 +148,10 @@ export function AppLayout() {
                 onSearchSuggestionSelect={selectSearchEntry}
                 onSelectAllAreas={selectAllAreas}
                 onToggleArea={toggleArea}
-                onToggleQuickFilter={toggleQuickFilter}
-                quickFilters={quickFilters}
                 markers={filteredMarkers}
                 searchQuery={searchQuery}
                 searchSuggestions={searchSuggestions}
                 selectedAreas={selectedAreas}
-                selectedQuickFilters={selectedQuickFilters}
               />
             </SheetContent>
           </Sheet>

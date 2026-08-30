@@ -1,5 +1,4 @@
 import type { MapMarker } from "@/domain/marker";
-import type { QuickFilterId } from "@/lib/marker-filters";
 import type { SearchEntry } from "@/lib/search-index";
 import { ThemeSelector } from "@/components/layout/ThemeSelector";
 import { SearchAutocomplete } from "@/components/search/SearchAutocomplete";
@@ -19,12 +18,9 @@ type SidebarProps = {
   onSearchSuggestionSelect: (entry: SearchEntry) => void;
   onSelectAllAreas: () => void;
   onToggleArea: (area: string) => void;
-  onToggleQuickFilter: (filterId: QuickFilterId) => void;
-  quickFilters: ReadonlyArray<{ id: QuickFilterId; label: string }>;
   searchQuery: string;
   searchSuggestions: SearchEntry[];
   selectedAreas: ReadonlySet<string>;
-  selectedQuickFilters: ReadonlySet<QuickFilterId>;
 };
 
 export function Sidebar({
@@ -36,12 +32,9 @@ export function Sidebar({
   onSearchSuggestionSelect,
   onSelectAllAreas,
   onToggleArea,
-  onToggleQuickFilter,
-  quickFilters,
   searchQuery,
   searchSuggestions,
   selectedAreas,
-  selectedQuickFilters,
 }: SidebarProps) {
   const allAreasSelected =
     areaOptions.length > 0 &&
@@ -141,25 +134,6 @@ export function Sidebar({
               </div>
             </div>
 
-            <div className="grid gap-2.5" aria-label="Quick filters">
-              <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">
-                Quick
-              </h3>
-              <div className="grid gap-2">
-                {quickFilters.map((filter) => (
-                  <label
-                    className="group/field flex items-center gap-2.5 text-sm text-foreground"
-                    key={filter.id}
-                  >
-                    <Checkbox
-                      checked={selectedQuickFilters.has(filter.id)}
-                      onCheckedChange={() => onToggleQuickFilter(filter.id)}
-                    />
-                    <span>{filter.label}</span>
-                  </label>
-                ))}
-              </div>
-            </div>
           </div>
         </ScrollArea>
       </section>

@@ -111,7 +111,7 @@ describe('search index', () => {
 })
 
 describe('search selection', () => {
-  it('selects a marker and reveals its area', () => {
+  it('selects a marker and keeps its marker id', () => {
     const markerEntry = findEntry('Metal Camp', 'marker')
     const selection = resolveSearchEntrySelection(markerEntry)
 
@@ -135,11 +135,25 @@ describe('search selection', () => {
     expect(selection).not.toHaveProperty('selectedAreas')
   })
 
-  it('selects a resource by activating the existing quick filter', () => {
+  it('selects a resource by using it as the search query', () => {
     const resourceEntry = findEntry('Mining', 'resource')
     const selection = resolveSearchEntrySelection(resourceEntry)
 
-    expect(selection.searchQuery).toBe('')
-    expect(selection.selectedQuickFilters).toEqual(new Set(['mining']))
+    expect(selection.searchQuery).toBe('Mining')
+  })
+
+  it.each([
+    ['Outskirts', 'area'],
+    ['Metal Golem', 'monster'],
+    ['Stone', 'item'],
+    ['Metal Essence', 'essence'],
+    ['Mining', 'resource'],
+    ['Blacksmith', 'interactable'],
+  ] as const)('selects a %s %s suggestion as a search query', (label, type) => {
+    const entry = findEntry(label, type)
+    const selection = resolveSearchEntrySelection(entry)
+
+    expect(selection.searchQuery).toBe(label)
+    expect(selection.selectedMarkerId).toBeUndefined()
   })
 })

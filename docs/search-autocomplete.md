@@ -52,7 +52,7 @@ Selection behavior is centralized in `src/lib/search-selection.ts`.
 | Area | Sets the search query to the area name. |
 | Monster | Sets the search query to the monster name. |
 | Item or Essence | Sets the search query to the item name. |
-| Resource | Activates the existing quick filter when the resource type maps to one, such as `Mining`, `Fishing`, or `Herbalism`. |
+| Resource | Sets the search query to the resource type, such as `Mining`, `Fishing`, or `Herbalism`. |
 | Interactable | Sets the search query to the interactable name. |
 
 Autocomplete selection does not change selected areas. Area checkboxes remain

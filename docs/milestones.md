@@ -110,9 +110,9 @@ Objetivo: permitir que jogadores encontrem rapidamente pontos importantes.
 
 ### Issues
 
-#### 15. Criar filtros rapidos por dados
+#### 15. Criar filtros por area
 
-Permitir filtrar por ponto de warp, monstros e tipos de recurso presentes nos marcadores.
+Permitir filtrar os marcadores por area/regiao.
 
 Status: MVP
 
