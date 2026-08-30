@@ -1,5 +1,6 @@
 import type { MapMarker } from "@/domain/marker";
 import type { QuickFilterId } from "@/lib/marker-filters";
+import { ThemeSelector } from "@/components/layout/ThemeSelector";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -37,6 +38,11 @@ export function Sidebar({
   selectedAreas,
   selectedQuickFilters,
 }: SidebarProps) {
+  const allAreasSelected =
+    areaOptions.length > 0 &&
+    areaOptions.every((area) => selectedAreas.has(area));
+  const noAreasSelected = selectedAreas.size === 0;
+
   return (
     <aside
       className={cn(
@@ -46,13 +52,16 @@ export function Sidebar({
       aria-label="Search, filters, and results"
     >
       <header className="grid gap-1.5">
-        <div className="grid gap-1">
-          <p className="text-xs font-bold tracking-normal text-primary uppercase">
-            Soul's Remnant
-          </p>
-          <h1 className="text-2xl leading-tight font-bold text-foreground">
-            Interactive Map
-          </h1>
+        <div className="flex items-start justify-between gap-4">
+          <div className="grid gap-1">
+            <p className="text-xs font-bold tracking-normal text-primary uppercase">
+              Interactive Map
+            </p>
+            <h1 className="text-2xl leading-tight font-bold text-foreground">
+              Soul's Remnant Atlas
+            </h1>
+          </div>
+          <ThemeSelector />
         </div>
       </header>
 
@@ -80,30 +89,36 @@ export function Sidebar({
           >
             Filters
           </h2>
-          <div className="flex gap-2">
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={onSelectAllAreas}
-            >
-              Select all areas
-            </Button>
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={onClearAreas}
-            >
-              Clear areas
-            </Button>
-          </div>
         </div>
 
         <div className="grid gap-2.5" aria-label="Areas and regions">
-          <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">
-            Areas
-          </h3>
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h3 className="text-xs font-bold tracking-normal text-muted-foreground uppercase">
+              Areas
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <Button
+                type="button"
+                variant="outline"
+                size="sm"
+                aria-label="Select all areas"
+                disabled={allAreasSelected}
+                onClick={onSelectAllAreas}
+              >
+                Select all
+              </Button>
+              <Button
+                type="button"
+                variant="outline"
+                size="sm"
+                aria-label="Clear all selected areas"
+                disabled={noAreasSelected}
+                onClick={onClearAreas}
+              >
+                Clear all
+              </Button>
+            </div>
+          </div>
           <div className="grid gap-2">
             {areaOptions.map((area) => (
               <label

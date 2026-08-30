@@ -30,6 +30,32 @@
     <meta name="twitter:image" content="https://sratlas.com/og-image.png" />
   </head>
   <body>
+    <script>
+      (() => {
+        const storageKey = "srw-theme";
+        let storedTheme;
+
+        try {
+          storedTheme = localStorage.getItem(storageKey);
+        } catch {
+          storedTheme = null;
+        }
+
+        const theme =
+          storedTheme === "light" || storedTheme === "dark" || storedTheme === "system"
+            ? storedTheme
+            : "system";
+        const resolvedTheme =
+          theme === "system" && matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : theme === "dark"
+              ? "dark"
+              : "light";
+
+        document.documentElement.classList.toggle("dark", resolvedTheme === "dark");
+        document.documentElement.style.colorScheme = resolvedTheme;
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
