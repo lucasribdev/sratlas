@@ -1,10 +1,11 @@
 import type { MapMarker } from "@/domain/marker";
 import type { QuickFilterId } from "@/lib/marker-filters";
+import type { SearchEntry } from "@/lib/search-index";
 import { ThemeSelector } from "@/components/layout/ThemeSelector";
+import { SearchAutocomplete } from "@/components/search/SearchAutocomplete";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
@@ -15,11 +16,13 @@ type SidebarProps = {
   onClearAreas: () => void;
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
   onSearchQueryChange: (query: string) => void;
+  onSearchSuggestionSelect: (entry: SearchEntry) => void;
   onSelectAllAreas: () => void;
   onToggleArea: (area: string) => void;
   onToggleQuickFilter: (filterId: QuickFilterId) => void;
   quickFilters: ReadonlyArray<{ id: QuickFilterId; label: string }>;
   searchQuery: string;
+  searchSuggestions: SearchEntry[];
   selectedAreas: ReadonlySet<string>;
   selectedQuickFilters: ReadonlySet<QuickFilterId>;
 };
@@ -30,11 +33,13 @@ export function Sidebar({
   onClearAreas,
   onMarkerSelect,
   onSearchQueryChange,
+  onSearchSuggestionSelect,
   onSelectAllAreas,
   onToggleArea,
   onToggleQuickFilter,
   quickFilters,
   searchQuery,
+  searchSuggestions,
   selectedAreas,
   selectedQuickFilters,
 }: SidebarProps) {
@@ -65,16 +70,15 @@ export function Sidebar({
         </div>
       </header>
 
-      <label className="grid gap-2 text-sm font-semibold text-foreground">
-        <span>Search</span>
-        <Input
-          className="h-10 bg-card"
-          type="search"
-          placeholder="Search NPC, resource, monster or area"
-          value={searchQuery}
-          onChange={(event) => onSearchQueryChange(event.target.value)}
-        />
-      </label>
+      <SearchAutocomplete
+        inputClassName="h-10 bg-card"
+        label="Search"
+        onQueryChange={onSearchQueryChange}
+        onSelect={onSearchSuggestionSelect}
+        placeholder="Search NPC, resource, monster or area"
+        query={searchQuery}
+        suggestions={searchSuggestions}
+      />
 
       <Separator />
 

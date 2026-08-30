@@ -186,6 +186,9 @@ Em `resources`, a busca deve considerar tanto `type` quanto
 `resources[].items[].name`, por exemplo `Fishing`, `Clam`, `Shrimp` e `Trout`.
 Em `monsters` e `interactables`, a busca deve considerar pelo menos `name`.
 
+For autocomplete details, searchable entity types, index generation, and
+selection behavior, see [Search Autocomplete](./search-autocomplete.md).
+
 ## Filtros do MVP
 
 O filtro principal da UI deve ser por area/regiao, usando os valores unicos de `area`

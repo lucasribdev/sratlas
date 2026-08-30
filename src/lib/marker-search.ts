@@ -1,8 +1,5 @@
 import type { MapMarker } from '@/domain/marker'
-
-function normalizeSearchText(value: string) {
-  return value.trim().toLocaleLowerCase().replace(/\s+/g, ' ')
-}
+import { normalizeSearchText } from '@/lib/search-index'
 
 function markerSearchFields(marker: MapMarker) {
   const resources = marker.resources ?? []

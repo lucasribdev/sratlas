@@ -313,6 +313,15 @@ Antes de abrir PR ou fechar uma issue de dados:
    existir.
 11. Verifique pelo menos uma tela desktop e uma mobile.
 
+## Search Autocomplete
+
+Autocomplete suggestions are derived from structured marker data. A new marker,
+monster, resource item, resource type, or interactable becomes searchable when it
+is added to `src/data/markers.json` using the fields described in this guide.
+
+See [Search Autocomplete](./search-autocomplete.md) for the indexed entity
+types and selection behavior.
+
 ## Checklist rapido
 
 - `id`, `name`, `mapId`, `x` e `y` preenchidos.
