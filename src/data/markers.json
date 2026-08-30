@@ -35,11 +35,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 0",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 0", "warp", "warp point"],
     "wikiSlug": "Spawn_Grounds",
     "interactables": [
       {
@@ -159,7 +155,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -167,9 +163,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 7"
-    ],
+    "tags": ["level 7"],
     "wikiSlug": "Outskirts_South",
     "interactables": []
   },
@@ -233,7 +227,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -241,9 +235,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 6"
-    ],
+    "tags": ["level 6"],
     "wikiSlug": "Outskirts_Southeast",
     "interactables": []
   },
@@ -335,7 +327,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -343,9 +335,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 7"
-    ],
+    "tags": ["level 7"],
     "wikiSlug": "Outskirts_Pond",
     "interactables": []
   },
@@ -409,7 +399,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -417,9 +407,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 3"
-    ],
+    "tags": ["level 3"],
     "wikiSlug": "Outskirts_East",
     "interactables": []
   },
@@ -483,7 +471,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -491,9 +479,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 5"
-    ],
+    "tags": ["level 5"],
     "wikiSlug": "Outskirts_Northeast",
     "interactables": []
   },
@@ -556,7 +542,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -564,9 +550,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 5"
-    ],
+    "tags": ["level 5"],
     "wikiSlug": "Outskirts_North",
     "interactables": [
       {
@@ -636,7 +620,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -644,9 +628,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 3"
-    ],
+    "tags": ["level 3"],
     "wikiSlug": "Outskirts_Flower_Field",
     "interactables": []
   },
@@ -710,7 +692,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -718,9 +700,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 2"
-    ],
+    "tags": ["level 2"],
     "wikiSlug": "Outskirts_Northwest",
     "interactables": [
       {
@@ -822,7 +802,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -830,9 +810,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 1"
-    ],
+    "tags": ["level 1"],
     "wikiSlug": "Outskirts_West",
     "interactables": []
   },
@@ -897,7 +875,7 @@
             "chancePercent": 22.2
           },
           {
-            "name": "Wood (trees)",
+            "name": "Wood",
             "wikiSlug": "Wood",
             "image": "Wood.png/16px-Wood.png",
             "chancePercent": 100
@@ -905,9 +883,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 8"
-    ],
+    "tags": ["level 8"],
     "wikiSlug": "Outskirts_Southwest",
     "interactables": []
   },
@@ -946,13 +922,13 @@
             "chancePercent": 100
           },
           {
-            "name": "Oak Wood (trees)",
+            "name": "Oak Wood",
             "wikiSlug": "Oak_Wood",
             "image": "Oak_Wood.png/16px-Oak_Wood.png",
             "chancePercent": 100
           },
           {
-            "name": "Apple (trees)",
+            "name": "Apple",
             "wikiSlug": "Apple",
             "image": "Apple.png/16px-Apple.png",
             "chancePercent": 100
@@ -983,9 +959,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 11"
-    ],
+    "tags": ["level 11"],
     "wikiSlug": "Plains_1",
     "interactables": [
       {
@@ -1036,13 +1010,13 @@
             "chancePercent": 100
           },
           {
-            "name": "Oak Wood (trees)",
+            "name": "Oak Wood",
             "wikiSlug": "Oak_Wood",
             "image": "Oak_Wood.png/16px-Oak_Wood.png",
             "chancePercent": 100
           },
           {
-            "name": "Apple (trees)",
+            "name": "Apple",
             "wikiSlug": "Apple",
             "image": "Apple.png/16px-Apple.png",
             "chancePercent": 100
@@ -1050,9 +1024,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 12"
-    ],
+    "tags": ["level 12"],
     "wikiSlug": "Plains_2",
     "interactables": [
       {
@@ -1097,13 +1069,13 @@
             "chancePercent": 100
           },
           {
-            "name": "Oak Wood (trees)",
+            "name": "Oak Wood",
             "wikiSlug": "Oak_Wood",
             "image": "Oak_Wood.png/16px-Oak_Wood.png",
             "chancePercent": 100
           },
           {
-            "name": "Apple (trees)",
+            "name": "Apple",
             "wikiSlug": "Apple",
             "image": "Apple.png/16px-Apple.png",
             "chancePercent": 100
@@ -1112,11 +1084,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 14",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 14", "warp", "warp point"],
     "wikiSlug": "Plains_3",
     "interactables": [
       {
@@ -1171,13 +1139,13 @@
             "chancePercent": 100
           },
           {
-            "name": "Oak Wood (trees)",
+            "name": "Oak Wood",
             "wikiSlug": "Oak_Wood",
             "image": "Oak_Wood.png/16px-Oak_Wood.png",
             "chancePercent": 100
           },
           {
-            "name": "Apple (trees)",
+            "name": "Apple",
             "wikiSlug": "Apple",
             "image": "Apple.png/16px-Apple.png",
             "chancePercent": 100
@@ -1185,9 +1153,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 15"
-    ],
+    "tags": ["level 15"],
     "wikiSlug": "Plains_4",
     "interactables": []
   },
@@ -1239,12 +1205,12 @@
             "image": "Melon.png/16px-Melon.png"
           },
           {
-            "name": "Green Cherry (trees)",
+            "name": "Green Cherry",
             "wikiSlug": "Green_Cherry",
             "image": "Green_Cherry.png/16px-Green_Cherry.png"
           },
           {
-            "name": "Hard Wood (trees)",
+            "name": "Hard Wood",
             "wikiSlug": "Hard_Wood",
             "image": "Hard_Wood.png/16px-Hard_Wood.png"
           }
@@ -1277,11 +1243,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 40",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 40", "warp", "warp point"],
     "wikiSlug": "Forest_1",
     "interactables": [
       {
@@ -1344,12 +1306,12 @@
             "image": "Melon.png/16px-Melon.png"
           },
           {
-            "name": "Green Cherry (trees)",
+            "name": "Green Cherry",
             "wikiSlug": "Green_Cherry",
             "image": "Green_Cherry.png/16px-Green_Cherry.png"
           },
           {
-            "name": "Hard Wood (trees)",
+            "name": "Hard Wood",
             "wikiSlug": "Hard_Wood",
             "image": "Hard_Wood.png/16px-Hard_Wood.png"
           }
@@ -1381,9 +1343,7 @@
         ]
       }
     ],
-    "tags": [
-      "level 41"
-    ],
+    "tags": ["level 41"],
     "wikiSlug": "Forest_2",
     "interactables": []
   },
@@ -1462,21 +1422,19 @@
             "image": "Melon.png/16px-Melon.png"
           },
           {
-            "name": "Green Cherry (trees)",
+            "name": "Green Cherry",
             "wikiSlug": "Green_Cherry",
             "image": "Green_Cherry.png/16px-Green_Cherry.png"
           },
           {
-            "name": "Hard Wood (trees)",
+            "name": "Hard Wood",
             "wikiSlug": "Hard_Wood",
             "image": "Hard_Wood.png/16px-Hard_Wood.png"
           }
         ]
       }
     ],
-    "tags": [
-      "level 39"
-    ],
+    "tags": ["level 39"],
     "wikiSlug": "Forest_3",
     "interactables": []
   },
@@ -1550,21 +1508,19 @@
             "image": "Melon.png/16px-Melon.png"
           },
           {
-            "name": "Green Cherry (trees)",
+            "name": "Green Cherry",
             "wikiSlug": "Green_Cherry",
             "image": "Green_Cherry.png/16px-Green_Cherry.png"
           },
           {
-            "name": "Hard Wood (trees)",
+            "name": "Hard Wood",
             "wikiSlug": "Hard_Wood",
             "image": "Hard_Wood.png/16px-Hard_Wood.png"
           }
         ]
       }
     ],
-    "tags": [
-      "level 0"
-    ],
+    "tags": ["level 0"],
     "wikiSlug": "Swamp",
     "interactables": []
   },
@@ -1641,23 +1597,19 @@
             "image": "Melon.png/16px-Melon.png"
           },
           {
-            "name": "Green Cherry (trees)",
+            "name": "Green Cherry",
             "wikiSlug": "Green_Cherry",
             "image": "Green_Cherry.png/16px-Green_Cherry.png"
           },
           {
-            "name": "Hard Wood (trees)",
+            "name": "Hard Wood",
             "wikiSlug": "Hard_Wood",
             "image": "Hard_Wood.png/16px-Hard_Wood.png"
           }
         ]
       }
     ],
-    "tags": [
-      "plainsforest pond",
-      "plains",
-      "level 38"
-    ],
+    "tags": ["plainsforest pond", "plains", "level 38"],
     "wikiSlug": "Forest_Pond",
     "interactables": []
   },
@@ -1695,13 +1647,13 @@
             "chancePercent": 100
           },
           {
-            "name": "Oak Wood (trees)",
+            "name": "Oak Wood",
             "wikiSlug": "Oak_Wood",
             "image": "Oak_Wood.png/16px-Oak_Wood.png",
             "chancePercent": 100
           },
           {
-            "name": "Apple (trees)",
+            "name": "Apple",
             "wikiSlug": "Apple",
             "image": "Apple.png/16px-Apple.png",
             "chancePercent": 100
@@ -1709,10 +1661,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainslost plains",
-      "level 37"
-    ],
+    "tags": ["plainslost plains", "level 37"],
     "wikiSlug": "Lost_Plains",
     "interactables": [
       {
@@ -1770,12 +1719,12 @@
             "image": "Censhroom.png/16px-Censhroom.png"
           },
           {
-            "name": "Eon Fruit (trees)",
+            "name": "Eon Fruit",
             "wikiSlug": "Eon_Fruit",
             "image": "Eon_Fruit.png/16px-Eon_Fruit.png"
           },
           {
-            "name": "Eon Wood (trees)",
+            "name": "Eon Wood",
             "wikiSlug": "Eon_Wood",
             "image": "Eon_Wood.png/16px-Eon_Wood.png"
           }
@@ -1812,10 +1761,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsdeep forest 1",
-      "level 73"
-    ],
+    "tags": ["plainsdeep forest 1", "level 73"],
     "wikiSlug": "Deep_Forest_1",
     "interactables": []
   },
@@ -1866,12 +1812,12 @@
             "image": "Censhroom.png/16px-Censhroom.png"
           },
           {
-            "name": "Eon Fruit (trees)",
+            "name": "Eon Fruit",
             "wikiSlug": "Eon_Fruit",
             "image": "Eon_Fruit.png/16px-Eon_Fruit.png"
           },
           {
-            "name": "Eon Wood (trees)",
+            "name": "Eon Wood",
             "wikiSlug": "Eon_Wood",
             "image": "Eon_Wood.png/16px-Eon_Wood.png"
           }
@@ -1908,10 +1854,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsdeep forest threshold",
-      "level 78"
-    ]
+    "tags": ["plainsdeep forest threshold", "level 78"]
   },
   {
     "id": "deep-tree-way",
@@ -1961,22 +1904,19 @@
             "image": "Censhroom.png/16px-Censhroom.png"
           },
           {
-            "name": "Eon Fruit (trees)",
+            "name": "Eon Fruit",
             "wikiSlug": "Eon_Fruit",
             "image": "Eon_Fruit.png/16px-Eon_Fruit.png"
           },
           {
-            "name": "Eon Wood (trees)",
+            "name": "Eon Wood",
             "wikiSlug": "Eon_Wood",
             "image": "Eon_Wood.png/16px-Eon_Wood.png"
           }
         ]
       }
     ],
-    "tags": [
-      "plainsdeep tree way",
-      "level 73"
-    ],
+    "tags": ["plainsdeep tree way", "level 73"],
     "wikiSlug": "Deep_Tree_Way",
     "interactables": []
   },
@@ -2029,12 +1969,12 @@
             "image": "Censhroom.png/16px-Censhroom.png"
           },
           {
-            "name": "Eon Fruit (trees)",
+            "name": "Eon Fruit",
             "wikiSlug": "Eon_Fruit",
             "image": "Eon_Fruit.png/16px-Eon_Fruit.png"
           },
           {
-            "name": "Eon Wood (trees)",
+            "name": "Eon Wood",
             "wikiSlug": "Eon_Wood",
             "image": "Eon_Wood.png/16px-Eon_Wood.png"
           }
@@ -2071,10 +2011,7 @@
         ]
       }
     ],
-    "tags": [
-      "plainsdeep forest 2",
-      "level 75"
-    ],
+    "tags": ["plainsdeep forest 2", "level 75"],
     "wikiSlug": "Deep_Forest_2",
     "interactables": []
   },
@@ -2128,22 +2065,19 @@
             "image": "Censhroom.png/16px-Censhroom.png"
           },
           {
-            "name": "Eon Fruit (trees)",
+            "name": "Eon Fruit",
             "wikiSlug": "Eon_Fruit",
             "image": "Eon_Fruit.png/16px-Eon_Fruit.png"
           },
           {
-            "name": "Eon Wood (trees)",
+            "name": "Eon Wood",
             "wikiSlug": "Eon_Wood",
             "image": "Eon_Wood.png/16px-Eon_Wood.png"
           }
         ]
       }
     ],
-    "tags": [
-      "plainsdeep forest 3",
-      "level 75"
-    ],
+    "tags": ["plainsdeep forest 3", "level 75"],
     "wikiSlug": "Deep_Forest_3",
     "interactables": []
   },
@@ -2195,12 +2129,12 @@
             "image": "Censhroom.png/16px-Censhroom.png"
           },
           {
-            "name": "Eon Fruit (trees)",
+            "name": "Eon Fruit",
             "wikiSlug": "Eon_Fruit",
             "image": "Eon_Fruit.png/16px-Eon_Fruit.png"
           },
           {
-            "name": "Eon Wood (trees)",
+            "name": "Eon Wood",
             "wikiSlug": "Eon_Wood",
             "image": "Eon_Wood.png/16px-Eon_Wood.png"
           }
@@ -2238,11 +2172,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "plainslost peak",
-      "level 76",
-      "warp point"
-    ],
+    "tags": ["plainslost peak", "level 76", "warp point"],
     "wikiSlug": "Lost_Peak",
     "interactables": [
       {
@@ -2264,11 +2194,7 @@
     "monsters": [],
     "resources": [],
     "warpPoint": true,
-    "tags": [
-      "level 0",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 0", "warp", "warp point"],
     "wikiSlug": "Market_Hub_Entrance",
     "interactables": [
       {
@@ -2329,9 +2255,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 15"
-    ]
+    "tags": ["level 15"]
   },
   {
     "id": "beach-cave",
@@ -2384,9 +2308,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 21"
-    ]
+    "tags": ["level 21"]
   },
   {
     "id": "forest-seeding-ground",
@@ -2461,7 +2383,7 @@
             "image": "Melon.png/16px-Melon.png"
           },
           {
-            "name": "Hard Wood (trees)",
+            "name": "Hard Wood",
             "wikiSlug": "Hard_Wood",
             "image": "Hard_Wood.png/16px-Hard_Wood.png"
           }
@@ -2469,9 +2391,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 38"
-    ]
+    "tags": ["level 38"]
   },
   {
     "id": "forest-lake",
@@ -2548,12 +2468,12 @@
             "image": "Melon.png/16px-Melon.png"
           },
           {
-            "name": "Green Cherry (trees)",
+            "name": "Green Cherry",
             "wikiSlug": "Green_Cherry",
             "image": "Green_Cherry.png/16px-Green_Cherry.png"
           },
           {
-            "name": "Hard Wood (trees)",
+            "name": "Hard Wood",
             "wikiSlug": "Hard_Wood",
             "image": "Hard_Wood.png/16px-Hard_Wood.png"
           }
@@ -2561,9 +2481,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 40"
-    ]
+    "tags": ["level 40"]
   },
   {
     "id": "giant-tree",
@@ -2610,12 +2528,12 @@
             "image": "Censhroom.png/16px-Censhroom.png"
           },
           {
-            "name": "Eon Fruit (trees)",
+            "name": "Eon Fruit",
             "wikiSlug": "Eon_Fruit",
             "image": "Eon_Fruit.png/16px-Eon_Fruit.png"
           },
           {
-            "name": "Eon Wood (trees)",
+            "name": "Eon Wood",
             "wikiSlug": "Eon_Wood",
             "image": "Eon_Wood.png/16px-Eon_Wood.png"
           }
@@ -2623,10 +2541,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "deep forest",
-      "level 0"
-    ],
+    "tags": ["deep forest", "level 0"],
     "wikiSlug": "Giant_Tree",
     "interactables": []
   },
@@ -2678,12 +2593,12 @@
             "image": "Censhroom.png/16px-Censhroom.png"
           },
           {
-            "name": "Eon Fruit (trees)",
+            "name": "Eon Fruit",
             "wikiSlug": "Eon_Fruit",
             "image": "Eon_Fruit.png/16px-Eon_Fruit.png"
           },
           {
-            "name": "Eon Wood (trees)",
+            "name": "Eon Wood",
             "wikiSlug": "Eon_Wood",
             "image": "Eon_Wood.png/16px-Eon_Wood.png"
           }
@@ -2691,9 +2606,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 76"
-    ]
+    "tags": ["level 76"]
   },
   {
     "id": "seashell-cove",
@@ -2719,12 +2632,12 @@
             "image": "Sea_Grapes.png/16px-Sea_Grapes.png"
           },
           {
-            "name": "Coconut (trees)",
+            "name": "Coconut",
             "wikiSlug": "Coconut",
             "image": "Coconut.png/16px-Coconut.png"
           },
           {
-            "name": "Coconut Wood (trees)",
+            "name": "Coconut Wood",
             "wikiSlug": "Coconut_Wood",
             "image": "Coconut_Wood.png/16px-Coconut_Wood.png"
           }
@@ -2797,9 +2710,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 20"
-    ],
+    "tags": ["level 20"],
     "wikiSlug": "Seashell_Cove",
     "interactables": []
   },
@@ -2827,12 +2738,12 @@
             "image": "Sea_Grapes.png/16px-Sea_Grapes.png"
           },
           {
-            "name": "Coconut (trees)",
+            "name": "Coconut",
             "wikiSlug": "Coconut",
             "image": "Coconut.png/16px-Coconut.png"
           },
           {
-            "name": "Coconut Wood (trees)",
+            "name": "Coconut Wood",
             "wikiSlug": "Coconut_Wood",
             "image": "Coconut_Wood.png/16px-Coconut_Wood.png"
           }
@@ -2905,9 +2816,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 17"
-    ]
+    "tags": ["level 17"]
   },
   {
     "id": "around-the-seashore",
@@ -2932,12 +2841,12 @@
             "image": "Sea_Grapes.png/16px-Sea_Grapes.png"
           },
           {
-            "name": "Coconut (trees)",
+            "name": "Coconut",
             "wikiSlug": "Coconut",
             "image": "Coconut.png/16px-Coconut.png"
           },
           {
-            "name": "Coconut Wood (trees)",
+            "name": "Coconut Wood",
             "wikiSlug": "Coconut_Wood",
             "image": "Coconut_Wood.png/16px-Coconut_Wood.png"
           }
@@ -3010,9 +2919,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 19"
-    ],
+    "tags": ["level 19"],
     "wikiSlug": "Around_the_Seashore",
     "interactables": []
   },
@@ -3039,12 +2946,12 @@
             "image": "Sea_Grapes.png/16px-Sea_Grapes.png"
           },
           {
-            "name": "Coconut (trees)",
+            "name": "Coconut",
             "wikiSlug": "Coconut",
             "image": "Coconut.png/16px-Coconut.png"
           },
           {
-            "name": "Coconut Wood (trees)",
+            "name": "Coconut Wood",
             "wikiSlug": "Coconut_Wood",
             "image": "Coconut_Wood.png/16px-Coconut_Wood.png"
           }
@@ -3117,9 +3024,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 18"
-    ]
+    "tags": ["level 18"]
   },
   {
     "id": "ocean-1",
@@ -3143,12 +3048,12 @@
             "image": "Poceanto.png/16px-Poceanto.png"
           },
           {
-            "name": "Blue Pepper (trees)",
+            "name": "Blue Pepper",
             "wikiSlug": "Blue_Pepper",
             "image": "Blue_Pepper.png/16px-Blue_Pepper.png"
           },
           {
-            "name": "Corals (trees)",
+            "name": "Corals",
             "wikiSlug": "Corals",
             "image": "Corals.png/16px-Corals.png"
           }
@@ -3201,9 +3106,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 46"
-    ],
+    "tags": ["level 46"],
     "wikiSlug": "Ocean_1",
     "interactables": []
   },
@@ -3231,12 +3134,12 @@
             "image": "Poceanto.png/16px-Poceanto.png"
           },
           {
-            "name": "Blue Pepper (trees)",
+            "name": "Blue Pepper",
             "wikiSlug": "Blue_Pepper",
             "image": "Blue_Pepper.png/16px-Blue_Pepper.png"
           },
           {
-            "name": "Corals (trees)",
+            "name": "Corals",
             "wikiSlug": "Corals",
             "image": "Corals.png/16px-Corals.png"
           }
@@ -3289,9 +3192,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 47"
-    ],
+    "tags": ["level 47"],
     "wikiSlug": "Ocean_4",
     "interactables": []
   },
@@ -3318,12 +3219,12 @@
             "image": "Poceanto.png/16px-Poceanto.png"
           },
           {
-            "name": "Blue Pepper (trees)",
+            "name": "Blue Pepper",
             "wikiSlug": "Blue_Pepper",
             "image": "Blue_Pepper.png/16px-Blue_Pepper.png"
           },
           {
-            "name": "Corals (trees)",
+            "name": "Corals",
             "wikiSlug": "Corals",
             "image": "Corals.png/16px-Corals.png"
           }
@@ -3376,9 +3277,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 45"
-    ],
+    "tags": ["level 45"],
     "wikiSlug": "Ocean_3",
     "interactables": []
   },
@@ -3406,12 +3305,12 @@
             "image": "Poceanto.png/16px-Poceanto.png"
           },
           {
-            "name": "Blue Pepper (trees)",
+            "name": "Blue Pepper",
             "wikiSlug": "Blue_Pepper",
             "image": "Blue_Pepper.png/16px-Blue_Pepper.png"
           },
           {
-            "name": "Corals (trees)",
+            "name": "Corals",
             "wikiSlug": "Corals",
             "image": "Corals.png/16px-Corals.png"
           }
@@ -3464,11 +3363,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 44",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 44", "warp", "warp point"],
     "wikiSlug": "Ocean_2",
     "interactables": [
       {
@@ -3533,12 +3428,12 @@
             "image": "Angelic_Algae.png/16px-Angelic_Algae.png"
           },
           {
-            "name": "Forbidden Fruit (trees)",
+            "name": "Forbidden Fruit",
             "wikiSlug": "Forbidden_Fruit",
             "image": "Forbidden_Fruit.png/16px-Forbidden_Fruit.png"
           },
           {
-            "name": "Depth Vine (trees)",
+            "name": "Depth Vine",
             "wikiSlug": "Depth_Vine",
             "image": "Depth_Vine.png/16px-Depth_Vine.png"
           }
@@ -3546,9 +3441,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 83"
-    ],
+    "tags": ["level 83"],
     "wikiSlug": "Deep_Ocean_2",
     "interactables": []
   },
@@ -3602,12 +3495,12 @@
             "image": "Angelic_Algae.png/16px-Angelic_Algae.png"
           },
           {
-            "name": "Forbidden Fruit (trees)",
+            "name": "Forbidden Fruit",
             "wikiSlug": "Forbidden_Fruit",
             "image": "Forbidden_Fruit.png/16px-Forbidden_Fruit.png"
           },
           {
-            "name": "Depth Vine (trees)",
+            "name": "Depth Vine",
             "wikiSlug": "Depth_Vine",
             "image": "Depth_Vine.png/16px-Depth_Vine.png"
           }
@@ -3615,11 +3508,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 81",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 81", "warp", "warp point"],
     "wikiSlug": "Deep_Ocean_1",
     "interactables": [
       {
@@ -3677,12 +3566,12 @@
             "image": "Angelic_Algae.png/16px-Angelic_Algae.png"
           },
           {
-            "name": "Forbidden Fruit (trees)",
+            "name": "Forbidden Fruit",
             "wikiSlug": "Forbidden_Fruit",
             "image": "Forbidden_Fruit.png/16px-Forbidden_Fruit.png"
           },
           {
-            "name": "Depth Vine (trees)",
+            "name": "Depth Vine",
             "wikiSlug": "Depth_Vine",
             "image": "Depth_Vine.png/16px-Depth_Vine.png"
           }
@@ -3690,9 +3579,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 79"
-    ],
+    "tags": ["level 79"],
     "wikiSlug": "Deep_Ocean_3",
     "interactables": []
   },
@@ -3744,12 +3631,12 @@
             "image": "Angelic_Algae.png/16px-Angelic_Algae.png"
           },
           {
-            "name": "Forbidden Fruit (trees)",
+            "name": "Forbidden Fruit",
             "wikiSlug": "Forbidden_Fruit",
             "image": "Forbidden_Fruit.png/16px-Forbidden_Fruit.png"
           },
           {
-            "name": "Depth Vine (trees)",
+            "name": "Depth Vine",
             "wikiSlug": "Depth_Vine",
             "image": "Depth_Vine.png/16px-Depth_Vine.png"
           }
@@ -3757,9 +3644,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 79"
-    ],
+    "tags": ["level 79"],
     "wikiSlug": "Deep_Ocean_4",
     "interactables": []
   },
@@ -3814,9 +3699,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 44"
-    ]
+    "tags": ["level 44"]
   },
   {
     "id": "great-trench",
@@ -3863,12 +3746,12 @@
             "image": "Angelic_Algae.png/16px-Angelic_Algae.png"
           },
           {
-            "name": "Forbidden Fruit (trees)",
+            "name": "Forbidden Fruit",
             "wikiSlug": "Forbidden_Fruit",
             "image": "Forbidden_Fruit.png/16px-Forbidden_Fruit.png"
           },
           {
-            "name": "Depth Vine (trees)",
+            "name": "Depth Vine",
             "wikiSlug": "Depth_Vine",
             "image": "Depth_Vine.png/16px-Depth_Vine.png"
           }
@@ -3876,9 +3759,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 0"
-    ],
+    "tags": ["level 0"],
     "wikiSlug": "Great_Trench",
     "interactables": []
   },
@@ -3920,7 +3801,7 @@
             "image": "Pineapple.png/16px-Pineapple.png"
           },
           {
-            "name": "Acacia Wood (trees)",
+            "name": "Acacia Wood",
             "wikiSlug": "Acacia_Wood",
             "image": "Acacia_Wood.png/16px-Acacia_Wood.png"
           }
@@ -3928,9 +3809,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 22"
-    ],
+    "tags": ["level 22"],
     "wikiSlug": "Savannah_1",
     "interactables": []
   },
@@ -3973,7 +3852,7 @@
             "image": "Pineapple.png/16px-Pineapple.png"
           },
           {
-            "name": "Acacia Wood (trees)",
+            "name": "Acacia Wood",
             "wikiSlug": "Acacia_Wood",
             "image": "Acacia_Wood.png/16px-Acacia_Wood.png"
           }
@@ -3981,9 +3860,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 23"
-    ],
+    "tags": ["level 23"],
     "wikiSlug": "Savannah_2",
     "interactables": []
   },
@@ -4025,7 +3902,7 @@
             "image": "Pineapple.png/16px-Pineapple.png"
           },
           {
-            "name": "Acacia Wood (trees)",
+            "name": "Acacia Wood",
             "wikiSlug": "Acacia_Wood",
             "image": "Acacia_Wood.png/16px-Acacia_Wood.png"
           }
@@ -4033,11 +3910,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 24",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 24", "warp", "warp point"],
     "wikiSlug": "Savannah_3",
     "interactables": [
       {
@@ -4120,12 +3993,12 @@
             "image": "Desert_Rose.png/16px-Desert_Rose.png"
           },
           {
-            "name": "Cactus Fruit (trees)",
+            "name": "Cactus Fruit",
             "wikiSlug": "Cactus_Fruit",
             "image": "Cactus_Fruit.png/16px-Cactus_Fruit.png"
           },
           {
-            "name": "Cactus (trees)",
+            "name": "Cactus",
             "wikiSlug": "Cactus",
             "image": "Cactus.png/16px-Cactus.png"
           }
@@ -4133,11 +4006,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 50",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 50", "warp", "warp point"],
     "wikiSlug": "Desert_4",
     "interactables": [
       {
@@ -4196,12 +4065,12 @@
             "image": "Desert_Rose.png/16px-Desert_Rose.png"
           },
           {
-            "name": "Cactus Fruit (trees)",
+            "name": "Cactus Fruit",
             "wikiSlug": "Cactus_Fruit",
             "image": "Cactus_Fruit.png/16px-Cactus_Fruit.png"
           },
           {
-            "name": "Cactus (trees)",
+            "name": "Cactus",
             "wikiSlug": "Cactus",
             "image": "Cactus.png/16px-Cactus.png"
           }
@@ -4209,9 +4078,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 51"
-    ],
+    "tags": ["level 51"],
     "wikiSlug": "Desert_3",
     "interactables": []
   },
@@ -4265,12 +4132,12 @@
             "image": "Desert_Rose.png/16px-Desert_Rose.png"
           },
           {
-            "name": "Cactus Fruit (trees)",
+            "name": "Cactus Fruit",
             "wikiSlug": "Cactus_Fruit",
             "image": "Cactus_Fruit.png/16px-Cactus_Fruit.png"
           },
           {
-            "name": "Cactus (trees)",
+            "name": "Cactus",
             "wikiSlug": "Cactus",
             "image": "Cactus.png/16px-Cactus.png"
           }
@@ -4278,9 +4145,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 54"
-    ],
+    "tags": ["level 54"],
     "wikiSlug": "Desert_2",
     "interactables": []
   },
@@ -4333,12 +4198,12 @@
             "image": "Desert_Rose.png/16px-Desert_Rose.png"
           },
           {
-            "name": "Cactus Fruit (trees)",
+            "name": "Cactus Fruit",
             "wikiSlug": "Cactus_Fruit",
             "image": "Cactus_Fruit.png/16px-Cactus_Fruit.png"
           },
           {
-            "name": "Cactus (trees)",
+            "name": "Cactus",
             "wikiSlug": "Cactus",
             "image": "Cactus.png/16px-Cactus.png"
           }
@@ -4346,9 +4211,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 55"
-    ],
+    "tags": ["level 55"],
     "wikiSlug": "Desert_1",
     "interactables": []
   },
@@ -4408,7 +4271,7 @@
             "image": "Pineapple.png/16px-Pineapple.png"
           },
           {
-            "name": "Acacia Wood (trees)",
+            "name": "Acacia Wood",
             "wikiSlug": "Acacia_Wood",
             "image": "Acacia_Wood.png/16px-Acacia_Wood.png"
           }
@@ -4416,9 +4279,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 22"
-    ],
+    "tags": ["level 22"],
     "wikiSlug": "Windy_Savannah",
     "interactables": []
   },
@@ -4527,22 +4388,22 @@
             "image": "Memory_Agave.png/16px-Memory_Agave.png"
           },
           {
-            "name": "Cactus Fruit (trees)",
+            "name": "Cactus Fruit",
             "wikiSlug": "Cactus_Fruit",
             "image": "Cactus_Fruit.png/16px-Cactus_Fruit.png"
           },
           {
-            "name": "Sculpted Cactus (trees)",
+            "name": "Sculpted Cactus",
             "wikiSlug": "Sculpted_Cactus",
             "image": "Sculpted_Cactus.png/16px-Sculpted_Cactus.png"
           },
           {
-            "name": "History Fruit (trees)",
+            "name": "History Fruit",
             "wikiSlug": "History_Fruit",
             "image": "History_Fruit.png/16px-History_Fruit.png"
           },
           {
-            "name": "Cactus (trees)",
+            "name": "Cactus",
             "wikiSlug": "Cactus",
             "image": "Cactus.png/16px-Cactus.png"
           }
@@ -4550,11 +4411,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 0",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 0", "warp", "warp point"],
     "wikiSlug": "Desert_8",
     "interactables": [
       {
@@ -4612,12 +4469,12 @@
             "image": "Epochal_Lily.png/16px-Epochal_Lily.png"
           },
           {
-            "name": "Sculpted Cactus (trees)",
+            "name": "Sculpted Cactus",
             "wikiSlug": "Sculpted_Cactus",
             "image": "Sculpted_Cactus.png/16px-Sculpted_Cactus.png"
           },
           {
-            "name": "History Fruit (trees)",
+            "name": "History Fruit",
             "wikiSlug": "History_Fruit",
             "image": "History_Fruit.png/16px-History_Fruit.png"
           }
@@ -4625,9 +4482,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 88"
-    ],
+    "tags": ["level 88"],
     "wikiSlug": "Desert_7",
     "interactables": []
   },
@@ -4683,12 +4538,12 @@
             "image": "Epochal_Lily.png/16px-Epochal_Lily.png"
           },
           {
-            "name": "Sculpted Cactus (trees)",
+            "name": "Sculpted Cactus",
             "wikiSlug": "Sculpted_Cactus",
             "image": "Sculpted_Cactus.png/16px-Sculpted_Cactus.png"
           },
           {
-            "name": "History Fruit (trees)",
+            "name": "History Fruit",
             "wikiSlug": "History_Fruit",
             "image": "History_Fruit.png/16px-History_Fruit.png"
           }
@@ -4696,9 +4551,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 86"
-    ],
+    "tags": ["level 86"],
     "wikiSlug": "Desert_5",
     "interactables": []
   },
@@ -4747,12 +4600,12 @@
             "image": "Epochal_Lily.png/16px-Epochal_Lily.png"
           },
           {
-            "name": "Sculpted Cactus (trees)",
+            "name": "Sculpted Cactus",
             "wikiSlug": "Sculpted_Cactus",
             "image": "Sculpted_Cactus.png/16px-Sculpted_Cactus.png"
           },
           {
-            "name": "History Fruit (trees)",
+            "name": "History Fruit",
             "wikiSlug": "History_Fruit",
             "image": "History_Fruit.png/16px-History_Fruit.png"
           }
@@ -4760,9 +4613,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 0"
-    ],
+    "tags": ["level 0"],
     "wikiSlug": "Desert_6",
     "interactables": []
   },
@@ -4834,12 +4685,12 @@
             "image": "Epochal_Lily.png/16px-Epochal_Lily.png"
           },
           {
-            "name": "Sculpted Cactus (trees)",
+            "name": "Sculpted Cactus",
             "wikiSlug": "Sculpted_Cactus",
             "image": "Sculpted_Cactus.png/16px-Sculpted_Cactus.png"
           },
           {
-            "name": "History Fruit (trees)",
+            "name": "History Fruit",
             "wikiSlug": "History_Fruit",
             "image": "History_Fruit.png/16px-History_Fruit.png"
           }
@@ -4847,11 +4698,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 85",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 85", "warp", "warp point"],
     "wikiSlug": "Desert_Coast",
     "interactables": [
       {
@@ -4906,12 +4753,12 @@
             "image": "Desert_Rose.png/16px-Desert_Rose.png"
           },
           {
-            "name": "Cactus Fruit (trees)",
+            "name": "Cactus Fruit",
             "wikiSlug": "Cactus_Fruit",
             "image": "Cactus_Fruit.png/16px-Cactus_Fruit.png"
           },
           {
-            "name": "Cactus (trees)",
+            "name": "Cactus",
             "wikiSlug": "Cactus",
             "image": "Cactus.png/16px-Cactus.png"
           }
@@ -4919,9 +4766,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 0"
-    ],
+    "tags": ["level 0"],
     "wikiSlug": "Pyramid",
     "interactables": []
   },
@@ -4963,7 +4808,7 @@
             "image": "Pineapple.png/16px-Pineapple.png"
           },
           {
-            "name": "Acacia Wood (trees)",
+            "name": "Acacia Wood",
             "wikiSlug": "Acacia_Wood",
             "image": "Acacia_Wood.png/16px-Acacia_Wood.png"
           }
@@ -4971,9 +4816,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 25"
-    ]
+    "tags": ["level 25"]
   },
   {
     "id": "misty-forest-1",
@@ -5009,13 +4852,13 @@
             "chancePercent": 100
           },
           {
-            "name": "Misty Fruit (trees)",
+            "name": "Misty Fruit",
             "wikiSlug": "Misty_Fruit",
             "image": "Misty_Fruit.png/16px-Misty_Fruit.png",
             "chancePercent": 100
           },
           {
-            "name": "Misty Wood (trees)",
+            "name": "Misty Wood",
             "wikiSlug": "Misty_Wood",
             "image": "Misty_Wood.png/16px-Misty_Wood.png",
             "chancePercent": 100
@@ -5024,9 +4867,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 27"
-    ],
+    "tags": ["level 27"],
     "wikiSlug": "Misty_Forest_1",
     "interactables": []
   },
@@ -5063,12 +4904,12 @@
             "image": "Lantern_Bulb.png/16px-Lantern_Bulb.png"
           },
           {
-            "name": "Misty Fruit (trees)",
+            "name": "Misty Fruit",
             "wikiSlug": "Misty_Fruit",
             "image": "Misty_Fruit.png/16px-Misty_Fruit.png"
           },
           {
-            "name": "Misty Wood (trees)",
+            "name": "Misty Wood",
             "wikiSlug": "Misty_Wood",
             "image": "Misty_Wood.png/16px-Misty_Wood.png"
           }
@@ -5096,9 +4937,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 27"
-    ],
+    "tags": ["level 27"],
     "wikiSlug": "Misty_Forest_2",
     "interactables": []
   },
@@ -5135,12 +4974,12 @@
             "image": "Lantern_Bulb.png/16px-Lantern_Bulb.png"
           },
           {
-            "name": "Misty Fruit (trees)",
+            "name": "Misty Fruit",
             "wikiSlug": "Misty_Fruit",
             "image": "Misty_Fruit.png/16px-Misty_Fruit.png"
           },
           {
-            "name": "Misty Wood (trees)",
+            "name": "Misty Wood",
             "wikiSlug": "Misty_Wood",
             "image": "Misty_Wood.png/16px-Misty_Wood.png"
           }
@@ -5148,9 +4987,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 29"
-    ],
+    "tags": ["level 29"],
     "wikiSlug": "Misty_Forest_3",
     "interactables": []
   },
@@ -5188,12 +5025,12 @@
             "image": "Lantern_Bulb.png/16px-Lantern_Bulb.png"
           },
           {
-            "name": "Misty Fruit (trees)",
+            "name": "Misty Fruit",
             "wikiSlug": "Misty_Fruit",
             "image": "Misty_Fruit.png/16px-Misty_Fruit.png"
           },
           {
-            "name": "Misty Wood (trees)",
+            "name": "Misty Wood",
             "wikiSlug": "Misty_Wood",
             "image": "Misty_Wood.png/16px-Misty_Wood.png"
           }
@@ -5221,10 +5058,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "misty forest",
-      "level 30"
-    ]
+    "tags": ["misty forest", "level 30"]
   },
   {
     "id": "sulfuric-plains-1",
@@ -5261,10 +5095,10 @@
             "image": "Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)"
+            "name": "Sulfuric Wood"
           },
           {
-            "name": "Spot Tomato (trees)",
+            "name": "Spot Tomato",
             "wikiSlug": "Spot_Tomato",
             "image": "Spot_Tomato.png/16px-Spot_Tomato.png"
           }
@@ -5272,11 +5106,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 32",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 32", "warp", "warp point"],
     "wikiSlug": "Sulfuric_Plains_1",
     "interactables": [
       {
@@ -5322,10 +5152,10 @@
             "image": "Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)"
+            "name": "Sulfuric Wood"
           },
           {
-            "name": "Spot Tomato (trees)",
+            "name": "Spot Tomato",
             "wikiSlug": "Spot_Tomato",
             "image": "Spot_Tomato.png/16px-Spot_Tomato.png"
           }
@@ -5358,9 +5188,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 33"
-    ],
+    "tags": ["level 33"],
     "wikiSlug": "Sulfuric_Plains_2",
     "interactables": []
   },
@@ -5400,10 +5228,10 @@
             "image": "Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)"
+            "name": "Sulfuric Wood"
           },
           {
-            "name": "Spot Tomato (trees)",
+            "name": "Spot Tomato",
             "wikiSlug": "Spot_Tomato",
             "image": "Spot_Tomato.png/16px-Spot_Tomato.png"
           }
@@ -5411,9 +5239,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 35"
-    ],
+    "tags": ["level 35"],
     "wikiSlug": "Sulfuric_Plains_3",
     "interactables": []
   },
@@ -5454,10 +5280,10 @@
             "image": "Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)"
+            "name": "Sulfuric Wood"
           },
           {
-            "name": "Spot Tomato (trees)",
+            "name": "Spot Tomato",
             "wikiSlug": "Spot_Tomato",
             "image": "Spot_Tomato.png/16px-Spot_Tomato.png"
           }
@@ -5465,9 +5291,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 34"
-    ],
+    "tags": ["level 34"],
     "wikiSlug": "Sulfuric_Path",
     "interactables": []
   },
@@ -5507,10 +5331,10 @@
             "image": "Yellow_Garlic.png/16px-Yellow_Garlic.png"
           },
           {
-            "name": "Sulfuric Wood (trees)"
+            "name": "Sulfuric Wood"
           },
           {
-            "name": "Spot Tomato (trees)",
+            "name": "Spot Tomato",
             "wikiSlug": "Spot_Tomato",
             "image": "Spot_Tomato.png/16px-Spot_Tomato.png"
           }
@@ -5518,9 +5342,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 33"
-    ],
+    "tags": ["level 33"],
     "wikiSlug": "Sulfuric_Path_2",
     "interactables": []
   },
@@ -5601,7 +5423,7 @@
             "image": "Red_Dandelion.png/16px-Red_Dandelion.png"
           },
           {
-            "name": "Rocky Wood (trees)",
+            "name": "Rocky Wood",
             "wikiSlug": "Rocky_Wood",
             "image": "Rocky_Wood.png/16px-Rocky_Wood.png"
           }
@@ -5609,11 +5431,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 70",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 70", "warp", "warp point"],
     "wikiSlug": "Rocky_Path_3",
     "interactables": [
       {
@@ -5671,7 +5489,7 @@
             "image": "Red_Dandelion.png/16px-Red_Dandelion.png"
           },
           {
-            "name": "Rocky Wood (trees)",
+            "name": "Rocky Wood",
             "wikiSlug": "Rocky_Wood",
             "image": "Rocky_Wood.png/16px-Rocky_Wood.png"
           }
@@ -5679,9 +5497,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 65"
-    ],
+    "tags": ["level 65"],
     "wikiSlug": "Rocky_Path_1",
     "interactables": []
   },
@@ -5734,7 +5550,7 @@
             "image": "Red_Dandelion.png/16px-Red_Dandelion.png"
           },
           {
-            "name": "Rocky Wood (trees)",
+            "name": "Rocky Wood",
             "wikiSlug": "Rocky_Wood",
             "image": "Rocky_Wood.png/16px-Rocky_Wood.png"
           }
@@ -5742,9 +5558,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 67"
-    ],
+    "tags": ["level 67"],
     "wikiSlug": "Rocky_Path_2",
     "interactables": []
   },
@@ -5796,7 +5610,7 @@
             "image": "Red_Dandelion.png/16px-Red_Dandelion.png"
           },
           {
-            "name": "Rocky Wood (trees)",
+            "name": "Rocky Wood",
             "wikiSlug": "Rocky_Wood",
             "image": "Rocky_Wood.png/16px-Rocky_Wood.png"
           }
@@ -5804,9 +5618,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 70"
-    ]
+    "tags": ["level 70"]
   },
   {
     "id": "cat-golem-den",
@@ -5884,7 +5696,7 @@
             "image": "Red_Dandelion.png/16px-Red_Dandelion.png"
           },
           {
-            "name": "Rocky Wood (trees)",
+            "name": "Rocky Wood",
             "wikiSlug": "Rocky_Wood",
             "image": "Rocky_Wood.png/16px-Rocky_Wood.png"
           }
@@ -5892,9 +5704,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 69"
-    ]
+    "tags": ["level 69"]
   },
   {
     "id": "snowy-mountain-4",
@@ -5944,7 +5754,7 @@
             "image": "Ice_Flax_Seed.png/16px-Ice_Flax_Seed.png"
           },
           {
-            "name": "Blue Cinnamon Wood (trees)",
+            "name": "Blue Cinnamon Wood",
             "wikiSlug": "Blue_Cinnamon_Wood",
             "image": "Blue_Cinnamon_Wood.png/16px-Blue_Cinnamon_Wood.png"
           }
@@ -5952,9 +5762,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 61"
-    ],
+    "tags": ["level 61"],
     "wikiSlug": "Snowy_Mountain_4",
     "interactables": []
   },
@@ -6032,7 +5840,7 @@
             "image": "Ice_Flax_Seed.png/16px-Ice_Flax_Seed.png"
           },
           {
-            "name": "Blue Cinnamon Wood (trees)",
+            "name": "Blue Cinnamon Wood",
             "wikiSlug": "Blue_Cinnamon_Wood",
             "image": "Blue_Cinnamon_Wood.png/16px-Blue_Cinnamon_Wood.png"
           }
@@ -6040,9 +5848,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 60"
-    ]
+    "tags": ["level 60"]
   },
   {
     "id": "snowy-mountain-1",
@@ -6116,7 +5922,7 @@
             "image": "Ice_Flax_Seed.png/16px-Ice_Flax_Seed.png"
           },
           {
-            "name": "Blue Cinnamon Wood (trees)",
+            "name": "Blue Cinnamon Wood",
             "wikiSlug": "Blue_Cinnamon_Wood",
             "image": "Blue_Cinnamon_Wood.png/16px-Blue_Cinnamon_Wood.png"
           }
@@ -6124,11 +5930,7 @@
       }
     ],
     "warpPoint": true,
-    "tags": [
-      "level 58",
-      "warp",
-      "warp point"
-    ],
+    "tags": ["level 58", "warp", "warp point"],
     "wikiSlug": "Snowy_Mountain_1",
     "interactables": [
       {
@@ -6191,7 +5993,7 @@
             "image": "Ice_Flax_Seed.png/16px-Ice_Flax_Seed.png"
           },
           {
-            "name": "Blue Cinnamon Wood (trees)",
+            "name": "Blue Cinnamon Wood",
             "wikiSlug": "Blue_Cinnamon_Wood",
             "image": "Blue_Cinnamon_Wood.png/16px-Blue_Cinnamon_Wood.png"
           }
@@ -6199,9 +6001,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 59"
-    ],
+    "tags": ["level 59"],
     "wikiSlug": "Snowy_Mountain_2",
     "interactables": []
   },
@@ -6278,7 +6078,7 @@
             "image": "Ice_Flax_Seed.png/16px-Ice_Flax_Seed.png"
           },
           {
-            "name": "Blue Cinnamon Wood (trees)",
+            "name": "Blue Cinnamon Wood",
             "wikiSlug": "Blue_Cinnamon_Wood",
             "image": "Blue_Cinnamon_Wood.png/16px-Blue_Cinnamon_Wood.png"
           }
@@ -6286,9 +6086,7 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "level 63"
-    ],
+    "tags": ["level 63"],
     "wikiSlug": "Snowy_Mountain_3",
     "interactables": []
   },
@@ -6364,7 +6162,7 @@
             "image": "Ice_Flax_Seed.png/16px-Ice_Flax_Seed.png"
           },
           {
-            "name": "Blue Cinnamon Wood (trees)",
+            "name": "Blue Cinnamon Wood",
             "wikiSlug": "Blue_Cinnamon_Wood",
             "image": "Blue_Cinnamon_Wood.png/16px-Blue_Cinnamon_Wood.png"
           }
@@ -6372,9 +6170,6 @@
       }
     ],
     "warpPoint": false,
-    "tags": [
-      "snowy mountain",
-      "level 62"
-    ]
+    "tags": ["snowy mountain", "level 62"]
   }
 ]

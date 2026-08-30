@@ -36,13 +36,13 @@ O `id` deve ser unico no arquivo. Use nomes curtos em `kebab-case`, por exemplo
 
 Todo marcador novo deve ter:
 
-| Campo | Como preencher |
-| --- | --- |
-| `id` | Identificador unico em `kebab-case`. |
-| `name` | Nome exibido para o jogador. |
+| Campo   | Como preencher                                           |
+| ------- | -------------------------------------------------------- |
+| `id`    | Identificador unico em `kebab-case`.                     |
+| `name`  | Nome exibido para o jogador.                             |
 | `mapId` | Id do mapa em `src/data/maps.json`, por exemplo `world`. |
-| `x` | Coordenada horizontal percentual, de `0` a `100`. |
-| `y` | Coordenada vertical percentual, de `0` a `100`. |
+| `x`     | Coordenada horizontal percentual, de `0` a `100`.        |
+| `y`     | Coordenada vertical percentual, de `0` a `100`.          |
 
 No MVP, a cor visual do marcador vem da area cadastrada em
 `src/data/areas.json`. O marcador continua usando apenas o campo `area`; nao
@@ -54,17 +54,17 @@ anel/borda extra ao marcador sem trocar a cor da area.
 Use os campos opcionais quando eles ajudarem a busca, os filtros ou o detalhe do
 marcador:
 
-| Campo | Quando usar |
-| --- | --- |
-| `area` | Regiao usada no filtro principal, como `Ocean` ou `Plains`. |
-| `zoneType` | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`. |
-| `level` | Nivel recomendado ou nivel da zona. Pode ser `"17"` ou `"12-15"`. |
-| `monsters` | Stable monster IDs from `src/data/monsters.json`. |
-| `resources` | Grupos de recursos por tipo de coleta. |
-| `warpPoint` | `true` quando a zona tem ponto de warp. Omita quando nao tiver. |
-| `wikiSlug` | Slug opcional da pagina da wiki. |
-| `interactables` | Lista rica de NPCs, objetos ou pontos interativos. |
-| `tags` | Termos extras para melhorar a busca. |
+| Campo           | Quando usar                                                       |
+| --------------- | ----------------------------------------------------------------- |
+| `area`          | Regiao usada no filtro principal, como `Ocean` ou `Plains`.       |
+| `zoneType`      | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`.           |
+| `level`         | Nivel recomendado ou nivel da zona. Pode ser `"17"` ou `"12-15"`. |
+| `monsters`      | Stable monster IDs from `src/data/monsters.json`.                 |
+| `resources`     | Grupos de recursos por tipo de coleta.                            |
+| `warpPoint`     | `true` quando a zona tem ponto de warp. Omita quando nao tiver.   |
+| `wikiSlug`      | Slug opcional da pagina da wiki.                                  |
+| `interactables` | Lista rica de NPCs, objetos ou pontos interativos.                |
+| `tags`          | Termos extras para melhorar a busca.                              |
 
 Dados importantes devem entrar em campos estruturados do marcador: `area`,
 `zoneType`, `level`, `monsters`, `resources`, `interactables`, `warpPoint`,
@@ -131,7 +131,7 @@ Regras:
 ## Recursos
 
 Preencha `resources` agrupando os itens por tipo de coleta. Os tipos usados pelos
-filtros rapidos do MVP sao exatamente:
+dados atuais sao:
 
 - `Fishing`
 - `Mining`
@@ -319,18 +319,26 @@ Antes de abrir PR ou fechar uma issue de dados:
 2. Confira se o `id` e unico.
 3. Confira se `mapId` existe em `src/data/maps.json`.
 4. Confira se `x` e `y` estao entre `0` e `100`.
-5. Confira se `monsters` contains valid IDs from `src/data/monsters.json`.
-6. Confira se `resources[].items` e `interactables` usam objetos ricos com
-   `name`, nao strings soltas.
-7. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
-   a intencao for ativar filtros rapidos.
-8. Se a area for nova, confira se existe entrada correspondente em
+5. Confira se `monsters`, `resources[].items` e `interactables` usam objetos
+   ricos com `name`, nao strings soltas.
+6. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
+   a intencao for cadastrar pontos de coleta.
+7. Se a area for nova, confira se existe entrada correspondente em
    `src/data/areas.json` ou aceite o fallback neutro temporariamente.
-9. Pesquise pelo nome da zona, area, monstro, interactable e recurso principal.
-10. Clique no resultado e confirme que o mapa centraliza no marcador.
-11. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
-   existir.
-12. Verifique pelo menos uma tela desktop e uma mobile.
+8. Pesquise pelo nome da zona, area, monstro, interactable e recurso principal.
+9. Clique no resultado e confirme que o mapa centraliza no marcador.
+10. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
+    existir.
+11. Verifique pelo menos uma tela desktop e uma mobile.
+
+## Search Autocomplete
+
+Autocomplete suggestions are derived from structured marker data. A new marker,
+monster, resource item, resource type, or interactable becomes searchable when it
+is added to `src/data/markers.json` using the fields described in this guide.
+
+See [Search Autocomplete](./search-autocomplete.md) for the indexed entity
+types and selection behavior.
 
 ## Checklist rapido
 

@@ -188,20 +188,17 @@ Em `resources`, a busca deve considerar tanto `type` quanto
 `resources[].items[].name`, por exemplo `Fishing`, `Clam`, `Shrimp` e `Trout`.
 Em `monsters` e `interactables`, a busca deve considerar pelo menos `name`.
 
+For autocomplete details, searchable entity types, index generation, and
+selection behavior, see [Search Autocomplete](./search-autocomplete.md).
+
 ## Filtros do MVP
 
 O filtro principal da UI deve ser por area/regiao, usando os valores unicos de `area`
 presentes em `markers.json`.
 
-Filtros rapidos devem ser calculados diretamente dos marcadores:
-
-- Warp point: `warpPoint: true`;
-- Has monsters: `monsters` nao vazio;
-- Fishing: algum grupo `resources[].type === "Fishing"`;
-- Mining: algum grupo `resources[].type === "Mining"`;
-- Herbalism: algum grupo `resources[].type === "Herbalism"`.
-
-Nao crie agrupamento visual separado para cada monstro ou recurso. Nao separe entidades ainda.
+A busca cobre os campos estruturados dos marcadores, incluindo warp points por
+nome/tag, monstros, tipos de recursos e itens. Nao crie agrupamento visual
+separado para cada monstro ou recurso. Nao separe entidades ainda.
 
 ## Estilo visual dos marcadores
 

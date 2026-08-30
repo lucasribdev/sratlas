@@ -50,7 +50,7 @@ Desktop:
 
 ```text
 Busca
-Sidebar: filtros por area, filtros rapidos e resultados
+Sidebar: filtros por area e resultados
 Mapa: marcadores, zoom e detalhe selecionado
 ```
 
@@ -67,7 +67,7 @@ Detalhe do marcador em popup ou bottom sheet
 
 1. Usuario abre o mapa.
 2. O mapa carrega com marcadores visiveis.
-3. Usuario filtra por area/regiao, liga filtros rapidos ou pesquisa por texto.
+3. Usuario filtra por area/regiao ou pesquisa por texto.
 4. A lista de resultados atualiza.
 5. Usuario clica em um marcador ou resultado.
 6. O mapa centraliza no marcador selecionado.
@@ -88,14 +88,8 @@ Filtros do MVP:
 
 - checkboxes por area/regiao derivados dos marcadores;
 - todas as areas iniciam selecionadas;
-- filtros rapidos derivados dos campos dos marcadores:
-  - Warp point: `warpPoint: true`;
-  - Has monsters: `monsters` nao vazio;
-  - Fishing: algum grupo `resources[].type === "Fishing"`;
-  - Mining: algum grupo `resources[].type === "Mining"`;
-  - Herbalism: algum grupo `resources[].type === "Herbalism"`;
 - opcao para selecionar todas as areas;
-- opcao para limpar a selecao de areas sem alterar a busca ou os filtros rapidos;
+- opcao para limpar a selecao de areas sem alterar a busca;
 - filtros combinam com a busca.
 
 Estilo visual dos marcadores:
@@ -109,10 +103,9 @@ Regra:
 
 ```text
 um marcador aparece se a area esta ativa
-E todos os filtros rapidos ativos correspondem aos dados do marcador
 E o texto buscado corresponde aos campos buscaveis
 
-Sem busca e sem filtros rapidos ativos, todas as areas (selecionadas por padrao) mostram todos os marcadores.
+Sem busca, todas as areas (selecionadas por padrao) mostram todos os marcadores.
 Se nenhuma area estiver selecionada, nenhum marcador aparece.
 ```
 
@@ -140,7 +133,6 @@ Primeiro lancamento possivel:
 - areas principais;
 - busca por nome;
 - filtro por area/regiao;
-- filtros rapidos;
 - popup simples;
 - link para wiki;
 - dados em JSON.
