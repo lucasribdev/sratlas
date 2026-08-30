@@ -5,9 +5,9 @@ import type { GameMap } from "@/domain/map";
 import type {
   MapMarker,
   MarkerInteractable,
-  MarkerMonster,
   MarkerResourceItem,
 } from "@/domain/marker";
+import type { Monster } from "@/domain/monster";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { percentageToLeafletLatLng } from "@/lib/coordinates";
@@ -26,7 +26,7 @@ type MarkerPopupProps = {
   marker: MapMarker;
 };
 
-type PopupEntry = MarkerMonster | MarkerResourceItem | MarkerInteractable;
+type PopupEntry = Monster | MarkerResourceItem | MarkerInteractable;
 
 type MapMarkerItemProps = {
   map: GameMap;

@@ -109,21 +109,9 @@
     "zoneType": "Surface zone",
     "level": "7",
     "monsters": [
-      {
-        "name": "Hopper",
-        "wikiSlug": "Hopper",
-        "image": "Hopper.png/16px-Hopper.png"
-      },
-      {
-        "name": "Jel",
-        "wikiSlug": "Jel",
-        "image": "Jel.png/16px-Jel.png"
-      },
-      {
-        "name": "Pin Pin",
-        "wikiSlug": "Pin_Pin",
-        "image": "Pin_Pin.png/16px-Pin_Pin.png"
-      }
+      "hopper",
+      "jel",
+      "pin-pin"
     ],
     "resources": [
       {
@@ -195,21 +183,9 @@
     "zoneType": "Surface zone",
     "level": "6",
     "monsters": [
-      {
-        "name": "Pin Pin",
-        "wikiSlug": "Pin_Pin",
-        "image": "Pin_Pin.png/16px-Pin_Pin.png"
-      },
-      {
-        "name": "Jel",
-        "wikiSlug": "Jel",
-        "image": "Jel.png/16px-Jel.png"
-      },
-      {
-        "name": "Hopper",
-        "wikiSlug": "Hopper",
-        "image": "Hopper.png/16px-Hopper.png"
-      }
+      "pin-pin",
+      "jel",
+      "hopper"
     ],
     "resources": [
       {
@@ -281,16 +257,8 @@
     "zoneType": "Surface zone",
     "level": "7",
     "monsters": [
-      {
-        "name": "Slip",
-        "wikiSlug": "Slip",
-        "image": "Slip.png/16px-Slip.png"
-      },
-      {
-        "name": "Flows",
-        "wikiSlug": "Flows",
-        "image": "Flows.png/16px-Flows.png"
-      }
+      "slip",
+      "flows"
     ],
     "resources": [
       {
@@ -391,21 +359,9 @@
     "zoneType": "Surface zone",
     "level": "3",
     "monsters": [
-      {
-        "name": "Jel",
-        "wikiSlug": "Jel",
-        "image": "Jel.png/16px-Jel.png"
-      },
-      {
-        "name": "Pin Pin",
-        "wikiSlug": "Pin_Pin",
-        "image": "Pin_Pin.png/16px-Pin_Pin.png"
-      },
-      {
-        "name": "Slime",
-        "wikiSlug": "Slime",
-        "image": "Slime.png/16px-Slime.png"
-      }
+      "jel",
+      "pin-pin",
+      "slime"
     ],
     "resources": [
       {
@@ -477,21 +433,9 @@
     "zoneType": "Surface zone",
     "level": "5",
     "monsters": [
-      {
-        "name": "Jel",
-        "wikiSlug": "Jel",
-        "image": "Jel.png/16px-Jel.png"
-      },
-      {
-        "name": "Bubble Spirit",
-        "wikiSlug": "Bubble_Spirit",
-        "image": "Bubble_Spirit.png/16px-Bubble_Spirit.png"
-      },
-      {
-        "name": "Pin Pin",
-        "wikiSlug": "Pin_Pin",
-        "image": "Pin_Pin.png/16px-Pin_Pin.png"
-      }
+      "jel",
+      "bubble-spirit",
+      "pin-pin"
     ],
     "resources": [
       {
@@ -563,16 +507,8 @@
     "zoneType": "Surface zone",
     "level": "5",
     "monsters": [
-      {
-        "name": "Flows",
-        "wikiSlug": "Flows",
-        "image": "Flows.png/16px-Flows.png"
-      },
-      {
-        "name": "Jel",
-        "wikiSlug": "Jel",
-        "image": "Jel.png/16px-Jel.png"
-      }
+      "flows",
+      "jel"
     ],
     "resources": [
       {
@@ -650,21 +586,9 @@
     "zoneType": "Surface zone",
     "level": "3",
     "monsters": [
-      {
-        "name": "Slime",
-        "wikiSlug": "Slime",
-        "image": "Slime.png/16px-Slime.png"
-      },
-      {
-        "name": "Bubble Spirit",
-        "wikiSlug": "Bubble_Spirit",
-        "image": "Bubble_Spirit.png/16px-Bubble_Spirit.png"
-      },
-      {
-        "name": "Jel",
-        "wikiSlug": "Jel",
-        "image": "Jel.png/16px-Jel.png"
-      }
+      "slime",
+      "bubble-spirit",
+      "jel"
     ],
     "resources": [
       {
@@ -736,21 +660,9 @@
     "zoneType": "Surface zone",
     "level": "2",
     "monsters": [
-      {
-        "name": "Bubble Spirit",
-        "wikiSlug": "Bubble_Spirit",
-        "image": "Bubble_Spirit.png/16px-Bubble_Spirit.png"
-      },
-      {
-        "name": "Slime",
-        "wikiSlug": "Slime",
-        "image": "Slime.png/16px-Slime.png"
-      },
-      {
-        "name": "Jel",
-        "wikiSlug": "Jel",
-        "image": "Jel.png/16px-Jel.png"
-      }
+      "bubble-spirit",
+      "slime",
+      "jel"
     ],
     "resources": [
       {
@@ -833,11 +745,7 @@
     "zoneType": "Surface zone",
     "level": "1",
     "monsters": [
-      {
-        "name": "Slime",
-        "wikiSlug": "Slime",
-        "image": "Slime.png/16px-Slime.png"
-      }
+      "slime"
     ],
     "resources": [
       {
@@ -938,26 +846,10 @@
     "zoneType": "Surface zone",
     "level": "8",
     "monsters": [
-      {
-        "name": "Glowsnail",
-        "wikiSlug": "Glowsnail",
-        "image": "Glowsnail.png/16px-Glowsnail.png"
-      },
-      {
-        "name": "Jel",
-        "wikiSlug": "Jel",
-        "image": "Jel.png/16px-Jel.png"
-      },
-      {
-        "name": "Pin Pin",
-        "wikiSlug": "Pin_Pin",
-        "image": "Pin_Pin.png/16px-Pin_Pin.png"
-      },
-      {
-        "name": "Hopper",
-        "wikiSlug": "Hopper",
-        "image": "Hopper.png/16px-Hopper.png"
-      }
+      "glowsnail",
+      "jel",
+      "pin-pin",
+      "hopper"
     ],
     "resources": [
       {
@@ -1029,16 +921,8 @@
     "zoneType": "Surface zone",
     "level": "11",
     "monsters": [
-      {
-        "name": "Glowsnail",
-        "wikiSlug": "Glowsnail",
-        "image": "Glowsnail.png/16px-Glowsnail.png"
-      },
-      {
-        "name": "Cloudsheep",
-        "wikiSlug": "Cloudsheep",
-        "image": "Cloudsheep.png/16px-Cloudsheep.png"
-      }
+      "glowsnail",
+      "cloudsheep"
     ],
     "resources": [
       {
@@ -1126,21 +1010,9 @@
     "zoneType": "Surface zone",
     "level": "12",
     "monsters": [
-      {
-        "name": "Squishling",
-        "wikiSlug": "Squishling",
-        "image": "Squishling.png/16px-Squishling.png"
-      },
-      {
-        "name": "Cloudsheep",
-        "wikiSlug": "Cloudsheep",
-        "image": "Cloudsheep.png/16px-Cloudsheep.png"
-      },
-      {
-        "name": "Angeling",
-        "wikiSlug": "Angeling",
-        "image": "Angeling.png/16px-Angeling.png"
-      }
+      "squishling",
+      "cloudsheep",
+      "angeling"
     ],
     "resources": [
       {
@@ -1200,16 +1072,8 @@
     "zoneType": "Surface zone",
     "level": "14",
     "monsters": [
-      {
-        "name": "Squishling",
-        "wikiSlug": "Squishling",
-        "image": "Squishling.png/16px-Squishling.png"
-      },
-      {
-        "name": "Black Cloudsheep",
-        "wikiSlug": "Black_Cloudsheep",
-        "image": "Black_Cloudsheep.png/16px-Black_Cloudsheep.png"
-      }
+      "squishling",
+      "black-cloudsheep"
     ],
     "resources": [
       {
@@ -1282,16 +1146,8 @@
     "zoneType": "Surface zone",
     "level": "15",
     "monsters": [
-      {
-        "name": "Black Cloudsheep",
-        "wikiSlug": "Black_Cloudsheep",
-        "image": "Black_Cloudsheep.png/16px-Black_Cloudsheep.png"
-      },
-      {
-        "name": "Squishling",
-        "wikiSlug": "Squishling",
-        "image": "Squishling.png/16px-Squishling.png"
-      }
+      "black-cloudsheep",
+      "squishling"
     ],
     "resources": [
       {
@@ -1345,16 +1201,8 @@
     "zoneType": "Surface zone",
     "level": "40",
     "monsters": [
-      {
-        "name": "Ferni",
-        "wikiSlug": "Ferni",
-        "image": "Ferni.png/16px-Ferni.png"
-      },
-      {
-        "name": "Big Slime",
-        "wikiSlug": "Big_Slime",
-        "image": "Big_Slime.png/16px-Big_Slime.png"
-      }
+      "ferni",
+      "big-slime"
     ],
     "resources": [
       {
@@ -1458,16 +1306,8 @@
     "zoneType": "Surface zone",
     "level": "41",
     "monsters": [
-      {
-        "name": "Soultree",
-        "wikiSlug": "Soultree",
-        "image": "Soultree.png/16px-Soultree.png"
-      },
-      {
-        "name": "Soulpling",
-        "wikiSlug": "Soulpling",
-        "image": "Soulpling.png/16px-Soulpling.png"
-      }
+      "soultree",
+      "soulpling"
     ],
     "resources": [
       {
@@ -1557,26 +1397,10 @@
     "zoneType": "Surface zone",
     "level": "39",
     "monsters": [
-      {
-        "name": "Soultree",
-        "wikiSlug": "Soultree",
-        "image": "Soultree.png/16px-Soultree.png"
-      },
-      {
-        "name": "Soulpling",
-        "wikiSlug": "Soulpling",
-        "image": "Soulpling.png/16px-Soulpling.png"
-      },
-      {
-        "name": "Ferni",
-        "wikiSlug": "Ferni",
-        "image": "Ferni.png/16px-Ferni.png"
-      },
-      {
-        "name": "Humblebee",
-        "wikiSlug": "Humblebee",
-        "image": "Humblebee.png/16px-Humblebee.png"
-      }
+      "soultree",
+      "soulpling",
+      "ferni",
+      "humblebee"
     ],
     "resources": [
       {
@@ -1754,16 +1578,8 @@
     "zoneType": "Surface zone",
     "level": "38",
     "monsters": [
-      {
-        "name": "Humblebee",
-        "wikiSlug": "Humblebee",
-        "image": "Humblebee.png/16px-Humblebee.png"
-      },
-      {
-        "name": "Soulpling",
-        "wikiSlug": "Soulpling",
-        "image": "Soulpling.png/16px-Soulpling.png"
-      }
+      "humblebee",
+      "soulpling"
     ],
     "resources": [
       {
@@ -1855,11 +1671,7 @@
     "zoneType": "Surface zone",
     "level": "37",
     "monsters": [
-      {
-        "name": "Rainbow Cloudsheep",
-        "wikiSlug": "Rainbow_Cloudsheep",
-        "image": "Rainbow_Cloudsheep.png/16px-Rainbow_Cloudsheep.png"
-      }
+      "rainbow-cloudsheep"
     ],
     "resources": [
       {
@@ -1920,16 +1732,8 @@
     "zoneType": "Surface zone",
     "level": "73",
     "monsters": [
-      {
-        "name": "Tallshroom",
-        "wikiSlug": "Tallshroom",
-        "image": "Tallshroom.png/16px-Tallshroom.png"
-      },
-      {
-        "name": "Shroomie",
-        "wikiSlug": "Shroomie",
-        "image": "Shroomie.png/16px-Shroomie.png"
-      }
+      "tallshroom",
+      "shroomie"
     ],
     "resources": [
       {
@@ -2025,11 +1829,7 @@
     "zoneType": "Surface zone",
     "level": "78",
     "monsters": [
-      {
-        "name": "Lime Guardian",
-        "wikiSlug": "Lime_Guardian",
-        "image": "Lime_Guardian.png/16px-Lime_Guardian.png"
-      }
+      "lime-guardian"
     ],
     "resources": [
       {
@@ -2123,16 +1923,8 @@
     "zoneType": "Surface zone",
     "level": "73",
     "monsters": [
-      {
-        "name": "Shroomie",
-        "wikiSlug": "Shroomie",
-        "image": "Shroomie.png/16px-Shroomie.png"
-      },
-      {
-        "name": "Tallshroom",
-        "wikiSlug": "Tallshroom",
-        "image": "Tallshroom.png/16px-Tallshroom.png"
-      }
+      "shroomie",
+      "tallshroom"
     ],
     "resources": [
       {
@@ -2198,21 +1990,9 @@
     "zoneType": "Surface zone",
     "level": "75",
     "monsters": [
-      {
-        "name": "Kiwi",
-        "wikiSlug": "Kiwi",
-        "image": "Kiwi.png/16px-Kiwi.png"
-      },
-      {
-        "name": "Fernek",
-        "wikiSlug": "Fernek",
-        "image": "Fernek.png/16px-Fernek.png"
-      },
-      {
-        "name": "Tallshroom",
-        "wikiSlug": "Tallshroom",
-        "image": "Tallshroom.png/16px-Tallshroom.png"
-      }
+      "kiwi",
+      "fernek",
+      "tallshroom"
     ],
     "resources": [
       {
@@ -2308,26 +2088,10 @@
     "zoneType": "Surface zone",
     "level": "75",
     "monsters": [
-      {
-        "name": "Shroomie",
-        "wikiSlug": "Shroomie",
-        "image": "Shroomie.png/16px-Shroomie.png"
-      },
-      {
-        "name": "Tallshroom",
-        "wikiSlug": "Tallshroom",
-        "image": "Tallshroom.png/16px-Tallshroom.png"
-      },
-      {
-        "name": "Fernek",
-        "wikiSlug": "Fernek",
-        "image": "Fernek.png/16px-Fernek.png"
-      },
-      {
-        "name": "Kiwi",
-        "wikiSlug": "Kiwi",
-        "image": "Kiwi.png/16px-Kiwi.png"
-      }
+      "shroomie",
+      "tallshroom",
+      "fernek",
+      "kiwi"
     ],
     "resources": [
       {
@@ -2393,16 +2157,8 @@
     "zoneType": "Surface zone",
     "level": "76",
     "monsters": [
-      {
-        "name": "Fernek",
-        "wikiSlug": "Fernek",
-        "image": "Fernek.png/16px-Fernek.png"
-      },
-      {
-        "name": "Kiwi",
-        "wikiSlug": "Kiwi",
-        "image": "Kiwi.png/16px-Kiwi.png"
-      }
+      "fernek",
+      "kiwi"
     ],
     "resources": [
       {
@@ -2532,16 +2288,8 @@
     "zoneType": "Surface zone",
     "level": "15",
     "monsters": [
-      {
-        "name": "Cursed Slime",
-        "wikiSlug": "Cursed_Slime",
-        "image": "Cursed_Slime.png/16px-Cursed_Slime.png"
-      },
-      {
-        "name": "Gilded Slime",
-        "wikiSlug": "Gilded_Slime",
-        "image": "Gilded_Slime.png/16px-Gilded_Slime.png"
-      }
+      "cursed-slime",
+      "gilded-slime"
     ],
     "resources": [
       {
@@ -2595,16 +2343,8 @@
     "zoneType": "Surface zone",
     "level": "21",
     "monsters": [
-      {
-        "name": "Troppo",
-        "wikiSlug": "Troppo",
-        "image": "Troppo.png/16px-Troppo.png"
-      },
-      {
-        "name": "Droppo",
-        "wikiSlug": "Droppo",
-        "image": "Droppo.png/16px-Droppo.png"
-      }
+      "troppo",
+      "droppo"
     ],
     "resources": [
       {
@@ -2658,16 +2398,8 @@
     "zoneType": "Surface zone",
     "level": "38",
     "monsters": [
-      {
-        "name": "Soulpling",
-        "wikiSlug": "Soulpling",
-        "image": "Soulpling.png/16px-Soulpling.png"
-      },
-      {
-        "name": "Humblebee",
-        "wikiSlug": "Humblebee",
-        "image": "Humblebee.png/16px-Humblebee.png"
-      }
+      "soulpling",
+      "humblebee"
     ],
     "resources": [
       {
@@ -2751,26 +2483,10 @@
     "zoneType": "Surface zone",
     "level": "40",
     "monsters": [
-      {
-        "name": "Soulpling",
-        "wikiSlug": "Soulpling",
-        "image": "Soulpling.png/16px-Soulpling.png"
-      },
-      {
-        "name": "Soultree",
-        "wikiSlug": "Soultree",
-        "image": "Soultree.png/16px-Soultree.png"
-      },
-      {
-        "name": "Humblebee",
-        "wikiSlug": "Humblebee",
-        "image": "Humblebee.png/16px-Humblebee.png"
-      },
-      {
-        "name": "Water Spot",
-        "wikiSlug": "Water_Spot",
-        "image": "Water_Spot.png/16px-Water_Spot.png"
-      }
+      "soulpling",
+      "soultree",
+      "humblebee",
+      "water-spot"
     ],
     "resources": [
       {
@@ -2924,16 +2640,8 @@
     "zoneType": "Surface zone",
     "level": "76",
     "monsters": [
-      {
-        "name": "Blossnek",
-        "wikiSlug": "Blossnek",
-        "image": "Blossnek.png/16px-Blossnek.png"
-      },
-      {
-        "name": "Fernek",
-        "wikiSlug": "Fernek",
-        "image": "Fernek.png/16px-Fernek.png"
-      }
+      "blossnek",
+      "fernek"
     ],
     "resources": [
       {
@@ -2997,21 +2705,9 @@
     "zoneType": "Surface zone",
     "level": "20",
     "monsters": [
-      {
-        "name": "Droppo",
-        "wikiSlug": "Droppo",
-        "image": "Droppo.png/16px-Droppo.png"
-      },
-      {
-        "name": "Crusher",
-        "wikiSlug": "Crusher",
-        "image": "Crusher.png/16px-Crusher.png"
-      },
-      {
-        "name": "Troppo",
-        "wikiSlug": "Troppo",
-        "image": "Troppo.png/16px-Troppo.png"
-      }
+      "droppo",
+      "crusher",
+      "troppo"
     ],
     "resources": [
       {
@@ -3117,21 +2813,9 @@
     "zoneType": "Surface zone",
     "level": "17",
     "monsters": [
-      {
-        "name": "Pimchy",
-        "wikiSlug": "Pimchy",
-        "image": "Pimchy.png/16px-Pimchy.png"
-      },
-      {
-        "name": "Snapper",
-        "wikiSlug": "Snapper",
-        "image": "Snapper.png/16px-Snapper.png"
-      },
-      {
-        "name": "Crusher",
-        "wikiSlug": "Crusher",
-        "image": "Crusher.png/16px-Crusher.png"
-      }
+      "pimchy",
+      "snapper",
+      "crusher"
     ],
     "resources": [
       {
@@ -3235,16 +2919,8 @@
     "zoneType": "Surface zone",
     "level": "19",
     "monsters": [
-      {
-        "name": "Crusher",
-        "wikiSlug": "Crusher",
-        "image": "Crusher.png/16px-Crusher.png"
-      },
-      {
-        "name": "Snapper",
-        "wikiSlug": "Snapper",
-        "image": "Snapper.png/16px-Snapper.png"
-      }
+      "crusher",
+      "snapper"
     ],
     "resources": [
       {
@@ -3350,16 +3026,8 @@
     "zoneType": "Surface zone",
     "level": "18",
     "monsters": [
-      {
-        "name": "Snapper",
-        "wikiSlug": "Snapper",
-        "image": "Snapper.png/16px-Snapper.png"
-      },
-      {
-        "name": "Crusher",
-        "wikiSlug": "Crusher",
-        "image": "Crusher.png/16px-Crusher.png"
-      }
+      "snapper",
+      "crusher"
     ],
     "resources": [
       {
@@ -3463,11 +3131,7 @@
     "zoneType": "Surface zone",
     "level": "46",
     "monsters": [
-      {
-        "name": "Giga",
-        "wikiSlug": "Giga",
-        "image": "Giga.png/16px-Giga.png"
-      }
+      "giga"
     ],
     "resources": [
       {
@@ -3553,21 +3217,9 @@
     "zoneType": "Surface zone",
     "level": "47",
     "monsters": [
-      {
-        "name": "Giga",
-        "wikiSlug": "Giga",
-        "image": "Giga.png/16px-Giga.png"
-      },
-      {
-        "name": "Bubble Snake",
-        "wikiSlug": "Bubble_Snake",
-        "image": "Bubble_Snake.png/16px-Bubble_Snake.png"
-      },
-      {
-        "name": "Sweel",
-        "wikiSlug": "Sweel",
-        "image": "Sweel.png/16px-Sweel.png"
-      }
+      "giga",
+      "bubble-snake",
+      "sweel"
     ],
     "resources": [
       {
@@ -3653,16 +3305,8 @@
     "zoneType": "Surface zone",
     "level": "45",
     "monsters": [
-      {
-        "name": "Giga",
-        "wikiSlug": "Giga",
-        "image": "Giga.png/16px-Giga.png"
-      },
-      {
-        "name": "Sweel",
-        "wikiSlug": "Sweel",
-        "image": "Sweel.png/16px-Sweel.png"
-      }
+      "giga",
+      "sweel"
     ],
     "resources": [
       {
@@ -3748,21 +3392,9 @@
     "zoneType": "Surface zone",
     "level": "44",
     "monsters": [
-      {
-        "name": "Sweel",
-        "wikiSlug": "Sweel",
-        "image": "Sweel.png/16px-Sweel.png"
-      },
-      {
-        "name": "Giga",
-        "wikiSlug": "Giga",
-        "image": "Giga.png/16px-Giga.png"
-      },
-      {
-        "name": "Bubble Snake",
-        "wikiSlug": "Bubble_Snake",
-        "image": "Bubble_Snake.png/16px-Bubble_Snake.png"
-      }
+      "sweel",
+      "giga",
+      "bubble-snake"
     ],
     "resources": [
       {
@@ -3861,26 +3493,10 @@
     "zoneType": "Surface zone",
     "level": "83",
     "monsters": [
-      {
-        "name": "Ancient Soul",
-        "wikiSlug": "Ancient_Soul",
-        "image": "Ancient_Soul.png/16px-Ancient_Soul.png"
-      },
-      {
-        "name": "Soulfish",
-        "wikiSlug": "Soulfish",
-        "image": "Soulfish.png/16px-Soulfish.png"
-      },
-      {
-        "name": "Coral",
-        "wikiSlug": "Coral",
-        "image": "Coral.png/16px-Coral.png"
-      },
-      {
-        "name": "Upsivase",
-        "wikiSlug": "Upsivase",
-        "image": "Upsivase.png/16px-Upsivase.png"
-      }
+      "ancient-soul",
+      "soulfish",
+      "coral",
+      "upsivase"
     ],
     "resources": [
       {
@@ -3946,26 +3562,10 @@
     "zoneType": "Surface zone",
     "level": "81",
     "monsters": [
-      {
-        "name": "Coral",
-        "wikiSlug": "Coral",
-        "image": "Coral.png/16px-Coral.png"
-      },
-      {
-        "name": "Soulfish",
-        "wikiSlug": "Soulfish",
-        "image": "Soulfish.png/16px-Soulfish.png"
-      },
-      {
-        "name": "Upsivase",
-        "wikiSlug": "Upsivase",
-        "image": "Upsivase.png/16px-Upsivase.png"
-      },
-      {
-        "name": "Ancient Soul",
-        "wikiSlug": "Ancient_Soul",
-        "image": "Ancient_Soul.png/16px-Ancient_Soul.png"
-      }
+      "coral",
+      "soulfish",
+      "upsivase",
+      "ancient-soul"
     ],
     "resources": [
       {
@@ -4039,16 +3639,8 @@
     "zoneType": "Surface zone",
     "level": "79",
     "monsters": [
-      {
-        "name": "Soulfish",
-        "wikiSlug": "Soulfish",
-        "image": "Soulfish.png/16px-Soulfish.png"
-      },
-      {
-        "name": "Upsivase",
-        "wikiSlug": "Upsivase",
-        "image": "Upsivase.png/16px-Upsivase.png"
-      }
+      "soulfish",
+      "upsivase"
     ],
     "resources": [
       {
@@ -4114,16 +3706,8 @@
     "zoneType": "Surface zone",
     "level": "79",
     "monsters": [
-      {
-        "name": "Soulfish",
-        "wikiSlug": "Soulfish",
-        "image": "Soulfish.png/16px-Soulfish.png"
-      },
-      {
-        "name": "Upsivase",
-        "wikiSlug": "Upsivase",
-        "image": "Upsivase.png/16px-Upsivase.png"
-      }
+      "soulfish",
+      "upsivase"
     ],
     "resources": [
       {
@@ -4189,16 +3773,8 @@
     "zoneType": "Surface zone",
     "level": "44",
     "monsters": [
-      {
-        "name": "Froni",
-        "wikiSlug": "Froni",
-        "image": "Froni.png/16px-Froni.png"
-      },
-      {
-        "name": "Sweel",
-        "wikiSlug": "Sweel",
-        "image": "Sweel.png/16px-Sweel.png"
-      }
+      "froni",
+      "sweel"
     ],
     "resources": [
       {
@@ -4316,16 +3892,8 @@
     "zoneType": "Surface zone",
     "level": "22",
     "monsters": [
-      {
-        "name": "Licki",
-        "wikiSlug": "Licki",
-        "image": "Licki.png/16px-Licki.png"
-      },
-      {
-        "name": "Bananek",
-        "wikiSlug": "Bananek",
-        "image": "Bananek.png/16px-Bananek.png"
-      }
+      "licki",
+      "bananek"
     ],
     "resources": [
       {
@@ -4376,21 +3944,9 @@
     "zoneType": "Surface zone",
     "level": "23",
     "monsters": [
-      {
-        "name": "Bananek",
-        "wikiSlug": "Bananek",
-        "image": "Bananek.png/16px-Bananek.png"
-      },
-      {
-        "name": "Citruslime",
-        "wikiSlug": "Citruslime",
-        "image": "Citruslime.png/16px-Citruslime.png"
-      },
-      {
-        "name": "Licki",
-        "wikiSlug": "Licki",
-        "image": "Licki.png/16px-Licki.png"
-      }
+      "bananek",
+      "citruslime",
+      "licki"
     ],
     "resources": [
       {
@@ -4441,16 +3997,8 @@
     "zoneType": "Surface zone",
     "level": "24",
     "monsters": [
-      {
-        "name": "Citruslime",
-        "wikiSlug": "Citruslime",
-        "image": "Citruslime.png/16px-Citruslime.png"
-      },
-      {
-        "name": "Bananek",
-        "wikiSlug": "Bananek",
-        "image": "Bananek.png/16px-Bananek.png"
-      }
+      "citruslime",
+      "bananek"
     ],
     "resources": [
       {
@@ -4514,16 +4062,8 @@
     "zoneType": "Surface zone",
     "level": "50",
     "monsters": [
-      {
-        "name": "Cactus",
-        "wikiSlug": "Cactus",
-        "image": "Cactus.png/16px-Cactus.png"
-      },
-      {
-        "name": "Rokkik",
-        "wikiSlug": "Rokkik",
-        "image": "Rokkik.png/16px-Rokkik.png"
-      }
+      "cactus",
+      "rokkik"
     ],
     "resources": [
       {
@@ -4617,21 +4157,9 @@
     "zoneType": "Surface zone",
     "level": "51",
     "monsters": [
-      {
-        "name": "Rokkik",
-        "wikiSlug": "Rokkik",
-        "image": "Rokkik.png/16px-Rokkik.png"
-      },
-      {
-        "name": "Cactus",
-        "wikiSlug": "Cactus",
-        "image": "Cactus.png/16px-Cactus.png"
-      },
-      {
-        "name": "Slabbit",
-        "wikiSlug": "Slabbit",
-        "image": "Slabbit.png/16px-Slabbit.png"
-      }
+      "rokkik",
+      "cactus",
+      "slabbit"
     ],
     "resources": [
       {
@@ -4697,26 +4225,10 @@
     "zoneType": "Surface zone",
     "level": "54",
     "monsters": [
-      {
-        "name": "Rokkik",
-        "wikiSlug": "Rokkik",
-        "image": "Rokkik.png/16px-Rokkik.png"
-      },
-      {
-        "name": "Slabbit",
-        "wikiSlug": "Slabbit",
-        "image": "Slabbit.png/16px-Slabbit.png"
-      },
-      {
-        "name": "Dragonfruit",
-        "wikiSlug": "Dragonfruit",
-        "image": "Dragonfruit.png/16px-Dragonfruit.png"
-      },
-      {
-        "name": "Desert Bandit",
-        "wikiSlug": "Desert_Bandit",
-        "image": "Desert_Bandit.png/16px-Desert_Bandit.png"
-      }
+      "rokkik",
+      "slabbit",
+      "dragonfruit",
+      "desert-bandit"
     ],
     "resources": [
       {
@@ -4782,21 +4294,9 @@
     "zoneType": "Surface zone",
     "level": "55",
     "monsters": [
-      {
-        "name": "Dragonfruit",
-        "wikiSlug": "Dragonfruit",
-        "image": "Dragonfruit.png/16px-Dragonfruit.png"
-      },
-      {
-        "name": "Slabbit",
-        "wikiSlug": "Slabbit",
-        "image": "Slabbit.png/16px-Slabbit.png"
-      },
-      {
-        "name": "Desert Bandit",
-        "wikiSlug": "Desert_Bandit",
-        "image": "Desert_Bandit.png/16px-Desert_Bandit.png"
-      }
+      "dragonfruit",
+      "slabbit",
+      "desert-bandit"
     ],
     "resources": [
       {
@@ -4862,16 +4362,8 @@
     "zoneType": "Surface zone",
     "level": "22",
     "monsters": [
-      {
-        "name": "Licki",
-        "wikiSlug": "Licki",
-        "image": "Licki.png/16px-Licki.png"
-      },
-      {
-        "name": "Citruslime",
-        "wikiSlug": "Citruslime",
-        "image": "Citruslime.png/16px-Citruslime.png"
-      }
+      "licki",
+      "citruslime"
     ],
     "resources": [
       {
@@ -5082,16 +4574,8 @@
     "zoneType": "Surface zone",
     "level": "88",
     "monsters": [
-      {
-        "name": "Pyramid Guardian",
-        "wikiSlug": "Pyramid_Guardian",
-        "image": "Pyramid_Guardian.png/16px-Pyramid_Guardian.png"
-      },
-      {
-        "name": "Lime Slime",
-        "wikiSlug": "Lime_Slime",
-        "image": "Lime_Slime.png/16px-Lime_Slime.png"
-      }
+      "pyramid-guardian",
+      "lime-slime"
     ],
     "resources": [
       {
@@ -5157,36 +4641,12 @@
     "zoneType": "Surface zone",
     "level": "86",
     "monsters": [
-      {
-        "name": "Blaze",
-        "wikiSlug": "Blaze",
-        "image": "Blaze.png/16px-Blaze.png"
-      },
-      {
-        "name": "Haunted Flame",
-        "wikiSlug": "Haunted_Flame",
-        "image": "Haunted_Flame.png/16px-Haunted_Flame.png"
-      },
-      {
-        "name": "Lost Bard",
-        "wikiSlug": "Lost_Bard",
-        "image": "Lost_Bard.png/16px-Lost_Bard.png"
-      },
-      {
-        "name": "Saowl",
-        "wikiSlug": "Saowl",
-        "image": "Saowl.png/16px-Saowl.png"
-      },
-      {
-        "name": "Pyramid Guardian",
-        "wikiSlug": "Pyramid_Guardian",
-        "image": "Pyramid_Guardian.png/16px-Pyramid_Guardian.png"
-      },
-      {
-        "name": "Lime Slime",
-        "wikiSlug": "Lime_Slime",
-        "image": "Lime_Slime.png/16px-Lime_Slime.png"
-      }
+      "blaze",
+      "haunted-flame",
+      "lost-bard",
+      "saowl",
+      "pyramid-guardian",
+      "lime-slime"
     ],
     "resources": [
       {
@@ -5316,16 +4776,8 @@
     "zoneType": "Surface zone",
     "level": "85",
     "monsters": [
-      {
-        "name": "Saowl",
-        "wikiSlug": "Saowl",
-        "image": "Saowl.png/16px-Saowl.png"
-      },
-      {
-        "name": "Pyramid Guardian",
-        "wikiSlug": "Pyramid_Guardian",
-        "image": "Pyramid_Guardian.png/16px-Pyramid_Guardian.png"
-      }
+      "saowl",
+      "pyramid-guardian"
     ],
     "resources": [
       {
@@ -5483,16 +4935,8 @@
     "zoneType": "Surface zone",
     "level": "25",
     "monsters": [
-      {
-        "name": "Bananek",
-        "wikiSlug": "Bananek",
-        "image": "Bananek.png/16px-Bananek.png"
-      },
-      {
-        "name": "Overripe Bananek",
-        "wikiSlug": "Overripe_Bananek",
-        "image": "Overripe_Bananek.png/16px-Overripe_Bananek.png"
-      }
+      "bananek",
+      "overripe-bananek"
     ],
     "resources": [
       {
@@ -5541,11 +4985,7 @@
     "zoneType": "Surface zone",
     "level": "27",
     "monsters": [
-      {
-        "name": "Monoghoul",
-        "wikiSlug": "Monoghoul",
-        "image": "Monoghoul.png/16px-Monoghoul.png"
-      }
+      "monoghoul"
     ],
     "resources": [
       {
@@ -5600,16 +5040,8 @@
     "zoneType": "Surface zone",
     "level": "27",
     "monsters": [
-      {
-        "name": "Sadling",
-        "wikiSlug": "Sadling",
-        "image": "Sadling.png/16px-Sadling.png"
-      },
-      {
-        "name": "Monoghoul",
-        "wikiSlug": "Monoghoul",
-        "image": "Monoghoul.png/16px-Monoghoul.png"
-      }
+      "sadling",
+      "monoghoul"
     ],
     "resources": [
       {
@@ -5680,16 +5112,8 @@
     "zoneType": "Surface zone",
     "level": "29",
     "monsters": [
-      {
-        "name": "Sadling",
-        "wikiSlug": "Sadling",
-        "image": "Sadling.png/16px-Sadling.png"
-      },
-      {
-        "name": "Dark Pumpkin",
-        "wikiSlug": "Dark_Pumpkin",
-        "image": "Dark_Pumpkin.png/16px-Dark_Pumpkin.png"
-      }
+      "sadling",
+      "dark-pumpkin"
     ],
     "resources": [
       {
@@ -5740,21 +5164,9 @@
     "zoneType": "Surface zone",
     "level": "30",
     "monsters": [
-      {
-        "name": "Monoghoul",
-        "wikiSlug": "Monoghoul",
-        "image": "Monoghoul.png/16px-Monoghoul.png"
-      },
-      {
-        "name": "Denial",
-        "wikiSlug": "Denial",
-        "image": "Denial.png/16px-Denial.png"
-      },
-      {
-        "name": "Sadling",
-        "wikiSlug": "Sadling",
-        "image": "Sadling.png/16px-Sadling.png"
-      }
+      "monoghoul",
+      "denial",
+      "sadling"
     ],
     "resources": [
       {
@@ -5824,11 +5236,7 @@
     "zoneType": "Surface zone",
     "level": "32",
     "monsters": [
-      {
-        "name": "Stinky Sheep",
-        "wikiSlug": "Stinky_Sheep",
-        "image": "Stinky_Sheep.png/16px-Stinky_Sheep.png"
-      }
+      "stinky-sheep"
     ],
     "resources": [
       {
@@ -5888,16 +5296,8 @@
     "zoneType": "Surface zone",
     "level": "33",
     "monsters": [
-      {
-        "name": "Spot Slime",
-        "wikiSlug": "Spot_Slime",
-        "image": "Spot_Slime.png/16px-Spot_Slime.png"
-      },
-      {
-        "name": "Stinky Sheep",
-        "wikiSlug": "Stinky_Sheep",
-        "image": "Stinky_Sheep.png/16px-Stinky_Sheep.png"
-      }
+      "spot-slime",
+      "stinky-sheep"
     ],
     "resources": [
       {
@@ -5974,16 +5374,8 @@
     "zoneType": "Surface zone",
     "level": "35",
     "monsters": [
-      {
-        "name": "Licke",
-        "wikiSlug": "Licke",
-        "image": "Licke.png/16px-Licke.png"
-      },
-      {
-        "name": "Spot Slime",
-        "wikiSlug": "Spot_Slime",
-        "image": "Spot_Slime.png/16px-Spot_Slime.png"
-      }
+      "licke",
+      "spot-slime"
     ],
     "resources": [
       {
@@ -6035,21 +5427,9 @@
     "zoneType": "Surface zone",
     "level": "34",
     "monsters": [
-      {
-        "name": "Spot Slime",
-        "wikiSlug": "Spot_Slime",
-        "image": "Spot_Slime.png/16px-Spot_Slime.png"
-      },
-      {
-        "name": "Lumen Sprite",
-        "wikiSlug": "Lumen_Sprite",
-        "image": "Lumen_Sprite.png/16px-Lumen_Sprite.png"
-      },
-      {
-        "name": "Licke",
-        "wikiSlug": "Licke",
-        "image": "Licke.png/16px-Licke.png"
-      }
+      "spot-slime",
+      "lumen-sprite",
+      "licke"
     ],
     "resources": [
       {
@@ -6101,16 +5481,8 @@
     "zoneType": "Surface zone",
     "level": "33",
     "monsters": [
-      {
-        "name": "Anger",
-        "wikiSlug": "Anger",
-        "image": "Anger.png/16px-Anger.png"
-      },
-      {
-        "name": "Licke",
-        "wikiSlug": "Licke",
-        "image": "Licke.png/16px-Licke.png"
-      }
+      "anger",
+      "licke"
     ],
     "resources": [
       {
@@ -6162,21 +5534,9 @@
     "zoneType": "Surface zone",
     "level": "70",
     "monsters": [
-      {
-        "name": "Cat Guardian",
-        "wikiSlug": "Cat_Guardian",
-        "image": "Cat_Guardian.png/16px-Cat_Guardian.png"
-      },
-      {
-        "name": "Rocky",
-        "wikiSlug": "Rocky",
-        "image": "Rocky.png/16px-Rocky.png"
-      },
-      {
-        "name": "Cat Golem",
-        "wikiSlug": "Cat_Golem",
-        "image": "Cat_Golem.png/16px-Cat_Golem.png"
-      }
+      "cat-guardian",
+      "rocky",
+      "cat-golem"
     ],
     "resources": [
       {
@@ -6273,16 +5633,8 @@
     "zoneType": "Surface zone",
     "level": "65",
     "monsters": [
-      {
-        "name": "Rokkak",
-        "wikiSlug": "Rokkak",
-        "image": "Rokkak.png/16px-Rokkak.png"
-      },
-      {
-        "name": "Rocky",
-        "wikiSlug": "Rocky",
-        "image": "Rocky.png/16px-Rocky.png"
-      }
+      "rokkak",
+      "rocky"
     ],
     "resources": [
       {
@@ -6343,21 +5695,9 @@
     "zoneType": "Surface zone",
     "level": "67",
     "monsters": [
-      {
-        "name": "Cat Golem",
-        "wikiSlug": "Cat_Golem",
-        "image": "Cat_Golem.png/16px-Cat_Golem.png"
-      },
-      {
-        "name": "Rokkak",
-        "wikiSlug": "Rokkak",
-        "image": "Rokkak.png/16px-Rokkak.png"
-      },
-      {
-        "name": "Rocky",
-        "wikiSlug": "Rocky",
-        "image": "Rocky.png/16px-Rocky.png"
-      }
+      "cat-golem",
+      "rokkak",
+      "rocky"
     ],
     "resources": [
       {
@@ -6418,16 +5758,8 @@
     "zoneType": "Surface zone",
     "level": "70",
     "monsters": [
-      {
-        "name": "Ashball",
-        "wikiSlug": "Ashball",
-        "image": "Ashball.png/16px-Ashball.png"
-      },
-      {
-        "name": "Cat Guardian",
-        "wikiSlug": "Cat_Guardian",
-        "image": "Cat_Guardian.png/16px-Cat_Guardian.png"
-      }
+      "ashball",
+      "cat-guardian"
     ],
     "resources": [
       {
@@ -6486,16 +5818,8 @@
     "zoneType": "Surface zone",
     "level": "69",
     "monsters": [
-      {
-        "name": "Cat Golem",
-        "wikiSlug": "Cat_Golem",
-        "image": "Cat_Golem.png/16px-Cat_Golem.png"
-      },
-      {
-        "name": "Cat Guardian",
-        "wikiSlug": "Cat_Guardian",
-        "image": "Cat_Guardian.png/16px-Cat_Guardian.png"
-      }
+      "cat-golem",
+      "cat-guardian"
     ],
     "resources": [
       {
@@ -6582,16 +5906,8 @@
     "zoneType": "Surface zone",
     "level": "61",
     "monsters": [
-      {
-        "name": "Blizzy",
-        "wikiSlug": "Blizzy",
-        "image": "Blizzy.png/16px-Blizzy.png"
-      },
-      {
-        "name": "Snowball",
-        "wikiSlug": "Snowball",
-        "image": "Snowball.png/16px-Snowball.png"
-      }
+      "blizzy",
+      "snowball"
     ],
     "resources": [
       {
@@ -6652,21 +5968,9 @@
     "zoneType": "Surface zone",
     "level": "60",
     "monsters": [
-      {
-        "name": "Frostfruit",
-        "wikiSlug": "Frostfruit",
-        "image": "Frostfruit.png/16px-Frostfruit.png"
-      },
-      {
-        "name": "Snowball",
-        "wikiSlug": "Snowball",
-        "image": "Snowball.png/16px-Snowball.png"
-      },
-      {
-        "name": "Blizzy",
-        "wikiSlug": "Blizzy",
-        "image": "Blizzy.png/16px-Blizzy.png"
-      }
+      "frostfruit",
+      "snowball",
+      "blizzy"
     ],
     "resources": [
       {
@@ -6750,11 +6054,7 @@
     "zoneType": "Surface zone",
     "level": "58",
     "monsters": [
-      {
-        "name": "Slibbit",
-        "wikiSlug": "Slibbit",
-        "image": "Slibbit.png/16px-Slibbit.png"
-      }
+      "slibbit"
     ],
     "resources": [
       {
@@ -6853,16 +6153,8 @@
     "zoneType": "Surface zone",
     "level": "59",
     "monsters": [
-      {
-        "name": "Slibbit",
-        "wikiSlug": "Slibbit",
-        "image": "Slibbit.png/16px-Slibbit.png"
-      },
-      {
-        "name": "Blizzy",
-        "wikiSlug": "Blizzy",
-        "image": "Blizzy.png/16px-Blizzy.png"
-      }
+      "slibbit",
+      "blizzy"
     ],
     "resources": [
       {
@@ -6923,16 +6215,8 @@
     "zoneType": "Surface zone",
     "level": "63",
     "monsters": [
-      {
-        "name": "Snowball",
-        "wikiSlug": "Snowball",
-        "image": "Snowball.png/16px-Snowball.png"
-      },
-      {
-        "name": "Blizzy",
-        "wikiSlug": "Blizzy",
-        "image": "Blizzy.png/16px-Blizzy.png"
-      }
+      "snowball",
+      "blizzy"
     ],
     "resources": [
       {
@@ -7018,11 +6302,7 @@
     "zoneType": "Surface zone",
     "level": "62",
     "monsters": [
-      {
-        "name": "Icyghoul",
-        "wikiSlug": "Icyghoul",
-        "image": "Icyghoul.png/16px-Icyghoul.png"
-      }
+      "icyghoul"
     ],
     "resources": [
       {

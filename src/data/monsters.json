@@ -1,0 +1,594 @@
+[
+  {
+    "id": "ancient-soul",
+    "name": "Ancient Soul",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Ancient_Soul",
+    "image": "Ancient_Soul.png/16px-Ancient_Soul.png"
+  },
+  {
+    "id": "angeling",
+    "name": "Angeling",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Angeling",
+    "image": "Angeling.png/16px-Angeling.png"
+  },
+  {
+    "id": "anger",
+    "name": "Anger",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Anger",
+    "image": "Anger.png/16px-Anger.png"
+  },
+  {
+    "id": "ashball",
+    "name": "Ashball",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Ashball",
+    "image": "Ashball.png/16px-Ashball.png"
+  },
+  {
+    "id": "bananek",
+    "name": "Bananek",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Bananek",
+    "image": "Bananek.png/16px-Bananek.png"
+  },
+  {
+    "id": "big-slime",
+    "name": "Big Slime",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Big_Slime",
+    "image": "Big_Slime.png/16px-Big_Slime.png"
+  },
+  {
+    "id": "black-cloudsheep",
+    "name": "Black Cloudsheep",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Black_Cloudsheep",
+    "image": "Black_Cloudsheep.png/16px-Black_Cloudsheep.png"
+  },
+  {
+    "id": "blaze",
+    "name": "Blaze",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Blaze",
+    "image": "Blaze.png/16px-Blaze.png"
+  },
+  {
+    "id": "blizzy",
+    "name": "Blizzy",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Blizzy",
+    "image": "Blizzy.png/16px-Blizzy.png"
+  },
+  {
+    "id": "blossnek",
+    "name": "Blossnek",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Blossnek",
+    "image": "Blossnek.png/16px-Blossnek.png"
+  },
+  {
+    "id": "bubble-snake",
+    "name": "Bubble Snake",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Bubble_Snake",
+    "image": "Bubble_Snake.png/16px-Bubble_Snake.png"
+  },
+  {
+    "id": "bubble-spirit",
+    "name": "Bubble Spirit",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Bubble_Spirit",
+    "image": "Bubble_Spirit.png/16px-Bubble_Spirit.png"
+  },
+  {
+    "id": "cactus",
+    "name": "Cactus",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Cactus",
+    "image": "Cactus.png/16px-Cactus.png"
+  },
+  {
+    "id": "cat-golem",
+    "name": "Cat Golem",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Cat_Golem",
+    "image": "Cat_Golem.png/16px-Cat_Golem.png"
+  },
+  {
+    "id": "cat-guardian",
+    "name": "Cat Guardian",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Cat_Guardian",
+    "image": "Cat_Guardian.png/16px-Cat_Guardian.png"
+  },
+  {
+    "id": "citruslime",
+    "name": "Citruslime",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Citruslime",
+    "image": "Citruslime.png/16px-Citruslime.png"
+  },
+  {
+    "id": "cloudsheep",
+    "name": "Cloudsheep",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Cloudsheep",
+    "image": "Cloudsheep.png/16px-Cloudsheep.png"
+  },
+  {
+    "id": "coral",
+    "name": "Coral",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Coral",
+    "image": "Coral.png/16px-Coral.png"
+  },
+  {
+    "id": "crusher",
+    "name": "Crusher",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Crusher",
+    "image": "Crusher.png/16px-Crusher.png"
+  },
+  {
+    "id": "cursed-slime",
+    "name": "Cursed Slime",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Cursed_Slime",
+    "image": "Cursed_Slime.png/16px-Cursed_Slime.png"
+  },
+  {
+    "id": "dark-pumpkin",
+    "name": "Dark Pumpkin",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Dark_Pumpkin",
+    "image": "Dark_Pumpkin.png/16px-Dark_Pumpkin.png"
+  },
+  {
+    "id": "denial",
+    "name": "Denial",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Denial",
+    "image": "Denial.png/16px-Denial.png"
+  },
+  {
+    "id": "desert-bandit",
+    "name": "Desert Bandit",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Desert_Bandit",
+    "image": "Desert_Bandit.png/16px-Desert_Bandit.png"
+  },
+  {
+    "id": "dragonfruit",
+    "name": "Dragonfruit",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Dragonfruit",
+    "image": "Dragonfruit.png/16px-Dragonfruit.png"
+  },
+  {
+    "id": "droppo",
+    "name": "Droppo",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Droppo",
+    "image": "Droppo.png/16px-Droppo.png"
+  },
+  {
+    "id": "fernek",
+    "name": "Fernek",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Fernek",
+    "image": "Fernek.png/16px-Fernek.png"
+  },
+  {
+    "id": "ferni",
+    "name": "Ferni",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Ferni",
+    "image": "Ferni.png/16px-Ferni.png"
+  },
+  {
+    "id": "flows",
+    "name": "Flows",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Flows",
+    "image": "Flows.png/16px-Flows.png"
+  },
+  {
+    "id": "froni",
+    "name": "Froni",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Froni",
+    "image": "Froni.png/16px-Froni.png"
+  },
+  {
+    "id": "frostfruit",
+    "name": "Frostfruit",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Frostfruit",
+    "image": "Frostfruit.png/16px-Frostfruit.png"
+  },
+  {
+    "id": "giga",
+    "name": "Giga",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Giga",
+    "image": "Giga.png/16px-Giga.png"
+  },
+  {
+    "id": "gilded-slime",
+    "name": "Gilded Slime",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Gilded_Slime",
+    "image": "Gilded_Slime.png/16px-Gilded_Slime.png"
+  },
+  {
+    "id": "glowsnail",
+    "name": "Glowsnail",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Glowsnail",
+    "image": "Glowsnail.png/16px-Glowsnail.png"
+  },
+  {
+    "id": "haunted-flame",
+    "name": "Haunted Flame",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Haunted_Flame",
+    "image": "Haunted_Flame.png/16px-Haunted_Flame.png"
+  },
+  {
+    "id": "hopper",
+    "name": "Hopper",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Hopper",
+    "image": "Hopper.png/16px-Hopper.png"
+  },
+  {
+    "id": "humblebee",
+    "name": "Humblebee",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Humblebee",
+    "image": "Humblebee.png/16px-Humblebee.png"
+  },
+  {
+    "id": "icyghoul",
+    "name": "Icyghoul",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Icyghoul",
+    "image": "Icyghoul.png/16px-Icyghoul.png"
+  },
+  {
+    "id": "jel",
+    "name": "Jel",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Jel",
+    "image": "Jel.png/16px-Jel.png"
+  },
+  {
+    "id": "kiwi",
+    "name": "Kiwi",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Kiwi",
+    "image": "Kiwi.png/16px-Kiwi.png"
+  },
+  {
+    "id": "licke",
+    "name": "Licke",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Licke",
+    "image": "Licke.png/16px-Licke.png"
+  },
+  {
+    "id": "licki",
+    "name": "Licki",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Licki",
+    "image": "Licki.png/16px-Licki.png"
+  },
+  {
+    "id": "lime-guardian",
+    "name": "Lime Guardian",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Lime_Guardian",
+    "image": "Lime_Guardian.png/16px-Lime_Guardian.png"
+  },
+  {
+    "id": "lime-slime",
+    "name": "Lime Slime",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Lime_Slime",
+    "image": "Lime_Slime.png/16px-Lime_Slime.png"
+  },
+  {
+    "id": "lost-bard",
+    "name": "Lost Bard",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Lost_Bard",
+    "image": "Lost_Bard.png/16px-Lost_Bard.png"
+  },
+  {
+    "id": "lumen-sprite",
+    "name": "Lumen Sprite",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Lumen_Sprite",
+    "image": "Lumen_Sprite.png/16px-Lumen_Sprite.png"
+  },
+  {
+    "id": "monoghoul",
+    "name": "Monoghoul",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Monoghoul",
+    "image": "Monoghoul.png/16px-Monoghoul.png"
+  },
+  {
+    "id": "overripe-bananek",
+    "name": "Overripe Bananek",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Overripe_Bananek",
+    "image": "Overripe_Bananek.png/16px-Overripe_Bananek.png"
+  },
+  {
+    "id": "pimchy",
+    "name": "Pimchy",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Pimchy",
+    "image": "Pimchy.png/16px-Pimchy.png"
+  },
+  {
+    "id": "pin-pin",
+    "name": "Pin Pin",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Pin_Pin",
+    "image": "Pin_Pin.png/16px-Pin_Pin.png"
+  },
+  {
+    "id": "pyramid-guardian",
+    "name": "Pyramid Guardian",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Pyramid_Guardian",
+    "image": "Pyramid_Guardian.png/16px-Pyramid_Guardian.png"
+  },
+  {
+    "id": "rainbow-cloudsheep",
+    "name": "Rainbow Cloudsheep",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Rainbow_Cloudsheep",
+    "image": "Rainbow_Cloudsheep.png/16px-Rainbow_Cloudsheep.png"
+  },
+  {
+    "id": "rocky",
+    "name": "Rocky",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Rocky",
+    "image": "Rocky.png/16px-Rocky.png"
+  },
+  {
+    "id": "rokkak",
+    "name": "Rokkak",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Rokkak",
+    "image": "Rokkak.png/16px-Rokkak.png"
+  },
+  {
+    "id": "rokkik",
+    "name": "Rokkik",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Rokkik",
+    "image": "Rokkik.png/16px-Rokkik.png"
+  },
+  {
+    "id": "sadling",
+    "name": "Sadling",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Sadling",
+    "image": "Sadling.png/16px-Sadling.png"
+  },
+  {
+    "id": "saowl",
+    "name": "Saowl",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Saowl",
+    "image": "Saowl.png/16px-Saowl.png"
+  },
+  {
+    "id": "shroomie",
+    "name": "Shroomie",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Shroomie",
+    "image": "Shroomie.png/16px-Shroomie.png"
+  },
+  {
+    "id": "slabbit",
+    "name": "Slabbit",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Slabbit",
+    "image": "Slabbit.png/16px-Slabbit.png"
+  },
+  {
+    "id": "slibbit",
+    "name": "Slibbit",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Slibbit",
+    "image": "Slibbit.png/16px-Slibbit.png"
+  },
+  {
+    "id": "slime",
+    "name": "Slime",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Slime",
+    "image": "Slime.png/16px-Slime.png"
+  },
+  {
+    "id": "slip",
+    "name": "Slip",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Slip",
+    "image": "Slip.png/16px-Slip.png"
+  },
+  {
+    "id": "snapper",
+    "name": "Snapper",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Snapper",
+    "image": "Snapper.png/16px-Snapper.png"
+  },
+  {
+    "id": "snowball",
+    "name": "Snowball",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Snowball",
+    "image": "Snowball.png/16px-Snowball.png"
+  },
+  {
+    "id": "soulfish",
+    "name": "Soulfish",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Soulfish",
+    "image": "Soulfish.png/16px-Soulfish.png"
+  },
+  {
+    "id": "soulpling",
+    "name": "Soulpling",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Soulpling",
+    "image": "Soulpling.png/16px-Soulpling.png"
+  },
+  {
+    "id": "soultree",
+    "name": "Soultree",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Soultree",
+    "image": "Soultree.png/16px-Soultree.png"
+  },
+  {
+    "id": "spot-slime",
+    "name": "Spot Slime",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Spot_Slime",
+    "image": "Spot_Slime.png/16px-Spot_Slime.png"
+  },
+  {
+    "id": "squishling",
+    "name": "Squishling",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Squishling",
+    "image": "Squishling.png/16px-Squishling.png"
+  },
+  {
+    "id": "stinky-sheep",
+    "name": "Stinky Sheep",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Stinky_Sheep",
+    "image": "Stinky_Sheep.png/16px-Stinky_Sheep.png"
+  },
+  {
+    "id": "sweel",
+    "name": "Sweel",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Sweel",
+    "image": "Sweel.png/16px-Sweel.png"
+  },
+  {
+    "id": "tallshroom",
+    "name": "Tallshroom",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Tallshroom",
+    "image": "Tallshroom.png/16px-Tallshroom.png"
+  },
+  {
+    "id": "troppo",
+    "name": "Troppo",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Troppo",
+    "image": "Troppo.png/16px-Troppo.png"
+  },
+  {
+    "id": "upsivase",
+    "name": "Upsivase",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Upsivase",
+    "image": "Upsivase.png/16px-Upsivase.png"
+  },
+  {
+    "id": "water-spot",
+    "name": "Water Spot",
+    "elements": [],
+    "drops": [],
+    "wikiSlug": "Water_Spot",
+    "image": "Water_Spot.png/16px-Water_Spot.png"
+  }
+]

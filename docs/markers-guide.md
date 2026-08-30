@@ -5,9 +5,11 @@ alterar codigo. O MVP usa dados estaticos em JSON, entao cada novo marcador deve
 ter dados suficientes para busca, filtros, popup e posicionamento no mapa.
 
 `src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa. A UI
-le esse arquivo para montar marcadores, busca, filtros e detalhes. `src/data/maps.json`
-e apenas auxiliar de importacao/metadados da imagem do mapa; nao coloque nele
-dados de monstros, recursos, interactables ou entidades.
+le esse arquivo para montar marcadores, busca, filtros e detalhes.
+`src/data/monsters.json` is the single source of truth for monster metadata.
+Markers reference monsters by stable IDs. `src/data/maps.json` e apenas
+auxiliar de importacao/metadados da imagem do mapa; nao coloque nele dados de
+recursos, interactables ou entidades.
 
 Para a lista completa de campos e exemplos isolados de monster, resource item e
 interactable, veja o [Schema dos dados](./data-schema.md).
@@ -57,7 +59,7 @@ marcador:
 | `area` | Regiao usada no filtro principal, como `Ocean` ou `Plains`. |
 | `zoneType` | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`. |
 | `level` | Nivel recomendado ou nivel da zona. Pode ser `"17"` ou `"12-15"`. |
-| `monsters` | Lista rica de monstros encontrados na zona. |
+| `monsters` | Stable monster IDs from `src/data/monsters.json`. |
 | `resources` | Grupos de recursos por tipo de coleta. |
 | `warpPoint` | `true` quando a zona tem ponto de warp. Omita quando nao tiver. |
 | `wikiSlug` | Slug opcional da pagina da wiki. |
@@ -68,17 +70,44 @@ Dados importantes devem entrar em campos estruturados do marcador: `area`,
 `zoneType`, `level`, `monsters`, `resources`, `interactables`, `warpPoint`,
 `wikiSlug` e `tags`.
 
-Nao use o formato antigo com `monsters` como array de strings nem
-`resources[].items` como array de strings. Esses campos agora guardam objetos
-ricos diretamente no marker.
+Do not embed monster metadata in markers. Add or update monster metadata in
+`src/data/monsters.json`, then reference the monster by ID in `markers.json`.
+Nao use o formato antigo com `resources[].items` como array de strings. Resource
+items continue to use rich objects directly in the marker.
 
 `wikiSlug` guarda apenas a parte variavel depois de
 `https://soulsremnant.wiki.gg/wiki/`. `image` guarda apenas a parte variavel
 depois de `https://soulsremnant.wiki.gg/images/thumb/`. A UI monta os URLs finais
 com helpers centralizados; nao repita esses prefixos em `markers.json`.
 
-Nao separe NPCs, monstros, itens ou recursos em outros arquivos ainda. Isso fica
-para depois do MVP, quando houver duplicacao real e dados suficientes.
+Nao separe NPCs, itens ou recursos em outros arquivos ainda. Monster metadata is
+already normalized in `src/data/monsters.json`.
+
+## Monsters
+
+Markers list monster IDs only:
+
+```json
+"monsters": ["hopper", "jel", "pin-pin"]
+```
+
+Add monster metadata to `src/data/monsters.json`:
+
+```json
+{
+  "id": "hopper",
+  "name": "Hopper",
+  "elements": [],
+  "drops": [],
+  "wikiSlug": "Hopper",
+  "image": "Hopper.png/16px-Hopper.png"
+}
+```
+
+Use `level` only for monster-specific level data. Do not copy a marker's zone
+`level` into a monster unless the source data confirms that the monster itself
+has that level. Use normalized stable element IDs in `elements`, and stable drop
+IDs in `drops[].id`. Set `drops[].type` to `"item"` or `"essence"` when known.
 
 ## Cores por area
 
@@ -233,18 +262,7 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
   "area": "Mistwood",
   "zoneType": "Surface zone",
   "level": "24-28",
-  "monsters": [
-    {
-      "name": "Mossling",
-      "wikiSlug": "Mossling",
-      "image": "Mossling.png/16px-Mossling.png"
-    },
-    {
-      "name": "Elder Wisp",
-      "wikiSlug": "Elder_Wisp",
-      "image": "Elder_Wisp.png/16px-Elder_Wisp.png"
-    }
-  ],
+  "monsters": ["mossling", "elder-wisp"],
   "resources": [
     {
       "type": "Fishing",
@@ -301,17 +319,18 @@ Antes de abrir PR ou fechar uma issue de dados:
 2. Confira se o `id` e unico.
 3. Confira se `mapId` existe em `src/data/maps.json`.
 4. Confira se `x` e `y` estao entre `0` e `100`.
-5. Confira se `monsters`, `resources[].items` e `interactables` usam objetos
-   ricos com `name`, nao strings soltas.
-6. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
+5. Confira se `monsters` contains valid IDs from `src/data/monsters.json`.
+6. Confira se `resources[].items` e `interactables` usam objetos ricos com
+   `name`, nao strings soltas.
+7. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
    a intencao for ativar filtros rapidos.
-7. Se a area for nova, confira se existe entrada correspondente em
+8. Se a area for nova, confira se existe entrada correspondente em
    `src/data/areas.json` ou aceite o fallback neutro temporariamente.
-8. Pesquise pelo nome da zona, area, monstro, interactable e recurso principal.
-9. Clique no resultado e confirme que o mapa centraliza no marcador.
-10. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
+9. Pesquise pelo nome da zona, area, monstro, interactable e recurso principal.
+10. Clique no resultado e confirme que o mapa centraliza no marcador.
+11. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
    existir.
-11. Verifique pelo menos uma tela desktop e uma mobile.
+12. Verifique pelo menos uma tela desktop e uma mobile.
 
 ## Checklist rapido
 
@@ -319,7 +338,8 @@ Antes de abrir PR ou fechar uma issue de dados:
 - `x` e `y` calculados em percentual a partir do canto superior esquerdo.
 - `area` preenchida quando a zona deve aparecer no filtro por regiao.
 - `resources` agrupado por `Fishing`, `Mining` e `Herbalism`.
-- `monsters`, `resources[].items` e `interactables` preenchidos como objetos ricos.
+- `monsters` preenchido com IDs existentes em `src/data/monsters.json`.
+- `resources[].items` e `interactables` preenchidos como objetos ricos.
 - area cadastrada em `src/data/areas.json` quando precisa de cor propria.
 - `warpPoint` preenchido quando deve exibir anel/borda extra.
 - `resources` e `monsters` preenchidos quando devem afetar filtros.

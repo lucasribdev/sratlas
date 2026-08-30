@@ -1,12 +1,7 @@
 import type { GameMap } from './map'
+import type { Monster } from './monster'
 
 export type PercentageCoordinate = number
-
-export type MarkerMonster = {
-  name: string
-  wikiSlug?: string
-  image?: string
-}
 
 export type MarkerResourceItem = {
   name: string
@@ -26,6 +21,12 @@ export type MarkerInteractable = {
   image?: string
 }
 
+export type MarkerMonsterReference = Monster['id']
+
+export type RawMapMarker = Omit<MapMarker, 'monsters'> & {
+  monsters?: MarkerMonsterReference[]
+}
+
 export type MapMarker = {
   id: string
   name: string
@@ -35,7 +36,7 @@ export type MapMarker = {
   area?: string
   zoneType?: string
   level?: string
-  monsters?: MarkerMonster[]
+  monsters?: Monster[]
   resources?: MarkerResourceGroup[]
   warpPoint?: boolean
   wikiSlug?: string

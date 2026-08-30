@@ -12,10 +12,12 @@ monstros, recursos, interactables e ponto de warp. Quando o projeto crescer,
 entidades devem ser separadas para evitar duplicacao.
 
 Hoje, `src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa.
-Ele contem os dados ricos usados pela UI, busca, filtros e popup diretamente no
-marker. `src/data/maps.json` fica como arquivo auxiliar de importacao/metadados
-da imagem do mapa; nao use esse arquivo como fonte runtime de entidades,
-marcadores, monstros, recursos ou interactables.
+`src/data/monsters.json` is the single source of truth for monster metadata.
+Markers keep only stable monster IDs, and `src/data/markers.ts` hydrates those
+IDs into rich monster objects for the UI, search, filters, and popup.
+`src/data/maps.json` fica como arquivo auxiliar de importacao/metadados da
+imagem do mapa; nao use esse arquivo como fonte runtime de entidades,
+marcadores, recursos ou interactables.
 
 ## Arquivos iniciais
 
@@ -26,6 +28,7 @@ src/data/
   areas.json
   maps.json
   markers.json
+  monsters.json
 ```
 
 ## Areas
@@ -92,13 +95,7 @@ veja o [Schema dos dados](./data-schema.md).
   "area": "Ashen Hollow",
   "zoneType": "Surface zone",
   "level": "12-15",
-  "monsters": [
-    {
-      "name": "Ironfang",
-      "wikiSlug": "Ironfang",
-      "image": "Ironfang.png/16px-Ironfang.png"
-    }
-  ],
+  "monsters": ["ironfang"],
   "resources": [
     {
       "type": "Fishing",
@@ -134,7 +131,7 @@ veja o [Schema dos dados](./data-schema.md).
 | `area` | Nao | Area ou regiao |
 | `zoneType` | Nao | Tipo da zona, por exemplo `Surface zone` |
 | `level` | Nao | Nivel recomendado ou nivel da zona |
-| `monsters` | Nao | Lista de monstros ricos encontrados na area |
+| `monsters` | Nao | Stable monster IDs from `src/data/monsters.json` |
 | `resources` | Nao | Lista de grupos de recursos por profissao ou tipo de coleta |
 | `warpPoint` | Nao | Indica se a area tem ponto de warp |
 | `wikiSlug` | Nao | Slug da pagina da wiki |
@@ -157,9 +154,10 @@ Formato recomendado para `resources`:
 }
 ```
 
-`monsters`, `resources[].items` e `interactables` nao devem ser arrays de
-strings. Use objetos ricos com `name` e, quando houver, `wikiSlug`, `image` e
-`chancePercent` nos itens de recurso.
+`resources[].items` e `interactables` nao devem ser arrays de strings. Use
+objetos ricos com `name` e, quando houver, `wikiSlug`, `image` e
+`chancePercent` nos itens de recurso. `monsters` is the exception: it stores
+monster ID strings that resolve through `src/data/monsters.json`.
 
 Use `area`, `zoneType`, `level`, `monsters`, `resources`, `interactables`,
 `warpPoint`, `wikiSlug` e `tags` para registrar dados importantes do marcador de
@@ -168,7 +166,11 @@ zona navegavel do mapa, e nao apenas um ponto isolado como NPC, boss, merchant o
 entrada. Esses campos devem continuar no JSON estatico do marcador durante o MVP
 para que sejam faceis de manter.
 
-Nao separe monstros, recursos ou entidades em arquivos/tabelas proprias ainda. Entidades separadas ficam para depois do MVP, quando houver dados suficientes e duplicacao real para justificar a mudanca.
+Do not create additional entity tables during the MVP. Monster metadata is
+already separated in `src/data/monsters.json` because the same monsters appear
+across multiple markers and need normalized level, element, and drop fields.
+Keep resources and interactables embedded until duplication or richer metadata
+justifies another catalog.
 
 ## Busca
 

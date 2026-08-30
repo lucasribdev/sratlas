@@ -7,6 +7,10 @@ Este documento descreve o formato runtime dos dados usados pelo mapa.
 `src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa. A UI
 usa esse arquivo para renderizar marcadores, busca, filtros e popups.
 
+`src/data/monsters.json` is the single source of truth for monster metadata.
+Markers reference monsters by stable monster IDs, and `src/data/markers.ts`
+hydrates those references for runtime UI consumers.
+
 `src/data/maps.json` e apenas um arquivo auxiliar de importacao/metadados da
 imagem do mapa, com `id`, `name`, `imageUrl`, `width` e `height`. Ele nao deve
 guardar entidades, monstros, recursos, interactables ou dados de popup.
@@ -28,16 +32,59 @@ Campos aceitos em cada item de `markers.json`:
 | `area` | Nao | `string` | Regiao usada em filtros e cor visual. |
 | `zoneType` | Nao | `string` | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`. |
 | `level` | Nao | `string` | Nivel recomendado ou nivel da zona. |
-| `monsters` | Nao | `MarkerMonster[]` | Monstros encontrados na zona. |
+| `monsters` | Nao | `string[]` | Stable monster IDs from `src/data/monsters.json`. |
 | `resources` | Nao | `MarkerResourceGroup[]` | Recursos agrupados por tipo de coleta. |
 | `warpPoint` | Nao | `boolean` | Indica ponto de warp. |
 | `wikiSlug` | Nao | `string` | Slug da pagina da wiki do proprio marker. |
 | `interactables` | Nao | `MarkerInteractable[]` | NPCs, objetos ou pontos interativos. |
 | `tags` | Nao | `string[]` | Termos extras de busca. |
 
-## Objetos Ricos
+## Monster Catalog
 
-`monsters`, `resources[].items` e `interactables` usam objetos, nao strings.
+Monster metadata lives in `src/data/monsters.json`.
+
+```json
+{
+  "id": "hopper",
+  "name": "Hopper",
+  "elements": [],
+  "drops": [],
+  "wikiSlug": "Hopper",
+  "image": "Hopper.png/16px-Hopper.png"
+}
+```
+
+| Field | Required | Type | Description |
+| --- | --- | --- | --- |
+| `id` | Yes | `string` | Stable unique ID in `kebab-case`. Markers use this value. |
+| `name` | Yes | `string` | Display name. |
+| `level` | No | `number` | Monster-specific level, when known. Do not infer this from marker zone level. |
+| `elements` | Yes | `string[]` | Normalized stable element IDs for future filtering. Use an empty array when unknown. |
+| `drops` | Yes | `MonsterDrop[]` | Known item or essence drops. Use an empty array when unknown. |
+| `wikiSlug` | No | `string` | Wiki page slug for the monster. |
+| `image` | No | `string` | Wiki thumbnail path for the monster. |
+
+Monster drops use stable IDs instead of display names alone:
+
+```json
+{
+  "id": "minor-earth-essence",
+  "name": "Minor Earth Essence",
+  "type": "essence"
+}
+```
+
+| Field | Required | Type | Description |
+| --- | --- | --- | --- |
+| `id` | Yes | `string` | Stable drop ID in `kebab-case`. |
+| `name` | Yes | `string` | Display name. |
+| `type` | No | `"item" | "essence"` | Drop category when known. |
+
+## Rich Objects
+
+`resources[].items` and `interactables` use rich objects, not strings.
+`monsters` in `markers.json` uses monster ID strings that resolve to rich
+monster objects at runtime.
 
 ```json
 {
@@ -117,13 +164,7 @@ grupo de recurso quando esse dado existir.
   "area": "Outskirts",
   "zoneType": "Surface zone",
   "level": "7",
-  "monsters": [
-    {
-      "name": "Hopper",
-      "wikiSlug": "Hopper",
-      "image": "Hopper.png/16px-Hopper.png"
-    }
-  ],
+  "monsters": ["hopper"],
   "resources": [
     {
       "type": "Mining",
