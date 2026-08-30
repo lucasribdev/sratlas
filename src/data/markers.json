@@ -84,6 +84,11 @@
         "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shepherd.png/16px-Shepherd.png"
       },
       {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      },
+      {
         "name": "???",
         "wikiUrl": "https://soulsremnant.wiki.gg/wiki/%3F%3F%3F",
         "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Placeholder.png/16px-Placeholder.png"
@@ -2413,7 +2418,13 @@
     "warpPoint": true,
     "tags": ["plainslost peak", "level 76", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Lost_Peak",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
+    ]
   },
   {
     "id": "market-hub-entrance",
@@ -3899,7 +3910,13 @@
     "warpPoint": true,
     "tags": ["level 81", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Deep_Ocean_1",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
+    ]
   },
   {
     "id": "deep-ocean-3",
@@ -4451,7 +4468,13 @@
     "warpPoint": true,
     "tags": ["level 50", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_4",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
+    ]
   },
   {
     "id": "desert-3",
@@ -4898,7 +4921,13 @@
     "warpPoint": true,
     "tags": ["level 0", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_8",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
+    ]
   },
   {
     "id": "desert-7",
@@ -5219,7 +5248,13 @@
     "warpPoint": true,
     "tags": ["level 85", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Desert_Coast",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
+    ]
   },
   {
     "id": "pyramid",
@@ -6038,7 +6073,13 @@
     "warpPoint": true,
     "tags": ["level 70", "warp", "warp point"],
     "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Rocky_Path_3",
-    "interactables": []
+    "interactables": [
+      {
+        "name": "Goddess Statue",
+        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Goddess_Statue",
+        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Goddess_Statue.png/16px-Goddess_Statue.png"
+      }
+    ]
   },
   {
     "id": "rocky-path-1",
