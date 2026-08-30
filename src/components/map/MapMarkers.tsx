@@ -169,9 +169,7 @@ function MarkerPopup({ marker }: MarkerPopupProps) {
             </h3>
             <div className="grid gap-1.5">
               {resourceGroups.map((resource, resourceIndex) => {
-                const items = resource.items.filter((item) =>
-                  item.name.trim(),
-                );
+                const items = resource.items.filter((item) => item.name.trim());
 
                 return (
                   <div
