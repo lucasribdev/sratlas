@@ -60,17 +60,22 @@ marcador:
 | `monsters` | Lista rica de monstros encontrados na zona. |
 | `resources` | Grupos de recursos por tipo de coleta. |
 | `warpPoint` | `true` quando a zona tem ponto de warp. Omita quando nao tiver. |
-| `wikiUrl` | Link opcional para a wiki. |
+| `wikiSlug` | Slug opcional da pagina da wiki. |
 | `interactables` | Lista rica de NPCs, objetos ou pontos interativos. |
 | `tags` | Termos extras para melhorar a busca. |
 
 Dados importantes devem entrar em campos estruturados do marcador: `area`,
 `zoneType`, `level`, `monsters`, `resources`, `interactables`, `warpPoint`,
-`wikiUrl` e `tags`.
+`wikiSlug` e `tags`.
 
 Nao use o formato antigo com `monsters` como array de strings nem
 `resources[].items` como array de strings. Esses campos agora guardam objetos
 ricos diretamente no marker.
+
+`wikiSlug` guarda apenas a parte variavel depois de
+`https://soulsremnant.wiki.gg/wiki/`. `image` guarda apenas a parte variavel
+depois de `https://soulsremnant.wiki.gg/images/thumb/`. A UI monta os URLs finais
+com helpers centralizados; nao repita esses prefixos em `markers.json`.
 
 Nao separe NPCs, monstros, itens ou recursos em outros arquivos ainda. Isso fica
 para depois do MVP, quando houver duplicacao real e dados suficientes.
@@ -112,14 +117,14 @@ Formato recomendado:
     "items": [
       {
         "name": "Clam",
-        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
-        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+        "wikiSlug": "Clam",
+        "image": "Clam.png/16px-Clam.png",
         "chancePercent": 62.5
       },
       {
         "name": "Shrimp",
-        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Shrimp",
-        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Shrimp.png/16px-Shrimp.png",
+        "wikiSlug": "Shrimp",
+        "image": "Shrimp.png/16px-Shrimp.png",
         "chancePercent": 21.9
       }
     ]
@@ -129,8 +134,8 @@ Formato recomendado:
     "items": [
       {
         "name": "Stone",
-        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
-        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+        "wikiSlug": "Stone",
+        "image": "Stone.png/16px-Stone.png",
         "chancePercent": 65.2
       }
     ]
@@ -140,8 +145,8 @@ Formato recomendado:
     "items": [
       {
         "name": "Green Herb",
-        "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Green_Herb",
-        "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Green_Herb.png/16px-Green_Herb.png",
+        "wikiSlug": "Green_Herb",
+        "image": "Green_Herb.png/16px-Green_Herb.png",
         "chancePercent": 22.2
       }
     ]
@@ -231,13 +236,13 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
   "monsters": [
     {
       "name": "Mossling",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mossling",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Mossling.png/16px-Mossling.png"
+      "wikiSlug": "Mossling",
+      "image": "Mossling.png/16px-Mossling.png"
     },
     {
       "name": "Elder Wisp",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Elder_Wisp",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Elder_Wisp.png/16px-Elder_Wisp.png"
+      "wikiSlug": "Elder_Wisp",
+      "image": "Elder_Wisp.png/16px-Elder_Wisp.png"
     }
   ],
   "resources": [
@@ -246,8 +251,8 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
       "items": [
         {
           "name": "Trout",
-          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Trout",
-          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Trout.png/16px-Trout.png",
+          "wikiSlug": "Trout",
+          "image": "Trout.png/16px-Trout.png",
           "chancePercent": 15.6
         }
       ]
@@ -257,8 +262,8 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
       "items": [
         {
           "name": "Iron Ore",
-          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Iron_Ore",
-          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Iron_Ore.png/16px-Iron_Ore.png",
+          "wikiSlug": "Iron_Ore",
+          "image": "Iron_Ore.png/16px-Iron_Ore.png",
           "chancePercent": 34.8
         }
       ]
@@ -268,8 +273,8 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
       "items": [
         {
           "name": "Moonleaf",
-          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Moonleaf",
-          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Moonleaf.png/16px-Moonleaf.png",
+          "wikiSlug": "Moonleaf",
+          "image": "Moonleaf.png/16px-Moonleaf.png",
           "chancePercent": 22.2
         }
       ]
@@ -278,12 +283,12 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
   "interactables": [
     {
       "name": "Quest Master",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quest_Master",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Quest_Master.png/16px-Quest_Master.png"
+      "wikiSlug": "Quest_Master",
+      "image": "Quest_Master.png/16px-Quest_Master.png"
     }
   ],
   "warpPoint": true,
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Mistwood_Crossing",
+  "wikiSlug": "Mistwood_Crossing",
   "tags": ["mist wood"]
 }
 ```

@@ -77,6 +77,21 @@ da CLI como `docs`, `view` ou `--dry-run`.
 - Nao adicione efeitos visuais grandes, gradientes decorativos ou blocos de texto
   permanentes sobre o mapa sem necessidade clara.
 
+## Convencoes de scroll
+
+- Use `ScrollArea` para paineis internos do app com altura limitada ou definida,
+  como listas de resultados e opcoes de filtro na sidebar. Isso mantem a barra de
+  rolagem visualmente consistente e contem o gesto dentro do painel.
+- Prefira rolagem nativa da pagina ou do container pai quando o conteudo deve
+  crescer naturalmente com o layout, sem criar uma segunda area de rolagem.
+- Use `overflow-*` diretamente somente para containers estruturais, integracao
+  com bibliotecas externas ou casos em que a primitiva do app atrapalhe o
+  comportamento nativo esperado.
+- Popups do Leaflet continuam usando o limite de altura e o overflow nativo do
+  proprio Leaflet. A biblioteca usa essas medidas para posicionar e auto-ajustar
+  o popup no mapa, entao envolver o conteudo em outro `ScrollArea` pode prejudicar
+  auto-pan, toque e rolagem aninhada.
+
 ## CSS global
 
 `src/index.css` deve continuar enxuto e conter apenas:

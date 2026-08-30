@@ -31,7 +31,7 @@ Campos aceitos em cada item de `markers.json`:
 | `monsters` | Nao | `MarkerMonster[]` | Monstros encontrados na zona. |
 | `resources` | Nao | `MarkerResourceGroup[]` | Recursos agrupados por tipo de coleta. |
 | `warpPoint` | Nao | `boolean` | Indica ponto de warp. |
-| `wikiUrl` | Nao | `string` | Link da wiki para o proprio marker. |
+| `wikiSlug` | Nao | `string` | Slug da pagina da wiki do proprio marker. |
 | `interactables` | Nao | `MarkerInteractable[]` | NPCs, objetos ou pontos interativos. |
 | `tags` | Nao | `string[]` | Termos extras de busca. |
 
@@ -42,16 +42,16 @@ Campos aceitos em cada item de `markers.json`:
 ```json
 {
   "name": "Hopper",
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Hopper",
-  "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Hopper.png/16px-Hopper.png"
+  "wikiSlug": "Hopper",
+  "image": "Hopper.png/16px-Hopper.png"
 }
 ```
 
 ```json
 {
   "name": "Stone",
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
-  "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+  "wikiSlug": "Stone",
+  "image": "Stone.png/16px-Stone.png",
   "chancePercent": 65.2
 }
 ```
@@ -59,8 +59,8 @@ Campos aceitos em cada item de `markers.json`:
 ```json
 {
   "name": "Quest Master",
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quest_Master",
-  "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Quest_Master.png/16px-Quest_Master.png"
+  "wikiSlug": "Quest_Master",
+  "image": "Quest_Master.png/16px-Quest_Master.png"
 }
 ```
 
@@ -72,13 +72,18 @@ Campos aceitos em cada item de `markers.json`:
   "items": [
     {
       "name": "Clam",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Clam",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Clam.png/16px-Clam.png",
+      "wikiSlug": "Clam",
+      "image": "Clam.png/16px-Clam.png",
       "chancePercent": 62.5
     }
   ]
 }
 ```
+
+`wikiSlug` guarda apenas a parte variavel depois de
+`https://soulsremnant.wiki.gg/wiki/`. `image` guarda apenas a parte variavel
+depois de `https://soulsremnant.wiki.gg/images/thumb/`. A UI monta os URLs finais
+com helpers centralizados.
 
 `chancePercent` e opcional e representa a chance percentual do item naquele
 grupo de recurso quando esse dado existir.
@@ -96,7 +101,7 @@ grupo de recurso quando esse dado existir.
   "zoneType": "Surface zone",
   "level": "0",
   "warpPoint": true,
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Spawn_Grounds"
+  "wikiSlug": "Spawn_Grounds"
 }
 ```
 
@@ -115,8 +120,8 @@ grupo de recurso quando esse dado existir.
   "monsters": [
     {
       "name": "Hopper",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Hopper",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Hopper.png/16px-Hopper.png"
+      "wikiSlug": "Hopper",
+      "image": "Hopper.png/16px-Hopper.png"
     }
   ],
   "resources": [
@@ -125,8 +130,8 @@ grupo de recurso quando esse dado existir.
       "items": [
         {
           "name": "Stone",
-          "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Stone",
-          "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Stone.png/16px-Stone.png",
+          "wikiSlug": "Stone",
+          "image": "Stone.png/16px-Stone.png",
           "chancePercent": 65.2
         }
       ]
@@ -135,11 +140,11 @@ grupo de recurso quando esse dado existir.
   "interactables": [
     {
       "name": "Quest Master",
-      "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Quest_Master",
-      "imageUrl": "https://soulsremnant.wiki.gg/images/thumb/Quest_Master.png/16px-Quest_Master.png"
+      "wikiSlug": "Quest_Master",
+      "image": "Quest_Master.png/16px-Quest_Master.png"
     }
   ],
-  "wikiUrl": "https://soulsremnant.wiki.gg/wiki/Outskirts_South",
+  "wikiSlug": "Outskirts_South",
   "tags": ["level 7"]
 }
 ```

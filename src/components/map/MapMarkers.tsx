@@ -11,6 +11,7 @@ import type {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { percentageToLeafletLatLng } from "@/lib/coordinates";
+import { getWikiThumbnailUrl, getWikiUrl } from "@/lib/external-urls";
 import { markerVisualStyle } from "@/lib/marker-style";
 import { cn } from "@/lib/utils";
 
@@ -58,6 +59,8 @@ function markerIcon(style: ReturnType<typeof markerVisualStyle>) {
 }
 
 function PopupEntryRow({ entry }: { entry: PopupEntry }) {
+  const imageUrl = entry.image ? getWikiThumbnailUrl(entry.image) : undefined;
+  const wikiUrl = entry.wikiSlug ? getWikiUrl(entry.wikiSlug) : undefined;
   const label = (
     <span className="min-w-0 flex-1 truncate text-xs leading-5">
       {entry.name}
@@ -66,20 +69,20 @@ function PopupEntryRow({ entry }: { entry: PopupEntry }) {
 
   return (
     <span className="inline-flex min-w-0 max-w-[12rem] items-center gap-1.5 rounded-sm bg-secondary px-1.5 py-0.5 text-secondary-foreground">
-      {entry.imageUrl ? (
+      {imageUrl ? (
         <img
           alt=""
           className="size-4 shrink-0 rounded-[2px] object-contain"
           height={16}
           loading="lazy"
-          src={entry.imageUrl}
+          src={imageUrl}
           width={16}
         />
       ) : null}
-      {entry.wikiUrl ? (
+      {wikiUrl ? (
         <a
           className="min-w-0 flex-1 truncate text-xs leading-5 font-medium text-primary underline-offset-4 hover:underline focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
-          href={entry.wikiUrl}
+          href={wikiUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -101,6 +104,7 @@ function PopupEntryRow({ entry }: { entry: PopupEntry }) {
 }
 
 function MarkerPopup({ marker }: MarkerPopupProps) {
+  const wikiUrl = marker.wikiSlug ? getWikiUrl(marker.wikiSlug) : undefined;
   const monsters =
     marker.monsters?.filter((monster) => monster.name.trim()) ?? [];
   const resourceGroups =
@@ -212,12 +216,12 @@ function MarkerPopup({ marker }: MarkerPopupProps) {
         </>
       ) : null}
 
-      {marker.wikiUrl ? (
+      {wikiUrl ? (
         <>
           <Separator />
           <a
             className="w-fit text-sm font-semibold text-primary underline-offset-4 hover:underline focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
-            href={marker.wikiUrl}
+            href={wikiUrl}
             target="_blank"
             rel="noopener noreferrer"
           >

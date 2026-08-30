@@ -4,14 +4,14 @@ export type PercentageCoordinate = number
 
 export type MarkerMonster = {
   name: string
-  wikiUrl?: string
-  imageUrl?: string
+  wikiSlug?: string
+  image?: string
 }
 
 export type MarkerResourceItem = {
   name: string
-  wikiUrl?: string
-  imageUrl?: string
+  wikiSlug?: string
+  image?: string
   chancePercent?: number
 }
 
@@ -22,8 +22,8 @@ export type MarkerResourceGroup = {
 
 export type MarkerInteractable = {
   name: string
-  wikiUrl?: string
-  imageUrl?: string
+  wikiSlug?: string
+  image?: string
 }
 
 export type MapMarker = {
@@ -38,7 +38,7 @@ export type MapMarker = {
   monsters?: MarkerMonster[]
   resources?: MarkerResourceGroup[]
   warpPoint?: boolean
-  wikiUrl?: string
+  wikiSlug?: string
   interactables?: MarkerInteractable[]
   tags?: string[]
 }
