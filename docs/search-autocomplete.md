@@ -53,7 +53,7 @@ Selection behavior is centralized in `src/lib/search-selection.ts`.
 | Marker | Sets the search query to the marker name and focuses the marker when it is visible under the current area selection. |
 | Area | Sets the search query to the area name. |
 | Monster | Sets the search query to the monster name. |
-| Drop | Sets the search query to the drop item name. |
+| Drop | Sets the search query to the drop item name and returns a structured `monster-drop` filter intent using the canonical drop label. |
 | Item or Essence | Sets the search query to the item name. |
 | Resource | Sets the search query to the resource type, such as `Mining`, `Fishing`, or `Herbalism`. |
 | Interactable | Sets the search query to the interactable name. |
@@ -62,10 +62,25 @@ Autocomplete selection does not change selected areas. Area checkboxes remain
 under direct user control, so suggestions narrow results within the currently
 selected area scope.
 
-Drop, item, and essence selections do not activate a structured item/drop filter
-yet because the current filter system has no structured drop filter. When that
-filter exists, route the selection through the same selection helper instead of
-adding parallel UI logic.
+Free-text input remains plain text search. Typing a drop name does not
+automatically create a structured drop filter; the structured intent is created
+only when the user selects a `Drop` autocomplete entry.
+
+The current structured selection filter is:
+
+```ts
+type SearchSelectionFilter = {
+  type: 'monster-drop'
+  value: string
+}
+```
+
+For drop entries, `value` is the canonical `SearchEntry.label`, not the entry's
+`markerIds`. The filter represents the semantic constraint "monster drops this
+item" while `markerIds` remain autocomplete metadata.
+
+The map does not apply the `monster-drop` filter yet. That will be wired into
+marker filtering in a later issue using the monster-drop domain helpers.
 
 ## Contributor Workflow
 

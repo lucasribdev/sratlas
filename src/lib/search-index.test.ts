@@ -224,6 +224,7 @@ describe('search selection', () => {
 
     expect(selection.searchQuery).toBe('Metal Camp')
     expect(selection.selectedMarkerId).toBe('metal-camp')
+    expect(selection.filter).toBeUndefined()
   })
 
   it('selects a monster without changing selected areas', () => {
@@ -231,14 +232,28 @@ describe('search selection', () => {
     const selection = resolveSearchEntrySelection(monsterEntry)
 
     expect(selection.searchQuery).toBe('Metal Golem')
+    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.filter).toBeUndefined()
     expect(selection).not.toHaveProperty('selectedAreas')
   })
 
-  it('selects an item or essence without changing selected areas', () => {
+  it('selects a resource item without changing selected areas', () => {
+    const itemEntry = findEntry('Stone', 'item')
+    const selection = resolveSearchEntrySelection(itemEntry)
+
+    expect(selection.searchQuery).toBe('Stone')
+    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.filter).toBeUndefined()
+    expect(selection).not.toHaveProperty('selectedAreas')
+  })
+
+  it('selects an essence without changing selected areas', () => {
     const essenceEntry = findEntry('Metal Essence', 'essence')
     const selection = resolveSearchEntrySelection(essenceEntry)
 
     expect(selection.searchQuery).toBe('Metal Essence')
+    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.filter).toBeUndefined()
     expect(selection).not.toHaveProperty('selectedAreas')
   })
 
@@ -247,13 +262,77 @@ describe('search selection', () => {
     const selection = resolveSearchEntrySelection(resourceEntry)
 
     expect(selection.searchQuery).toBe('Mining')
+    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.filter).toBeUndefined()
+  })
+
+  it('selects an area by using it as the search query', () => {
+    const areaEntry = findEntry('Outskirts', 'area')
+    const selection = resolveSearchEntrySelection(areaEntry)
+
+    expect(selection.searchQuery).toBe('Outskirts')
+    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.filter).toBeUndefined()
+  })
+
+  it('selects an interactable by using it as the search query', () => {
+    const interactableEntry = findEntry('Blacksmith', 'interactable')
+    const selection = resolveSearchEntrySelection(interactableEntry)
+
+    expect(selection.searchQuery).toBe('Blacksmith')
+    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.filter).toBeUndefined()
+  })
+
+  it('selects a drop as a structured monster-drop filter intent', () => {
+    const dropEntry = findEntry('Hopper Leg', 'drop')
+    const selection = resolveSearchEntrySelection(dropEntry)
+
+    expect(selection.searchQuery).toBe('Hopper Leg')
+    expect(selection.filter).toEqual({
+      type: 'monster-drop',
+      value: 'Hopper Leg',
+    })
+  })
+
+  it('uses the canonical drop label as the structured filter value', () => {
+    const dropEntry = {
+      ...findEntry('Hopper Leg', 'drop'),
+      label: 'Canonical Hopper Leg',
+      markerIds: ['metal-camp', 'fire-pond'],
+    }
+    const selection = resolveSearchEntrySelection(dropEntry)
+
+    expect(selection.filter).toEqual({
+      type: 'monster-drop',
+      value: 'Canonical Hopper Leg',
+    })
+  })
+
+  it('does not select an arbitrary marker when selecting a drop', () => {
+    const dropEntry = findEntry('Life Essence', 'drop')
+    const selection = resolveSearchEntrySelection(dropEntry)
+
+    expect(dropEntry.markerIds).toEqual(['metal-camp', 'fire-pond'])
+    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.filter).toEqual({
+      type: 'monster-drop',
+      value: 'Life Essence',
+    })
+  })
+
+  it('keeps free-text search outside structured selection handling', () => {
+    const suggestions = getSearchSuggestions(buildSearchIndex(testMarkers), 'hopper leg')
+
+    expect(suggestions[0]).toEqual(
+      expect.objectContaining({ label: 'Hopper Leg', type: 'drop' }),
+    )
   })
 
   it.each([
     ['Outskirts', 'area'],
     ['Metal Golem', 'monster'],
     ['Stone', 'item'],
-    ['Hopper Leg', 'drop'],
     ['Metal Essence', 'essence'],
     ['Mining', 'resource'],
     ['Blacksmith', 'interactable'],
@@ -263,5 +342,21 @@ describe('search selection', () => {
 
     expect(selection.searchQuery).toBe(label)
     expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.filter).toBeUndefined()
+  })
+
+  it.each([
+    ['Metal Camp', 'marker'],
+    ['Outskirts', 'area'],
+    ['Metal Golem', 'monster'],
+    ['Stone', 'item'],
+    ['Metal Essence', 'essence'],
+    ['Mining', 'resource'],
+    ['Blacksmith', 'interactable'],
+  ] as const)('does not create a monster-drop filter for %s %s selections', (label, type) => {
+    const entry = findEntry(label, type)
+    const selection = resolveSearchEntrySelection(entry)
+
+    expect(selection.filter).toBeUndefined()
   })
 })
