@@ -16,7 +16,7 @@ export type SearchSelectionResult = {
 export function resolveSearchEntrySelection(
   entry: SearchEntry,
 ): SearchSelectionResult {
-  const searchQuery = entry.label
+  const searchQuery = entry.type === 'drop' ? '' : entry.label
   let selectedMarkerId: MapMarker['id'] | undefined
   let filter: SearchSelectionFilter | undefined
 

@@ -2,10 +2,12 @@ import { useMemo, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
 import { markers } from "@/data/markers";
 import type { MapMarker } from "@/domain/marker";
-import { markerAreaOptions } from "@/lib/marker-filters";
-import { markerMatchesSearch } from "@/lib/marker-search";
+import { filterMarkers, markerAreaOptions } from "@/lib/marker-filters";
 import { buildSearchIndex, getSearchSuggestions, type SearchEntry } from "@/lib/search-index";
-import { resolveSearchEntrySelection } from "@/lib/search-selection";
+import {
+  resolveSearchEntrySelection,
+  type SearchSelectionFilter,
+} from "@/lib/search-selection";
 import { GameMapView } from "@/components/map/GameMapView";
 import { Button } from "@/components/ui/button";
 import { SearchAutocomplete } from "@/components/search/SearchAutocomplete";
@@ -23,6 +25,7 @@ const searchIndex = buildSearchIndex(markers);
 
 export function AppLayout() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [searchFilter, setSearchFilter] = useState<SearchSelectionFilter>();
   const [selectedAreas, setSelectedAreas] = useState<Set<string>>(
     () => new Set(areaOptions),
   );
@@ -34,11 +37,16 @@ export function AppLayout() {
     [searchQuery],
   );
 
-  const filteredMarkers = markers.filter(
-    (marker) =>
-      markerMatchesSearch(marker, searchQuery) &&
-      (marker.area ? selectedAreas.has(marker.area) : false),
-  );
+  const filteredMarkers = filterMarkers(markers, {
+    searchQuery,
+    selectedAreas,
+    searchFilter,
+  });
+
+  function changeSearchQuery(query: string) {
+    setSearchQuery(query);
+    setSearchFilter(undefined);
+  }
 
   function toggleArea(area: string) {
     setSelectedAreas((currentAreas) => {
@@ -71,6 +79,7 @@ export function AppLayout() {
     const selection = resolveSearchEntrySelection(entry);
 
     setSearchQuery(selection.searchQuery);
+    setSearchFilter(selection.filter);
 
     if (selection.selectedMarkerId) {
       selectMarker(selection.selectedMarkerId);
@@ -87,7 +96,7 @@ export function AppLayout() {
           areaOptions={areaOptions}
           onClearAreas={clearAreas}
           onMarkerSelect={selectMarker}
-          onSearchQueryChange={setSearchQuery}
+          onSearchQueryChange={changeSearchQuery}
           onSearchSuggestionSelect={selectSearchEntry}
           onSelectAllAreas={selectAllAreas}
           onToggleArea={toggleArea}
@@ -111,7 +120,7 @@ export function AppLayout() {
             inputClassName="h-11 !border-border !bg-card text-card-foreground shadow-lg shadow-slate-950/15 placeholder:text-muted-foreground dark:!border-border dark:!bg-card"
             label="Search the map"
             labelClassName="sr-only"
-            onQueryChange={setSearchQuery}
+            onQueryChange={changeSearchQuery}
             onSelect={selectSearchEntry}
             placeholder="Search NPC, resource, monster or area"
             query={searchQuery}
@@ -144,7 +153,7 @@ export function AppLayout() {
                 areaOptions={areaOptions}
                 onClearAreas={clearAreas}
                 onMarkerSelect={selectMarker}
-                onSearchQueryChange={setSearchQuery}
+                onSearchQueryChange={changeSearchQuery}
                 onSearchSuggestionSelect={selectSearchEntry}
                 onSelectAllAreas={selectAllAreas}
                 onToggleArea={toggleArea}

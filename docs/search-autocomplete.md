@@ -53,7 +53,7 @@ Selection behavior is centralized in `src/lib/search-selection.ts`.
 | Marker | Sets the search query to the marker name and focuses the marker when it is visible under the current area selection. |
 | Area | Sets the search query to the area name. |
 | Monster | Sets the search query to the monster name. |
-| Drop | Sets the search query to the drop item name and returns a structured `monster-drop` filter intent using the canonical drop label. |
+| Drop | Clears the free-text search query and returns a structured `monster-drop` filter intent using the canonical drop label. |
 | Item or Essence | Sets the search query to the item name. |
 | Resource | Sets the search query to the resource type, such as `Mining`, `Fishing`, or `Herbalism`. |
 | Interactable | Sets the search query to the interactable name. |
@@ -62,9 +62,21 @@ Autocomplete selection does not change selected areas. Area checkboxes remain
 under direct user control, so suggestions narrow results within the currently
 selected area scope.
 
+Selecting a `Drop` entry now filters visible markers and sidebar results through
+the structured monster-to-drop relationship. For example, selecting `Hopper Leg`
+with the `Drop` type shows only markers containing at least one monster whose
+`drops[]` includes `Hopper Leg`. Area filters continue to compose with this
+constraint, so selected areas and the selected drop use AND semantics.
+
 Free-text input remains plain text search. Typing a drop name does not
 automatically create a structured drop filter; the structured intent is created
 only when the user selects a `Drop` autocomplete entry.
+
+Drop selection intentionally leaves `searchQuery` empty so the result does not
+depend on both plain text search and the structured monster-drop filter. Typing a
+new free-text query or selecting a non-drop autocomplete entry clears the
+temporary structured drop filter. A visible active-filter chip or richer
+lifecycle UI is not implemented yet.
 
 The current structured selection filter is:
 
@@ -78,9 +90,6 @@ type SearchSelectionFilter = {
 For drop entries, `value` is the canonical `SearchEntry.label`, not the entry's
 `markerIds`. The filter represents the semantic constraint "monster drops this
 item" while `markerIds` remain autocomplete metadata.
-
-The map does not apply the `monster-drop` filter yet. That will be wired into
-marker filtering in a later issue using the monster-drop domain helpers.
 
 ## Contributor Workflow
 

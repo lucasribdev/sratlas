@@ -171,8 +171,10 @@ strings. Use objetos ricos com `name` e, quando houver, `wikiSlug`, `image` e
 
 Monsters may optionally include `drops`. Existing monsters do not need this
 field. Each drop is a `MarkerDropItem` with `name`, optional `wikiSlug`,
-optional `image` and optional `chancePercent`. Drop behavior in search, filters
-and popups is planned for later issues; this model only defines the data shape.
+optional `image` and optional `chancePercent`. Monster drops are indexed for
+autocomplete, and selecting a `Drop` autocomplete entry filters visible markers
+through the actual monster-to-drop relationship. Popup rendering for drops is
+planned for a later issue.
 
 Use `area`, `zoneType`, `level`, `monsters`, `resources`, `interactables`,
 `warpPoint`, `wikiSlug` e `tags` para registrar dados importantes do marcador de
@@ -210,6 +212,12 @@ presentes em `markers.json`.
 A busca cobre os campos estruturados dos marcadores, incluindo warp points por
 nome/tag, monstros, tipos de recursos e itens. Nao crie agrupamento visual
 separado para cada monstro ou recurso. Nao separe entidades ainda.
+
+Monster drop autocomplete uses a structured filter separate from free-text
+search. When a user selects a `Drop` result, visible markers must belong to the
+selected areas and contain at least one monster that drops the selected item.
+Typing a drop name manually remains plain free-text search and does not activate
+this structured filter.
 
 ## Estilo visual dos marcadores
 

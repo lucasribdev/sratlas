@@ -288,7 +288,7 @@ describe('search selection', () => {
     const dropEntry = findEntry('Hopper Leg', 'drop')
     const selection = resolveSearchEntrySelection(dropEntry)
 
-    expect(selection.searchQuery).toBe('Hopper Leg')
+    expect(selection.searchQuery).toBe('')
     expect(selection.filter).toEqual({
       type: 'monster-drop',
       value: 'Hopper Leg',
