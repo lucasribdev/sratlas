@@ -4,6 +4,7 @@ export const searchEntryTypes = [
   'marker',
   'area',
   'monster',
+  'drop',
   'item',
   'essence',
   'resource',
@@ -16,15 +17,18 @@ export type SearchEntry = {
   id: string
   label: string
   type: SearchEntryType
+  image?: string
   keywords: string[]
   markerIds: MapMarker['id'][]
   targetId: string
+  wikiSlug?: string
 }
 
 export const searchEntryTypeLabels: Record<SearchEntryType, string> = {
   marker: 'Marker',
   area: 'Area',
   monster: 'Monster',
+  drop: 'Drop',
   item: 'Item',
   essence: 'Essence',
   resource: 'Resource',
@@ -49,8 +53,10 @@ function addEntry(
     label?: string
     type: SearchEntryType
     marker: MapMarker
+    image?: string
     keywords?: Array<string | undefined>
     targetId?: string
+    wikiSlug?: string
   },
 ) {
   const label = input.label?.trim()
@@ -66,8 +72,10 @@ function addEntry(
   )
 
   if (existingEntry) {
+    existingEntry.image ??= input.image
     existingEntry.markerIds.push(input.marker.id)
     existingEntry.keywords.push(...keywords)
+    existingEntry.wikiSlug ??= input.wikiSlug
     return
   }
 
@@ -75,9 +83,11 @@ function addEntry(
     id: key,
     label,
     type: input.type,
+    image: input.image,
     keywords,
     markerIds: [input.marker.id],
     targetId: input.targetId ?? label,
+    wikiSlug: input.wikiSlug,
   })
 }
 
@@ -107,6 +117,17 @@ export function buildSearchIndex(markers: MapMarker[]) {
         marker,
         keywords: [marker.name, monster.wikiSlug],
       })
+
+      for (const drop of monster.drops ?? []) {
+        addEntry(entries, {
+          label: drop.name,
+          type: 'drop',
+          marker,
+          image: drop.image,
+          keywords: [marker.name, monster.name, monster.wikiSlug, drop.wikiSlug],
+          wikiSlug: drop.wikiSlug,
+        })
+      }
     }
 
     for (const interactable of marker.interactables ?? []) {

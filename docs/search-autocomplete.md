@@ -12,6 +12,7 @@ The current searchable entity types are:
 | Marker | `marker.name` |
 | Area | `marker.area` |
 | Monster | `marker.monsters[].name` |
+| Drop | `marker.monsters[].drops[].name` |
 | Item | `marker.resources[].items[].name` |
 | Essence | `marker.resources[].items[].name` when the item name contains `essence` |
 | Resource | `marker.resources[].type` |
@@ -35,9 +36,10 @@ Each search entry contains:
 - lightweight keywords derived from nearby marker context, such as area, zone
   type, resource type, wiki slug, and tags.
 
-Entries with the same type and normalized label are merged, so a monster or item
-that appears in multiple markers produces one suggestion with multiple marker
-targets.
+Entries with the same type and normalized label are merged, so a monster, drop,
+or item that appears in multiple markers produces one suggestion with multiple
+marker targets. Monster drops use the internal `drop` type, which stays distinct
+from resource/gathering items even when the visible item name is the same.
 
 Matching is case-insensitive. Prefix matches are ranked before partial matches.
 The UI shows a limited set of suggestions for the current query.
@@ -51,6 +53,7 @@ Selection behavior is centralized in `src/lib/search-selection.ts`.
 | Marker | Sets the search query to the marker name and focuses the marker when it is visible under the current area selection. |
 | Area | Sets the search query to the area name. |
 | Monster | Sets the search query to the monster name. |
+| Drop | Sets the search query to the drop item name. |
 | Item or Essence | Sets the search query to the item name. |
 | Resource | Sets the search query to the resource type, such as `Mining`, `Fishing`, or `Herbalism`. |
 | Interactable | Sets the search query to the interactable name. |
@@ -59,9 +62,10 @@ Autocomplete selection does not change selected areas. Area checkboxes remain
 under direct user control, so suggestions narrow results within the currently
 selected area scope.
 
-Item and essence selections do not activate a drop filter yet because the current
-filter system has no structured drop filter. When that filter exists, route the
-selection through the same selection helper instead of adding parallel UI logic.
+Drop, item, and essence selections do not activate a structured item/drop filter
+yet because the current filter system has no structured drop filter. When that
+filter exists, route the selection through the same selection helper instead of
+adding parallel UI logic.
 
 ## Contributor Workflow
 
@@ -69,6 +73,7 @@ To make a new entity searchable, add it to the structured marker data:
 
 - Add a location with `name`, `area`, `zoneType`, and optional `tags`.
 - Add monsters to `monsters[]` as objects with `name`.
+- Add monster drops to `monsters[].drops[]` as objects with `name`.
 - Add resource items to `resources[].items[]` as objects with `name`.
 - Add NPCs or objects to `interactables[]` as objects with `name`.
 - Use `resources[].type` for resource categories such as `Fishing`, `Mining`,

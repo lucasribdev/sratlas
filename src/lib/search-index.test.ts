@@ -17,7 +17,24 @@ const testMarkers: MapMarker[] = [
     y: 20,
     area: 'Outskirts',
     zoneType: 'Surface zone',
-    monsters: [{ name: 'Metal Golem' }],
+    monsters: [
+      {
+        name: 'Metal Golem',
+        wikiSlug: 'Metal_Golem',
+        drops: [
+          {
+            name: 'Hopper Leg',
+            wikiSlug: 'Hopper_Leg',
+            image: 'Hopper_Leg.png/16px-Hopper_Leg.png',
+          },
+          { name: 'Stone' },
+        ],
+      },
+      {
+        name: 'Ore Imp',
+        drops: [{ name: 'Stone' }, { name: 'Life Essence' }],
+      },
+    ],
     resources: [
       {
         type: 'Mining',
@@ -34,6 +51,12 @@ const testMarkers: MapMarker[] = [
     y: 40,
     area: 'Ashen Hollow',
     zoneType: 'Lake',
+    monsters: [
+      {
+        name: 'Ember Wolf',
+        drops: [{ name: 'Life Essence' }],
+      },
+    ],
     resources: [
       {
         type: 'Fishing',
@@ -64,6 +87,7 @@ describe('search index', () => {
         expect.objectContaining({ label: 'Metal Camp', type: 'marker' }),
         expect.objectContaining({ label: 'Outskirts', type: 'area' }),
         expect.objectContaining({ label: 'Metal Golem', type: 'monster' }),
+        expect.objectContaining({ label: 'Hopper Leg', type: 'drop' }),
         expect.objectContaining({ label: 'Metal Essence', type: 'essence' }),
         expect.objectContaining({ label: 'Stone', type: 'item' }),
         expect.objectContaining({ label: 'Mining', type: 'resource' }),
@@ -76,6 +100,53 @@ describe('search index', () => {
     const suggestions = getSearchSuggestions(buildSearchIndex(testMarkers), 'metal golem')
 
     expect(suggestions[0]).toEqual(expect.objectContaining({ label: 'Metal Golem' }))
+  })
+
+  it('indexes monster drops as distinct drop entries', () => {
+    const entry = findEntry('Hopper Leg', 'drop')
+
+    expect(entry).toEqual(
+      expect.objectContaining({
+        label: 'Hopper Leg',
+        type: 'drop',
+        image: 'Hopper_Leg.png/16px-Hopper_Leg.png',
+        wikiSlug: 'Hopper_Leg',
+      }),
+    )
+  })
+
+  it('indexes monster drops without optional metadata', () => {
+    const entry = findEntry('Stone', 'drop')
+
+    expect(entry).toEqual(
+      expect.objectContaining({
+        label: 'Stone',
+        type: 'drop',
+        markerIds: ['metal-camp'],
+      }),
+    )
+    expect(entry.image).toBeUndefined()
+    expect(entry.wikiSlug).toBeUndefined()
+  })
+
+  it('merges duplicate monster drops across markers and aggregates marker ids', () => {
+    const entry = findEntry('Life Essence', 'drop')
+
+    expect(entry.markerIds).toEqual(['metal-camp', 'fire-pond'])
+  })
+
+  it('does not duplicate marker ids for repeated drops in one marker', () => {
+    const entry = findEntry('Stone', 'drop')
+
+    expect(entry.markerIds).toEqual(['metal-camp'])
+  })
+
+  it('matches monster drops with existing normalization rules', () => {
+    const suggestions = getSearchSuggestions(buildSearchIndex(testMarkers), '  HOPPER   LEG  ')
+
+    expect(suggestions[0]).toEqual(
+      expect.objectContaining({ label: 'Hopper Leg', type: 'drop' }),
+    )
   })
 
   it('prefers prefix matches before partial matches', () => {
@@ -95,7 +166,43 @@ describe('search index', () => {
 
   it('exposes search result type labels', () => {
     expect(searchEntryTypeLabels.monster).toBe('Monster')
+    expect(searchEntryTypeLabels.drop).toBe('Drop')
     expect(searchEntryTypeLabels.essence).toBe('Essence')
+  })
+
+  it('keeps existing monster indexing unchanged', () => {
+    const entry = findEntry('Metal Golem', 'monster')
+
+    expect(entry).toEqual(
+      expect.objectContaining({
+        label: 'Metal Golem',
+        type: 'monster',
+        markerIds: ['metal-camp'],
+      }),
+    )
+  })
+
+  it('keeps existing resource item indexing unchanged', () => {
+    const entry = findEntry('Stone', 'item')
+
+    expect(entry).toEqual(
+      expect.objectContaining({
+        label: 'Stone',
+        type: 'item',
+        markerIds: ['metal-camp'],
+      }),
+    )
+  })
+
+  it('keeps resource items and monster drops with the same name distinguishable', () => {
+    const entries = buildSearchIndex(testMarkers).filter((entry) => entry.label === 'Stone')
+
+    expect(entries).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ label: 'Stone', type: 'item' }),
+        expect.objectContaining({ label: 'Stone', type: 'drop' }),
+      ]),
+    )
   })
 
   it('returns no suggestions for empty results', () => {
@@ -146,6 +253,7 @@ describe('search selection', () => {
     ['Outskirts', 'area'],
     ['Metal Golem', 'monster'],
     ['Stone', 'item'],
+    ['Hopper Leg', 'drop'],
     ['Metal Essence', 'essence'],
     ['Mining', 'resource'],
     ['Blacksmith', 'interactable'],
