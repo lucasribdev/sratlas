@@ -78,6 +78,21 @@ new free-text query or selecting a non-drop autocomplete entry clears the
 temporary structured drop filter. A visible active-filter chip or richer
 lifecycle UI is not implemented yet.
 
+## Monster Drop Filter Lifecycle
+
+The MVP supports at most one active `monster-drop` filter.
+
+- Selecting a `Drop` autocomplete entry activates a structured `monster-drop`
+  filter with the canonical drop label.
+- Selecting another `Drop` entry replaces the previous drop filter.
+- Manually typing or clearing a free-text search query clears the drop filter, so
+  a hidden structured constraint cannot silently limit a new search.
+- Selecting a non-drop autocomplete entry clears the previous drop filter and
+  then applies that entry's normal behavior.
+- Area filter changes do not clear the drop filter, and drop selection does not
+  mutate selected areas. Area selections compose independently with drop
+  filtering.
+
 The current structured selection filter is:
 
 ```ts

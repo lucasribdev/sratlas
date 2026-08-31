@@ -394,7 +394,14 @@
       {
         "name": "Slime",
         "wikiSlug": "Slime",
-        "image": "Slime.png/16px-Slime.png"
+        "image": "Slime.png/16px-Slime.png",
+        "drops": [
+          {
+            "name": "Slime Gel",
+            "wikiSlug": "Slime_Gel",
+            "image": "Slime_Gel.png/16px-Slime_Gel.png"
+          }
+        ]
       }
     ],
     "resources": [

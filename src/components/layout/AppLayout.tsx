@@ -5,6 +5,7 @@ import type { MapMarker } from "@/domain/marker";
 import { filterMarkers, markerAreaOptions } from "@/lib/marker-filters";
 import { buildSearchIndex, getSearchSuggestions, type SearchEntry } from "@/lib/search-index";
 import {
+  resolveSearchQueryChange,
   resolveSearchEntrySelection,
   type SearchSelectionFilter,
 } from "@/lib/search-selection";
@@ -44,8 +45,10 @@ export function AppLayout() {
   });
 
   function changeSearchQuery(query: string) {
-    setSearchQuery(query);
-    setSearchFilter(undefined);
+    const transition = resolveSearchQueryChange(query);
+
+    setSearchQuery(transition.searchQuery);
+    setSearchFilter(transition.filter);
   }
 
   function toggleArea(area: string) {

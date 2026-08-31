@@ -128,8 +128,8 @@ Use `drops` inside a monster only when known drop data is available:
 ```
 
 Do not add placeholder drops, empty chance values or separate drop datasets for
-the MVP. Search, filtering and popup rendering for monster drops are planned for
-later issues and are not current behavior.
+the MVP. Search autocomplete and structured filtering already use monster drops;
+popup rendering for drops is planned for a later issue.
 
 ## Recursos
 

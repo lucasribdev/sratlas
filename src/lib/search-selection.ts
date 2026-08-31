@@ -13,6 +13,18 @@ export type SearchSelectionResult = {
   filter?: SearchSelectionFilter
 }
 
+export type SearchQueryChangeResult = {
+  searchQuery: string
+  filter?: SearchSelectionFilter
+}
+
+export function resolveSearchQueryChange(query: string): SearchQueryChangeResult {
+  return {
+    searchQuery: query,
+    filter: undefined,
+  }
+}
+
 export function resolveSearchEntrySelection(
   entry: SearchEntry,
 ): SearchSelectionResult {
