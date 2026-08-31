@@ -43,7 +43,15 @@ Campos aceitos em cada item de `markers.json`:
 {
   "name": "Hopper",
   "wikiSlug": "Hopper",
-  "image": "Hopper.png/16px-Hopper.png"
+  "image": "Hopper.png/16px-Hopper.png",
+  "drops": [
+    {
+      "name": "Hopper Leg",
+      "wikiSlug": "Hopper_Leg",
+      "image": "Hopper_Leg.png/16px-Hopper_Leg.png",
+      "chancePercent": 12.5
+    }
+  ]
 }
 ```
 
@@ -87,6 +95,39 @@ com helpers centralizados.
 
 `chancePercent` e opcional e representa a chance percentual do item naquele
 grupo de recurso quando esse dado existir.
+
+## Monster Drops
+
+`MarkerMonster` may optionally include `drops`. Existing monsters do not need a
+`drops` field; omitting it is valid and keeps current `markers.json` data
+backward compatible.
+
+Each drop uses `MarkerDropItem`:
+
+| Field | Required | Type | Description |
+| --- | --- | --- | --- |
+| `name` | Yes | `string` | Display name of the dropped item. |
+| `wikiSlug` | No | `string` | Optional wiki slug for the dropped item. |
+| `image` | No | `string` | Optional wiki thumbnail path for the dropped item. |
+| `chancePercent` | No | `number` | Optional drop chance percentage when known. |
+
+Example:
+
+```json
+{
+  "name": "Hopper",
+  "wikiSlug": "Hopper",
+  "image": "Hopper.png/16px-Hopper.png",
+  "drops": [
+    {
+      "name": "Hopper Leg",
+      "wikiSlug": "Hopper_Leg",
+      "image": "Hopper_Leg.png/16px-Hopper_Leg.png",
+      "chancePercent": 12.5
+    }
+  ]
+}
+```
 
 ## Marker Basico
 

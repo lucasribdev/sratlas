@@ -2,10 +2,18 @@ import type { GameMap } from './map'
 
 export type PercentageCoordinate = number
 
+export type MarkerDropItem = {
+  name: string
+  wikiSlug?: string
+  image?: string
+  chancePercent?: number
+}
+
 export type MarkerMonster = {
   name: string
   wikiSlug?: string
   image?: string
+  drops?: MarkerDropItem[]
 }
 
 export type MarkerResourceItem = {

@@ -72,6 +72,12 @@ Nao use o formato antigo com `monsters` como array de strings nem
 `resources[].items` como array de strings. Esses campos agora guardam objetos
 ricos diretamente no marker.
 
+Monsters may optionally include a `drops` array. Existing monster entries do not
+need `drops`; omit it when drop data is unknown or not yet collected. Each drop
+item must have `name` and may include `wikiSlug`, `image` and `chancePercent`.
+`chancePercent` is optional and should only be added when the drop chance is
+known.
+
 `wikiSlug` guarda apenas a parte variavel depois de
 `https://soulsremnant.wiki.gg/wiki/`. `image` guarda apenas a parte variavel
 depois de `https://soulsremnant.wiki.gg/images/thumb/`. A UI monta os URLs finais
@@ -98,6 +104,32 @@ Regras:
 - nao adicione `color`, `markerColor` ou campos parecidos em `markers.json`;
 - marcadores de areas sem cadastro de cor usam fallback neutro;
 - `warpPoint: true` adiciona anel/borda extra ao marcador.
+
+## Monster Drops
+
+Use `drops` inside a monster only when known drop data is available:
+
+```json
+"monsters": [
+  {
+    "name": "Hopper",
+    "wikiSlug": "Hopper",
+    "image": "Hopper.png/16px-Hopper.png",
+    "drops": [
+      {
+        "name": "Hopper Leg",
+        "wikiSlug": "Hopper_Leg",
+        "image": "Hopper_Leg.png/16px-Hopper_Leg.png",
+        "chancePercent": 12.5
+      }
+    ]
+  }
+]
+```
+
+Do not add placeholder drops, empty chance values or separate drop datasets for
+the MVP. Search, filtering and popup rendering for monster drops are planned for
+later issues and are not current behavior.
 
 ## Recursos
 

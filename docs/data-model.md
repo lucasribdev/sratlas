@@ -96,7 +96,15 @@ veja o [Schema dos dados](./data-schema.md).
     {
       "name": "Ironfang",
       "wikiSlug": "Ironfang",
-      "image": "Ironfang.png/16px-Ironfang.png"
+      "image": "Ironfang.png/16px-Ironfang.png",
+      "drops": [
+        {
+          "name": "Iron Fang",
+          "wikiSlug": "Iron_Fang",
+          "image": "Iron_Fang.png/16px-Iron_Fang.png",
+          "chancePercent": 12.5
+        }
+      ]
     }
   ],
   "resources": [
@@ -160,6 +168,11 @@ Formato recomendado para `resources`:
 `monsters`, `resources[].items` e `interactables` nao devem ser arrays de
 strings. Use objetos ricos com `name` e, quando houver, `wikiSlug`, `image` e
 `chancePercent` nos itens de recurso.
+
+Monsters may optionally include `drops`. Existing monsters do not need this
+field. Each drop is a `MarkerDropItem` with `name`, optional `wikiSlug`,
+optional `image` and optional `chancePercent`. Drop behavior in search, filters
+and popups is planned for later issues; this model only defines the data shape.
 
 Use `area`, `zoneType`, `level`, `monsters`, `resources`, `interactables`,
 `warpPoint`, `wikiSlug` e `tags` para registrar dados importantes do marcador de
