@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export type ThemePreference = "light" | "dark" | "system";
-export type ResolvedTheme = "light" | "dark";
+type EffectiveTheme = "light" | "dark";
 
 export const THEME_STORAGE_KEY = "srw-theme";
 
@@ -11,7 +11,7 @@ function isThemePreference(value: unknown): value is ThemePreference {
   return typeof value === "string" && themeOptions.includes(value as ThemePreference);
 }
 
-function getSystemTheme(): ResolvedTheme {
+function getSystemTheme(): EffectiveTheme {
   if (
     typeof window !== "undefined" &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -36,7 +36,7 @@ function getStoredTheme(): ThemePreference {
   }
 }
 
-function resolveTheme(theme: ThemePreference): ResolvedTheme {
+function resolveTheme(theme: ThemePreference): EffectiveTheme {
   return theme === "system" ? getSystemTheme() : theme;
 }
 
@@ -45,24 +45,20 @@ function applyTheme(theme: ThemePreference) {
     return;
   }
 
-  const resolvedTheme = resolveTheme(theme);
+  const effectiveTheme = resolveTheme(theme);
 
-  document.documentElement.classList.toggle("dark", resolvedTheme === "dark");
-  document.documentElement.style.colorScheme = resolvedTheme;
+  document.documentElement.classList.toggle("dark", effectiveTheme === "dark");
+  document.documentElement.style.colorScheme = effectiveTheme;
 }
 
 export function useTheme() {
   const [theme, setThemeState] = useState<ThemePreference>(getStoredTheme);
-  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>(() =>
-    resolveTheme(getStoredTheme()),
-  );
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
     function syncTheme() {
       applyTheme(theme);
-      setResolvedTheme(resolveTheme(theme));
     }
 
     syncTheme();
@@ -85,7 +81,6 @@ export function useTheme() {
   }
 
   return {
-    resolvedTheme,
     setTheme,
     theme,
   };
