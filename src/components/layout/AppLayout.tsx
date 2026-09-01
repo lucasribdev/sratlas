@@ -1,7 +1,10 @@
 import { useMemo, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
+import { maps } from "@/data/maps";
 import { markers } from "@/data/markers";
+import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
+import { defaultMapId, resolveActiveMap } from "@/lib/map-selection";
 import { markerAreaOptions } from "@/lib/marker-filters";
 import { markerMatchesSearch } from "@/lib/marker-search";
 import { buildSearchIndex, getSearchSuggestions, type SearchEntry } from "@/lib/search-index";
@@ -22,12 +25,14 @@ const areaOptions = markerAreaOptions(markers);
 const searchIndex = buildSearchIndex(markers);
 
 export function AppLayout() {
+  const [activeMapId] = useState<GameMap["id"]>(defaultMapId);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedAreas, setSelectedAreas] = useState<Set<string>>(
     () => new Set(areaOptions),
   );
   const [selectedMarkerId, setSelectedMarkerId] = useState<MapMarker["id"]>();
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
+  const activeMap = resolveActiveMap(maps, activeMapId);
 
   const searchSuggestions = useMemo(
     () => getSearchSuggestions(searchIndex, searchQuery),
@@ -158,6 +163,7 @@ export function AppLayout() {
         </div>
 
         <GameMapView
+          activeMap={activeMap}
           markers={filteredMarkers}
           onMarkerSelect={selectMarker}
           selectedMarkerId={selectedMarkerId}
