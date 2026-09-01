@@ -1,279 +1,281 @@
-# Milestones e Issues
+# Milestones and Issues
 
-Backlog inicial para construir o MVP do mapa interativo de Soul's Remnant.
+Initial backlog for building the Soul's Remnant interactive map MVP.
 
-## Milestone 1: Base do projeto
+## Milestone 1: Project Foundation
 
-Objetivo: preparar a aplicacao para receber o mapa real, dados e componentes principais.
-
-### Issues
-
-#### 1. Limpar template inicial do Vite
-
-Remover tela, assets e estilos padrao do Vite.
-
-Status: MVP
-
-#### 2. Definir estrutura inicial de pastas
-
-Criar estrutura para componentes, dados, tipos de dominio e utilitarios.
-
-Status: MVP
-
-#### 3. Instalar dependencias do mapa
-
-Adicionar Leaflet e React Leaflet.
-
-Status: MVP
-
-#### 4. Criar layout base da aplicacao
-
-Criar estrutura com sidebar, area do mapa e comportamento responsivo inicial.
-
-Status: MVP
-
-## Milestone 2: Mapa navegavel
-
-Objetivo: exibir a imagem do mapa do jogo com pan e zoom.
+Goal: prepare the application for the real map, data, and primary components.
 
 ### Issues
 
-#### 5. Adicionar imagem inicial do mapa
+#### 1. Clean Up the Initial Vite Template
 
-Adicionar a imagem em `public/maps/`.
-
-Status: MVP
-
-#### 6. Renderizar mapa com Leaflet
-
-Configurar Leaflet para usar imagem estatica e sistema de coordenadas simples.
+Remove the default Vite screen, assets, and styles.
 
 Status: MVP
 
-#### 7. Ajustar limites, zoom minimo e zoom maximo
+#### 2. Define the Initial Folder Structure
 
-Impedir que o usuario se perca fora da area util do mapa.
-
-Status: MVP
-
-#### 8. Criar utilitario de conversao de coordenadas
-
-Converter coordenadas percentuais dos dados para coordenadas usadas pelo Leaflet.
+Create a structure for components, data, domain types, and utilities.
 
 Status: MVP
 
-## Milestone 3: Dados e marcadores
+#### 3. Install Map Dependencies
 
-Objetivo: carregar metadados de areas, mapas e marcadores a partir de JSON estatico.
+Add Leaflet and React Leaflet.
+
+Status: MVP
+
+#### 4. Create the Base Application Layout
+
+Create the structure for the sidebar, map area, and initial responsive behavior.
+
+Status: MVP
+
+## Milestone 2: Navigable Map
+
+Goal: display the game map image with pan and zoom.
 
 ### Issues
 
-#### 9. Criar `maps.json`
+#### 5. Add the Initial Map Image
 
-Definir o mapa inicial, imagem e dimensoes.
-
-Status: MVP
-
-#### 10. Criar `areas.json` e definir regra visual dos marcadores
-
-Definir a cor base de cada marcador a partir dos metadados de `marker.area` em
-`areas.json`, com fallback neutro. `warpPoint: true` deve apenas adicionar o
-anel/borda visual apropriado, sem alterar a cor base.
+Add the image to `public/maps/`.
 
 Status: MVP
 
-#### 11. Criar `markers.json`
+#### 6. Render the Map with Leaflet
 
-Adicionar conjunto inicial de marcadores reais ou placeholders controlados.
-
-Status: MVP
-
-#### 12. Criar tipos TypeScript para dados
-
-Tipar areas, mapas e marcadores.
+Configure Leaflet to use a static image and a simple coordinate system.
 
 Status: MVP
 
-#### 13. Renderizar marcadores no mapa
+#### 7. Set Bounds and Minimum and Maximum Zoom
 
-Exibir marcadores usando dados do JSON.
-
-Status: MVP
-
-#### 14. Criar popup de marcador
-
-Mostrar nome, area, dados estruturados do marcador e link da wiki.
+Prevent users from getting lost outside the useful map area.
 
 Status: MVP
 
-## Milestone 4: Busca e filtros
+#### 8. Create a Coordinate Conversion Utility
 
-Objetivo: permitir que jogadores encontrem rapidamente pontos importantes.
+Convert percentage coordinates from the data into coordinates used by Leaflet.
+
+Status: MVP
+
+## Milestone 3: Data and Markers
+
+Goal: load area, map, and marker metadata from static JSON data.
 
 ### Issues
 
-#### 15. Criar filtros por area
+#### 9. Create `maps.json`
 
-Permitir filtrar os marcadores pelos valores de area/regiao presentes nos dados,
-ordenados conforme os metadados de `areas.json`.
-
-Status: MVP
-
-#### 16. Criar busca por texto
-
-Buscar por nome, area, tipo de zona, tags, monstros, recursos e interactables.
+Define the initial map, image, and dimensions.
 
 Status: MVP
 
-#### 17. Criar lista de resultados
+#### 10. Create `areas.json` and Define the Marker Styling Rule
 
-Mostrar marcadores filtrados em uma lista lateral.
-
-Status: MVP
-
-#### 18. Centralizar marcador selecionado
-
-Ao clicar em resultado ou marcador, mover o mapa para o ponto escolhido.
+Derive each marker's base color from the metadata for `marker.area` in
+`areas.json`, with a neutral fallback. `warpPoint: true` must only add the
+appropriate visual ring or border without changing the base color.
 
 Status: MVP
 
-#### 19. Tratar estado vazio
+#### 11. Create `markers.json`
 
-Mostrar mensagem simples quando nenhum marcador corresponder a busca/filtros.
+Add the initial set of real markers or controlled placeholders.
 
 Status: MVP
 
-## Milestone 5: UX e responsividade
+#### 12. Create TypeScript Types for the Data
 
-Objetivo: deixar a experiencia utilizavel em desktop e mobile.
+Type areas, maps, and markers.
+
+Status: MVP
+
+#### 13. Render Markers on the Map
+
+Display markers using the JSON data.
+
+Status: MVP
+
+#### 14. Create the Marker Popup
+
+Show the name, area, structured marker data, and wiki link.
+
+Status: MVP
+
+## Milestone 4: Search and Filters
+
+Goal: let players quickly find important points.
 
 ### Issues
 
-#### 20. Ajustar layout desktop
+#### 15. Create Area Filters
 
-Garantir sidebar legivel e mapa ocupando o espaco principal.
-
-Status: MVP
-
-#### 21. Ajustar layout mobile
-
-Criar experiencia simples com busca no topo e filtros acessiveis.
+Allow markers to be filtered by the area or region values in the data, ordered
+according to the metadata in `areas.json`.
 
 Status: MVP
 
-#### 22. Melhorar estados visuais dos marcadores
+#### 16. Create Text Search
 
-Diferenciar marcador normal, hover e selecionado.
-
-Status: MVP
-
-#### 23. Melhorar acessibilidade basica
-
-Garantir labels, foco de teclado e contraste aceitavel.
+Search by name, area, zone type, tags, monsters, resources, and interactables.
 
 Status: MVP
 
-## Milestone 6: Preparacao para lancamento
+#### 17. Create the Results List
 
-Objetivo: validar a primeira versao e deixar claro como manter dados.
+Show filtered markers in a sidebar list.
+
+Status: MVP
+
+#### 18. Center the Selected Marker
+
+When a user clicks a result or marker, move the map to the selected point.
+
+Status: MVP
+
+#### 19. Handle the Empty State
+
+Show a simple message when no marker matches the search and filters.
+
+Status: MVP
+
+## Milestone 5: UX and Responsiveness
+
+Goal: make the experience usable on desktop and mobile.
 
 ### Issues
 
-#### 24. Criar guia para adicionar marcadores
+#### 20. Refine the Desktop Layout
 
-Documentar como editar `markers.json` e como calcular coordenadas.
-
-Status: MVP
-
-#### 25. Validar dados iniciais
-
-Checar IDs duplicados, coordenadas fora de faixa e campos obrigatorios ausentes.
+Ensure that the sidebar is readable and the map occupies the main space.
 
 Status: MVP
 
-#### 26. Testar fluxo principal
+#### 21. Refine the Mobile Layout
 
-Validar abrir mapa, buscar, filtrar, clicar em marcador e abrir wiki.
-
-Status: MVP
-
-#### 27. Rodar build e lint
-
-Garantir que `pnpm build` e `pnpm lint` passam.
+Create a simple experience with search at the top and accessible filters.
 
 Status: MVP
 
-#### 28. Revisar escopo final do MVP
+#### 22. Improve Marker Visual States
 
-Confirmar que nada fora do MVP foi adicionado, incluindo backend, login, painel
-administrativo e sincronizacao automatica com a wiki.
+Differentiate normal, hover, and selected markers.
 
 Status: MVP
 
-## Depois do MVP
+#### 23. Improve Basic Accessibility
 
-Itens para nao entrar na primeira entrega.
+Provide labels, keyboard focus, and acceptable contrast.
 
-### Issues futuras
+Status: MVP
 
-#### 29. Adicionar clustering de marcadores
+## Milestone 6: Release Preparation
 
-Status: Depois do MVP
+Goal: validate the first version and clearly document how to maintain its data.
 
-#### 30. Adicionar busca fuzzy com Fuse.js
+### Issues
 
-Status: Depois do MVP
+#### 24. Create a Guide for Adding Markers
 
-#### 31. Criar URLs compartilhaveis para marcador selecionado
+Document how to edit `markers.json` and calculate coordinates.
 
-Status: Depois do MVP
+Status: MVP
 
-#### 32. Criar painel administrativo simples
+#### 25. Validate the Initial Data
 
-Status: Depois do MVP
+Check for duplicate IDs, out-of-range coordinates, and missing required fields.
 
-#### 33. Criar editor visual de coordenadas
+Status: MVP
 
-Status: Depois do MVP
+#### 26. Test the Primary Flow
 
-#### 34. Separar entidades de marcadores
+Verify opening the map, searching, filtering, clicking a marker, and opening the
+wiki.
 
-Status: Depois do MVP
+Status: MVP
 
-#### 35. Adicionar relacoes com drops, quests e itens
+#### 27. Run Build and Lint
 
-Status: Depois do MVP
+Ensure that `pnpm build` and `pnpm lint` pass.
 
-#### 36. Integrar melhor com a wiki
+Status: MVP
 
-Status: Depois do MVP
+#### 28. Review the Final MVP Scope
 
-#### 37. Adicionar favoritos
+Confirm that nothing outside the MVP was added, including a backend, login, an
+admin panel, or automatic wiki synchronization.
 
-Status: Opcional
+Status: MVP
 
-#### 38. Adicionar comentarios ou notas da comunidade
+## Post-MVP
 
-Status: Opcional
+Items that must not be included in the first release.
 
-## Ordem recomendada
+### Future Issues
 
-1. Base do projeto
-2. Mapa navegavel
-3. Dados e marcadores
-4. Busca e filtros
-5. UX e responsividade
-6. Preparacao para lancamento
+#### 29. Add Marker Clustering
 
-## Menor versao lancavel
+Status: Post-MVP
 
-Para lancar o quanto antes, conclua apenas:
+#### 30. Add Fuzzy Search with Fuse.js
 
-- issues 1 a 4;
-- issues 5 a 8;
-- issues 9 a 14;
-- issues 15, 16, 18 e 19;
-- issues 20, 21 e 23;
-- issues 24 a 28.
+Status: Post-MVP
 
-A issue 17, lista de resultados, agrega bastante valor, mas pode ser cortada se for necessario lancar uma versao ainda menor.
+#### 31. Create Shareable URLs for the Selected Marker
+
+Status: Post-MVP
+
+#### 32. Create a Simple Admin Panel
+
+Status: Post-MVP
+
+#### 33. Create a Visual Coordinate Editor
+
+Status: Post-MVP
+
+#### 34. Separate Entities from Markers
+
+Status: Post-MVP
+
+#### 35. Add Relationships with Drops, Quests, and Items
+
+Status: Post-MVP
+
+#### 36. Improve Wiki Integration
+
+Status: Post-MVP
+
+#### 37. Add Favorites
+
+Status: Optional
+
+#### 38. Add Comments or Community Notes
+
+Status: Optional
+
+## Recommended Order
+
+1. Project foundation
+2. Navigable map
+3. Data and markers
+4. Search and filters
+5. UX and responsiveness
+6. Release preparation
+
+## Smallest Releasable Version
+
+To release as soon as possible, complete only:
+
+- issues 1 through 4;
+- issues 5 through 8;
+- issues 9 through 14;
+- issues 15, 16, 18, and 19;
+- issues 20, 21, and 23;
+- issues 24 through 28.
+
+Issue 17, the results list, adds significant value but can be cut if an even
+smaller release is necessary.

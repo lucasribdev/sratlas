@@ -1,43 +1,43 @@
-# Schema dos Dados
+# Data Schema
 
-Este documento descreve o formato runtime dos dados usados pelo mapa.
+This document describes the runtime data format used by the map.
 
-## Fonte Runtime
+## Runtime Source of Truth
 
-`src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa. A UI
-usa esse arquivo para renderizar marcadores, busca, filtros e popups.
+`src/data/markers.json` is the runtime source of truth for map data. The UI uses
+this file to render markers, search results, filters, and popups.
 
-`src/data/maps.json` e apenas um arquivo auxiliar de importacao/metadados da
-imagem do mapa, com `id`, `name`, `imageUrl`, `width` e `height`. Ele nao deve
-guardar entidades, monstros, recursos, interactables ou dados de popup.
+`src/data/maps.json` is only an import and base-image metadata helper containing
+`id`, `name`, `imageUrl`, `width`, and `height`. It must not contain entities,
+monsters, resources, interactables, or popup data.
 
-Backend, login, painel administrativo e sincronizacao automatica com a wiki
-continuam fora do MVP.
+A backend, login, an admin panel, and automatic wiki synchronization remain out
+of scope for the MVP.
 
 ## Marker
 
-Campos aceitos em cada item de `markers.json`:
+Fields accepted by each item in `markers.json`:
 
-| Campo           | Obrigatorio | Tipo                    | Descricao                                               |
-| --------------- | ----------- | ----------------------- | ------------------------------------------------------- |
-| `id`            | Sim         | `string`                | Identificador unico em `kebab-case`.                    |
-| `name`          | Sim         | `string`                | Nome exibido para o jogador.                            |
-| `mapId`         | Sim         | `string`                | Id do mapa auxiliar, por exemplo `world`.               |
-| `x`             | Sim         | `number`                | Coordenada horizontal percentual, de `0` a `100`.       |
-| `y`             | Sim         | `number`                | Coordenada vertical percentual, de `0` a `100`.         |
-| `area`          | Nao         | `string`                | Regiao usada em filtros e cor visual.                   |
-| `zoneType`      | Nao         | `string`                | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`. |
-| `level`         | Nao         | `string`                | Nivel recomendado ou nivel da zona.                     |
-| `monsters`      | Nao         | `MarkerMonster[]`       | Monstros encontrados na zona.                           |
-| `resources`     | Nao         | `MarkerResourceGroup[]` | Recursos agrupados por tipo de coleta.                  |
-| `warpPoint`     | Nao         | `boolean`               | Indica ponto de warp.                                   |
-| `wikiSlug`      | Nao         | `string`                | Slug da pagina da wiki do proprio marker.               |
-| `interactables` | Nao         | `MarkerInteractable[]`  | NPCs, objetos ou pontos interativos.                    |
-| `tags`          | Nao         | `string[]`              | Termos extras de busca.                                 |
+| Field | Required | Type | Description |
+| --- | --- | --- | --- |
+| `id` | Yes | `string` | Unique identifier in `kebab-case`. |
+| `name` | Yes | `string` | Name displayed to the player. |
+| `mapId` | Yes | `string` | ID of the map metadata entry, such as `world`. |
+| `x` | Yes | `number` | Horizontal percentage coordinate from `0` to `100`. |
+| `y` | Yes | `number` | Vertical percentage coordinate from `0` to `100`. |
+| `area` | No | `string` | Area or region used for filtering and visual color. |
+| `zoneType` | No | `string` | Zone type, such as `Surface zone`, `Dungeon`, or `Cave`. |
+| `level` | No | `string` | Recommended level or zone level. |
+| `monsters` | No | `MarkerMonster[]` | Monsters found in the zone. |
+| `resources` | No | `MarkerResourceGroup[]` | Resource groups organized by gathering type. |
+| `warpPoint` | No | `boolean` | Indicates a warp point. |
+| `wikiSlug` | No | `string` | Slug for the marker's own wiki page. |
+| `interactables` | No | `MarkerInteractable[]` | NPCs, objects, or interactive points. |
+| `tags` | No | `string[]` | Additional search terms. |
 
-## Objetos Ricos
+## Rich Objects
 
-`monsters`, `resources[].items` e `interactables` usam objetos, nao strings.
+`monsters`, `resources[].items`, and `interactables` use objects, not strings.
 
 ```json
 {
@@ -80,15 +80,15 @@ Campos aceitos em cada item de `markers.json`:
 }
 ```
 
-`wikiSlug` guarda apenas a parte variavel depois de
-`https://soulsremnant.wiki.gg/wiki/`. `image` guarda apenas a parte variavel
-depois de `https://soulsremnant.wiki.gg/images/thumb/`. A UI monta os URLs finais
-com helpers centralizados.
+`wikiSlug` stores only the variable part after
+`https://soulsremnant.wiki.gg/wiki/`. `image` stores only the variable part
+after `https://soulsremnant.wiki.gg/images/thumb/`. The UI builds the final URLs
+with centralized helpers.
 
-`chancePercent` e opcional e representa a chance percentual do item naquele
-grupo de recurso quando esse dado existir.
+`chancePercent` is optional and represents an item's percentage chance within
+that resource group when the data is available.
 
-## Marker Basico
+## Basic Marker
 
 ```json
 {
@@ -105,7 +105,7 @@ grupo de recurso quando esse dado existir.
 }
 ```
 
-## Marker Rico
+## Rich Marker
 
 ```json
 {
@@ -149,19 +149,19 @@ grupo de recurso quando esse dado existir.
 }
 ```
 
-## Coordenadas
+## Coordinates
 
-Coordenadas continuam percentuais de `0` a `100`, com origem no canto superior
-esquerdo da imagem do mapa.
+Coordinates are percentages from `0` to `100`, with their origin at the
+top-left corner of the map image.
 
 ```text
-x = 0      esquerda
-x = 100    direita
-y = 0      topo
-y = 100    base
+x = 0      left
+x = 100    right
+y = 0      top
+y = 100    bottom
 ```
 
-Formula a partir de pixels:
+Formula for converting pixels:
 
 ```text
 x = (pixelX / imageWidth) * 100

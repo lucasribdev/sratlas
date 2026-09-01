@@ -1,25 +1,27 @@
-# Modelo de Dados
+# Data Model
 
-## Principio central
+## Core Principle
 
-Separe mentalmente marcador de entidade:
+Keep markers and entities conceptually separate:
 
-- **Marcador**: uma posicao no mapa. No MVP, tambem pode representar uma area ou zona do mapa.
-- **Entidade**: algo do jogo, como NPC, monstro, item, recurso, quest, cidade ou dungeon.
+- **Marker**: a position on the map. In the MVP, it may also represent an area
+  or map zone.
+- **Entity**: something in the game, such as an NPC, monster, item, resource,
+  quest, city, or dungeon.
 
-No MVP, um marcador contem dados ricos diretamente, inclusive dados de zona,
-monstros, recursos, interactables e ponto de warp. Quando o projeto crescer,
-entidades devem ser separadas para evitar duplicacao.
+In the MVP, a marker contains rich data directly, including zone data,
+monsters, resources, interactables, and a warp point. As the project grows,
+entities should be separated to avoid duplication.
 
-Hoje, `src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa.
-Ele contem os dados ricos usados pela UI, busca, filtros e popup diretamente no
-marker. `src/data/maps.json` fica como arquivo auxiliar de importacao/metadados
-da imagem do mapa; nao use esse arquivo como fonte runtime de entidades,
-marcadores, monstros, recursos ou interactables.
+Today, `src/data/markers.json` is the runtime source of truth for map data. It
+contains the rich data used directly by the UI, search, filters, and popups.
+`src/data/maps.json` remains an import and base-image metadata helper; do not use
+it as a runtime source of entities, markers, monsters, resources, or
+interactables.
 
-## Arquivos iniciais
+## Initial Files
 
-Estrutura recomendada para o MVP:
+Recommended structure for the MVP:
 
 ```text
 src/data/
@@ -30,8 +32,8 @@ src/data/
 
 ## Areas
 
-`src/data/areas.json` guarda metadados visuais das areas usadas pelos marcadores.
-No MVP, ele deve ficar simples e estatico:
+`src/data/areas.json` stores visual metadata for the areas used by markers. It
+should remain simple and static in the MVP:
 
 ```json
 {
@@ -40,21 +42,21 @@ No MVP, ele deve ficar simples e estatico:
 }
 ```
 
-| Campo   | Obrigatorio | Descricao                                            |
-| ------- | ----------- | ---------------------------------------------------- |
-| `name`  | Sim         | Nome da area exatamente como usado em `markers.json` |
-| `color` | Sim         | Cor hexadecimal usada nos marcadores dessa area      |
+| Field | Required | Description |
+| --- | --- | --- |
+| `name` | Yes | Area name exactly as used in `markers.json`. |
+| `color` | Yes | Hexadecimal color used by markers in that area. |
 
-A cor do marcador deve depender de `marker.area`. Nao repita cor dentro de cada
-marcador. Se a area do marcador nao existir em `areas.json`, ou se o marcador
-nao tiver `area`, a UI deve usar fallback neutro.
+A marker's color must depend on `marker.area`. Do not repeat the color within
+each marker. If the marker's area does not exist in `areas.json`, or the marker
+has no `area`, the UI must use a neutral fallback.
 
-## Mapas
+## Maps
 
-`src/data/maps.json` descreve a imagem base usada pelo Leaflet. No MVP, ele e um
-arquivo auxiliar de importacao/metadados, nao a fonte runtime dos dados de jogo.
+`src/data/maps.json` describes the base image used by Leaflet. In the MVP, it is
+an import and base-image metadata helper, not the runtime source of game data.
 
-Campos sugeridos:
+Suggested fields:
 
 ```json
 {
@@ -66,21 +68,21 @@ Campos sugeridos:
 }
 ```
 
-| Campo      | Obrigatorio | Descricao                   |
-| ---------- | ----------- | --------------------------- |
-| `id`       | Sim         | Identificador unico do mapa |
-| `name`     | Sim         | Nome exibido                |
-| `imageUrl` | Sim         | Caminho publico da imagem   |
-| `width`    | Sim         | Largura original da imagem  |
-| `height`   | Sim         | Altura original da imagem   |
+| Field | Required | Description |
+| --- | --- | --- |
+| `id` | Yes | Unique map identifier. |
+| `name` | Yes | Display name. |
+| `imageUrl` | Yes | Public image path. |
+| `width` | Yes | Original image width. |
+| `height` | Yes | Original image height. |
 
-## Marcadores
+## Markers
 
-Campos minimos e campos opcionais recomendados:
+Recommended required and optional fields:
 
-Para o passo a passo de manutencao, exemplos completos e regras de coordenadas,
-veja o [Guia de marcadores](./markers-guide.md). Para a referencia de campos,
-veja o [Schema dos dados](./data-schema.md).
+For step-by-step maintenance instructions, complete examples, and coordinate
+rules, see the [Marker Guide](./markers-guide.md). For the field reference, see
+the [Data Schema](./data-schema.md).
 
 ```json
 {
@@ -124,24 +126,24 @@ veja o [Schema dos dados](./data-schema.md).
 }
 ```
 
-| Campo           | Obrigatorio | Descricao                                                       |
-| --------------- | ----------- | --------------------------------------------------------------- |
-| `id`            | Sim         | Identificador unico                                             |
-| `name`          | Sim         | Nome exibido                                                    |
-| `mapId`         | Sim         | Mapa onde o marcador aparece                                    |
-| `x`             | Sim         | Coordenada horizontal percentual                                |
-| `y`             | Sim         | Coordenada vertical percentual                                  |
-| `area`          | Nao         | Area ou regiao                                                  |
-| `zoneType`      | Nao         | Tipo da zona, por exemplo `Surface zone`                        |
-| `level`         | Nao         | Nivel recomendado ou nivel da zona                              |
-| `monsters`      | Nao         | Lista de monstros ricos encontrados na area                     |
-| `resources`     | Nao         | Lista de grupos de recursos por profissao ou tipo de coleta     |
-| `warpPoint`     | Nao         | Indica se a area tem ponto de warp                              |
-| `wikiSlug`      | Nao         | Slug da pagina da wiki                                          |
-| `interactables` | Nao         | Lista de NPCs, objetos ou pontos interativos ricos              |
-| `tags`          | Nao         | Termos auxiliares de busca que nao duplicam campos estruturados |
+| Field | Required | Description |
+| --- | --- | --- |
+| `id` | Yes | Unique identifier. |
+| `name` | Yes | Display name. |
+| `mapId` | Yes | Map on which the marker appears. |
+| `x` | Yes | Horizontal percentage coordinate. |
+| `y` | Yes | Vertical percentage coordinate. |
+| `area` | No | Area or region. |
+| `zoneType` | No | Zone type, such as `Surface zone`. |
+| `level` | No | Recommended level or zone level. |
+| `monsters` | No | List of rich monster objects found in the area. |
+| `resources` | No | List of resource groups by profession or gathering type. |
+| `warpPoint` | No | Indicates whether the area has a warp point. |
+| `wikiSlug` | No | Wiki page slug. |
+| `interactables` | No | List of rich NPC, object, or interactive-point objects. |
+| `tags` | No | Additional search terms that do not duplicate structured fields. |
 
-Formato recomendado para `resources`:
+Recommended format for `resources`:
 
 ```json
 {
@@ -157,22 +159,25 @@ Formato recomendado para `resources`:
 }
 ```
 
-`monsters`, `resources[].items` e `interactables` nao devem ser arrays de
-strings. Use objetos ricos com `name` e, quando houver, `wikiSlug`, `image` e
-`chancePercent` nos itens de recurso.
+`monsters`, `resources[].items`, and `interactables` must not be arrays of
+strings. Use rich objects with `name` and, when available, `wikiSlug`, `image`,
+and `chancePercent` for resource items.
 
 Use `area`, `zoneType`, `level`, `monsters`, `resources`, `interactables`,
-`warpPoint`, `wikiSlug` e `tags` para registrar dados importantes do marcador de
-forma estruturada. Use esses campos quando o marcador representar uma area ou
-zona navegavel do mapa, e nao apenas um ponto isolado como NPC, boss, merchant ou
-entrada. Esses campos devem continuar no JSON estatico do marcador durante o MVP
-para que sejam faceis de manter.
+`warpPoint`, `wikiSlug`, and `tags` to record important marker data in a
+structured form. Use these fields when the marker represents a navigable area
+or zone on the map, rather than only an isolated point such as an NPC, boss,
+merchant, or entrance. These fields must remain in the marker's static JSON data
+during the MVP so they are easy to maintain.
 
-Nao separe monstros, recursos ou entidades em arquivos/tabelas proprias ainda. Entidades separadas ficam para depois do MVP, quando houver dados suficientes e duplicacao real para justificar a mudanca.
+Do not separate monsters, resources, or entities into their own files or tables
+yet. Separate entities are a post-MVP concern, once there is enough data and
+real duplication to justify the change.
 
-## Busca
+## Search
 
-A busca inicial deve ser simples e funcionar sobre os dados estaticos em JSON. Para marcadores, os campos buscaveis devem incluir:
+The initial search must remain simple and operate on static JSON data. The
+searchable marker fields must include:
 
 - `name`
 - `area`
@@ -182,57 +187,58 @@ A busca inicial deve ser simples e funcionar sobre os dados estaticos em JSON. P
 - `resources`
 - `interactables`
 
-Em `resources`, a busca deve considerar tanto `type` quanto
-`resources[].items[].name`, por exemplo `Fishing`, `Clam`, `Shrimp` e `Trout`.
-Em `monsters` e `interactables`, a busca deve considerar pelo menos `name`.
+For `resources`, search must include both `type` and
+`resources[].items[].name`, such as `Fishing`, `Clam`, `Shrimp`, and `Trout`.
+For `monsters` and `interactables`, search must include at least `name`.
 
 For autocomplete details, searchable entity types, index generation, and
 selection behavior, see [Search Autocomplete](./search-autocomplete.md).
 
-## Filtros do MVP
+## MVP Filters
 
-O filtro principal da UI deve ser por area/regiao, usando os valores unicos de `area`
-presentes em `markers.json`.
+The UI's primary filter must be area or region, using the unique `area` values
+present in `markers.json`.
 
-A busca cobre os campos estruturados dos marcadores, incluindo warp points por
-nome/tag, monstros, tipos de recursos e itens. Nao crie agrupamento visual
-separado para cada monstro ou recurso. Nao separe entidades ainda.
+Search covers the markers' structured fields, including warp points by name or
+tag, monsters, resource types, and resource items. Do not create a separate
+visual group for every monster or resource. Do not separate entities yet.
 
-## Estilo visual dos marcadores
+## Marker Visual Styling
 
-No MVP, a cor do marcador deve ser derivada da area do marcador:
+In the MVP, marker color must be derived from the marker's area:
 
-- `marker.area` aponta para uma entrada em `src/data/areas.json`;
-- `areas.json` define a cor daquela area;
-- se nao houver cor cadastrada para a area, use fallback neutro;
-- `warpPoint: true` nao muda a cor base, apenas adiciona borda/anel visual.
+- `marker.area` points to an entry in `src/data/areas.json`;
+- `areas.json` defines that area's color;
+- use a neutral fallback if no color is registered for the area;
+- `warpPoint: true` does not change the base color; it only adds a visual border
+  or ring.
 
-Essa regra evita repetir cor em cada marcador e mantem o JSON de marcadores
-focado em dados do mapa, busca, filtros e popup.
+This rule avoids repeating colors in every marker and keeps the marker JSON
+focused on data for the map, search, filters, and popups.
 
-## Coordenadas
+## Coordinates
 
-Use coordenadas percentuais de `0` a `100`.
+Use percentage coordinates from `0` to `100`.
 
 ```text
-x = 0      esquerda
-x = 100    direita
-y = 0      topo
-y = 100    base
+x = 0      left
+x = 100    right
+y = 0      top
+y = 100    bottom
 ```
 
-Origem: canto superior esquerdo da imagem.
+Origin: the top-left corner of the image.
 
-Vantagens:
+Benefits:
 
-- funciona com imagens redimensionadas;
-- facilita layout responsivo;
-- reduz retrabalho se a imagem ganhar resolucao maior;
-- simplifica importacao/exportacao de dados.
+- works with resized images;
+- supports responsive layouts;
+- reduces rework if the image is replaced with a higher-resolution version;
+- simplifies data import and export.
 
-## Relacoes futuras
+## Future Relationships
 
-Quando houver backend ou dados mais complexos, evolua para:
+When a backend or more complex data is introduced, evolve toward:
 
 ```text
 Map
@@ -246,19 +252,19 @@ Entity
   can be Location, NPC, Monster, Item, Resource or Quest
 ```
 
-Relacoes importantes:
+Important relationships:
 
-- NPC aparece em um ou mais marcadores.
-- Monstro aparece em uma ou mais areas.
-- Monstro pode dropar muitos itens.
-- Merchant vende muitos itens.
-- Quest pode envolver NPCs, locais, monstros e recompensas.
-- Recurso aparece em varios pontos de coleta.
-- Item pode vir de drops, merchants, quests ou coleta.
+- An NPC appears at one or more markers.
+- A monster appears in one or more areas.
+- A monster may drop many items.
+- A merchant sells many items.
+- A quest may involve NPCs, locations, monsters, and rewards.
+- A resource appears at multiple gathering points.
+- An item may come from drops, merchants, quests, or gathering.
 
-## Tabelas futuras
+## Future Tables
 
-Caso um backend seja adicionado:
+If a backend is added:
 
 - `maps`
 - `markers`
@@ -274,13 +280,13 @@ Caso um backend seja adicionado:
 - `users`
 - `revisions`
 
-Nao crie essas tabelas no MVP. Use esta lista apenas como direcao arquitetural.
-Backend, login, painel administrativo e sincronizacao automatica com a wiki
-continuam fora do MVP.
+Do not create these tables in the MVP. Use this list only as architectural
+direction. A backend, login, an admin panel, and automatic wiki synchronization
+remain out of scope for the MVP.
 
-## Integracao com wiki
+## Wiki Integration
 
-No MVP, basta suportar:
+For the MVP, it is enough to support:
 
 ```json
 {
@@ -288,8 +294,8 @@ No MVP, basta suportar:
 }
 ```
 
-Os links finais da wiki sao gerados por helpers centralizados a partir do slug.
-Depois, pode evoluir para:
+Centralized helpers generate the final wiki links from the slug. Later, this
+may evolve to:
 
 ```json
 {
@@ -299,4 +305,4 @@ Depois, pode evoluir para:
 }
 ```
 
-Evite sincronizacao automatica antes de estabilizar o formato dos dados.
+Avoid automatic synchronization until the data format is stable.

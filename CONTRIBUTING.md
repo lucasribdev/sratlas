@@ -59,8 +59,8 @@ Follow the [marker contribution guide](./docs/markers-guide.md), the
 
 The data files have distinct roles:
 
-- `src/data/markers.json` is the authoritative runtime source of marker and rich
-  game data used by the map, search, filters, and details. Every marker requires
+- `src/data/markers.json` is the runtime source of truth for marker and rich game
+  data used by the map, search, filters, and details. Every marker requires
   a name, a map, and percentage coordinates from `0` to `100`, measured from the
   top-left corner. Keep `monsters`, `interactables`, and `resources[].items` as
   rich objects rather than arrays of strings.

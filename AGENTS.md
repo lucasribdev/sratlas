@@ -90,7 +90,7 @@ public/
 
 ## Data Rules
 
-- `src/data/markers.json` is the authoritative runtime source of map data.
+- `src/data/markers.json` is the runtime source of truth for map data.
 - `src/data/maps.json` is only an import/base-image metadata helper; do not treat
   it as a runtime source of entities or markers.
 - Marker coordinates must be percentages from `0` to `100`.

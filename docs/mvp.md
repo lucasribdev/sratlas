@@ -1,140 +1,145 @@
-# Plano do MVP
+# MVP Plan
 
-## Objetivo
+## Goal
 
-Criar um mapa interativo simples para jogadores encontrarem rapidamente locais, NPCs, monstros, bosses, recursos, teleports e pontos de interesse em Soul's Remnant.
+Create a simple interactive map that lets players quickly find locations, NPCs,
+monsters, bosses, resources, warp points, and points of interest in Soul's
+Remnant.
 
-O MVP deve responder:
+The MVP must answer:
 
-> Onde encontro isso?
+> Where can I find this?
 
-## Usuario principal
+## Primary User
 
-Jogadores que querem localizar algo no mundo do jogo sem procurar em varias paginas, videos ou conversas.
+Players who want to locate something in the game world without searching across
+multiple pages, videos, or conversations.
 
-## Problemas resolvidos
+## Problems Solved
 
-- Encontrar NPCs, bosses, monstros e recursos com rapidez.
-- Entender onde ficam cidades, areas, dungeons e teleports.
-- Acessar a pagina da wiki relacionada quando existir.
-- Reduzir dependencia de guias externos e informacoes espalhadas.
+- Quickly find NPCs, bosses, monsters, and resources.
+- Understand where cities, areas, dungeons, and warp points are located.
+- Open the related wiki page when one exists.
+- Reduce dependence on external guides and scattered information.
 
-## Escopo do MVP
+## MVP Scope
 
-| Funcionalidade | Status |
+| Feature | Status |
 | --- | --- |
-| Mapa navegavel com pan e zoom | MVP |
-| Marcadores no mapa | MVP |
-| Popup ou painel de detalhes | MVP |
-| Filtro por area/regiao | MVP |
-| Filtros rapidos por dados da area | MVP |
-| Busca por nome | MVP |
-| Lista de resultados da busca | MVP |
-| Link para wiki | MVP |
-| Dados em JSON estatico | MVP |
-| Layout responsivo basico | MVP |
-| Clustering de marcadores | Depois do MVP |
-| Backend | Depois do MVP |
-| Painel administrativo | Depois do MVP |
-| Login | Depois do MVP |
-| Edicao colaborativa | Depois do MVP |
-| Drops completos | Depois do MVP |
-| Relacoes completas com quests | Depois do MVP |
-| Favoritos | Opcional |
-| Comentarios | Opcional |
-| Rotas automaticas | Opcional |
+| Navigable map with pan and zoom | MVP |
+| Map markers | MVP |
+| Popup or details panel | MVP |
+| Area or region filter | MVP |
+| Quick filters based on area data | MVP |
+| Search by name | MVP |
+| Search results list | MVP |
+| Wiki link | MVP |
+| Static JSON data | MVP |
+| Basic responsive layout | MVP |
+| Marker clustering | Post-MVP |
+| Backend | Post-MVP |
+| Admin panel | Post-MVP |
+| Login | Post-MVP |
+| Collaborative editing | Post-MVP |
+| Complete drop data | Post-MVP |
+| Complete quest relationships | Post-MVP |
+| Favorites | Optional |
+| Comments | Optional |
+| Automatic routes | Optional |
 
-## Tela principal
+## Main Screen
 
 Desktop:
 
 ```text
-Busca
-Sidebar: filtros por area e resultados
-Mapa: marcadores, zoom e detalhe selecionado
+Search
+Sidebar: area filters and results
+Map: markers, zoom, and selected details
 ```
 
 Mobile:
 
 ```text
-Busca no topo
-Mapa como tela principal
-Filtros em drawer
-Detalhe do marcador em popup ou bottom sheet
+Search at the top
+Map as the main screen
+Filters in a drawer
+Marker details in a popup or bottom sheet
 ```
 
-## Fluxo principal
+## Primary Flow
 
-1. Usuario abre o mapa.
-2. O mapa carrega com marcadores visiveis.
-3. Usuario filtra por area/regiao ou pesquisa por texto.
-4. A lista de resultados atualiza.
-5. Usuario clica em um marcador ou resultado.
-6. O mapa centraliza no marcador selecionado.
-7. O detalhe mostra nome, area, tipo de zona, dados estruturados do marcador e link da wiki.
+1. The user opens the map.
+2. The map loads with visible markers.
+3. The user filters by area or region, or searches by text.
+4. The results list updates.
+5. The user clicks a marker or result.
+6. The map centers on the selected marker.
+7. The details show the name, area, zone type, structured marker data, and wiki
+   link.
 
-## Busca e filtros
+## Search and Filters
 
-Busca do MVP:
+MVP search:
 
-- campo unico;
-- busca por nome;
-- busca tambem por area, tipo de zona, tags, monstros e recursos;
-- case-insensitive;
-- resultado clicavel;
-- mensagem simples para nenhum resultado.
+- a single field;
+- search by name;
+- also search by area, zone type, tags, monsters, and resources;
+- case-insensitive matching;
+- clickable results;
+- a simple message when there are no results.
 
-Filtros do MVP:
+MVP filters:
 
-- checkboxes por area/regiao derivados dos marcadores;
-- todas as areas iniciam selecionadas;
-- opcao para selecionar todas as areas;
-- opcao para limpar a selecao de areas sem alterar a busca;
-- filtros combinam com a busca.
+- area or region checkboxes derived from markers;
+- all areas selected initially;
+- an option to select all areas;
+- an option to clear the area selection without changing the search query;
+- filters combined with search.
 
-Estilo visual dos marcadores:
+Marker visual styling:
 
-- cor baseada em `marker.area`, resolvida em `src/data/areas.json`;
-- fallback neutro quando a area nao tiver cor cadastrada;
-- `warpPoint: true` adiciona anel/borda extra, sem trocar a cor da area;
-- nao repetir cor em cada marcador.
+- color based on `marker.area`, resolved through `src/data/areas.json`;
+- a neutral fallback when no color is registered for the area;
+- `warpPoint: true` adds an extra ring or border without changing the area
+  color;
+- do not repeat the color in every marker.
 
-Regra:
+Rule:
 
 ```text
-um marcador aparece se a area esta ativa
-E o texto buscado corresponde aos campos buscaveis
+a marker appears if its area is active
+AND the search text matches its searchable fields
 
-Sem busca, todas as areas (selecionadas por padrao) mostram todos os marcadores.
-Se nenhuma area estiver selecionada, nenhum marcador aparece.
+With no search query, all areas (selected by default) show all markers.
+If no area is selected, no marker appears.
 ```
 
-## Criterios de pronto
+## Definition of Done
 
-O MVP esta pronto quando:
+The MVP is complete when:
 
-- o mapa abre corretamente;
-- pan e zoom funcionam;
-- existem marcadores reais suficientes para serem uteis;
-- filtros funcionam;
-- busca funciona;
-- clicar em marcador mostra detalhes;
-- clicar em resultado centraliza o mapa;
-- links da wiki funcionam quando existirem;
-- layout e utilizavel em desktop e mobile;
-- novos marcadores podem ser adicionados editando JSON.
+- the map opens correctly;
+- pan and zoom work;
+- there are enough real markers to be useful;
+- filters work;
+- search works;
+- clicking a marker shows its details;
+- clicking a result centers the map;
+- wiki links work when present;
+- the layout is usable on desktop and mobile;
+- new markers can be added by editing JSON.
 
-## Versao extremamente enxuta
+## Extremely Lean Version
 
-Primeiro lancamento possivel:
+The smallest possible first release includes:
 
-- um mapa do mundo;
-- 30 a 50 marcadores reais;
-- areas principais;
-- busca por nome;
-- filtro por area/regiao;
-- popup simples;
-- link para wiki;
-- dados em JSON.
+- one world map;
+- 30 to 50 real markers;
+- the main areas;
+- search by name;
+- an area or region filter;
+- a simple popup;
+- wiki links;
+- JSON data.
 
-Sem backend, sem admin e sem relacoes complexas.
+No backend, admin panel, or complex relationships.

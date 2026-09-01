@@ -1,88 +1,88 @@
-# Guia de Marcadores
+# Marker Guide
 
-Este guia explica como adicionar e manter zonas em `src/data/markers.json` sem
-alterar codigo. O MVP usa dados estaticos em JSON, entao cada novo marcador deve
-ter dados suficientes para busca, filtros, popup e posicionamento no mapa.
+This guide explains how to add and maintain zones in
+`src/data/markers.json` without changing code. The MVP uses static JSON data, so
+each new marker must contain enough data for search, filters, popups, and map
+positioning.
 
-`src/data/markers.json` e a fonte confiavel e runtime dos dados do mapa. A UI
-le esse arquivo para montar marcadores, busca, filtros e detalhes. `src/data/maps.json`
-e apenas auxiliar de importacao/metadados da imagem do mapa; nao coloque nele
-dados de monstros, recursos, interactables ou entidades.
+`src/data/markers.json` is the runtime source of truth for map data. The UI reads
+this file to build markers, search, filters, and details. `src/data/maps.json` is
+only an import and base-image metadata helper; do not put monster, resource,
+interactable, or entity data in it.
 
-Para a lista completa de campos e exemplos isolados de monster, resource item e
-interactable, veja o [Schema dos dados](./data-schema.md).
+For the complete field list and standalone examples of a monster, resource
+item, and interactable, see the [Data Schema](./data-schema.md).
 
-Backend, login, painel administrativo e sincronizacao automatica com a wiki
-continuam fora do MVP.
+A backend, login, an admin panel, and automatic wiki synchronization remain out
+of scope for the MVP.
 
-## Como adicionar uma nova zona
+## How to Add a New Zone
 
-1. Abra `src/data/markers.json`.
-2. Copie um objeto existente parecido com a zona que voce quer adicionar.
-3. Cole o novo objeto dentro do array principal.
-4. Troque o `id`, `name`, `mapId`, `x` e `y`.
-5. Preencha os campos opcionais que ajudam o jogador a encontrar a zona.
-6. Confira se o JSON continua valido:
-   - use aspas duplas;
-   - separe objetos e campos com virgula;
-   - nao deixe virgula depois do ultimo item do array ou objeto.
+1. Open `src/data/markers.json`.
+2. Copy an existing object similar to the zone you want to add.
+3. Paste the new object into the top-level array.
+4. Change `id`, `name`, `mapId`, `x`, and `y`.
+5. Fill in the optional fields that help players find the zone.
+6. Confirm that the JSON remains valid:
+   - use double quotation marks;
+   - separate objects and fields with commas;
+   - do not leave a comma after the last item in an array or object.
 
-O `id` deve ser unico no arquivo. Use nomes curtos em `kebab-case`, por exemplo
-`shell-beach`, `lost-peak` ou `plains-cave`.
+The `id` must be unique within the file. Use short names in `kebab-case`, such
+as `shell-beach`, `lost-peak`, or `plains-cave`.
 
-## Campos obrigatorios
+## Required Fields
 
-Todo marcador novo deve ter:
+Every new marker must include:
 
-| Campo   | Como preencher                                           |
-| ------- | -------------------------------------------------------- |
-| `id`    | Identificador unico em `kebab-case`.                     |
-| `name`  | Nome exibido para o jogador.                             |
-| `mapId` | Id do mapa em `src/data/maps.json`, por exemplo `world`. |
-| `x`     | Coordenada horizontal percentual, de `0` a `100`.        |
-| `y`     | Coordenada vertical percentual, de `0` a `100`.          |
+| Field | How to fill it in |
+| --- | --- |
+| `id` | Unique identifier in `kebab-case`. |
+| `name` | Name displayed to the player. |
+| `mapId` | Map ID from `src/data/maps.json`, such as `world`. |
+| `x` | Horizontal percentage coordinate from `0` to `100`. |
+| `y` | Vertical percentage coordinate from `0` to `100`. |
 
-No MVP, a cor visual do marcador vem da area cadastrada em
-`src/data/areas.json`. O marcador continua usando apenas o campo `area`; nao
-adicione cor em cada marcador. Quando `warpPoint` for `true`, a UI adiciona um
-anel/borda extra ao marcador sem trocar a cor da area.
+In the MVP, a marker's visual color comes from the area registered in
+`src/data/areas.json`. The marker itself continues to use only the `area` field;
+do not add a color to each marker. When `warpPoint` is `true`, the UI adds an
+extra ring or border without changing the area's color.
 
-## Campos opcionais
+## Optional Fields
 
-Use os campos opcionais quando eles ajudarem a busca, os filtros ou o detalhe do
-marcador:
+Use optional fields when they improve search, filters, or marker details:
 
-| Campo           | Quando usar                                                       |
-| --------------- | ----------------------------------------------------------------- |
-| `area`          | Regiao usada no filtro principal, como `Ocean` ou `Plains`.       |
-| `zoneType`      | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`.           |
-| `level`         | Nivel recomendado ou nivel da zona. Pode ser `"17"` ou `"12-15"`. |
-| `monsters`      | Lista rica de monstros encontrados na zona.                       |
-| `resources`     | Grupos de recursos por tipo de coleta.                            |
-| `warpPoint`     | `true` quando a zona tem ponto de warp. Omita quando nao tiver.   |
-| `wikiSlug`      | Slug opcional da pagina da wiki.                                  |
-| `interactables` | Lista rica de NPCs, objetos ou pontos interativos.                |
-| `tags`          | Termos extras para melhorar a busca.                              |
+| Field | When to use it |
+| --- | --- |
+| `area` | Area or region used by the primary filter, such as `Ocean` or `Plains`. |
+| `zoneType` | Zone type, such as `Surface zone`, `Dungeon`, or `Cave`. |
+| `level` | Recommended level or zone level. It may be `"17"` or `"12-15"`. |
+| `monsters` | Rich list of monsters found in the zone. |
+| `resources` | Resource groups organized by gathering type. |
+| `warpPoint` | `true` when the zone has a warp point. Omit it otherwise. |
+| `wikiSlug` | Optional slug for the wiki page. |
+| `interactables` | Rich list of NPCs, objects, or interactive points. |
+| `tags` | Additional terms that improve search. |
 
-Dados importantes devem entrar em campos estruturados do marcador: `area`,
-`zoneType`, `level`, `monsters`, `resources`, `interactables`, `warpPoint`,
-`wikiSlug` e `tags`.
+Important data belongs in the marker's structured fields: `area`, `zoneType`,
+`level`, `monsters`, `resources`, `interactables`, `warpPoint`, `wikiSlug`, and
+`tags`.
 
-Nao use o formato antigo com `monsters` como array de strings nem
-`resources[].items` como array de strings. Esses campos agora guardam objetos
-ricos diretamente no marker.
+Do not use the old format in which `monsters` is an array of strings or
+`resources[].items` is an array of strings. These fields now store rich objects
+directly in the marker.
 
-`wikiSlug` guarda apenas a parte variavel depois de
-`https://soulsremnant.wiki.gg/wiki/`. `image` guarda apenas a parte variavel
-depois de `https://soulsremnant.wiki.gg/images/thumb/`. A UI monta os URLs finais
-com helpers centralizados; nao repita esses prefixos em `markers.json`.
+`wikiSlug` stores only the variable part after
+`https://soulsremnant.wiki.gg/wiki/`. `image` stores only the variable part
+after `https://soulsremnant.wiki.gg/images/thumb/`. The UI builds final URLs
+with centralized helpers; do not repeat these prefixes in `markers.json`.
 
-Nao separe NPCs, monstros, itens ou recursos em outros arquivos ainda. Isso fica
-para depois do MVP, quando houver duplicacao real e dados suficientes.
+Do not separate NPCs, monsters, items, or resources into other files yet. That
+is a post-MVP concern, once there is real duplication and enough data.
 
-## Cores por area
+## Colors by Area
 
-Para definir ou ajustar a cor de uma area, edite `src/data/areas.json`:
+To define or adjust an area's color, edit `src/data/areas.json`:
 
 ```json
 {
@@ -91,24 +91,23 @@ Para definir ou ajustar a cor de uma area, edite `src/data/areas.json`:
 }
 ```
 
-Regras:
+Rules:
 
-- `name` deve corresponder ao valor usado em `marker.area`.
-- `color` deve ser uma cor hexadecimal.
-- nao adicione `color`, `markerColor` ou campos parecidos em `markers.json`;
-- marcadores de areas sem cadastro de cor usam fallback neutro;
-- `warpPoint: true` adiciona anel/borda extra ao marcador.
+- `name` must match the value used in `marker.area`.
+- `color` must be a hexadecimal color.
+- Do not add `color`, `markerColor`, or similar fields to `markers.json`.
+- Markers in areas without a registered color use a neutral fallback.
+- `warpPoint: true` adds an extra ring or border to the marker.
 
-## Recursos
+## Resources
 
-Preencha `resources` agrupando os itens por tipo de coleta. Os tipos usados pelos
-dados atuais sao:
+Fill in `resources` by grouping items by gathering type. The current data uses:
 
 - `Fishing`
 - `Mining`
 - `Herbalism`
 
-Formato recomendado:
+Recommended format:
 
 ```json
 "resources": [
@@ -154,49 +153,49 @@ Formato recomendado:
 ]
 ```
 
-Evite criar varios grupos com o mesmo `type` dentro do mesmo marcador. Junte os
-itens em um unico grupo por tipo de coleta.
+Avoid creating multiple resource groups with the same `type` within one marker.
+Combine the resource items into a single group for each gathering type.
 
 ## Tags
 
-Use `tags` apenas para termos de busca que nao aparecem naturalmente em outros
-campos estruturados. Bons usos:
+Use `tags` only for search terms that do not already occur naturally in other
+structured fields. Good uses include:
 
-- sinonimos;
-- termos alternativos;
-- nomes de regiao;
-- apelidos usados pela comunidade;
-- nomes abreviados;
-- termos importantes que nao aparecem em `name`, `area`, `zoneType`,
-  `monsters` ou `resources`.
+- synonyms;
+- alternative terms;
+- region names;
+- community nicknames;
+- abbreviated names;
+- important terms that do not appear in `name`, `area`, `zoneType`, `monsters`,
+  or `resources`.
 
-Nao duplique `name`, `area`, `zoneType`, `monsters`, `resources[].type` ou
-`resources[].items` em `tags`: esses valores ja participam da busca. Se o
-marcador ja tem `"Fishing"` em `resources[].type`, nao precisa adicionar
-`"fishing"` em `tags`.
+Do not duplicate `name`, `area`, `zoneType`, `monsters`, `resources[].type`, or
+`resources[].items` in `tags`: these values are already searchable. If the
+marker already has `"Fishing"` in `resources[].type`, there is no need to add
+`"fishing"` to `tags`.
 
-## Coordenadas
+## Coordinates
 
-As coordenadas `x` e `y` sao percentuais de `0` a `100`, calculadas em relacao a
-imagem original do mapa.
+The `x` and `y` coordinates are percentages from `0` to `100`, calculated
+relative to the original map image.
 
-Origem: canto superior esquerdo da imagem.
+Origin: the top-left corner of the image.
 
 ```text
-x = 0      esquerda
-x = 100    direita
-y = 0      topo
-y = 100    base
+x = 0      left
+x = 100    right
+y = 0      top
+y = 100    bottom
 ```
 
-Formula a partir de pixels:
+Formula for converting pixels:
 
 ```text
 x = (pixelX / imageWidth) * 100
 y = (pixelY / imageHeight) * 100
 ```
 
-Exemplo: se a imagem tem `4096 x 4096` e o ponto esta em `pixelX = 2048` e
+Example: if the image is `4096 x 4096` and the point is at `pixelX = 2048` and
 `pixelY = 1024`:
 
 ```text
@@ -204,24 +203,24 @@ x = (2048 / 4096) * 100 = 50
 y = (1024 / 4096) * 100 = 25
 ```
 
-Use uma ou duas casas decimais quando precisar de mais precisao. Coordenadas
-inteiras sao aceitaveis para marcadores aproximados.
+Use one or two decimal places when more precision is needed. Whole numbers are
+acceptable for approximate markers.
 
-## Coordenadas aproximadas no MVP
+## Approximate Coordinates in the MVP
 
-No MVP, coordenadas aproximadas sao aceitaveis quando ainda nao houver medicao
-precisa. Nesse caso:
+Approximate coordinates are acceptable in the MVP when no precise measurement
+is available. In that case:
 
-- posicione o marcador no centro aproximado da zona;
-- registre a pendencia fora das `tags`, pois notas editoriais nao devem afetar a
-  busca;
-- ajuste depois quando houver imagem, print ou referencia melhor;
-- nao bloqueie a inclusao de uma zona util apenas por falta de coordenada
-  perfeita.
+- place the marker near the center of the zone;
+- record the outstanding task outside `tags`, because editorial notes must not
+  affect search;
+- adjust it later when a better image, screenshot, or reference is available;
+- do not block the addition of a useful zone solely because its coordinate is
+  not perfect.
 
-Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
+Even when approximate, `x` and `y` must remain between `0` and `100`.
 
-## Exemplo completo
+## Complete Example
 
 ```json
 {
@@ -293,45 +292,45 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
 }
 ```
 
-## Validacao manual
+## Manual Validation
 
-Antes de abrir PR ou fechar uma issue de dados:
+Before opening a pull request or closing a data issue:
 
-1. Confirme que `markers.json` continua sendo JSON valido.
-2. Confira se o `id` e unico.
-3. Confira se `mapId` existe em `src/data/maps.json`.
-4. Confira se `x` e `y` estao entre `0` e `100`.
-5. Confira se `monsters`, `resources[].items` e `interactables` usam objetos
-   ricos com `name`, nao strings soltas.
-6. Confira se `resources[].type` usa `Fishing`, `Mining` ou `Herbalism` quando
-   a intencao for cadastrar pontos de coleta.
-7. Se a area for nova, confira se existe entrada correspondente em
-   `src/data/areas.json` ou aceite o fallback neutro temporariamente.
-8. Pesquise pelo nome da zona, area, monstro, interactable e recurso principal.
-9. Clique no resultado e confirme que o mapa centraliza no marcador.
-10. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
-    existir.
-11. Verifique pelo menos uma tela desktop e uma mobile.
+1. Confirm that `markers.json` remains valid JSON.
+2. Confirm that the `id` is unique.
+3. Confirm that `mapId` exists in `src/data/maps.json`.
+4. Confirm that `x` and `y` are between `0` and `100`.
+5. Confirm that `monsters`, `resources[].items`, and `interactables` use rich
+   objects with `name`, not standalone strings.
+6. Confirm that `resources[].type` uses `Fishing`, `Mining`, or `Herbalism` when
+   describing a gathering point.
+7. If the area is new, confirm that a corresponding entry exists in
+   `src/data/areas.json`, or temporarily accept the neutral fallback.
+8. Search for the zone name, area, monster, interactable, and primary resource.
+9. Click the result and confirm that the map centers on the marker.
+10. Open the popup and check the name, structured zone data, and wiki link when
+    present.
+11. Check at least one desktop and one mobile viewport.
 
 ## Search Autocomplete
 
 Autocomplete suggestions are derived from structured marker data. A new marker,
-monster, resource item, resource type, or interactable becomes searchable when it
-is added to `src/data/markers.json` using the fields described in this guide.
+monster, resource item, resource type, or interactable becomes searchable when
+it is added to `src/data/markers.json` using the fields described in this guide.
 
-See [Search Autocomplete](./search-autocomplete.md) for the indexed entity
-types and selection behavior.
+See [Search Autocomplete](./search-autocomplete.md) for the indexed entity types
+and selection behavior.
 
-## Checklist rapido
+## Quick Checklist
 
-- `id`, `name`, `mapId`, `x` e `y` preenchidos.
-- `x` e `y` calculados em percentual a partir do canto superior esquerdo.
-- `area` preenchida quando a zona deve aparecer no filtro por regiao.
-- `resources` agrupado por `Fishing`, `Mining` e `Herbalism`.
-- `monsters`, `resources[].items` e `interactables` preenchidos como objetos ricos.
-- area cadastrada em `src/data/areas.json` quando precisa de cor propria.
-- `warpPoint` preenchido quando deve exibir anel/borda extra.
-- `resources` e `monsters` preenchidos quando devem afetar filtros.
-- `tags` usadas apenas para termos extras de busca.
-- Marcador aparece, e o clique centraliza o mapa.
-- Dados novos foram adicionados apenas em JSON, sem alterar codigo.
+- `id`, `name`, `mapId`, `x`, and `y` are filled in.
+- `x` and `y` are calculated as percentages from the top-left corner.
+- `area` is filled in when the zone should appear in the area or region filter.
+- `resources` is grouped by `Fishing`, `Mining`, and `Herbalism`.
+- `monsters`, `resources[].items`, and `interactables` use rich objects.
+- The area is registered in `src/data/areas.json` when it needs its own color.
+- `warpPoint` is set when the marker should display an extra ring or border.
+- `resources` and `monsters` are filled in when they should affect filters.
+- `tags` contains only additional search terms.
+- The marker appears, and clicking it centers the map.
+- New data was added only through JSON, without changing code.

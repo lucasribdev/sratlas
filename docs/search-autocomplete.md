@@ -3,7 +3,7 @@
 ## Searchable Entities
 
 Autocomplete suggestions are generated from `src/data/markers.json`, which is the
-runtime source of map data for the MVP.
+runtime source of truth for map data in the MVP.
 
 The current searchable entity types are:
 

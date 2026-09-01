@@ -1,62 +1,68 @@
 # Soul's Remnant Interactive Map
 
-Mapa interativo para ajudar jogadores de Soul's Remnant a encontrar locais, NPCs, monstros, bosses, recursos, teleports e outros pontos de interesse.
+An interactive map that helps Soul's Remnant players find locations, NPCs,
+monsters, bosses, resources, warp points, and other points of interest.
 
-Este projeto comeca como um MVP simples: uma aplicacao React/Vite com dados estaticos em JSON. Backend, painel administrativo e integracao profunda com a wiki ficam para depois que a primeira versao ja estiver util.
+The project starts as a simple MVP: a React/Vite application backed by static
+JSON data. A backend, an admin panel, and deep wiki integration are deferred
+until the first version is already useful.
 
-## Objetivo do MVP
+## MVP Goal
 
-Responder rapidamente a pergunta:
+Quickly answer the question:
 
-> Onde encontro isso no mundo de Soul's Remnant?
+> Where can I find this in the world of Soul's Remnant?
 
-O MVP deve permitir:
+The MVP must let users:
 
-- abrir o mapa;
-- navegar com pan e zoom;
-- ver marcadores;
-- filtrar por area/regiao e dados do marcador;
-- pesquisar por nome, area, monstros e recursos;
-- clicar em um marcador para ver detalhes;
-- abrir a pagina correspondente na wiki quando existir.
+- open the map;
+- pan and zoom;
+- view markers;
+- filter by area or region and marker data;
+- search by name, area, monsters, and resources;
+- click a marker to view details;
+- open the corresponding wiki page when one exists.
 
-## Stack planejada
+## Planned Stack
 
 - Vite
 - React
 - TypeScript
 - Leaflet
 - React Leaflet
-- JSON estatico para dados iniciais
-- Fuse.js opcional para busca melhor
+- static JSON data for the initial dataset
+- optional Fuse.js for improved search
 
-## Documentacao
+## Documentation
 
-- [Plano do MVP](./docs/mvp.md)
-- [Modelo de dados](./docs/data-model.md)
-- [Schema dos dados](./docs/data-schema.md)
-- [Guia de marcadores](./docs/markers-guide.md)
-- [Base UI e manutencao visual](./docs/ui.md)
-- [Milestones e issues](./docs/milestones.md)
-- [Instrucoes para agentes](./AGENTS.md)
-- [Guia de contribuicao](./CONTRIBUTING.md)
+- [MVP Plan](./docs/mvp.md)
+- [Data Model](./docs/data-model.md)
+- [Data Schema](./docs/data-schema.md)
+- [Marker Guide](./docs/markers-guide.md)
+- [Search Autocomplete](./docs/search-autocomplete.md)
+- [UI Foundation and Visual Maintenance](./docs/ui.md)
+- [Milestones and Issues](./docs/milestones.md)
+- [Agent Instructions](./AGENTS.md)
+- [Contributing Guide](./CONTRIBUTING.md)
 
-## Comandos
+## Commands
 
 ```bash
 pnpm install
 pnpm dev
+pnpm test
 pnpm build
 pnpm lint
 ```
 
-## Decisoes importantes
+## Key Decisions
 
-- Comecar sem backend.
-- Manter login, painel administrativo e sincronizacao automatica com a wiki fora do MVP.
-- Usar Leaflet com uma imagem do mapa do jogo.
-- Salvar coordenadas dos marcadores em percentual relativo ao mapa.
-- Tratar `src/data/markers.json` como fonte confiavel e runtime dos dados do mapa.
-- Usar `src/data/maps.json` apenas como auxiliar de importacao/metadados da imagem, nao como fonte runtime de marcadores ou entidades.
-- Manter dados editaveis em JSON estatico no inicio.
-- Separar "marcador" de "entidade" quando o projeto crescer.
+- Start without a backend.
+- Keep login, an admin panel, and automatic wiki synchronization out of the MVP.
+- Use Leaflet with an image of the game map.
+- Store marker coordinates as percentages relative to the map.
+- Treat `src/data/markers.json` as the runtime source of truth for map data.
+- Use `src/data/maps.json` only as an import and base-image metadata helper, not
+  as a runtime source of markers or entities.
+- Keep data editable as static JSON at first.
+- Separate markers from entities when the project grows.
