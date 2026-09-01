@@ -10,6 +10,7 @@ import { markerMatchesSearch } from "@/lib/marker-search";
 import { buildSearchIndex, getSearchSuggestions, type SearchEntry } from "@/lib/search-index";
 import { resolveSearchEntrySelection } from "@/lib/search-selection";
 import { GameMapView } from "@/components/map/GameMapView";
+import { MapSelector } from "@/components/map/MapSelector";
 import { Button } from "@/components/ui/button";
 import { SearchAutocomplete } from "@/components/search/SearchAutocomplete";
 import {
@@ -25,7 +26,7 @@ const areaOptions = markerAreaOptions(markers);
 const searchIndex = buildSearchIndex(markers);
 
 export function AppLayout() {
-  const [activeMapId] = useState<GameMap["id"]>(defaultMapId);
+  const [activeMapId, setActiveMapId] = useState<GameMap["id"]>(defaultMapId);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedAreas, setSelectedAreas] = useState<Set<string>>(
     () => new Set(areaOptions),
@@ -39,7 +40,10 @@ export function AppLayout() {
     [searchQuery],
   );
 
-  const filteredMarkers = markers.filter(
+  const activeMapMarkers = markers.filter(
+    (marker) => marker.mapId === activeMap.id,
+  );
+  const filteredMarkers = activeMapMarkers.filter(
     (marker) =>
       markerMatchesSearch(marker, searchQuery) &&
       (marker.area ? selectedAreas.has(marker.area) : false),
@@ -72,6 +76,15 @@ export function AppLayout() {
     setIsMobileFiltersOpen(false);
   }
 
+  function changeMap(mapId: GameMap["id"]) {
+    if (mapId === activeMap.id) {
+      return;
+    }
+
+    setActiveMapId(mapId);
+    setSelectedMarkerId(undefined);
+  }
+
   function selectSearchEntry(entry: SearchEntry) {
     const selection = resolveSearchEntrySelection(entry, filteredMarkers);
 
@@ -90,6 +103,13 @@ export function AppLayout() {
       <div className="hidden min-h-0 min-[761px]:flex">
         <Sidebar
           areaOptions={areaOptions}
+          mapSelector={
+            <MapSelector
+              activeMapId={activeMap.id}
+              maps={maps}
+              onMapChange={changeMap}
+            />
+          }
           onClearAreas={clearAreas}
           onMarkerSelect={selectMarker}
           onSearchQueryChange={setSearchQuery}
@@ -108,7 +128,7 @@ export function AppLayout() {
         aria-label="Main map area"
       >
         <div
-          className="absolute top-3 right-3 left-3 z-[500] grid grid-cols-[minmax(0,1fr)_auto] gap-2 min-[761px]:hidden"
+          className="absolute top-3 right-3 left-3 z-[500] grid grid-cols-[minmax(0,1fr)_6.75rem_auto] gap-2 min-[761px]:hidden"
           aria-label="Compact controls"
         >
           <SearchAutocomplete
@@ -122,6 +142,14 @@ export function AppLayout() {
             query={searchQuery}
             suggestions={searchSuggestions}
           />
+          <MapSelector
+            activeMapId={activeMap.id}
+            className="gap-0"
+            labelClassName="sr-only"
+            maps={maps}
+            onMapChange={changeMap}
+            selectClassName="h-11 border-border bg-card shadow-lg shadow-slate-950/15"
+          />
           <Sheet
             open={isMobileFiltersOpen}
             onOpenChange={setIsMobileFiltersOpen}
@@ -129,14 +157,14 @@ export function AppLayout() {
             <SheetTrigger
               render={
                 <Button
-                  className="h-11 !border-border !bg-card text-card-foreground shadow-lg shadow-slate-950/15 hover:!bg-muted dark:!border-border dark:!bg-card dark:hover:!bg-muted"
+                  aria-label="Filters"
+                  className="size-11 !border-border !bg-card text-card-foreground shadow-lg shadow-slate-950/15 hover:!bg-muted dark:!border-border dark:!bg-card dark:hover:!bg-muted"
                   type="button"
                   variant="outline"
                 />
               }
             >
               <SlidersHorizontal aria-hidden="true" />
-              Filters
             </SheetTrigger>
             <SheetContent
               className="w-[min(390px,calc(100vw-32px))] max-w-none gap-0 p-0 data-[side=left]:w-[min(390px,calc(100vw-32px))]"
@@ -164,6 +192,7 @@ export function AppLayout() {
 
         <GameMapView
           activeMap={activeMap}
+          hasAvailableMarkers={activeMapMarkers.length > 0}
           markers={filteredMarkers}
           onMarkerSelect={selectMarker}
           selectedMarkerId={selectedMarkerId}

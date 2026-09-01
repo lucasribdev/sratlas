@@ -18,6 +18,7 @@ const selectedMarkerZoom = 1.5;
 
 type GameMapViewProps = {
   activeMap: GameMap;
+  hasAvailableMarkers: boolean;
   markers: MapMarker[];
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
   selectedMarkerId?: MapMarker["id"];
@@ -59,6 +60,7 @@ function SelectedMarkerController({
 
 export function GameMapView({
   activeMap,
+  hasAvailableMarkers,
   markers,
   onMarkerSelect,
   selectedMarkerId,
@@ -70,7 +72,7 @@ export function GameMapView({
   ];
 
   return (
-    <div className="map-placeholder" aria-label={activeMap.name}>
+    <div className="map-placeholder relative" aria-label={activeMap.name}>
       <MapContainer
         key={activeMap.id}
         bounds={imageBounds}
@@ -97,6 +99,14 @@ export function GameMapView({
           selectedMarkerId={selectedMarkerId}
         />
       </MapContainer>
+      {!hasAvailableMarkers ? (
+        <div
+          className="pointer-events-none absolute bottom-4 left-1/2 z-[500] w-max max-w-[calc(100%-2rem)] -translate-x-1/2 rounded-md border border-border bg-card/95 px-3 py-2 text-center text-sm text-card-foreground shadow-lg backdrop-blur-sm"
+          role="status"
+        >
+          No markers are available for this map yet.
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { MapMarker } from "@/domain/marker";
 import type { SearchEntry } from "@/lib/search-index";
 import { ThemeSelector } from "@/components/layout/ThemeSelector";
@@ -12,6 +13,7 @@ import { cn } from "@/lib/utils";
 type SidebarProps = {
   areaOptions: string[];
   markers: MapMarker[];
+  mapSelector?: ReactNode;
   onClearAreas: () => void;
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
   onSearchQueryChange: (query: string) => void;
@@ -25,6 +27,7 @@ type SidebarProps = {
 
 export function Sidebar({
   areaOptions,
+  mapSelector,
   markers,
   onClearAreas,
   onMarkerSelect,
@@ -72,6 +75,8 @@ export function Sidebar({
         query={searchQuery}
         suggestions={searchSuggestions}
       />
+
+      {mapSelector}
 
       <Separator />
 
@@ -133,7 +138,6 @@ export function Sidebar({
                 ))}
               </div>
             </div>
-
           </div>
         </ScrollArea>
       </section>
