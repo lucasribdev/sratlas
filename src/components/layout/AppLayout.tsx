@@ -68,7 +68,7 @@ export function AppLayout() {
   }
 
   function selectSearchEntry(entry: SearchEntry) {
-    const selection = resolveSearchEntrySelection(entry);
+    const selection = resolveSearchEntrySelection(entry, filteredMarkers);
 
     setSearchQuery(selection.searchQuery);
 

@@ -8,11 +8,15 @@ export type SearchSelectionResult = {
 
 export function resolveSearchEntrySelection(
   entry: SearchEntry,
+  visibleMarkers: readonly Pick<MapMarker, 'id'>[],
 ): SearchSelectionResult {
   const searchQuery = entry.label
   let selectedMarkerId: MapMarker['id'] | undefined
 
-  if (entry.type === 'marker') {
+  if (
+    entry.type === 'marker' &&
+    visibleMarkers.some((marker) => marker.id === entry.targetId)
+  ) {
     selectedMarkerId = entry.targetId
   }
 

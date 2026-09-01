@@ -164,17 +164,33 @@ describe('search index', () => {
 })
 
 describe('search selection', () => {
-  it('selects a marker and keeps its marker id', () => {
+  it('resolves a visible marker so map navigation is allowed', () => {
     const markerEntry = findEntry('Metal Camp', 'marker')
-    const selection = resolveSearchEntrySelection(markerEntry)
+    const visibleMarkers = testMarkers.filter((marker) => marker.area === 'Outskirts')
+    const selection = resolveSearchEntrySelection(markerEntry, visibleMarkers)
 
     expect(selection.searchQuery).toBe('Metal Camp')
     expect(selection.selectedMarkerId).toBe('metal-camp')
   })
 
+  it('does not resolve a marker hidden by the selected areas', () => {
+    const markerEntry = findEntry('Metal Camp', 'marker')
+    const selectedAreas = new Set(['Ashen Hollow'])
+    const visibleMarkers = testMarkers.filter(
+      (marker) =>
+        markerMatchesSearch(marker, 'metal') &&
+        (marker.area ? selectedAreas.has(marker.area) : false),
+    )
+    const selection = resolveSearchEntrySelection(markerEntry, visibleMarkers)
+
+    expect(selection.searchQuery).toBe('Metal Camp')
+    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selectedAreas).toEqual(new Set(['Ashen Hollow']))
+  })
+
   it('selects a monster without changing selected areas', () => {
     const monsterEntry = findEntry('Metal Golem', 'monster')
-    const selection = resolveSearchEntrySelection(monsterEntry)
+    const selection = resolveSearchEntrySelection(monsterEntry, testMarkers)
 
     expect(selection.searchQuery).toBe('Metal Golem')
     expect(selection).not.toHaveProperty('selectedAreas')
@@ -182,7 +198,7 @@ describe('search selection', () => {
 
   it('selects an item or essence without changing selected areas', () => {
     const essenceEntry = findEntry('Metal Essence', 'essence')
-    const selection = resolveSearchEntrySelection(essenceEntry)
+    const selection = resolveSearchEntrySelection(essenceEntry, testMarkers)
 
     expect(selection.searchQuery).toBe('Metal Essence')
     expect(selection).not.toHaveProperty('selectedAreas')
@@ -190,7 +206,7 @@ describe('search selection', () => {
 
   it('selects a resource by using it as the search query', () => {
     const resourceEntry = findEntry('Mining', 'resource')
-    const selection = resolveSearchEntrySelection(resourceEntry)
+    const selection = resolveSearchEntrySelection(resourceEntry, testMarkers)
 
     expect(selection.searchQuery).toBe('Mining')
   })
@@ -204,7 +220,7 @@ describe('search selection', () => {
     ['Blacksmith', 'interactable'],
   ] as const)('selects a %s %s suggestion as a search query', (label, type) => {
     const entry = findEntry(label, type)
-    const selection = resolveSearchEntrySelection(entry)
+    const selection = resolveSearchEntrySelection(entry, testMarkers)
 
     expect(selection.searchQuery).toBe(label)
     expect(selection.selectedMarkerId).toBeUndefined()
