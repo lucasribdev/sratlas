@@ -34,13 +34,13 @@ O `id` deve ser unico no arquivo. Use nomes curtos em `kebab-case`, por exemplo
 
 Todo marcador novo deve ter:
 
-| Campo | Como preencher |
-| --- | --- |
-| `id` | Identificador unico em `kebab-case`. |
-| `name` | Nome exibido para o jogador. |
+| Campo   | Como preencher                                           |
+| ------- | -------------------------------------------------------- |
+| `id`    | Identificador unico em `kebab-case`.                     |
+| `name`  | Nome exibido para o jogador.                             |
 | `mapId` | Id do mapa em `src/data/maps.json`, por exemplo `world`. |
-| `x` | Coordenada horizontal percentual, de `0` a `100`. |
-| `y` | Coordenada vertical percentual, de `0` a `100`. |
+| `x`     | Coordenada horizontal percentual, de `0` a `100`.        |
+| `y`     | Coordenada vertical percentual, de `0` a `100`.          |
 
 No MVP, a cor visual do marcador vem da area cadastrada em
 `src/data/areas.json`. O marcador continua usando apenas o campo `area`; nao
@@ -52,17 +52,17 @@ anel/borda extra ao marcador sem trocar a cor da area.
 Use os campos opcionais quando eles ajudarem a busca, os filtros ou o detalhe do
 marcador:
 
-| Campo | Quando usar |
-| --- | --- |
-| `area` | Regiao usada no filtro principal, como `Ocean` ou `Plains`. |
-| `zoneType` | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`. |
-| `level` | Nivel recomendado ou nivel da zona. Pode ser `"17"` ou `"12-15"`. |
-| `monsters` | Lista rica de monstros encontrados na zona. |
-| `resources` | Grupos de recursos por tipo de coleta. |
-| `warpPoint` | `true` quando a zona tem ponto de warp. Omita quando nao tiver. |
-| `wikiSlug` | Slug opcional da pagina da wiki. |
-| `interactables` | Lista rica de NPCs, objetos ou pontos interativos. |
-| `tags` | Termos extras para melhorar a busca. |
+| Campo           | Quando usar                                                       |
+| --------------- | ----------------------------------------------------------------- |
+| `area`          | Regiao usada no filtro principal, como `Ocean` ou `Plains`.       |
+| `zoneType`      | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`.           |
+| `level`         | Nivel recomendado ou nivel da zona. Pode ser `"17"` ou `"12-15"`. |
+| `monsters`      | Lista rica de monstros encontrados na zona.                       |
+| `resources`     | Grupos de recursos por tipo de coleta.                            |
+| `warpPoint`     | `true` quando a zona tem ponto de warp. Omita quando nao tiver.   |
+| `wikiSlug`      | Slug opcional da pagina da wiki.                                  |
+| `interactables` | Lista rica de NPCs, objetos ou pontos interativos.                |
+| `tags`          | Termos extras para melhorar a busca.                              |
 
 Dados importantes devem entrar em campos estruturados do marcador: `area`,
 `zoneType`, `level`, `monsters`, `resources`, `interactables`, `warpPoint`,
@@ -227,7 +227,7 @@ Mesmo quando aproximadas, `x` e `y` devem continuar entre `0` e `100`.
 {
   "id": "mistwood-crossing",
   "name": "Mistwood Crossing",
-  "mapId": "world",
+  "mapId": "surface",
   "x": 57.4,
   "y": 44.8,
   "area": "Mistwood",
@@ -310,7 +310,7 @@ Antes de abrir PR ou fechar uma issue de dados:
 8. Pesquise pelo nome da zona, area, monstro, interactable e recurso principal.
 9. Clique no resultado e confirme que o mapa centraliza no marcador.
 10. Abra o popup e confira nome, dados estruturados da zona e link da wiki quando
-   existir.
+    existir.
 11. Verifique pelo menos uma tela desktop e uma mobile.
 
 ## Search Autocomplete

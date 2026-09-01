@@ -1,47 +1,54 @@
-import { useEffect } from 'react'
-import { CRS, type LatLngBoundsExpression } from 'leaflet'
-import { ImageOverlay, MapContainer, useMap } from 'react-leaflet'
-import { markers as allMarkers } from '@/data/markers'
-import { maps } from '@/data/maps'
-import type { MapMarker } from '@/domain/marker'
-import { mapBoundsFromDimensions, percentageToLeafletLatLng } from '@/lib/coordinates'
-import { MapMarkers } from './MapMarkers'
+import { useEffect } from "react";
+import { CRS, type LatLngBoundsExpression } from "leaflet";
+import { ImageOverlay, MapContainer, useMap } from "react-leaflet";
+import { markers as allMarkers } from "@/data/markers";
+import { maps } from "@/data/maps";
+import type { MapMarker } from "@/domain/marker";
+import {
+  mapBoundsFromDimensions,
+  percentageToLeafletLatLng,
+} from "@/lib/coordinates";
+import { MapMarkers } from "./MapMarkers";
 
-const worldMap = maps.find((map) => map.id === 'world')
+const worldMap = maps.find((map) => map.id === "surface");
 
 if (!worldMap) {
-  throw new Error('World map metadata is missing from maps.json.')
+  throw new Error("World map metadata is missing from maps.json.");
 }
 
-const initialMap = worldMap
-const imageBounds = mapBoundsFromDimensions(initialMap)
-const mapPanMargin = 320
+const initialMap = worldMap;
+const imageBounds = mapBoundsFromDimensions(initialMap);
+const mapPanMargin = 320;
 const panBounds: LatLngBoundsExpression = [
   [-mapPanMargin, -mapPanMargin],
   [initialMap.height + mapPanMargin, initialMap.width + mapPanMargin],
-]
-const minZoom = -2
-const maxZoom = 2
-const selectedMarkerZoom = 1.5
+];
+const minZoom = -2;
+const maxZoom = 2;
+const selectedMarkerZoom = 1.5;
 
 type GameMapViewProps = {
-  markers: MapMarker[]
-  onMarkerSelect: (markerId: MapMarker['id']) => void
-  selectedMarkerId?: MapMarker['id']
-}
+  markers: MapMarker[];
+  onMarkerSelect: (markerId: MapMarker["id"]) => void;
+  selectedMarkerId?: MapMarker["id"];
+};
 
 type SelectedMarkerControllerProps = {
-  selectedMarkerId?: MapMarker['id']
-}
+  selectedMarkerId?: MapMarker["id"];
+};
 
-function SelectedMarkerController({ selectedMarkerId }: SelectedMarkerControllerProps) {
-  const map = useMap()
+function SelectedMarkerController({
+  selectedMarkerId,
+}: SelectedMarkerControllerProps) {
+  const map = useMap();
 
   useEffect(() => {
-    const selectedMarker = allMarkers.find((marker) => marker.id === selectedMarkerId)
+    const selectedMarker = allMarkers.find(
+      (marker) => marker.id === selectedMarkerId,
+    );
 
     if (!selectedMarker) {
-      return
+      return;
     }
 
     map.flyTo(
@@ -50,13 +57,17 @@ function SelectedMarkerController({ selectedMarkerId }: SelectedMarkerController
       {
         duration: 0.5,
       },
-    )
-  }, [map, selectedMarkerId])
+    );
+  }, [map, selectedMarkerId]);
 
-  return null
+  return null;
 }
 
-export function GameMapView({ markers, onMarkerSelect, selectedMarkerId }: GameMapViewProps) {
+export function GameMapView({
+  markers,
+  onMarkerSelect,
+  selectedMarkerId,
+}: GameMapViewProps) {
   return (
     <div className="map-placeholder" aria-label={initialMap.name}>
       <MapContainer
@@ -82,5 +93,5 @@ export function GameMapView({ markers, onMarkerSelect, selectedMarkerId }: GameM
         />
       </MapContainer>
     </div>
-  )
+  );
 }

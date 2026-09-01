@@ -1,8 +1,15 @@
 [
   {
-    "id": "world",
-    "name": "World Map",
-    "imageUrl": "/maps/worldmapsurface.webp",
+    "id": "surface",
+    "name": "Surface",
+    "imageUrl": "/maps/surface.webp",
+    "width": 1076,
+    "height": 1056
+  },
+  {
+    "id": "caves",
+    "name": "Caves",
+    "imageUrl": "/maps/caves.webp",
     "width": 1076,
     "height": 1056
   }

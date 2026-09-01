@@ -2,7 +2,7 @@
   {
     "id": "spawn",
     "name": "Spawn",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 50,
     "y": 53,
     "area": "Spawn",
@@ -98,7 +98,7 @@
   {
     "id": "outskirts-south",
     "name": "Outskirts south",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 48,
     "y": 57.8,
     "area": "Outskirts",
@@ -182,7 +182,7 @@
   {
     "id": "outskirts-southeast",
     "name": "Outskirts southeast",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 54.2,
     "y": 57,
     "area": "Outskirts",
@@ -266,7 +266,7 @@
   {
     "id": "outskirts-pond",
     "name": "Outskirts pond",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 58.8,
     "y": 55,
     "area": "Outskirts",
@@ -374,7 +374,7 @@
   {
     "id": "outskirts-east",
     "name": "Outskirts east",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 60.6,
     "y": 49.6,
     "area": "Outskirts",
@@ -458,7 +458,7 @@
   {
     "id": "outskirts-northeast",
     "name": "Outskirts northeast",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 56.6,
     "y": 45.3,
     "area": "Outskirts",
@@ -542,7 +542,7 @@
   {
     "id": "outskirts-north",
     "name": "Outskirts north",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 50.7,
     "y": 43,
     "area": "Outskirts",
@@ -627,7 +627,7 @@
   {
     "id": "outskirts-flower-field",
     "name": "Outskirts flower field",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 46,
     "y": 43.8,
     "area": "Outskirts",
@@ -711,7 +711,7 @@
   {
     "id": "outskirts-northwest",
     "name": "Outskirts northwest",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 41.3,
     "y": 45.9,
     "area": "Outskirts",
@@ -806,7 +806,7 @@
   {
     "id": "outskirts-west",
     "name": "Outskirts west",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 39.2,
     "y": 50.2,
     "area": "Outskirts",
@@ -909,7 +909,7 @@
   {
     "id": "outskirts-southwest",
     "name": "Outskirts southwest",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 41.8,
     "y": 54.7,
     "area": "Outskirts",
@@ -998,7 +998,7 @@
   {
     "id": "plains-1",
     "name": "Plains 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 31.5,
     "y": 49.5,
     "area": "Plains",
@@ -1093,7 +1093,7 @@
   {
     "id": "plains-2",
     "name": "Plains 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 33,
     "y": 45,
     "area": "Plains",
@@ -1165,7 +1165,7 @@
   {
     "id": "plains-3",
     "name": "Plains 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 36.5,
     "y": 39.5,
     "area": "Plains",
@@ -1243,7 +1243,7 @@
   {
     "id": "plains-4",
     "name": "Plains 4",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 34.6,
     "y": 34.8,
     "area": "Plains",
@@ -1304,7 +1304,7 @@
   {
     "id": "forest-1",
     "name": "Forest 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 22.8,
     "y": 40.5,
     "area": "Forest",
@@ -1413,7 +1413,7 @@
   {
     "id": "forest-2",
     "name": "Forest 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 24,
     "y": 33.5,
     "area": "Forest",
@@ -1510,7 +1510,7 @@
   {
     "id": "forest-3",
     "name": "Forest 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 25.1,
     "y": 28,
     "area": "Forest",
@@ -1617,7 +1617,7 @@
   {
     "id": "swamp",
     "name": "Swamp",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 27.3,
     "y": 22.9,
     "area": "Plains",
@@ -1703,7 +1703,7 @@
   {
     "id": "forest-pond",
     "name": "Forest pond",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 19.5,
     "y": 49,
     "area": "Forest",
@@ -1800,7 +1800,7 @@
   {
     "id": "lost-plains",
     "name": "Lost plains",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 29.8,
     "y": 54,
     "area": "Plains",
@@ -1862,7 +1862,7 @@
   {
     "id": "deep-forest-1",
     "name": "Deep forest 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 14.9,
     "y": 39,
     "area": "Plains",
@@ -1964,7 +1964,7 @@
   {
     "id": "deep-forest-threshold",
     "name": "Deep forest threshold",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 13,
     "y": 36,
     "area": "Plains",
@@ -2059,7 +2059,7 @@
   {
     "id": "deep-tree-way",
     "name": "Deep tree way",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 12,
     "y": 50,
     "area": "Plains",
@@ -2131,7 +2131,7 @@
   {
     "id": "deep-forest-2",
     "name": "Deep forest 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 18.2,
     "y": 30,
     "area": "Plains",
@@ -2238,7 +2238,7 @@
   {
     "id": "deep-forest-3",
     "name": "Deep forest 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 21.5,
     "y": 22.5,
     "area": "Plains",
@@ -2320,7 +2320,7 @@
   {
     "id": "lost-peak",
     "name": "Lost peak",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 28.2,
     "y": 13.5,
     "area": "Plains",
@@ -2429,7 +2429,7 @@
   {
     "id": "market-hub-entrance",
     "name": "Market hub entrance",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 53,
     "y": 47,
     "area": "Spawn",
@@ -2451,7 +2451,7 @@
   {
     "id": "plains-cave",
     "name": "Plains cave",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 31.2,
     "y": 40.5,
     "area": "Plains",
@@ -2512,7 +2512,7 @@
   {
     "id": "beach-cave",
     "name": "Beach cave",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 60,
     "y": 39,
     "area": "Plains cave",
@@ -2573,7 +2573,7 @@
   {
     "id": "forest-seeding-ground",
     "name": "Forest seeding ground",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 23.5,
     "y": 49,
     "area": "Forest",
@@ -2664,7 +2664,7 @@
   {
     "id": "forest-lake",
     "name": "Forest Lake",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 23,
     "y": 45,
     "area": "Forest",
@@ -2770,7 +2770,7 @@
   {
     "id": "giant-tree",
     "name": "Giant tree",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 12,
     "y": 33,
     "area": "Giant tree",
@@ -2832,7 +2832,7 @@
   {
     "id": "deep-forest-den",
     "name": "Deep forest den",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 18,
     "y": 23,
     "area": "Deep forest den",
@@ -2903,7 +2903,7 @@
   {
     "id": "seashell-cove",
     "name": "Seashell Cove",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 61,
     "y": 37.2,
     "area": "Ocean",
@@ -3021,7 +3021,7 @@
   {
     "id": "shell-beach",
     "name": "Shell beach",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 56.3,
     "y": 38,
     "area": "Ocean",
@@ -3137,7 +3137,7 @@
   {
     "id": "around-the-seashore",
     "name": "Around the Seashore",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 50.8,
     "y": 39,
     "area": "Ocean",
@@ -3250,7 +3250,7 @@
   {
     "id": "snapper-shore",
     "name": "Snapper Shore",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 42.4,
     "y": 38,
     "area": "Ocean",
@@ -3361,7 +3361,7 @@
   {
     "id": "ocean-1",
     "name": "Ocean 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 50.8,
     "y": 30,
     "area": "Ocean",
@@ -3449,7 +3449,7 @@
   {
     "id": "ocean-4",
     "name": "Ocean 4",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 59,
     "y": 27.5,
     "area": "Ocean",
@@ -3547,7 +3547,7 @@
   {
     "id": "ocean-3",
     "name": "Ocean 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 42.5,
     "y": 27.5,
     "area": "Ocean",
@@ -3640,7 +3640,7 @@
   {
     "id": "ocean-2",
     "name": "Ocean 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 36,
     "y": 23,
     "area": "Ocean",
@@ -3749,7 +3749,7 @@
   {
     "id": "deep-ocean-2",
     "name": "Deep ocean 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 61,
     "y": 19,
     "area": "Ocean",
@@ -3832,7 +3832,7 @@
   {
     "id": "deep-ocean-1",
     "name": "Deep ocean 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 51.5,
     "y": 20,
     "area": "Ocean",
@@ -3921,7 +3921,7 @@
   {
     "id": "deep-ocean-3",
     "name": "Deep ocean 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 44.2,
     "y": 15.4,
     "area": "Ocean",
@@ -3994,7 +3994,7 @@
   {
     "id": "deep-ocean-4",
     "name": "Deep ocean 4",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 36,
     "y": 11,
     "area": "Ocean",
@@ -4067,7 +4067,7 @@
   {
     "id": "cold-ocean-cave",
     "name": "Cold ocean cave",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 54,
     "y": 27,
     "area": "Cold ocean cave",
@@ -4128,7 +4128,7 @@
   {
     "id": "great-trench",
     "name": "Great trench",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 46.7,
     "y": 14.2,
     "area": "Great trench",
@@ -4190,7 +4190,7 @@
   {
     "id": "savannah-1",
     "name": "Savannah 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 66.5,
     "y": 45,
     "area": "Desert",
@@ -4248,7 +4248,7 @@
   {
     "id": "savannah-2",
     "name": "Savannah 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 69,
     "y": 52.2,
     "area": "Desert",
@@ -4311,7 +4311,7 @@
   {
     "id": "savannah-3",
     "name": "Savannah 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 72.5,
     "y": 60,
     "area": "Desert",
@@ -4380,7 +4380,7 @@
   {
     "id": "desert-4",
     "name": "Desert 4",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 68.4,
     "y": 25.4,
     "area": "Desert",
@@ -4479,7 +4479,7 @@
   {
     "id": "desert-3",
     "name": "Desert 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 70.8,
     "y": 33.2,
     "area": "Desert",
@@ -4557,7 +4557,7 @@
   {
     "id": "desert-2",
     "name": "Desert 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 75.3,
     "y": 40.3,
     "area": "Desert",
@@ -4640,7 +4640,7 @@
   {
     "id": "desert-1",
     "name": "Desert 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 76,
     "y": 46.4,
     "area": "Desert",
@@ -4718,7 +4718,7 @@
   {
     "id": "windy-savannah",
     "name": "Windy savannah",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 81.2,
     "y": 60,
     "area": "Desert",
@@ -4794,7 +4794,7 @@
   {
     "id": "desert-8",
     "name": "Desert 8",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 83,
     "y": 41.8,
     "area": "Desert",
@@ -4932,7 +4932,7 @@
   {
     "id": "desert-7",
     "name": "Desert 7",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 89.6,
     "y": 41.8,
     "area": "Desert",
@@ -5005,7 +5005,7 @@
   {
     "id": "desert-5",
     "name": "Desert 5",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 84,
     "y": 30,
     "area": "Desert",
@@ -5098,7 +5098,7 @@
   {
     "id": "desert-6",
     "name": "Desert 6",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 77.9,
     "y": 24,
     "area": "Desert",
@@ -5160,7 +5160,7 @@
   {
     "id": "desert-coast",
     "name": "Desert coast",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 70.8,
     "y": 19.5,
     "area": "Desert",
@@ -5259,7 +5259,7 @@
   {
     "id": "pyramid",
     "name": "Pyramid",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 88.6,
     "y": 37.6,
     "area": "Pyramid",
@@ -5321,7 +5321,7 @@
   {
     "id": "banana-farm",
     "name": "Banana farm",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 68.6,
     "y": 56.4,
     "area": "Banana farm",
@@ -5377,7 +5377,7 @@
   {
     "id": "misty-forest-1",
     "name": "Misty forest 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 64,
     "y": 63,
     "area": "Misty Forest",
@@ -5434,7 +5434,7 @@
   {
     "id": "misty-forest-2",
     "name": "Misty forest 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 57.8,
     "y": 65.3,
     "area": "Misty Forest",
@@ -5512,7 +5512,7 @@
   {
     "id": "misty-forest-3",
     "name": "Misty forest 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 49.5,
     "y": 63.8,
     "area": "Misty Forest",
@@ -5570,7 +5570,7 @@
   {
     "id": "lost-forest",
     "name": "Lost Forest",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 53,
     "y": 67.2,
     "area": "Lost Forest",
@@ -5651,7 +5651,7 @@
   {
     "id": "sulfuric-plains-1",
     "name": "Sulfuric plains 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 44,
     "y": 63,
     "area": "Sulfuric Plains",
@@ -5711,7 +5711,7 @@
   {
     "id": "sulfuric-plains-2",
     "name": "Sulfuric plains 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 40.4,
     "y": 61.2,
     "area": "Sulfuric Plains",
@@ -5795,7 +5795,7 @@
   {
     "id": "sulfuric-plains-3",
     "name": "Sulfuric plains 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 37,
     "y": 58,
     "area": "Sulfuric Plains",
@@ -5854,7 +5854,7 @@
   {
     "id": "sulfuric-path",
     "name": "Sulfuric path",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 38.5,
     "y": 63.7,
     "area": "Sulfuric Path",
@@ -5918,7 +5918,7 @@
   {
     "id": "sulfuric-path-2",
     "name": "Sulfuric path 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 37,
     "y": 67,
     "area": "Sulfuric Path",
@@ -5977,7 +5977,7 @@
   {
     "id": "rocky-path-3",
     "name": "Rocky path 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 24,
     "y": 59,
     "area": "Rocky Path",
@@ -6084,7 +6084,7 @@
   {
     "id": "rocky-path-1",
     "name": "Rocky path 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 29,
     "y": 65,
     "area": "Rocky Path",
@@ -6152,7 +6152,7 @@
   {
     "id": "rocky-path-2",
     "name": "Rocky path 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 35.6,
     "y": 70,
     "area": "Rocky Path",
@@ -6225,7 +6225,7 @@
   {
     "id": "detour",
     "name": "Detour",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 17,
     "y": 57,
     "area": "Rocky Path",
@@ -6291,7 +6291,7 @@
   {
     "id": "cat-golem-den",
     "name": "Cat Golem Den",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 33.2,
     "y": 71.4,
     "area": "Detour",
@@ -6385,7 +6385,7 @@
   {
     "id": "snowy-mountain-4",
     "name": "Snowy mountain 4",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 40.6,
     "y": 73.7,
     "area": "Snowy Mountain",
@@ -6453,7 +6453,7 @@
   {
     "id": "snowy-mountain-5",
     "name": "Snowy mountain 5",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 49.8,
     "y": 75.2,
     "area": "Snowy Mountain",
@@ -6549,7 +6549,7 @@
   {
     "id": "snowy-mountain-1",
     "name": "Snowy mountain 1",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 58.6,
     "y": 76.2,
     "area": "Snowy Mountain",
@@ -6648,7 +6648,7 @@
   {
     "id": "snowy-mountain-2",
     "name": "Snowy mountain 2",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 66.4,
     "y": 72.8,
     "area": "Snowy Mountain",
@@ -6716,7 +6716,7 @@
   {
     "id": "snowy-mountain-3",
     "name": "Snowy mountain 3",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 75,
     "y": 71,
     "area": "Snowy Mountain",
@@ -6809,7 +6809,7 @@
   {
     "id": "traveler-rest",
     "name": "Traveler rest",
-    "mapId": "world",
+    "mapId": "surface",
     "x": 45,
     "y": 75.5,
     "area": "Traveler rest",

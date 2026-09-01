@@ -40,10 +40,10 @@ No MVP, ele deve ficar simples e estatico:
 }
 ```
 
-| Campo | Obrigatorio | Descricao |
-| --- | --- | --- |
-| `name` | Sim | Nome da area exatamente como usado em `markers.json` |
-| `color` | Sim | Cor hexadecimal usada nos marcadores dessa area |
+| Campo   | Obrigatorio | Descricao                                            |
+| ------- | ----------- | ---------------------------------------------------- |
+| `name`  | Sim         | Nome da area exatamente como usado em `markers.json` |
+| `color` | Sim         | Cor hexadecimal usada nos marcadores dessa area      |
 
 A cor do marcador deve depender de `marker.area`. Nao repita cor dentro de cada
 marcador. Se a area do marcador nao existir em `areas.json`, ou se o marcador
@@ -66,13 +66,13 @@ Campos sugeridos:
 }
 ```
 
-| Campo | Obrigatorio | Descricao |
-| --- | --- | --- |
-| `id` | Sim | Identificador unico do mapa |
-| `name` | Sim | Nome exibido |
-| `imageUrl` | Sim | Caminho publico da imagem |
-| `width` | Sim | Largura original da imagem |
-| `height` | Sim | Altura original da imagem |
+| Campo      | Obrigatorio | Descricao                   |
+| ---------- | ----------- | --------------------------- |
+| `id`       | Sim         | Identificador unico do mapa |
+| `name`     | Sim         | Nome exibido                |
+| `imageUrl` | Sim         | Caminho publico da imagem   |
+| `width`    | Sim         | Largura original da imagem  |
+| `height`   | Sim         | Altura original da imagem   |
 
 ## Marcadores
 
@@ -86,7 +86,7 @@ veja o [Schema dos dados](./data-schema.md).
 {
   "id": "zone-ashen-hollow",
   "name": "Ashen Hollow",
-  "mapId": "world",
+  "mapId": "surface",
   "x": 58.2,
   "y": 31.7,
   "area": "Ashen Hollow",
@@ -124,22 +124,22 @@ veja o [Schema dos dados](./data-schema.md).
 }
 ```
 
-| Campo | Obrigatorio | Descricao |
-| --- | --- | --- |
-| `id` | Sim | Identificador unico |
-| `name` | Sim | Nome exibido |
-| `mapId` | Sim | Mapa onde o marcador aparece |
-| `x` | Sim | Coordenada horizontal percentual |
-| `y` | Sim | Coordenada vertical percentual |
-| `area` | Nao | Area ou regiao |
-| `zoneType` | Nao | Tipo da zona, por exemplo `Surface zone` |
-| `level` | Nao | Nivel recomendado ou nivel da zona |
-| `monsters` | Nao | Lista de monstros ricos encontrados na area |
-| `resources` | Nao | Lista de grupos de recursos por profissao ou tipo de coleta |
-| `warpPoint` | Nao | Indica se a area tem ponto de warp |
-| `wikiSlug` | Nao | Slug da pagina da wiki |
-| `interactables` | Nao | Lista de NPCs, objetos ou pontos interativos ricos |
-| `tags` | Nao | Termos auxiliares de busca que nao duplicam campos estruturados |
+| Campo           | Obrigatorio | Descricao                                                       |
+| --------------- | ----------- | --------------------------------------------------------------- |
+| `id`            | Sim         | Identificador unico                                             |
+| `name`          | Sim         | Nome exibido                                                    |
+| `mapId`         | Sim         | Mapa onde o marcador aparece                                    |
+| `x`             | Sim         | Coordenada horizontal percentual                                |
+| `y`             | Sim         | Coordenada vertical percentual                                  |
+| `area`          | Nao         | Area ou regiao                                                  |
+| `zoneType`      | Nao         | Tipo da zona, por exemplo `Surface zone`                        |
+| `level`         | Nao         | Nivel recomendado ou nivel da zona                              |
+| `monsters`      | Nao         | Lista de monstros ricos encontrados na area                     |
+| `resources`     | Nao         | Lista de grupos de recursos por profissao ou tipo de coleta     |
+| `warpPoint`     | Nao         | Indica se a area tem ponto de warp                              |
+| `wikiSlug`      | Nao         | Slug da pagina da wiki                                          |
+| `interactables` | Nao         | Lista de NPCs, objetos ou pontos interativos ricos              |
+| `tags`          | Nao         | Termos auxiliares de busca que nao duplicam campos estruturados |
 
 Formato recomendado para `resources`:
 

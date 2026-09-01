@@ -18,22 +18,22 @@ continuam fora do MVP.
 
 Campos aceitos em cada item de `markers.json`:
 
-| Campo | Obrigatorio | Tipo | Descricao |
-| --- | --- | --- | --- |
-| `id` | Sim | `string` | Identificador unico em `kebab-case`. |
-| `name` | Sim | `string` | Nome exibido para o jogador. |
-| `mapId` | Sim | `string` | Id do mapa auxiliar, por exemplo `world`. |
-| `x` | Sim | `number` | Coordenada horizontal percentual, de `0` a `100`. |
-| `y` | Sim | `number` | Coordenada vertical percentual, de `0` a `100`. |
-| `area` | Nao | `string` | Regiao usada em filtros e cor visual. |
-| `zoneType` | Nao | `string` | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`. |
-| `level` | Nao | `string` | Nivel recomendado ou nivel da zona. |
-| `monsters` | Nao | `MarkerMonster[]` | Monstros encontrados na zona. |
-| `resources` | Nao | `MarkerResourceGroup[]` | Recursos agrupados por tipo de coleta. |
-| `warpPoint` | Nao | `boolean` | Indica ponto de warp. |
-| `wikiSlug` | Nao | `string` | Slug da pagina da wiki do proprio marker. |
-| `interactables` | Nao | `MarkerInteractable[]` | NPCs, objetos ou pontos interativos. |
-| `tags` | Nao | `string[]` | Termos extras de busca. |
+| Campo           | Obrigatorio | Tipo                    | Descricao                                               |
+| --------------- | ----------- | ----------------------- | ------------------------------------------------------- |
+| `id`            | Sim         | `string`                | Identificador unico em `kebab-case`.                    |
+| `name`          | Sim         | `string`                | Nome exibido para o jogador.                            |
+| `mapId`         | Sim         | `string`                | Id do mapa auxiliar, por exemplo `world`.               |
+| `x`             | Sim         | `number`                | Coordenada horizontal percentual, de `0` a `100`.       |
+| `y`             | Sim         | `number`                | Coordenada vertical percentual, de `0` a `100`.         |
+| `area`          | Nao         | `string`                | Regiao usada em filtros e cor visual.                   |
+| `zoneType`      | Nao         | `string`                | Tipo da zona, como `Surface zone`, `Dungeon` ou `Cave`. |
+| `level`         | Nao         | `string`                | Nivel recomendado ou nivel da zona.                     |
+| `monsters`      | Nao         | `MarkerMonster[]`       | Monstros encontrados na zona.                           |
+| `resources`     | Nao         | `MarkerResourceGroup[]` | Recursos agrupados por tipo de coleta.                  |
+| `warpPoint`     | Nao         | `boolean`               | Indica ponto de warp.                                   |
+| `wikiSlug`      | Nao         | `string`                | Slug da pagina da wiki do proprio marker.               |
+| `interactables` | Nao         | `MarkerInteractable[]`  | NPCs, objetos ou pontos interativos.                    |
+| `tags`          | Nao         | `string[]`              | Termos extras de busca.                                 |
 
 ## Objetos Ricos
 
@@ -94,7 +94,7 @@ grupo de recurso quando esse dado existir.
 {
   "id": "spawn",
   "name": "Spawn",
-  "mapId": "world",
+  "mapId": "surface",
   "x": 50,
   "y": 53,
   "area": "Spawn",
@@ -111,7 +111,7 @@ grupo de recurso quando esse dado existir.
 {
   "id": "outskirts-south",
   "name": "Outskirts south",
-  "mapId": "world",
+  "mapId": "surface",
   "x": 48,
   "y": 57.8,
   "area": "Outskirts",
