@@ -39,6 +39,7 @@ O MVP deve permitir:
 - [Base UI e manutencao visual](./docs/ui.md)
 - [Milestones e issues](./docs/milestones.md)
 - [Instrucoes para agentes](./AGENTS.md)
+- [Guia de contribuicao](./CONTRIBUTING.md)
 
 ## Comandos
 
