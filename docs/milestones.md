@@ -64,7 +64,7 @@ Status: MVP
 
 ## Milestone 3: Dados e marcadores
 
-Objetivo: carregar mapas e marcadores a partir de JSON estatico.
+Objetivo: carregar metadados de areas, mapas e marcadores a partir de JSON estatico.
 
 ### Issues
 
@@ -74,9 +74,11 @@ Definir o mapa inicial, imagem e dimensoes.
 
 Status: MVP
 
-#### 10. Definir regra visual dos marcadores
+#### 10. Criar `areas.json` e definir regra visual dos marcadores
 
-Definir cores dos marcadores a partir de `warpPoint`, `resources`, `monsters` e fallback generico.
+Definir a cor base de cada marcador a partir dos metadados de `marker.area` em
+`areas.json`, com fallback neutro. `warpPoint: true` deve apenas adicionar o
+anel/borda visual apropriado, sem alterar a cor base.
 
 Status: MVP
 
@@ -88,7 +90,7 @@ Status: MVP
 
 #### 12. Criar tipos TypeScript para dados
 
-Tipar mapas e marcadores.
+Tipar areas, mapas e marcadores.
 
 Status: MVP
 
@@ -112,13 +114,14 @@ Objetivo: permitir que jogadores encontrem rapidamente pontos importantes.
 
 #### 15. Criar filtros por area
 
-Permitir filtrar os marcadores por area/regiao.
+Permitir filtrar os marcadores pelos valores de area/regiao presentes nos dados,
+ordenados conforme os metadados de `areas.json`.
 
 Status: MVP
 
 #### 16. Criar busca por texto
 
-Buscar por nome, area e tags.
+Buscar por nome, area, tipo de zona, tags, monstros, recursos e interactables.
 
 Status: MVP
 
@@ -202,7 +205,8 @@ Status: MVP
 
 #### 28. Revisar escopo final do MVP
 
-Confirmar que nada fora do MVP foi adicionado.
+Confirmar que nada fora do MVP foi adicionado, incluindo backend, login, painel
+administrativo e sincronizacao automatica com a wiki.
 
 Status: MVP
 
