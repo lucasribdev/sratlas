@@ -1,4 +1,5 @@
 import type { MapMarker } from '@/domain/marker'
+import { getMarkerSearchFields } from '@/lib/marker-search-fields'
 
 export const searchEntryTypes = [
   'marker',
@@ -85,55 +86,21 @@ export function buildSearchIndex(markers: MapMarker[]) {
   const entries = new Map<string, SearchEntry>()
 
   for (const marker of markers) {
-    addEntry(entries, {
-      label: marker.name,
-      type: 'marker',
-      marker,
-      keywords: [marker.area, marker.zoneType, ...(marker.tags ?? [])],
-      targetId: marker.id,
-    })
-
-    addEntry(entries, {
-      label: marker.area,
-      type: 'area',
-      marker,
-      keywords: [marker.name, marker.zoneType],
-    })
-
-    for (const monster of marker.monsters ?? []) {
-      addEntry(entries, {
-        label: monster.name,
-        type: 'monster',
-        marker,
-        keywords: [marker.name, monster.wikiSlug],
-      })
-    }
-
-    for (const interactable of marker.interactables ?? []) {
-      addEntry(entries, {
-        label: interactable.name,
-        type: 'interactable',
-        marker,
-        keywords: [marker.name, interactable.wikiSlug],
-      })
-    }
-
-    for (const resource of marker.resources ?? []) {
-      addEntry(entries, {
-        label: resource.type,
-        type: 'resource',
-        marker,
-        keywords: [marker.name],
-      })
-
-      for (const item of resource.items ?? []) {
-        addEntry(entries, {
-          label: item.name,
-          type: classifyItem(item.name),
-          marker,
-          keywords: [marker.name, resource.type, item.wikiSlug],
-        })
+    for (const field of getMarkerSearchFields(marker)) {
+      if (!field.entry) {
+        continue
       }
+
+      addEntry(entries, {
+        label: field.value,
+        type:
+          field.entry.type === 'item'
+            ? classifyItem(field.value ?? '')
+            : field.entry.type,
+        marker,
+        keywords: field.entry.keywords,
+        targetId: field.entry.targetId,
+      })
     }
   }
 

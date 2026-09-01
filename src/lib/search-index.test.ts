@@ -6,6 +6,8 @@ import {
   moveAutocompleteIndex,
   searchEntryTypeLabels,
 } from '@/lib/search-index'
+import { getMarkerSearchFields } from '@/lib/marker-search-fields'
+import { markerMatchesSearch } from '@/lib/marker-search'
 import { resolveSearchEntrySelection } from '@/lib/search-selection'
 
 const testMarkers: MapMarker[] = [
@@ -56,6 +58,57 @@ function findEntry(label: string, type: ReturnType<typeof buildSearchIndex>[numb
 }
 
 describe('search index', () => {
+  it('uses the shared marker field traversal for text search and autocomplete', () => {
+    const marker: MapMarker = {
+      id: 'shared-fields',
+      name: 'Shared Marker',
+      mapId: 'world',
+      x: 50,
+      y: 50,
+      area: 'Shared Area',
+      zoneType: 'Shared Zone',
+      tags: ['Shared Alias'],
+      monsters: [{ name: 'Shared Monster', wikiSlug: 'Monster_Wiki_Only' }],
+      interactables: [{ name: 'Shared Interactable', wikiSlug: 'Interactable_Wiki_Only' }],
+      resources: [
+        {
+          type: 'Shared Resource',
+          items: [{ name: 'Shared Item', wikiSlug: 'Item_Wiki_Only' }],
+        },
+      ],
+    }
+    const fields = getMarkerSearchFields(marker)
+    const fieldValues = fields.map((field) => field.value)
+    const entries = buildSearchIndex([marker])
+
+    expect(fieldValues).toEqual([
+      'Shared Marker',
+      'Shared Area',
+      'Shared Zone',
+      'Shared Alias',
+      'Shared Monster',
+      'Shared Interactable',
+      'Shared Resource',
+      'Shared Item',
+    ])
+    expect(entries.map((entry) => entry.label)).toEqual([
+      'Shared Marker',
+      'Shared Area',
+      'Shared Monster',
+      'Shared Interactable',
+      'Shared Resource',
+      'Shared Item',
+    ])
+
+    for (const value of fieldValues) {
+      expect(markerMatchesSearch(marker, value ?? '')).toBe(true)
+      expect(getSearchSuggestions(entries, value ?? '')).not.toEqual([])
+    }
+
+    expect(markerMatchesSearch(marker, 'Monster_Wiki_Only')).toBe(false)
+    expect(getSearchSuggestions(entries, 'Monster_Wiki_Only')).not.toEqual([])
+  })
+
   it('builds labeled entries from marker data', () => {
     const entries = buildSearchIndex(testMarkers)
 
