@@ -42,13 +42,18 @@ targets.
 Matching is case-insensitive. Prefix matches are ranked before partial matches.
 The UI shows a limited set of suggestions for the current query.
 
+The results list remains scoped to the active map when the query is empty. With
+a non-empty query, matching markers may come from any registered map, while the
+selected area filters continue to apply. Global result rows show the official
+map name from `src/data/maps.json` as secondary context.
+
 ## Selection Behavior
 
 Selection behavior is centralized in `src/lib/search-selection.ts`.
 
 | Selected type | Behavior |
 | --- | --- |
-| Marker | Sets the search query to the marker name and focuses the marker when it is visible under the current area selection. |
+| Marker | Sets the search query to the marker name, activates its registered map when necessary, and focuses it when it is visible under the current area selection. |
 | Area | Sets the search query to the area name. |
 | Monster | Sets the search query to the monster name. |
 | Item or Essence | Sets the search query to the item name. |
@@ -58,6 +63,10 @@ Selection behavior is centralized in `src/lib/search-selection.ts`.
 Autocomplete selection does not change selected areas. Area checkboxes remain
 under direct user control, so suggestions narrow results within the currently
 selected area scope.
+
+Marker navigation resolves the marker again from `src/data/markers.json` and
+validates its map and selected area before changing maps or focusing it. The
+map view only receives markers belonging to the active map.
 
 Item and essence selections do not activate a drop filter yet because the current
 filter system has no structured drop filter. When that filter exists, route the

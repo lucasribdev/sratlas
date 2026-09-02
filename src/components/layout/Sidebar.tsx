@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
 import type { SearchEntry } from "@/lib/search-index";
 import { ThemeSelector } from "@/components/layout/ThemeSelector";
@@ -13,6 +14,7 @@ import { cn } from "@/lib/utils";
 type SidebarProps = {
   areaOptions: string[];
   markers: MapMarker[];
+  maps: readonly GameMap[];
   mapSelector?: ReactNode;
   onClearAreas: () => void;
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
@@ -23,12 +25,14 @@ type SidebarProps = {
   searchQuery: string;
   searchSuggestions: SearchEntry[];
   selectedAreas: ReadonlySet<string>;
+  showMapContext: boolean;
 };
 
 export function Sidebar({
   areaOptions,
   mapSelector,
   markers,
+  maps,
   onClearAreas,
   onMarkerSelect,
   onSearchQueryChange,
@@ -38,11 +42,13 @@ export function Sidebar({
   searchQuery,
   searchSuggestions,
   selectedAreas,
+  showMapContext,
 }: SidebarProps) {
   const allAreasSelected =
     areaOptions.length > 0 &&
     areaOptions.every((area) => selectedAreas.has(area));
   const noAreasSelected = selectedAreas.size === 0;
+  const mapNamesById = new Map(maps.map((map) => [map.id, map.name]));
 
   return (
     <aside
@@ -168,6 +174,7 @@ export function Sidebar({
             <ol className="grid gap-2 pr-2">
               {markers.map((marker) => {
                 const details = [
+                  showMapContext ? mapNamesById.get(marker.mapId) : undefined,
                   marker.area,
                   marker.zoneType,
                   marker.level ? `Level ${marker.level}` : undefined,

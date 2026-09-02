@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import type { GameMap } from '@/domain/map'
 import type { MapMarker } from '@/domain/marker'
 import {
   buildSearchIndex,
@@ -44,6 +45,18 @@ const testMarkers: MapMarker[] = [
     ],
   },
 ]
+
+const testMaps: GameMap[] = [
+  {
+    id: 'world',
+    name: 'World Map',
+    imageUrl: '/maps/world.webp',
+    width: 1000,
+    height: 1000,
+  },
+]
+
+const allTestAreas = new Set(['Outskirts', 'Ashen Hollow'])
 
 function findEntry(label: string, type: ReturnType<typeof buildSearchIndex>[number]['type']) {
   const entry = buildSearchIndex(testMarkers).find(
@@ -166,31 +179,43 @@ describe('search index', () => {
 describe('search selection', () => {
   it('resolves a visible marker so map navigation is allowed', () => {
     const markerEntry = findEntry('Metal Camp', 'marker')
-    const visibleMarkers = testMarkers.filter((marker) => marker.area === 'Outskirts')
-    const selection = resolveSearchEntrySelection(markerEntry, visibleMarkers)
+    const selection = resolveSearchEntrySelection(
+      markerEntry,
+      testMarkers,
+      testMaps,
+      allTestAreas,
+    )
 
     expect(selection.searchQuery).toBe('Metal Camp')
-    expect(selection.selectedMarkerId).toBe('metal-camp')
+    expect(selection.navigation).toEqual({
+      activeMapId: 'world',
+      selectedMarkerId: 'metal-camp',
+    })
   })
 
   it('does not resolve a marker hidden by the selected areas', () => {
     const markerEntry = findEntry('Metal Camp', 'marker')
     const selectedAreas = new Set(['Ashen Hollow'])
-    const visibleMarkers = testMarkers.filter(
-      (marker) =>
-        markerMatchesSearch(marker, 'metal') &&
-        (marker.area ? selectedAreas.has(marker.area) : false),
+    const selection = resolveSearchEntrySelection(
+      markerEntry,
+      testMarkers,
+      testMaps,
+      selectedAreas,
     )
-    const selection = resolveSearchEntrySelection(markerEntry, visibleMarkers)
 
     expect(selection.searchQuery).toBe('Metal Camp')
-    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.navigation).toBeUndefined()
     expect(selectedAreas).toEqual(new Set(['Ashen Hollow']))
   })
 
   it('selects a monster without changing selected areas', () => {
     const monsterEntry = findEntry('Metal Golem', 'monster')
-    const selection = resolveSearchEntrySelection(monsterEntry, testMarkers)
+    const selection = resolveSearchEntrySelection(
+      monsterEntry,
+      testMarkers,
+      testMaps,
+      allTestAreas,
+    )
 
     expect(selection.searchQuery).toBe('Metal Golem')
     expect(selection).not.toHaveProperty('selectedAreas')
@@ -198,7 +223,12 @@ describe('search selection', () => {
 
   it('selects an item or essence without changing selected areas', () => {
     const essenceEntry = findEntry('Metal Essence', 'essence')
-    const selection = resolveSearchEntrySelection(essenceEntry, testMarkers)
+    const selection = resolveSearchEntrySelection(
+      essenceEntry,
+      testMarkers,
+      testMaps,
+      allTestAreas,
+    )
 
     expect(selection.searchQuery).toBe('Metal Essence')
     expect(selection).not.toHaveProperty('selectedAreas')
@@ -206,7 +236,12 @@ describe('search selection', () => {
 
   it('selects a resource by using it as the search query', () => {
     const resourceEntry = findEntry('Mining', 'resource')
-    const selection = resolveSearchEntrySelection(resourceEntry, testMarkers)
+    const selection = resolveSearchEntrySelection(
+      resourceEntry,
+      testMarkers,
+      testMaps,
+      allTestAreas,
+    )
 
     expect(selection.searchQuery).toBe('Mining')
   })
@@ -220,9 +255,14 @@ describe('search selection', () => {
     ['Blacksmith', 'interactable'],
   ] as const)('selects a %s %s suggestion as a search query', (label, type) => {
     const entry = findEntry(label, type)
-    const selection = resolveSearchEntrySelection(entry, testMarkers)
+    const selection = resolveSearchEntrySelection(
+      entry,
+      testMarkers,
+      testMaps,
+      allTestAreas,
+    )
 
     expect(selection.searchQuery).toBe(label)
-    expect(selection.selectedMarkerId).toBeUndefined()
+    expect(selection.navigation).toBeUndefined()
   })
 })

@@ -5,10 +5,18 @@ import { markers } from "@/data/markers";
 import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
 import { defaultMapId, resolveActiveMap } from "@/lib/map-selection";
-import { markerAreaOptions } from "@/lib/marker-filters";
-import { markerMatchesSearch } from "@/lib/marker-search";
+import {
+  filterMarkersForMap,
+  filterMatchingMarkers,
+  markerAreaOptions,
+  scopeSearchResults,
+} from "@/lib/marker-filters";
 import { buildSearchIndex, getSearchSuggestions, type SearchEntry } from "@/lib/search-index";
-import { resolveSearchEntrySelection } from "@/lib/search-selection";
+import {
+  resolveMarkerNavigation,
+  resolveSearchEntrySelection,
+  type MarkerNavigation,
+} from "@/lib/search-selection";
 import { GameMapView } from "@/components/map/GameMapView";
 import { MapSelector } from "@/components/map/MapSelector";
 import { Button } from "@/components/ui/button";
@@ -25,29 +33,40 @@ import { Sidebar } from "./Sidebar";
 const areaOptions = markerAreaOptions(markers);
 const searchIndex = buildSearchIndex(markers);
 
+type MapSelectionState = {
+  activeMapId: GameMap["id"];
+  selectedMarkerId?: MapMarker["id"];
+};
+
 export function AppLayout() {
-  const [activeMapId, setActiveMapId] = useState<GameMap["id"]>(defaultMapId);
+  const [mapSelection, setMapSelection] = useState<MapSelectionState>({
+    activeMapId: defaultMapId,
+  });
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedAreas, setSelectedAreas] = useState<Set<string>>(
     () => new Set(areaOptions),
   );
-  const [selectedMarkerId, setSelectedMarkerId] = useState<MapMarker["id"]>();
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
-  const activeMap = resolveActiveMap(maps, activeMapId);
+  const activeMap = resolveActiveMap(maps, mapSelection.activeMapId);
 
   const searchSuggestions = useMemo(
     () => getSearchSuggestions(searchIndex, searchQuery),
     [searchQuery],
   );
 
-  const activeMapMarkers = markers.filter(
-    (marker) => marker.mapId === activeMap.id,
+  const matchingMarkers = filterMatchingMarkers(
+    markers,
+    maps,
+    searchQuery,
+    selectedAreas,
   );
-  const filteredMarkers = activeMapMarkers.filter(
-    (marker) =>
-      markerMatchesSearch(marker, searchQuery) &&
-      (marker.area ? selectedAreas.has(marker.area) : false),
+  const visibleMarkers = filterMarkersForMap(matchingMarkers, activeMap.id);
+  const resultMarkers = scopeSearchResults(
+    matchingMarkers,
+    activeMap.id,
+    searchQuery,
   );
+  const activeMapMarkers = filterMarkersForMap(markers, activeMap.id);
 
   function toggleArea(area: string) {
     setSelectedAreas((currentAreas) => {
@@ -72,28 +91,49 @@ export function AppLayout() {
   }
 
   function selectMarker(markerId: MapMarker["id"]) {
-    setSelectedMarkerId(markerId);
+    const navigation = resolveMarkerNavigation(
+      markerId,
+      markers,
+      maps,
+      selectedAreas,
+    );
+
+    if (!navigation) {
+      return;
+    }
+
+    navigateToMarker(navigation);
+  }
+
+  function navigateToMarker(navigation: MarkerNavigation) {
+    setMapSelection(navigation);
     setIsMobileFiltersOpen(false);
   }
 
   function changeMap(mapId: GameMap["id"]) {
-    if (mapId === activeMap.id) {
-      return;
-    }
-
-    setActiveMapId(mapId);
-    setSelectedMarkerId(undefined);
+    setMapSelection((currentSelection) =>
+      mapId === currentSelection.activeMapId
+        ? currentSelection
+        : { activeMapId: mapId },
+    );
   }
 
   function selectSearchEntry(entry: SearchEntry) {
-    const selection = resolveSearchEntrySelection(entry, filteredMarkers);
+    const selection = resolveSearchEntrySelection(
+      entry,
+      markers,
+      maps,
+      selectedAreas,
+    );
 
     setSearchQuery(selection.searchQuery);
 
-    if (selection.selectedMarkerId) {
-      selectMarker(selection.selectedMarkerId);
+    if (selection.navigation) {
+      navigateToMarker(selection.navigation);
     } else {
-      setSelectedMarkerId(undefined);
+      setMapSelection((currentSelection) => ({
+        activeMapId: currentSelection.activeMapId,
+      }));
       setIsMobileFiltersOpen(false);
     }
   }
@@ -116,10 +156,12 @@ export function AppLayout() {
           onSearchSuggestionSelect={selectSearchEntry}
           onSelectAllAreas={selectAllAreas}
           onToggleArea={toggleArea}
-          markers={filteredMarkers}
+          markers={resultMarkers}
+          maps={maps}
           searchQuery={searchQuery}
           searchSuggestions={searchSuggestions}
           selectedAreas={selectedAreas}
+          showMapContext={Boolean(searchQuery.trim())}
         />
       </div>
 
@@ -181,10 +223,12 @@ export function AppLayout() {
                 onSearchSuggestionSelect={selectSearchEntry}
                 onSelectAllAreas={selectAllAreas}
                 onToggleArea={toggleArea}
-                markers={filteredMarkers}
+                markers={resultMarkers}
+                maps={maps}
                 searchQuery={searchQuery}
                 searchSuggestions={searchSuggestions}
                 selectedAreas={selectedAreas}
+                showMapContext={Boolean(searchQuery.trim())}
               />
             </SheetContent>
           </Sheet>
@@ -193,9 +237,9 @@ export function AppLayout() {
         <GameMapView
           activeMap={activeMap}
           hasAvailableMarkers={activeMapMarkers.length > 0}
-          markers={filteredMarkers}
+          markers={visibleMarkers}
           onMarkerSelect={selectMarker}
-          selectedMarkerId={selectedMarkerId}
+          selectedMarkerId={mapSelection.selectedMarkerId}
         />
       </section>
     </main>

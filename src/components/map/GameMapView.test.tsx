@@ -6,18 +6,22 @@ import { createRoot, type Root } from "react-dom/client";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
+import { maps } from "@/data/maps";
+import { markers } from "@/data/markers";
 
 Object.assign(globalThis, { IS_REACT_ACT_ENVIRONMENT: true });
+
+const leafletMap = vi.hoisted(() => ({
+  flyTo: vi.fn(),
+  getZoom: vi.fn(() => 0),
+}));
 
 vi.mock("react-leaflet", () => ({
   ImageOverlay: ({ url }: { url: string }) => <img alt="" src={url} />,
   MapContainer: ({ children }: { children: ReactNode }) => (
     <div data-testid="leaflet-map">{children}</div>
   ),
-  useMap: () => ({
-    flyTo: vi.fn(),
-    getZoom: () => 0,
-  }),
+  useMap: () => leafletMap,
 }));
 
 vi.mock("@/components/map/MapMarkers", () => ({
@@ -49,6 +53,8 @@ describe("GameMapView marker availability", () => {
   let root: Root;
 
   beforeEach(() => {
+    leafletMap.flyTo.mockClear();
+    leafletMap.getZoom.mockClear();
     container = document.createElement("div");
     document.body.append(container);
     root = createRoot(container);
@@ -90,5 +96,51 @@ describe("GameMapView marker availability", () => {
     });
 
     expect(container.querySelector('[role="status"]')).toBeNull();
+  });
+
+  it("does not focus a selected marker from a different map", () => {
+    const cavesMap = maps.find((map) => map.id === "caves");
+    const surfaceMarker = markers.find((marker) => marker.mapId === "surface");
+
+    if (!cavesMap || !surfaceMarker) {
+      throw new Error("Expected the configured Caves map and a Surface marker.");
+    }
+
+    act(() => {
+      root.render(
+        <GameMapView
+          activeMap={cavesMap}
+          hasAvailableMarkers={false}
+          markers={[]}
+          onMarkerSelect={() => undefined}
+          selectedMarkerId={surfaceMarker.id}
+        />,
+      );
+    });
+
+    expect(leafletMap.flyTo).not.toHaveBeenCalled();
+  });
+
+  it("allows the destination map to focus its selected marker", () => {
+    const surfaceMap = maps.find((map) => map.id === "surface");
+    const surfaceMarker = markers.find((marker) => marker.mapId === "surface");
+
+    if (!surfaceMap || !surfaceMarker) {
+      throw new Error("Expected the configured Surface map and marker.");
+    }
+
+    act(() => {
+      root.render(
+        <GameMapView
+          activeMap={surfaceMap}
+          hasAvailableMarkers
+          markers={[surfaceMarker]}
+          onMarkerSelect={() => undefined}
+          selectedMarkerId={surfaceMarker.id}
+        />,
+      );
+    });
+
+    expect(leafletMap.flyTo).toHaveBeenCalledOnce();
   });
 });

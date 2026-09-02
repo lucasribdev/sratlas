@@ -42,7 +42,7 @@ function SelectedMarkerController({
       activeMap.id,
     );
 
-    if (!selectedMarker) {
+    if (!selectedMarker || selectedMarker.mapId !== activeMap.id) {
       return;
     }
 
