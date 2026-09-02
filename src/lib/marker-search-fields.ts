@@ -36,21 +36,37 @@ export function getMarkerSearchFields(marker: MapMarker): MarkerSearchField[] {
     },
     { value: marker.zoneType },
     ...(marker.tags ?? []).map((tag) => ({ value: tag })),
-    ...(marker.monsters ?? []).map((monster) => ({
+  ]
+
+  for (const monster of marker.monsters ?? []) {
+    fields.push({
       value: monster.name,
       entry: {
-        type: 'monster' as const,
+        type: 'monster',
         keywords: [marker.name, monster.wikiSlug],
       },
-    })),
-    ...(marker.interactables ?? []).map((interactable) => ({
+    })
+
+    for (const drop of monster.drops ?? []) {
+      fields.push({
+        value: drop.name,
+        entry: {
+          type: 'item',
+          keywords: [marker.name, monster.name, drop.wikiSlug],
+        },
+      })
+    }
+  }
+
+  for (const interactable of marker.interactables ?? []) {
+    fields.push({
       value: interactable.name,
       entry: {
-        type: 'interactable' as const,
+        type: 'interactable',
         keywords: [marker.name, interactable.wikiSlug],
       },
-    })),
-  ]
+    })
+  }
 
   for (const resource of marker.resources ?? []) {
     fields.push({

@@ -68,7 +68,19 @@ describe('search index', () => {
       area: 'Shared Area',
       zoneType: 'Shared Zone',
       tags: ['Shared Alias'],
-      monsters: [{ name: 'Shared Monster', wikiSlug: 'Monster_Wiki_Only' }],
+      monsters: [
+        {
+          name: 'Shared Monster',
+          wikiSlug: 'Monster_Wiki_Only',
+          drops: [
+            {
+              name: 'Shared Drop',
+              dropRate: 1.25,
+              wikiSlug: 'Drop_Wiki_Only',
+            },
+          ],
+        },
+      ],
       interactables: [{ name: 'Shared Interactable', wikiSlug: 'Interactable_Wiki_Only' }],
       resources: [
         {
@@ -87,6 +99,7 @@ describe('search index', () => {
       'Shared Zone',
       'Shared Alias',
       'Shared Monster',
+      'Shared Drop',
       'Shared Interactable',
       'Shared Resource',
       'Shared Item',
@@ -95,6 +108,7 @@ describe('search index', () => {
       'Shared Marker',
       'Shared Area',
       'Shared Monster',
+      'Shared Drop',
       'Shared Interactable',
       'Shared Resource',
       'Shared Item',
@@ -107,6 +121,129 @@ describe('search index', () => {
 
     expect(markerMatchesSearch(marker, 'Monster_Wiki_Only')).toBe(false)
     expect(getSearchSuggestions(entries, 'Monster_Wiki_Only')).not.toEqual([])
+    expect(markerMatchesSearch(marker, 'Drop_Wiki_Only')).toBe(false)
+    expect(getSearchSuggestions(entries, 'Drop_Wiki_Only')).toEqual(
+      expect.arrayContaining([expect.objectContaining({ label: 'Shared Drop' })]),
+    )
+  })
+
+  it('searches monster drop names and indexes their autocomplete context', () => {
+    const marker: MapMarker = {
+      id: 'slime-hollow',
+      name: 'Slime Hollow',
+      mapId: 'world',
+      x: 50,
+      y: 50,
+      area: 'Outskirts',
+      monsters: [
+        {
+          name: 'Slime',
+          drops: [
+            {
+              name: 'Dull Life Essence',
+              dropRate: 1.25,
+              wikiSlug: 'Dull_Life_Essence',
+            },
+          ],
+        },
+      ],
+    }
+    const fields = getMarkerSearchFields(marker)
+    const dropField = fields.find((field) => field.value === 'Dull Life Essence')
+    const entries = buildSearchIndex([marker])
+    const dropEntry = entries.find((entry) => entry.label === 'Dull Life Essence')
+
+    expect(dropField).toEqual({
+      value: 'Dull Life Essence',
+      entry: {
+        type: 'item',
+        keywords: ['Slime Hollow', 'Slime', 'Dull_Life_Essence'],
+      },
+    })
+    expect(markerMatchesSearch(marker, 'Dull Life Essence')).toBe(true)
+    expect(markerMatchesSearch(marker, 'dull life essence')).toBe(true)
+    expect(markerMatchesSearch(marker, 'Dull_Life_Essence')).toBe(false)
+    expect(dropEntry).toEqual(
+      expect.objectContaining({
+        label: 'Dull Life Essence',
+        keywords: expect.arrayContaining(['Slime Hollow', 'Slime', 'Dull_Life_Essence']),
+      }),
+    )
+
+    for (const query of ['Slime Hollow', 'Slime', 'Dull_Life_Essence']) {
+      expect(getSearchSuggestions(entries, query)).toEqual(
+        expect.arrayContaining([expect.objectContaining({ label: 'Dull Life Essence' })]),
+      )
+    }
+  })
+
+  it('preserves monster search fields when drops are missing or empty', () => {
+    const baseMarker: MapMarker = {
+      id: 'drop-compatibility',
+      name: 'Drop Compatibility',
+      mapId: 'world',
+      x: 50,
+      y: 50,
+    }
+    const withoutDrops: MapMarker = {
+      ...baseMarker,
+      monsters: [{ name: 'Slime' }],
+    }
+    const withEmptyDrops: MapMarker = {
+      ...baseMarker,
+      monsters: [{ name: 'Slime', drops: [] }],
+    }
+    const withEmptyMonsters: MapMarker = {
+      ...baseMarker,
+      monsters: [],
+    }
+
+    expect(getMarkerSearchFields(withEmptyMonsters)).toEqual(getMarkerSearchFields(baseMarker))
+    expect(getMarkerSearchFields(withEmptyDrops)).toEqual(getMarkerSearchFields(withoutDrops))
+    expect(buildSearchIndex([withEmptyDrops])).toEqual(buildSearchIndex([withoutDrops]))
+    expect(markerMatchesSearch(withoutDrops, 'Slime')).toBe(true)
+    expect(markerMatchesSearch(withEmptyDrops, 'Slime')).toBe(true)
+  })
+
+  it('keeps drop queries constrained by the selected area', () => {
+    const markers: MapMarker[] = [
+      {
+        id: 'selected-slime-hollow',
+        name: 'Selected Slime Hollow',
+        mapId: 'world',
+        x: 25,
+        y: 25,
+        area: 'Outskirts',
+        monsters: [
+          {
+            name: 'Slime',
+            drops: [{ name: 'Dull Life Essence', dropRate: 1.25 }],
+          },
+        ],
+      },
+      {
+        id: 'excluded-slime-hollow',
+        name: 'Excluded Slime Hollow',
+        mapId: 'world',
+        x: 75,
+        y: 75,
+        area: 'Ashen Hollow',
+        monsters: [
+          {
+            name: 'Slime',
+            drops: [{ name: 'Dull Life Essence', dropRate: 1.25 }],
+          },
+        ],
+      },
+    ]
+    const selectedAreas = new Set(['Outskirts'])
+    const visibleMarkers = markers.filter(
+      (marker) =>
+        markerMatchesSearch(marker, 'Dull Life Essence') &&
+        (marker.area ? selectedAreas.has(marker.area) : false),
+    )
+
+    expect(visibleMarkers.map((marker) => marker.id)).toEqual(['selected-slime-hollow'])
   })
 
   it('builds labeled entries from marker data', () => {
