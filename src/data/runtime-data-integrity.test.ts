@@ -73,6 +73,52 @@ function assertRichNamedObjects(value: unknown, label: string): asserts value is
   })
 }
 
+function assertOptionalMonsterDropImage(record: JsonRecord, label: string) {
+  const image = record.image
+
+  if (image === undefined || image === '') {
+    return
+  }
+
+  assertNonEmptyString(image, `${label}.image`)
+}
+
+function validateMonsterDrops(value: unknown, monsterLabel: string) {
+  const label = `${monsterLabel}.drops`
+  assertArray(value, label)
+
+  value.forEach((entry, dropIndex) => {
+    const dropLabel = `${label}[${dropIndex}]`
+    assertRecord(entry, dropLabel)
+    assertNonEmptyString(entry.name, `${dropLabel}.name`)
+    assertFiniteNumber(entry.dropRate, `${dropLabel}.dropRate`)
+
+    if (entry.dropRate < 0 || entry.dropRate > 100) {
+      throw new Error(`${dropLabel}.dropRate must be between 0 and 100; received ${entry.dropRate}`)
+    }
+
+    assertOptionalString(entry, 'wikiSlug', dropLabel)
+    assertOptionalMonsterDropImage(entry, dropLabel)
+  })
+}
+
+function validateMonsters(value: unknown, markerLabel: string) {
+  const label = `${markerLabel}.monsters`
+  assertArray(value, label)
+
+  value.forEach((entry, monsterIndex) => {
+    const monsterLabel = `${label}[${monsterIndex}]`
+    assertRecord(entry, monsterLabel)
+    assertNonEmptyString(entry.name, `${monsterLabel}.name`)
+    assertOptionalString(entry, 'wikiSlug', monsterLabel)
+    assertOptionalString(entry, 'image', monsterLabel)
+
+    if (entry.drops !== undefined) {
+      validateMonsterDrops(entry.drops, monsterLabel)
+    }
+  })
+}
+
 function validateMaps(value: unknown) {
   assertArray(value, 'maps.json')
   const mapIds: string[] = []
@@ -181,7 +227,7 @@ function validateMarkers(value: unknown, mapIds: Set<string>, areaNames: Set<str
     }
 
     if (entry.monsters !== undefined) {
-      assertRichNamedObjects(entry.monsters, `${markerLabel}.monsters`)
+      validateMonsters(entry.monsters, markerLabel)
     }
 
     if (entry.interactables !== undefined) {
@@ -236,6 +282,10 @@ function cloneValidData() {
     areas: JsonRecord[]
     markers: JsonRecord[]
   }
+}
+
+function firstMonster(data: ReturnType<typeof cloneValidData>) {
+  return (data.markers[0].monsters as JsonRecord[])[0]
 }
 
 describe('runtime JSON data integrity', () => {
@@ -302,6 +352,155 @@ describe('runtime JSON data integrity', () => {
 
     expect(() => validateRuntimeData(data)).toThrow(
       'marker "outskirts".resources[0].items[0] must be an object',
+    )
+  })
+
+  it('accepts a monster without drops', () => {
+    const data = cloneValidData()
+
+    expect(() => validateRuntimeData(data)).not.toThrow()
+  })
+
+  it('accepts a complete monster drop', () => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [
+      {
+        name: 'Dull Life Essence',
+        dropRate: 1.25,
+        wikiSlug: 'Dull_Life_Essence',
+        image: '/some/path.webp',
+      },
+    ]
+
+    expect(() => validateRuntimeData(data)).not.toThrow()
+  })
+
+  it('accepts a monster drop without optional image and wikiSlug fields', () => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate: 1.25 }]
+
+    expect(() => validateRuntimeData(data)).not.toThrow()
+  })
+
+  it('accepts an exact empty monster drop image', () => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate: 1.25, image: '' }]
+
+    expect(() => validateRuntimeData(data)).not.toThrow()
+  })
+
+  it.each(['', '   '])('rejects the monster drop name %j', (name) => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name, dropRate: 1.25 }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0].name must be a non-empty string',
+    )
+  })
+
+  it.each([
+    ['a string', '1.25'],
+    ['null', null],
+    ['a boolean', false],
+    ['an object', {}],
+  ])('rejects %s as a monster drop rate', (_description, dropRate) => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0].dropRate must be a finite number',
+    )
+  })
+
+  it('rejects a monster drop without a dropRate', () => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence' }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0].dropRate must be a finite number',
+    )
+  })
+
+  it.each([NaN, Infinity, -Infinity])('rejects the non-finite monster drop rate %s', (dropRate) => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0].dropRate must be a finite number',
+    )
+  })
+
+  it.each([-0.01, 100.01])('rejects the out-of-range monster drop rate %s', (dropRate) => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      `marker "outskirts".monsters[0].drops[0].dropRate must be between 0 and 100; received ${dropRate}`,
+    )
+  })
+
+  it.each([0, 100])('accepts the boundary monster drop rate %s', (dropRate) => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate }]
+
+    expect(() => validateRuntimeData(data)).not.toThrow()
+  })
+
+  it('rejects non-array monster drops', () => {
+    const data = cloneValidData()
+    firstMonster(data).drops = {}
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops must be an array',
+    )
+  })
+
+  it.each([
+    ['a string', 'Dull Life Essence'],
+    ['null', null],
+    ['an array', []],
+  ])('rejects %s as a monster drop entry', (_description, drop) => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [drop]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0] must be an object',
+    )
+  })
+
+  it('rejects an obsolete item-only monster drop', () => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ item: 'Dull Life Essence', dropRate: 1.25 }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0].name must be a non-empty string',
+    )
+  })
+
+  it.each(['', '   ', 123, null])('rejects the monster drop wikiSlug %j', (wikiSlug) => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate: 1.25, wikiSlug }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0].wikiSlug must be a non-empty string',
+    )
+  })
+
+  it('rejects a whitespace-only monster drop image', () => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate: 1.25, image: '   ' }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0].image must be a non-empty string',
+    )
+  })
+
+  it.each([123, null, false, {}])('rejects the non-string monster drop image %j', (image) => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate: 1.25, image }]
+
+    expect(() => validateRuntimeData(data)).toThrow(
+      'marker "outskirts".monsters[0].drops[0].image must be a non-empty string',
     )
   })
 })
