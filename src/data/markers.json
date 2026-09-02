@@ -394,7 +394,15 @@
       {
         "name": "Slime",
         "wikiSlug": "Slime",
-        "image": "Slime.png/16px-Slime.png"
+        "image": "Slime.png/16px-Slime.png",
+        "drops": [
+          {
+            "name": "Dull Life Essence",
+            "dropRate": 1.25,
+            "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+            "wikiSlug": "Dull_Life_Essence"
+          }
+        ]
       }
     ],
     "resources": [
