@@ -91,10 +91,13 @@ function validateMonsterDrops(value: unknown, monsterLabel: string) {
     const dropLabel = `${label}[${dropIndex}]`
     assertRecord(entry, dropLabel)
     assertNonEmptyString(entry.name, `${dropLabel}.name`)
-    assertFiniteNumber(entry.dropRate, `${dropLabel}.dropRate`)
 
-    if (entry.dropRate < 0 || entry.dropRate > 100) {
-      throw new Error(`${dropLabel}.dropRate must be between 0 and 100; received ${entry.dropRate}`)
+    if (entry.dropRate !== null) {
+      assertFiniteNumber(entry.dropRate, `${dropLabel}.dropRate`)
+
+      if (entry.dropRate < 0 || entry.dropRate > 100) {
+        throw new Error(`${dropLabel}.dropRate must be between 0 and 100; received ${entry.dropRate}`)
+      }
     }
 
     assertOptionalString(entry, 'wikiSlug', dropLabel)
@@ -400,7 +403,6 @@ describe('runtime JSON data integrity', () => {
 
   it.each([
     ['a string', '1.25'],
-    ['null', null],
     ['a boolean', false],
     ['an object', {}],
   ])('rejects %s as a monster drop rate', (_description, dropRate) => {
@@ -410,6 +412,13 @@ describe('runtime JSON data integrity', () => {
     expect(() => validateRuntimeData(data)).toThrow(
       'marker "outskirts".monsters[0].drops[0].dropRate must be a finite number',
     )
+  })
+
+  it('accepts null when the monster drop rate is unknown', () => {
+    const data = cloneValidData()
+    firstMonster(data).drops = [{ name: 'Dull Life Essence', dropRate: null }]
+
+    expect(() => validateRuntimeData(data)).not.toThrow()
   })
 
   it('rejects a monster drop without a dropRate', () => {

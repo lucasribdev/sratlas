@@ -182,9 +182,10 @@ marker
        -> drops[]
 ```
 
-Each drop records its name and percentage drop rate, with optional image and
-wiki metadata. This keeps the static JSON easy to maintain and preserves the
-owning monster and marker context used by the popup and search.
+Each drop records its name and a percentage drop rate, or `null` when that rate
+is unknown, with optional image and wiki metadata. This keeps the static JSON
+easy to maintain and preserves the owning monster and marker context used by
+the popup and search.
 
 This is not a separate drop entity model. It does not introduce shared item or
 drop records, a normalized drop database, or the future many-to-many

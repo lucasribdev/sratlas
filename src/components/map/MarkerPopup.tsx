@@ -103,9 +103,14 @@ function MonsterDropRow({ drop }: { drop: MarkerMonsterDrop }) {
       )}
       <Badge
         className="h-4 shrink-0 rounded-sm px-1 text-[0.625rem] leading-none font-semibold tabular-nums"
+        aria-label={
+          drop.dropRate === null
+            ? `${drop.name} drop rate unknown`
+            : `${drop.name} drop rate ${drop.dropRate}%`
+        }
         variant="outline"
       >
-        {drop.dropRate}%
+        {drop.dropRate === null ? "Unknown" : `${drop.dropRate}%`}
       </Badge>
     </span>
   );

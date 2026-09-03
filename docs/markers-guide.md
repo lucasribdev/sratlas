@@ -105,7 +105,8 @@ runtime data schema:
 For every drop:
 
 - use `name` for the required drop name;
-- provide the required numeric `dropRate` from `0` through `100`, inclusive;
+- provide `dropRate` as a number from `0` through `100`, inclusive, or `null`
+  only when the drop is known but its exact rate is unavailable;
 - add `image` only when a wiki thumbnail path is known;
 - add `wikiSlug` only when a wiki page is known.
 
@@ -341,8 +342,8 @@ Before opening a pull request or closing a data issue:
 5. Confirm that `monsters`, `resources[].items`, and `interactables` use rich
    objects with `name`, not standalone strings.
 6. For each monster drop, confirm that `name` is present, `dropRate` is a number
-   from `0` through `100`, and unknown images are omitted or exactly empty for
-   compatibility.
+   from `0` through `100` or `null` when unknown, and unknown images are omitted
+   or exactly empty for compatibility.
 7. Confirm that `resources[].type` uses `Fishing`, `Mining`, or `Herbalism` when
    describing a gathering point.
 8. If the area is new, confirm that a corresponding entry exists in

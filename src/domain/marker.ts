@@ -4,8 +4,8 @@ export type PercentageCoordinate = number
 
 export type MarkerMonsterDrop = {
   name: string
-  /** Percentage from 0 to 100, inclusive. */
-  dropRate: number
+  /** Percentage from 0 to 100, inclusive, or null when unknown. */
+  dropRate: number | null
   image?: string
   wikiSlug?: string
 }

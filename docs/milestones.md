@@ -193,8 +193,9 @@ Status: MVP
 #### 25. Validate the Initial Data
 
 Check for duplicate IDs, out-of-range coordinates, and missing required fields.
-For embedded monster drops, validate a required name and a finite percentage
-from `0` through `100`, while accepting an omitted or exactly empty image.
+For embedded monster drops, validate a required name and either a finite
+percentage from `0` through `100` or `null` when unknown, while accepting an
+omitted or exactly empty image.
 
 Status: MVP
 

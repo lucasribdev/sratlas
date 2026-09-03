@@ -61,7 +61,7 @@ The canonical `MarkerMonsterDrop` contract is:
 | Field | Required | Type | Description |
 | --- | --- | --- | --- |
 | `name` | Yes | `string` | Non-empty official drop name. |
-| `dropRate` | Yes | `number` | Finite percentage from `0` through `100`, inclusive. |
+| `dropRate` | Yes | `number \| null` | Finite percentage from `0` through `100`, inclusive, or `null` when the rate is unknown. |
 | `image` | No | `string` | Wiki thumbnail path suffix. Omit when no image is known. |
 | `wikiSlug` | No | `string` | Non-empty wiki page slug for the drop. |
 
@@ -69,8 +69,9 @@ The exact compatibility value `"image": ""` is accepted and treated as an
 absent image. Prefer omitting `image` when no image is known. Other supplied
 image values must be non-empty strings, and whitespace-only values are invalid.
 
-Drops are optional metadata inside a monster object. This schema does not
-define separate drop entities or a normalized monster/item relationship.
+Drops are optional metadata inside a monster object. Use `null` only when the
+drop is known but its exact rate is not. This schema does not define separate
+drop entities or a normalized monster/item relationship.
 
 ## Rich Objects
 

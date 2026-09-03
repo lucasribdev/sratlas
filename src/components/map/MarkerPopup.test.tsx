@@ -221,6 +221,22 @@ describe('MarkerPopup', () => {
     expect(slimeDrops.markup).toContain('referrerPolicy="no-referrer"')
   })
 
+  it('labels an unknown drop rate without rendering a broken percentage', () => {
+    const markup = renderMarker({
+      ...baseMarker,
+      monsters: [
+        {
+          name: 'Hopper',
+          drops: [{ name: 'Dull Life Essence', dropRate: null }],
+        },
+      ],
+    })
+
+    expect(markup).toContain('Dull Life Essence drop rate unknown')
+    expect(markup).toContain('Unknown')
+    expect(markup).not.toContain('null%')
+  })
+
   it.each([
     ['an absent image property', undefined],
     ['an empty image', ''],
