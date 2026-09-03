@@ -130,6 +130,7 @@ describe('MarkerPopup', () => {
     expect(dropList.markup).toMatch(/>1\.25%<\/span>/)
     expectLink(dropList.markup, 'Dull Life Essence', getWikiUrl('Dull_Life_Essence'))
     expect(dropList.markup).toContain(`src="${getWikiThumbnailUrl(dropImage)}"`)
+    expect(dropList.markup).toContain('referrerPolicy="no-referrer"')
     expect(countOpeningTags(dropList.markup, 'img')).toBe(1)
   })
 
@@ -231,19 +232,38 @@ describe('MarkerPopup', () => {
     const markup = renderMarker({
       ...baseMarker,
       wikiSlug: 'Slime_Hollow',
-      monsters: [{ name: 'Slime', wikiSlug: 'Slime' }],
+      monsters: [
+        {
+          name: 'Slime',
+          wikiSlug: 'Slime',
+          image: 'Slime.png/16px-Slime.png',
+        },
+      ],
       resources: [
         {
           type: 'Mining',
-          items: [{ name: 'Stone', wikiSlug: 'Stone' }],
+          items: [
+            {
+              name: 'Stone',
+              wikiSlug: 'Stone',
+              image: 'Stone.png/16px-Stone.png',
+            },
+          ],
         },
       ],
-      interactables: [{ name: 'Quest Master', wikiSlug: 'Quest_Master' }],
+      interactables: [
+        {
+          name: 'Quest Master',
+          wikiSlug: 'Quest_Master',
+          image: 'Quest_Master.png/16px-Quest_Master.png',
+        },
+      ],
     })
 
     expectLink(markup, 'Open wiki page', getWikiUrl('Slime_Hollow'))
     expectLink(markup, 'Slime', getWikiUrl('Slime'))
     expectLink(markup, 'Stone', getWikiUrl('Stone'))
     expectLink(markup, 'Quest Master', getWikiUrl('Quest_Master'))
+    expect(markup.match(/referrerPolicy="no-referrer"/g)).toHaveLength(3)
   })
 })

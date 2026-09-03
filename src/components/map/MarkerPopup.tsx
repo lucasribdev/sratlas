@@ -33,6 +33,7 @@ function PopupEntryRow({ entry }: { entry: PopupEntry }) {
           className="size-4 shrink-0 rounded-[2px] object-contain"
           height={16}
           loading="lazy"
+          referrerPolicy="no-referrer"
           src={imageUrl}
           width={16}
         />
@@ -73,6 +74,7 @@ function MonsterDropRow({ drop }: { drop: MarkerMonsterDrop }) {
           className="size-4 shrink-0 rounded-[2px] object-contain"
           height={16}
           loading="lazy"
+          referrerPolicy="no-referrer"
           src={imageUrl}
           width={16}
         />
