@@ -35,6 +35,43 @@ Fields accepted by each item in `markers.json`:
 | `interactables` | No | `MarkerInteractable[]` | NPCs, objects, or interactive points. |
 | `tags` | No | `string[]` | Additional search terms. |
 
+## Monster and Drop
+
+A `MarkerMonster` is a rich object with a required `name`, optional `wikiSlug`
+and `image`, and optional simple embedded `drops`:
+
+```json
+{
+  "name": "Slime",
+  "wikiSlug": "Slime",
+  "image": "Slime.png/16px-Slime.png",
+  "drops": [
+    {
+      "name": "Dull Life Essence",
+      "dropRate": 1.25,
+      "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+      "wikiSlug": "Dull_Life_Essence"
+    }
+  ]
+}
+```
+
+The canonical `MarkerMonsterDrop` contract is:
+
+| Field | Required | Type | Description |
+| --- | --- | --- | --- |
+| `name` | Yes | `string` | Non-empty official drop name. |
+| `dropRate` | Yes | `number` | Finite percentage from `0` through `100`, inclusive. |
+| `image` | No | `string` | Wiki thumbnail path suffix. Omit when no image is known. |
+| `wikiSlug` | No | `string` | Non-empty wiki page slug for the drop. |
+
+The exact compatibility value `"image": ""` is accepted and treated as an
+absent image. Prefer omitting `image` when no image is known. Other supplied
+image values must be non-empty strings, and whitespace-only values are invalid.
+
+Drops are optional metadata inside a monster object. This schema does not
+define separate drop entities or a normalized monster/item relationship.
+
 ## Rich Objects
 
 `monsters`, `resources[].items`, and `interactables` use objects, not strings.
@@ -121,7 +158,14 @@ that resource group when the data is available.
     {
       "name": "Hopper",
       "wikiSlug": "Hopper",
-      "image": "Hopper.png/16px-Hopper.png"
+      "image": "Hopper.png/16px-Hopper.png",
+      "drops": [
+        {
+          "name": "Dull Life Essence",
+          "dropRate": 1.25,
+          "wikiSlug": "Dull_Life_Essence"
+        }
+      ]
     }
   ],
   "resources": [

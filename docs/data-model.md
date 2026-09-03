@@ -98,7 +98,14 @@ the [Data Schema](./data-schema.md).
     {
       "name": "Ironfang",
       "wikiSlug": "Ironfang",
-      "image": "Ironfang.png/16px-Ironfang.png"
+      "image": "Ironfang.png/16px-Ironfang.png",
+      "drops": [
+        {
+          "name": "Ancient Fang",
+          "dropRate": 5,
+          "wikiSlug": "Ancient_Fang"
+        }
+      ]
     }
   ],
   "resources": [
@@ -161,7 +168,28 @@ Recommended format for `resources`:
 
 `monsters`, `resources[].items`, and `interactables` must not be arrays of
 strings. Use rich objects with `name` and, when available, `wikiSlug`, `image`,
-and `chancePercent` for resource items.
+and `chancePercent` for resource items. A rich monster may also contain an
+optional `drops` array.
+
+## Simple Embedded Monster Drops
+
+The MVP represents known monster drops as small pieces of metadata embedded at
+the location where the monster is recorded:
+
+```text
+marker
+  -> monsters[]
+       -> drops[]
+```
+
+Each drop records its name and percentage drop rate, with optional image and
+wiki metadata. This keeps the static JSON easy to maintain and preserves the
+owning monster and marker context used by the popup and search.
+
+This is not a separate drop entity model. It does not introduce shared item or
+drop records, a normalized drop database, or the future many-to-many
+relationship between monsters and items. Duplicate embedded metadata is
+acceptable in the MVP; normalization remains post-MVP work.
 
 Use `area`, `zoneType`, `level`, `monsters`, `resources`, `interactables`,
 `warpPoint`, `wikiSlug`, and `tags` to record important marker data in a
@@ -184,12 +212,15 @@ searchable marker fields must include:
 - `zoneType`
 - `tags`
 - `monsters`
+- `monsters[].drops[].name`
 - `resources`
 - `interactables`
 
 For `resources`, search must include both `type` and
 `resources[].items[].name`, such as `Fishing`, `Clam`, `Shrimp`, and `Trout`.
 For `monsters` and `interactables`, search must include at least `name`.
+Monster drop names are read from `monsters[].drops[].name`; contributors do not
+need to duplicate them in `tags`.
 
 For autocomplete details, searchable entity types, index generation, and
 selection behavior, see [Search Autocomplete](./search-autocomplete.md).
@@ -256,7 +287,7 @@ Important relationships:
 
 - An NPC appears at one or more markers.
 - A monster appears in one or more areas.
-- A monster may drop many items.
+- A monster may drop many items through a normalized many-to-many relationship.
 - A merchant sells many items.
 - A quest may involve NPCs, locations, monsters, and rewards.
 - A resource appears at multiple gathering points.
@@ -280,9 +311,10 @@ If a backend is added:
 - `users`
 - `revisions`
 
-Do not create these tables in the MVP. Use this list only as architectural
-direction. A backend, login, an admin panel, and automatic wiki synchronization
-remain out of scope for the MVP.
+Do not create these tables in the MVP. The current embedded `drops` arrays do
+not satisfy or replace this future relationship model. Use this list only as
+architectural direction. A backend, login, an admin panel, and automatic wiki
+synchronization remain out of scope for the MVP.
 
 ## Wiki Integration
 

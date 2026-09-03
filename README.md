@@ -19,9 +19,14 @@ The MVP must let users:
 - pan and zoom;
 - view markers;
 - filter by area or region and marker data;
-- search by name, area, monsters, and resources;
-- click a marker to view details;
+- search by name, area, monsters, resources, and simple embedded monster drops;
+- click a marker to view details, including simple monster drops when recorded;
 - open the corresponding wiki page when one exists.
+
+Monster drops are embedded directly in monster objects in
+`src/data/markers.json`. They participate in search and can appear in marker
+details, but they do not represent a complete or normalized drop database. The
+application remains entirely static and JSON-driven for the MVP.
 
 ## Planned Stack
 
@@ -65,4 +70,5 @@ pnpm lint
 - Use `src/data/maps.json` only as an import and base-image metadata helper, not
   as a runtime source of markers or entities.
 - Keep data editable as static JSON at first.
+- Keep simple monster drop metadata embedded in the relevant monster objects.
 - Separate markers from entities when the project grows.

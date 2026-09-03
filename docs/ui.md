@@ -96,6 +96,31 @@ such as `docs`, `view`, or `--dry-run`.
   popup on the map, so wrapping its content in another `ScrollArea` can impair
   auto-pan, touch input, and nested scrolling.
 
+## Marker Popup Monster Drops
+
+The MarkerPopup displays simple embedded drops in the Monsters section. Drops
+are rendered as compact rows directly beneath their owning monster, with a
+small `Drops` label and indented border so ownership remains visually clear
+when monsters with and without drops appear together.
+
+Each drop shows its name and exact percentage. An optional `wikiSlug` makes the
+name a wiki link, and an optional `image` adds a thumbnail. When `image` is
+missing or exactly empty, the popup omits the image element so it does not
+produce a broken thumbnail or an empty placeholder.
+
+Keep popup overflow under Leaflet's native height limit and scrolling behavior.
+Do not introduce a nested `ScrollArea` for monster drops.
+
+When verifying popup changes on desktop and mobile:
+
+- open a marker containing monsters with and without drops;
+- confirm every drop remains grouped beneath the correct monster;
+- confirm names, exact percentages, optional wiki links, and known images
+  render correctly;
+- confirm missing and empty images render without a broken image or gap;
+- use enough content to trigger overflow and confirm Leaflet's native popup
+  scrolling, map auto-pan, mouse-wheel behavior, and touch scrolling still work.
+
 ## Global CSS
 
 `src/index.css` must remain lean and contain only:

@@ -57,7 +57,7 @@ Use optional fields when they improve search, filters, or marker details:
 | `area` | Area or region used by the primary filter, such as `Ocean` or `Plains`. |
 | `zoneType` | Zone type, such as `Surface zone`, `Dungeon`, or `Cave`. |
 | `level` | Recommended level or zone level. It may be `"17"` or `"12-15"`. |
-| `monsters` | Rich list of monsters found in the zone. |
+| `monsters` | Rich list of monsters found in the zone, optionally including simple embedded `drops`. |
 | `resources` | Resource groups organized by gathering type. |
 | `warpPoint` | `true` when the zone has a warp point. Omit it otherwise. |
 | `wikiSlug` | Optional slug for the wiki page. |
@@ -79,6 +79,43 @@ with centralized helpers; do not repeat these prefixes in `markers.json`.
 
 Do not separate NPCs, monsters, items, or resources into other files yet. That
 is a post-MVP concern, once there is real duplication and enough data.
+
+## Monster Drops
+
+Add a monster's simple drop metadata directly to that monster's `drops` array
+in `src/data/markers.json`. This canonical Slime example matches the current
+runtime data schema:
+
+```json
+{
+  "name": "Slime",
+  "wikiSlug": "Slime",
+  "image": "Slime.png/16px-Slime.png",
+  "drops": [
+    {
+      "name": "Dull Life Essence",
+      "dropRate": 1.25,
+      "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+      "wikiSlug": "Dull_Life_Essence"
+    }
+  ]
+}
+```
+
+For every drop:
+
+- use `name` for the required drop name;
+- provide the required numeric `dropRate` from `0` through `100`, inclusive;
+- add `image` only when a wiki thumbnail path is known;
+- add `wikiSlug` only when a wiki page is known.
+
+Unknown images should normally be omitted. The compatibility value
+`"image": ""` is also accepted and behaves like an absent image, but should
+not be preferred for new data.
+
+A drop name becomes searchable from this structured data automatically. Do not
+copy it into marker `tags` merely to make it searchable; search derives the
+drop name and its monster and marker context from `monsters[].drops[]`.
 
 ## Colors by Area
 
@@ -167,12 +204,13 @@ structured fields. Good uses include:
 - community nicknames;
 - abbreviated names;
 - important terms that do not appear in `name`, `area`, `zoneType`, `monsters`,
-  or `resources`.
+  `monsters[].drops`, or `resources`.
 
-Do not duplicate `name`, `area`, `zoneType`, `monsters`, `resources[].type`, or
-`resources[].items` in `tags`: these values are already searchable. If the
-marker already has `"Fishing"` in `resources[].type`, there is no need to add
-`"fishing"` to `tags`.
+Do not duplicate `name`, `area`, `zoneType`, `monsters`,
+`monsters[].drops[].name`, `resources[].type`, or `resources[].items` in
+`tags`: these values are already searchable. If the marker already has
+`"Fishing"` in `resources[].type`, there is no need to add `"fishing"` to
+`tags`.
 
 ## Coordinates
 
@@ -302,21 +340,27 @@ Before opening a pull request or closing a data issue:
 4. Confirm that `x` and `y` are between `0` and `100`.
 5. Confirm that `monsters`, `resources[].items`, and `interactables` use rich
    objects with `name`, not standalone strings.
-6. Confirm that `resources[].type` uses `Fishing`, `Mining`, or `Herbalism` when
+6. For each monster drop, confirm that `name` is present, `dropRate` is a number
+   from `0` through `100`, and unknown images are omitted or exactly empty for
+   compatibility.
+7. Confirm that `resources[].type` uses `Fishing`, `Mining`, or `Herbalism` when
    describing a gathering point.
-7. If the area is new, confirm that a corresponding entry exists in
+8. If the area is new, confirm that a corresponding entry exists in
    `src/data/areas.json`, or temporarily accept the neutral fallback.
-8. Search for the zone name, area, monster, interactable, and primary resource.
-9. Click the result and confirm that the map centers on the marker.
-10. Open the popup and check the name, structured zone data, and wiki link when
+9. Search for the zone name, area, monster, monster drop, interactable, and
+   primary resource.
+10. Click the result and confirm that the map centers on the marker.
+11. Open the popup and check the name, structured zone data, and wiki link when
     present.
-11. Check at least one desktop and one mobile viewport.
+12. Confirm that each drop appears under its owning monster with its percentage.
+13. Check at least one desktop and one mobile viewport.
 
 ## Search Autocomplete
 
 Autocomplete suggestions are derived from structured marker data. A new marker,
-monster, resource item, resource type, or interactable becomes searchable when
-it is added to `src/data/markers.json` using the fields described in this guide.
+monster, monster drop, resource item, resource type, or interactable becomes
+searchable when it is added to `src/data/markers.json` using the fields
+described in this guide.
 
 See [Search Autocomplete](./search-autocomplete.md) for the indexed entity types
 and selection behavior.
@@ -328,6 +372,8 @@ and selection behavior.
 - `area` is filled in when the zone should appear in the area or region filter.
 - `resources` is grouped by `Fishing`, `Mining`, and `Herbalism`.
 - `monsters`, `resources[].items`, and `interactables` use rich objects.
+- Monster drops use `name` and an inclusive `0`-to-`100` `dropRate` inside the
+  owning monster's `drops` array.
 - The area is registered in `src/data/areas.json` when it needs its own color.
 - `warpPoint` is set when the marker should display an extra ring or border.
 - `resources` and `monsters` are filled in when they should affect filters.
