@@ -26,13 +26,10 @@ function extractElementAt(markup: string, tag: string, start: number) {
   let depth = 0
 
   for (const match of markup.matchAll(tagPattern)) {
-    if (match.index < start) {
-      continue
-    }
+    if (match.index < start) continue
 
     if (match[0].startsWith(`</${tag}`)) {
       depth -= 1
-
       if (depth === 0) {
         return markup.slice(start, match.index + match[0].length)
       }
@@ -44,7 +41,7 @@ function extractElementAt(markup: string, tag: string, start: number) {
   throw new Error(`Missing closing </${tag}> tag`)
 }
 
-function getElementByAttribute(
+function getElementsByAttribute(
   markup: string,
   tag: string,
   attribute: string,
@@ -52,42 +49,49 @@ function getElementByAttribute(
 ) {
   const openingTagPattern = new RegExp(
     `<${tag}\\b[^>]*\\b${escapeRegExp(attribute)}="${escapeRegExp(value)}"[^>]*>`,
+    'g',
   )
-  const match = openingTagPattern.exec(markup)
 
-  if (!match) {
+  return Array.from(markup.matchAll(openingTagPattern), (match) => ({
+    markup: extractElementAt(markup, tag, match.index),
+    start: match.index,
+  }))
+}
+
+function getElementByAttribute(
+  markup: string,
+  tag: string,
+  attribute: string,
+  value: string,
+) {
+  const element = getElementsByAttribute(markup, tag, attribute, value)[0]
+
+  if (!element) {
     throw new Error(`Missing <${tag}> with ${attribute}="${value}"`)
   }
 
-  return {
-    markup: extractElementAt(markup, tag, match.index),
-    start: match.index,
-  }
+  return element
 }
 
-function getContainingElement(markup: string, tag: string, position: number) {
-  const tagPattern = new RegExp(`<${tag}\\b[^>]*>|</${tag}>`, 'g')
-  const openElements: number[] = []
+function getContainingElementByAttribute(
+  markup: string,
+  tag: string,
+  attribute: string,
+  value: string,
+  position: number,
+) {
+  const element = getElementsByAttribute(markup, tag, attribute, value)
+    .filter((candidate) => candidate.start < position)
+    .reverse()
+    .find((candidate) => candidate.start + candidate.markup.length > position)
 
-  for (const match of markup.matchAll(tagPattern)) {
-    if (match.index >= position) {
-      break
-    }
-
-    if (match[0].startsWith(`</${tag}`)) {
-      openElements.pop()
-    } else {
-      openElements.push(match.index)
-    }
+  if (!element) {
+    throw new Error(
+      `Missing containing <${tag}> with ${attribute}="${value}"`,
+    )
   }
 
-  const start = openElements.at(-1)
-
-  if (start === undefined) {
-    throw new Error(`Missing containing <${tag}> element`)
-  }
-
-  return extractElementAt(markup, tag, start)
+  return element.markup
 }
 
 function countOpeningTags(markup: string, tag: string) {
@@ -96,19 +100,68 @@ function countOpeningTags(markup: string, tag: string) {
 
 function expectLink(markup: string, label: string, href: string) {
   expect(markup).toMatch(
-    new RegExp(`<a\\b[^>]*href="${escapeRegExp(href)}"[^>]*>${escapeRegExp(label)}</a>`),
+    new RegExp(
+      `<a\\b[^>]*href="${escapeRegExp(href)}"[^>]*>${escapeRegExp(label)}</a>`,
+    ),
   )
 }
 
+function getAttribute(markup: string, attribute: string) {
+  const value = new RegExp(`\\b${escapeRegExp(attribute)}="([^"]+)"`).exec(
+    markup,
+  )?.[1]
+
+  if (!value) throw new Error(`Missing ${attribute} attribute`)
+
+  return value
+}
+
 describe('MarkerPopup', () => {
-  it('nests a linked, imaged drop after its owning monster with its exact rate', () => {
-    const dropImage = 'Dull_Life_Essence.png/16px-Dull_Life_Essence.png'
+  it('renders a monster with drops as a collapsed, labelled accordion control', () => {
+    const monsterImage = 'Slime.png/24px-Slime.png'
     const markup = renderMarker({
       ...baseMarker,
       monsters: [
         {
           name: 'Slime',
           wikiSlug: 'Slime',
+          image: monsterImage,
+          drops: [
+            { name: 'Dull Life Essence', dropRate: 1.25 },
+            { name: 'Slime Gel', dropRate: 12 },
+          ],
+        },
+      ],
+    })
+    const trigger = getElementByAttribute(
+      markup,
+      'button',
+      'aria-label',
+      'Toggle 2 drops from Slime',
+    ).markup
+    const panelId = getAttribute(trigger, 'aria-controls')
+    const triggerId = getAttribute(trigger, 'id')
+    const panel = getElementByAttribute(markup, 'div', 'id', panelId).markup
+
+    expect(trigger).toContain('2 drops')
+    expect(trigger).toContain('aria-expanded="false"')
+    expect(trigger).not.toContain('<a')
+    expect(panel).toContain('hidden=""')
+    expect(panel).toContain('role="region"')
+    expect(panel).toContain(`aria-labelledby="${triggerId}"`)
+    expectLink(markup, 'Slime', getWikiUrl('Slime'))
+    expect(markup).toContain(
+      `src="${getWikiThumbnailUrl(monsterImage)}"`,
+    )
+  })
+
+  it('keeps exact drop details beneath the correct owning monster', () => {
+    const dropImage = 'Dull_Life_Essence.png/16px-Dull_Life_Essence.png'
+    const markup = renderMarker({
+      ...baseMarker,
+      monsters: [
+        {
+          name: 'Slime',
           drops: [
             {
               name: 'Dull Life Essence',
@@ -118,20 +171,54 @@ describe('MarkerPopup', () => {
             },
           ],
         },
+        {
+          name: 'Cave Bat',
+          drops: [{ name: 'Bat Wing', dropRate: 27.75 }],
+        },
       ],
     })
-    const dropList = getElementByAttribute(markup, 'ul', 'aria-label', 'Drops from Slime')
-    const slimeGroup = getContainingElement(markup, 'li', dropList.start)
+    const slimeDrops = getElementByAttribute(
+      markup,
+      'ul',
+      'aria-label',
+      'Drops from Slime',
+    )
+    const batDrops = getElementByAttribute(
+      markup,
+      'ul',
+      'aria-label',
+      'Drops from Cave Bat',
+    )
+    const slimeGroup = getContainingElementByAttribute(
+      markup,
+      'div',
+      'data-slot',
+      'accordion-item',
+      slimeDrops.start,
+    )
+    const batGroup = getContainingElementByAttribute(
+      markup,
+      'div',
+      'data-slot',
+      'accordion-item',
+      batDrops.start,
+    )
 
-    expect(slimeGroup).toContain('Slime')
-    expect(slimeGroup).toContain(dropList.markup)
-    expect(slimeGroup.indexOf('Slime')).toBeLessThan(slimeGroup.indexOf('Dull Life Essence'))
-    expect(dropList.markup).toContain('Dull Life Essence')
-    expect(dropList.markup).toMatch(/>1\.25%<\/span>/)
-    expectLink(dropList.markup, 'Dull Life Essence', getWikiUrl('Dull_Life_Essence'))
-    expect(dropList.markup).toContain(`src="${getWikiThumbnailUrl(dropImage)}"`)
-    expect(dropList.markup).toContain('referrerPolicy="no-referrer"')
-    expect(countOpeningTags(dropList.markup, 'img')).toBe(1)
+    expect(slimeGroup).toContain('Dull Life Essence')
+    expect(slimeGroup).toContain('1.25%')
+    expect(slimeGroup).not.toContain('Bat Wing')
+    expect(batGroup).toContain('Bat Wing')
+    expect(batGroup).toContain('27.75%')
+    expect(batGroup).not.toContain('Dull Life Essence')
+    expectLink(
+      slimeDrops.markup,
+      'Dull Life Essence',
+      getWikiUrl('Dull_Life_Essence'),
+    )
+    expect(slimeDrops.markup).toContain(
+      `src="${getWikiThumbnailUrl(dropImage)}"`,
+    )
+    expect(slimeDrops.markup).toContain('referrerPolicy="no-referrer"')
   })
 
   it.each([
@@ -154,37 +241,47 @@ describe('MarkerPopup', () => {
         },
       ],
     })
-    const dropList = getElementByAttribute(markup, 'ul', 'aria-label', 'Drops from Slime').markup
+    const dropList = getElementByAttribute(
+      markup,
+      'ul',
+      'aria-label',
+      'Drops from Slime',
+    ).markup
 
     expect(dropList).not.toContain('<img')
     expect(dropList).toContain('Dull Life Essence')
+    expect(dropList).toContain('1.25%')
     expectLink(dropList, 'Dull Life Essence', getWikiUrl('Dull_Life_Essence'))
-    expect(dropList).toMatch(/>1\.25%<\/span>/)
   })
 
-  it('keeps the simple Monsters list when a monster has no drops property', () => {
+  it('keeps a monster without drops compact and gives it no accordion control', () => {
+    const monsterImage = 'Cave_Bat.png/24px-Cave_Bat.png'
     const markup = renderMarker({
       ...baseMarker,
-      monsters: [{ name: 'Slime', wikiSlug: 'Slime' }],
+      monsters: [
+        {
+          name: 'Cave Bat',
+          wikiSlug: 'Cave_Bat',
+          image: monsterImage,
+        },
+      ],
     })
-    const monstersSection = getElementByAttribute(markup, 'section', 'aria-label', 'Monsters')
-      .markup
+    const monstersSection = getElementByAttribute(
+      markup,
+      'section',
+      'aria-label',
+      'Monsters',
+    ).markup
 
-    expect(monstersSection).toContain('Slime')
-    expectLink(monstersSection, 'Slime', getWikiUrl('Slime'))
-    expect(countOpeningTags(monstersSection, 'ul')).toBe(1)
-    expect(countOpeningTags(monstersSection, 'li')).toBe(1)
-    expect(monstersSection).not.toContain('Drops from')
+    expectLink(monstersSection, 'Cave Bat', getWikiUrl('Cave_Bat'))
+    expect(monstersSection).toContain(
+      `src="${getWikiThumbnailUrl(monsterImage)}"`,
+    )
+    expect(countOpeningTags(monstersSection, 'button')).toBe(0)
+    expect(monstersSection).not.toContain('Drops from Cave Bat')
   })
 
-  it('omits the Monsters section when the marker has no monsters', () => {
-    const markup = renderMarker(baseMarker)
-
-    expect(markup).not.toContain('aria-label="Monsters"')
-    expect(markup).not.toContain('>Monsters<')
-  })
-
-  it('renders monsters with and without drops together without changing drop ownership', () => {
+  it('renders monsters with and without drops together', () => {
     const markup = renderMarker({
       ...baseMarker,
       monsters: [
@@ -192,23 +289,72 @@ describe('MarkerPopup', () => {
           name: 'Slime',
           drops: [{ name: 'Dull Life Essence', dropRate: 1.25 }],
         },
-        { name: 'Cave Bat' },
+        { name: 'Cave Bat', image: '' },
       ],
     })
-    const monstersSection = getElementByAttribute(markup, 'section', 'aria-label', 'Monsters')
-      .markup
-    const dropList = getElementByAttribute(markup, 'ul', 'aria-label', 'Drops from Slime')
-    const slimeGroup = getContainingElement(markup, 'li', dropList.start)
-    const caveBatPosition = markup.indexOf('Cave Bat')
-    const caveBatGroup = getContainingElement(markup, 'li', caveBatPosition)
+    const monstersSection = getElementByAttribute(
+      markup,
+      'section',
+      'aria-label',
+      'Monsters',
+    ).markup
 
     expect(monstersSection).toContain('Slime')
     expect(monstersSection).toContain('Cave Bat')
-    expect(slimeGroup).toContain('Dull Life Essence')
-    expect(slimeGroup).not.toContain('Cave Bat')
-    expect(caveBatGroup).toContain('Cave Bat')
-    expect(caveBatGroup).not.toContain('Dull Life Essence')
-    expect(markup).not.toContain('Drops from Cave Bat')
+    expect(countOpeningTags(monstersSection, 'button')).toBe(1)
+    expect(monstersSection).toContain('Drops from Slime')
+    expect(monstersSection).not.toContain('Drops from Cave Bat')
+    expect(countOpeningTags(monstersSection, 'img')).toBe(0)
+  })
+
+  it('gives multiple monsters independent labelled controls and panels', () => {
+    const markup = renderMarker({
+      ...baseMarker,
+      monsters: [
+        {
+          name: 'Slime',
+          drops: [{ name: 'Slime Gel', dropRate: 12 }],
+        },
+        {
+          name: 'Cave Bat',
+          drops: [
+            { name: 'Bat Wing', dropRate: 27.75 },
+            { name: 'Sharp Fang', dropRate: 4 },
+          ],
+        },
+      ],
+    })
+    const slimeTrigger = getElementByAttribute(
+      markup,
+      'button',
+      'aria-label',
+      'Toggle 1 drop from Slime',
+    ).markup
+    const batTrigger = getElementByAttribute(
+      markup,
+      'button',
+      'aria-label',
+      'Toggle 2 drops from Cave Bat',
+    ).markup
+    const slimePanelId = getAttribute(slimeTrigger, 'aria-controls')
+    const batPanelId = getAttribute(batTrigger, 'aria-controls')
+
+    expect(slimePanelId).not.toBe(batPanelId)
+    expect(slimeTrigger).toContain('aria-expanded="false"')
+    expect(batTrigger).toContain('aria-expanded="false"')
+    expect(
+      getElementByAttribute(markup, 'div', 'id', slimePanelId).markup,
+    ).toContain('Drops from Slime')
+    expect(
+      getElementByAttribute(markup, 'div', 'id', batPanelId).markup,
+    ).toContain('Drops from Cave Bat')
+  })
+
+  it('omits the Monsters section when the marker has no monsters', () => {
+    const markup = renderMarker(baseMarker)
+
+    expect(markup).not.toContain('aria-label="Monsters"')
+    expect(markup).not.toContain('>Monsters<')
   })
 
   it('continues to render resource percentages from chancePercent', () => {
@@ -221,24 +367,21 @@ describe('MarkerPopup', () => {
         },
       ],
     })
-    const resourcesSection = getElementByAttribute(markup, 'section', 'aria-label', 'Resources')
-      .markup
+    const resourcesSection = getElementByAttribute(
+      markup,
+      'section',
+      'aria-label',
+      'Resources',
+    ).markup
 
     expect(resourcesSection).toContain('Stone')
     expect(resourcesSection).toContain('65.2%')
   })
 
-  it('preserves marker, monster, resource item, and interactable wiki links', () => {
+  it('preserves marker, resource item, and interactable wiki links', () => {
     const markup = renderMarker({
       ...baseMarker,
       wikiSlug: 'Slime_Hollow',
-      monsters: [
-        {
-          name: 'Slime',
-          wikiSlug: 'Slime',
-          image: 'Slime.png/16px-Slime.png',
-        },
-      ],
       resources: [
         {
           type: 'Mining',
@@ -261,9 +404,7 @@ describe('MarkerPopup', () => {
     })
 
     expectLink(markup, 'Open wiki page', getWikiUrl('Slime_Hollow'))
-    expectLink(markup, 'Slime', getWikiUrl('Slime'))
     expectLink(markup, 'Stone', getWikiUrl('Stone'))
     expectLink(markup, 'Quest Master', getWikiUrl('Quest_Master'))
-    expect(markup.match(/referrerPolicy="no-referrer"/g)).toHaveLength(3)
   })
 })
