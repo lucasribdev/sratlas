@@ -95,8 +95,7 @@ function MapMarkerItem({
       <Popup
         className="map-popup"
         ref={popupRef}
-        autoPanPaddingBottomRight={[16, 16]}
-        autoPanPaddingTopLeft={[16, 120]}
+        autoPan={false}
         maxHeight={360}
         maxWidth={300}
       >
