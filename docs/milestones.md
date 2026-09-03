@@ -90,7 +90,8 @@ Status: MVP
 
 #### 12. Create TypeScript Types for the Data
 
-Type areas, maps, and markers.
+Type areas, maps, markers, and simple monster drops embedded in rich monster
+objects.
 
 Status: MVP
 
@@ -102,7 +103,9 @@ Status: MVP
 
 #### 14. Create the Marker Popup
 
-Show the name, area, structured marker data, and wiki link.
+Show the name, area, structured marker data, and wiki link. Render simple drops
+compactly beneath their owning monsters, including rates, optional images, and
+optional wiki links.
 
 Status: MVP
 
@@ -121,7 +124,9 @@ Status: MVP
 
 #### 16. Create Text Search
 
-Search by name, area, zone type, tags, monsters, resources, and interactables.
+Search by name, area, zone type, tags, monsters, simple embedded monster drops,
+resources, and interactables. Include drops in autocomplete as Item or Essence
+entries using the existing classification and deduplication behavior.
 
 Status: MVP
 
@@ -188,6 +193,9 @@ Status: MVP
 #### 25. Validate the Initial Data
 
 Check for duplicate IDs, out-of-range coordinates, and missing required fields.
+For embedded monster drops, validate a required name and either a finite
+percentage from `0` through `100` or `null` when unknown, while accepting an
+omitted or exactly empty image.
 
 Status: MVP
 
@@ -210,6 +218,23 @@ Confirm that nothing outside the MVP was added, including a backend, login, an
 admin panel, or automatic wiki synchronization.
 
 Status: MVP
+
+## Completed Simple Monster Drop Support
+
+The MVP now supports the deliberately small
+`marker -> monsters[] -> drops[]` contract across:
+
+- the TypeScript data model and static JSON data;
+- runtime-data validation, including inclusive `0`-to-`100` rates and the
+  empty-image compatibility rule;
+- compact popup rendering under the owning monster;
+- marker text search and Item/Essence autocomplete, including contextual
+  selection and deduplication behavior;
+- regression tests for validation, search, selection, deduplication, and popup
+  rendering.
+
+This completed work is simple embedded metadata, not the complete drop
+relationship system described in the post-MVP backlog.
 
 ## Post-MVP
 
@@ -241,7 +266,12 @@ Status: Post-MVP
 
 Status: Post-MVP
 
-#### 35. Add Relationships with Drops, Quests, and Items
+#### 35. Add Complete Relationships with Drops, Quests, and Items
+
+Design the more complex normalized model for complete drop datasets, shared
+entities, complex conditions, and many-to-many monster/item relationships. This
+future work remains necessary and is not replaced by simple embedded monster
+drops.
 
 Status: Post-MVP
 

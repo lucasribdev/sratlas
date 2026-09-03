@@ -1,5 +1,9 @@
-import { useEffect, useRef } from "react";
-import { divIcon, type Marker as LeafletMarker } from "leaflet";
+import { useCallback, useEffect, useRef } from "react";
+import {
+  divIcon,
+  type Marker as LeafletMarker,
+  type Popup as LeafletPopup,
+} from "leaflet";
 import { Marker, Popup, Tooltip } from "react-leaflet";
 import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
@@ -52,9 +56,13 @@ function MapMarkerItem({
   selectedMarkerId,
 }: MapMarkerItemProps) {
   const markerRef = useRef<LeafletMarker | null>(null);
+  const popupRef = useRef<LeafletPopup | null>(null);
   const position = percentageToLeafletLatLng(marker, map);
   const isSelected = marker.id === selectedMarkerId;
   const visualStyle = markerVisualStyle(marker, { selected: isSelected });
+  const handlePopupContentSizeChange = useCallback(() => {
+    popupRef.current?.update();
+  }, []);
 
   useEffect(() => {
     if (!isSelected) {
@@ -86,12 +94,15 @@ function MapMarkerItem({
       </Tooltip>
       <Popup
         className="map-popup"
-        autoPanPaddingBottomRight={[16, 16]}
-        autoPanPaddingTopLeft={[16, 120]}
+        ref={popupRef}
+        autoPan={false}
         maxHeight={360}
         maxWidth={300}
       >
-        <MarkerPopup marker={marker} />
+        <MarkerPopup
+          marker={marker}
+          onContentSizeChange={handlePopupContentSizeChange}
+        />
       </Popup>
     </Marker>
   );

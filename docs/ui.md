@@ -19,6 +19,7 @@ Currently available shadcn/ui components:
 
 ```text
 src/components/ui/
+  accordion.tsx
   badge.tsx
   button.tsx
   checkbox.tsx
@@ -95,6 +96,43 @@ such as `docs`, `view`, or `--dry-run`.
   The library uses those measurements to position and automatically adjust the
   popup on the map, so wrapping its content in another `ScrollArea` can impair
   auto-pan, touch input, and nested scrolling.
+
+## Marker Popup Monster Drops
+
+The MarkerPopup displays each monster as a distinct compact row in the Monsters
+section. A monster with drops shows its thumbnail and linked name when
+available, its exact drop count, and a sibling accordion button. Drop panels
+are collapsed by default and expand independently beneath their owning monster.
+Monsters without drops remain compact rows and do not receive an accordion
+control.
+
+Expanded panels use a compact vertical list with the drop name on the left and
+its exact percentage aligned on the right. An optional `wikiSlug` makes the name
+a wiki link, and an optional `image` adds a thumbnail. When `image` is missing
+or exactly empty, the popup omits the image element so it does not produce a
+broken thumbnail or an empty placeholder.
+
+Accordion buttons expose `aria-expanded`, identify the corresponding panel,
+and have an accessible label containing the monster name and drop count. The
+monster wiki link and accordion button remain sibling controls so an anchor is
+never nested inside a button. Every drop list is named `Drops from
+${monster.name}`. Visible keyboard focus must remain clear in light and dark
+themes.
+
+Keep popup overflow under Leaflet's native height limit and scrolling behavior.
+Do not introduce a nested `ScrollArea` for monster drops.
+
+When verifying popup changes on desktop and mobile:
+
+- open a marker containing monsters with and without drops;
+- confirm every monster drop panel starts collapsed and controls expand
+  independently with mouse, touch, Enter, and Space;
+- confirm every drop remains grouped beneath the correct monster;
+- confirm names, exact percentages, optional wiki links, and known images
+  render correctly;
+- confirm missing and empty images render without a broken image or gap;
+- use enough content to trigger overflow and confirm Leaflet's native popup
+  scrolling, map auto-pan, mouse-wheel behavior, and touch scrolling still work.
 
 ## Global CSS
 

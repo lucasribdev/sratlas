@@ -35,13 +35,14 @@ multiple pages, videos, or conversations.
 | Search results list | MVP |
 | Wiki link | MVP |
 | Static JSON data | MVP |
+| Simple embedded monster drop metadata | MVP |
 | Basic responsive layout | MVP |
 | Marker clustering | Post-MVP |
 | Backend | Post-MVP |
 | Admin panel | Post-MVP |
 | Login | Post-MVP |
 | Collaborative editing | Post-MVP |
-| Complete drop data | Post-MVP |
+| Complete drop system and datasets | Post-MVP |
 | Complete quest relationships | Post-MVP |
 | Favorites | Optional |
 | Comments | Optional |
@@ -83,7 +84,8 @@ MVP search:
 
 - a single field;
 - search by name;
-- also search by area, zone type, tags, monsters, and resources;
+- also search by area, zone type, tags, monsters, simple embedded monster drops,
+  and resources;
 - case-insensitive matching;
 - clickable results;
 - a simple message when there are no results.
@@ -113,6 +115,24 @@ AND the search text matches its searchable fields
 With no search query, all areas (selected by default) show all markers.
 If no area is selected, no marker appears.
 ```
+
+## Monster Drop Scope
+
+The MVP supports simple monster drop metadata embedded directly in static
+marker data:
+
+```text
+marker -> monsters[] -> drops[]
+```
+
+This is enough to record a drop name, percentage, optional image, and optional
+wiki link; show it under its owning monster; and include it in search. It is not
+a complete drop system.
+
+Complete drop datasets, complex drop conditions, normalized or shared monster
+and item entities, and many-to-many monster/item relationships remain
+post-MVP. The presence of embedded drop metadata does not move those features
+into the MVP.
 
 ## Definition of Done
 
