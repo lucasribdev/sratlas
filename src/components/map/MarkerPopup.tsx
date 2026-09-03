@@ -4,6 +4,7 @@ import type {
   MapMarker,
   MarkerInteractable,
   MarkerMonster,
+  MarkerMonsterDrop,
   MarkerResourceItem,
 } from "@/domain/marker";
 import { getWikiThumbnailUrl, getWikiUrl } from "@/lib/external-urls";
@@ -60,10 +61,53 @@ function PopupEntryRow({ entry }: { entry: PopupEntry }) {
   );
 }
 
+function MonsterDropRow({ drop }: { drop: MarkerMonsterDrop }) {
+  const imageUrl = drop.image ? getWikiThumbnailUrl(drop.image) : undefined;
+  const wikiUrl = drop.wikiSlug ? getWikiUrl(drop.wikiSlug) : undefined;
+
+  return (
+    <span className="inline-flex min-w-0 max-w-[12rem] items-center gap-1.5 rounded-sm bg-secondary px-1.5 py-0.5 text-secondary-foreground">
+      {imageUrl ? (
+        <img
+          alt=""
+          className="size-4 shrink-0 rounded-[2px] object-contain"
+          height={16}
+          loading="lazy"
+          src={imageUrl}
+          width={16}
+        />
+      ) : null}
+      {wikiUrl ? (
+        <a
+          className="min-w-0 flex-1 truncate text-xs leading-5 font-medium text-primary underline-offset-4 hover:underline focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+          href={wikiUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {drop.name}
+        </a>
+      ) : (
+        <span className="min-w-0 flex-1 truncate text-xs leading-5">
+          {drop.name}
+        </span>
+      )}
+      <Badge
+        className="h-4 rounded-sm px-1 text-[0.625rem] leading-none font-semibold"
+        variant="outline"
+      >
+        {drop.dropRate}%
+      </Badge>
+    </span>
+  );
+}
+
 export function MarkerPopup({ marker }: MarkerPopupProps) {
   const wikiUrl = marker.wikiSlug ? getWikiUrl(marker.wikiSlug) : undefined;
   const monsters =
     marker.monsters?.filter((monster) => monster.name.trim()) ?? [];
+  const hasMonsterDrops = monsters.some(
+    (monster) => monster.drops && monster.drops.length > 0,
+  );
   const resourceGroups =
     marker.resources?.filter((resource) =>
       resource.items.some((item) => item.name.trim()),
@@ -110,13 +154,49 @@ export function MarkerPopup({ marker }: MarkerPopupProps) {
             <h3 className="text-[0.6875rem] leading-none font-bold tracking-normal text-muted-foreground uppercase">
               Monsters
             </h3>
-            <ul className="flex flex-wrap gap-1.5">
-              {monsters.map((monster) => (
-                <li className="min-w-0" key={monster.name}>
-                  <PopupEntryRow entry={monster} />
-                </li>
-              ))}
-            </ul>
+            {hasMonsterDrops ? (
+              <ul className="flex flex-wrap items-start gap-1.5">
+                {monsters.map((monster, monsterIndex) => (
+                  <li
+                    className="grid min-w-0 max-w-full gap-1"
+                    key={`${monster.name}-${monsterIndex}`}
+                  >
+                    <PopupEntryRow entry={monster} />
+                    {monster.drops && monster.drops.length > 0 ? (
+                      <div className="grid gap-1 border-l border-border pl-2">
+                        <h4
+                          aria-hidden="true"
+                          className="text-[0.625rem] leading-none font-semibold text-muted-foreground"
+                        >
+                          Drops
+                        </h4>
+                        <ul
+                          aria-label={`Drops from ${monster.name}`}
+                          className="flex flex-wrap gap-1"
+                        >
+                          {monster.drops.map((drop, dropIndex) => (
+                            <li
+                              className="min-w-0"
+                              key={`${monster.name}-${monsterIndex}-${drop.wikiSlug ?? ""}-${drop.name}-${dropIndex}`}
+                            >
+                              <MonsterDropRow drop={drop} />
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <ul className="flex flex-wrap gap-1.5">
+                {monsters.map((monster) => (
+                  <li className="min-w-0" key={monster.name}>
+                    <PopupEntryRow entry={monster} />
+                  </li>
+                ))}
+              </ul>
+            )}
           </section>
         </>
       ) : null}
