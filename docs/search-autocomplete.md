@@ -113,10 +113,14 @@ Do not duplicate structured names in `tags`. Tags should only contain useful
 aliases or community terms that are not already present in structured fields.
 Monster drop names are already searchable from `monsters[].drops[].name`.
 
-All concrete marker navigation goes through `navigateToMarker(markerId)` in the
-application layout. Derived `markersById` and `mapsById` indexes resolve ownership
+Concrete result clicks and unique marker suggestions resolve marker ownership
+in the application layout. Derived `markersById` and `mapsById` indexes resolve ownership
 before the reducer atomically changes the active map and navigation request.
 Each request has a new ID, including repeated selections. Manual search/filter
 edits clear selection and cancel pending focus. The mounted marker waits for
 Leaflet readiness, changes the viewport without animation, and opens its popup;
 cleanup removes readiness listeners and closes the previous popup.
+
+Search remains global when the active map changes. See
+[Multiple Maps](./multiple-maps.md) for selection, filter cancellation, and
+map registration.

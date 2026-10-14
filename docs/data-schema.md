@@ -11,6 +11,11 @@ this file to render markers, search results, filters, and popups.
 `id`, `name`, `imageUrl`, `width`, and `height`. It must not contain entities,
 monsters, resources, interactables, or popup data.
 
+Map IDs and marker IDs must each be globally unique. Every marker `mapId` must
+resolve to a configured map; marker names may repeat. Maps may have different
+positive image dimensions and may have no markers. See
+[Multiple Maps](./multiple-maps.md) for setup and navigation behavior.
+
 A backend, login, an admin panel, and automatic wiki synchronization remain out
 of scope for the MVP.
 

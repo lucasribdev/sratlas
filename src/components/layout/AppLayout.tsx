@@ -5,7 +5,7 @@ import { createMapNavigation, mapNavigationReducer, resolveMarkerNavigation } fr
 import { MapSelector } from "@/components/maps/MapSelector";
 import { markers, markersById } from "@/data/markers";
 import type { MapMarker } from "@/domain/marker";
-import { markerAreaOptions } from "@/lib/marker-filters";
+import { markerAreaOptions, markerMatchesAreas } from "@/lib/marker-filters";
 import { markerMatchesSearch } from "@/lib/marker-search";
 import { buildSearchIndex, getSearchSuggestions, type SearchEntry } from "@/lib/search-index";
 import { resolveSearchEntrySelection } from "@/lib/search-selection";
@@ -26,9 +26,7 @@ const searchIndex = buildSearchIndex(markers);
 
 export function AppLayout() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedAreas, setSelectedAreas] = useState<Set<string>>(
-    () => new Set(areaOptions),
-  );
+  const [areaFilter, setAreaFilter] = useState<Set<string> | null>(null);
   const [navigation, dispatchNavigation] = useReducer(
     mapNavigationReducer,
     maps,
@@ -47,7 +45,7 @@ export function AppLayout() {
   const filteredMarkers = markers.filter(
     (marker) =>
       markerMatchesSearch(marker, searchQuery) &&
-      (marker.area ? selectedAreas.has(marker.area) : false),
+      markerMatchesAreas(marker, areaFilter),
   );
 
   const renderedMarkers = filteredMarkers.filter(
@@ -67,8 +65,8 @@ export function AppLayout() {
 
   function toggleArea(area: string) {
     dispatchNavigation({ type: "clearSelection" });
-    setSelectedAreas((currentAreas) => {
-      const nextAreas = new Set(currentAreas);
+    setAreaFilter((currentAreas) => {
+      const nextAreas = new Set(currentAreas ?? areaOptions);
 
       if (nextAreas.has(area)) {
         nextAreas.delete(area);
@@ -82,18 +80,18 @@ export function AppLayout() {
 
   function selectAllAreas() {
     dispatchNavigation({ type: "clearSelection" });
-    setSelectedAreas(new Set(areaOptions));
+    setAreaFilter(null);
   }
 
   function clearAreas() {
     dispatchNavigation({ type: "clearSelection" });
-    setSelectedAreas(new Set());
+    setAreaFilter(new Set());
   }
 
   function navigateToMarker(markerId: MapMarker["id"]) {
     const marker = resolveMarkerNavigation(
       markerId, markersById, mapsById,
-      (candidate) => Boolean(candidate.area && selectedAreas.has(candidate.area)),
+      (candidate) => filteredMarkers.some((visible) => visible.id === candidate.id),
     );
     if (!marker) return;
     dispatchNavigation({ type: "selectMarker", marker });
@@ -102,13 +100,19 @@ export function AppLayout() {
 
   function selectSearchEntry(entry: SearchEntry) {
     const selection = resolveSearchEntrySelection(
-      entry, markers.filter((marker) => Boolean(marker.area && selectedAreas.has(marker.area))),
+      entry, markers.filter((marker) => markerMatchesAreas(marker, areaFilter)),
     );
 
     setSearchQuery(selection.searchQuery);
 
     if (selection.selectedMarkerId) {
-      navigateToMarker(selection.selectedMarkerId);
+      const marker = resolveMarkerNavigation(
+        selection.selectedMarkerId, markersById, mapsById,
+        (candidate) => markerMatchesAreas(candidate, areaFilter) && markerMatchesSearch(candidate, selection.searchQuery),
+      );
+      if (marker) dispatchNavigation({ type: "selectMarker", marker });
+      else dispatchNavigation({ type: "clearSelection" });
+      setIsMobileFiltersOpen(false);
     } else {
       dispatchNavigation({ type: "clearSelection" });
       setIsMobileFiltersOpen(false);
@@ -133,7 +137,7 @@ export function AppLayout() {
           markers={filteredMarkers}
           searchQuery={searchQuery}
           searchSuggestions={searchSuggestions}
-          selectedAreas={selectedAreas}
+          selectedAreas={areaFilter}
         />
       </div>
 
@@ -198,7 +202,7 @@ export function AppLayout() {
                 markers={filteredMarkers}
                 searchQuery={searchQuery}
                 searchSuggestions={searchSuggestions}
-                selectedAreas={selectedAreas}
+                selectedAreas={areaFilter}
               />
             </SheetContent>
           </Sheet>

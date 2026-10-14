@@ -43,6 +43,7 @@ export function GameMapView({
         maxZoom={maxZoom}
         minZoom={minZoom}
         scrollWheelZoom
+        zoomAnimation={false}
         zoomDelta={0.5}
         zoomSnap={0.25}
       >

@@ -12,6 +12,16 @@ application UI, and Leaflet remains a rendering adapter. The additional
 architecture is limited to the boundaries needed for multiple maps, global
 search, structured filters, and reliable marker navigation.
 
+## Current Implementation
+
+The current MVP uses `AppLayout` for global query and area-filter state,
+`map-navigation.ts` for atomic map/marker selection and repeated request IDs,
+and derived `mapsById`/`markersById` indexes. `GameMapView` remounts Leaflet by
+map ID, while mounted markers handle focus and cancellation. The broader
+catalog, occurrence documents, structured facets, and viewport overrides below
+remain target designs. See [Multiple Maps](./multiple-maps.md) for the supported
+configuration and contributor workflow.
+
 ## Design Goals
 
 - Search every map without coupling search scope to the visible map.

@@ -52,4 +52,18 @@ describe('mounted marker navigation', () => {
     expect(view.marker.openPopup).not.toHaveBeenCalled()
     expect(view.map.setView).not.toHaveBeenCalled()
   })
+
+  it('ignores late readiness from a previous map after a new target is mounted', () => {
+    const previous = adapter(false)
+    const destination = adapter(false)
+    const cancel = focusMarker(previous.map, previous.marker, target, { width: 800, height: 600 })
+    cancel()
+    focusMarker(destination.map, destination.marker, target, dimensions)
+    destination.ready()
+    previous.ready()
+    expect(previous.map.setView).not.toHaveBeenCalled()
+    expect(previous.marker.openPopup).not.toHaveBeenCalled()
+    expect(destination.map.setView).toHaveBeenCalledWith([100, 300], 1.5, { animate: false })
+    expect(destination.marker.openPopup).toHaveBeenCalledOnce()
+  })
 })

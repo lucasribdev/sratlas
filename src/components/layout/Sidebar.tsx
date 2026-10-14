@@ -24,7 +24,7 @@ type SidebarProps = {
   onToggleArea: (area: string) => void;
   searchQuery: string;
   searchSuggestions: SearchEntry[];
-  selectedAreas: ReadonlySet<string>;
+  selectedAreas: ReadonlySet<string> | null;
 };
 
 export function Sidebar({
@@ -42,10 +42,8 @@ export function Sidebar({
   searchSuggestions,
   selectedAreas,
 }: SidebarProps) {
-  const allAreasSelected =
-    areaOptions.length > 0 &&
-    areaOptions.every((area) => selectedAreas.has(area));
-  const noAreasSelected = selectedAreas.size === 0;
+  const allAreasSelected = selectedAreas === null;
+  const noAreasSelected = selectedAreas?.size === 0;
 
   return (
     <aside
@@ -133,7 +131,7 @@ export function Sidebar({
                     key={area}
                   >
                     <Checkbox
-                      checked={selectedAreas.has(area)}
+                      checked={selectedAreas === null || selectedAreas.has(area)}
                       onCheckedChange={() => onToggleArea(area)}
                     />
                     <span>{area}</span>
