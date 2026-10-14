@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { MapMarker } from "@/domain/marker";
 import type { SearchEntry } from "@/lib/search-index";
 import { ThemeSelector } from "@/components/layout/ThemeSelector";
@@ -10,6 +11,7 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
 type SidebarProps = {
+  mapSelector?: ReactNode;
   areaOptions: string[];
   markers: MapMarker[];
   onClearAreas: () => void;
@@ -24,6 +26,7 @@ type SidebarProps = {
 };
 
 export function Sidebar({
+  mapSelector,
   areaOptions,
   markers,
   onClearAreas,
@@ -62,6 +65,8 @@ export function Sidebar({
           <ThemeSelector />
         </div>
       </header>
+
+      {mapSelector}
 
       <SearchAutocomplete
         inputClassName="h-10 bg-card"

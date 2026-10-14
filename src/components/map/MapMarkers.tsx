@@ -17,6 +17,7 @@ type MapMarkersProps = {
   markers: MapMarker[];
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
   selectedMarkerId?: MapMarker["id"];
+  navigationRequestId: number;
 };
 
 type MapMarkerItemProps = {
@@ -24,6 +25,7 @@ type MapMarkerItemProps = {
   marker: MapMarker;
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
   selectedMarkerId?: MapMarker["id"];
+  navigationRequestId: number;
 };
 
 const markerIconsByKey = new Map<string, ReturnType<typeof divIcon>>();
@@ -54,6 +56,7 @@ function MapMarkerItem({
   marker,
   onMarkerSelect,
   selectedMarkerId,
+  navigationRequestId,
 }: MapMarkerItemProps) {
   const markerRef = useRef<LeafletMarker | null>(null);
   const popupRef = useRef<LeafletPopup | null>(null);
@@ -74,7 +77,7 @@ function MapMarkerItem({
     }, 550);
 
     return () => window.clearTimeout(timeoutId);
-  }, [isSelected]);
+  }, [isSelected, navigationRequestId]);
 
   return (
     <Marker
@@ -113,16 +116,16 @@ export function MapMarkers({
   markers,
   onMarkerSelect,
   selectedMarkerId,
+  navigationRequestId,
 }: MapMarkersProps) {
-  const mapMarkers = markers.filter((marker) => marker.mapId === map.id);
-
-  return mapMarkers.map((marker) => (
+  return markers.map((marker) => (
     <MapMarkerItem
       key={marker.id}
       map={map}
       marker={marker}
       onMarkerSelect={onMarkerSelect}
       selectedMarkerId={selectedMarkerId}
+      navigationRequestId={navigationRequestId}
     />
   ));
 }

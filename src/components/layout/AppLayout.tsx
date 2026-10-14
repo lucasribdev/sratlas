@@ -1,5 +1,8 @@
-import { useMemo, useState } from "react";
+import { useMemo, useReducer, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
+import { maps } from "@/data/maps";
+import { createMapNavigation, mapNavigationReducer } from "@/application/map-navigation";
+import { MapSelector } from "@/components/maps/MapSelector";
 import { markers } from "@/data/markers";
 import type { MapMarker } from "@/domain/marker";
 import { markerAreaOptions } from "@/lib/marker-filters";
@@ -26,7 +29,16 @@ export function AppLayout() {
   const [selectedAreas, setSelectedAreas] = useState<Set<string>>(
     () => new Set(areaOptions),
   );
-  const [selectedMarkerId, setSelectedMarkerId] = useState<MapMarker["id"]>();
+  const [navigation, dispatchNavigation] = useReducer(
+    mapNavigationReducer,
+    maps,
+    createMapNavigation,
+  );
+  const { activeMapId, selectedMarkerId, requestId } = navigation;
+  const activeMap = maps.find((map) => map.id === activeMapId)!;
+  const selectedMarker = markers.find(
+    (marker) => marker.id === selectedMarkerId,
+  );
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
   const searchSuggestions = useMemo(
@@ -40,7 +52,23 @@ export function AppLayout() {
       (marker.area ? selectedAreas.has(marker.area) : false),
   );
 
+  const renderedMarkers = filteredMarkers.filter(
+    (marker) => marker.mapId === activeMapId,
+  );
+
+  function changeMap(mapId: string) {
+    if (maps.some((map) => map.id === mapId)) {
+      dispatchNavigation({ type: "selectMap", mapId });
+    }
+  }
+
+  function changeSearchQuery(query: string) {
+    setSearchQuery(query);
+    dispatchNavigation({ type: "clearSelection" });
+  }
+
   function toggleArea(area: string) {
+    dispatchNavigation({ type: "clearSelection" });
     setSelectedAreas((currentAreas) => {
       const nextAreas = new Set(currentAreas);
 
@@ -55,15 +83,19 @@ export function AppLayout() {
   }
 
   function selectAllAreas() {
+    dispatchNavigation({ type: "clearSelection" });
     setSelectedAreas(new Set(areaOptions));
   }
 
   function clearAreas() {
+    dispatchNavigation({ type: "clearSelection" });
     setSelectedAreas(new Set());
   }
 
   function selectMarker(markerId: MapMarker["id"]) {
-    setSelectedMarkerId(markerId);
+    const marker = markers.find((candidate) => candidate.id === markerId);
+    if (!marker) return;
+    dispatchNavigation({ type: "selectMarker", marker });
     setIsMobileFiltersOpen(false);
   }
 
@@ -75,7 +107,7 @@ export function AppLayout() {
     if (selection.selectedMarkerId) {
       selectMarker(selection.selectedMarkerId);
     } else {
-      setSelectedMarkerId(undefined);
+      dispatchNavigation({ type: "clearSelection" });
       setIsMobileFiltersOpen(false);
     }
   }
@@ -84,10 +116,13 @@ export function AppLayout() {
     <main className="flex h-svh min-h-svh overflow-hidden bg-muted">
       <div className="hidden min-h-0 min-[761px]:flex">
         <Sidebar
+          mapSelector={
+            <MapSelector maps={maps} activeMapId={activeMapId} onMapChange={changeMap} />
+          }
           areaOptions={areaOptions}
           onClearAreas={clearAreas}
           onMarkerSelect={selectMarker}
-          onSearchQueryChange={setSearchQuery}
+          onSearchQueryChange={changeSearchQuery}
           onSearchSuggestionSelect={selectSearchEntry}
           onSelectAllAreas={selectAllAreas}
           onToggleArea={toggleArea}
@@ -106,12 +141,19 @@ export function AppLayout() {
           className="absolute top-3 right-3 left-3 z-[500] grid grid-cols-[minmax(0,1fr)_auto] gap-2 min-[761px]:hidden"
           aria-label="Compact controls"
         >
+          <div className="col-span-2 rounded-md bg-card p-2 shadow-lg shadow-slate-950/15">
+            <MapSelector
+              maps={maps}
+              activeMapId={activeMapId}
+              onMapChange={changeMap}
+            />
+          </div>
           <SearchAutocomplete
             className="gap-0"
             inputClassName="h-11 !border-border !bg-card text-card-foreground shadow-lg shadow-slate-950/15 placeholder:text-muted-foreground dark:!border-border dark:!bg-card"
             label="Search the map"
             labelClassName="sr-only"
-            onQueryChange={setSearchQuery}
+            onQueryChange={changeSearchQuery}
             onSelect={selectSearchEntry}
             placeholder="Search NPC, resource, monster or area"
             query={searchQuery}
@@ -144,7 +186,7 @@ export function AppLayout() {
                 areaOptions={areaOptions}
                 onClearAreas={clearAreas}
                 onMarkerSelect={selectMarker}
-                onSearchQueryChange={setSearchQuery}
+                onSearchQueryChange={changeSearchQuery}
                 onSearchSuggestionSelect={selectSearchEntry}
                 onSelectAllAreas={selectAllAreas}
                 onToggleArea={toggleArea}
@@ -158,9 +200,11 @@ export function AppLayout() {
         </div>
 
         <GameMapView
-          markers={filteredMarkers}
+          map={activeMap}
+          markers={renderedMarkers}
           onMarkerSelect={selectMarker}
-          selectedMarkerId={selectedMarkerId}
+          selectedMarker={selectedMarker}
+          navigationRequestId={requestId}
         />
       </section>
     </main>

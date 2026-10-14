@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SR Atlas — Soul's Remnant Interactive Map</title>
+    <title>SR Atlas - Soul's Remnant Interactive Map</title>
     <meta
       name="description"
       content="An interactive map to find areas, monsters, resources, and warp points in Soul's Remnant."
@@ -12,7 +12,10 @@
     <link rel="canonical" href="https://sratlas.com/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-    <meta property="og:title" content="SR Atlas — Soul's Remnant Interactive Map" />
+    <meta
+      property="og:title"
+      content="SR Atlas - Soul's Remnant Interactive Map"
+    />
     <meta
       property="og:description"
       content="An interactive map to find areas, monsters, resources, and warp points in Soul's Remnant."
@@ -22,7 +25,10 @@
     <meta property="og:image" content="https://sratlas.com/og-image.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SR Atlas — Soul's Remnant Interactive Map" />
+    <meta
+      name="twitter:title"
+      content="SR Atlas - Soul's Remnant Interactive Map"
+    />
     <meta
       name="twitter:description"
       content="An interactive map to find areas, monsters, resources, and warp points in Soul's Remnant."
@@ -42,17 +48,23 @@
         }
 
         const theme =
-          storedTheme === "light" || storedTheme === "dark" || storedTheme === "system"
+          storedTheme === "light" ||
+          storedTheme === "dark" ||
+          storedTheme === "system"
             ? storedTheme
             : "system";
         const resolvedTheme =
-          theme === "system" && matchMedia("(prefers-color-scheme: dark)").matches
+          theme === "system" &&
+          matchMedia("(prefers-color-scheme: dark)").matches
             ? "dark"
             : theme === "dark"
               ? "dark"
               : "light";
 
-        document.documentElement.classList.toggle("dark", resolvedTheme === "dark");
+        document.documentElement.classList.toggle(
+          "dark",
+          resolvedTheme === "dark",
+        );
         document.documentElement.style.colorScheme = resolvedTheme;
       })();
     </script>
