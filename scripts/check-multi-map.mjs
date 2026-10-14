@@ -172,6 +172,18 @@ try {
     }
     await writeFile(`/tmp/srw-multi-map-${label}.png`, Buffer.from((await call('Page.captureScreenshot', { format: 'png' })).data, 'base64'))
     await check('document.documentElement.scrollWidth <= innerWidth', `${label}: no horizontal overflow`)
+    for (const destination of ['surface', 'fixture-empty']) {
+      await changeMap(destination, mobile)
+      await check(`document.querySelector('.map-placeholder')?.getAttribute('aria-label') === ${JSON.stringify(destination === 'surface' ? 'Surface' : 'Fixture Empty')} && !document.querySelector('.leaflet-popup') && !document.querySelector('.map-marker--selected')`, `${label}: switching to ${destination} with popup open clears selection safely`)
+      await clickResult('Fixture Target', 'Caves', mobile)
+      await check(`document.querySelector('.leaflet-popup')?.textContent.includes('Fixture Target') && ${centered}`, `${label}: navigation still works after switching away from an open popup`)
+    }
+    await query('Fixture Camp', mobile)
+    for (const destination of ['Surface', 'Caves', 'Surface', 'Caves']) {
+      await clickResult('Fixture Camp', destination, mobile)
+      await check(`document.querySelector('.map-placeholder')?.getAttribute('aria-label') === ${JSON.stringify(destination)} && document.querySelector('.leaflet-popup')?.textContent.includes('Fixture Camp') && ${centered}`, `${label}: cross-map result replaces an open popup on ${destination}`)
+    }
+
   }
   fixture.markers.push({ id: 'fixture-third-target', name: 'Fixture Third Target', mapId: 'fixture-empty', x: 40, y: 60 })
   for (const mobile of [false, true]) {

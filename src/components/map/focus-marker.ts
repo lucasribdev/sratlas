@@ -21,7 +21,8 @@ export function focusMarker(
   return () => {
     cancelled = true
     map.off('load', focus)
-    map.stop()
+    // Parent MapContainer cleanup may already have destroyed the map panes.
+    // Focus is synchronous; map.remove() owns animation cleanup on unmount.
     marker.closePopup()
   }
 }

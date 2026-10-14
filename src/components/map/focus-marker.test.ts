@@ -66,4 +66,18 @@ describe('mounted marker navigation', () => {
     expect(destination.map.setView).toHaveBeenCalledWith([100, 300], 1.5, { animate: false })
     expect(destination.marker.openPopup).toHaveBeenCalledOnce()
   })
+
+  it('cleans up after MapContainer has removed the map without touching its viewport', () => {
+    const view = adapter()
+    const cancel = focusMarker(view.map, view.marker, target, dimensions)
+    // React Leaflet removes the parent map before child effect cleanup runs.
+    view.map.stop.mockImplementation(() => {
+      throw new TypeError("Cannot read properties of undefined (reading '_leaflet_pos')")
+    })
+    expect(cancel).not.toThrow()
+    expect(view.map.stop).toHaveBeenCalledOnce()
+    expect(view.map.setView).toHaveBeenCalledOnce()
+    expect(view.marker.closePopup).toHaveBeenCalledOnce()
+    expect(view.map.off).toHaveBeenCalledWith('load', expect.any(Function))
+  })
 })
