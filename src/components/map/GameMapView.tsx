@@ -1,18 +1,13 @@
-import { useEffect } from "react";
 import { CRS, type LatLngBoundsExpression } from "leaflet";
-import { ImageOverlay, MapContainer, useMap } from "react-leaflet";
+import { ImageOverlay, MapContainer } from "react-leaflet";
 import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
-import {
-  mapBoundsFromDimensions,
-  percentageToLeafletLatLng,
-} from "@/lib/coordinates";
+import { mapBoundsFromDimensions } from "@/lib/coordinates";
 import { MapMarkers } from "./MapMarkers";
 
 const mapPanMargin = 320;
 const minZoom = -2;
 const maxZoom = 2;
-const selectedMarkerZoom = 1.5;
 
 type GameMapViewProps = {
   map: GameMap;
@@ -21,36 +16,6 @@ type GameMapViewProps = {
   selectedMarker?: MapMarker;
   navigationRequestId: number;
 };
-
-type SelectedMarkerControllerProps = {
-  gameMap: GameMap;
-  selectedMarker?: MapMarker;
-  navigationRequestId: number;
-};
-
-function SelectedMarkerController({
-  gameMap,
-  selectedMarker,
-  navigationRequestId,
-}: SelectedMarkerControllerProps) {
-  const map = useMap();
-
-  useEffect(() => {
-    if (!selectedMarker) {
-      return;
-    }
-
-    map.flyTo(
-      percentageToLeafletLatLng(selectedMarker, gameMap),
-      Math.max(map.getZoom(), selectedMarkerZoom),
-      {
-        duration: 0.5,
-      },
-    );
-  }, [map, gameMap, selectedMarker, navigationRequestId]);
-
-  return null;
-}
 
 export function GameMapView({
   map,
@@ -82,11 +47,6 @@ export function GameMapView({
         zoomSnap={0.25}
       >
         <ImageOverlay bounds={imageBounds} url={map.imageUrl} />
-        <SelectedMarkerController
-          gameMap={map}
-          selectedMarker={selectedMarker}
-          navigationRequestId={navigationRequestId}
-        />
         <MapMarkers
           map={map}
           markers={markers}

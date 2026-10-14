@@ -4,12 +4,13 @@ import {
   type Marker as LeafletMarker,
   type Popup as LeafletPopup,
 } from "leaflet";
-import { Marker, Popup, Tooltip } from "react-leaflet";
+import { Marker, Popup, Tooltip, useMap } from "react-leaflet";
 import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
 import { percentageToLeafletLatLng } from "@/lib/coordinates";
 import { markerVisualStyle } from "@/lib/marker-style";
 import { cn } from "@/lib/utils";
+import { focusMarker } from "./focus-marker";
 import { MarkerPopup } from "./MarkerPopup";
 
 type MapMarkersProps = {
@@ -58,6 +59,7 @@ function MapMarkerItem({
   selectedMarkerId,
   navigationRequestId,
 }: MapMarkerItemProps) {
+  const leafletMap = useMap();
   const markerRef = useRef<LeafletMarker | null>(null);
   const popupRef = useRef<LeafletPopup | null>(null);
   const position = percentageToLeafletLatLng(marker, map);
@@ -72,12 +74,11 @@ function MapMarkerItem({
       return;
     }
 
-    const timeoutId = window.setTimeout(() => {
-      markerRef.current?.openPopup();
-    }, 550);
+    const leafletMarker = markerRef.current;
+    if (!leafletMarker) return;
 
-    return () => window.clearTimeout(timeoutId);
-  }, [isSelected, navigationRequestId]);
+    return focusMarker(leafletMap, leafletMarker, marker, map);
+  }, [isSelected, navigationRequestId, leafletMap, marker, map]);
 
   return (
     <Marker

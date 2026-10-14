@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
 import type { SearchEntry } from "@/lib/search-index";
 import { ThemeSelector } from "@/components/layout/ThemeSelector";
@@ -11,6 +12,7 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
 type SidebarProps = {
+  mapsById: ReadonlyMap<string, GameMap>;
   mapSelector?: ReactNode;
   areaOptions: string[];
   markers: MapMarker[];
@@ -26,6 +28,7 @@ type SidebarProps = {
 };
 
 export function Sidebar({
+  mapsById,
   mapSelector,
   areaOptions,
   markers,
@@ -169,6 +172,7 @@ export function Sidebar({
             <ol className="grid gap-2 pr-2">
               {markers.map((marker) => {
                 const details = [
+                  mapsById.get(marker.mapId)?.name ?? marker.mapId,
                   marker.area,
                   marker.zoneType,
                   marker.level ? `Level ${marker.level}` : undefined,

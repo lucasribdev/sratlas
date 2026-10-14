@@ -37,3 +37,16 @@ export function mapNavigationReducer(
       return { ...state, selectedMarkerId: undefined }
   }
 }
+
+// Resolve ownership before passing any navigation target to the map adapter.
+export function resolveMarkerNavigation(
+  markerId: MapMarker['id'],
+  markersById: ReadonlyMap<string, MapMarker>,
+  mapsById: ReadonlyMap<string, GameMap>,
+  isAllowed: (marker: MapMarker) => boolean,
+): MapMarker | undefined {
+  const marker = markersById.get(markerId)
+  return marker && mapsById.has(marker.mapId) && isAllowed(marker)
+    ? marker
+    : undefined
+}

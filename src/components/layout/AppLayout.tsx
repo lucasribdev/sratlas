@@ -1,9 +1,9 @@
 import { useMemo, useReducer, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
-import { maps } from "@/data/maps";
-import { createMapNavigation, mapNavigationReducer } from "@/application/map-navigation";
+import { maps, mapsById } from "@/data/maps";
+import { createMapNavigation, mapNavigationReducer, resolveMarkerNavigation } from "@/application/map-navigation";
 import { MapSelector } from "@/components/maps/MapSelector";
-import { markers } from "@/data/markers";
+import { markers, markersById } from "@/data/markers";
 import type { MapMarker } from "@/domain/marker";
 import { markerAreaOptions } from "@/lib/marker-filters";
 import { markerMatchesSearch } from "@/lib/marker-search";
@@ -35,10 +35,8 @@ export function AppLayout() {
     createMapNavigation,
   );
   const { activeMapId, selectedMarkerId, requestId } = navigation;
-  const activeMap = maps.find((map) => map.id === activeMapId)!;
-  const selectedMarker = markers.find(
-    (marker) => marker.id === selectedMarkerId,
-  );
+  const activeMap = mapsById.get(activeMapId)!;
+  const selectedMarker = selectedMarkerId ? markersById.get(selectedMarkerId) : undefined;
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
   const searchSuggestions = useMemo(
@@ -57,7 +55,7 @@ export function AppLayout() {
   );
 
   function changeMap(mapId: string) {
-    if (maps.some((map) => map.id === mapId)) {
+    if (mapsById.has(mapId)) {
       dispatchNavigation({ type: "selectMap", mapId });
     }
   }
@@ -92,20 +90,25 @@ export function AppLayout() {
     setSelectedAreas(new Set());
   }
 
-  function selectMarker(markerId: MapMarker["id"]) {
-    const marker = markers.find((candidate) => candidate.id === markerId);
+  function navigateToMarker(markerId: MapMarker["id"]) {
+    const marker = resolveMarkerNavigation(
+      markerId, markersById, mapsById,
+      (candidate) => Boolean(candidate.area && selectedAreas.has(candidate.area)),
+    );
     if (!marker) return;
     dispatchNavigation({ type: "selectMarker", marker });
     setIsMobileFiltersOpen(false);
   }
 
   function selectSearchEntry(entry: SearchEntry) {
-    const selection = resolveSearchEntrySelection(entry, filteredMarkers);
+    const selection = resolveSearchEntrySelection(
+      entry, markers.filter((marker) => Boolean(marker.area && selectedAreas.has(marker.area))),
+    );
 
     setSearchQuery(selection.searchQuery);
 
     if (selection.selectedMarkerId) {
-      selectMarker(selection.selectedMarkerId);
+      navigateToMarker(selection.selectedMarkerId);
     } else {
       dispatchNavigation({ type: "clearSelection" });
       setIsMobileFiltersOpen(false);
@@ -119,9 +122,10 @@ export function AppLayout() {
           mapSelector={
             <MapSelector maps={maps} activeMapId={activeMapId} onMapChange={changeMap} />
           }
+          mapsById={mapsById}
           areaOptions={areaOptions}
           onClearAreas={clearAreas}
-          onMarkerSelect={selectMarker}
+          onMarkerSelect={navigateToMarker}
           onSearchQueryChange={changeSearchQuery}
           onSearchSuggestionSelect={selectSearchEntry}
           onSelectAllAreas={selectAllAreas}
@@ -183,9 +187,10 @@ export function AppLayout() {
                 <SheetTitle>Search, filters, and results</SheetTitle>
               </SheetHeader>
               <Sidebar
+                mapsById={mapsById}
                 areaOptions={areaOptions}
                 onClearAreas={clearAreas}
-                onMarkerSelect={selectMarker}
+                onMarkerSelect={navigateToMarker}
                 onSearchQueryChange={changeSearchQuery}
                 onSearchSuggestionSelect={selectSearchEntry}
                 onSelectAllAreas={selectAllAreas}
@@ -202,7 +207,7 @@ export function AppLayout() {
         <GameMapView
           map={activeMap}
           markers={renderedMarkers}
-          onMarkerSelect={selectMarker}
+          onMarkerSelect={navigateToMarker}
           selectedMarker={selectedMarker}
           navigationRequestId={requestId}
         />

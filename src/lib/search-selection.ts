@@ -15,9 +15,10 @@ export function resolveSearchEntrySelection(
 
   if (
     entry.type === 'marker' &&
-    visibleMarkers.some((marker) => marker.id === entry.targetId)
+    entry.markerIds.length === 1 &&
+    visibleMarkers.some((marker) => marker.id === entry.markerIds[0])
   ) {
-    selectedMarkerId = entry.targetId
+    selectedMarkerId = entry.markerIds[0]
   }
 
   return {
