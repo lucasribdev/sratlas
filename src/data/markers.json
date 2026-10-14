@@ -19830,5 +19830,1746 @@
     ],
     "warpPoint": false,
     "tags": ["snowy mountain", "level 62"]
+  },
+  {
+    "id": "zone-spawn-1-0",
+    "name": "Spawn",
+    "mapId": "caves",
+    "x": 51.022305,
+    "y": 13.731061,
+    "area": "Spawn",
+    "zoneType": "Caves zone",
+    "level": "0",
+    "monsters": [],
+    "resources": [
+      {
+        "type": "Fishing",
+        "items": [
+          {
+            "name": "Clam",
+            "wikiSlug": "Clam",
+            "image": "Clam.png/16px-Clam.png"
+          },
+          {
+            "name": "Shrimp",
+            "wikiSlug": "Shrimp",
+            "image": "Shrimp.png/16px-Shrimp.png"
+          },
+          {
+            "name": "Trout",
+            "wikiSlug": "Trout",
+            "image": "Trout.png/16px-Trout.png"
+          }
+        ]
+      }
+    ],
+    "warpPoint": true
+  },
+  {
+    "id": "zone-cave_1-1-0",
+    "name": "Cave 1",
+    "mapId": "caves",
+    "x": 49.163569,
+    "y": 21.590909,
+    "area": "Cave",
+    "zoneType": "Caves zone",
+    "level": "4",
+    "monsters": [
+      {
+        "name": "Jel",
+        "wikiSlug": "Jel",
+        "image": "Jel.png/16px-Jel.png",
+        "drops": [
+          {
+            "name": "Dull Life Essence",
+            "dropRate": null,
+            "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+            "wikiSlug": "Dull_Life_Essence"
+          },
+          {
+            "name": "Iron Ore",
+            "dropRate": 0.5,
+            "image": "Iron_Ore.png/16px-Iron_Ore.png",
+            "wikiSlug": "Iron_Ore"
+          },
+          {
+            "name": "Green Scholar Pants",
+            "dropRate": 0.13,
+            "image": "Green_Scholar_Pants.png/16px-Green_Scholar_Pants.png",
+            "wikiSlug": "Green_Scholar_Pants"
+          },
+          {
+            "name": "Stone Helmet",
+            "dropRate": 0.13,
+            "image": "Stone_Helmet.png/16px-Stone_Helmet.png",
+            "wikiSlug": "Stone_Helmet"
+          },
+          {
+            "name": "Stone Armored Boots",
+            "dropRate": 0.13,
+            "image": "Stone_Armored_Boots.png/16px-Stone_Armored_Boots.png",
+            "wikiSlug": "Stone_Armored_Boots"
+          },
+          {
+            "name": "Traveler's Coat",
+            "dropRate": 0.13,
+            "image": "Traveler's_Coat.png/16px-Traveler's_Coat.png",
+            "wikiSlug": "Traveler's_Coat"
+          },
+          {
+            "name": "Kunai",
+            "dropRate": 0.13,
+            "image": "Kunai.png/16px-Kunai.png",
+            "wikiSlug": "Kunai"
+          },
+          {
+            "name": "Stone Orb",
+            "dropRate": 0.13,
+            "image": "Stone_Orb.png/16px-Stone_Orb.png",
+            "wikiSlug": "Stone_Orb"
+          },
+          {
+            "name": "Copper Leg Plate",
+            "dropRate": 0.05,
+            "image": "Copper_Leg_Plate.png/16px-Copper_Leg_Plate.png",
+            "wikiSlug": "Copper_Leg_Plate"
+          },
+          {
+            "name": "Cotton Helmet",
+            "dropRate": 0.05,
+            "image": "Placeholder.png/16px-Placeholder.png",
+            "wikiSlug": "Cotton_Helmet"
+          },
+          {
+            "name": "Cotton Scholar Hat",
+            "dropRate": 0.05,
+            "image": "Cotton_Scholar_Hat.png/16px-Cotton_Scholar_Hat.png",
+            "wikiSlug": "Cotton_Scholar_Hat"
+          },
+          {
+            "name": "Copper Chest Plate",
+            "dropRate": 0.05,
+            "image": "Copper_Chest_Plate.png/16px-Copper_Chest_Plate.png",
+            "wikiSlug": "Copper_Chest_Plate"
+          },
+          {
+            "name": "Copper Bow",
+            "dropRate": 0.05,
+            "image": "Copper_Bow.png/16px-Copper_Bow.png",
+            "wikiSlug": "Copper_Bow"
+          },
+          {
+            "name": "Copper Focus",
+            "dropRate": 0.05,
+            "image": "Copper_Focus.png/16px-Copper_Focus.png",
+            "wikiSlug": "Copper_Focus"
+          },
+          {
+            "name": "Copper Shield",
+            "dropRate": 0.05,
+            "image": "Copper_Shield.png/16px-Copper_Shield.png",
+            "wikiSlug": "Copper_Shield"
+          },
+          {
+            "name": "Cotton Hunter Pants",
+            "dropRate": 0.05,
+            "image": "Cotton_Hunter_Pants.png/16px-Cotton_Hunter_Pants.png",
+            "wikiSlug": "Cotton_Hunter_Pants"
+          },
+          {
+            "name": "Cotton Priest Bottom",
+            "dropRate": 0.05,
+            "image": "Cotton_Priest_Bottom.png/16px-Cotton_Priest_Bottom.png",
+            "wikiSlug": "Cotton_Priest_Bottom"
+          },
+          {
+            "name": "Cotton Scholar Shoes",
+            "dropRate": 0.05,
+            "image": "Cotton_Scholar_Shoes.png/16px-Cotton_Scholar_Shoes.png",
+            "wikiSlug": "Cotton_Scholar_Shoes"
+          }
+        ]
+      },
+      {
+        "name": "Bubble Spirit",
+        "wikiSlug": "Bubble_Spirit",
+        "image": "Bubble_Spirit.png/16px-Bubble_Spirit.png",
+        "drops": [
+          {
+            "name": "Dull Life Essence",
+            "dropRate": null,
+            "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+            "wikiSlug": "Dull_Life_Essence"
+          },
+          {
+            "name": "Copper Ring",
+            "dropRate": 0.05,
+            "image": "Copper_Ring.png/16px-Copper_Ring.png",
+            "wikiSlug": "Copper_Ring"
+          },
+          {
+            "name": "Green Hunter Pants",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Pants.png/16px-Green_Hunter_Pants.png",
+            "wikiSlug": "Green_Hunter_Pants"
+          },
+          {
+            "name": "Green Priest Bottom",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Bottom.png/16px-Green_Priest_Bottom.png",
+            "wikiSlug": "Green_Priest_Bottom"
+          },
+          {
+            "name": "Green Scholar Pants",
+            "dropRate": 0.05,
+            "image": "Green_Scholar_Pants.png/16px-Green_Scholar_Pants.png",
+            "wikiSlug": "Green_Scholar_Pants"
+          },
+          {
+            "name": "Green Hunter Cap",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Cap.png/16px-Green_Hunter_Cap.png",
+            "wikiSlug": "Green_Hunter_Cap"
+          },
+          {
+            "name": "Green Priest Hood",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Hood.png/16px-Green_Priest_Hood.png",
+            "wikiSlug": "Green_Priest_Hood"
+          },
+          {
+            "name": "Green Hunter Shoes",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Shoes.png/16px-Green_Hunter_Shoes.png",
+            "wikiSlug": "Green_Hunter_Shoes"
+          },
+          {
+            "name": "Green Priest Shoes",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Shoes.png/16px-Green_Priest_Shoes.png",
+            "wikiSlug": "Green_Priest_Shoes"
+          },
+          {
+            "name": "Stone Armored Boots",
+            "dropRate": 0.05,
+            "image": "Stone_Armored_Boots.png/16px-Stone_Armored_Boots.png",
+            "wikiSlug": "Stone_Armored_Boots"
+          },
+          {
+            "name": "Green Hunter Robe",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Robe.png/16px-Green_Hunter_Robe.png",
+            "wikiSlug": "Green_Hunter_Robe"
+          },
+          {
+            "name": "Green Priest Robe",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Robe.png/16px-Green_Priest_Robe.png",
+            "wikiSlug": "Green_Priest_Robe"
+          },
+          {
+            "name": "Faded Innocence",
+            "dropRate": 0.05,
+            "image": "Faded_Innocence.png/16px-Faded_Innocence.png",
+            "wikiSlug": "Faded_Innocence"
+          },
+          {
+            "name": "Kunai",
+            "dropRate": 0.05,
+            "image": "Kunai.png/16px-Kunai.png",
+            "wikiSlug": "Kunai"
+          },
+          {
+            "name": "Stone Holy Arrow",
+            "dropRate": 0.05,
+            "image": "Stone_Holy_Arrow.png/16px-Stone_Holy_Arrow.png",
+            "wikiSlug": "Stone_Holy_Arrow"
+          },
+          {
+            "name": "Stone Orb",
+            "dropRate": 0.05,
+            "image": "Stone_Orb.png/16px-Stone_Orb.png",
+            "wikiSlug": "Stone_Orb"
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Blue Shard",
+            "wikiSlug": "Blue_Shard",
+            "image": "Blue_Shard.png/16px-Blue_Shard.png"
+          },
+          {
+            "name": "Red Shard",
+            "wikiSlug": "Red_Shard",
+            "image": "Red_Shard.png/16px-Red_Shard.png"
+          },
+          {
+            "name": "Yellow Shard",
+            "wikiSlug": "Yellow_Shard",
+            "image": "Yellow_Shard.png/16px-Yellow_Shard.png"
+          },
+          {
+            "name": "Red Crystal",
+            "wikiSlug": "Red_Crystal",
+            "image": "Red_Crystal.png/16px-Red_Crystal.png"
+          },
+          {
+            "name": "Blue Crystal",
+            "wikiSlug": "Blue_Crystal",
+            "image": "Blue_Crystal.png/16px-Blue_Crystal.png"
+          },
+          {
+            "name": "Yellow Crystal",
+            "wikiSlug": "Yellow_Crystal",
+            "image": "Yellow_Crystal.png/16px-Yellow_Crystal.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-cave_2-1-1",
+    "name": "Cave 2",
+    "mapId": "caves",
+    "x": 54.64684,
+    "y": 25.94697,
+    "area": "Cave",
+    "zoneType": "Caves zone",
+    "level": "6",
+    "monsters": [
+      {
+        "name": "Bubble Spirit",
+        "wikiSlug": "Bubble_Spirit",
+        "image": "Bubble_Spirit.png/16px-Bubble_Spirit.png",
+        "drops": [
+          {
+            "name": "Dull Life Essence",
+            "dropRate": null,
+            "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+            "wikiSlug": "Dull_Life_Essence"
+          },
+          {
+            "name": "Copper Ring",
+            "dropRate": 0.05,
+            "image": "Copper_Ring.png/16px-Copper_Ring.png",
+            "wikiSlug": "Copper_Ring"
+          },
+          {
+            "name": "Green Hunter Pants",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Pants.png/16px-Green_Hunter_Pants.png",
+            "wikiSlug": "Green_Hunter_Pants"
+          },
+          {
+            "name": "Green Priest Bottom",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Bottom.png/16px-Green_Priest_Bottom.png",
+            "wikiSlug": "Green_Priest_Bottom"
+          },
+          {
+            "name": "Green Scholar Pants",
+            "dropRate": 0.05,
+            "image": "Green_Scholar_Pants.png/16px-Green_Scholar_Pants.png",
+            "wikiSlug": "Green_Scholar_Pants"
+          },
+          {
+            "name": "Green Hunter Cap",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Cap.png/16px-Green_Hunter_Cap.png",
+            "wikiSlug": "Green_Hunter_Cap"
+          },
+          {
+            "name": "Green Priest Hood",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Hood.png/16px-Green_Priest_Hood.png",
+            "wikiSlug": "Green_Priest_Hood"
+          },
+          {
+            "name": "Green Hunter Shoes",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Shoes.png/16px-Green_Hunter_Shoes.png",
+            "wikiSlug": "Green_Hunter_Shoes"
+          },
+          {
+            "name": "Green Priest Shoes",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Shoes.png/16px-Green_Priest_Shoes.png",
+            "wikiSlug": "Green_Priest_Shoes"
+          },
+          {
+            "name": "Stone Armored Boots",
+            "dropRate": 0.05,
+            "image": "Stone_Armored_Boots.png/16px-Stone_Armored_Boots.png",
+            "wikiSlug": "Stone_Armored_Boots"
+          },
+          {
+            "name": "Green Hunter Robe",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Robe.png/16px-Green_Hunter_Robe.png",
+            "wikiSlug": "Green_Hunter_Robe"
+          },
+          {
+            "name": "Green Priest Robe",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Robe.png/16px-Green_Priest_Robe.png",
+            "wikiSlug": "Green_Priest_Robe"
+          },
+          {
+            "name": "Faded Innocence",
+            "dropRate": 0.05,
+            "image": "Faded_Innocence.png/16px-Faded_Innocence.png",
+            "wikiSlug": "Faded_Innocence"
+          },
+          {
+            "name": "Kunai",
+            "dropRate": 0.05,
+            "image": "Kunai.png/16px-Kunai.png",
+            "wikiSlug": "Kunai"
+          },
+          {
+            "name": "Stone Holy Arrow",
+            "dropRate": 0.05,
+            "image": "Stone_Holy_Arrow.png/16px-Stone_Holy_Arrow.png",
+            "wikiSlug": "Stone_Holy_Arrow"
+          },
+          {
+            "name": "Stone Orb",
+            "dropRate": 0.05,
+            "image": "Stone_Orb.png/16px-Stone_Orb.png",
+            "wikiSlug": "Stone_Orb"
+          }
+        ]
+      },
+      {
+        "name": "Jel",
+        "wikiSlug": "Jel",
+        "image": "Jel.png/16px-Jel.png",
+        "drops": [
+          {
+            "name": "Dull Life Essence",
+            "dropRate": null,
+            "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+            "wikiSlug": "Dull_Life_Essence"
+          },
+          {
+            "name": "Iron Ore",
+            "dropRate": 0.5,
+            "image": "Iron_Ore.png/16px-Iron_Ore.png",
+            "wikiSlug": "Iron_Ore"
+          },
+          {
+            "name": "Green Scholar Pants",
+            "dropRate": 0.13,
+            "image": "Green_Scholar_Pants.png/16px-Green_Scholar_Pants.png",
+            "wikiSlug": "Green_Scholar_Pants"
+          },
+          {
+            "name": "Stone Helmet",
+            "dropRate": 0.13,
+            "image": "Stone_Helmet.png/16px-Stone_Helmet.png",
+            "wikiSlug": "Stone_Helmet"
+          },
+          {
+            "name": "Stone Armored Boots",
+            "dropRate": 0.13,
+            "image": "Stone_Armored_Boots.png/16px-Stone_Armored_Boots.png",
+            "wikiSlug": "Stone_Armored_Boots"
+          },
+          {
+            "name": "Traveler's Coat",
+            "dropRate": 0.13,
+            "image": "Traveler's_Coat.png/16px-Traveler's_Coat.png",
+            "wikiSlug": "Traveler's_Coat"
+          },
+          {
+            "name": "Kunai",
+            "dropRate": 0.13,
+            "image": "Kunai.png/16px-Kunai.png",
+            "wikiSlug": "Kunai"
+          },
+          {
+            "name": "Stone Orb",
+            "dropRate": 0.13,
+            "image": "Stone_Orb.png/16px-Stone_Orb.png",
+            "wikiSlug": "Stone_Orb"
+          },
+          {
+            "name": "Copper Leg Plate",
+            "dropRate": 0.05,
+            "image": "Copper_Leg_Plate.png/16px-Copper_Leg_Plate.png",
+            "wikiSlug": "Copper_Leg_Plate"
+          },
+          {
+            "name": "Cotton Helmet",
+            "dropRate": 0.05,
+            "image": "Placeholder.png/16px-Placeholder.png",
+            "wikiSlug": "Cotton_Helmet"
+          },
+          {
+            "name": "Cotton Scholar Hat",
+            "dropRate": 0.05,
+            "image": "Cotton_Scholar_Hat.png/16px-Cotton_Scholar_Hat.png",
+            "wikiSlug": "Cotton_Scholar_Hat"
+          },
+          {
+            "name": "Copper Chest Plate",
+            "dropRate": 0.05,
+            "image": "Copper_Chest_Plate.png/16px-Copper_Chest_Plate.png",
+            "wikiSlug": "Copper_Chest_Plate"
+          },
+          {
+            "name": "Copper Bow",
+            "dropRate": 0.05,
+            "image": "Copper_Bow.png/16px-Copper_Bow.png",
+            "wikiSlug": "Copper_Bow"
+          },
+          {
+            "name": "Copper Focus",
+            "dropRate": 0.05,
+            "image": "Copper_Focus.png/16px-Copper_Focus.png",
+            "wikiSlug": "Copper_Focus"
+          },
+          {
+            "name": "Copper Shield",
+            "dropRate": 0.05,
+            "image": "Copper_Shield.png/16px-Copper_Shield.png",
+            "wikiSlug": "Copper_Shield"
+          },
+          {
+            "name": "Cotton Hunter Pants",
+            "dropRate": 0.05,
+            "image": "Cotton_Hunter_Pants.png/16px-Cotton_Hunter_Pants.png",
+            "wikiSlug": "Cotton_Hunter_Pants"
+          },
+          {
+            "name": "Cotton Priest Bottom",
+            "dropRate": 0.05,
+            "image": "Cotton_Priest_Bottom.png/16px-Cotton_Priest_Bottom.png",
+            "wikiSlug": "Cotton_Priest_Bottom"
+          },
+          {
+            "name": "Cotton Scholar Shoes",
+            "dropRate": 0.05,
+            "image": "Cotton_Scholar_Shoes.png/16px-Cotton_Scholar_Shoes.png",
+            "wikiSlug": "Cotton_Scholar_Shoes"
+          }
+        ]
+      },
+      {
+        "name": "Glowsnail",
+        "wikiSlug": "Glowsnail",
+        "image": "Glowsnail.png/16px-Glowsnail.png",
+        "drops": [
+          {
+            "name": "Dull Metal Essence",
+            "dropRate": 12.5,
+            "image": "Dull_Metal_Essence.png/16px-Dull_Metal_Essence.png",
+            "wikiSlug": "Dull_Metal_Essence"
+          },
+          {
+            "name": "Yellow Shard",
+            "dropRate": 1.49,
+            "image": "Yellow_Shard.png/16px-Yellow_Shard.png",
+            "wikiSlug": "Yellow_Shard"
+          },
+          {
+            "name": "Stone Bow",
+            "dropRate": 0.37,
+            "image": "Stone_Bow.png/16px-Stone_Bow.png",
+            "wikiSlug": "Stone_Bow"
+          },
+          {
+            "name": "Stone Holy Arrow",
+            "dropRate": 0.37,
+            "image": "Stone_Holy_Arrow.png/16px-Stone_Holy_Arrow.png",
+            "wikiSlug": "Stone_Holy_Arrow"
+          },
+          {
+            "name": "Stone Orb",
+            "dropRate": 0.37,
+            "image": "Stone_Orb.png/16px-Stone_Orb.png",
+            "wikiSlug": "Stone_Orb"
+          },
+          {
+            "name": "Cotton Hunter Pants",
+            "dropRate": 0.06,
+            "image": "Cotton_Hunter_Pants.png/16px-Cotton_Hunter_Pants.png",
+            "wikiSlug": "Cotton_Hunter_Pants"
+          },
+          {
+            "name": "Cotton Scholar Pants",
+            "dropRate": 0.06,
+            "image": "Cotton_Scholar_Pants.png/16px-Cotton_Scholar_Pants.png",
+            "wikiSlug": "Cotton_Scholar_Pants"
+          },
+          {
+            "name": "Bandana",
+            "dropRate": 0.06,
+            "image": "Bandana.png/16px-Bandana.png",
+            "wikiSlug": "Bandana"
+          },
+          {
+            "name": "Book on Head",
+            "dropRate": 0.06,
+            "image": "Book_on_Head.png/16px-Book_on_Head.png",
+            "wikiSlug": "Book_on_Head"
+          },
+          {
+            "name": "Cat on Head",
+            "dropRate": 0.06,
+            "image": "Cat_on_Head.png/16px-Cat_on_Head.png",
+            "wikiSlug": "Cat_on_Head"
+          },
+          {
+            "name": "Cotton Priest Hood",
+            "dropRate": 0.06,
+            "image": "Cotton_Priest_Hood.png/16px-Cotton_Priest_Hood.png",
+            "wikiSlug": "Cotton_Priest_Hood"
+          },
+          {
+            "name": "Santa Hat",
+            "dropRate": 0.06,
+            "image": "Santa_Hat.png/16px-Santa_Hat.png",
+            "wikiSlug": "Santa_Hat"
+          },
+          {
+            "name": "Spooky Cat",
+            "dropRate": 0.06,
+            "image": "Spooky_Cat.png/16px-Spooky_Cat.png",
+            "wikiSlug": "Spooky_Cat"
+          },
+          {
+            "name": "Tiara",
+            "dropRate": 0.06,
+            "image": "Tiara.png/16px-Tiara.png",
+            "wikiSlug": "Tiara"
+          },
+          {
+            "name": "Copper Magic Wand",
+            "dropRate": 0.06,
+            "image": "Copper_Magic_Wand.png/16px-Copper_Magic_Wand.png",
+            "wikiSlug": "Copper_Magic_Wand"
+          },
+          {
+            "name": "Copper Spellblade",
+            "dropRate": 0.06,
+            "image": "Copper_Spellblade.png/16px-Copper_Spellblade.png",
+            "wikiSlug": "Copper_Spellblade"
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Blue Shard",
+            "wikiSlug": "Blue_Shard",
+            "image": "Blue_Shard.png/16px-Blue_Shard.png"
+          },
+          {
+            "name": "Red Shard",
+            "wikiSlug": "Red_Shard",
+            "image": "Red_Shard.png/16px-Red_Shard.png"
+          },
+          {
+            "name": "Yellow Shard",
+            "wikiSlug": "Yellow_Shard",
+            "image": "Yellow_Shard.png/16px-Yellow_Shard.png"
+          },
+          {
+            "name": "Red Crystal",
+            "wikiSlug": "Red_Crystal",
+            "image": "Red_Crystal.png/16px-Red_Crystal.png"
+          },
+          {
+            "name": "Blue Crystal",
+            "wikiSlug": "Blue_Crystal",
+            "image": "Blue_Crystal.png/16px-Blue_Crystal.png"
+          },
+          {
+            "name": "Yellow Crystal",
+            "wikiSlug": "Yellow_Crystal",
+            "image": "Yellow_Crystal.png/16px-Yellow_Crystal.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-cave_3-1-2",
+    "name": "Cave 3",
+    "mapId": "caves",
+    "x": 62.639405,
+    "y": 26.893939,
+    "area": "Cave",
+    "zoneType": "Caves zone",
+    "level": "5",
+    "monsters": [
+      {
+        "name": "Jel",
+        "wikiSlug": "Jel",
+        "image": "Jel.png/16px-Jel.png",
+        "drops": [
+          {
+            "name": "Dull Life Essence",
+            "dropRate": null,
+            "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+            "wikiSlug": "Dull_Life_Essence"
+          },
+          {
+            "name": "Iron Ore",
+            "dropRate": 0.5,
+            "image": "Iron_Ore.png/16px-Iron_Ore.png",
+            "wikiSlug": "Iron_Ore"
+          },
+          {
+            "name": "Green Scholar Pants",
+            "dropRate": 0.13,
+            "image": "Green_Scholar_Pants.png/16px-Green_Scholar_Pants.png",
+            "wikiSlug": "Green_Scholar_Pants"
+          },
+          {
+            "name": "Stone Helmet",
+            "dropRate": 0.13,
+            "image": "Stone_Helmet.png/16px-Stone_Helmet.png",
+            "wikiSlug": "Stone_Helmet"
+          },
+          {
+            "name": "Stone Armored Boots",
+            "dropRate": 0.13,
+            "image": "Stone_Armored_Boots.png/16px-Stone_Armored_Boots.png",
+            "wikiSlug": "Stone_Armored_Boots"
+          },
+          {
+            "name": "Traveler's Coat",
+            "dropRate": 0.13,
+            "image": "Traveler's_Coat.png/16px-Traveler's_Coat.png",
+            "wikiSlug": "Traveler's_Coat"
+          },
+          {
+            "name": "Kunai",
+            "dropRate": 0.13,
+            "image": "Kunai.png/16px-Kunai.png",
+            "wikiSlug": "Kunai"
+          },
+          {
+            "name": "Stone Orb",
+            "dropRate": 0.13,
+            "image": "Stone_Orb.png/16px-Stone_Orb.png",
+            "wikiSlug": "Stone_Orb"
+          },
+          {
+            "name": "Copper Leg Plate",
+            "dropRate": 0.05,
+            "image": "Copper_Leg_Plate.png/16px-Copper_Leg_Plate.png",
+            "wikiSlug": "Copper_Leg_Plate"
+          },
+          {
+            "name": "Cotton Helmet",
+            "dropRate": 0.05,
+            "image": "Placeholder.png/16px-Placeholder.png",
+            "wikiSlug": "Cotton_Helmet"
+          },
+          {
+            "name": "Cotton Scholar Hat",
+            "dropRate": 0.05,
+            "image": "Cotton_Scholar_Hat.png/16px-Cotton_Scholar_Hat.png",
+            "wikiSlug": "Cotton_Scholar_Hat"
+          },
+          {
+            "name": "Copper Chest Plate",
+            "dropRate": 0.05,
+            "image": "Copper_Chest_Plate.png/16px-Copper_Chest_Plate.png",
+            "wikiSlug": "Copper_Chest_Plate"
+          },
+          {
+            "name": "Copper Bow",
+            "dropRate": 0.05,
+            "image": "Copper_Bow.png/16px-Copper_Bow.png",
+            "wikiSlug": "Copper_Bow"
+          },
+          {
+            "name": "Copper Focus",
+            "dropRate": 0.05,
+            "image": "Copper_Focus.png/16px-Copper_Focus.png",
+            "wikiSlug": "Copper_Focus"
+          },
+          {
+            "name": "Copper Shield",
+            "dropRate": 0.05,
+            "image": "Copper_Shield.png/16px-Copper_Shield.png",
+            "wikiSlug": "Copper_Shield"
+          },
+          {
+            "name": "Cotton Hunter Pants",
+            "dropRate": 0.05,
+            "image": "Cotton_Hunter_Pants.png/16px-Cotton_Hunter_Pants.png",
+            "wikiSlug": "Cotton_Hunter_Pants"
+          },
+          {
+            "name": "Cotton Priest Bottom",
+            "dropRate": 0.05,
+            "image": "Cotton_Priest_Bottom.png/16px-Cotton_Priest_Bottom.png",
+            "wikiSlug": "Cotton_Priest_Bottom"
+          },
+          {
+            "name": "Cotton Scholar Shoes",
+            "dropRate": 0.05,
+            "image": "Cotton_Scholar_Shoes.png/16px-Cotton_Scholar_Shoes.png",
+            "wikiSlug": "Cotton_Scholar_Shoes"
+          }
+        ]
+      },
+      {
+        "name": "Bubble Spirit",
+        "wikiSlug": "Bubble_Spirit",
+        "image": "Bubble_Spirit.png/16px-Bubble_Spirit.png",
+        "drops": [
+          {
+            "name": "Dull Life Essence",
+            "dropRate": null,
+            "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png",
+            "wikiSlug": "Dull_Life_Essence"
+          },
+          {
+            "name": "Copper Ring",
+            "dropRate": 0.05,
+            "image": "Copper_Ring.png/16px-Copper_Ring.png",
+            "wikiSlug": "Copper_Ring"
+          },
+          {
+            "name": "Green Hunter Pants",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Pants.png/16px-Green_Hunter_Pants.png",
+            "wikiSlug": "Green_Hunter_Pants"
+          },
+          {
+            "name": "Green Priest Bottom",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Bottom.png/16px-Green_Priest_Bottom.png",
+            "wikiSlug": "Green_Priest_Bottom"
+          },
+          {
+            "name": "Green Scholar Pants",
+            "dropRate": 0.05,
+            "image": "Green_Scholar_Pants.png/16px-Green_Scholar_Pants.png",
+            "wikiSlug": "Green_Scholar_Pants"
+          },
+          {
+            "name": "Green Hunter Cap",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Cap.png/16px-Green_Hunter_Cap.png",
+            "wikiSlug": "Green_Hunter_Cap"
+          },
+          {
+            "name": "Green Priest Hood",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Hood.png/16px-Green_Priest_Hood.png",
+            "wikiSlug": "Green_Priest_Hood"
+          },
+          {
+            "name": "Green Hunter Shoes",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Shoes.png/16px-Green_Hunter_Shoes.png",
+            "wikiSlug": "Green_Hunter_Shoes"
+          },
+          {
+            "name": "Green Priest Shoes",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Shoes.png/16px-Green_Priest_Shoes.png",
+            "wikiSlug": "Green_Priest_Shoes"
+          },
+          {
+            "name": "Stone Armored Boots",
+            "dropRate": 0.05,
+            "image": "Stone_Armored_Boots.png/16px-Stone_Armored_Boots.png",
+            "wikiSlug": "Stone_Armored_Boots"
+          },
+          {
+            "name": "Green Hunter Robe",
+            "dropRate": 0.05,
+            "image": "Green_Hunter_Robe.png/16px-Green_Hunter_Robe.png",
+            "wikiSlug": "Green_Hunter_Robe"
+          },
+          {
+            "name": "Green Priest Robe",
+            "dropRate": 0.05,
+            "image": "Green_Priest_Robe.png/16px-Green_Priest_Robe.png",
+            "wikiSlug": "Green_Priest_Robe"
+          },
+          {
+            "name": "Faded Innocence",
+            "dropRate": 0.05,
+            "image": "Faded_Innocence.png/16px-Faded_Innocence.png",
+            "wikiSlug": "Faded_Innocence"
+          },
+          {
+            "name": "Kunai",
+            "dropRate": 0.05,
+            "image": "Kunai.png/16px-Kunai.png",
+            "wikiSlug": "Kunai"
+          },
+          {
+            "name": "Stone Holy Arrow",
+            "dropRate": 0.05,
+            "image": "Stone_Holy_Arrow.png/16px-Stone_Holy_Arrow.png",
+            "wikiSlug": "Stone_Holy_Arrow"
+          },
+          {
+            "name": "Stone Orb",
+            "dropRate": 0.05,
+            "image": "Stone_Orb.png/16px-Stone_Orb.png",
+            "wikiSlug": "Stone_Orb"
+          }
+        ]
+      },
+      {
+        "name": "Glowsnail",
+        "wikiSlug": "Glowsnail",
+        "image": "Glowsnail.png/16px-Glowsnail.png",
+        "drops": [
+          {
+            "name": "Dull Metal Essence",
+            "dropRate": 12.5,
+            "image": "Dull_Metal_Essence.png/16px-Dull_Metal_Essence.png",
+            "wikiSlug": "Dull_Metal_Essence"
+          },
+          {
+            "name": "Yellow Shard",
+            "dropRate": 1.49,
+            "image": "Yellow_Shard.png/16px-Yellow_Shard.png",
+            "wikiSlug": "Yellow_Shard"
+          },
+          {
+            "name": "Stone Bow",
+            "dropRate": 0.37,
+            "image": "Stone_Bow.png/16px-Stone_Bow.png",
+            "wikiSlug": "Stone_Bow"
+          },
+          {
+            "name": "Stone Holy Arrow",
+            "dropRate": 0.37,
+            "image": "Stone_Holy_Arrow.png/16px-Stone_Holy_Arrow.png",
+            "wikiSlug": "Stone_Holy_Arrow"
+          },
+          {
+            "name": "Stone Orb",
+            "dropRate": 0.37,
+            "image": "Stone_Orb.png/16px-Stone_Orb.png",
+            "wikiSlug": "Stone_Orb"
+          },
+          {
+            "name": "Cotton Hunter Pants",
+            "dropRate": 0.06,
+            "image": "Cotton_Hunter_Pants.png/16px-Cotton_Hunter_Pants.png",
+            "wikiSlug": "Cotton_Hunter_Pants"
+          },
+          {
+            "name": "Cotton Scholar Pants",
+            "dropRate": 0.06,
+            "image": "Cotton_Scholar_Pants.png/16px-Cotton_Scholar_Pants.png",
+            "wikiSlug": "Cotton_Scholar_Pants"
+          },
+          {
+            "name": "Bandana",
+            "dropRate": 0.06,
+            "image": "Bandana.png/16px-Bandana.png",
+            "wikiSlug": "Bandana"
+          },
+          {
+            "name": "Book on Head",
+            "dropRate": 0.06,
+            "image": "Book_on_Head.png/16px-Book_on_Head.png",
+            "wikiSlug": "Book_on_Head"
+          },
+          {
+            "name": "Cat on Head",
+            "dropRate": 0.06,
+            "image": "Cat_on_Head.png/16px-Cat_on_Head.png",
+            "wikiSlug": "Cat_on_Head"
+          },
+          {
+            "name": "Cotton Priest Hood",
+            "dropRate": 0.06,
+            "image": "Cotton_Priest_Hood.png/16px-Cotton_Priest_Hood.png",
+            "wikiSlug": "Cotton_Priest_Hood"
+          },
+          {
+            "name": "Santa Hat",
+            "dropRate": 0.06,
+            "image": "Santa_Hat.png/16px-Santa_Hat.png",
+            "wikiSlug": "Santa_Hat"
+          },
+          {
+            "name": "Spooky Cat",
+            "dropRate": 0.06,
+            "image": "Spooky_Cat.png/16px-Spooky_Cat.png",
+            "wikiSlug": "Spooky_Cat"
+          },
+          {
+            "name": "Tiara",
+            "dropRate": 0.06,
+            "image": "Tiara.png/16px-Tiara.png",
+            "wikiSlug": "Tiara"
+          },
+          {
+            "name": "Copper Magic Wand",
+            "dropRate": 0.06,
+            "image": "Copper_Magic_Wand.png/16px-Copper_Magic_Wand.png",
+            "wikiSlug": "Copper_Magic_Wand"
+          },
+          {
+            "name": "Copper Spellblade",
+            "dropRate": 0.06,
+            "image": "Copper_Spellblade.png/16px-Copper_Spellblade.png",
+            "wikiSlug": "Copper_Spellblade"
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Blue Shard",
+            "wikiSlug": "Blue_Shard",
+            "image": "Blue_Shard.png/16px-Blue_Shard.png"
+          },
+          {
+            "name": "Red Shard",
+            "wikiSlug": "Red_Shard",
+            "image": "Red_Shard.png/16px-Red_Shard.png"
+          },
+          {
+            "name": "Yellow Shard",
+            "wikiSlug": "Yellow_Shard",
+            "image": "Yellow_Shard.png/16px-Yellow_Shard.png"
+          },
+          {
+            "name": "Red Crystal",
+            "wikiSlug": "Red_Crystal",
+            "image": "Red_Crystal.png/16px-Red_Crystal.png"
+          },
+          {
+            "name": "Blue Crystal",
+            "wikiSlug": "Blue_Crystal",
+            "image": "Blue_Crystal.png/16px-Blue_Crystal.png"
+          },
+          {
+            "name": "Yellow Crystal",
+            "wikiSlug": "Yellow_Crystal",
+            "image": "Yellow_Crystal.png/16px-Yellow_Crystal.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_1-1-0",
+    "name": "Deep cave 1",
+    "mapId": "caves",
+    "x": 67.286245,
+    "y": 30.681818,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "21",
+    "monsters": [
+      {
+        "name": "Banshek"
+      },
+      {
+        "name": "Lampshroom"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Iron Ore",
+            "wikiSlug": "Iron_Ore",
+            "image": "Iron_Ore.png/16px-Iron_Ore.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_2-1-1",
+    "name": "Deep cave 2",
+    "mapId": "caves",
+    "x": 60.780669,
+    "y": 34.848485,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "0",
+    "monsters": [],
+    "resources": []
+  },
+  {
+    "id": "zone-deep_cave_3-1-2",
+    "name": "Deep cave 3",
+    "mapId": "caves",
+    "x": 54.739777,
+    "y": 37.689394,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "30",
+    "monsters": [
+      {
+        "name": "Dark Matter"
+      },
+      {
+        "name": "Mangosteen Slime"
+      },
+      {
+        "name": "Shadow Sprite"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Petrified Wood",
+            "wikiSlug": "Petrified_Wood",
+            "image": "Petrified_Wood.png/16px-Petrified_Wood.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_4-1-3",
+    "name": "Deep cave 4",
+    "mapId": "caves",
+    "x": 50.464684,
+    "y": 36.363636,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "33",
+    "monsters": [
+      {
+        "name": "Dark Matter"
+      },
+      {
+        "name": "Shadow Sprite"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Sulfuric powder",
+            "wikiSlug": "Sulfuric_Powder",
+            "image": "Sulfuric_Powder.png/16px-Sulfuric_Powder.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_6-1-4",
+    "name": "Deep cave 6",
+    "mapId": "caves",
+    "x": 46.747212,
+    "y": 34.848485,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "40",
+    "monsters": [
+      {
+        "name": "Shadow Sprite"
+      },
+      {
+        "name": "Elemental"
+      },
+      {
+        "name": "Dark Mass"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Cobalt Ore",
+            "wikiSlug": "Cobalt_Ore",
+            "image": "Cobalt_Ore.png/16px-Cobalt_Ore.png"
+          },
+          {
+            "name": "Aquamarine",
+            "wikiSlug": "Aquamarine",
+            "image": "Aquamarine.png/16px-Aquamarine.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_5-1-5",
+    "name": "Deep cave 5",
+    "mapId": "caves",
+    "x": 39.776952,
+    "y": 37.784091,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "0",
+    "monsters": [],
+    "resources": []
+  },
+  {
+    "id": "zone-deep_cave_x-1-6",
+    "name": "Deep cave x",
+    "mapId": "caves",
+    "x": 50,
+    "y": 94.034091,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "90",
+    "monsters": [
+      {
+        "name": "Licka"
+      }
+    ],
+    "resources": []
+  },
+  {
+    "id": "zone-deep_cave_7-1-7",
+    "name": "Deep cave 7",
+    "mapId": "caves",
+    "x": 50.557621,
+    "y": 88.825758,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "98",
+    "monsters": [
+      {
+        "name": "Lost Ruins"
+      },
+      {
+        "name": "Fallentree"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Obsidium"
+          },
+          {
+            "name": "Blood Pebble"
+          },
+          {
+            "name": "Darkshard"
+          },
+          {
+            "name": "Ruby",
+            "wikiSlug": "Ruby",
+            "image": "Ruby.png/16px-Ruby.png"
+          },
+          {
+            "name": "Bismuth",
+            "wikiSlug": "Bismuth",
+            "image": "Bismuth.png/16px-Bismuth.png"
+          },
+          {
+            "name": "Sulfuric powder",
+            "wikiSlug": "Sulfuric_Powder",
+            "image": "Sulfuric_Powder.png/16px-Sulfuric_Powder.png"
+          },
+          {
+            "name": "Bloodstone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_8-1-8",
+    "name": "Deep cave 8",
+    "mapId": "caves",
+    "x": 49.535316,
+    "y": 41.477273,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "42",
+    "monsters": [
+      {
+        "name": "Death Mist"
+      },
+      {
+        "name": "Dark Mass"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Malachite Ore",
+            "wikiSlug": "Malachite_Ore",
+            "image": "Malachite_Ore.png/16px-Malachite_Ore.png"
+          },
+          {
+            "name": "Emerald",
+            "wikiSlug": "Emerald",
+            "image": "Emerald.png/16px-Emerald.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_10-1-9",
+    "name": "Deep cave 10",
+    "mapId": "caves",
+    "x": 51.486989,
+    "y": 53.787879,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "62",
+    "monsters": [
+      {
+        "name": "Cursed Spot"
+      },
+      {
+        "name": "Cursed Slibbit"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Gold Ore",
+            "wikiSlug": "Gold_Ore",
+            "image": "Gold_Ore.png/16px-Gold_Ore.png"
+          },
+          {
+            "name": "Amber",
+            "wikiSlug": "Amber",
+            "image": "Amber.png/16px-Amber.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_11-1-10",
+    "name": "Deep cave 11",
+    "mapId": "caves",
+    "x": 45.910781,
+    "y": 56.723485,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "65",
+    "monsters": [
+      {
+        "name": "Licku"
+      },
+      {
+        "name": "Cursed Spot"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Gold Ore",
+            "wikiSlug": "Gold_Ore",
+            "image": "Gold_Ore.png/16px-Gold_Ore.png"
+          },
+          {
+            "name": "Amber",
+            "wikiSlug": "Amber",
+            "image": "Amber.png/16px-Amber.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_12-1-11",
+    "name": "Deep cave 12",
+    "mapId": "caves",
+    "x": 45.910781,
+    "y": 62.784091,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "69",
+    "monsters": [
+      {
+        "name": "Frostshroom"
+      },
+      {
+        "name": "Licku"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Mithril Ore",
+            "wikiSlug": "Mithril_Ore",
+            "image": "Mithril_Ore.png/16px-Mithril_Ore.png"
+          },
+          {
+            "name": "Dream Fragment",
+            "wikiSlug": "Dream_Fragment",
+            "image": "Dream_Fragment.png/16px-Dream_Fragment.png"
+          },
+          {
+            "name": "Dreamstone",
+            "wikiSlug": "Dreamstone",
+            "image": "Dreamstone.png/16px-Dreamstone.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_13-1-12",
+    "name": "Deep cave 13",
+    "mapId": "caves",
+    "x": 51.394052,
+    "y": 64.67803,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "72",
+    "monsters": [
+      {
+        "name": "Cosmowl"
+      },
+      {
+        "name": "Frostshroom"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Mithril Ore",
+            "wikiSlug": "Mithril_Ore",
+            "image": "Mithril_Ore.png/16px-Mithril_Ore.png"
+          },
+          {
+            "name": "Dream Fragment",
+            "wikiSlug": "Dream_Fragment",
+            "image": "Dream_Fragment.png/16px-Dream_Fragment.png"
+          },
+          {
+            "name": "Dreamstone",
+            "wikiSlug": "Dreamstone",
+            "image": "Dreamstone.png/16px-Dreamstone.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_14-1-13",
+    "name": "Deep cave 14",
+    "mapId": "caves",
+    "x": 53.252788,
+    "y": 69.507576,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "75",
+    "monsters": [
+      {
+        "name": "Cursed Tallshroom"
+      },
+      {
+        "name": "Cosmowl"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Arcane Crystal",
+            "wikiSlug": "Arcane_Crystal",
+            "image": "Arcane_Crystal.png/16px-Arcane_Crystal.png"
+          },
+          {
+            "name": "Ocean Shard",
+            "wikiSlug": "Ocean_Shard",
+            "image": "Ocean_Shard.png/16px-Ocean_Shard.png"
+          },
+          {
+            "name": "Ocean Heart",
+            "wikiSlug": "Ocean_Heart",
+            "image": "Ocean_Heart.png/16px-Ocean_Heart.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_15-1-14",
+    "name": "Deep cave 15",
+    "mapId": "caves",
+    "x": 51.486989,
+    "y": 75.662879,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "83",
+    "monsters": [
+      {
+        "name": "Cursed Cloudsheep"
+      },
+      {
+        "name": "Cursed Tallshroom"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Starmetal",
+            "wikiSlug": "Starmetal",
+            "image": "Starmetal.png/16px-Starmetal.png"
+          },
+          {
+            "name": "Black Diamond Fragment",
+            "wikiSlug": "Black_Diamond_Fragment",
+            "image": "Black_Diamond_Fragment.png/16px-Black_Diamond_Fragment.png"
+          },
+          {
+            "name": "Black Diamond",
+            "wikiSlug": "Black_Diamond",
+            "image": "Black_Diamond.png/16px-Black_Diamond.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-deep_cave_9-1-15",
+    "name": "Deep cave 9",
+    "mapId": "caves",
+    "x": 51.486989,
+    "y": 82.291667,
+    "area": "Deep Cave",
+    "zoneType": "Caves zone",
+    "level": "95",
+    "monsters": [
+      {
+        "name": "Lost Ruins"
+      },
+      {
+        "name": "Licka"
+      },
+      {
+        "name": "Fallentree"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Eternal Ice"
+          },
+          {
+            "name": "Moon Shard"
+          },
+          {
+            "name": "Moonstone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-hall_of_might-1-0",
+    "name": "Hall of Might",
+    "mapId": "caves",
+    "x": 42.657993,
+    "y": 36.363636,
+    "area": "Hall of Might",
+    "zoneType": "Caves zone",
+    "level": "105",
+    "monsters": [
+      {
+        "name": "Shadow Golem"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Obsidium"
+          },
+          {
+            "name": "Blood Pebble"
+          },
+          {
+            "name": "Darkshard"
+          },
+          {
+            "name": "Ruby",
+            "wikiSlug": "Ruby",
+            "image": "Ruby.png/16px-Ruby.png"
+          },
+          {
+            "name": "Bismuth",
+            "wikiSlug": "Bismuth",
+            "image": "Bismuth.png/16px-Bismuth.png"
+          },
+          {
+            "name": "Sulfuric powder",
+            "wikiSlug": "Sulfuric_Powder",
+            "image": "Sulfuric_Powder.png/16px-Sulfuric_Powder.png"
+          },
+          {
+            "name": "Bloodstone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zone-frost_cave-1-0",
+    "name": "Frost cave",
+    "mapId": "caves",
+    "x": 52.416357,
+    "y": 46.780303,
+    "area": "Frost cave",
+    "zoneType": "Caves zone",
+    "level": "57",
+    "monsters": [
+      {
+        "name": "Slibbit",
+        "wikiSlug": "Slibbit",
+        "image": "Slibbit.png/16px-Slibbit.png",
+        "drops": [
+          {
+            "name": "Eternal Essence",
+            "dropRate": 8.33,
+            "image": "Eternal_Essence.png/16px-Eternal_Essence.png",
+            "wikiSlug": "Eternal_Essence"
+          },
+          {
+            "name": "Ember Ring",
+            "dropRate": 0,
+            "image": "Ember_Ring.png/16px-Ember_Ring.png",
+            "wikiSlug": "Ember_Ring"
+          },
+          {
+            "name": "Ice Hunter Pants",
+            "dropRate": 0,
+            "image": "Ice_Hunter_Pants.png/16px-Ice_Hunter_Pants.png",
+            "wikiSlug": "Ice_Hunter_Pants"
+          },
+          {
+            "name": "Ice Scholar Pants",
+            "dropRate": 0,
+            "image": "Ice_Scholar_Pants.png/16px-Ice_Scholar_Pants.png",
+            "wikiSlug": "Ice_Scholar_Pants"
+          },
+          {
+            "name": "Ice Priest Hood",
+            "dropRate": 0,
+            "image": "Ice_Priest_Hood.png/16px-Ice_Priest_Hood.png",
+            "wikiSlug": "Ice_Priest_Hood"
+          },
+          {
+            "name": "Sharp Helmet",
+            "dropRate": 0,
+            "image": "Sharp_Helmet.png/16px-Sharp_Helmet.png",
+            "wikiSlug": "Sharp_Helmet"
+          },
+          {
+            "name": "Ice Hunter Shoes",
+            "dropRate": 0,
+            "image": "Ice_Hunter_Shoes.png/16px-Ice_Hunter_Shoes.png",
+            "wikiSlug": "Ice_Hunter_Shoes"
+          },
+          {
+            "name": "Ice Priest Shoes",
+            "dropRate": 0,
+            "image": "Ice_Priest_Shoes.png/16px-Ice_Priest_Shoes.png",
+            "wikiSlug": "Ice_Priest_Shoes"
+          },
+          {
+            "name": "Ice Scholar Shoes",
+            "dropRate": 0,
+            "image": "Ice_Scholar_Shoes.png/16px-Ice_Scholar_Shoes.png",
+            "wikiSlug": "Ice_Scholar_Shoes"
+          },
+          {
+            "name": "Sharp Bow",
+            "dropRate": 0,
+            "image": "Sharp_Bow.png/16px-Sharp_Bow.png",
+            "wikiSlug": "Sharp_Bow"
+          },
+          {
+            "name": "Sharp Cross",
+            "dropRate": 0,
+            "image": "Sharp_Cross.png/16px-Sharp_Cross.png",
+            "wikiSlug": "Sharp_Cross"
+          },
+          {
+            "name": "Sharp Javelin",
+            "dropRate": 0,
+            "image": "Sharp_Javelin.png/16px-Sharp_Javelin.png",
+            "wikiSlug": "Sharp_Javelin"
+          },
+          {
+            "name": "Sharp Orb",
+            "dropRate": 0,
+            "image": "Sharp_Orb.png/16px-Sharp_Orb.png",
+            "wikiSlug": "Sharp_Orb"
+          },
+          {
+            "name": "Sharp Spellblade",
+            "dropRate": 0,
+            "image": "Sharp_Spellblade.png/16px-Sharp_Spellblade.png",
+            "wikiSlug": "Sharp_Spellblade"
+          }
+        ]
+      },
+      {
+        "name": "Elemental"
+      },
+      {
+        "name": "Cursed Slibbit"
+      }
+    ],
+    "resources": [
+      {
+        "type": "Mining",
+        "items": [
+          {
+            "name": "Titanium Ore",
+            "wikiSlug": "Titanium_Ore",
+            "image": "Titanium_Ore.png/16px-Titanium_Ore.png"
+          },
+          {
+            "name": "Sapphire",
+            "wikiSlug": "Sapphire",
+            "image": "Sapphire.png/16px-Sapphire.png"
+          }
+        ]
+      }
+    ]
   }
 ]

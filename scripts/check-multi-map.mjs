@@ -5,6 +5,7 @@ import assert from 'node:assert/strict'
 
 const appUrl = process.env.MAP_APP_URL ?? 'http://127.0.0.1:5175'
 const debuggerUrl = process.env.MAP_DEBUG_URL ?? 'http://127.0.0.1:9223'
+const publishedMarkers = JSON.parse(await readFile(new URL('../src/data/markers.json', import.meta.url), 'utf8'))
 const fixture = JSON.parse(await readFile(new URL('../src/test/fixtures/multi-map.json', import.meta.url), 'utf8'))
 const tabs = await (await fetch(`${debuggerUrl}/json`)).json()
 const tab = tabs.find((tab) => tab.type === 'page')
@@ -102,7 +103,15 @@ try {
       await check(`document.querySelector('.leaflet-image-layer')?.getAttribute('src') === '/maps/${map}.webp' && document.querySelector('.leaflet-image-layer').naturalWidth > 0`, `${label}: ${map} selector and image`)
     }
     await changeMap('caves', mobile)
-    await check(`!document.querySelector('.map-marker') && document.querySelector('.map-placeholder [role="status"]')?.textContent.includes('No markers')`, `${label}: published empty Caves remains available`)
+    const caveNames = publishedMarkers.filter((marker) => marker.mapId === 'caves').map((marker) => marker.name)
+    await check(`Array.from(document.querySelectorAll('.map-marker')).length === ${caveNames.length} && Array.from(document.querySelectorAll('.map-marker')).every(marker => ${JSON.stringify(caveNames)}.includes(marker.title))`, `${label}: published Caves renders its own markers`)
+    if (caveNames.includes('Deep cave 14')) {
+      await changeMap('surface', mobile)
+      await query('Deep cave 14', mobile)
+      await clickResult('Deep cave 14', 'Caves', mobile)
+      await check(`document.querySelector('.leaflet-image-layer').getAttribute('src') === '/maps/caves.webp' && document.querySelector('.leaflet-popup')?.textContent.includes('Deep cave 14') && ${centered}`, `${label}: imported Caves location is searchable and navigable`)
+      await writeFile(`/tmp/srw-caves-import-${label}.png`, Buffer.from((await call('Page.captureScreenshot', { format: 'png' })).data, 'base64'))
+    }
     useFixtures = true
     await call('Page.reload', { ignoreCache: true })
     await check(`document.querySelectorAll('select option').length === 6`, `${label}: third map appears from configuration`)

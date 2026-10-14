@@ -82,5 +82,21 @@
   {
     "name": "Traveler rest",
     "color": "#9862a6"
+  },
+  {
+    "name": "Cave",
+    "color": "#767676"
+  },
+  {
+    "name": "Deep Cave",
+    "color": "#9966ed"
+  },
+  {
+    "name": "Hall of Might",
+    "color": "#6633ad"
+  },
+  {
+    "name": "Frost cave",
+    "color": "#8cd9ff"
   }
 ]

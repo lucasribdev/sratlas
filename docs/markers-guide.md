@@ -20,6 +20,9 @@ item, and interactable, see the [Data Schema](./data-schema.md).
 A backend, login, an admin panel, and automatic wiki synchronization remain out
 of scope for the MVP.
 
+The [supplied world map import](./imports/wiki-world-map.md) documents the
+Caves data and its manual coordinate review checklist.
+
 ## How to Add a New Zone
 
 1. Open `src/data/markers.json`.
