@@ -112,6 +112,22 @@ try {
       await check(`document.querySelector('.leaflet-image-layer').getAttribute('src') === '/maps/caves.webp' && document.querySelector('.leaflet-popup')?.textContent.includes('Deep cave 14') && ${centered}`, `${label}: imported Caves location is searchable and navigable`)
       await writeFile(`/tmp/srw-caves-import-${label}.png`, Buffer.from((await call('Page.captureScreenshot', { format: 'png' })).data, 'base64'))
     }
+    const lootMarker = publishedMarkers.find(marker => marker.monsters?.some(monster => monster.name === 'Cosmowl' && monster.drops?.length))
+    if (lootMarker) {
+      const monster = lootMarker.monsters.find(monster => monster.name === 'Cosmowl')
+      const rated = monster.drops.find(drop => drop.dropRate !== null)
+      const unknown = monster.drops.find(drop => drop.dropRate === null)
+      await changeMap('surface', mobile)
+      await query(rated.name, mobile)
+      await clickResult(lootMarker.name, 'Caves', mobile)
+      await check(`document.querySelector('.leaflet-popup')?.textContent.includes('Cosmowl') && ${centered}`, `${label}: new loot participates in global search and cross-map navigation`)
+      await check(`(() => { const link = document.querySelector('.leaflet-popup a[href="https://soulsremnant.wiki.gg/wiki/Cosmowl"]'); const image = link?.parentElement.querySelector('img'); return link?.textContent === 'Cosmowl' && image?.complete && image.naturalWidth > 0 && image.src.includes('/Cosmowl.png/24px-Cosmowl.png'); })()`, `${label}: monster image loads and its name links to the verified wiki page`)
+
+      await run(`document.querySelector('.leaflet-popup button[aria-label="Toggle ${monster.drops.length} drops from Cosmowl"]').click()`)
+      await check(`Array.from(document.querySelectorAll('.leaflet-popup [aria-label]')).find(element => element.getAttribute('aria-label') === ${JSON.stringify(`${rated.name} drop rate ${rated.dropRate}%`)})?.textContent === ${JSON.stringify(`${rated.dropRate}%`)}`, `${label}: recorded loot chance appears in expanded popup`)
+      await check(`Array.from(document.querySelectorAll('.leaflet-popup [aria-label]')).find(element => element.getAttribute('aria-label') === ${JSON.stringify(`${unknown.name} drop rate unknown`)})?.textContent === 'Unknown'`, `${label}: imprecise loot chance remains Unknown`)
+      await writeFile(`/tmp/srw-monster-loot-${label}.png`, Buffer.from((await call('Page.captureScreenshot', { format: 'png' })).data, 'base64'))
+    }
     useFixtures = true
     await call('Page.reload', { ignoreCache: true })
     await check(`document.querySelectorAll('select option').length === 6`, `${label}: third map appears from configuration`)

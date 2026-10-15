@@ -1,0 +1,2053 @@
+{
+  "checkedOn": "2026-10-14",
+  "scope": "26 confirmed monsters from the 43 missing-loot names; local snapshot update only",
+  "rules": {
+    "unknownRates": "Unspecified and <0.00% source rates become null, never zero.",
+    "recipes": "Append (recipe) to the recorded base item name; keep its verified base wiki link.",
+    "gemVariants": "Keep +3 INT and +3 SPR as separate labelled drops, each with its recorded chance.",
+    "links": "Add only item page titles resolved through the public wiki API.",
+    "images": "Reuse existing item image metadata; do not invent thumbnail paths.",
+    "existingData": "Existing monster drops and all map/marker coordinates are preserved."
+  },
+  "monsters": [
+    {
+      "name": "Ancient Soul",
+      "drops": [
+        {
+          "name": "Eternal Essence",
+          "chance": "10.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Essence"
+        },
+        {
+          "name": "Radiant Eternal Essence",
+          "chance": "6.67%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Eternal Essence"
+        },
+        {
+          "name": "Sacrifice",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sacrifice"
+        },
+        {
+          "name": "Solitude",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Solitude"
+        },
+        {
+          "name": "Tear of the Fallen",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Tear of the Fallen"
+        },
+        {
+          "name": "Eternal Chest Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Chest Plate"
+        },
+        {
+          "name": "Radiant Innocence",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Innocence"
+        },
+        {
+          "name": "Radiant Messenger",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Messenger"
+        },
+        {
+          "name": "Eternal Priest Bottom",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Priest Bottom"
+        },
+        {
+          "name": "Eternal Scholar Hat",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Scholar Hat"
+        },
+        {
+          "name": "Eternal Scholar Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Scholar Shoes"
+        },
+        {
+          "name": "Eternal Hunter Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Hunter Robe"
+        },
+        {
+          "name": "Radiant Shooting Star",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Shooting Star"
+        },
+        {
+          "name": "Radiant Sword of Heart",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Sword of Heart"
+        }
+      ]
+    },
+    {
+      "name": "Banshek",
+      "drops": [
+        {
+          "name": "Dull Ghostly Essence",
+          "chance": "30.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Ghostly Essence"
+        },
+        {
+          "name": "Banana",
+          "chance": "1.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Banana"
+        },
+        {
+          "name": "Cursed Flame",
+          "chance": "0.67%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Cursed Flame"
+        },
+        {
+          "name": "Quartz Kunai",
+          "chance": "0.51%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Quartz Kunai"
+        },
+        {
+          "name": "Glowing Hunter Cap",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Glowing Hunter Cap"
+        },
+        {
+          "name": "Horns",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Horns"
+        },
+        {
+          "name": "Petrified Helmet",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Petrified Helmet"
+        },
+        {
+          "name": "Glowing Priest Robe",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Glowing Priest Robe"
+        },
+        {
+          "name": "Glowing Scholar Pants",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Glowing Scholar Pants"
+        },
+        {
+          "name": "Rain Cloud",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Rain Cloud"
+        },
+        {
+          "name": "Glowing Hunter Shoes",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Glowing Hunter Shoes"
+        },
+        {
+          "name": "Petrified Chest Plate",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Petrified Chest Plate"
+        },
+        {
+          "name": "Petrified Kunai",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Petrified Kunai"
+        }
+      ]
+    },
+    {
+      "name": "Blaze",
+      "drops": [
+        {
+          "name": "Raging Essence",
+          "chance": "10.24%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Essence"
+        },
+        {
+          "name": "Radiant Raging Essence",
+          "chance": "6.83%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Raging Essence"
+        },
+        {
+          "name": "Eternal Flame",
+          "chance": "6.25%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Flame"
+        },
+        {
+          "name": "Yellow Shard",
+          "chance": "1.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Yellow Shard"
+        },
+        {
+          "name": "Lemon Lime Soda",
+          "chance": "0.06%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Lemon Lime Soda"
+        },
+        {
+          "name": "Star Chest Plate",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Star Chest Plate"
+        },
+        {
+          "name": "Blood Ring",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Blood Ring"
+        },
+        {
+          "name": "Eternal Hunter Cap",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Hunter Cap"
+        },
+        {
+          "name": "Eternal Scholar Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Scholar Pants"
+        },
+        {
+          "name": "Eternal Hunter Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Hunter Shoes"
+        },
+        {
+          "name": "Eternal Priest Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Priest Robe"
+        },
+        {
+          "name": "Radiant Exchange",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Exchange"
+        },
+        {
+          "name": "Radiant Knull",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Knull"
+        },
+        {
+          "name": "Radiant Psyche",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Psyche"
+        },
+        {
+          "name": "Radiant Smite",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Smite"
+        },
+        {
+          "name": "Radiant Wish",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Wish"
+        }
+      ]
+    },
+    {
+      "name": "Cat Guardian",
+      "drops": [
+        {
+          "name": "Dull Ghostly Essence",
+          "chance": "45.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Ghostly Essence"
+        },
+        {
+          "name": "Ghostly Essence",
+          "chance": "17.14%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Ghostly Essence"
+        },
+        {
+          "name": "Mystical Orb",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystical Orb"
+        },
+        {
+          "name": "Star Bounding Ring",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Star Bounding Ring"
+        },
+        {
+          "name": "Arcane Priest Hood",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Priest Hood"
+        },
+        {
+          "name": "Arcane Shield",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Shield"
+        },
+        {
+          "name": "Arcane Leg Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Leg Plate"
+        },
+        {
+          "name": "Arcane Scholar Hat",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Scholar Hat"
+        },
+        {
+          "name": "Arcane Hunter Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Hunter Shoes"
+        },
+        {
+          "name": "Arcane Cross",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Cross"
+        },
+        {
+          "name": "Arcane Holy Arrow",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Holy Arrow"
+        }
+      ]
+    },
+    {
+      "name": "Cosmowl",
+      "drops": [
+        {
+          "name": "Ghostly Essence",
+          "chance": "8.69%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Ghostly Essence"
+        },
+        {
+          "name": "Radiant Ghostly Essence",
+          "chance": "5.79%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Ghostly Essence"
+        },
+        {
+          "name": "Mystical Shield",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystical Shield"
+        },
+        {
+          "name": "Star Bounding Ring",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Star Bounding Ring"
+        },
+        {
+          "name": "Arcane Hunter Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Hunter Pants"
+        },
+        {
+          "name": "Arcane Priest Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Priest Shoes"
+        },
+        {
+          "name": "Arcane Scholar Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Scholar Shoes"
+        },
+        {
+          "name": "Arcane Chest Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Chest Plate"
+        },
+        {
+          "name": "Arcane Holy Arrow",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Holy Arrow"
+        },
+        {
+          "name": "Arcane Kunai",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Kunai"
+        },
+        {
+          "name": "Arcane Orb",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Orb"
+        }
+      ]
+    },
+    {
+      "name": "Cursed Cloudsheep",
+      "drops": [
+        {
+          "name": "Life Essence",
+          "chance": "10.12%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Life Essence"
+        },
+        {
+          "name": "Radiant Life Essence",
+          "chance": "6.75%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Life Essence"
+        },
+        {
+          "name": "Cursed Flame",
+          "chance": "1.11%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Cursed Flame"
+        },
+        {
+          "name": "Star Armored Boots",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Star Armored Boots"
+        },
+        {
+          "name": "Wish",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Wish"
+        },
+        {
+          "name": "Eternal Hunter Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Hunter Pants"
+        },
+        {
+          "name": "Eternal Priest Bottom",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Priest Bottom"
+        },
+        {
+          "name": "Eternal Priest Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Priest Shoes"
+        },
+        {
+          "name": "Eternal Chest Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Chest Plate"
+        },
+        {
+          "name": "Eternal Scholar Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Scholar Robe"
+        },
+        {
+          "name": "Radiant Faith",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Faith"
+        },
+        {
+          "name": "Radiant Knull",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Knull"
+        },
+        {
+          "name": "Radiant Sacrifice",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Sacrifice"
+        },
+        {
+          "name": "Radiant Sword of Heart",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Sword of Heart"
+        }
+      ]
+    },
+    {
+      "name": "Cursed Slibbit",
+      "drops": [
+        {
+          "name": "Dull Historic Essence",
+          "chance": "36.88%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Historic Essence"
+        },
+        {
+          "name": "Historic Essence",
+          "chance": "14.05%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Historic Essence"
+        },
+        {
+          "name": "Cursed Flame",
+          "chance": "0.83%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Cursed Flame"
+        },
+        {
+          "name": "Repressive Sword",
+          "chance": "0.09%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Repressive Sword"
+        },
+        {
+          "name": "Ice Scholar Shoes",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Ice Scholar Shoes"
+        },
+        {
+          "name": "Sharp Javelin",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sharp Javelin"
+        },
+        {
+          "name": "Sharp Chest Plate",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sharp Chest Plate"
+        },
+        {
+          "name": "Sharp Sword",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sharp Sword"
+        },
+        {
+          "name": "Red Hunter Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Red Hunter Pants"
+        },
+        {
+          "name": "Red Priest Bottom",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Red Priest Bottom"
+        },
+        {
+          "name": "Red Priest Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Red Priest Shoes"
+        },
+        {
+          "name": "Radiant Bow",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Bow"
+        },
+        {
+          "name": "Radiant Focus",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Focus"
+        },
+        {
+          "name": "Radiant Javelin",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Javelin"
+        },
+        {
+          "name": "Radiant Magic Wand",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Magic Wand"
+        },
+        {
+          "name": "Radiant Spellblade",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Spellblade"
+        }
+      ]
+    },
+    {
+      "name": "Dark Mass",
+      "drops": [
+        {
+          "name": "Dull Eternal Essence",
+          "chance": "28.13%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Eternal Essence"
+        },
+        {
+          "name": "Eternal Essence",
+          "chance": "10.71%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Essence"
+        },
+        {
+          "name": "Ring of Power",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Ring of Power"
+        },
+        {
+          "name": "Coral Priest Bottom",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Coral Priest Bottom"
+        },
+        {
+          "name": "Deep Leg Plate",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Leg Plate"
+        },
+        {
+          "name": "Deep Chest Plate",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Chest Plate"
+        },
+        {
+          "name": "Ring of Magic",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Ring of Magic"
+        },
+        {
+          "name": "Deep Helmet",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Helmet"
+        },
+        {
+          "name": "Coral Priest Shoes",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Coral Priest Shoes"
+        },
+        {
+          "name": "Coral Scholar Robe",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Coral Scholar Robe"
+        },
+        {
+          "name": "Deep Spellblade",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Spellblade"
+        }
+      ]
+    },
+    {
+      "name": "Dark Matter",
+      "drops": [
+        {
+          "name": "Dull Metal Essence",
+          "chance": "21.88%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Metal Essence"
+        },
+        {
+          "name": "Metal Essence",
+          "chance": "8.33%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Metal Essence"
+        },
+        {
+          "name": "Pretty Flower",
+          "chance": "0.28%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Pretty Flower"
+        },
+        {
+          "name": "Fern Priest Bottom",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Fern Priest Bottom"
+        },
+        {
+          "name": "Eerie Bow",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eerie Bow"
+        },
+        {
+          "name": "Eerie Leg Plate",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eerie Leg Plate"
+        },
+        {
+          "name": "Eerie Helmet",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eerie Helmet"
+        },
+        {
+          "name": "Fern Hunter Cap",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Fern Hunter Cap"
+        },
+        {
+          "name": "Fern Scholar Hat",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Fern Scholar Hat"
+        },
+        {
+          "name": "Fern Scholar Shoes",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Fern Scholar Shoes"
+        },
+        {
+          "name": "Eerie Shield",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eerie Shield"
+        }
+      ]
+    },
+    {
+      "name": "Death Mist",
+      "drops": [
+        {
+          "name": "Dull Ghostly Essence",
+          "chance": "26.25%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Ghostly Essence"
+        },
+        {
+          "name": "Ghostly Essence",
+          "chance": "10.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Ghostly Essence"
+        },
+        {
+          "name": "Dark Essence",
+          "chance": "2.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dark Essence"
+        },
+        {
+          "name": "Candy Corn",
+          "chance": "0.4%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Candy Corn"
+        },
+        {
+          "name": "White Herb",
+          "chance": "0.2%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "White Herb"
+        },
+        {
+          "name": "Darkshard",
+          "chance": "0.15%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Darkshard"
+        },
+        {
+          "name": "Coral Hunter Pants",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Coral Hunter Pants"
+        },
+        {
+          "name": "Coral Hunter Cap",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Coral Hunter Cap"
+        },
+        {
+          "name": "Coral Priest Hood",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Coral Priest Hood"
+        },
+        {
+          "name": "Deep Cross",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Cross"
+        },
+        {
+          "name": "Coral Scholar Pants",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Coral Scholar Pants"
+        },
+        {
+          "name": "Deep Armored Boots",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Armored Boots"
+        },
+        {
+          "name": "Deep Javelin",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Javelin"
+        },
+        {
+          "name": "Deep Orb",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Orb"
+        },
+        {
+          "name": "Deep Sword",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Deep Sword"
+        }
+      ]
+    },
+    {
+      "name": "Haunted Flame",
+      "drops": [
+        {
+          "name": "Ghostly Essence",
+          "chance": "10.36%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Ghostly Essence"
+        },
+        {
+          "name": "Radiant Ghostly Essence",
+          "chance": "6.9%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Ghostly Essence"
+        },
+        {
+          "name": "Cursed Flame",
+          "chance": "7.14%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Cursed Flame"
+        },
+        {
+          "name": "Blue Shard",
+          "chance": "1.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Blue Shard"
+        },
+        {
+          "name": "Blue Herb",
+          "chance": "1.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Blue Herb"
+        },
+        {
+          "name": "Star Helmet",
+          "chance": "0.02%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Star Helmet"
+        },
+        {
+          "name": "Blood Ring",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Blood Ring"
+        },
+        {
+          "name": "Eternal Helmet",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Helmet"
+        },
+        {
+          "name": "Radiant Judgement",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Judgement"
+        },
+        {
+          "name": "Radiant Perseverance",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Perseverance"
+        },
+        {
+          "name": "Eternal Scholar Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Scholar Pants"
+        },
+        {
+          "name": "Eternal Priest Hood",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Priest Hood"
+        },
+        {
+          "name": "Eternal Hunter Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Hunter Shoes"
+        },
+        {
+          "name": "Radiant Divinity",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Divinity"
+        },
+        {
+          "name": "Radiant Smite",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Smite"
+        },
+        {
+          "name": "Radiant Tear of the Fallen",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Tear of the Fallen"
+        }
+      ]
+    },
+    {
+      "name": "Lampshroom",
+      "drops": [
+        {
+          "name": "Dull Life Essence",
+          "chance": "25.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Life Essence"
+        },
+        {
+          "name": "Eternal Flame",
+          "chance": "1.49%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Flame"
+        },
+        {
+          "name": "Iron Ring",
+          "chance": "0.16%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Iron Ring"
+        },
+        {
+          "name": "Quartz Focus",
+          "chance": "0.16%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Quartz Focus"
+        },
+        {
+          "name": "Quartz Orb",
+          "chance": "0.16%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Quartz Orb"
+        },
+        {
+          "name": "Petrified Ring",
+          "chance": "0.04%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Petrified Ring"
+        },
+        {
+          "name": "Yellow Hunter Shoes",
+          "chance": "0.04%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Yellow Hunter Shoes"
+        },
+        {
+          "name": "Iron Chest Plate",
+          "chance": "0.04%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Iron Chest Plate"
+        },
+        {
+          "name": "Yellow Priest Robe",
+          "chance": "0.04%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Yellow Priest Robe"
+        },
+        {
+          "name": "Yellow Scholar Robe",
+          "chance": "0.04%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Yellow Scholar Robe"
+        },
+        {
+          "name": "Iron Holy Arrow",
+          "chance": "0.04%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Iron Holy Arrow"
+        },
+        {
+          "name": "Iron Orb",
+          "chance": "0.04%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Iron Orb"
+        },
+        {
+          "name": "Spiky Shell",
+          "chance": "0.04%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Spiky Shell"
+        }
+      ]
+    },
+    {
+      "name": "Licku",
+      "drops": [
+        {
+          "name": "Dull Ghostly Essence",
+          "chance": "41.25%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Ghostly Essence"
+        },
+        {
+          "name": "Ghostly Essence",
+          "chance": "15.71%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Ghostly Essence"
+        },
+        {
+          "name": "Cursed Flame",
+          "chance": "1.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Cursed Flame"
+        },
+        {
+          "name": "Barrel",
+          "chance": "0.2%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Barrel"
+        },
+        {
+          "name": "Red Scholar Hat",
+          "chance": "0.05%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Red Scholar Hat"
+        },
+        {
+          "name": "Sharp Helmet",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sharp Helmet"
+        },
+        {
+          "name": "Sharp Orb",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sharp Orb"
+        },
+        {
+          "name": "Eon Hunter Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eon Hunter Pants"
+        },
+        {
+          "name": "Eon Priest Bottom",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eon Priest Bottom"
+        },
+        {
+          "name": "Eon Priest Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eon Priest Shoes"
+        },
+        {
+          "name": "Eon Scholar Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eon Scholar Robe"
+        },
+        {
+          "name": "Mystical Bow",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystical Bow"
+        },
+        {
+          "name": "Mystical Focus",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystical Focus"
+        },
+        {
+          "name": "Mystical Javelin",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystical Javelin"
+        },
+        {
+          "name": "Mystical Magic Wand",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystical Magic Wand"
+        }
+      ]
+    },
+    {
+      "name": "Lost Bard",
+      "drops": [
+        {
+          "name": "Nurturing Essence",
+          "chance": "11.31%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Nurturing Essence"
+        },
+        {
+          "name": "Radiant Nurturing Essence",
+          "chance": "7.54%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Nurturing Essence"
+        },
+        {
+          "name": "Cursed Rock",
+          "chance": "20.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Cursed Rock"
+        },
+        {
+          "name": "Lime",
+          "chance": "20.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Lime"
+        },
+        {
+          "name": "Chocolate",
+          "chance": "0.91%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Chocolate"
+        },
+        {
+          "name": "Marshmallow",
+          "chance": "0.33%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Marshmallow"
+        },
+        {
+          "name": "Spicy Unagi Special",
+          "chance": "0.07%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Spicy Unagi Special"
+        },
+        {
+          "name": "Piano",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Piano"
+        },
+        {
+          "name": "Flute",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Flute"
+        },
+        {
+          "name": "Raging Priest Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Priest Shoes"
+        },
+        {
+          "name": "Raging Scholar Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Scholar Robe"
+        },
+        {
+          "name": "Inverse Divinity",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Divinity"
+        },
+        {
+          "name": "Inverse Solitude",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Solitude"
+        },
+        {
+          "name": "Inverse Wish",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Wish"
+        },
+        {
+          "name": "Raging Hunter Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Hunter Pants"
+        },
+        {
+          "name": "Raging Priest Bottom",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Priest Bottom"
+        },
+        {
+          "name": "Obsidium Helmet",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Obsidium Helmet"
+        },
+        {
+          "name": "Inverse Innocence",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Innocence"
+        },
+        {
+          "name": "Inverse Messenger",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Messenger"
+        },
+        {
+          "name": "Inverse Sacrifice",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Sacrifice"
+        }
+      ]
+    },
+    {
+      "name": "Lost Ruins",
+      "drops": [
+        {
+          "name": "Metal Essence",
+          "chance": "11.9%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Metal Essence"
+        },
+        {
+          "name": "Radiant Metal Essence",
+          "chance": "7.94%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Metal Essence"
+        },
+        {
+          "name": "Rubble",
+          "chance": "6.67%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Rubble"
+        },
+        {
+          "name": "Sturdy Rock",
+          "chance": "3.33%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sturdy Rock"
+        },
+        {
+          "name": "Stone",
+          "chance": "2.5%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Stone"
+        },
+        {
+          "name": "Iron Ore",
+          "chance": "1.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Iron Ore"
+        },
+        {
+          "name": "Iron Ingot",
+          "chance": "0.8%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Iron Ingot"
+        },
+        {
+          "name": "Vase",
+          "chance": "0.2%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Vase"
+        },
+        {
+          "name": "Raging Scholar Hat",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Scholar Hat"
+        },
+        {
+          "name": "Inverse Exchange",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Exchange"
+        },
+        {
+          "name": "Inverse Shooting Star",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Shooting Star"
+        },
+        {
+          "name": "Inverse Sword of Heart",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Sword of Heart"
+        },
+        {
+          "name": "Obsidium Leg Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Obsidium Leg Plate"
+        },
+        {
+          "name": "Raging Priest Hood",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Priest Hood"
+        },
+        {
+          "name": "Obsidium Armored Boots",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Obsidium Armored Boots"
+        },
+        {
+          "name": "Raging Scholar Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Scholar Shoes"
+        },
+        {
+          "name": "Raging Hunter Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Hunter Robe"
+        },
+        {
+          "name": "Inverse Judgement",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Judgement"
+        },
+        {
+          "name": "Inverse Perseverance",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Perseverance"
+        }
+      ]
+    },
+    {
+      "name": "Saowl",
+      "drops": [
+        {
+          "name": "Life Essence",
+          "chance": "10.12%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Life Essence"
+        },
+        {
+          "name": "Radiant Life Essence",
+          "chance": "6.75%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Life Essence"
+        },
+        {
+          "name": "Star Armored Boots",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Star Armored Boots"
+        },
+        {
+          "name": "Wish",
+          "chance": "0.01%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Wish"
+        },
+        {
+          "name": "Eternal Armored Boots",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Armored Boots"
+        },
+        {
+          "name": "Eternal Scholar Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Scholar Shoes"
+        },
+        {
+          "name": "Radiant Faith",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Faith"
+        },
+        {
+          "name": "Eternal Hunter Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Hunter Pants"
+        },
+        {
+          "name": "Eternal Leg Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Leg Plate"
+        },
+        {
+          "name": "Eternal Priest Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Eternal Priest Shoes"
+        },
+        {
+          "name": "Radiant Messenger",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Messenger"
+        },
+        {
+          "name": "Radiant Sacrifice",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Sacrifice"
+        },
+        {
+          "name": "Radiant Solitude",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Solitude"
+        }
+      ]
+    },
+    {
+      "name": "Shadow Golem",
+      "drops": [
+        {
+          "name": "Raging Essence",
+          "chance": "12.5%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Essence"
+        },
+        {
+          "name": "Radiant Raging Essence",
+          "chance": "8.33%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Raging Essence"
+        },
+        {
+          "name": "Rubble",
+          "chance": "2.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Rubble"
+        },
+        {
+          "name": "Darkshard",
+          "chance": "1.33%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Darkshard"
+        },
+        {
+          "name": "Chaotic Warp Crystal",
+          "chance": "1.33%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Chaotic Warp Crystal"
+        },
+        {
+          "name": "Sturdy Rock",
+          "chance": "0.91%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sturdy Rock"
+        },
+        {
+          "name": "Cursed Rock",
+          "chance": "0.67%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Cursed Rock"
+        },
+        {
+          "name": "Nurturing Gem",
+          "chance": "0.4%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Nurturing Gem"
+        },
+        {
+          "name": "Mystic Gem",
+          "chance": "0.4%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystic Gem"
+        },
+        {
+          "name": "Calamity Gem",
+          "chance": "0.4%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Calamity Gem"
+        },
+        {
+          "name": "Raging Scholar Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Scholar Pants"
+        },
+        {
+          "name": "Obsidium Chest Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Obsidium Chest Plate"
+        },
+        {
+          "name": "Inverse Faith",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Faith"
+        },
+        {
+          "name": "Inverse Tear of the Fallen",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Tear of the Fallen"
+        },
+        {
+          "name": "Raging Hunter Cap",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Hunter Cap"
+        },
+        {
+          "name": "Raging Hunter Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Hunter Shoes"
+        },
+        {
+          "name": "Raging Priest Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Priest Robe"
+        },
+        {
+          "name": "Inverse Knull",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Knull"
+        },
+        {
+          "name": "Inverse Psyche",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Psyche"
+        },
+        {
+          "name": "Inverse Smite",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Inverse Smite"
+        }
+      ]
+    },
+    {
+      "name": "Shroomie",
+      "drops": [
+        {
+          "name": "Life Essence",
+          "chance": "8.69%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Life Essence"
+        },
+        {
+          "name": "Radiant Life Essence",
+          "chance": "5.79%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Life Essence"
+        },
+        {
+          "name": "Mystical Orb",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystical Orb"
+        },
+        {
+          "name": "Arcane Priest Bottom",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Priest Bottom"
+        },
+        {
+          "name": "Arcane Hunter Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Hunter Robe"
+        },
+        {
+          "name": "Arcane Sword",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Sword"
+        },
+        {
+          "name": "Arcane Leg Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Leg Plate"
+        },
+        {
+          "name": "Arcane Helmet",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Helmet"
+        },
+        {
+          "name": "Arcane Scholar Hat",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Scholar Hat"
+        },
+        {
+          "name": "Arcane Scholar Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Scholar Shoes"
+        },
+        {
+          "name": "Arcane Chest Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Chest Plate"
+        }
+      ]
+    },
+    {
+      "name": "Snowball",
+      "drops": [
+        {
+          "name": "Dull Raging Essence",
+          "chance": "40.0%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dull Raging Essence"
+        },
+        {
+          "name": "Raging Essence",
+          "chance": "15.24%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Raging Essence"
+        },
+        {
+          "name": "Sharp Focus",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sharp Focus"
+        },
+        {
+          "name": "Sharp Magic Wand",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Sharp Magic Wand"
+        },
+        {
+          "name": "Dreamcatcher Ring",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Dreamcatcher Ring"
+        },
+        {
+          "name": "Radiant Helmet",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Helmet"
+        },
+        {
+          "name": "Red Hunter Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Red Hunter Robe"
+        },
+        {
+          "name": "Radiant Orb",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Orb"
+        },
+        {
+          "name": "Red Scholar Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Red Scholar Pants"
+        },
+        {
+          "name": "Red Priest Hood",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Red Priest Hood"
+        },
+        {
+          "name": "Radiant Chest Plate",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Chest Plate"
+        },
+        {
+          "name": "Radiant Kunai",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Kunai"
+        },
+        {
+          "name": "Radiant Sword",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Sword"
+        }
+      ]
+    },
+    {
+      "name": "Tallshroom",
+      "drops": [
+        {
+          "name": "Historic Essence",
+          "chance": "8.69%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Historic Essence"
+        },
+        {
+          "name": "Radiant Historic Essence",
+          "chance": "5.79%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Radiant Historic Essence"
+        },
+        {
+          "name": "Mystical Shield",
+          "chance": "0.03%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Mystical Shield"
+        },
+        {
+          "name": "Arcane Priest Bottom",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Priest Bottom"
+        },
+        {
+          "name": "Arcane Priest Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Priest Shoes"
+        },
+        {
+          "name": "Arcane Bow",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Bow"
+        },
+        {
+          "name": "Arcane Sword",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Sword"
+        },
+        {
+          "name": "Arcane Helmet",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Helmet"
+        },
+        {
+          "name": "Arcane Hunter Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Hunter Robe"
+        },
+        {
+          "name": "Arcane Scholar Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Scholar Robe"
+        },
+        {
+          "name": "Arcane Kunai",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Monsters",
+          "wikiTitle": "Arcane Kunai"
+        }
+      ]
+    },
+    {
+      "name": "Angeling",
+      "drops": [
+        {
+          "name": "Bamboo Hat",
+          "chance": null,
+          "source": "https://soulsremnant.wiki.gg/wiki/Angeling",
+          "wikiTitle": "Bamboo Hat"
+        },
+        {
+          "name": "Nurturing Gem",
+          "chance": "1%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Nurturing_Gem",
+          "wikiTitle": "Nurturing Gem"
+        }
+      ]
+    },
+    {
+      "name": "Big Slime",
+      "drops": [
+        {
+          "name": "Nurturing Gem",
+          "chance": "1%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Nurturing_Gem",
+          "wikiTitle": "Nurturing Gem"
+        }
+      ]
+    },
+    {
+      "name": "Desert Bandit",
+      "drops": [
+        {
+          "name": "Soul Crystal",
+          "chance": null,
+          "source": "https://soulsremnant.wiki.gg/wiki/Grinding",
+          "wikiTitle": "Soul Crystal"
+        }
+      ]
+    },
+    {
+      "name": "Elemental",
+      "drops": [
+        {
+          "name": "Soul Crystal",
+          "chance": null,
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Soul Crystal"
+        },
+        {
+          "name": "Elemental Shard",
+          "chance": "10%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Elemental Shard"
+        },
+        {
+          "name": "Red Shard",
+          "chance": "4%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Red Shard"
+        },
+        {
+          "name": "Blue Shard",
+          "chance": "4%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Blue Shard"
+        },
+        {
+          "name": "Yellow Shard",
+          "chance": "4%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Yellow Shard"
+        },
+        {
+          "name": "Red Upgrade Gem (+3 INT)",
+          "chance": "0.2%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Red Upgrade Gem"
+        },
+        {
+          "name": "Chaotic Warp Crystal (recipe)",
+          "chance": "0.29%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Chaotic Warp Crystal"
+        },
+        {
+          "name": "Mana Potion (recipe)",
+          "chance": "0.29%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Mana Potion"
+        },
+        {
+          "name": "Red Upgrade Gem (+3 SPR)",
+          "chance": "0.2%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Elemental",
+          "wikiTitle": "Red Upgrade Gem"
+        }
+      ]
+    },
+    {
+      "name": "Rocky",
+      "drops": [
+        {
+          "name": "Mystical Bow",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Mystical Bow"
+        },
+        {
+          "name": "Mystical Holy Arrow",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Mystical Holy Arrow"
+        },
+        {
+          "name": "Mystical Magic Wand",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Mystical Magic Wand"
+        },
+        {
+          "name": "Mystical Cross",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Mystical Cross"
+        },
+        {
+          "name": "Eon Hunter Cap",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Eon Hunter Cap"
+        },
+        {
+          "name": "Mystical Armored Boots",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Mystical Armored Boots"
+        },
+        {
+          "name": "Eon Priest Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Eon Priest Shoes"
+        },
+        {
+          "name": "Eon Hunter Shoes",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Eon Hunter Shoes"
+        },
+        {
+          "name": "Eon Scholar Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Eon Scholar Pants"
+        },
+        {
+          "name": "Eon Priest Bottom",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Eon Priest Bottom"
+        },
+        {
+          "name": "Eon Hunter Pants",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Eon Hunter Pants"
+        },
+        {
+          "name": "Red Scholar Robe",
+          "chance": "0.05%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Red Scholar Robe"
+        },
+        {
+          "name": "Eon Scholar Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Eon Scholar Robe"
+        },
+        {
+          "name": "Eon Priest Robe",
+          "chance": "<0.00%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Module:Data/Equipment",
+          "wikiTitle": "Eon Priest Robe"
+        }
+      ]
+    },
+    {
+      "name": "Shadow Sprite",
+      "drops": [
+        {
+          "name": "Soul Crystal",
+          "chance": null,
+          "source": "https://soulsremnant.wiki.gg/wiki/Shadow_Sprite",
+          "wikiTitle": "Soul Crystal"
+        },
+        {
+          "name": "Dark Essence",
+          "chance": "1%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Shadow_Sprite",
+          "wikiTitle": "Dark Essence"
+        },
+        {
+          "name": "Pumpkin",
+          "chance": "1%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Shadow_Sprite",
+          "wikiTitle": "Pumpkin"
+        },
+        {
+          "name": "Great Mana Potion (recipe)",
+          "chance": "0.17%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Shadow_Sprite",
+          "wikiTitle": "Great Mana Potion"
+        },
+        {
+          "name": "Pumpkin Pie (recipe)",
+          "chance": "0.15%",
+          "source": "https://soulsremnant.wiki.gg/wiki/Shadow_Sprite",
+          "wikiTitle": "Pumpkin Pie"
+        }
+      ]
+    }
+  ],
+  "unresolvedItemPages": [
+    "Barrel",
+    "Calamity Gem",
+    "Ghostly Essence",
+    "Horns",
+    "Metal Essence",
+    "Mystic Gem",
+    "Nurturing Essence",
+    "Pretty Flower",
+    "Radiant Eternal Essence",
+    "Radiant Ghostly Essence",
+    "Radiant Historic Essence",
+    "Radiant Life Essence",
+    "Radiant Metal Essence",
+    "Radiant Nurturing Essence",
+    "Radiant Raging Essence",
+    "Rain Cloud",
+    "Vase"
+  ]
+}

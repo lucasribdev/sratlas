@@ -21,7 +21,9 @@ A backend, login, an admin panel, and automatic wiki synchronization remain out
 of scope for the MVP.
 
 The [supplied world map import](./imports/wiki-world-map.md) documents the
-Caves data and its manual coordinate review checklist.
+Caves data and its manual coordinate review checklist. The
+[confirmed monster loot update](./imports/monster-loot.md) records loot sources,
+partial tables, and handling of unknown rates.
 
 ## How to Add a New Zone
 

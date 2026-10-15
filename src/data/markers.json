@@ -4446,7 +4446,19 @@
         "name": "Angeling",
         "wikiSlug": "Angeling",
         "image": "Angeling.png/16px-Angeling.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Bamboo Hat",
+            "dropRate": null,
+            "wikiSlug": "Bamboo_Hat",
+            "image": "Bamboo_Hat.png/16px-Bamboo_Hat.png"
+          },
+          {
+            "name": "Nurturing Gem",
+            "dropRate": 1.0,
+            "wikiSlug": "Nurturing_Gem"
+          }
+        ]
       }
     ],
     "resources": [
@@ -5023,7 +5035,13 @@
         "name": "Big Slime",
         "wikiSlug": "Big_Slime",
         "image": "Big_Slime.png/16px-Big_Slime.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Nurturing Gem",
+            "dropRate": 1.0,
+            "wikiSlug": "Nurturing_Gem"
+          }
+        ]
       }
     ],
     "resources": [
@@ -6273,13 +6291,131 @@
         "name": "Tallshroom",
         "wikiSlug": "Tallshroom",
         "image": "Tallshroom.png/16px-Tallshroom.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Historic Essence",
+            "dropRate": 8.69,
+            "wikiSlug": "Historic_Essence",
+            "image": "Historic_Essence.png/16px-Historic_Essence.png"
+          },
+          {
+            "name": "Radiant Historic Essence",
+            "dropRate": 5.79,
+            "image": "Radiant_Historic_Essence.png/16px-Radiant_Historic_Essence.png"
+          },
+          {
+            "name": "Mystical Shield",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Shield"
+          },
+          {
+            "name": "Arcane Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Bottom"
+          },
+          {
+            "name": "Arcane Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Shoes"
+          },
+          {
+            "name": "Arcane Bow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Bow"
+          },
+          {
+            "name": "Arcane Sword",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Sword"
+          },
+          {
+            "name": "Arcane Helmet",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Helmet",
+            "image": "Arcane_Helmet.png/16px-Arcane_Helmet.png"
+          },
+          {
+            "name": "Arcane Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Robe"
+          },
+          {
+            "name": "Arcane Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Robe",
+            "image": "Arcane_Scholar_Robe.png/16px-Arcane_Scholar_Robe.png"
+          },
+          {
+            "name": "Arcane Kunai",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Kunai",
+            "image": "Arcane_Kunai.png/16px-Arcane_Kunai.png"
+          }
+        ]
       },
       {
         "name": "Shroomie",
         "wikiSlug": "Shroomie",
         "image": "Shroomie.png/16px-Shroomie.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Life Essence",
+            "dropRate": 8.69,
+            "wikiSlug": "Life_Essence",
+            "image": "Life_Essence.png/16px-Life_Essence.png"
+          },
+          {
+            "name": "Radiant Life Essence",
+            "dropRate": 5.79
+          },
+          {
+            "name": "Mystical Orb",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Orb"
+          },
+          {
+            "name": "Arcane Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Bottom"
+          },
+          {
+            "name": "Arcane Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Robe"
+          },
+          {
+            "name": "Arcane Sword",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Sword"
+          },
+          {
+            "name": "Arcane Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Leg_Plate"
+          },
+          {
+            "name": "Arcane Helmet",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Helmet",
+            "image": "Arcane_Helmet.png/16px-Arcane_Helmet.png"
+          },
+          {
+            "name": "Arcane Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Hat",
+            "image": "Arcane_Scholar_Hat.png/16px-Arcane_Scholar_Hat.png"
+          },
+          {
+            "name": "Arcane Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Shoes"
+          },
+          {
+            "name": "Arcane Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Chest_Plate"
+          }
+        ]
       }
     ],
     "resources": [
@@ -6472,13 +6608,131 @@
         "name": "Shroomie",
         "wikiSlug": "Shroomie",
         "image": "Shroomie.png/16px-Shroomie.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Life Essence",
+            "dropRate": 8.69,
+            "wikiSlug": "Life_Essence",
+            "image": "Life_Essence.png/16px-Life_Essence.png"
+          },
+          {
+            "name": "Radiant Life Essence",
+            "dropRate": 5.79
+          },
+          {
+            "name": "Mystical Orb",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Orb"
+          },
+          {
+            "name": "Arcane Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Bottom"
+          },
+          {
+            "name": "Arcane Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Robe"
+          },
+          {
+            "name": "Arcane Sword",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Sword"
+          },
+          {
+            "name": "Arcane Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Leg_Plate"
+          },
+          {
+            "name": "Arcane Helmet",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Helmet",
+            "image": "Arcane_Helmet.png/16px-Arcane_Helmet.png"
+          },
+          {
+            "name": "Arcane Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Hat",
+            "image": "Arcane_Scholar_Hat.png/16px-Arcane_Scholar_Hat.png"
+          },
+          {
+            "name": "Arcane Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Shoes"
+          },
+          {
+            "name": "Arcane Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Chest_Plate"
+          }
+        ]
       },
       {
         "name": "Tallshroom",
         "wikiSlug": "Tallshroom",
         "image": "Tallshroom.png/16px-Tallshroom.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Historic Essence",
+            "dropRate": 8.69,
+            "wikiSlug": "Historic_Essence",
+            "image": "Historic_Essence.png/16px-Historic_Essence.png"
+          },
+          {
+            "name": "Radiant Historic Essence",
+            "dropRate": 5.79,
+            "image": "Radiant_Historic_Essence.png/16px-Radiant_Historic_Essence.png"
+          },
+          {
+            "name": "Mystical Shield",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Shield"
+          },
+          {
+            "name": "Arcane Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Bottom"
+          },
+          {
+            "name": "Arcane Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Shoes"
+          },
+          {
+            "name": "Arcane Bow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Bow"
+          },
+          {
+            "name": "Arcane Sword",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Sword"
+          },
+          {
+            "name": "Arcane Helmet",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Helmet",
+            "image": "Arcane_Helmet.png/16px-Arcane_Helmet.png"
+          },
+          {
+            "name": "Arcane Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Robe"
+          },
+          {
+            "name": "Arcane Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Robe",
+            "image": "Arcane_Scholar_Robe.png/16px-Arcane_Scholar_Robe.png"
+          },
+          {
+            "name": "Arcane Kunai",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Kunai",
+            "image": "Arcane_Kunai.png/16px-Arcane_Kunai.png"
+          }
+        ]
       }
     ],
     "resources": [
@@ -6740,7 +6994,67 @@
         "name": "Tallshroom",
         "wikiSlug": "Tallshroom",
         "image": "Tallshroom.png/16px-Tallshroom.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Historic Essence",
+            "dropRate": 8.69,
+            "wikiSlug": "Historic_Essence",
+            "image": "Historic_Essence.png/16px-Historic_Essence.png"
+          },
+          {
+            "name": "Radiant Historic Essence",
+            "dropRate": 5.79,
+            "image": "Radiant_Historic_Essence.png/16px-Radiant_Historic_Essence.png"
+          },
+          {
+            "name": "Mystical Shield",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Shield"
+          },
+          {
+            "name": "Arcane Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Bottom"
+          },
+          {
+            "name": "Arcane Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Shoes"
+          },
+          {
+            "name": "Arcane Bow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Bow"
+          },
+          {
+            "name": "Arcane Sword",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Sword"
+          },
+          {
+            "name": "Arcane Helmet",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Helmet",
+            "image": "Arcane_Helmet.png/16px-Arcane_Helmet.png"
+          },
+          {
+            "name": "Arcane Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Robe"
+          },
+          {
+            "name": "Arcane Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Robe",
+            "image": "Arcane_Scholar_Robe.png/16px-Arcane_Scholar_Robe.png"
+          },
+          {
+            "name": "Arcane Kunai",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Kunai",
+            "image": "Arcane_Kunai.png/16px-Arcane_Kunai.png"
+          }
+        ]
       }
     ],
     "resources": [
@@ -6838,13 +7152,131 @@
         "name": "Shroomie",
         "wikiSlug": "Shroomie",
         "image": "Shroomie.png/16px-Shroomie.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Life Essence",
+            "dropRate": 8.69,
+            "wikiSlug": "Life_Essence",
+            "image": "Life_Essence.png/16px-Life_Essence.png"
+          },
+          {
+            "name": "Radiant Life Essence",
+            "dropRate": 5.79
+          },
+          {
+            "name": "Mystical Orb",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Orb"
+          },
+          {
+            "name": "Arcane Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Bottom"
+          },
+          {
+            "name": "Arcane Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Robe"
+          },
+          {
+            "name": "Arcane Sword",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Sword"
+          },
+          {
+            "name": "Arcane Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Leg_Plate"
+          },
+          {
+            "name": "Arcane Helmet",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Helmet",
+            "image": "Arcane_Helmet.png/16px-Arcane_Helmet.png"
+          },
+          {
+            "name": "Arcane Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Hat",
+            "image": "Arcane_Scholar_Hat.png/16px-Arcane_Scholar_Hat.png"
+          },
+          {
+            "name": "Arcane Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Shoes"
+          },
+          {
+            "name": "Arcane Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Chest_Plate"
+          }
+        ]
       },
       {
         "name": "Tallshroom",
         "wikiSlug": "Tallshroom",
         "image": "Tallshroom.png/16px-Tallshroom.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Historic Essence",
+            "dropRate": 8.69,
+            "wikiSlug": "Historic_Essence",
+            "image": "Historic_Essence.png/16px-Historic_Essence.png"
+          },
+          {
+            "name": "Radiant Historic Essence",
+            "dropRate": 5.79,
+            "image": "Radiant_Historic_Essence.png/16px-Radiant_Historic_Essence.png"
+          },
+          {
+            "name": "Mystical Shield",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Shield"
+          },
+          {
+            "name": "Arcane Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Bottom"
+          },
+          {
+            "name": "Arcane Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Shoes"
+          },
+          {
+            "name": "Arcane Bow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Bow"
+          },
+          {
+            "name": "Arcane Sword",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Sword"
+          },
+          {
+            "name": "Arcane Helmet",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Helmet",
+            "image": "Arcane_Helmet.png/16px-Arcane_Helmet.png"
+          },
+          {
+            "name": "Arcane Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Robe"
+          },
+          {
+            "name": "Arcane Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Robe",
+            "image": "Arcane_Scholar_Robe.png/16px-Arcane_Scholar_Robe.png"
+          },
+          {
+            "name": "Arcane Kunai",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Kunai",
+            "image": "Arcane_Kunai.png/16px-Arcane_Kunai.png"
+          }
+        ]
       },
       {
         "name": "Fernek",
@@ -11104,7 +11536,83 @@
       {
         "name": "Ancient Soul",
         "wikiSlug": "Ancient_Soul",
-        "image": "Ancient_Soul.png/16px-Ancient_Soul.png"
+        "image": "Ancient_Soul.png/16px-Ancient_Soul.png",
+        "drops": [
+          {
+            "name": "Eternal Essence",
+            "dropRate": 10.0,
+            "wikiSlug": "Eternal_Essence",
+            "image": "Eternal_Essence.png/16px-Eternal_Essence.png"
+          },
+          {
+            "name": "Radiant Eternal Essence",
+            "dropRate": 6.67
+          },
+          {
+            "name": "Sacrifice",
+            "dropRate": 0.01,
+            "wikiSlug": "Sacrifice"
+          },
+          {
+            "name": "Solitude",
+            "dropRate": 0.01,
+            "wikiSlug": "Solitude",
+            "image": "Solitude.png/16px-Solitude.png"
+          },
+          {
+            "name": "Tear of the Fallen",
+            "dropRate": 0.01,
+            "wikiSlug": "Tear_of_the_Fallen"
+          },
+          {
+            "name": "Eternal Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Chest_Plate",
+            "image": "Eternal_Chest_Plate.png/16px-Eternal_Chest_Plate.png"
+          },
+          {
+            "name": "Radiant Innocence",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Innocence",
+            "image": "Radiant_Innocence.png/16px-Radiant_Innocence.png"
+          },
+          {
+            "name": "Radiant Messenger",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Messenger",
+            "image": "Radiant_Messenger.png/16px-Radiant_Messenger.png"
+          },
+          {
+            "name": "Eternal Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Priest_Bottom"
+          },
+          {
+            "name": "Eternal Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Hat"
+          },
+          {
+            "name": "Eternal Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Shoes"
+          },
+          {
+            "name": "Eternal Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Hunter_Robe"
+          },
+          {
+            "name": "Radiant Shooting Star",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Shooting_Star"
+          },
+          {
+            "name": "Radiant Sword of Heart",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sword_of_Heart"
+          }
+        ]
       },
       {
         "name": "Soulfish",
@@ -11754,7 +12262,83 @@
       {
         "name": "Ancient Soul",
         "wikiSlug": "Ancient_Soul",
-        "image": "Ancient_Soul.png/16px-Ancient_Soul.png"
+        "image": "Ancient_Soul.png/16px-Ancient_Soul.png",
+        "drops": [
+          {
+            "name": "Eternal Essence",
+            "dropRate": 10.0,
+            "wikiSlug": "Eternal_Essence",
+            "image": "Eternal_Essence.png/16px-Eternal_Essence.png"
+          },
+          {
+            "name": "Radiant Eternal Essence",
+            "dropRate": 6.67
+          },
+          {
+            "name": "Sacrifice",
+            "dropRate": 0.01,
+            "wikiSlug": "Sacrifice"
+          },
+          {
+            "name": "Solitude",
+            "dropRate": 0.01,
+            "wikiSlug": "Solitude",
+            "image": "Solitude.png/16px-Solitude.png"
+          },
+          {
+            "name": "Tear of the Fallen",
+            "dropRate": 0.01,
+            "wikiSlug": "Tear_of_the_Fallen"
+          },
+          {
+            "name": "Eternal Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Chest_Plate",
+            "image": "Eternal_Chest_Plate.png/16px-Eternal_Chest_Plate.png"
+          },
+          {
+            "name": "Radiant Innocence",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Innocence",
+            "image": "Radiant_Innocence.png/16px-Radiant_Innocence.png"
+          },
+          {
+            "name": "Radiant Messenger",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Messenger",
+            "image": "Radiant_Messenger.png/16px-Radiant_Messenger.png"
+          },
+          {
+            "name": "Eternal Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Priest_Bottom"
+          },
+          {
+            "name": "Eternal Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Hat"
+          },
+          {
+            "name": "Eternal Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Shoes"
+          },
+          {
+            "name": "Eternal Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Hunter_Robe"
+          },
+          {
+            "name": "Radiant Shooting Star",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Shooting_Star"
+          },
+          {
+            "name": "Radiant Sword of Heart",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sword_of_Heart"
+          }
+        ]
       }
     ],
     "resources": [
@@ -14398,7 +14982,14 @@
         "name": "Desert Bandit",
         "wikiSlug": "Desert_Bandit",
         "image": "Desert_Bandit.png/16px-Desert_Bandit.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Soul Crystal",
+            "dropRate": null,
+            "wikiSlug": "Soul_Crystal",
+            "image": "Soul_Crystal.png/16px-Soul_Crystal.png"
+          }
+        ]
       }
     ],
     "resources": [
@@ -14673,7 +15264,14 @@
         "name": "Desert Bandit",
         "wikiSlug": "Desert_Bandit",
         "image": "Desert_Bandit.png/16px-Desert_Bandit.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Soul Crystal",
+            "dropRate": null,
+            "wikiSlug": "Soul_Crystal",
+            "image": "Soul_Crystal.png/16px-Soul_Crystal.png"
+          }
+        ]
       }
     ],
     "resources": [
@@ -15355,25 +15953,378 @@
         "name": "Blaze",
         "wikiSlug": "Blaze",
         "image": "Blaze.png/16px-Blaze.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Raging Essence",
+            "dropRate": 10.24,
+            "wikiSlug": "Raging_Essence",
+            "image": "Raging_Essence.png/16px-Raging_Essence.png"
+          },
+          {
+            "name": "Radiant Raging Essence",
+            "dropRate": 6.83,
+            "image": "Radiant_Raging_Essence.png/16px-Radiant_Raging_Essence.png"
+          },
+          {
+            "name": "Eternal Flame",
+            "dropRate": 6.25,
+            "wikiSlug": "Eternal_Flame",
+            "image": "Eternal_Flame.png/16px-Eternal_Flame.png"
+          },
+          {
+            "name": "Yellow Shard",
+            "dropRate": 1.0,
+            "wikiSlug": "Yellow_Shard",
+            "image": "Yellow_Shard.png/16px-Yellow_Shard.png"
+          },
+          {
+            "name": "Lemon Lime Soda",
+            "dropRate": 0.06,
+            "wikiSlug": "Lemon_Lime_Soda"
+          },
+          {
+            "name": "Star Chest Plate",
+            "dropRate": 0.02,
+            "wikiSlug": "Star_Chest_Plate",
+            "image": "Star_Chest_Plate.png/16px-Star_Chest_Plate.png"
+          },
+          {
+            "name": "Blood Ring",
+            "dropRate": null,
+            "wikiSlug": "Blood_Ring"
+          },
+          {
+            "name": "Eternal Hunter Cap",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Hunter_Cap"
+          },
+          {
+            "name": "Eternal Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Pants",
+            "image": "Eternal_Scholar_Pants.png/16px-Eternal_Scholar_Pants.png"
+          },
+          {
+            "name": "Eternal Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Hunter_Shoes"
+          },
+          {
+            "name": "Eternal Priest Robe",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Priest_Robe",
+            "image": "Eternal_Priest_Robe.png/16px-Eternal_Priest_Robe.png"
+          },
+          {
+            "name": "Radiant Exchange",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Exchange"
+          },
+          {
+            "name": "Radiant Knull",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Knull"
+          },
+          {
+            "name": "Radiant Psyche",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Psyche"
+          },
+          {
+            "name": "Radiant Smite",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Smite"
+          },
+          {
+            "name": "Radiant Wish",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Wish",
+            "image": "Radiant_Wish.png/16px-Radiant_Wish.png"
+          }
+        ]
       },
       {
         "name": "Haunted Flame",
         "wikiSlug": "Haunted_Flame",
         "image": "Haunted_Flame.png/16px-Haunted_Flame.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 10.36,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Radiant Ghostly Essence",
+            "dropRate": 6.9,
+            "image": "Radiant_Ghostly_Essence.png/16px-Radiant_Ghostly_Essence.png"
+          },
+          {
+            "name": "Cursed Flame",
+            "dropRate": 7.14,
+            "wikiSlug": "Cursed_Flame",
+            "image": "Cursed_Flame.png/16px-Cursed_Flame.png"
+          },
+          {
+            "name": "Blue Shard",
+            "dropRate": 1.0,
+            "wikiSlug": "Blue_Shard",
+            "image": "Blue_Shard.png/16px-Blue_Shard.png"
+          },
+          {
+            "name": "Blue Herb",
+            "dropRate": 1.0,
+            "wikiSlug": "Blue_Herb",
+            "image": "Blue_Herb.png/16px-Blue_Herb.png"
+          },
+          {
+            "name": "Star Helmet",
+            "dropRate": 0.02,
+            "wikiSlug": "Star_Helmet",
+            "image": "Star_Helmet.png/16px-Star_Helmet.png"
+          },
+          {
+            "name": "Blood Ring",
+            "dropRate": null,
+            "wikiSlug": "Blood_Ring"
+          },
+          {
+            "name": "Eternal Helmet",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Helmet"
+          },
+          {
+            "name": "Radiant Judgement",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Judgement"
+          },
+          {
+            "name": "Radiant Perseverance",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Perseverance"
+          },
+          {
+            "name": "Eternal Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Pants",
+            "image": "Eternal_Scholar_Pants.png/16px-Eternal_Scholar_Pants.png"
+          },
+          {
+            "name": "Eternal Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Priest_Hood"
+          },
+          {
+            "name": "Eternal Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Hunter_Shoes"
+          },
+          {
+            "name": "Radiant Divinity",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Divinity",
+            "image": "Radiant_Divinity.png/16px-Radiant_Divinity.png"
+          },
+          {
+            "name": "Radiant Smite",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Smite"
+          },
+          {
+            "name": "Radiant Tear of the Fallen",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Tear_of_the_Fallen"
+          }
+        ]
       },
       {
         "name": "Lost Bard",
         "wikiSlug": "Lost_Bard",
         "image": "Lost_Bard.png/16px-Lost_Bard.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Nurturing Essence",
+            "dropRate": 11.31,
+            "image": "Nurturing_Essence.png/16px-Nurturing_Essence.png"
+          },
+          {
+            "name": "Radiant Nurturing Essence",
+            "dropRate": 7.54,
+            "image": "Radiant_Nurturing_Essence.png/16px-Radiant_Nurturing_Essence.png"
+          },
+          {
+            "name": "Cursed Rock",
+            "dropRate": 20.0,
+            "wikiSlug": "Cursed_Rock"
+          },
+          {
+            "name": "Lime",
+            "dropRate": 20.0,
+            "wikiSlug": "Lime",
+            "image": "Lime.png/16px-Lime.png"
+          },
+          {
+            "name": "Chocolate",
+            "dropRate": 0.91,
+            "wikiSlug": "Chocolate"
+          },
+          {
+            "name": "Marshmallow",
+            "dropRate": 0.33,
+            "wikiSlug": "Marshmallow"
+          },
+          {
+            "name": "Spicy Unagi Special",
+            "dropRate": 0.07,
+            "wikiSlug": "Spicy_Unagi_Special"
+          },
+          {
+            "name": "Piano",
+            "dropRate": 0.03,
+            "wikiSlug": "Piano"
+          },
+          {
+            "name": "Flute",
+            "dropRate": 0.03,
+            "wikiSlug": "Flute"
+          },
+          {
+            "name": "Raging Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Raging_Priest_Shoes"
+          },
+          {
+            "name": "Raging Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Raging_Scholar_Robe"
+          },
+          {
+            "name": "Inverse Divinity",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Divinity"
+          },
+          {
+            "name": "Inverse Solitude",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Solitude"
+          },
+          {
+            "name": "Inverse Wish",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Wish"
+          },
+          {
+            "name": "Raging Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Raging_Hunter_Pants",
+            "image": "Raging_Hunter_Pants.png/16px-Raging_Hunter_Pants.png"
+          },
+          {
+            "name": "Raging Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Raging_Priest_Bottom",
+            "image": "Raging_Priest_Bottom.png/16px-Raging_Priest_Bottom.png"
+          },
+          {
+            "name": "Obsidium Helmet",
+            "dropRate": null,
+            "wikiSlug": "Obsidium_Helmet"
+          },
+          {
+            "name": "Inverse Innocence",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Innocence"
+          },
+          {
+            "name": "Inverse Messenger",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Messenger",
+            "image": "Inverse_Messenger.png/16px-Inverse_Messenger.png"
+          },
+          {
+            "name": "Inverse Sacrifice",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Sacrifice",
+            "image": "Inverse_Sacrifice.png/16px-Inverse_Sacrifice.png"
+          }
+        ]
       },
       {
         "name": "Saowl",
         "wikiSlug": "Saowl",
         "image": "Saowl.png/16px-Saowl.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Life Essence",
+            "dropRate": 10.12,
+            "wikiSlug": "Life_Essence",
+            "image": "Life_Essence.png/16px-Life_Essence.png"
+          },
+          {
+            "name": "Radiant Life Essence",
+            "dropRate": 6.75
+          },
+          {
+            "name": "Star Armored Boots",
+            "dropRate": 0.01,
+            "wikiSlug": "Star_Armored_Boots"
+          },
+          {
+            "name": "Wish",
+            "dropRate": 0.01,
+            "wikiSlug": "Wish",
+            "image": "Wish.png/16px-Wish.png"
+          },
+          {
+            "name": "Eternal Armored Boots",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Armored_Boots"
+          },
+          {
+            "name": "Eternal Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Shoes"
+          },
+          {
+            "name": "Radiant Faith",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Faith"
+          },
+          {
+            "name": "Eternal Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Hunter_Pants",
+            "image": "Eternal_Hunter_Pants.png/16px-Eternal_Hunter_Pants.png"
+          },
+          {
+            "name": "Eternal Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Leg_Plate",
+            "image": "Eternal_Leg_Plate.png/16px-Eternal_Leg_Plate.png"
+          },
+          {
+            "name": "Eternal Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Priest_Shoes"
+          },
+          {
+            "name": "Radiant Messenger",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Messenger",
+            "image": "Radiant_Messenger.png/16px-Radiant_Messenger.png"
+          },
+          {
+            "name": "Radiant Sacrifice",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sacrifice",
+            "image": "Radiant_Sacrifice.png/16px-Radiant_Sacrifice.png"
+          },
+          {
+            "name": "Radiant Solitude",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Solitude",
+            "image": "Radiant_Solitude.png/16px-Radiant_Solitude.png"
+          }
+        ]
       },
       {
         "name": "Pyramid Guardian",
@@ -15680,7 +16631,79 @@
         "name": "Saowl",
         "wikiSlug": "Saowl",
         "image": "Saowl.png/16px-Saowl.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Life Essence",
+            "dropRate": 10.12,
+            "wikiSlug": "Life_Essence",
+            "image": "Life_Essence.png/16px-Life_Essence.png"
+          },
+          {
+            "name": "Radiant Life Essence",
+            "dropRate": 6.75
+          },
+          {
+            "name": "Star Armored Boots",
+            "dropRate": 0.01,
+            "wikiSlug": "Star_Armored_Boots"
+          },
+          {
+            "name": "Wish",
+            "dropRate": 0.01,
+            "wikiSlug": "Wish",
+            "image": "Wish.png/16px-Wish.png"
+          },
+          {
+            "name": "Eternal Armored Boots",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Armored_Boots"
+          },
+          {
+            "name": "Eternal Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Shoes"
+          },
+          {
+            "name": "Radiant Faith",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Faith"
+          },
+          {
+            "name": "Eternal Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Hunter_Pants",
+            "image": "Eternal_Hunter_Pants.png/16px-Eternal_Hunter_Pants.png"
+          },
+          {
+            "name": "Eternal Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Leg_Plate",
+            "image": "Eternal_Leg_Plate.png/16px-Eternal_Leg_Plate.png"
+          },
+          {
+            "name": "Eternal Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Priest_Shoes"
+          },
+          {
+            "name": "Radiant Messenger",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Messenger",
+            "image": "Radiant_Messenger.png/16px-Radiant_Messenger.png"
+          },
+          {
+            "name": "Radiant Sacrifice",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sacrifice",
+            "image": "Radiant_Sacrifice.png/16px-Radiant_Sacrifice.png"
+          },
+          {
+            "name": "Radiant Solitude",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Solitude",
+            "image": "Radiant_Solitude.png/16px-Radiant_Solitude.png"
+          }
+        ]
       },
       {
         "name": "Pyramid Guardian",
@@ -17888,12 +18911,156 @@
         "name": "Cat Guardian",
         "wikiSlug": "Cat_Guardian",
         "image": "Cat_Guardian.png/16px-Cat_Guardian.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Dull Ghostly Essence",
+            "dropRate": 45.0,
+            "wikiSlug": "Dull_Ghostly_Essence",
+            "image": "Dull_Ghostly_Essence.png/16px-Dull_Ghostly_Essence.png"
+          },
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 17.14,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Mystical Orb",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Orb"
+          },
+          {
+            "name": "Star Bounding Ring",
+            "dropRate": null,
+            "wikiSlug": "Star_Bounding_Ring"
+          },
+          {
+            "name": "Arcane Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Hood",
+            "image": "Arcane_Priest_Hood.png/16px-Arcane_Priest_Hood.png"
+          },
+          {
+            "name": "Arcane Shield",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Shield"
+          },
+          {
+            "name": "Arcane Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Leg_Plate"
+          },
+          {
+            "name": "Arcane Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Hat",
+            "image": "Arcane_Scholar_Hat.png/16px-Arcane_Scholar_Hat.png"
+          },
+          {
+            "name": "Arcane Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Shoes",
+            "image": "Arcane_Hunter_Shoes.png/16px-Arcane_Hunter_Shoes.png"
+          },
+          {
+            "name": "Arcane Cross",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Cross",
+            "image": "Arcane_Cross.png/16px-Arcane_Cross.png"
+          },
+          {
+            "name": "Arcane Holy Arrow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Holy_Arrow"
+          }
+        ]
       },
       {
         "name": "Rocky",
         "wikiSlug": "Rocky",
-        "image": "Rocky.png/16px-Rocky.png"
+        "image": "Rocky.png/16px-Rocky.png",
+        "drops": [
+          {
+            "name": "Mystical Bow",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Bow",
+            "image": "Mystical_Bow.png/16px-Mystical_Bow.png"
+          },
+          {
+            "name": "Mystical Holy Arrow",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Holy_Arrow",
+            "image": "Mystical_Holy_Arrow.png/16px-Mystical_Holy_Arrow.png"
+          },
+          {
+            "name": "Mystical Magic Wand",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Magic_Wand",
+            "image": "Mystical_Magic_Wand.png/16px-Mystical_Magic_Wand.png"
+          },
+          {
+            "name": "Mystical Cross",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Cross"
+          },
+          {
+            "name": "Eon Hunter Cap",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Cap",
+            "image": "Eon_Hunter_Cap.png/16px-Eon_Hunter_Cap.png"
+          },
+          {
+            "name": "Mystical Armored Boots",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Armored_Boots",
+            "image": "Mystical_Armored_Boots.png/16px-Mystical_Armored_Boots.png"
+          },
+          {
+            "name": "Eon Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Shoes",
+            "image": "Eon_Priest_Shoes.png/16px-Eon_Priest_Shoes.png"
+          },
+          {
+            "name": "Eon Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Shoes",
+            "image": "Eon_Hunter_Shoes.png/16px-Eon_Hunter_Shoes.png"
+          },
+          {
+            "name": "Eon Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Eon_Scholar_Pants",
+            "image": "Eon_Scholar_Pants.png/16px-Eon_Scholar_Pants.png"
+          },
+          {
+            "name": "Eon Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Bottom"
+          },
+          {
+            "name": "Eon Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Pants",
+            "image": "Eon_Hunter_Pants.png/16px-Eon_Hunter_Pants.png"
+          },
+          {
+            "name": "Red Scholar Robe",
+            "dropRate": 0.05,
+            "wikiSlug": "Red_Scholar_Robe"
+          },
+          {
+            "name": "Eon Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Eon_Scholar_Robe",
+            "image": "Eon_Scholar_Robe.png/16px-Eon_Scholar_Robe.png"
+          },
+          {
+            "name": "Eon Priest Robe",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Robe",
+            "image": "Eon_Priest_Robe.png/16px-Eon_Priest_Robe.png"
+          }
+        ]
       },
       {
         "name": "Cat Golem",
@@ -18196,7 +19363,90 @@
       {
         "name": "Rocky",
         "wikiSlug": "Rocky",
-        "image": "Rocky.png/16px-Rocky.png"
+        "image": "Rocky.png/16px-Rocky.png",
+        "drops": [
+          {
+            "name": "Mystical Bow",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Bow",
+            "image": "Mystical_Bow.png/16px-Mystical_Bow.png"
+          },
+          {
+            "name": "Mystical Holy Arrow",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Holy_Arrow",
+            "image": "Mystical_Holy_Arrow.png/16px-Mystical_Holy_Arrow.png"
+          },
+          {
+            "name": "Mystical Magic Wand",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Magic_Wand",
+            "image": "Mystical_Magic_Wand.png/16px-Mystical_Magic_Wand.png"
+          },
+          {
+            "name": "Mystical Cross",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Cross"
+          },
+          {
+            "name": "Eon Hunter Cap",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Cap",
+            "image": "Eon_Hunter_Cap.png/16px-Eon_Hunter_Cap.png"
+          },
+          {
+            "name": "Mystical Armored Boots",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Armored_Boots",
+            "image": "Mystical_Armored_Boots.png/16px-Mystical_Armored_Boots.png"
+          },
+          {
+            "name": "Eon Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Shoes",
+            "image": "Eon_Priest_Shoes.png/16px-Eon_Priest_Shoes.png"
+          },
+          {
+            "name": "Eon Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Shoes",
+            "image": "Eon_Hunter_Shoes.png/16px-Eon_Hunter_Shoes.png"
+          },
+          {
+            "name": "Eon Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Eon_Scholar_Pants",
+            "image": "Eon_Scholar_Pants.png/16px-Eon_Scholar_Pants.png"
+          },
+          {
+            "name": "Eon Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Bottom"
+          },
+          {
+            "name": "Eon Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Pants",
+            "image": "Eon_Hunter_Pants.png/16px-Eon_Hunter_Pants.png"
+          },
+          {
+            "name": "Red Scholar Robe",
+            "dropRate": 0.05,
+            "wikiSlug": "Red_Scholar_Robe"
+          },
+          {
+            "name": "Eon Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Eon_Scholar_Robe",
+            "image": "Eon_Scholar_Robe.png/16px-Eon_Scholar_Robe.png"
+          },
+          {
+            "name": "Eon Priest Robe",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Robe",
+            "image": "Eon_Priest_Robe.png/16px-Eon_Priest_Robe.png"
+          }
+        ]
       }
     ],
     "resources": [
@@ -18465,7 +19715,90 @@
       {
         "name": "Rocky",
         "wikiSlug": "Rocky",
-        "image": "Rocky.png/16px-Rocky.png"
+        "image": "Rocky.png/16px-Rocky.png",
+        "drops": [
+          {
+            "name": "Mystical Bow",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Bow",
+            "image": "Mystical_Bow.png/16px-Mystical_Bow.png"
+          },
+          {
+            "name": "Mystical Holy Arrow",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Holy_Arrow",
+            "image": "Mystical_Holy_Arrow.png/16px-Mystical_Holy_Arrow.png"
+          },
+          {
+            "name": "Mystical Magic Wand",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Magic_Wand",
+            "image": "Mystical_Magic_Wand.png/16px-Mystical_Magic_Wand.png"
+          },
+          {
+            "name": "Mystical Cross",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Cross"
+          },
+          {
+            "name": "Eon Hunter Cap",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Cap",
+            "image": "Eon_Hunter_Cap.png/16px-Eon_Hunter_Cap.png"
+          },
+          {
+            "name": "Mystical Armored Boots",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Armored_Boots",
+            "image": "Mystical_Armored_Boots.png/16px-Mystical_Armored_Boots.png"
+          },
+          {
+            "name": "Eon Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Shoes",
+            "image": "Eon_Priest_Shoes.png/16px-Eon_Priest_Shoes.png"
+          },
+          {
+            "name": "Eon Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Shoes",
+            "image": "Eon_Hunter_Shoes.png/16px-Eon_Hunter_Shoes.png"
+          },
+          {
+            "name": "Eon Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Eon_Scholar_Pants",
+            "image": "Eon_Scholar_Pants.png/16px-Eon_Scholar_Pants.png"
+          },
+          {
+            "name": "Eon Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Bottom"
+          },
+          {
+            "name": "Eon Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Pants",
+            "image": "Eon_Hunter_Pants.png/16px-Eon_Hunter_Pants.png"
+          },
+          {
+            "name": "Red Scholar Robe",
+            "dropRate": 0.05,
+            "wikiSlug": "Red_Scholar_Robe"
+          },
+          {
+            "name": "Eon Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Eon_Scholar_Robe",
+            "image": "Eon_Scholar_Robe.png/16px-Eon_Scholar_Robe.png"
+          },
+          {
+            "name": "Eon Priest Robe",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Robe",
+            "image": "Eon_Priest_Robe.png/16px-Eon_Priest_Robe.png"
+          }
+        ]
       }
     ],
     "resources": [
@@ -18534,7 +19867,68 @@
         "name": "Cat Guardian",
         "wikiSlug": "Cat_Guardian",
         "image": "Cat_Guardian.png/16px-Cat_Guardian.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Dull Ghostly Essence",
+            "dropRate": 45.0,
+            "wikiSlug": "Dull_Ghostly_Essence",
+            "image": "Dull_Ghostly_Essence.png/16px-Dull_Ghostly_Essence.png"
+          },
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 17.14,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Mystical Orb",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Orb"
+          },
+          {
+            "name": "Star Bounding Ring",
+            "dropRate": null,
+            "wikiSlug": "Star_Bounding_Ring"
+          },
+          {
+            "name": "Arcane Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Hood",
+            "image": "Arcane_Priest_Hood.png/16px-Arcane_Priest_Hood.png"
+          },
+          {
+            "name": "Arcane Shield",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Shield"
+          },
+          {
+            "name": "Arcane Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Leg_Plate"
+          },
+          {
+            "name": "Arcane Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Hat",
+            "image": "Arcane_Scholar_Hat.png/16px-Arcane_Scholar_Hat.png"
+          },
+          {
+            "name": "Arcane Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Shoes",
+            "image": "Arcane_Hunter_Shoes.png/16px-Arcane_Hunter_Shoes.png"
+          },
+          {
+            "name": "Arcane Cross",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Cross",
+            "image": "Arcane_Cross.png/16px-Arcane_Cross.png"
+          },
+          {
+            "name": "Arcane Holy Arrow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Holy_Arrow"
+          }
+        ]
       }
     ],
     "resources": [
@@ -18705,7 +20099,68 @@
         "name": "Cat Guardian",
         "wikiSlug": "Cat_Guardian",
         "image": "Cat_Guardian.png/16px-Cat_Guardian.png",
-        "drops": []
+        "drops": [
+          {
+            "name": "Dull Ghostly Essence",
+            "dropRate": 45.0,
+            "wikiSlug": "Dull_Ghostly_Essence",
+            "image": "Dull_Ghostly_Essence.png/16px-Dull_Ghostly_Essence.png"
+          },
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 17.14,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Mystical Orb",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Orb"
+          },
+          {
+            "name": "Star Bounding Ring",
+            "dropRate": null,
+            "wikiSlug": "Star_Bounding_Ring"
+          },
+          {
+            "name": "Arcane Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Hood",
+            "image": "Arcane_Priest_Hood.png/16px-Arcane_Priest_Hood.png"
+          },
+          {
+            "name": "Arcane Shield",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Shield"
+          },
+          {
+            "name": "Arcane Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Leg_Plate"
+          },
+          {
+            "name": "Arcane Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Hat",
+            "image": "Arcane_Scholar_Hat.png/16px-Arcane_Scholar_Hat.png"
+          },
+          {
+            "name": "Arcane Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Shoes",
+            "image": "Arcane_Hunter_Shoes.png/16px-Arcane_Hunter_Shoes.png"
+          },
+          {
+            "name": "Arcane Cross",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Cross",
+            "image": "Arcane_Cross.png/16px-Arcane_Cross.png"
+          },
+          {
+            "name": "Arcane Holy Arrow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Holy_Arrow"
+          }
+        ]
       }
     ],
     "resources": [
@@ -18891,7 +20346,83 @@
       {
         "name": "Snowball",
         "wikiSlug": "Snowball",
-        "image": "Snowball.png/16px-Snowball.png"
+        "image": "Snowball.png/16px-Snowball.png",
+        "drops": [
+          {
+            "name": "Dull Raging Essence",
+            "dropRate": 40.0,
+            "wikiSlug": "Dull_Raging_Essence",
+            "image": "Dull_Raging_Essence.png/16px-Dull_Raging_Essence.png"
+          },
+          {
+            "name": "Raging Essence",
+            "dropRate": 15.24,
+            "wikiSlug": "Raging_Essence",
+            "image": "Raging_Essence.png/16px-Raging_Essence.png"
+          },
+          {
+            "name": "Sharp Focus",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Focus",
+            "image": "Sharp_Focus.png/16px-Sharp_Focus.png"
+          },
+          {
+            "name": "Sharp Magic Wand",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Magic_Wand",
+            "image": "Sharp_Magic_Wand.png/16px-Sharp_Magic_Wand.png"
+          },
+          {
+            "name": "Dreamcatcher Ring",
+            "dropRate": null,
+            "wikiSlug": "Dreamcatcher_Ring"
+          },
+          {
+            "name": "Radiant Helmet",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Helmet"
+          },
+          {
+            "name": "Red Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Red_Hunter_Robe"
+          },
+          {
+            "name": "Radiant Orb",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Orb"
+          },
+          {
+            "name": "Red Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Red_Scholar_Pants",
+            "image": "Red_Scholar_Pants.png/16px-Red_Scholar_Pants.png"
+          },
+          {
+            "name": "Red Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Red_Priest_Hood",
+            "image": "Red_Priest_Hood.png/16px-Red_Priest_Hood.png"
+          },
+          {
+            "name": "Radiant Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Chest_Plate",
+            "image": "Radiant_Chest_Plate.png/16px-Radiant_Chest_Plate.png"
+          },
+          {
+            "name": "Radiant Kunai",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Kunai",
+            "image": "Radiant_Kunai.png/16px-Radiant_Kunai.png"
+          },
+          {
+            "name": "Radiant Sword",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sword",
+            "image": "Radiant_Sword.png/16px-Radiant_Sword.png"
+          }
+        ]
       }
     ],
     "resources": [
@@ -18959,7 +20490,83 @@
       {
         "name": "Snowball",
         "wikiSlug": "Snowball",
-        "image": "Snowball.png/16px-Snowball.png"
+        "image": "Snowball.png/16px-Snowball.png",
+        "drops": [
+          {
+            "name": "Dull Raging Essence",
+            "dropRate": 40.0,
+            "wikiSlug": "Dull_Raging_Essence",
+            "image": "Dull_Raging_Essence.png/16px-Dull_Raging_Essence.png"
+          },
+          {
+            "name": "Raging Essence",
+            "dropRate": 15.24,
+            "wikiSlug": "Raging_Essence",
+            "image": "Raging_Essence.png/16px-Raging_Essence.png"
+          },
+          {
+            "name": "Sharp Focus",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Focus",
+            "image": "Sharp_Focus.png/16px-Sharp_Focus.png"
+          },
+          {
+            "name": "Sharp Magic Wand",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Magic_Wand",
+            "image": "Sharp_Magic_Wand.png/16px-Sharp_Magic_Wand.png"
+          },
+          {
+            "name": "Dreamcatcher Ring",
+            "dropRate": null,
+            "wikiSlug": "Dreamcatcher_Ring"
+          },
+          {
+            "name": "Radiant Helmet",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Helmet"
+          },
+          {
+            "name": "Red Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Red_Hunter_Robe"
+          },
+          {
+            "name": "Radiant Orb",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Orb"
+          },
+          {
+            "name": "Red Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Red_Scholar_Pants",
+            "image": "Red_Scholar_Pants.png/16px-Red_Scholar_Pants.png"
+          },
+          {
+            "name": "Red Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Red_Priest_Hood",
+            "image": "Red_Priest_Hood.png/16px-Red_Priest_Hood.png"
+          },
+          {
+            "name": "Radiant Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Chest_Plate",
+            "image": "Radiant_Chest_Plate.png/16px-Radiant_Chest_Plate.png"
+          },
+          {
+            "name": "Radiant Kunai",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Kunai",
+            "image": "Radiant_Kunai.png/16px-Radiant_Kunai.png"
+          },
+          {
+            "name": "Radiant Sword",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sword",
+            "image": "Radiant_Sword.png/16px-Radiant_Sword.png"
+          }
+        ]
       },
       {
         "name": "Blizzy",
@@ -19573,7 +21180,83 @@
       {
         "name": "Snowball",
         "wikiSlug": "Snowball",
-        "image": "Snowball.png/16px-Snowball.png"
+        "image": "Snowball.png/16px-Snowball.png",
+        "drops": [
+          {
+            "name": "Dull Raging Essence",
+            "dropRate": 40.0,
+            "wikiSlug": "Dull_Raging_Essence",
+            "image": "Dull_Raging_Essence.png/16px-Dull_Raging_Essence.png"
+          },
+          {
+            "name": "Raging Essence",
+            "dropRate": 15.24,
+            "wikiSlug": "Raging_Essence",
+            "image": "Raging_Essence.png/16px-Raging_Essence.png"
+          },
+          {
+            "name": "Sharp Focus",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Focus",
+            "image": "Sharp_Focus.png/16px-Sharp_Focus.png"
+          },
+          {
+            "name": "Sharp Magic Wand",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Magic_Wand",
+            "image": "Sharp_Magic_Wand.png/16px-Sharp_Magic_Wand.png"
+          },
+          {
+            "name": "Dreamcatcher Ring",
+            "dropRate": null,
+            "wikiSlug": "Dreamcatcher_Ring"
+          },
+          {
+            "name": "Radiant Helmet",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Helmet"
+          },
+          {
+            "name": "Red Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Red_Hunter_Robe"
+          },
+          {
+            "name": "Radiant Orb",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Orb"
+          },
+          {
+            "name": "Red Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Red_Scholar_Pants",
+            "image": "Red_Scholar_Pants.png/16px-Red_Scholar_Pants.png"
+          },
+          {
+            "name": "Red Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Red_Priest_Hood",
+            "image": "Red_Priest_Hood.png/16px-Red_Priest_Hood.png"
+          },
+          {
+            "name": "Radiant Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Chest_Plate",
+            "image": "Radiant_Chest_Plate.png/16px-Radiant_Chest_Plate.png"
+          },
+          {
+            "name": "Radiant Kunai",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Kunai",
+            "image": "Radiant_Kunai.png/16px-Radiant_Kunai.png"
+          },
+          {
+            "name": "Radiant Sword",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sword",
+            "image": "Radiant_Sword.png/16px-Radiant_Sword.png"
+          }
+        ]
       },
       {
         "name": "Blizzy",
@@ -20883,10 +22566,172 @@
     "level": "21",
     "monsters": [
       {
-        "name": "Banshek"
+        "name": "Banshek",
+        "drops": [
+          {
+            "name": "Dull Ghostly Essence",
+            "dropRate": 30.0,
+            "wikiSlug": "Dull_Ghostly_Essence",
+            "image": "Dull_Ghostly_Essence.png/16px-Dull_Ghostly_Essence.png"
+          },
+          {
+            "name": "Banana",
+            "dropRate": 1.0,
+            "wikiSlug": "Banana",
+            "image": "Banana.png/16px-Banana.png"
+          },
+          {
+            "name": "Cursed Flame",
+            "dropRate": 0.67,
+            "wikiSlug": "Cursed_Flame",
+            "image": "Cursed_Flame.png/16px-Cursed_Flame.png"
+          },
+          {
+            "name": "Quartz Kunai",
+            "dropRate": 0.51,
+            "wikiSlug": "Quartz_Kunai",
+            "image": "Quartz_Kunai.png/16px-Quartz_Kunai.png"
+          },
+          {
+            "name": "Glowing Hunter Cap",
+            "dropRate": 0.02,
+            "wikiSlug": "Glowing_Hunter_Cap",
+            "image": "Glowing_Hunter_Cap.png/16px-Glowing_Hunter_Cap.png"
+          },
+          {
+            "name": "Horns",
+            "dropRate": 0.02,
+            "image": "Horns.png/16px-Horns.png"
+          },
+          {
+            "name": "Petrified Helmet",
+            "dropRate": 0.02,
+            "wikiSlug": "Petrified_Helmet",
+            "image": "Petrified_Helmet.png/16px-Petrified_Helmet.png"
+          },
+          {
+            "name": "Glowing Priest Robe",
+            "dropRate": 0.02,
+            "wikiSlug": "Glowing_Priest_Robe",
+            "image": "Glowing_Priest_Robe.png/16px-Glowing_Priest_Robe.png"
+          },
+          {
+            "name": "Glowing Scholar Pants",
+            "dropRate": 0.02,
+            "wikiSlug": "Glowing_Scholar_Pants",
+            "image": "Glowing_Scholar_Pants.png/16px-Glowing_Scholar_Pants.png"
+          },
+          {
+            "name": "Rain Cloud",
+            "dropRate": 0.02,
+            "image": "Rain_Cloud.png/16px-Rain_Cloud.png"
+          },
+          {
+            "name": "Glowing Hunter Shoes",
+            "dropRate": 0.02,
+            "wikiSlug": "Glowing_Hunter_Shoes",
+            "image": "Glowing_Hunter_Shoes.png/16px-Glowing_Hunter_Shoes.png"
+          },
+          {
+            "name": "Petrified Chest Plate",
+            "dropRate": 0.02,
+            "wikiSlug": "Petrified_Chest_Plate",
+            "image": "Petrified_Chest_Plate.png/16px-Petrified_Chest_Plate.png"
+          },
+          {
+            "name": "Petrified Kunai",
+            "dropRate": 0.02,
+            "wikiSlug": "Petrified_Kunai",
+            "image": "Petrified_Kunai.png/16px-Petrified_Kunai.png"
+          }
+        ],
+        "image": "Banshek.png/24px-Banshek.png",
+        "wikiSlug": "Banshek"
       },
       {
-        "name": "Lampshroom"
+        "name": "Lampshroom",
+        "drops": [
+          {
+            "name": "Dull Life Essence",
+            "dropRate": 25.0,
+            "wikiSlug": "Dull_Life_Essence",
+            "image": "Dull_Life_Essence.png/16px-Dull_Life_Essence.png"
+          },
+          {
+            "name": "Eternal Flame",
+            "dropRate": 1.49,
+            "wikiSlug": "Eternal_Flame",
+            "image": "Eternal_Flame.png/16px-Eternal_Flame.png"
+          },
+          {
+            "name": "Iron Ring",
+            "dropRate": 0.16,
+            "wikiSlug": "Iron_Ring",
+            "image": "Iron_Ring.png/16px-Iron_Ring.png"
+          },
+          {
+            "name": "Quartz Focus",
+            "dropRate": 0.16,
+            "wikiSlug": "Quartz_Focus",
+            "image": "Quartz_Focus.png/16px-Quartz_Focus.png"
+          },
+          {
+            "name": "Quartz Orb",
+            "dropRate": 0.16,
+            "wikiSlug": "Quartz_Orb",
+            "image": "Quartz_Orb.png/16px-Quartz_Orb.png"
+          },
+          {
+            "name": "Petrified Ring",
+            "dropRate": 0.04,
+            "wikiSlug": "Petrified_Ring",
+            "image": "Petrified_Ring.png/16px-Petrified_Ring.png"
+          },
+          {
+            "name": "Yellow Hunter Shoes",
+            "dropRate": 0.04,
+            "wikiSlug": "Yellow_Hunter_Shoes",
+            "image": "Yellow_Hunter_Shoes.png/16px-Yellow_Hunter_Shoes.png"
+          },
+          {
+            "name": "Iron Chest Plate",
+            "dropRate": 0.04,
+            "wikiSlug": "Iron_Chest_Plate",
+            "image": "Iron_Chest_Plate.png/16px-Iron_Chest_Plate.png"
+          },
+          {
+            "name": "Yellow Priest Robe",
+            "dropRate": 0.04,
+            "wikiSlug": "Yellow_Priest_Robe",
+            "image": "Yellow_Priest_Robe.png/16px-Yellow_Priest_Robe.png"
+          },
+          {
+            "name": "Yellow Scholar Robe",
+            "dropRate": 0.04,
+            "wikiSlug": "Yellow_Scholar_Robe",
+            "image": "Yellow_Scholar_Robe.png/16px-Yellow_Scholar_Robe.png"
+          },
+          {
+            "name": "Iron Holy Arrow",
+            "dropRate": 0.04,
+            "wikiSlug": "Iron_Holy_Arrow",
+            "image": "Iron_Holy_Arrow.png/16px-Iron_Holy_Arrow.png"
+          },
+          {
+            "name": "Iron Orb",
+            "dropRate": 0.04,
+            "wikiSlug": "Iron_Orb",
+            "image": "Iron_Orb.png/16px-Iron_Orb.png"
+          },
+          {
+            "name": "Spiky Shell",
+            "dropRate": 0.04,
+            "wikiSlug": "Spiky_Shell",
+            "image": "Spiky_Shell.png/16px-Spiky_Shell.png"
+          }
+        ],
+        "image": "Lampshroom.png/24px-Lampshroom.png",
+        "wikiSlug": "Lampshroom"
       }
     ],
     "resources": [
@@ -20925,13 +22770,115 @@
     "level": "30",
     "monsters": [
       {
-        "name": "Dark Matter"
+        "name": "Dark Matter",
+        "drops": [
+          {
+            "name": "Dull Metal Essence",
+            "dropRate": 21.88,
+            "wikiSlug": "Dull_Metal_Essence",
+            "image": "Dull_Metal_Essence.png/16px-Dull_Metal_Essence.png"
+          },
+          {
+            "name": "Metal Essence",
+            "dropRate": 8.33,
+            "image": "Metal_Essence.png/16px-Metal_Essence.png"
+          },
+          {
+            "name": "Pretty Flower",
+            "dropRate": 0.28,
+            "image": "Pretty_Flower.png/16px-Pretty_Flower.png"
+          },
+          {
+            "name": "Fern Priest Bottom",
+            "dropRate": 0.01,
+            "wikiSlug": "Fern_Priest_Bottom",
+            "image": "Fern_Priest_Bottom.png/16px-Fern_Priest_Bottom.png"
+          },
+          {
+            "name": "Eerie Bow",
+            "dropRate": 0.01,
+            "wikiSlug": "Eerie_Bow",
+            "image": "Eerie_Bow.png/16px-Eerie_Bow.png"
+          },
+          {
+            "name": "Eerie Leg Plate",
+            "dropRate": 0.01,
+            "wikiSlug": "Eerie_Leg_Plate",
+            "image": "Eerie_Leg_Plate.png/16px-Eerie_Leg_Plate.png"
+          },
+          {
+            "name": "Eerie Helmet",
+            "dropRate": 0.01,
+            "wikiSlug": "Eerie_Helmet",
+            "image": "Eerie_Helmet.png/16px-Eerie_Helmet.png"
+          },
+          {
+            "name": "Fern Hunter Cap",
+            "dropRate": 0.01,
+            "wikiSlug": "Fern_Hunter_Cap",
+            "image": "Fern_Hunter_Cap.png/16px-Fern_Hunter_Cap.png"
+          },
+          {
+            "name": "Fern Scholar Hat",
+            "dropRate": 0.01,
+            "wikiSlug": "Fern_Scholar_Hat",
+            "image": "Fern_Scholar_Hat.png/16px-Fern_Scholar_Hat.png"
+          },
+          {
+            "name": "Fern Scholar Shoes",
+            "dropRate": 0.01,
+            "wikiSlug": "Fern_Scholar_Shoes",
+            "image": "Fern_Scholar_Shoes.png/16px-Fern_Scholar_Shoes.png"
+          },
+          {
+            "name": "Eerie Shield",
+            "dropRate": 0.01,
+            "wikiSlug": "Eerie_Shield",
+            "image": "Eerie_Shield.png/16px-Eerie_Shield.png"
+          }
+        ],
+        "image": "Dark_Matter.png/24px-Dark_Matter.png",
+        "wikiSlug": "Dark_Matter"
       },
       {
-        "name": "Mangosteen Slime"
+        "name": "Mangosteen Slime",
+        "image": "Mangosteen_Slime.png/24px-Mangosteen_Slime.png",
+        "wikiSlug": "Mangosteen_Slime"
       },
       {
-        "name": "Shadow Sprite"
+        "name": "Shadow Sprite",
+        "drops": [
+          {
+            "name": "Soul Crystal",
+            "dropRate": null,
+            "wikiSlug": "Soul_Crystal",
+            "image": "Soul_Crystal.png/16px-Soul_Crystal.png"
+          },
+          {
+            "name": "Dark Essence",
+            "dropRate": 1.0,
+            "wikiSlug": "Dark_Essence",
+            "image": "Dark_Essence.png/16px-Dark_Essence.png"
+          },
+          {
+            "name": "Pumpkin",
+            "dropRate": 1.0,
+            "wikiSlug": "Pumpkin",
+            "image": "Pumpkin.png/16px-Pumpkin.png"
+          },
+          {
+            "name": "Great Mana Potion (recipe)",
+            "dropRate": 0.17,
+            "wikiSlug": "Great_Mana_Potion"
+          },
+          {
+            "name": "Pumpkin Pie (recipe)",
+            "dropRate": 0.15,
+            "wikiSlug": "Pumpkin_Pie"
+          }
+        ],
+        "image": "Shadow_Sprite.png/24px-Shadow_Sprite.png",
+        "wikiSlug": "Shadow_Sprite"
       }
     ],
     "resources": [
@@ -20958,10 +22905,110 @@
     "level": "33",
     "monsters": [
       {
-        "name": "Dark Matter"
+        "name": "Dark Matter",
+        "drops": [
+          {
+            "name": "Dull Metal Essence",
+            "dropRate": 21.88,
+            "wikiSlug": "Dull_Metal_Essence",
+            "image": "Dull_Metal_Essence.png/16px-Dull_Metal_Essence.png"
+          },
+          {
+            "name": "Metal Essence",
+            "dropRate": 8.33,
+            "image": "Metal_Essence.png/16px-Metal_Essence.png"
+          },
+          {
+            "name": "Pretty Flower",
+            "dropRate": 0.28,
+            "image": "Pretty_Flower.png/16px-Pretty_Flower.png"
+          },
+          {
+            "name": "Fern Priest Bottom",
+            "dropRate": 0.01,
+            "wikiSlug": "Fern_Priest_Bottom",
+            "image": "Fern_Priest_Bottom.png/16px-Fern_Priest_Bottom.png"
+          },
+          {
+            "name": "Eerie Bow",
+            "dropRate": 0.01,
+            "wikiSlug": "Eerie_Bow",
+            "image": "Eerie_Bow.png/16px-Eerie_Bow.png"
+          },
+          {
+            "name": "Eerie Leg Plate",
+            "dropRate": 0.01,
+            "wikiSlug": "Eerie_Leg_Plate",
+            "image": "Eerie_Leg_Plate.png/16px-Eerie_Leg_Plate.png"
+          },
+          {
+            "name": "Eerie Helmet",
+            "dropRate": 0.01,
+            "wikiSlug": "Eerie_Helmet",
+            "image": "Eerie_Helmet.png/16px-Eerie_Helmet.png"
+          },
+          {
+            "name": "Fern Hunter Cap",
+            "dropRate": 0.01,
+            "wikiSlug": "Fern_Hunter_Cap",
+            "image": "Fern_Hunter_Cap.png/16px-Fern_Hunter_Cap.png"
+          },
+          {
+            "name": "Fern Scholar Hat",
+            "dropRate": 0.01,
+            "wikiSlug": "Fern_Scholar_Hat",
+            "image": "Fern_Scholar_Hat.png/16px-Fern_Scholar_Hat.png"
+          },
+          {
+            "name": "Fern Scholar Shoes",
+            "dropRate": 0.01,
+            "wikiSlug": "Fern_Scholar_Shoes",
+            "image": "Fern_Scholar_Shoes.png/16px-Fern_Scholar_Shoes.png"
+          },
+          {
+            "name": "Eerie Shield",
+            "dropRate": 0.01,
+            "wikiSlug": "Eerie_Shield",
+            "image": "Eerie_Shield.png/16px-Eerie_Shield.png"
+          }
+        ],
+        "image": "Dark_Matter.png/24px-Dark_Matter.png",
+        "wikiSlug": "Dark_Matter"
       },
       {
-        "name": "Shadow Sprite"
+        "name": "Shadow Sprite",
+        "drops": [
+          {
+            "name": "Soul Crystal",
+            "dropRate": null,
+            "wikiSlug": "Soul_Crystal",
+            "image": "Soul_Crystal.png/16px-Soul_Crystal.png"
+          },
+          {
+            "name": "Dark Essence",
+            "dropRate": 1.0,
+            "wikiSlug": "Dark_Essence",
+            "image": "Dark_Essence.png/16px-Dark_Essence.png"
+          },
+          {
+            "name": "Pumpkin",
+            "dropRate": 1.0,
+            "wikiSlug": "Pumpkin",
+            "image": "Pumpkin.png/16px-Pumpkin.png"
+          },
+          {
+            "name": "Great Mana Potion (recipe)",
+            "dropRate": 0.17,
+            "wikiSlug": "Great_Mana_Potion"
+          },
+          {
+            "name": "Pumpkin Pie (recipe)",
+            "dropRate": 0.15,
+            "wikiSlug": "Pumpkin_Pie"
+          }
+        ],
+        "image": "Shadow_Sprite.png/24px-Shadow_Sprite.png",
+        "wikiSlug": "Shadow_Sprite"
       }
     ],
     "resources": [
@@ -20988,13 +23035,168 @@
     "level": "40",
     "monsters": [
       {
-        "name": "Shadow Sprite"
+        "name": "Shadow Sprite",
+        "drops": [
+          {
+            "name": "Soul Crystal",
+            "dropRate": null,
+            "wikiSlug": "Soul_Crystal",
+            "image": "Soul_Crystal.png/16px-Soul_Crystal.png"
+          },
+          {
+            "name": "Dark Essence",
+            "dropRate": 1.0,
+            "wikiSlug": "Dark_Essence",
+            "image": "Dark_Essence.png/16px-Dark_Essence.png"
+          },
+          {
+            "name": "Pumpkin",
+            "dropRate": 1.0,
+            "wikiSlug": "Pumpkin",
+            "image": "Pumpkin.png/16px-Pumpkin.png"
+          },
+          {
+            "name": "Great Mana Potion (recipe)",
+            "dropRate": 0.17,
+            "wikiSlug": "Great_Mana_Potion"
+          },
+          {
+            "name": "Pumpkin Pie (recipe)",
+            "dropRate": 0.15,
+            "wikiSlug": "Pumpkin_Pie"
+          }
+        ],
+        "image": "Shadow_Sprite.png/24px-Shadow_Sprite.png",
+        "wikiSlug": "Shadow_Sprite"
       },
       {
-        "name": "Elemental"
+        "name": "Elemental",
+        "drops": [
+          {
+            "name": "Soul Crystal",
+            "dropRate": null,
+            "wikiSlug": "Soul_Crystal",
+            "image": "Soul_Crystal.png/16px-Soul_Crystal.png"
+          },
+          {
+            "name": "Elemental Shard",
+            "dropRate": 10.0,
+            "wikiSlug": "Elemental_Shard"
+          },
+          {
+            "name": "Red Shard",
+            "dropRate": 4.0,
+            "wikiSlug": "Red_Shard",
+            "image": "Red_Shard.png/16px-Red_Shard.png"
+          },
+          {
+            "name": "Blue Shard",
+            "dropRate": 4.0,
+            "wikiSlug": "Blue_Shard",
+            "image": "Blue_Shard.png/16px-Blue_Shard.png"
+          },
+          {
+            "name": "Yellow Shard",
+            "dropRate": 4.0,
+            "wikiSlug": "Yellow_Shard",
+            "image": "Yellow_Shard.png/16px-Yellow_Shard.png"
+          },
+          {
+            "name": "Red Upgrade Gem (+3 INT)",
+            "dropRate": 0.2,
+            "wikiSlug": "Red_Upgrade_Gem"
+          },
+          {
+            "name": "Chaotic Warp Crystal (recipe)",
+            "dropRate": 0.29,
+            "wikiSlug": "Chaotic_Warp_Crystal"
+          },
+          {
+            "name": "Mana Potion (recipe)",
+            "dropRate": 0.29,
+            "wikiSlug": "Mana_Potion"
+          },
+          {
+            "name": "Red Upgrade Gem (+3 SPR)",
+            "dropRate": 0.2,
+            "wikiSlug": "Red_Upgrade_Gem"
+          }
+        ],
+        "image": "Elemental.png/24px-Elemental.png",
+        "wikiSlug": "Elemental"
       },
       {
-        "name": "Dark Mass"
+        "name": "Dark Mass",
+        "drops": [
+          {
+            "name": "Dull Eternal Essence",
+            "dropRate": 28.13,
+            "wikiSlug": "Dull_Eternal_Essence",
+            "image": "Dull_Eternal_Essence.png/16px-Dull_Eternal_Essence.png"
+          },
+          {
+            "name": "Eternal Essence",
+            "dropRate": 10.71,
+            "wikiSlug": "Eternal_Essence",
+            "image": "Eternal_Essence.png/16px-Eternal_Essence.png"
+          },
+          {
+            "name": "Ring of Power",
+            "dropRate": 0.01,
+            "wikiSlug": "Ring_of_Power",
+            "image": "Ring_of_Power.png/16px-Ring_of_Power.png"
+          },
+          {
+            "name": "Coral Priest Bottom",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Priest_Bottom",
+            "image": "Coral_Priest_Bottom.png/16px-Coral_Priest_Bottom.png"
+          },
+          {
+            "name": "Deep Leg Plate",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Leg_Plate",
+            "image": "Deep_Leg_Plate.png/16px-Deep_Leg_Plate.png"
+          },
+          {
+            "name": "Deep Chest Plate",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Chest_Plate",
+            "image": "Deep_Chest_Plate.png/16px-Deep_Chest_Plate.png"
+          },
+          {
+            "name": "Ring of Magic",
+            "dropRate": 0.01,
+            "wikiSlug": "Ring_of_Magic",
+            "image": "Ring_of_Magic.png/16px-Ring_of_Magic.png"
+          },
+          {
+            "name": "Deep Helmet",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Helmet",
+            "image": "Deep_Helmet.png/16px-Deep_Helmet.png"
+          },
+          {
+            "name": "Coral Priest Shoes",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Priest_Shoes",
+            "image": "Coral_Priest_Shoes.png/16px-Coral_Priest_Shoes.png"
+          },
+          {
+            "name": "Coral Scholar Robe",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Scholar_Robe",
+            "image": "Coral_Scholar_Robe.png/16px-Coral_Scholar_Robe.png"
+          },
+          {
+            "name": "Deep Spellblade",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Spellblade",
+            "image": "Deep_Spellblade.png/16px-Deep_Spellblade.png"
+          }
+        ],
+        "image": "Dark_Mass.png/24px-Dark_Mass.png",
+        "wikiSlug": "Dark_Mass"
       }
     ],
     "resources": [
@@ -21038,7 +23240,9 @@
     "level": "90",
     "monsters": [
       {
-        "name": "Licka"
+        "name": "Licka",
+        "image": "Licka.png/24px-Licka.png",
+        "wikiSlug": "Licka"
       }
     ],
     "resources": []
@@ -21054,10 +23258,118 @@
     "level": "98",
     "monsters": [
       {
-        "name": "Lost Ruins"
+        "name": "Lost Ruins",
+        "drops": [
+          {
+            "name": "Metal Essence",
+            "dropRate": 11.9,
+            "image": "Metal_Essence.png/16px-Metal_Essence.png"
+          },
+          {
+            "name": "Radiant Metal Essence",
+            "dropRate": 7.94,
+            "image": "Radiant_Metal_Essence.png/16px-Radiant_Metal_Essence.png"
+          },
+          {
+            "name": "Rubble",
+            "dropRate": 6.67,
+            "wikiSlug": "Rubble",
+            "image": "Rubble.png/16px-Rubble.png"
+          },
+          {
+            "name": "Sturdy Rock",
+            "dropRate": 3.33,
+            "wikiSlug": "Sturdy_Rock",
+            "image": "Sturdy_Rock.png/16px-Sturdy_Rock.png"
+          },
+          {
+            "name": "Stone",
+            "dropRate": 2.5,
+            "wikiSlug": "Stone",
+            "image": "Stone.png/16px-Stone.png"
+          },
+          {
+            "name": "Iron Ore",
+            "dropRate": 1.0,
+            "wikiSlug": "Iron_Ore",
+            "image": "Iron_Ore.png/16px-Iron_Ore.png"
+          },
+          {
+            "name": "Iron Ingot",
+            "dropRate": 0.8,
+            "wikiSlug": "Iron_Ingot"
+          },
+          {
+            "name": "Vase",
+            "dropRate": 0.2
+          },
+          {
+            "name": "Raging Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Raging_Scholar_Hat"
+          },
+          {
+            "name": "Inverse Exchange",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Exchange",
+            "image": "Inverse_Exchange.png/16px-Inverse_Exchange.png"
+          },
+          {
+            "name": "Inverse Shooting Star",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Shooting_Star"
+          },
+          {
+            "name": "Inverse Sword of Heart",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Sword_of_Heart"
+          },
+          {
+            "name": "Obsidium Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Obsidium_Leg_Plate",
+            "image": "Obsidium_Leg_Plate.png/16px-Obsidium_Leg_Plate.png"
+          },
+          {
+            "name": "Raging Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Raging_Priest_Hood"
+          },
+          {
+            "name": "Obsidium Armored Boots",
+            "dropRate": null,
+            "wikiSlug": "Obsidium_Armored_Boots",
+            "image": "Obsidium_Armored_Boots.png/16px-Obsidium_Armored_Boots.png"
+          },
+          {
+            "name": "Raging Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Raging_Scholar_Shoes",
+            "image": "Raging_Scholar_Shoes.png/16px-Raging_Scholar_Shoes.png"
+          },
+          {
+            "name": "Raging Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Raging_Hunter_Robe"
+          },
+          {
+            "name": "Inverse Judgement",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Judgement",
+            "image": "Inverse_Judgement.png/16px-Inverse_Judgement.png"
+          },
+          {
+            "name": "Inverse Perseverance",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Perseverance"
+          }
+        ],
+        "image": "Lost_Ruins.png/24px-Lost_Ruins.png",
+        "wikiSlug": "Lost_Ruins"
       },
       {
-        "name": "Fallentree"
+        "name": "Fallentree",
+        "image": "Fallentree.png/24px-Fallentree.png"
       }
     ],
     "resources": [
@@ -21106,10 +23418,172 @@
     "level": "42",
     "monsters": [
       {
-        "name": "Death Mist"
+        "name": "Death Mist",
+        "drops": [
+          {
+            "name": "Dull Ghostly Essence",
+            "dropRate": 26.25,
+            "wikiSlug": "Dull_Ghostly_Essence",
+            "image": "Dull_Ghostly_Essence.png/16px-Dull_Ghostly_Essence.png"
+          },
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 10.0,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Dark Essence",
+            "dropRate": 2.0,
+            "wikiSlug": "Dark_Essence",
+            "image": "Dark_Essence.png/16px-Dark_Essence.png"
+          },
+          {
+            "name": "Candy Corn",
+            "dropRate": 0.4,
+            "wikiSlug": "Candy_Corn",
+            "image": "Candy_Corn.png/16px-Candy_Corn.png"
+          },
+          {
+            "name": "White Herb",
+            "dropRate": 0.2,
+            "wikiSlug": "White_Herb",
+            "image": "White_Herb.png/16px-White_Herb.png"
+          },
+          {
+            "name": "Darkshard",
+            "dropRate": 0.15,
+            "wikiSlug": "Darkshard"
+          },
+          {
+            "name": "Coral Hunter Pants",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Hunter_Pants",
+            "image": "Coral_Hunter_Pants.png/16px-Coral_Hunter_Pants.png"
+          },
+          {
+            "name": "Coral Hunter Cap",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Hunter_Cap",
+            "image": "Coral_Hunter_Cap.png/16px-Coral_Hunter_Cap.png"
+          },
+          {
+            "name": "Coral Priest Hood",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Priest_Hood",
+            "image": "Coral_Priest_Hood.png/16px-Coral_Priest_Hood.png"
+          },
+          {
+            "name": "Deep Cross",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Cross",
+            "image": "Deep_Cross.png/16px-Deep_Cross.png"
+          },
+          {
+            "name": "Coral Scholar Pants",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Scholar_Pants",
+            "image": "Coral_Scholar_Pants.png/16px-Coral_Scholar_Pants.png"
+          },
+          {
+            "name": "Deep Armored Boots",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Armored_Boots",
+            "image": "Deep_Armored_Boots.png/16px-Deep_Armored_Boots.png"
+          },
+          {
+            "name": "Deep Javelin",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Javelin",
+            "image": "Deep_Javelin.png/16px-Deep_Javelin.png"
+          },
+          {
+            "name": "Deep Orb",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Orb",
+            "image": "Deep_Orb.png/16px-Deep_Orb.png"
+          },
+          {
+            "name": "Deep Sword",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Sword",
+            "image": "Deep_Sword.png/16px-Deep_Sword.png"
+          }
+        ],
+        "image": "Death_Mist.png/24px-Death_Mist.png",
+        "wikiSlug": "Death_Mist"
       },
       {
-        "name": "Dark Mass"
+        "name": "Dark Mass",
+        "drops": [
+          {
+            "name": "Dull Eternal Essence",
+            "dropRate": 28.13,
+            "wikiSlug": "Dull_Eternal_Essence",
+            "image": "Dull_Eternal_Essence.png/16px-Dull_Eternal_Essence.png"
+          },
+          {
+            "name": "Eternal Essence",
+            "dropRate": 10.71,
+            "wikiSlug": "Eternal_Essence",
+            "image": "Eternal_Essence.png/16px-Eternal_Essence.png"
+          },
+          {
+            "name": "Ring of Power",
+            "dropRate": 0.01,
+            "wikiSlug": "Ring_of_Power",
+            "image": "Ring_of_Power.png/16px-Ring_of_Power.png"
+          },
+          {
+            "name": "Coral Priest Bottom",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Priest_Bottom",
+            "image": "Coral_Priest_Bottom.png/16px-Coral_Priest_Bottom.png"
+          },
+          {
+            "name": "Deep Leg Plate",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Leg_Plate",
+            "image": "Deep_Leg_Plate.png/16px-Deep_Leg_Plate.png"
+          },
+          {
+            "name": "Deep Chest Plate",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Chest_Plate",
+            "image": "Deep_Chest_Plate.png/16px-Deep_Chest_Plate.png"
+          },
+          {
+            "name": "Ring of Magic",
+            "dropRate": 0.01,
+            "wikiSlug": "Ring_of_Magic",
+            "image": "Ring_of_Magic.png/16px-Ring_of_Magic.png"
+          },
+          {
+            "name": "Deep Helmet",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Helmet",
+            "image": "Deep_Helmet.png/16px-Deep_Helmet.png"
+          },
+          {
+            "name": "Coral Priest Shoes",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Priest_Shoes",
+            "image": "Coral_Priest_Shoes.png/16px-Coral_Priest_Shoes.png"
+          },
+          {
+            "name": "Coral Scholar Robe",
+            "dropRate": 0.01,
+            "wikiSlug": "Coral_Scholar_Robe",
+            "image": "Coral_Scholar_Robe.png/16px-Coral_Scholar_Robe.png"
+          },
+          {
+            "name": "Deep Spellblade",
+            "dropRate": 0.01,
+            "wikiSlug": "Deep_Spellblade",
+            "image": "Deep_Spellblade.png/16px-Deep_Spellblade.png"
+          }
+        ],
+        "image": "Dark_Mass.png/24px-Dark_Mass.png",
+        "wikiSlug": "Dark_Mass"
       }
     ],
     "resources": [
@@ -21141,10 +23615,108 @@
     "level": "62",
     "monsters": [
       {
-        "name": "Cursed Spot"
+        "name": "Cursed Spot",
+        "image": "Cursed_Spot.png/24px-Cursed_Spot.png",
+        "wikiSlug": "Cursed_Spot"
       },
       {
-        "name": "Cursed Slibbit"
+        "name": "Cursed Slibbit",
+        "drops": [
+          {
+            "name": "Dull Historic Essence",
+            "dropRate": 36.88,
+            "wikiSlug": "Dull_Historic_Essence",
+            "image": "Dull_Historic_Essence.png/16px-Dull_Historic_Essence.png"
+          },
+          {
+            "name": "Historic Essence",
+            "dropRate": 14.05,
+            "wikiSlug": "Historic_Essence",
+            "image": "Historic_Essence.png/16px-Historic_Essence.png"
+          },
+          {
+            "name": "Cursed Flame",
+            "dropRate": 0.83,
+            "wikiSlug": "Cursed_Flame",
+            "image": "Cursed_Flame.png/16px-Cursed_Flame.png"
+          },
+          {
+            "name": "Repressive Sword",
+            "dropRate": 0.09,
+            "wikiSlug": "Repressive_Sword",
+            "image": "Repressive_Sword.png/16px-Repressive_Sword.png"
+          },
+          {
+            "name": "Ice Scholar Shoes",
+            "dropRate": 0.01,
+            "wikiSlug": "Ice_Scholar_Shoes",
+            "image": "Ice_Scholar_Shoes.png/16px-Ice_Scholar_Shoes.png"
+          },
+          {
+            "name": "Sharp Javelin",
+            "dropRate": 0.01,
+            "wikiSlug": "Sharp_Javelin",
+            "image": "Sharp_Javelin.png/16px-Sharp_Javelin.png"
+          },
+          {
+            "name": "Sharp Chest Plate",
+            "dropRate": 0.01,
+            "wikiSlug": "Sharp_Chest_Plate",
+            "image": "Sharp_Chest_Plate.png/16px-Sharp_Chest_Plate.png"
+          },
+          {
+            "name": "Sharp Sword",
+            "dropRate": 0.01,
+            "wikiSlug": "Sharp_Sword",
+            "image": "Sharp_Sword.png/16px-Sharp_Sword.png"
+          },
+          {
+            "name": "Red Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Red_Hunter_Pants",
+            "image": "Red_Hunter_Pants.png/16px-Red_Hunter_Pants.png"
+          },
+          {
+            "name": "Red Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Red_Priest_Bottom"
+          },
+          {
+            "name": "Red Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Red_Priest_Shoes",
+            "image": "Red_Priest_Shoes.png/16px-Red_Priest_Shoes.png"
+          },
+          {
+            "name": "Radiant Bow",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Bow"
+          },
+          {
+            "name": "Radiant Focus",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Focus",
+            "image": "Radiant_Focus.png/16px-Radiant_Focus.png"
+          },
+          {
+            "name": "Radiant Javelin",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Javelin"
+          },
+          {
+            "name": "Radiant Magic Wand",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Magic_Wand",
+            "image": "Radiant_Magic_Wand.png/16px-Radiant_Magic_Wand.png"
+          },
+          {
+            "name": "Radiant Spellblade",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Spellblade"
+          }
+        ],
+        "image": "Cursed_Slibbit.png/24px-Cursed_Slibbit.png",
+        "wikiSlug": "Cursed_Slibbit"
       }
     ],
     "resources": [
@@ -21176,10 +23748,99 @@
     "level": "65",
     "monsters": [
       {
-        "name": "Licku"
+        "name": "Licku",
+        "drops": [
+          {
+            "name": "Dull Ghostly Essence",
+            "dropRate": 41.25,
+            "wikiSlug": "Dull_Ghostly_Essence",
+            "image": "Dull_Ghostly_Essence.png/16px-Dull_Ghostly_Essence.png"
+          },
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 15.71,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Cursed Flame",
+            "dropRate": 1.0,
+            "wikiSlug": "Cursed_Flame",
+            "image": "Cursed_Flame.png/16px-Cursed_Flame.png"
+          },
+          {
+            "name": "Barrel",
+            "dropRate": 0.2
+          },
+          {
+            "name": "Red Scholar Hat",
+            "dropRate": 0.05,
+            "wikiSlug": "Red_Scholar_Hat"
+          },
+          {
+            "name": "Sharp Helmet",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Helmet",
+            "image": "Sharp_Helmet.png/16px-Sharp_Helmet.png"
+          },
+          {
+            "name": "Sharp Orb",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Orb",
+            "image": "Sharp_Orb.png/16px-Sharp_Orb.png"
+          },
+          {
+            "name": "Eon Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Pants",
+            "image": "Eon_Hunter_Pants.png/16px-Eon_Hunter_Pants.png"
+          },
+          {
+            "name": "Eon Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Bottom"
+          },
+          {
+            "name": "Eon Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Shoes",
+            "image": "Eon_Priest_Shoes.png/16px-Eon_Priest_Shoes.png"
+          },
+          {
+            "name": "Eon Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Eon_Scholar_Robe",
+            "image": "Eon_Scholar_Robe.png/16px-Eon_Scholar_Robe.png"
+          },
+          {
+            "name": "Mystical Bow",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Bow",
+            "image": "Mystical_Bow.png/16px-Mystical_Bow.png"
+          },
+          {
+            "name": "Mystical Focus",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Focus"
+          },
+          {
+            "name": "Mystical Javelin",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Javelin"
+          },
+          {
+            "name": "Mystical Magic Wand",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Magic_Wand",
+            "image": "Mystical_Magic_Wand.png/16px-Mystical_Magic_Wand.png"
+          }
+        ],
+        "image": "Licku.png/24px-Licku.png",
+        "wikiSlug": "Licku"
       },
       {
-        "name": "Cursed Spot"
+        "name": "Cursed Spot",
+        "image": "Cursed_Spot.png/24px-Cursed_Spot.png",
+        "wikiSlug": "Cursed_Spot"
       }
     ],
     "resources": [
@@ -21211,10 +23872,99 @@
     "level": "69",
     "monsters": [
       {
-        "name": "Frostshroom"
+        "name": "Frostshroom",
+        "image": "Frostshroom.png/24px-Frostshroom.png",
+        "wikiSlug": "Frostshroom"
       },
       {
-        "name": "Licku"
+        "name": "Licku",
+        "drops": [
+          {
+            "name": "Dull Ghostly Essence",
+            "dropRate": 41.25,
+            "wikiSlug": "Dull_Ghostly_Essence",
+            "image": "Dull_Ghostly_Essence.png/16px-Dull_Ghostly_Essence.png"
+          },
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 15.71,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Cursed Flame",
+            "dropRate": 1.0,
+            "wikiSlug": "Cursed_Flame",
+            "image": "Cursed_Flame.png/16px-Cursed_Flame.png"
+          },
+          {
+            "name": "Barrel",
+            "dropRate": 0.2
+          },
+          {
+            "name": "Red Scholar Hat",
+            "dropRate": 0.05,
+            "wikiSlug": "Red_Scholar_Hat"
+          },
+          {
+            "name": "Sharp Helmet",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Helmet",
+            "image": "Sharp_Helmet.png/16px-Sharp_Helmet.png"
+          },
+          {
+            "name": "Sharp Orb",
+            "dropRate": 0.03,
+            "wikiSlug": "Sharp_Orb",
+            "image": "Sharp_Orb.png/16px-Sharp_Orb.png"
+          },
+          {
+            "name": "Eon Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Eon_Hunter_Pants",
+            "image": "Eon_Hunter_Pants.png/16px-Eon_Hunter_Pants.png"
+          },
+          {
+            "name": "Eon Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Bottom"
+          },
+          {
+            "name": "Eon Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eon_Priest_Shoes",
+            "image": "Eon_Priest_Shoes.png/16px-Eon_Priest_Shoes.png"
+          },
+          {
+            "name": "Eon Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Eon_Scholar_Robe",
+            "image": "Eon_Scholar_Robe.png/16px-Eon_Scholar_Robe.png"
+          },
+          {
+            "name": "Mystical Bow",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Bow",
+            "image": "Mystical_Bow.png/16px-Mystical_Bow.png"
+          },
+          {
+            "name": "Mystical Focus",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Focus"
+          },
+          {
+            "name": "Mystical Javelin",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Javelin"
+          },
+          {
+            "name": "Mystical Magic Wand",
+            "dropRate": null,
+            "wikiSlug": "Mystical_Magic_Wand",
+            "image": "Mystical_Magic_Wand.png/16px-Mystical_Magic_Wand.png"
+          }
+        ],
+        "image": "Licku.png/24px-Licku.png",
+        "wikiSlug": "Licku"
       }
     ],
     "resources": [
@@ -21251,10 +24001,73 @@
     "level": "72",
     "monsters": [
       {
-        "name": "Cosmowl"
+        "name": "Cosmowl",
+        "drops": [
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 8.69,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Radiant Ghostly Essence",
+            "dropRate": 5.79,
+            "image": "Radiant_Ghostly_Essence.png/16px-Radiant_Ghostly_Essence.png"
+          },
+          {
+            "name": "Mystical Shield",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Shield"
+          },
+          {
+            "name": "Star Bounding Ring",
+            "dropRate": null,
+            "wikiSlug": "Star_Bounding_Ring"
+          },
+          {
+            "name": "Arcane Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Pants"
+          },
+          {
+            "name": "Arcane Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Shoes"
+          },
+          {
+            "name": "Arcane Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Shoes"
+          },
+          {
+            "name": "Arcane Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Chest_Plate"
+          },
+          {
+            "name": "Arcane Holy Arrow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Holy_Arrow"
+          },
+          {
+            "name": "Arcane Kunai",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Kunai",
+            "image": "Arcane_Kunai.png/16px-Arcane_Kunai.png"
+          },
+          {
+            "name": "Arcane Orb",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Orb",
+            "image": "Arcane_Orb.png/16px-Arcane_Orb.png"
+          }
+        ],
+        "image": "Cosmowl.png/24px-Cosmowl.png",
+        "wikiSlug": "Cosmowl"
       },
       {
-        "name": "Frostshroom"
+        "name": "Frostshroom",
+        "image": "Frostshroom.png/24px-Frostshroom.png",
+        "wikiSlug": "Frostshroom"
       }
     ],
     "resources": [
@@ -21291,10 +24104,73 @@
     "level": "75",
     "monsters": [
       {
-        "name": "Cursed Tallshroom"
+        "name": "Cursed Tallshroom",
+        "image": "Cursed_Tallshroom.png/24px-Cursed_Tallshroom.png",
+        "wikiSlug": "Cursed_Tallshroom"
       },
       {
-        "name": "Cosmowl"
+        "name": "Cosmowl",
+        "drops": [
+          {
+            "name": "Ghostly Essence",
+            "dropRate": 8.69,
+            "image": "Ghostly_Essence.png/16px-Ghostly_Essence.png"
+          },
+          {
+            "name": "Radiant Ghostly Essence",
+            "dropRate": 5.79,
+            "image": "Radiant_Ghostly_Essence.png/16px-Radiant_Ghostly_Essence.png"
+          },
+          {
+            "name": "Mystical Shield",
+            "dropRate": 0.03,
+            "wikiSlug": "Mystical_Shield"
+          },
+          {
+            "name": "Star Bounding Ring",
+            "dropRate": null,
+            "wikiSlug": "Star_Bounding_Ring"
+          },
+          {
+            "name": "Arcane Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Hunter_Pants"
+          },
+          {
+            "name": "Arcane Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Priest_Shoes"
+          },
+          {
+            "name": "Arcane Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Scholar_Shoes"
+          },
+          {
+            "name": "Arcane Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Chest_Plate"
+          },
+          {
+            "name": "Arcane Holy Arrow",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Holy_Arrow"
+          },
+          {
+            "name": "Arcane Kunai",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Kunai",
+            "image": "Arcane_Kunai.png/16px-Arcane_Kunai.png"
+          },
+          {
+            "name": "Arcane Orb",
+            "dropRate": null,
+            "wikiSlug": "Arcane_Orb",
+            "image": "Arcane_Orb.png/16px-Arcane_Orb.png"
+          }
+        ],
+        "image": "Cosmowl.png/24px-Cosmowl.png",
+        "wikiSlug": "Cosmowl"
       }
     ],
     "resources": [
@@ -21331,10 +24207,91 @@
     "level": "83",
     "monsters": [
       {
-        "name": "Cursed Cloudsheep"
+        "name": "Cursed Cloudsheep",
+        "drops": [
+          {
+            "name": "Life Essence",
+            "dropRate": 10.12,
+            "wikiSlug": "Life_Essence",
+            "image": "Life_Essence.png/16px-Life_Essence.png"
+          },
+          {
+            "name": "Radiant Life Essence",
+            "dropRate": 6.75
+          },
+          {
+            "name": "Cursed Flame",
+            "dropRate": 1.11,
+            "wikiSlug": "Cursed_Flame",
+            "image": "Cursed_Flame.png/16px-Cursed_Flame.png"
+          },
+          {
+            "name": "Star Armored Boots",
+            "dropRate": 0.01,
+            "wikiSlug": "Star_Armored_Boots"
+          },
+          {
+            "name": "Wish",
+            "dropRate": 0.01,
+            "wikiSlug": "Wish",
+            "image": "Wish.png/16px-Wish.png"
+          },
+          {
+            "name": "Eternal Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Hunter_Pants",
+            "image": "Eternal_Hunter_Pants.png/16px-Eternal_Hunter_Pants.png"
+          },
+          {
+            "name": "Eternal Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Priest_Bottom"
+          },
+          {
+            "name": "Eternal Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Priest_Shoes"
+          },
+          {
+            "name": "Eternal Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Chest_Plate",
+            "image": "Eternal_Chest_Plate.png/16px-Eternal_Chest_Plate.png"
+          },
+          {
+            "name": "Eternal Scholar Robe",
+            "dropRate": null,
+            "wikiSlug": "Eternal_Scholar_Robe"
+          },
+          {
+            "name": "Radiant Faith",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Faith"
+          },
+          {
+            "name": "Radiant Knull",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Knull"
+          },
+          {
+            "name": "Radiant Sacrifice",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sacrifice",
+            "image": "Radiant_Sacrifice.png/16px-Radiant_Sacrifice.png"
+          },
+          {
+            "name": "Radiant Sword of Heart",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Sword_of_Heart"
+          }
+        ],
+        "image": "Cursed_Cloudsheep.png/24px-Cursed_Cloudsheep.png",
+        "wikiSlug": "Cursed_Cloudsheep"
       },
       {
-        "name": "Cursed Tallshroom"
+        "name": "Cursed Tallshroom",
+        "image": "Cursed_Tallshroom.png/24px-Cursed_Tallshroom.png",
+        "wikiSlug": "Cursed_Tallshroom"
       }
     ],
     "resources": [
@@ -21371,13 +24328,123 @@
     "level": "95",
     "monsters": [
       {
-        "name": "Lost Ruins"
+        "name": "Lost Ruins",
+        "drops": [
+          {
+            "name": "Metal Essence",
+            "dropRate": 11.9,
+            "image": "Metal_Essence.png/16px-Metal_Essence.png"
+          },
+          {
+            "name": "Radiant Metal Essence",
+            "dropRate": 7.94,
+            "image": "Radiant_Metal_Essence.png/16px-Radiant_Metal_Essence.png"
+          },
+          {
+            "name": "Rubble",
+            "dropRate": 6.67,
+            "wikiSlug": "Rubble",
+            "image": "Rubble.png/16px-Rubble.png"
+          },
+          {
+            "name": "Sturdy Rock",
+            "dropRate": 3.33,
+            "wikiSlug": "Sturdy_Rock",
+            "image": "Sturdy_Rock.png/16px-Sturdy_Rock.png"
+          },
+          {
+            "name": "Stone",
+            "dropRate": 2.5,
+            "wikiSlug": "Stone",
+            "image": "Stone.png/16px-Stone.png"
+          },
+          {
+            "name": "Iron Ore",
+            "dropRate": 1.0,
+            "wikiSlug": "Iron_Ore",
+            "image": "Iron_Ore.png/16px-Iron_Ore.png"
+          },
+          {
+            "name": "Iron Ingot",
+            "dropRate": 0.8,
+            "wikiSlug": "Iron_Ingot"
+          },
+          {
+            "name": "Vase",
+            "dropRate": 0.2
+          },
+          {
+            "name": "Raging Scholar Hat",
+            "dropRate": null,
+            "wikiSlug": "Raging_Scholar_Hat"
+          },
+          {
+            "name": "Inverse Exchange",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Exchange",
+            "image": "Inverse_Exchange.png/16px-Inverse_Exchange.png"
+          },
+          {
+            "name": "Inverse Shooting Star",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Shooting_Star"
+          },
+          {
+            "name": "Inverse Sword of Heart",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Sword_of_Heart"
+          },
+          {
+            "name": "Obsidium Leg Plate",
+            "dropRate": null,
+            "wikiSlug": "Obsidium_Leg_Plate",
+            "image": "Obsidium_Leg_Plate.png/16px-Obsidium_Leg_Plate.png"
+          },
+          {
+            "name": "Raging Priest Hood",
+            "dropRate": null,
+            "wikiSlug": "Raging_Priest_Hood"
+          },
+          {
+            "name": "Obsidium Armored Boots",
+            "dropRate": null,
+            "wikiSlug": "Obsidium_Armored_Boots",
+            "image": "Obsidium_Armored_Boots.png/16px-Obsidium_Armored_Boots.png"
+          },
+          {
+            "name": "Raging Scholar Shoes",
+            "dropRate": null,
+            "wikiSlug": "Raging_Scholar_Shoes",
+            "image": "Raging_Scholar_Shoes.png/16px-Raging_Scholar_Shoes.png"
+          },
+          {
+            "name": "Raging Hunter Robe",
+            "dropRate": null,
+            "wikiSlug": "Raging_Hunter_Robe"
+          },
+          {
+            "name": "Inverse Judgement",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Judgement",
+            "image": "Inverse_Judgement.png/16px-Inverse_Judgement.png"
+          },
+          {
+            "name": "Inverse Perseverance",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Perseverance"
+          }
+        ],
+        "image": "Lost_Ruins.png/24px-Lost_Ruins.png",
+        "wikiSlug": "Lost_Ruins"
       },
       {
-        "name": "Licka"
+        "name": "Licka",
+        "image": "Licka.png/24px-Licka.png",
+        "wikiSlug": "Licka"
       },
       {
-        "name": "Fallentree"
+        "name": "Fallentree",
+        "image": "Fallentree.png/24px-Fallentree.png"
       }
     ],
     "resources": [
@@ -21408,7 +24475,116 @@
     "level": "105",
     "monsters": [
       {
-        "name": "Shadow Golem"
+        "name": "Shadow Golem",
+        "drops": [
+          {
+            "name": "Raging Essence",
+            "dropRate": 12.5,
+            "wikiSlug": "Raging_Essence",
+            "image": "Raging_Essence.png/16px-Raging_Essence.png"
+          },
+          {
+            "name": "Radiant Raging Essence",
+            "dropRate": 8.33,
+            "image": "Radiant_Raging_Essence.png/16px-Radiant_Raging_Essence.png"
+          },
+          {
+            "name": "Rubble",
+            "dropRate": 2.0,
+            "wikiSlug": "Rubble",
+            "image": "Rubble.png/16px-Rubble.png"
+          },
+          {
+            "name": "Darkshard",
+            "dropRate": 1.33,
+            "wikiSlug": "Darkshard"
+          },
+          {
+            "name": "Chaotic Warp Crystal",
+            "dropRate": 1.33,
+            "wikiSlug": "Chaotic_Warp_Crystal"
+          },
+          {
+            "name": "Sturdy Rock",
+            "dropRate": 0.91,
+            "wikiSlug": "Sturdy_Rock",
+            "image": "Sturdy_Rock.png/16px-Sturdy_Rock.png"
+          },
+          {
+            "name": "Cursed Rock",
+            "dropRate": 0.67,
+            "wikiSlug": "Cursed_Rock"
+          },
+          {
+            "name": "Nurturing Gem",
+            "dropRate": 0.4,
+            "wikiSlug": "Nurturing_Gem"
+          },
+          {
+            "name": "Mystic Gem",
+            "dropRate": 0.4
+          },
+          {
+            "name": "Calamity Gem",
+            "dropRate": 0.4
+          },
+          {
+            "name": "Raging Scholar Pants",
+            "dropRate": null,
+            "wikiSlug": "Raging_Scholar_Pants",
+            "image": "Raging_Scholar_Pants.png/16px-Raging_Scholar_Pants.png"
+          },
+          {
+            "name": "Obsidium Chest Plate",
+            "dropRate": null,
+            "wikiSlug": "Obsidium_Chest_Plate"
+          },
+          {
+            "name": "Inverse Faith",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Faith"
+          },
+          {
+            "name": "Inverse Tear of the Fallen",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Tear_of_the_Fallen",
+            "image": "Inverse_Tear_of_the_Fallen.png/16px-Inverse_Tear_of_the_Fallen.png"
+          },
+          {
+            "name": "Raging Hunter Cap",
+            "dropRate": null,
+            "wikiSlug": "Raging_Hunter_Cap"
+          },
+          {
+            "name": "Raging Hunter Shoes",
+            "dropRate": null,
+            "wikiSlug": "Raging_Hunter_Shoes"
+          },
+          {
+            "name": "Raging Priest Robe",
+            "dropRate": null,
+            "wikiSlug": "Raging_Priest_Robe",
+            "image": "Raging_Priest_Robe.png/16px-Raging_Priest_Robe.png"
+          },
+          {
+            "name": "Inverse Knull",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Knull"
+          },
+          {
+            "name": "Inverse Psyche",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Psyche"
+          },
+          {
+            "name": "Inverse Smite",
+            "dropRate": null,
+            "wikiSlug": "Inverse_Smite",
+            "image": "Inverse_Smite.png/16px-Inverse_Smite.png"
+          }
+        ],
+        "image": "Shadow_Golem.png/24px-Shadow_Golem.png",
+        "wikiSlug": "Shadow_Golem"
       }
     ],
     "resources": [
@@ -21548,10 +24724,159 @@
         ]
       },
       {
-        "name": "Elemental"
+        "name": "Elemental",
+        "drops": [
+          {
+            "name": "Soul Crystal",
+            "dropRate": null,
+            "wikiSlug": "Soul_Crystal",
+            "image": "Soul_Crystal.png/16px-Soul_Crystal.png"
+          },
+          {
+            "name": "Elemental Shard",
+            "dropRate": 10.0,
+            "wikiSlug": "Elemental_Shard"
+          },
+          {
+            "name": "Red Shard",
+            "dropRate": 4.0,
+            "wikiSlug": "Red_Shard",
+            "image": "Red_Shard.png/16px-Red_Shard.png"
+          },
+          {
+            "name": "Blue Shard",
+            "dropRate": 4.0,
+            "wikiSlug": "Blue_Shard",
+            "image": "Blue_Shard.png/16px-Blue_Shard.png"
+          },
+          {
+            "name": "Yellow Shard",
+            "dropRate": 4.0,
+            "wikiSlug": "Yellow_Shard",
+            "image": "Yellow_Shard.png/16px-Yellow_Shard.png"
+          },
+          {
+            "name": "Red Upgrade Gem (+3 INT)",
+            "dropRate": 0.2,
+            "wikiSlug": "Red_Upgrade_Gem"
+          },
+          {
+            "name": "Chaotic Warp Crystal (recipe)",
+            "dropRate": 0.29,
+            "wikiSlug": "Chaotic_Warp_Crystal"
+          },
+          {
+            "name": "Mana Potion (recipe)",
+            "dropRate": 0.29,
+            "wikiSlug": "Mana_Potion"
+          },
+          {
+            "name": "Red Upgrade Gem (+3 SPR)",
+            "dropRate": 0.2,
+            "wikiSlug": "Red_Upgrade_Gem"
+          }
+        ],
+        "image": "Elemental.png/24px-Elemental.png",
+        "wikiSlug": "Elemental"
       },
       {
-        "name": "Cursed Slibbit"
+        "name": "Cursed Slibbit",
+        "drops": [
+          {
+            "name": "Dull Historic Essence",
+            "dropRate": 36.88,
+            "wikiSlug": "Dull_Historic_Essence",
+            "image": "Dull_Historic_Essence.png/16px-Dull_Historic_Essence.png"
+          },
+          {
+            "name": "Historic Essence",
+            "dropRate": 14.05,
+            "wikiSlug": "Historic_Essence",
+            "image": "Historic_Essence.png/16px-Historic_Essence.png"
+          },
+          {
+            "name": "Cursed Flame",
+            "dropRate": 0.83,
+            "wikiSlug": "Cursed_Flame",
+            "image": "Cursed_Flame.png/16px-Cursed_Flame.png"
+          },
+          {
+            "name": "Repressive Sword",
+            "dropRate": 0.09,
+            "wikiSlug": "Repressive_Sword",
+            "image": "Repressive_Sword.png/16px-Repressive_Sword.png"
+          },
+          {
+            "name": "Ice Scholar Shoes",
+            "dropRate": 0.01,
+            "wikiSlug": "Ice_Scholar_Shoes",
+            "image": "Ice_Scholar_Shoes.png/16px-Ice_Scholar_Shoes.png"
+          },
+          {
+            "name": "Sharp Javelin",
+            "dropRate": 0.01,
+            "wikiSlug": "Sharp_Javelin",
+            "image": "Sharp_Javelin.png/16px-Sharp_Javelin.png"
+          },
+          {
+            "name": "Sharp Chest Plate",
+            "dropRate": 0.01,
+            "wikiSlug": "Sharp_Chest_Plate",
+            "image": "Sharp_Chest_Plate.png/16px-Sharp_Chest_Plate.png"
+          },
+          {
+            "name": "Sharp Sword",
+            "dropRate": 0.01,
+            "wikiSlug": "Sharp_Sword",
+            "image": "Sharp_Sword.png/16px-Sharp_Sword.png"
+          },
+          {
+            "name": "Red Hunter Pants",
+            "dropRate": null,
+            "wikiSlug": "Red_Hunter_Pants",
+            "image": "Red_Hunter_Pants.png/16px-Red_Hunter_Pants.png"
+          },
+          {
+            "name": "Red Priest Bottom",
+            "dropRate": null,
+            "wikiSlug": "Red_Priest_Bottom"
+          },
+          {
+            "name": "Red Priest Shoes",
+            "dropRate": null,
+            "wikiSlug": "Red_Priest_Shoes",
+            "image": "Red_Priest_Shoes.png/16px-Red_Priest_Shoes.png"
+          },
+          {
+            "name": "Radiant Bow",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Bow"
+          },
+          {
+            "name": "Radiant Focus",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Focus",
+            "image": "Radiant_Focus.png/16px-Radiant_Focus.png"
+          },
+          {
+            "name": "Radiant Javelin",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Javelin"
+          },
+          {
+            "name": "Radiant Magic Wand",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Magic_Wand",
+            "image": "Radiant_Magic_Wand.png/16px-Radiant_Magic_Wand.png"
+          },
+          {
+            "name": "Radiant Spellblade",
+            "dropRate": null,
+            "wikiSlug": "Radiant_Spellblade"
+          }
+        ],
+        "image": "Cursed_Slibbit.png/24px-Cursed_Slibbit.png",
+        "wikiSlug": "Cursed_Slibbit"
       }
     ],
     "resources": [
