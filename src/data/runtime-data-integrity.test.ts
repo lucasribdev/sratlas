@@ -1,7 +1,11 @@
+/// <reference types="node" />
 import { describe, expect, it } from 'vitest'
 import areasJson from './areas.json'
 import mapsJson from './maps.json'
 import markersJson from './markers.json'
+import multiMapFixture from '@/test/fixtures/multi-map.json'
+import { existsSync } from 'node:fs'
+import { resolve } from 'node:path'
 
 type JsonRecord = Record<string, unknown>
 
@@ -124,6 +128,7 @@ function validateMonsters(value: unknown, markerLabel: string) {
 
 function validateMaps(value: unknown) {
   assertArray(value, 'maps.json')
+  if (value.length === 0) throw new Error('At least one map configuration is required')
   const mapIds: string[] = []
 
   value.forEach((entry, index) => {
@@ -292,6 +297,40 @@ function firstMonster(data: ReturnType<typeof cloneValidData>) {
 }
 
 describe('runtime JSON data integrity', () => {
+  it('accepts different dimensions, repeated names, optional areas, and an empty third map', () => {
+    expect(() => validateRuntimeData(multiMapFixture)).not.toThrow()
+  })
+
+  it('rejects duplicate marker IDs across different maps', () => {
+    const data = structuredClone(multiMapFixture)
+    data.markers[1].id = data.markers[0].id
+    expect(() => validateRuntimeData(data)).toThrow('Duplicate marker id')
+  })
+
+  it('rejects duplicate map IDs', () => {
+    const data = structuredClone(multiMapFixture)
+    data.maps[1].id = data.maps[0].id
+    expect(() => validateRuntimeData(data)).toThrow('Duplicate map id')
+  })
+
+  it('requires at least one map', () => {
+    expect(() => validateRuntimeData({ ...multiMapFixture, maps: [] })).toThrow('At least one map')
+  })
+
+  it.each([0, -1, NaN, Infinity])('rejects invalid map dimensions %s', (dimension) => {
+    for (const axis of ['width', 'height'] as const) {
+      const data = structuredClone(multiMapFixture)
+      data.maps[1][axis] = dimension
+      expect(() => validateRuntimeData(data)).toThrow(/finite number|greater than zero/)
+    }
+  })
+
+  it('has a public base image for every published map', () => {
+    for (const map of mapsJson) {
+      expect(map.imageUrl).toMatch(/^\/maps\//)
+      expect(existsSync(resolve('public', map.imageUrl.slice(1)))).toBe(true)
+    }
+  })
   it('validates the actual markers, maps, and areas datasets', () => {
     expect(() =>
       validateRuntimeData({

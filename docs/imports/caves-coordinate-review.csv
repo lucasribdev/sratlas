@@ -1,0 +1,23 @@
+markerId,name,sourcePixelX,sourcePixelY,x,y,coordinateStatus,reviewed
+"zone-spawn-1-0","Spawn","549","145","51.022305","13.731061","preserved-existing",false
+"zone-cave_1-1-0","Cave 1","529","228","49.163569","21.590909","preserved-existing",false
+"zone-cave_2-1-1","Cave 2","588","274","54.64684","25.94697","preserved-existing",false
+"zone-cave_3-1-2","Cave 3","674","284","62.639405","26.893939","preserved-existing",false
+"zone-deep_cave_1-1-0","Deep cave 1","724","324","67.286245","30.681818","preserved-existing",false
+"zone-deep_cave_2-1-1","Deep cave 2","654","368","60.780669","34.848485","preserved-existing",false
+"zone-deep_cave_3-1-2","Deep cave 3","589","398","54.739777","37.689394","preserved-existing",false
+"zone-deep_cave_4-1-3","Deep cave 4","543","384","50.464684","36.363636","preserved-existing",false
+"zone-deep_cave_6-1-4","Deep cave 6","503","368","46.747212","34.848485","preserved-existing",false
+"zone-deep_cave_5-1-5","Deep cave 5","428","399","39.776952","37.784091","preserved-existing",false
+"zone-deep_cave_x-1-6","Deep cave x","538","993","50","94.034091","preserved-existing",false
+"zone-deep_cave_7-1-7","Deep cave 7","544","938","50.557621","88.825758","preserved-existing",false
+"zone-deep_cave_8-1-8","Deep cave 8","533","438","49.535316","41.477273","preserved-existing",false
+"zone-deep_cave_10-1-9","Deep cave 10","554","568","51.486989","53.787879","preserved-existing",false
+"zone-deep_cave_11-1-10","Deep cave 11","494","599","45.910781","56.723485","preserved-existing",false
+"zone-deep_cave_12-1-11","Deep cave 12","494","663","45.910781","62.784091","preserved-existing",false
+"zone-deep_cave_13-1-12","Deep cave 13","553","683","51.394052","64.67803","preserved-existing",false
+"zone-deep_cave_14-1-13","Deep cave 14","573","734","53.252788","69.507576","preserved-existing",false
+"zone-deep_cave_15-1-14","Deep cave 15","554","799","51.486989","75.662879","preserved-existing",false
+"zone-deep_cave_9-1-15","Deep cave 9","554","869","51.486989","82.291667","preserved-existing",false
+"zone-hall_of_might-1-0","Hall of Might","459","384","42.657993","36.363636","preserved-existing",false
+"zone-frost_cave-1-0","Frost cave","564","494","52.416357","46.780303","preserved-existing",false

@@ -1,0 +1,121 @@
+{
+  "checkedOn": "2026-10-14",
+  "source": "https://soulsremnant.wiki.gg/api.php",
+  "rules": "Verified source file thumbnails and existing monster page titles only. Thumbnail cache query strings are omitted from the runtime path suffix.",
+  "monsters": [
+    {
+      "name": "Banshek",
+      "image": "Banshek.png/24px-Banshek.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Banshek.png",
+      "wikiSlug": "Banshek"
+    },
+    {
+      "name": "Cosmowl",
+      "image": "Cosmowl.png/24px-Cosmowl.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Cosmowl.png",
+      "wikiSlug": "Cosmowl"
+    },
+    {
+      "name": "Cursed Cloudsheep",
+      "image": "Cursed_Cloudsheep.png/24px-Cursed_Cloudsheep.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Cursed_Cloudsheep.png",
+      "wikiSlug": "Cursed_Cloudsheep"
+    },
+    {
+      "name": "Cursed Slibbit",
+      "image": "Cursed_Slibbit.png/24px-Cursed_Slibbit.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Cursed_Slibbit.png",
+      "wikiSlug": "Cursed_Slibbit"
+    },
+    {
+      "name": "Cursed Spot",
+      "image": "Cursed_Spot.png/24px-Cursed_Spot.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Cursed_Spot.png",
+      "wikiSlug": "Cursed_Spot"
+    },
+    {
+      "name": "Cursed Tallshroom",
+      "image": "Cursed_Tallshroom.png/24px-Cursed_Tallshroom.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Cursed_Tallshroom.png",
+      "wikiSlug": "Cursed_Tallshroom"
+    },
+    {
+      "name": "Dark Mass",
+      "image": "Dark_Mass.png/24px-Dark_Mass.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Dark_Mass.png",
+      "wikiSlug": "Dark_Mass"
+    },
+    {
+      "name": "Dark Matter",
+      "image": "Dark_Matter.png/24px-Dark_Matter.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Dark_Matter.png",
+      "wikiSlug": "Dark_Matter"
+    },
+    {
+      "name": "Death Mist",
+      "image": "Death_Mist.png/24px-Death_Mist.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Death_Mist.png",
+      "wikiSlug": "Death_Mist"
+    },
+    {
+      "name": "Elemental",
+      "image": "Elemental.png/24px-Elemental.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Elemental.png",
+      "wikiSlug": "Elemental"
+    },
+    {
+      "name": "Fallentree",
+      "image": "Fallentree.png/24px-Fallentree.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Fallentree.png",
+      "pageStatus": "missing-monster-article"
+    },
+    {
+      "name": "Frostshroom",
+      "image": "Frostshroom.png/24px-Frostshroom.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Frostshroom.png",
+      "wikiSlug": "Frostshroom"
+    },
+    {
+      "name": "Lampshroom",
+      "image": "Lampshroom.png/24px-Lampshroom.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Lampshroom.png",
+      "wikiSlug": "Lampshroom"
+    },
+    {
+      "name": "Licka",
+      "image": "Licka.png/24px-Licka.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Licka.png",
+      "wikiSlug": "Licka"
+    },
+    {
+      "name": "Licku",
+      "image": "Licku.png/24px-Licku.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Licku.png",
+      "wikiSlug": "Licku"
+    },
+    {
+      "name": "Lost Ruins",
+      "image": "Lost_Ruins.png/24px-Lost_Ruins.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Lost_Ruins.png",
+      "wikiSlug": "Lost_Ruins"
+    },
+    {
+      "name": "Mangosteen Slime",
+      "image": "Mangosteen_Slime.png/24px-Mangosteen_Slime.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Mangosteen_Slime.png",
+      "wikiSlug": "Mangosteen_Slime"
+    },
+    {
+      "name": "Shadow Golem",
+      "image": "Shadow_Golem.png/24px-Shadow_Golem.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Shadow_Golem.png",
+      "wikiSlug": "Shadow_Golem"
+    },
+    {
+      "name": "Shadow Sprite",
+      "image": "Shadow_Sprite.png/24px-Shadow_Sprite.png",
+      "sourceImage": "https://soulsremnant.wiki.gg/wiki/File:Shadow_Sprite.png",
+      "wikiSlug": "Shadow_Sprite"
+    }
+  ]
+}

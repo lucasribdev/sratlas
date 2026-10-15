@@ -15,7 +15,7 @@ Quickly answer the question:
 
 The MVP must let users:
 
-- open the map;
+- open the map and select Surface or Caves;
 - pan and zoom;
 - view markers;
 - filter by area or region and marker data;
@@ -27,6 +27,11 @@ Monster drops are embedded directly in monster objects in
 `src/data/markers.json`. They participate in search and can appear in marker
 details, but they do not represent a complete or normalized drop database. The
 application remains entirely static and JSON-driven for the MVP.
+
+Search and area filters remain global when switching maps. A concrete result
+switches to its owning image, centers the marker, and opens its popup. See the
+[multiple-map guide](./docs/multiple-maps.md) for selection behavior and adding
+a map without shared code changes.
 
 ## Planned Stack
 
@@ -44,6 +49,7 @@ application remains entirely static and JSON-driven for the MVP.
 - [Data Model](./docs/data-model.md)
 - [Data Schema](./docs/data-schema.md)
 - [Marker Guide](./docs/markers-guide.md)
+- [Multiple Maps](./docs/multiple-maps.md)
 - [Search Autocomplete](./docs/search-autocomplete.md)
 - [UI Foundation and Visual Maintenance](./docs/ui.md)
 - [Milestones and Issues](./docs/milestones.md)

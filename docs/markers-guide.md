@@ -10,11 +10,20 @@ this file to build markers, search, filters, and details. `src/data/maps.json` i
 only an import and base-image metadata helper; do not put monster, resource,
 interactable, or entity data in it.
 
+For map selection, global search, and the procedure to register a new map, see
+[Multiple Maps](./multiple-maps.md). Marker IDs must be globally unique across
+all maps; repeated display names are allowed.
+
 For the complete field list and standalone examples of a monster, resource
 item, and interactable, see the [Data Schema](./data-schema.md).
 
 A backend, login, an admin panel, and automatic wiki synchronization remain out
 of scope for the MVP.
+
+The [supplied world map import](./imports/wiki-world-map.md) documents the
+Caves data and its manual coordinate review checklist. The
+[confirmed monster loot update](./imports/monster-loot.md) records loot sources,
+partial tables, and handling of unknown rates.
 
 ## How to Add a New Zone
 
@@ -39,7 +48,7 @@ Every new marker must include:
 | --- | --- |
 | `id` | Unique identifier in `kebab-case`. |
 | `name` | Name displayed to the player. |
-| `mapId` | Map ID from `src/data/maps.json`, such as `world`. |
+| `mapId` | Map ID from `src/data/maps.json`, such as `surface` or `caves`. |
 | `x` | Horizontal percentage coordinate from `0` to `100`. |
 | `y` | Vertical percentage coordinate from `0` to `100`. |
 

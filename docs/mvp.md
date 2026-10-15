@@ -27,6 +27,7 @@ multiple pages, videos, or conversations.
 | Feature | Status |
 | --- | --- |
 | Navigable map with pan and zoom | MVP |
+| Map selection with global search and filters | MVP |
 | Map markers | MVP |
 | Popup or details panel | MVP |
 | Area or region filter | MVP |
@@ -112,9 +113,15 @@ Rule:
 a marker appears if its area is active
 AND the search text matches its searchable fields
 
-With no search query, all areas (selected by default) show all markers.
+With no search query, the unrestricted initial filter shows all markers,
+including markers without an area. Selecting individual areas restricts results
+to those named areas.
 If no area is selected, no marker appears.
 ```
+
+Search results span every configured map. The displayed image shows only its
+own matching markers. See [Multiple Maps](./multiple-maps.md) for navigation
+and selection cancellation.
 
 ## Monster Drop Scope
 

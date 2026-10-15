@@ -81,7 +81,7 @@ Selection behavior is centralized in `src/lib/search-selection.ts`.
 
 | Selected type | Behavior |
 | --- | --- |
-| Marker | Sets the search query to the marker name and focuses the marker when it is visible under the current area selection. |
+| Marker | Sets the search query to the marker name. A unique occurrence allowed by the current filters switches to its owning map, centers it, and opens its popup. Repeated names leave navigation to the global result list, where each occurrence includes its map name. |
 | Area | Sets the search query to the area name. |
 | Monster | Sets the search query to the monster name. |
 | Item or Essence, including monster drops | Sets the search query to the item or drop name. |
@@ -112,3 +112,15 @@ To make a new entity searchable, add it to the structured marker data:
 Do not duplicate structured names in `tags`. Tags should only contain useful
 aliases or community terms that are not already present in structured fields.
 Monster drop names are already searchable from `monsters[].drops[].name`.
+
+Concrete result clicks and unique marker suggestions resolve marker ownership
+in the application layout. Derived `markersById` and `mapsById` indexes resolve ownership
+before the reducer atomically changes the active map and navigation request.
+Each request has a new ID, including repeated selections. Manual search/filter
+edits clear selection and cancel pending focus. The mounted marker waits for
+Leaflet readiness, changes the viewport without animation, and opens its popup;
+cleanup removes readiness listeners and closes the previous popup.
+
+Search remains global when the active map changes. See
+[Multiple Maps](./multiple-maps.md) for selection, filter cancellation, and
+map registration.

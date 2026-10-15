@@ -76,7 +76,7 @@ When contributing data:
 1. Preserve official Soul's Remnant names, wiki slugs, image paths, URLs, and
    other canonical values exactly as officially spelled.
 2. Add or update marker content in `src/data/markers.json` and ensure marker IDs
-   remain unique.
+   remain globally unique across all maps.
 3. Add area visual metadata to `src/data/areas.json` when a new area needs its
    own color.
 4. Change `src/data/maps.json` only when the base map or its import metadata
@@ -85,6 +85,9 @@ When contributing data:
    within `0` to `100`.
 6. Verify that the new data appears in the map, search, filters, and details as
    expected without requiring code changes.
+
+To register a new map, follow [Multiple Maps](./docs/multiple-maps.md). Test-only
+locations belong in fixtures, never in the published marker dataset.
 
 ## Validation
 

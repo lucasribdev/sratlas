@@ -1,0 +1,7466 @@
+{
+  "markers": [
+    {
+      "sourceId": "zone-spawn-0-0",
+      "markerId": "spawn",
+      "mapId": "surface",
+      "name": "Spawn",
+      "groupId": "region-0",
+      "sourceArea": "Spawn",
+      "area": "Spawn",
+      "sourcePixelX": 534,
+      "sourcePixelY": 560,
+      "sourcePercentageX": 49.628253,
+      "sourcePercentageY": 53.030303,
+      "x": 50,
+      "y": 53,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        },
+        {
+          "section": "resources",
+          "name": "Trout",
+          "file": "Trout.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-market_hub_entrance-0-1",
+      "markerId": "market-hub-entrance",
+      "mapId": "surface",
+      "name": "Market hub entrance",
+      "groupId": "region-0",
+      "sourceArea": "Spawn",
+      "area": "Spawn",
+      "sourcePixelX": 564,
+      "sourcePixelY": 500,
+      "sourcePercentageX": 52.416357,
+      "sourcePercentageY": 47.348485,
+      "x": 53,
+      "y": 47,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": []
+    },
+    {
+      "sourceId": "zone-outskirts_west-0-0",
+      "markerId": "outskirts-west",
+      "mapId": "surface",
+      "name": "Outskirts west",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 424,
+      "sourcePixelY": 524,
+      "sourcePercentageX": 39.405204,
+      "sourcePercentageY": 49.621212,
+      "x": 39.2,
+      "y": 50.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Slime",
+          "file": "Slime.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        },
+        {
+          "section": "resources",
+          "name": "Trout",
+          "file": "Trout.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_northwest-0-1",
+      "markerId": "outskirts-northwest",
+      "mapId": "surface",
+      "name": "Outskirts northwest",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 449,
+      "sourcePixelY": 469,
+      "sourcePercentageX": 41.728625,
+      "sourcePercentageY": 44.412879,
+      "x": 41.3,
+      "y": 45.9,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Bubble Spirit",
+          "file": "Bubble Spirit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Slime",
+          "file": "Slime.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_flower_field-0-2",
+      "markerId": "outskirts-flower-field",
+      "mapId": "surface",
+      "name": "Outskirts flower field",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 494,
+      "sourcePixelY": 454,
+      "sourcePercentageX": 45.910781,
+      "sourcePercentageY": 42.992424,
+      "x": 46,
+      "y": 43.8,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Slime",
+          "file": "Slime.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Bubble Spirit",
+          "file": "Bubble Spirit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_north-0-3",
+      "markerId": "outskirts-north",
+      "mapId": "surface",
+      "name": "Outskirts north",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 539,
+      "sourcePixelY": 449,
+      "sourcePercentageX": 50.092937,
+      "sourcePercentageY": 42.518939,
+      "x": 50.7,
+      "y": 43,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Flows",
+          "file": "Flows.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_northeast-0-4",
+      "markerId": "outskirts-northeast",
+      "mapId": "surface",
+      "name": "Outskirts northeast",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 609,
+      "sourcePixelY": 479,
+      "sourcePercentageX": 56.598513,
+      "sourcePercentageY": 45.359848,
+      "x": 56.6,
+      "y": 45.3,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Bubble Spirit",
+          "file": "Bubble Spirit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Pin Pin",
+          "file": "Pin Pin.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_east-0-5",
+      "markerId": "outskirts-east",
+      "mapId": "surface",
+      "name": "Outskirts east",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 649,
+      "sourcePixelY": 524,
+      "sourcePercentageX": 60.315985,
+      "sourcePercentageY": 49.621212,
+      "x": 60.6,
+      "y": 49.6,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Pin Pin",
+          "file": "Pin Pin.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Slime",
+          "file": "Slime.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_pond-0-6",
+      "markerId": "outskirts-pond",
+      "mapId": "surface",
+      "name": "Outskirts pond",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 629,
+      "sourcePixelY": 569,
+      "sourcePercentageX": 58.457249,
+      "sourcePercentageY": 53.882576,
+      "x": 58.8,
+      "y": 55,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Slip",
+          "file": "Slip.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Flows",
+          "file": "Flows.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        },
+        {
+          "section": "resources",
+          "name": "Trout",
+          "file": "Trout.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_southeast-0-7",
+      "markerId": "outskirts-southeast",
+      "mapId": "surface",
+      "name": "Outskirts southeast",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 579,
+      "sourcePixelY": 594,
+      "sourcePercentageX": 53.810409,
+      "sourcePercentageY": 56.25,
+      "x": 54.2,
+      "y": 57,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Pin Pin",
+          "file": "Pin Pin.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Hopper",
+          "file": "Hopper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_southwest-0-8",
+      "markerId": "outskirts-southwest",
+      "mapId": "surface",
+      "name": "Outskirts southwest",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 449,
+      "sourcePixelY": 579,
+      "sourcePercentageX": 41.728625,
+      "sourcePercentageY": 54.829545,
+      "x": 41.8,
+      "y": 54.7,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Glowsnail",
+          "file": "Glowsnail.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Pin Pin",
+          "file": "Pin Pin.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Hopper",
+          "file": "Hopper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-outskirts_south-0-9",
+      "markerId": "outskirts-south",
+      "mapId": "surface",
+      "name": "Outskirts south",
+      "groupId": "region-1",
+      "sourceArea": "Outskirts",
+      "area": "Outskirts",
+      "sourcePixelX": 512,
+      "sourcePixelY": 606,
+      "sourcePercentageX": 47.583643,
+      "sourcePercentageY": 57.386364,
+      "x": 48,
+      "y": 57.8,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Hopper",
+          "file": "Hopper.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Pin Pin",
+          "file": "Pin Pin.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Salt",
+          "file": "Salt.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wheat",
+          "file": "Wheat.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Herb",
+          "file": "Green Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Herb",
+          "file": "Red Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Herb",
+          "file": "Blue Herb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wood",
+          "file": "Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-plains_1-0-0",
+      "markerId": "plains-1",
+      "mapId": "surface",
+      "name": "Plains 1",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 334,
+      "sourcePixelY": 519,
+      "sourcePercentageX": 31.040892,
+      "sourcePercentageY": 49.147727,
+      "x": 31.5,
+      "y": 49.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Glowsnail",
+          "file": "Glowsnail.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cloudsheep",
+          "file": "Cloudsheep.png"
+        },
+        {
+          "section": "resources",
+          "name": "Copper Ore",
+          "file": "Copper Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cotton Ball",
+          "file": "Cotton Ball.png"
+        },
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "file": "Oak Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "file": "Apple.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Trout",
+          "file": "Trout.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-plains_2-0-1",
+      "markerId": "plains-2",
+      "mapId": "surface",
+      "name": "Plains 2",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 354,
+      "sourcePixelY": 469,
+      "sourcePercentageX": 32.899628,
+      "sourcePercentageY": 44.412879,
+      "x": 33,
+      "y": 45,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Squishling",
+          "file": "Squishling.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cloudsheep",
+          "file": "Cloudsheep.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Angeling",
+          "file": "Angeling.png"
+        },
+        {
+          "section": "resources",
+          "name": "Copper Ore",
+          "file": "Copper Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cotton Ball",
+          "file": "Cotton Ball.png"
+        },
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "file": "Oak Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "file": "Apple.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-plains_3-0-2",
+      "markerId": "plains-3",
+      "mapId": "surface",
+      "name": "Plains 3",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 389,
+      "sourcePixelY": 414,
+      "sourcePercentageX": 36.152416,
+      "sourcePercentageY": 39.204545,
+      "x": 36.5,
+      "y": 39.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Squishling",
+          "file": "Squishling.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Black Cloudsheep",
+          "file": "Black Cloudsheep.png"
+        },
+        {
+          "section": "resources",
+          "name": "Copper Ore",
+          "file": "Copper Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cotton Ball",
+          "file": "Cotton Ball.png"
+        },
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "file": "Oak Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "file": "Apple.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-plains_4-0-3",
+      "markerId": "plains-4",
+      "mapId": "surface",
+      "name": "Plains 4",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 364,
+      "sourcePixelY": 369,
+      "sourcePercentageX": 33.828996,
+      "sourcePercentageY": 34.943182,
+      "x": 34.6,
+      "y": 34.8,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Black Cloudsheep",
+          "file": "Black Cloudsheep.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Squishling",
+          "file": "Squishling.png"
+        },
+        {
+          "section": "resources",
+          "name": "Copper Ore",
+          "file": "Copper Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cotton Ball",
+          "file": "Cotton Ball.png"
+        },
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "file": "Oak Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "file": "Apple.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-lost_plains-0-4",
+      "markerId": "lost-plains",
+      "mapId": "surface",
+      "name": "Lost plains",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 319,
+      "sourcePixelY": 564,
+      "sourcePercentageX": 29.64684,
+      "sourcePercentageY": 53.409091,
+      "x": 29.8,
+      "y": 54,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Rainbow Cloudsheep",
+          "file": "Rainbow Cloudsheep.png"
+        },
+        {
+          "section": "resources",
+          "name": "Copper Ore",
+          "file": "Copper Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cotton Ball",
+          "file": "Cotton Ball.png"
+        },
+        {
+          "section": "resources",
+          "name": "Oak Wood",
+          "file": "Oak Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Apple",
+          "file": "Apple.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-forest_1-0-5",
+      "markerId": "forest-1",
+      "mapId": "surface",
+      "name": "Forest 1",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Forest",
+      "sourcePixelX": 244,
+      "sourcePixelY": 424,
+      "sourcePercentageX": 22.67658,
+      "sourcePercentageY": 40.151515,
+      "x": 22.8,
+      "y": 40.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Ferni",
+          "file": "Ferni.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Big Slime",
+          "file": "Big Slime.png"
+        },
+        {
+          "section": "resources",
+          "name": "Malachite Ore",
+          "file": "Malachite Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Emerald",
+          "file": "Emerald.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sweet Fern",
+          "file": "Sweet Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forest Seal",
+          "file": "Forest Seal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Melon",
+          "file": "Melon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "file": "Green Cherry.png"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "file": "Hard Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-forest_2-0-6",
+      "markerId": "forest-2",
+      "mapId": "surface",
+      "name": "Forest 2",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Forest",
+      "sourcePixelX": 254,
+      "sourcePixelY": 354,
+      "sourcePercentageX": 23.605948,
+      "sourcePercentageY": 33.522727,
+      "x": 24,
+      "y": 33.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Soultree",
+          "file": "Soultree.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Soulpling",
+          "file": "Soulpling.png"
+        },
+        {
+          "section": "resources",
+          "name": "Malachite Ore",
+          "file": "Malachite Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Emerald",
+          "file": "Emerald.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sweet Fern",
+          "file": "Sweet Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forest Seal",
+          "file": "Forest Seal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Melon",
+          "file": "Melon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "file": "Green Cherry.png"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "file": "Hard Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-forest_3-0-7",
+      "markerId": "forest-3",
+      "mapId": "surface",
+      "name": "Forest 3",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Forest",
+      "sourcePixelX": 269,
+      "sourcePixelY": 294,
+      "sourcePercentageX": 25,
+      "sourcePercentageY": 27.840909,
+      "x": 25.1,
+      "y": 28,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Soultree",
+          "file": "Soultree.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Soulpling",
+          "file": "Soulpling.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Ferni",
+          "file": "Ferni.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Humblebee",
+          "file": "Humblebee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Malachite Ore",
+          "file": "Malachite Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Emerald",
+          "file": "Emerald.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sweet Fern",
+          "file": "Sweet Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forest Seal",
+          "file": "Forest Seal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Melon",
+          "file": "Melon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "file": "Green Cherry.png"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "file": "Hard Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-forest_pond-0-8",
+      "markerId": "forest-pond",
+      "mapId": "surface",
+      "name": "Forest pond",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Forest",
+      "sourcePixelX": 209,
+      "sourcePixelY": 514,
+      "sourcePercentageX": 19.423792,
+      "sourcePercentageY": 48.674242,
+      "x": 19.5,
+      "y": 49,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Humblebee",
+          "file": "Humblebee.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Soulpling",
+          "file": "Soulpling.png"
+        },
+        {
+          "section": "resources",
+          "name": "Malachite Ore",
+          "file": "Malachite Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Emerald",
+          "file": "Emerald.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sweet Fern",
+          "file": "Sweet Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forest Seal",
+          "file": "Forest Seal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Melon",
+          "file": "Melon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "file": "Green Cherry.png"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "file": "Hard Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-swamp-0-9",
+      "markerId": "swamp",
+      "mapId": "surface",
+      "name": "Swamp",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 289,
+      "sourcePixelY": 244,
+      "sourcePercentageX": 26.858736,
+      "sourcePercentageY": 23.106061,
+      "x": 27.3,
+      "y": 22.9,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "resources",
+          "name": "Malachite Ore",
+          "file": "Malachite Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Emerald",
+          "file": "Emerald.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sweet Fern",
+          "file": "Sweet Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forest Seal",
+          "file": "Forest Seal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Melon",
+          "file": "Melon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "file": "Green Cherry.png"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "file": "Hard Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_forest_1-0-10",
+      "markerId": "deep-forest-1",
+      "mapId": "surface",
+      "name": "Deep forest 1",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 154,
+      "sourcePixelY": 409,
+      "sourcePercentageX": 14.312268,
+      "sourcePercentageY": 38.731061,
+      "x": 14.9,
+      "y": 39,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Tallshroom",
+          "file": "Tallshroom.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Shroomie",
+          "file": "Shroomie.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ancient Fern",
+          "file": "Ancient Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Censhroom",
+          "file": "Censhroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "file": "Eon Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "file": "Eon Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spookee",
+          "file": "Spookee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Leech",
+          "file": "Abyssal Leech.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Urchin",
+          "file": "Abyssal Urchin.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Octopus",
+          "file": "Abyssal Octopus.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_forest_threshold-0-11",
+      "markerId": "deep-forest-threshold",
+      "mapId": "surface",
+      "name": "Deep forest threshold",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 138,
+      "sourcePixelY": 379,
+      "sourcePercentageX": 12.825279,
+      "sourcePercentageY": 35.890152,
+      "x": 13,
+      "y": 36,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Lime Guardian",
+          "file": "Lime Guardian.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ancient Fern",
+          "file": "Ancient Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Censhroom",
+          "file": "Censhroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "file": "Eon Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "file": "Eon Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spookee",
+          "file": "Spookee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Leech",
+          "file": "Abyssal Leech.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Urchin",
+          "file": "Abyssal Urchin.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Octopus",
+          "file": "Abyssal Octopus.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_forest_2-0-12",
+      "markerId": "deep-forest-2",
+      "mapId": "surface",
+      "name": "Deep forest 2",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 189,
+      "sourcePixelY": 319,
+      "sourcePercentageX": 17.565056,
+      "sourcePercentageY": 30.208333,
+      "x": 18.2,
+      "y": 30,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Kiwi",
+          "file": "Kiwi.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Fernek",
+          "file": "Fernek.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Tallshroom",
+          "file": "Tallshroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ancient Fern",
+          "file": "Ancient Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Censhroom",
+          "file": "Censhroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "file": "Eon Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "file": "Eon Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spookee",
+          "file": "Spookee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Leech",
+          "file": "Abyssal Leech.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Urchin",
+          "file": "Abyssal Urchin.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Octopus",
+          "file": "Abyssal Octopus.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_forest_3-0-13",
+      "markerId": "deep-forest-3",
+      "mapId": "surface",
+      "name": "Deep forest 3",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 229,
+      "sourcePixelY": 234,
+      "sourcePercentageX": 21.282528,
+      "sourcePercentageY": 22.159091,
+      "x": 21.5,
+      "y": 22.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Shroomie",
+          "file": "Shroomie.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Tallshroom",
+          "file": "Tallshroom.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Fernek",
+          "file": "Fernek.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Kiwi",
+          "file": "Kiwi.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ancient Fern",
+          "file": "Ancient Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Censhroom",
+          "file": "Censhroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "file": "Eon Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "file": "Eon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-lost_peak-0-14",
+      "markerId": "lost-peak",
+      "mapId": "surface",
+      "name": "Lost peak",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 304,
+      "sourcePixelY": 139,
+      "sourcePercentageX": 28.252788,
+      "sourcePercentageY": 13.162879,
+      "x": 28.2,
+      "y": 13.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Fernek",
+          "file": "Fernek.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Kiwi",
+          "file": "Kiwi.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ancient Fern",
+          "file": "Ancient Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Censhroom",
+          "file": "Censhroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "file": "Eon Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "file": "Eon Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spookee",
+          "file": "Spookee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Leech",
+          "file": "Abyssal Leech.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Urchin",
+          "file": "Abyssal Urchin.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Octopus",
+          "file": "Abyssal Octopus.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_tree_way-0-15",
+      "markerId": "deep-tree-way",
+      "mapId": "surface",
+      "name": "Deep tree way",
+      "groupId": "region-2",
+      "sourceArea": "Plains",
+      "area": "Plains",
+      "sourcePixelX": 124,
+      "sourcePixelY": 523,
+      "sourcePercentageX": 11.524164,
+      "sourcePercentageY": 49.526515,
+      "x": 12,
+      "y": 50,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Shroomie",
+          "file": "Shroomie.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Tallshroom",
+          "file": "Tallshroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ancient Fern",
+          "file": "Ancient Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Censhroom",
+          "file": "Censhroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "file": "Eon Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "file": "Eon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-plains_cave-0-0",
+      "markerId": "plains-cave",
+      "mapId": "surface",
+      "name": "Plains cave",
+      "groupId": "region-3",
+      "sourceArea": "Plains cave",
+      "area": "Plains",
+      "sourcePixelX": 339,
+      "sourcePixelY": 429,
+      "sourcePercentageX": 31.505576,
+      "sourcePercentageY": 40.625,
+      "x": 31.2,
+      "y": 40.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cursed Slime",
+          "file": "Cursed Slime.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Gilded Slime",
+          "file": "Gilded Slime.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Shard",
+          "file": "Blue Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Shard",
+          "file": "Red Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Shard",
+          "file": "Yellow Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Crystal",
+          "file": "Red Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Crystal",
+          "file": "Blue Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Crystal",
+          "file": "Yellow Crystal.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-beach_cave-0-1",
+      "markerId": "beach-cave",
+      "mapId": "surface",
+      "name": "Beach cave",
+      "groupId": "region-3",
+      "sourceArea": "Plains cave",
+      "area": "Plains cave",
+      "sourcePixelX": 644,
+      "sourcePixelY": 414,
+      "sourcePercentageX": 59.851301,
+      "sourcePercentageY": 39.204545,
+      "x": 60,
+      "y": 39,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Troppo",
+          "file": "Troppo.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Droppo",
+          "file": "Droppo.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Shard",
+          "file": "Blue Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Shard",
+          "file": "Red Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Shard",
+          "file": "Yellow Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Crystal",
+          "file": "Red Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Crystal",
+          "file": "Blue Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Crystal",
+          "file": "Yellow Crystal.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-forest_seed-0-0",
+      "markerId": "forest-seeding-ground",
+      "mapId": "surface",
+      "name": "Forest seeding ground",
+      "groupId": "region-4",
+      "sourceArea": "Forest",
+      "area": "Forest",
+      "sourcePixelX": 253,
+      "sourcePixelY": 514,
+      "sourcePercentageX": 23.513011,
+      "sourcePercentageY": 48.674242,
+      "x": 23.5,
+      "y": 49,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Soulpling",
+          "file": "Soulpling.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Humblebee",
+          "file": "Humblebee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Malachite Ore",
+          "file": "Malachite Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Emerald",
+          "file": "Emerald.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sweet Fern",
+          "file": "Sweet Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forest Seal",
+          "file": "Forest Seal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Melon",
+          "file": "Melon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "file": "Hard Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-forest_lake-0-1",
+      "markerId": "forest-lake",
+      "mapId": "surface",
+      "name": "Forest Lake",
+      "groupId": "region-4",
+      "sourceArea": "Forest",
+      "area": "Forest",
+      "sourcePixelX": 248,
+      "sourcePixelY": 474,
+      "sourcePercentageX": 23.048327,
+      "sourcePercentageY": 44.886364,
+      "x": 23,
+      "y": 45,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Soulpling",
+          "file": "Soulpling.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Soultree",
+          "file": "Soultree.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Humblebee",
+          "file": "Humblebee.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Water Spot",
+          "file": "Water Spot.png"
+        },
+        {
+          "section": "resources",
+          "name": "Malachite Ore",
+          "file": "Malachite Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Emerald",
+          "file": "Emerald.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sweet Fern",
+          "file": "Sweet Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forest Seal",
+          "file": "Forest Seal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Melon",
+          "file": "Melon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Green Cherry",
+          "file": "Green Cherry.png"
+        },
+        {
+          "section": "resources",
+          "name": "Hard Wood",
+          "file": "Hard Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-giant_tree-0-0",
+      "markerId": "giant-tree",
+      "mapId": "surface",
+      "name": "Giant tree",
+      "groupId": "region-5",
+      "sourceArea": "Giant tree",
+      "area": "Giant tree",
+      "sourcePixelX": 129,
+      "sourcePixelY": 344,
+      "sourcePercentageX": 11.988848,
+      "sourcePercentageY": 32.575758,
+      "x": 12,
+      "y": 33,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ancient Fern",
+          "file": "Ancient Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Censhroom",
+          "file": "Censhroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "file": "Eon Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "file": "Eon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_forest_den-0-0",
+      "markerId": "deep-forest-den",
+      "mapId": "surface",
+      "name": "Deep forest den",
+      "groupId": "region-6",
+      "sourceArea": "Deep forest den",
+      "area": "Deep forest den",
+      "sourcePixelX": 193,
+      "sourcePixelY": 244,
+      "sourcePercentageX": 17.936803,
+      "sourcePercentageY": 23.106061,
+      "x": 18,
+      "y": 23,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Blossnek",
+          "file": "Blossnek.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Fernek",
+          "file": "Fernek.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ancient Fern",
+          "file": "Ancient Fern.png"
+        },
+        {
+          "section": "resources",
+          "name": "Censhroom",
+          "file": "Censhroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Fruit",
+          "file": "Eon Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eon Wood",
+          "file": "Eon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-beach_1-0-0",
+      "markerId": "around-the-seashore",
+      "mapId": "surface",
+      "name": "Around the Seashore",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 544,
+      "sourcePixelY": 409,
+      "sourcePercentageX": 50.557621,
+      "sourcePercentageY": 38.731061,
+      "x": 50.8,
+      "y": 39,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Coconut",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Crusher",
+          "file": "Crusher.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Snapper",
+          "file": "Snapper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sea Grapes",
+          "file": "Sea Grapes.png"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut",
+          "file": "Coconut.png"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut Wood",
+          "file": "Coconut Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Quartz",
+          "file": "Quartz.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starfish",
+          "file": "Starfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Exotic Tuna",
+          "file": "Exotic Tuna.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-beach_3-0-1",
+      "markerId": "snapper-shore",
+      "mapId": "surface",
+      "name": "Snapper Shore",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 454,
+      "sourcePixelY": 399,
+      "sourcePercentageX": 42.193309,
+      "sourcePercentageY": 37.784091,
+      "x": 42.4,
+      "y": 38,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Coconut",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Snapper",
+          "file": "Snapper.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Crusher",
+          "file": "Crusher.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sea Grapes",
+          "file": "Sea Grapes.png"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut",
+          "file": "Coconut.png"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut Wood",
+          "file": "Coconut Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Quartz",
+          "file": "Quartz.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starfish",
+          "file": "Starfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Exotic Tuna",
+          "file": "Exotic Tuna.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-beach_2-0-2",
+      "markerId": "seashell-cove",
+      "mapId": "surface",
+      "name": "Seashell Cove",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 659,
+      "sourcePixelY": 389,
+      "sourcePercentageX": 61.245353,
+      "sourcePercentageY": 36.837121,
+      "x": 61,
+      "y": 37.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Coconut",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Droppo",
+          "file": "Droppo.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Crusher",
+          "file": "Crusher.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Troppo",
+          "file": "Troppo.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sea Grapes",
+          "file": "Sea Grapes.png"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut",
+          "file": "Coconut.png"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut Wood",
+          "file": "Coconut Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Quartz",
+          "file": "Quartz.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starfish",
+          "file": "Starfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Exotic Tuna",
+          "file": "Exotic Tuna.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-shell_beach-0-3",
+      "markerId": "shell-beach",
+      "mapId": "surface",
+      "name": "Shell beach",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 604,
+      "sourcePixelY": 399,
+      "sourcePercentageX": 56.133829,
+      "sourcePercentageY": 37.784091,
+      "x": 56.3,
+      "y": 38,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Coconut",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Pimchy",
+          "file": "Pimchy.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Snapper",
+          "file": "Snapper.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Crusher",
+          "file": "Crusher.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sea Grapes",
+          "file": "Sea Grapes.png"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut",
+          "file": "Coconut.png"
+        },
+        {
+          "section": "resources",
+          "name": "Coconut Wood",
+          "file": "Coconut Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Quartz",
+          "file": "Quartz.png"
+        },
+        {
+          "section": "resources",
+          "name": "Stone",
+          "file": "Stone.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starfish",
+          "file": "Starfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Exotic Tuna",
+          "file": "Exotic Tuna.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-ocean_1-0-4",
+      "markerId": "ocean-1",
+      "mapId": "surface",
+      "name": "Ocean 1",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 544,
+      "sourcePixelY": 314,
+      "sourcePercentageX": 50.557621,
+      "sourcePercentageY": 29.734848,
+      "x": 50.8,
+      "y": 30,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Pepper",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Corals",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Giga",
+          "file": "Giga.png"
+        },
+        {
+          "section": "resources",
+          "name": "Poceanto",
+          "file": "Poceanto.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Pepper",
+          "file": "Blue Pepper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Corals",
+          "file": "Corals.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cobalt Ore",
+          "file": "Cobalt Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aquamarine",
+          "file": "Aquamarine.png"
+        },
+        {
+          "section": "resources",
+          "name": "Exotic Tuna",
+          "file": "Exotic Tuna.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-ocean_4-0-5",
+      "markerId": "ocean-4",
+      "mapId": "surface",
+      "name": "Ocean 4",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 634,
+      "sourcePixelY": 289,
+      "sourcePercentageX": 58.921933,
+      "sourcePercentageY": 27.367424,
+      "x": 59,
+      "y": 27.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Pepper",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Corals",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Giga",
+          "file": "Giga.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Bubble Snake",
+          "file": "Bubble Snake.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Sweel",
+          "file": "Sweel.png"
+        },
+        {
+          "section": "resources",
+          "name": "Poceanto",
+          "file": "Poceanto.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Pepper",
+          "file": "Blue Pepper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Corals",
+          "file": "Corals.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cobalt Ore",
+          "file": "Cobalt Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aquamarine",
+          "file": "Aquamarine.png"
+        },
+        {
+          "section": "resources",
+          "name": "Exotic Tuna",
+          "file": "Exotic Tuna.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-ocean_3-0-6",
+      "markerId": "ocean-3",
+      "mapId": "surface",
+      "name": "Ocean 3",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 459,
+      "sourcePixelY": 289,
+      "sourcePercentageX": 42.657993,
+      "sourcePercentageY": 27.367424,
+      "x": 42.5,
+      "y": 27.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Pepper",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Corals",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Giga",
+          "file": "Giga.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Sweel",
+          "file": "Sweel.png"
+        },
+        {
+          "section": "resources",
+          "name": "Poceanto",
+          "file": "Poceanto.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Pepper",
+          "file": "Blue Pepper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Corals",
+          "file": "Corals.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cobalt Ore",
+          "file": "Cobalt Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aquamarine",
+          "file": "Aquamarine.png"
+        },
+        {
+          "section": "resources",
+          "name": "Exotic Tuna",
+          "file": "Exotic Tuna.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-ocean_2-0-7",
+      "markerId": "ocean-2",
+      "mapId": "surface",
+      "name": "Ocean 2",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 389,
+      "sourcePixelY": 244,
+      "sourcePercentageX": 36.152416,
+      "sourcePercentageY": 23.106061,
+      "x": 36,
+      "y": 23,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Pepper",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Corals",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Sweel",
+          "file": "Sweel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Giga",
+          "file": "Giga.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Bubble Snake",
+          "file": "Bubble Snake.png"
+        },
+        {
+          "section": "resources",
+          "name": "Poceanto",
+          "file": "Poceanto.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Pepper",
+          "file": "Blue Pepper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Corals",
+          "file": "Corals.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cobalt Ore",
+          "file": "Cobalt Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aquamarine",
+          "file": "Aquamarine.png"
+        },
+        {
+          "section": "resources",
+          "name": "Exotic Tuna",
+          "file": "Exotic Tuna.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_ocean_1-0-8",
+      "markerId": "deep-ocean-1",
+      "mapId": "surface",
+      "name": "Deep ocean 1",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 553,
+      "sourcePixelY": 209,
+      "sourcePercentageX": 51.394052,
+      "sourcePercentageY": 19.791667,
+      "x": 51.5,
+      "y": 20,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Coral",
+          "file": "Coral.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Soulfish",
+          "file": "Soulfish.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Upsivase",
+          "file": "Upsivase.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Ancient Soul",
+          "file": "Ancient Soul.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Crystal",
+          "file": "Arcane Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Shard",
+          "file": "Ocean Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Heart",
+          "file": "Ocean Heart.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Pearl",
+          "file": "Arcane Pearl.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angelic Algae",
+          "file": "Angelic Algae.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "file": "Forbidden Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "file": "Depth Vine.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_ocean_2-0-9",
+      "markerId": "deep-ocean-2",
+      "mapId": "surface",
+      "name": "Deep ocean 2",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 654,
+      "sourcePixelY": 199,
+      "sourcePercentageX": 60.780669,
+      "sourcePercentageY": 18.844697,
+      "x": 61,
+      "y": 19,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Ancient Soul",
+          "file": "Ancient Soul.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Soulfish",
+          "file": "Soulfish.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Coral",
+          "file": "Coral.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Upsivase",
+          "file": "Upsivase.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Crystal",
+          "file": "Arcane Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Shard",
+          "file": "Ocean Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Heart",
+          "file": "Ocean Heart.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Pearl",
+          "file": "Arcane Pearl.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angelic Algae",
+          "file": "Angelic Algae.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "file": "Forbidden Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "file": "Depth Vine.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_ocean_3-0-10",
+      "markerId": "deep-ocean-3",
+      "mapId": "surface",
+      "name": "Deep ocean 3",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 474,
+      "sourcePixelY": 164,
+      "sourcePercentageX": 44.052045,
+      "sourcePercentageY": 15.530303,
+      "x": 44.2,
+      "y": 15.4,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Soulfish",
+          "file": "Soulfish.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Upsivase",
+          "file": "Upsivase.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Crystal",
+          "file": "Arcane Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Shard",
+          "file": "Ocean Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Heart",
+          "file": "Ocean Heart.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Pearl",
+          "file": "Arcane Pearl.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angelic Algae",
+          "file": "Angelic Algae.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "file": "Forbidden Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "file": "Depth Vine.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_ocean_4-0-11",
+      "markerId": "deep-ocean-4",
+      "mapId": "surface",
+      "name": "Deep ocean 4",
+      "groupId": "region-7",
+      "sourceArea": "Ocean",
+      "area": "Ocean",
+      "sourcePixelX": 389,
+      "sourcePixelY": 114,
+      "sourcePercentageX": 36.152416,
+      "sourcePercentageY": 10.795455,
+      "x": 36,
+      "y": 11,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Soulfish",
+          "file": "Soulfish.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Upsivase",
+          "file": "Upsivase.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Crystal",
+          "file": "Arcane Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Shard",
+          "file": "Ocean Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Heart",
+          "file": "Ocean Heart.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Pearl",
+          "file": "Arcane Pearl.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angelic Algae",
+          "file": "Angelic Algae.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "file": "Forbidden Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "file": "Depth Vine.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-cold_ocean_cave-0-0",
+      "markerId": "cold-ocean-cave",
+      "mapId": "surface",
+      "name": "Cold ocean cave",
+      "groupId": "region-8",
+      "sourceArea": "Cold ocean cave",
+      "area": "Cold ocean cave",
+      "sourcePixelX": 584,
+      "sourcePixelY": 284,
+      "sourcePercentageX": 54.275093,
+      "sourcePercentageY": 26.893939,
+      "x": 54,
+      "y": 27,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Froni",
+          "file": "Froni.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Sweel",
+          "file": "Sweel.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Shard",
+          "file": "Blue Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Shard",
+          "file": "Red Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Shard",
+          "file": "Yellow Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Crystal",
+          "file": "Red Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Crystal",
+          "file": "Blue Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Crystal",
+          "file": "Yellow Crystal.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-great_trench-0-0",
+      "markerId": "great-trench",
+      "mapId": "surface",
+      "name": "Great trench",
+      "groupId": "region-9",
+      "sourceArea": "Great trench",
+      "area": "Great trench",
+      "sourcePixelX": 503,
+      "sourcePixelY": 149,
+      "sourcePercentageX": 46.747212,
+      "sourcePercentageY": 14.109848,
+      "x": 46.7,
+      "y": 14.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "resources",
+          "name": "Arcane Crystal",
+          "file": "Arcane Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Shard",
+          "file": "Ocean Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Heart",
+          "file": "Ocean Heart.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Pearl",
+          "file": "Arcane Pearl.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angelic Algae",
+          "file": "Angelic Algae.png"
+        },
+        {
+          "section": "resources",
+          "name": "Forbidden Fruit",
+          "file": "Forbidden Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Depth Vine",
+          "file": "Depth Vine.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_1-0-0",
+      "markerId": "desert-1",
+      "mapId": "surface",
+      "name": "Desert 1",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 819,
+      "sourcePixelY": 489,
+      "sourcePercentageX": 76.115242,
+      "sourcePercentageY": 46.306818,
+      "x": 76,
+      "y": 46.4,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Dragonfruit",
+          "file": "Dragonfruit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Slabbit",
+          "file": "Slabbit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Desert Bandit",
+          "file": "Desert Bandit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bismuth",
+          "file": "Bismuth.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ruby",
+          "file": "Ruby.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Sage",
+          "file": "Desert Sage.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Flower",
+          "file": "Desert Flower.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Rose",
+          "file": "Desert Rose.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "file": "Cactus Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "file": "Cactus.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_2-0-1",
+      "markerId": "desert-2",
+      "mapId": "surface",
+      "name": "Desert 2",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 809,
+      "sourcePixelY": 424,
+      "sourcePercentageX": 75.185874,
+      "sourcePercentageY": 40.151515,
+      "x": 75.3,
+      "y": 40.3,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Rokkik",
+          "file": "Rokkik.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Slabbit",
+          "file": "Slabbit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Dragonfruit",
+          "file": "Dragonfruit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Desert Bandit",
+          "file": "Desert Bandit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bismuth",
+          "file": "Bismuth.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ruby",
+          "file": "Ruby.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Sage",
+          "file": "Desert Sage.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Flower",
+          "file": "Desert Flower.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Rose",
+          "file": "Desert Rose.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "file": "Cactus Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "file": "Cactus.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_3-0-2",
+      "markerId": "desert-3",
+      "mapId": "surface",
+      "name": "Desert 3",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 759,
+      "sourcePixelY": 349,
+      "sourcePercentageX": 70.539033,
+      "sourcePercentageY": 33.049242,
+      "x": 70.8,
+      "y": 33.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Rokkik",
+          "file": "Rokkik.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cactus",
+          "file": "Cactus.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Slabbit",
+          "file": "Slabbit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bismuth",
+          "file": "Bismuth.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ruby",
+          "file": "Ruby.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Sage",
+          "file": "Desert Sage.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Flower",
+          "file": "Desert Flower.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Rose",
+          "file": "Desert Rose.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "file": "Cactus Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "file": "Cactus.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_7-0-3",
+      "markerId": "desert-7",
+      "mapId": "surface",
+      "name": "Desert 7",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 964,
+      "sourcePixelY": 439,
+      "sourcePercentageX": 89.591078,
+      "sourcePercentageY": 41.57197,
+      "x": 89.6,
+      "y": 41.8,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Pyramid Guardian",
+          "file": "Pyramid Guardian.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Lime Slime",
+          "file": "Lime Slime.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starmetal",
+          "file": "Starmetal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond Fragment",
+          "file": "Black Diamond Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond",
+          "file": "Black Diamond.png"
+        },
+        {
+          "section": "resources",
+          "name": "Memory Agave",
+          "file": "Memory Agave.png"
+        },
+        {
+          "section": "resources",
+          "name": "Epochal Lily",
+          "file": "Epochal Lily.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "file": "Sculpted Cactus.png"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "file": "History Fruit.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_8-0-4",
+      "markerId": "desert-8",
+      "mapId": "surface",
+      "name": "Desert 8",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 894,
+      "sourcePixelY": 439,
+      "sourcePercentageX": 83.085502,
+      "sourcePercentageY": 41.57197,
+      "x": 83,
+      "y": 41.8,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "resources",
+          "name": "Starmetal",
+          "file": "Starmetal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bismuth",
+          "file": "Bismuth.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond Fragment",
+          "file": "Black Diamond Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ruby",
+          "file": "Ruby.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond",
+          "file": "Black Diamond.png"
+        },
+        {
+          "section": "resources",
+          "name": "Lava Octopus",
+          "file": "Lava Octopus.png"
+        },
+        {
+          "section": "resources",
+          "name": "Fire Fish",
+          "file": "Fire Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Eel",
+          "file": "Desert Eel.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Sage",
+          "file": "Desert Sage.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Flower",
+          "file": "Desert Flower.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Rose",
+          "file": "Desert Rose.png"
+        },
+        {
+          "section": "resources",
+          "name": "Epochal Lily",
+          "file": "Epochal Lily.png"
+        },
+        {
+          "section": "resources",
+          "name": "Memory Agave",
+          "file": "Memory Agave.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "file": "Cactus Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "file": "Sculpted Cactus.png"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "file": "History Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "file": "Cactus.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_5-0-5",
+      "markerId": "desert-5",
+      "mapId": "surface",
+      "name": "Desert 5",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 904,
+      "sourcePixelY": 314,
+      "sourcePercentageX": 84.01487,
+      "sourcePercentageY": 29.734848,
+      "x": 84,
+      "y": 30,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Blaze",
+          "file": "Blaze.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Haunted Flame",
+          "file": "Haunted Flame.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Lost Bard",
+          "file": "Lost Bard.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Saowl",
+          "file": "Saowl.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Pyramid Guardian",
+          "file": "Pyramid Guardian.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Lime Slime",
+          "file": "Lime Slime.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starmetal",
+          "file": "Starmetal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond Fragment",
+          "file": "Black Diamond Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond",
+          "file": "Black Diamond.png"
+        },
+        {
+          "section": "resources",
+          "name": "Memory Agave",
+          "file": "Memory Agave.png"
+        },
+        {
+          "section": "resources",
+          "name": "Epochal Lily",
+          "file": "Epochal Lily.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "file": "Sculpted Cactus.png"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "file": "History Fruit.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_6-0-6",
+      "markerId": "desert-6",
+      "mapId": "surface",
+      "name": "Desert 6",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 839,
+      "sourcePixelY": 254,
+      "sourcePercentageX": 77.973978,
+      "sourcePercentageY": 24.05303,
+      "x": 77.9,
+      "y": 24,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "resources",
+          "name": "Starmetal",
+          "file": "Starmetal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond Fragment",
+          "file": "Black Diamond Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond",
+          "file": "Black Diamond.png"
+        },
+        {
+          "section": "resources",
+          "name": "Memory Agave",
+          "file": "Memory Agave.png"
+        },
+        {
+          "section": "resources",
+          "name": "Epochal Lily",
+          "file": "Epochal Lily.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "file": "Sculpted Cactus.png"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "file": "History Fruit.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_4-0-7",
+      "markerId": "desert-4",
+      "mapId": "surface",
+      "name": "Desert 4",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 734,
+      "sourcePixelY": 269,
+      "sourcePercentageX": 68.215613,
+      "sourcePercentageY": 25.473485,
+      "x": 68.4,
+      "y": 25.4,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cactus",
+          "file": "Cactus.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Rokkik",
+          "file": "Rokkik.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bismuth",
+          "file": "Bismuth.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ruby",
+          "file": "Ruby.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Angel Fish",
+          "file": "Angel Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Chomper",
+          "file": "Chomper.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Sage",
+          "file": "Desert Sage.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Flower",
+          "file": "Desert Flower.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Rose",
+          "file": "Desert Rose.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "file": "Cactus Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "file": "Cactus.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-desert_coast-0-8",
+      "markerId": "desert-coast",
+      "mapId": "surface",
+      "name": "Desert coast",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 759,
+      "sourcePixelY": 204,
+      "sourcePercentageX": 70.539033,
+      "sourcePercentageY": 19.318182,
+      "x": 70.8,
+      "y": 19.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Saowl",
+          "file": "Saowl.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Pyramid Guardian",
+          "file": "Pyramid Guardian.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starmetal",
+          "file": "Starmetal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond Fragment",
+          "file": "Black Diamond Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond",
+          "file": "Black Diamond.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Octopus",
+          "file": "Abyssal Octopus.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spookee",
+          "file": "Spookee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Abyssal Urchin",
+          "file": "Abyssal Urchin.png"
+        },
+        {
+          "section": "resources",
+          "name": "Memory Agave",
+          "file": "Memory Agave.png"
+        },
+        {
+          "section": "resources",
+          "name": "Epochal Lily",
+          "file": "Epochal Lily.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sculpted Cactus",
+          "file": "Sculpted Cactus.png"
+        },
+        {
+          "section": "resources",
+          "name": "History Fruit",
+          "file": "History Fruit.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-savannah_1-0-9",
+      "markerId": "savannah-1",
+      "mapId": "surface",
+      "name": "Savannah 1",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 714,
+      "sourcePixelY": 474,
+      "sourcePercentageX": 66.356877,
+      "sourcePercentageY": 44.886364,
+      "x": 66.5,
+      "y": 45,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Licki",
+          "file": "Licki.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Bananek",
+          "file": "Bananek.png"
+        },
+        {
+          "section": "resources",
+          "name": "Iron Ore",
+          "file": "Iron Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aloe Vera",
+          "file": "Aloe Vera.png"
+        },
+        {
+          "section": "resources",
+          "name": "Pineapple",
+          "file": "Pineapple.png"
+        },
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "file": "Acacia Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-savannah_2-0-10",
+      "markerId": "savannah-2",
+      "mapId": "surface",
+      "name": "Savannah 2",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 744,
+      "sourcePixelY": 549,
+      "sourcePercentageX": 69.144981,
+      "sourcePercentageY": 51.988636,
+      "x": 69,
+      "y": 52.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Bananek",
+          "file": "Bananek.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Citruslime",
+          "file": "Citruslime.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Licki",
+          "file": "Licki.png"
+        },
+        {
+          "section": "resources",
+          "name": "Iron Ore",
+          "file": "Iron Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aloe Vera",
+          "file": "Aloe Vera.png"
+        },
+        {
+          "section": "resources",
+          "name": "Pineapple",
+          "file": "Pineapple.png"
+        },
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "file": "Acacia Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-savannah_3-0-11",
+      "markerId": "savannah-3",
+      "mapId": "surface",
+      "name": "Savannah 3",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 779,
+      "sourcePixelY": 629,
+      "sourcePercentageX": 72.39777,
+      "sourcePercentageY": 59.564394,
+      "x": 72.5,
+      "y": 60,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Citruslime",
+          "file": "Citruslime.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Bananek",
+          "file": "Bananek.png"
+        },
+        {
+          "section": "resources",
+          "name": "Iron Ore",
+          "file": "Iron Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aloe Vera",
+          "file": "Aloe Vera.png"
+        },
+        {
+          "section": "resources",
+          "name": "Pineapple",
+          "file": "Pineapple.png"
+        },
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "file": "Acacia Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-windy_savannah-0-12",
+      "markerId": "windy-savannah",
+      "mapId": "surface",
+      "name": "Windy savannah",
+      "groupId": "region-10",
+      "sourceArea": "Desert",
+      "area": "Desert",
+      "sourcePixelX": 874,
+      "sourcePixelY": 634,
+      "sourcePercentageX": 81.226766,
+      "sourcePercentageY": 60.037879,
+      "x": 81.2,
+      "y": 60,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Licki",
+          "file": "Licki.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Citruslime",
+          "file": "Citruslime.png"
+        },
+        {
+          "section": "resources",
+          "name": "Iron Ore",
+          "file": "Iron Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Moss Snail",
+          "file": "Moss Snail.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aloe Vera",
+          "file": "Aloe Vera.png"
+        },
+        {
+          "section": "resources",
+          "name": "Pineapple",
+          "file": "Pineapple.png"
+        },
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "file": "Acacia Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-pyramid-0-0",
+      "markerId": "pyramid",
+      "mapId": "surface",
+      "name": "Pyramid",
+      "groupId": "region-11",
+      "sourceArea": "Pyramid",
+      "area": "Pyramid",
+      "sourcePixelX": 954,
+      "sourcePixelY": 399,
+      "sourcePercentageX": 88.66171,
+      "sourcePercentageY": 37.784091,
+      "x": 88.6,
+      "y": 37.6,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "resources",
+          "name": "Bismuth",
+          "file": "Bismuth.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ruby",
+          "file": "Ruby.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Sage",
+          "file": "Desert Sage.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Flower",
+          "file": "Desert Flower.png"
+        },
+        {
+          "section": "resources",
+          "name": "Desert Rose",
+          "file": "Desert Rose.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus Fruit",
+          "file": "Cactus Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cactus",
+          "file": "Cactus.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-savannah_cavern-0-0",
+      "markerId": "banana-farm",
+      "mapId": "surface",
+      "name": "Banana farm",
+      "groupId": "region-12",
+      "sourceArea": "Banana farm",
+      "area": "Banana farm",
+      "sourcePixelX": 739,
+      "sourcePixelY": 594,
+      "sourcePercentageX": 68.680297,
+      "sourcePercentageY": 56.25,
+      "x": 68.6,
+      "y": 56.4,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Bananek",
+          "file": "Bananek.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Overripe Bananek",
+          "file": "Overripe Bananek.png"
+        },
+        {
+          "section": "resources",
+          "name": "Iron Ore",
+          "file": "Iron Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aloe Vera",
+          "file": "Aloe Vera.png"
+        },
+        {
+          "section": "resources",
+          "name": "Pineapple",
+          "file": "Pineapple.png"
+        },
+        {
+          "section": "resources",
+          "name": "Acacia Wood",
+          "file": "Acacia Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-misty_forest_1-0-0",
+      "markerId": "misty-forest-1",
+      "mapId": "surface",
+      "name": "Misty forest 1",
+      "groupId": "region-13",
+      "sourceArea": "Misty Forest",
+      "area": "Misty Forest",
+      "sourcePixelX": 689,
+      "sourcePixelY": 659,
+      "sourcePercentageX": 64.033457,
+      "sourcePercentageY": 62.405303,
+      "x": 64,
+      "y": 63,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Misty Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Monoghoul",
+          "file": "Monoghoul.png"
+        },
+        {
+          "section": "resources",
+          "name": "Petrified Wood",
+          "file": "Petrified Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Lantern Bulb",
+          "file": "Lantern Bulb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Fruit",
+          "file": "Misty Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Wood",
+          "file": "Misty Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-misty_forest_2-0-1",
+      "markerId": "misty-forest-2",
+      "mapId": "surface",
+      "name": "Misty forest 2",
+      "groupId": "region-13",
+      "sourceArea": "Misty Forest",
+      "area": "Misty Forest",
+      "sourcePixelX": 619,
+      "sourcePixelY": 684,
+      "sourcePercentageX": 57.527881,
+      "sourcePercentageY": 64.772727,
+      "x": 57.8,
+      "y": 65.3,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Misty Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Sadling",
+          "file": "Sadling.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Monoghoul",
+          "file": "Monoghoul.png"
+        },
+        {
+          "section": "resources",
+          "name": "Petrified Wood",
+          "file": "Petrified Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Lantern Bulb",
+          "file": "Lantern Bulb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Fruit",
+          "file": "Misty Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Wood",
+          "file": "Misty Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starfish",
+          "file": "Starfish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-misty_forest_3-0-2",
+      "markerId": "misty-forest-3",
+      "mapId": "surface",
+      "name": "Misty forest 3",
+      "groupId": "region-13",
+      "sourceArea": "Misty Forest",
+      "area": "Misty Forest",
+      "sourcePixelX": 534,
+      "sourcePixelY": 669,
+      "sourcePercentageX": 49.628253,
+      "sourcePercentageY": 63.352273,
+      "x": 49.5,
+      "y": 63.8,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Misty Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Sadling",
+          "file": "Sadling.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Dark Pumpkin",
+          "file": "Dark Pumpkin.png"
+        },
+        {
+          "section": "resources",
+          "name": "Petrified Wood",
+          "file": "Petrified Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Lantern Bulb",
+          "file": "Lantern Bulb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Fruit",
+          "file": "Misty Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Wood",
+          "file": "Misty Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-lost_forest-0-0",
+      "markerId": "lost-forest",
+      "mapId": "surface",
+      "name": "Lost Forest",
+      "groupId": "region-14",
+      "sourceArea": "Lost Forest",
+      "area": "Lost Forest",
+      "sourcePixelX": 569,
+      "sourcePixelY": 709,
+      "sourcePercentageX": 52.881041,
+      "sourcePercentageY": 67.140152,
+      "x": 53,
+      "y": 67.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Misty Fruit",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Monoghoul",
+          "file": "Monoghoul.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Denial",
+          "file": "Denial.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Sadling",
+          "file": "Sadling.png"
+        },
+        {
+          "section": "resources",
+          "name": "Petrified Wood",
+          "file": "Petrified Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Lantern Bulb",
+          "file": "Lantern Bulb.png"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Fruit",
+          "file": "Misty Fruit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Misty Wood",
+          "file": "Misty Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starfish",
+          "file": "Starfish.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-sulfuric_plains_1-0-0",
+      "markerId": "sulfuric-plains-1",
+      "mapId": "surface",
+      "name": "Sulfuric plains 1",
+      "groupId": "region-15",
+      "sourceArea": "Sulfuric Plains",
+      "area": "Sulfuric Plains",
+      "sourcePixelX": 474,
+      "sourcePixelY": 664,
+      "sourcePercentageX": 44.052045,
+      "sourcePercentageY": 62.878788,
+      "x": 44,
+      "y": 63,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Stinky Sheep",
+          "file": "Stinky Sheep.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric powder",
+          "file": "Sulfuric powder.png"
+        },
+        {
+          "section": "resources",
+          "name": "Silver Leaf",
+          "file": "Silver Leaf.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Garlic",
+          "file": "Yellow Garlic.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "file": "Sulfuric Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "file": "Spot Tomato.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-sulfuric_plains_2-0-1",
+      "markerId": "sulfuric-plains-2",
+      "mapId": "surface",
+      "name": "Sulfuric plains 2",
+      "groupId": "region-15",
+      "sourceArea": "Sulfuric Plains",
+      "area": "Sulfuric Plains",
+      "sourcePixelX": 434,
+      "sourcePixelY": 644,
+      "sourcePercentageX": 40.334572,
+      "sourcePercentageY": 60.984848,
+      "x": 40.4,
+      "y": 61.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Spot Slime",
+          "file": "Spot Slime.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Stinky Sheep",
+          "file": "Stinky Sheep.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric powder",
+          "file": "Sulfuric powder.png"
+        },
+        {
+          "section": "resources",
+          "name": "Silver Leaf",
+          "file": "Silver Leaf.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Garlic",
+          "file": "Yellow Garlic.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "file": "Sulfuric Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "file": "Spot Tomato.png"
+        },
+        {
+          "section": "resources",
+          "name": "Trout",
+          "file": "Trout.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfur Squid",
+          "file": "Sulfur Squid.png"
+        },
+        {
+          "section": "resources",
+          "name": "Clownfish",
+          "file": "Clownfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Seaweed",
+          "file": "Seaweed.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-sulfuric_plains_3-0-2",
+      "markerId": "sulfuric-plains-3",
+      "mapId": "surface",
+      "name": "Sulfuric plains 3",
+      "groupId": "region-15",
+      "sourceArea": "Sulfuric Plains",
+      "area": "Sulfuric Plains",
+      "sourcePixelX": 394,
+      "sourcePixelY": 609,
+      "sourcePercentageX": 36.6171,
+      "sourcePercentageY": 57.670455,
+      "x": 37,
+      "y": 58,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Licke",
+          "file": "Licke.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Spot Slime",
+          "file": "Spot Slime.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric powder",
+          "file": "Sulfuric powder.png"
+        },
+        {
+          "section": "resources",
+          "name": "Silver Leaf",
+          "file": "Silver Leaf.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Garlic",
+          "file": "Yellow Garlic.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "file": "Sulfuric Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "file": "Spot Tomato.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-sulfuric_path-0-0",
+      "markerId": "sulfuric-path",
+      "mapId": "surface",
+      "name": "Sulfuric path",
+      "groupId": "region-16",
+      "sourceArea": "Sulfuric Path",
+      "area": "Sulfuric Path",
+      "sourcePixelX": 414,
+      "sourcePixelY": 669,
+      "sourcePercentageX": 38.475836,
+      "sourcePercentageY": 63.352273,
+      "x": 38.5,
+      "y": 63.7,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Spot Slime",
+          "file": "Spot Slime.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Lumen Sprite",
+          "file": "Lumen Sprite.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Licke",
+          "file": "Licke.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric powder",
+          "file": "Sulfuric powder.png"
+        },
+        {
+          "section": "resources",
+          "name": "Silver Leaf",
+          "file": "Silver Leaf.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Garlic",
+          "file": "Yellow Garlic.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "file": "Sulfuric Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "file": "Spot Tomato.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-sulfuric_path_2-0-1",
+      "markerId": "sulfuric-path-2",
+      "mapId": "surface",
+      "name": "Sulfuric path 2",
+      "groupId": "region-16",
+      "sourceArea": "Sulfuric Path",
+      "area": "Sulfuric Path",
+      "sourcePixelX": 399,
+      "sourcePixelY": 704,
+      "sourcePercentageX": 37.081784,
+      "sourcePercentageY": 66.666667,
+      "x": 37,
+      "y": 67,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "note": "trees"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Anger",
+          "file": "Anger.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Licke",
+          "file": "Licke.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric powder",
+          "file": "Sulfuric powder.png"
+        },
+        {
+          "section": "resources",
+          "name": "Silver Leaf",
+          "file": "Silver Leaf.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Garlic",
+          "file": "Yellow Garlic.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric Wood",
+          "file": "Sulfuric Wood.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spot Tomato",
+          "file": "Spot Tomato.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-rocky_path_1-0-0",
+      "markerId": "rocky-path-1",
+      "mapId": "surface",
+      "name": "Rocky path 1",
+      "groupId": "region-17",
+      "sourceArea": "Rocky Path",
+      "area": "Rocky Path",
+      "sourcePixelX": 314,
+      "sourcePixelY": 689,
+      "sourcePercentageX": 29.182156,
+      "sourcePercentageY": 65.246212,
+      "x": 29,
+      "y": 65,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Rokkak",
+          "file": "Rokkak.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Rocky",
+          "file": "Rocky.png"
+        },
+        {
+          "section": "resources",
+          "name": "Gold Ore",
+          "file": "Gold Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Amber",
+          "file": "Amber.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ashen Onion",
+          "file": "Ashen Onion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Soy",
+          "file": "Red Soy.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Dandelion",
+          "file": "Red Dandelion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "file": "Rocky Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-rocky_path_2-0-1",
+      "markerId": "rocky-path-2",
+      "mapId": "surface",
+      "name": "Rocky path 2",
+      "groupId": "region-17",
+      "sourceArea": "Rocky Path",
+      "area": "Rocky Path",
+      "sourcePixelX": 379,
+      "sourcePixelY": 739,
+      "sourcePercentageX": 35.223048,
+      "sourcePercentageY": 69.981061,
+      "x": 35.6,
+      "y": 70,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cat Golem",
+          "file": "Cat Golem.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Rokkak",
+          "file": "Rokkak.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Rocky",
+          "file": "Rocky.png"
+        },
+        {
+          "section": "resources",
+          "name": "Gold Ore",
+          "file": "Gold Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Amber",
+          "file": "Amber.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ashen Onion",
+          "file": "Ashen Onion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Soy",
+          "file": "Red Soy.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Dandelion",
+          "file": "Red Dandelion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "file": "Rocky Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-rocky_path_3-0-2",
+      "markerId": "rocky-path-3",
+      "mapId": "surface",
+      "name": "Rocky path 3",
+      "groupId": "region-17",
+      "sourceArea": "Rocky Path",
+      "area": "Rocky Path",
+      "sourcePixelX": 259,
+      "sourcePixelY": 624,
+      "sourcePercentageX": 24.070632,
+      "sourcePercentageY": 59.090909,
+      "x": 24,
+      "y": 59,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cat Guardian",
+          "file": "Cat Guardian.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Rocky",
+          "file": "Rocky.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cat Golem",
+          "file": "Cat Golem.png"
+        },
+        {
+          "section": "resources",
+          "name": "Gold Ore",
+          "file": "Gold Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Amber",
+          "file": "Amber.png"
+        },
+        {
+          "section": "resources",
+          "name": "Fire Fish",
+          "file": "Fire Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Lava Octopus",
+          "file": "Lava Octopus.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spookee",
+          "file": "Spookee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Moss Snail",
+          "file": "Moss Snail.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ashen Onion",
+          "file": "Ashen Onion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Soy",
+          "file": "Red Soy.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Dandelion",
+          "file": "Red Dandelion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "file": "Rocky Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-detour-0-0",
+      "markerId": "detour",
+      "mapId": "surface",
+      "name": "Detour",
+      "groupId": "region-18",
+      "sourceArea": "Detour",
+      "area": "Rocky Path",
+      "sourcePixelX": 184,
+      "sourcePixelY": 599,
+      "sourcePercentageX": 17.100372,
+      "sourcePercentageY": 56.723485,
+      "x": 17,
+      "y": 57,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Ashball",
+          "file": "Ashball.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cat Guardian",
+          "file": "Cat Guardian.png"
+        },
+        {
+          "section": "resources",
+          "name": "Gold Ore",
+          "file": "Gold Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Amber",
+          "file": "Amber.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ashen Onion",
+          "file": "Ashen Onion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Soy",
+          "file": "Red Soy.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Dandelion",
+          "file": "Red Dandelion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "file": "Rocky Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-rocky_path_den-0-1",
+      "markerId": "cat-golem-den",
+      "mapId": "surface",
+      "name": "Cat Golem Den",
+      "groupId": "region-18",
+      "sourceArea": "Detour",
+      "area": "Detour",
+      "sourcePixelX": 358,
+      "sourcePixelY": 754,
+      "sourcePercentageX": 33.271375,
+      "sourcePercentageY": 71.401515,
+      "x": 33.2,
+      "y": 71.4,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cat Golem",
+          "file": "Cat Golem.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cat Guardian",
+          "file": "Cat Guardian.png"
+        },
+        {
+          "section": "resources",
+          "name": "Gold Ore",
+          "file": "Gold Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Amber",
+          "file": "Amber.png"
+        },
+        {
+          "section": "resources",
+          "name": "Fire Fish",
+          "file": "Fire Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Lava Octopus",
+          "file": "Lava Octopus.png"
+        },
+        {
+          "section": "resources",
+          "name": "Wolf Fish",
+          "file": "Wolf Fish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Spookee",
+          "file": "Spookee.png"
+        },
+        {
+          "section": "resources",
+          "name": "Moss Snail",
+          "file": "Moss Snail.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ashen Onion",
+          "file": "Ashen Onion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Soy",
+          "file": "Red Soy.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Dandelion",
+          "file": "Red Dandelion.png"
+        },
+        {
+          "section": "resources",
+          "name": "Rocky Wood",
+          "file": "Rocky Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-snowy_mountain_1-0-0",
+      "markerId": "snowy-mountain-1",
+      "mapId": "surface",
+      "name": "Snowy mountain 1",
+      "groupId": "region-19",
+      "sourceArea": "Snowy Mountain",
+      "area": "Snowy Mountain",
+      "sourcePixelX": 629,
+      "sourcePixelY": 799,
+      "sourcePercentageX": 58.457249,
+      "sourcePercentageY": 75.662879,
+      "x": 58.6,
+      "y": 76.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Slibbit",
+          "file": "Slibbit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Titanium Ore",
+          "file": "Titanium Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sapphire",
+          "file": "Sapphire.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Jelly",
+          "file": "Ice Jelly.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dew Bloom",
+          "file": "Dew Bloom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Ginseng",
+          "file": "Blue Ginseng.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Flax Seed",
+          "file": "Ice Flax Seed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "file": "Blue Cinnamon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-snowy_mountain_2-0-1",
+      "markerId": "snowy-mountain-2",
+      "mapId": "surface",
+      "name": "Snowy mountain 2",
+      "groupId": "region-19",
+      "sourceArea": "Snowy Mountain",
+      "area": "Snowy Mountain",
+      "sourcePixelX": 714,
+      "sourcePixelY": 764,
+      "sourcePercentageX": 66.356877,
+      "sourcePercentageY": 72.348485,
+      "x": 66.4,
+      "y": 72.8,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Slibbit",
+          "file": "Slibbit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Blizzy",
+          "file": "Blizzy.png"
+        },
+        {
+          "section": "resources",
+          "name": "Titanium Ore",
+          "file": "Titanium Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sapphire",
+          "file": "Sapphire.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dew Bloom",
+          "file": "Dew Bloom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Ginseng",
+          "file": "Blue Ginseng.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Flax Seed",
+          "file": "Ice Flax Seed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "file": "Blue Cinnamon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-snowy_mountain_4-0-2",
+      "markerId": "snowy-mountain-4",
+      "mapId": "surface",
+      "name": "Snowy mountain 4",
+      "groupId": "region-19",
+      "sourceArea": "Snowy Mountain",
+      "area": "Snowy Mountain",
+      "sourcePixelX": 439,
+      "sourcePixelY": 779,
+      "sourcePercentageX": 40.799257,
+      "sourcePercentageY": 73.768939,
+      "x": 40.6,
+      "y": 73.7,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Blizzy",
+          "file": "Blizzy.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Snowball",
+          "file": "Snowball.png"
+        },
+        {
+          "section": "resources",
+          "name": "Titanium Ore",
+          "file": "Titanium Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sapphire",
+          "file": "Sapphire.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dew Bloom",
+          "file": "Dew Bloom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Ginseng",
+          "file": "Blue Ginseng.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Flax Seed",
+          "file": "Ice Flax Seed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "file": "Blue Cinnamon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-snowy_mountain_5-0-3",
+      "markerId": "snowy-mountain-5",
+      "mapId": "surface",
+      "name": "Snowy mountain 5",
+      "groupId": "region-19",
+      "sourceArea": "Snowy Mountain",
+      "area": "Snowy Mountain",
+      "sourcePixelX": 534,
+      "sourcePixelY": 789,
+      "sourcePercentageX": 49.628253,
+      "sourcePercentageY": 74.715909,
+      "x": 49.8,
+      "y": 75.2,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Frostfruit",
+          "file": "Frostfruit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Snowball",
+          "file": "Snowball.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Blizzy",
+          "file": "Blizzy.png"
+        },
+        {
+          "section": "resources",
+          "name": "Titanium Ore",
+          "file": "Titanium Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sapphire",
+          "file": "Sapphire.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Jelly",
+          "file": "Ice Jelly.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dew Bloom",
+          "file": "Dew Bloom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Ginseng",
+          "file": "Blue Ginseng.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Flax Seed",
+          "file": "Ice Flax Seed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "file": "Blue Cinnamon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-snowy_mountain_3-0-4",
+      "markerId": "snowy-mountain-3",
+      "mapId": "surface",
+      "name": "Snowy mountain 3",
+      "groupId": "region-19",
+      "sourceArea": "Snowy Mountain",
+      "area": "Snowy Mountain",
+      "sourcePixelX": 804,
+      "sourcePixelY": 744,
+      "sourcePercentageX": 74.72119,
+      "sourcePercentageY": 70.454545,
+      "x": 75,
+      "y": 71,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Snowball",
+          "file": "Snowball.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Blizzy",
+          "file": "Blizzy.png"
+        },
+        {
+          "section": "resources",
+          "name": "Titanium Ore",
+          "file": "Titanium Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sapphire",
+          "file": "Sapphire.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Jelly",
+          "file": "Ice Jelly.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dew Bloom",
+          "file": "Dew Bloom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Ginseng",
+          "file": "Blue Ginseng.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Flax Seed",
+          "file": "Ice Flax Seed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "file": "Blue Cinnamon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-traveler_rest-0-0",
+      "markerId": "traveler-rest",
+      "mapId": "surface",
+      "name": "Traveler rest",
+      "groupId": "region-20",
+      "sourceArea": "Traveler rest",
+      "area": "Traveler rest",
+      "sourcePixelX": 484,
+      "sourcePixelY": 799,
+      "sourcePercentageX": 44.981413,
+      "sourcePercentageY": 75.662879,
+      "x": 45,
+      "y": 75.5,
+      "coordinateStatus": "preserved-existing",
+      "notes": [
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "note": "trees"
+        }
+      ],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Icyghoul",
+          "file": "Icyghoul.png"
+        },
+        {
+          "section": "resources",
+          "name": "Titanium Ore",
+          "file": "Titanium Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sapphire",
+          "file": "Sapphire.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Jelly",
+          "file": "Ice Jelly.png"
+        },
+        {
+          "section": "resources",
+          "name": "Electray",
+          "file": "Electray.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Salmon",
+          "file": "Ice Salmon.png"
+        },
+        {
+          "section": "resources",
+          "name": "Glowfish",
+          "file": "Glowfish.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dew Bloom",
+          "file": "Dew Bloom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Ginseng",
+          "file": "Blue Ginseng.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ice Flax Seed",
+          "file": "Ice Flax Seed.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Cinnamon Wood",
+          "file": "Blue Cinnamon Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-spawn-1-0",
+      "markerId": "zone-spawn-1-0",
+      "mapId": "caves",
+      "name": "Spawn",
+      "groupId": "region-21",
+      "sourceArea": "Spawn",
+      "area": "Spawn",
+      "sourcePixelX": 549,
+      "sourcePixelY": 145,
+      "sourcePercentageX": 51.022305,
+      "sourcePercentageY": 13.731061,
+      "x": 51.022305,
+      "y": 13.731061,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "resources",
+          "name": "Clam",
+          "file": "Clam.png"
+        },
+        {
+          "section": "resources",
+          "name": "Shrimp",
+          "file": "Shrimp.png"
+        },
+        {
+          "section": "resources",
+          "name": "Trout",
+          "file": "Trout.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-cave_1-1-0",
+      "markerId": "zone-cave_1-1-0",
+      "mapId": "caves",
+      "name": "Cave 1",
+      "groupId": "region-22",
+      "sourceArea": "Cave",
+      "area": "Cave",
+      "sourcePixelX": 529,
+      "sourcePixelY": 228,
+      "sourcePercentageX": 49.163569,
+      "sourcePercentageY": 21.590909,
+      "x": 49.163569,
+      "y": 21.590909,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Bubble Spirit",
+          "file": "Bubble Spirit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Shard",
+          "file": "Blue Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Shard",
+          "file": "Red Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Shard",
+          "file": "Yellow Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Crystal",
+          "file": "Red Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Crystal",
+          "file": "Blue Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Crystal",
+          "file": "Yellow Crystal.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-cave_2-1-1",
+      "markerId": "zone-cave_2-1-1",
+      "mapId": "caves",
+      "name": "Cave 2",
+      "groupId": "region-22",
+      "sourceArea": "Cave",
+      "area": "Cave",
+      "sourcePixelX": 588,
+      "sourcePixelY": 274,
+      "sourcePercentageX": 54.64684,
+      "sourcePercentageY": 25.94697,
+      "x": 54.64684,
+      "y": 25.94697,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Bubble Spirit",
+          "file": "Bubble Spirit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Glowsnail",
+          "file": "Glowsnail.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Shard",
+          "file": "Blue Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Shard",
+          "file": "Red Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Shard",
+          "file": "Yellow Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Crystal",
+          "file": "Red Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Crystal",
+          "file": "Blue Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Crystal",
+          "file": "Yellow Crystal.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-cave_3-1-2",
+      "markerId": "zone-cave_3-1-2",
+      "mapId": "caves",
+      "name": "Cave 3",
+      "groupId": "region-22",
+      "sourceArea": "Cave",
+      "area": "Cave",
+      "sourcePixelX": 674,
+      "sourcePixelY": 284,
+      "sourcePercentageX": 62.639405,
+      "sourcePercentageY": 26.893939,
+      "x": 62.639405,
+      "y": 26.893939,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Jel",
+          "file": "Jel.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Bubble Spirit",
+          "file": "Bubble Spirit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Glowsnail",
+          "file": "Glowsnail.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Shard",
+          "file": "Blue Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Shard",
+          "file": "Red Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Shard",
+          "file": "Yellow Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Red Crystal",
+          "file": "Red Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blue Crystal",
+          "file": "Blue Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Yellow Crystal",
+          "file": "Yellow Crystal.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_1-1-0",
+      "markerId": "zone-deep_cave_1-1-0",
+      "mapId": "caves",
+      "name": "Deep cave 1",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 724,
+      "sourcePixelY": 324,
+      "sourcePercentageX": 67.286245,
+      "sourcePercentageY": 30.681818,
+      "x": 67.286245,
+      "y": 30.681818,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Banshek",
+          "file": "Banshek.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Lampshroom",
+          "file": "Lampshroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Iron Ore",
+          "file": "Iron Ore.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_2-1-1",
+      "markerId": "zone-deep_cave_2-1-1",
+      "mapId": "caves",
+      "name": "Deep cave 2",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 654,
+      "sourcePixelY": 368,
+      "sourcePercentageX": 60.780669,
+      "sourcePercentageY": 34.848485,
+      "x": 60.780669,
+      "y": 34.848485,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": []
+    },
+    {
+      "sourceId": "zone-deep_cave_3-1-2",
+      "markerId": "zone-deep_cave_3-1-2",
+      "mapId": "caves",
+      "name": "Deep cave 3",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 589,
+      "sourcePixelY": 398,
+      "sourcePercentageX": 54.739777,
+      "sourcePercentageY": 37.689394,
+      "x": 54.739777,
+      "y": 37.689394,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Dark Matter",
+          "file": "Dark Matter.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Mangosteen Slime",
+          "file": "Mangosteen Slime.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Shadow Sprite",
+          "file": "Shadow Sprite.png"
+        },
+        {
+          "section": "resources",
+          "name": "Petrified Wood",
+          "file": "Petrified Wood.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_4-1-3",
+      "markerId": "zone-deep_cave_4-1-3",
+      "mapId": "caves",
+      "name": "Deep cave 4",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 543,
+      "sourcePixelY": 384,
+      "sourcePercentageX": 50.464684,
+      "sourcePercentageY": 36.363636,
+      "x": 50.464684,
+      "y": 36.363636,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Dark Matter",
+          "file": "Dark Matter.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Shadow Sprite",
+          "file": "Shadow Sprite.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric powder",
+          "file": "Sulfuric powder.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_6-1-4",
+      "markerId": "zone-deep_cave_6-1-4",
+      "mapId": "caves",
+      "name": "Deep cave 6",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 503,
+      "sourcePixelY": 368,
+      "sourcePercentageX": 46.747212,
+      "sourcePercentageY": 34.848485,
+      "x": 46.747212,
+      "y": 34.848485,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Shadow Sprite",
+          "file": "Shadow Sprite.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Elemental",
+          "file": "Elemental.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Dark Mass",
+          "file": "Dark Mass.png"
+        },
+        {
+          "section": "resources",
+          "name": "Cobalt Ore",
+          "file": "Cobalt Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Aquamarine",
+          "file": "Aquamarine.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_5-1-5",
+      "markerId": "zone-deep_cave_5-1-5",
+      "mapId": "caves",
+      "name": "Deep cave 5",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 428,
+      "sourcePixelY": 399,
+      "sourcePercentageX": 39.776952,
+      "sourcePercentageY": 37.784091,
+      "x": 39.776952,
+      "y": 37.784091,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": []
+    },
+    {
+      "sourceId": "zone-deep_cave_x-1-6",
+      "markerId": "zone-deep_cave_x-1-6",
+      "mapId": "caves",
+      "name": "Deep cave x",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 538,
+      "sourcePixelY": 993,
+      "sourcePercentageX": 50,
+      "sourcePercentageY": 94.034091,
+      "x": 50,
+      "y": 94.034091,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Licka",
+          "file": "Licka.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_7-1-7",
+      "markerId": "zone-deep_cave_7-1-7",
+      "mapId": "caves",
+      "name": "Deep cave 7",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 544,
+      "sourcePixelY": 938,
+      "sourcePercentageX": 50.557621,
+      "sourcePercentageY": 88.825758,
+      "x": 50.557621,
+      "y": 88.825758,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Lost Ruins",
+          "file": "Lost Ruins.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Fallentree",
+          "file": "Fallentree.png"
+        },
+        {
+          "section": "resources",
+          "name": "Obsidium",
+          "file": "Obsidium.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blood Pebble",
+          "file": "Blood Pebble.png"
+        },
+        {
+          "section": "resources",
+          "name": "Darkshard",
+          "file": "Darkshard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ruby",
+          "file": "Ruby.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bismuth",
+          "file": "Bismuth.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric powder",
+          "file": "Sulfuric powder.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bloodstone",
+          "file": "Bloodstone.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_8-1-8",
+      "markerId": "zone-deep_cave_8-1-8",
+      "mapId": "caves",
+      "name": "Deep cave 8",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 533,
+      "sourcePixelY": 438,
+      "sourcePercentageX": 49.535316,
+      "sourcePercentageY": 41.477273,
+      "x": 49.535316,
+      "y": 41.477273,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Death Mist",
+          "file": "Death Mist.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Dark Mass",
+          "file": "Dark Mass.png"
+        },
+        {
+          "section": "resources",
+          "name": "Malachite Ore",
+          "file": "Malachite Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Emerald",
+          "file": "Emerald.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_10-1-9",
+      "markerId": "zone-deep_cave_10-1-9",
+      "mapId": "caves",
+      "name": "Deep cave 10",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 554,
+      "sourcePixelY": 568,
+      "sourcePercentageX": 51.486989,
+      "sourcePercentageY": 53.787879,
+      "x": 51.486989,
+      "y": 53.787879,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cursed Spot",
+          "file": "Cursed Spot.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cursed Slibbit",
+          "file": "Cursed Slibbit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Gold Ore",
+          "file": "Gold Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Amber",
+          "file": "Amber.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_11-1-10",
+      "markerId": "zone-deep_cave_11-1-10",
+      "mapId": "caves",
+      "name": "Deep cave 11",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 494,
+      "sourcePixelY": 599,
+      "sourcePercentageX": 45.910781,
+      "sourcePercentageY": 56.723485,
+      "x": 45.910781,
+      "y": 56.723485,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Licku",
+          "file": "Licku.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cursed Spot",
+          "file": "Cursed Spot.png"
+        },
+        {
+          "section": "resources",
+          "name": "Gold Ore",
+          "file": "Gold Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Amber",
+          "file": "Amber.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_12-1-11",
+      "markerId": "zone-deep_cave_12-1-11",
+      "mapId": "caves",
+      "name": "Deep cave 12",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 494,
+      "sourcePixelY": 663,
+      "sourcePercentageX": 45.910781,
+      "sourcePercentageY": 62.784091,
+      "x": 45.910781,
+      "y": 62.784091,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Frostshroom",
+          "file": "Frostshroom.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Licku",
+          "file": "Licku.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_13-1-12",
+      "markerId": "zone-deep_cave_13-1-12",
+      "mapId": "caves",
+      "name": "Deep cave 13",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 553,
+      "sourcePixelY": 683,
+      "sourcePercentageX": 51.394052,
+      "sourcePercentageY": 64.67803,
+      "x": 51.394052,
+      "y": 64.67803,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cosmowl",
+          "file": "Cosmowl.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Frostshroom",
+          "file": "Frostshroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Mithril Ore",
+          "file": "Mithril Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dream Fragment",
+          "file": "Dream Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Dreamstone",
+          "file": "Dreamstone.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_14-1-13",
+      "markerId": "zone-deep_cave_14-1-13",
+      "mapId": "caves",
+      "name": "Deep cave 14",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 573,
+      "sourcePixelY": 734,
+      "sourcePercentageX": 53.252788,
+      "sourcePercentageY": 69.507576,
+      "x": 53.252788,
+      "y": 69.507576,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cursed Tallshroom",
+          "file": "Cursed Tallshroom.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cosmowl",
+          "file": "Cosmowl.png"
+        },
+        {
+          "section": "resources",
+          "name": "Arcane Crystal",
+          "file": "Arcane Crystal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Shard",
+          "file": "Ocean Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ocean Heart",
+          "file": "Ocean Heart.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_15-1-14",
+      "markerId": "zone-deep_cave_15-1-14",
+      "mapId": "caves",
+      "name": "Deep cave 15",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 554,
+      "sourcePixelY": 799,
+      "sourcePercentageX": 51.486989,
+      "sourcePercentageY": 75.662879,
+      "x": 51.486989,
+      "y": 75.662879,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Cursed Cloudsheep",
+          "file": "Cursed Cloudsheep.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cursed Tallshroom",
+          "file": "Cursed Tallshroom.png"
+        },
+        {
+          "section": "resources",
+          "name": "Starmetal",
+          "file": "Starmetal.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond Fragment",
+          "file": "Black Diamond Fragment.png"
+        },
+        {
+          "section": "resources",
+          "name": "Black Diamond",
+          "file": "Black Diamond.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-deep_cave_9-1-15",
+      "markerId": "zone-deep_cave_9-1-15",
+      "mapId": "caves",
+      "name": "Deep cave 9",
+      "groupId": "region-23",
+      "sourceArea": "Deep Cave",
+      "area": "Deep Cave",
+      "sourcePixelX": 554,
+      "sourcePixelY": 869,
+      "sourcePercentageX": 51.486989,
+      "sourcePercentageY": 82.291667,
+      "x": 51.486989,
+      "y": 82.291667,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Lost Ruins",
+          "file": "Lost Ruins.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Licka",
+          "file": "Licka.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Fallentree",
+          "file": "Fallentree.png"
+        },
+        {
+          "section": "resources",
+          "name": "Eternal Ice",
+          "file": "Eternal Ice.png"
+        },
+        {
+          "section": "resources",
+          "name": "Moon Shard",
+          "file": "Moon Shard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Moonstone",
+          "file": "Moonstone.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-hall_of_might-1-0",
+      "markerId": "zone-hall_of_might-1-0",
+      "mapId": "caves",
+      "name": "Hall of Might",
+      "groupId": "region-24",
+      "sourceArea": "Hall of Might",
+      "area": "Hall of Might",
+      "sourcePixelX": 459,
+      "sourcePixelY": 384,
+      "sourcePercentageX": 42.657993,
+      "sourcePercentageY": 36.363636,
+      "x": 42.657993,
+      "y": 36.363636,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Shadow Golem",
+          "file": "Shadow Golem.png"
+        },
+        {
+          "section": "resources",
+          "name": "Obsidium",
+          "file": "Obsidium.png"
+        },
+        {
+          "section": "resources",
+          "name": "Blood Pebble",
+          "file": "Blood Pebble.png"
+        },
+        {
+          "section": "resources",
+          "name": "Darkshard",
+          "file": "Darkshard.png"
+        },
+        {
+          "section": "resources",
+          "name": "Ruby",
+          "file": "Ruby.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bismuth",
+          "file": "Bismuth.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sulfuric powder",
+          "file": "Sulfuric powder.png"
+        },
+        {
+          "section": "resources",
+          "name": "Bloodstone",
+          "file": "Bloodstone.png"
+        }
+      ]
+    },
+    {
+      "sourceId": "zone-frost_cave-1-0",
+      "markerId": "zone-frost_cave-1-0",
+      "mapId": "caves",
+      "name": "Frost cave",
+      "groupId": "region-25",
+      "sourceArea": "Frost cave",
+      "area": "Frost cave",
+      "sourcePixelX": 564,
+      "sourcePixelY": 494,
+      "sourcePercentageX": 52.416357,
+      "sourcePercentageY": 46.780303,
+      "x": 52.416357,
+      "y": 46.780303,
+      "coordinateStatus": "preserved-existing",
+      "notes": [],
+      "sourceImages": [
+        {
+          "section": "monsters",
+          "name": "Slibbit",
+          "file": "Slibbit.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Elemental",
+          "file": "Elemental.png"
+        },
+        {
+          "section": "monsters",
+          "name": "Cursed Slibbit",
+          "file": "Cursed Slibbit.png"
+        },
+        {
+          "section": "resources",
+          "name": "Titanium Ore",
+          "file": "Titanium Ore.png"
+        },
+        {
+          "section": "resources",
+          "name": "Sapphire",
+          "file": "Sapphire.png"
+        }
+      ]
+    }
+  ],
+  "areaColorDifferences": [
+    {
+      "area": "Banana farm",
+      "retained": "#eda600",
+      "source": "#d99200"
+    },
+    {
+      "area": "Snowy Mountain",
+      "retained": "#fff",
+      "source": "#ffffff"
+    }
+  ]
+}

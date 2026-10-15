@@ -438,6 +438,27 @@ describe('search index', () => {
 })
 
 describe('search selection', () => {
+  it('leaves repeated marker names for explicit selection in the global result list', () => {
+    const repeated = [testMarkers[0], { ...testMarkers[0], id: 'other-camp', mapId: 'caves' }]
+    const entry = buildSearchIndex(repeated).find((entry) => entry.type === 'marker')!
+    expect(entry.markerIds).toEqual(['metal-camp', 'other-camp'])
+    expect(resolveSearchEntrySelection(entry, repeated)).toEqual({
+      searchQuery: 'Metal Camp', selectedMarkerId: undefined,
+    })
+    // Even when filters exclude one occurrence, do not silently pick the first.
+    expect(resolveSearchEntrySelection(entry, [repeated[0]]).selectedMarkerId).toBeUndefined()
+  })
+
+  it('resolves a marker on another map when the old query only matched its suggestion type', () => {
+    const marker = { ...testMarkers[0], mapId: 'caves' }
+    const entry = getSearchSuggestions(buildSearchIndex([marker]), 'marker')
+      .find((entry) => entry.type === 'marker')!
+    expect(markerMatchesSearch(marker, 'marker')).toBe(false)
+    const selection = resolveSearchEntrySelection(entry, [marker])
+    expect(selection.selectedMarkerId).toBe(marker.id)
+    expect(markerMatchesSearch(marker, selection.searchQuery)).toBe(true)
+  })
+
   it('resolves a visible marker so map navigation is allowed', () => {
     const markerEntry = findEntry('Metal Camp', 'marker')
     const visibleMarkers = testMarkers.filter((marker) => marker.area === 'Outskirts')

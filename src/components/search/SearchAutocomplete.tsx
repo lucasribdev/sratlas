@@ -103,7 +103,9 @@ export function SearchAutocomplete({
         className={inputClassName}
         id={inputId}
         onBlur={() => {
-          window.setTimeout(() => setIsOpen(false), 120)
+          window.setTimeout(() => {
+            if (document.activeElement !== inputRef.current) setIsOpen(false)
+          }, 120)
         }}
         onChange={(event) => {
           onQueryChange(event.target.value)

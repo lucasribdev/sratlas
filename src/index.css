@@ -60,7 +60,7 @@
 
 @media (max-width: 760px) {
   .map-view .leaflet-top.leaflet-left {
-    top: 4.25rem;
+    top: 9.5rem;
   }
 }
 
@@ -158,6 +158,13 @@
   max-height: calc(min(360px, 100svh - 7.5rem) - 24px);
   overflow-y: auto;
   overscroll-behavior: contain;
+}
+
+@media (max-width: 760px) {
+  .map-popup .leaflet-popup-content {
+    /* Keep a centered marker's popup below the map and search controls. */
+    max-height: max(5rem, calc(50svh - 13.75rem));
+  }
 }
 
 .map-marker-tooltip.leaflet-tooltip {

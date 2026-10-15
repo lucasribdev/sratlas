@@ -1,8 +1,11 @@
-import { useMemo, useState } from "react";
+import { useMemo, useReducer, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
-import { markers } from "@/data/markers";
+import { maps, mapsById } from "@/data/maps";
+import { createMapNavigation, mapNavigationReducer, resolveMarkerNavigation } from "@/application/map-navigation";
+import { MapSelector } from "@/components/maps/MapSelector";
+import { markers, markersById } from "@/data/markers";
 import type { MapMarker } from "@/domain/marker";
-import { markerAreaOptions } from "@/lib/marker-filters";
+import { markerAreaOptions, markerMatchesAreas } from "@/lib/marker-filters";
 import { markerMatchesSearch } from "@/lib/marker-search";
 import { buildSearchIndex, getSearchSuggestions, type SearchEntry } from "@/lib/search-index";
 import { resolveSearchEntrySelection } from "@/lib/search-selection";
@@ -23,10 +26,15 @@ const searchIndex = buildSearchIndex(markers);
 
 export function AppLayout() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedAreas, setSelectedAreas] = useState<Set<string>>(
-    () => new Set(areaOptions),
+  const [areaFilter, setAreaFilter] = useState<Set<string> | null>(null);
+  const [navigation, dispatchNavigation] = useReducer(
+    mapNavigationReducer,
+    maps,
+    createMapNavigation,
   );
-  const [selectedMarkerId, setSelectedMarkerId] = useState<MapMarker["id"]>();
+  const { activeMapId, selectedMarkerId, requestId } = navigation;
+  const activeMap = mapsById.get(activeMapId)!;
+  const selectedMarker = selectedMarkerId ? markersById.get(selectedMarkerId) : undefined;
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
   const searchSuggestions = useMemo(
@@ -37,12 +45,28 @@ export function AppLayout() {
   const filteredMarkers = markers.filter(
     (marker) =>
       markerMatchesSearch(marker, searchQuery) &&
-      (marker.area ? selectedAreas.has(marker.area) : false),
+      markerMatchesAreas(marker, areaFilter),
   );
 
+  const renderedMarkers = filteredMarkers.filter(
+    (marker) => marker.mapId === activeMapId,
+  );
+
+  function changeMap(mapId: string) {
+    if (mapsById.has(mapId)) {
+      dispatchNavigation({ type: "selectMap", mapId });
+    }
+  }
+
+  function changeSearchQuery(query: string) {
+    setSearchQuery(query);
+    dispatchNavigation({ type: "clearSelection" });
+  }
+
   function toggleArea(area: string) {
-    setSelectedAreas((currentAreas) => {
-      const nextAreas = new Set(currentAreas);
+    dispatchNavigation({ type: "clearSelection" });
+    setAreaFilter((currentAreas) => {
+      const nextAreas = new Set(currentAreas ?? areaOptions);
 
       if (nextAreas.has(area)) {
         nextAreas.delete(area);
@@ -55,27 +79,42 @@ export function AppLayout() {
   }
 
   function selectAllAreas() {
-    setSelectedAreas(new Set(areaOptions));
+    dispatchNavigation({ type: "clearSelection" });
+    setAreaFilter(null);
   }
 
   function clearAreas() {
-    setSelectedAreas(new Set());
+    dispatchNavigation({ type: "clearSelection" });
+    setAreaFilter(new Set());
   }
 
-  function selectMarker(markerId: MapMarker["id"]) {
-    setSelectedMarkerId(markerId);
+  function navigateToMarker(markerId: MapMarker["id"]) {
+    const marker = resolveMarkerNavigation(
+      markerId, markersById, mapsById,
+      (candidate) => filteredMarkers.some((visible) => visible.id === candidate.id),
+    );
+    if (!marker) return;
+    dispatchNavigation({ type: "selectMarker", marker });
     setIsMobileFiltersOpen(false);
   }
 
   function selectSearchEntry(entry: SearchEntry) {
-    const selection = resolveSearchEntrySelection(entry, filteredMarkers);
+    const selection = resolveSearchEntrySelection(
+      entry, markers.filter((marker) => markerMatchesAreas(marker, areaFilter)),
+    );
 
     setSearchQuery(selection.searchQuery);
 
     if (selection.selectedMarkerId) {
-      selectMarker(selection.selectedMarkerId);
+      const marker = resolveMarkerNavigation(
+        selection.selectedMarkerId, markersById, mapsById,
+        (candidate) => markerMatchesAreas(candidate, areaFilter) && markerMatchesSearch(candidate, selection.searchQuery),
+      );
+      if (marker) dispatchNavigation({ type: "selectMarker", marker });
+      else dispatchNavigation({ type: "clearSelection" });
+      setIsMobileFiltersOpen(false);
     } else {
-      setSelectedMarkerId(undefined);
+      dispatchNavigation({ type: "clearSelection" });
       setIsMobileFiltersOpen(false);
     }
   }
@@ -84,17 +123,21 @@ export function AppLayout() {
     <main className="flex h-svh min-h-svh overflow-hidden bg-muted">
       <div className="hidden min-h-0 min-[761px]:flex">
         <Sidebar
+          mapSelector={
+            <MapSelector maps={maps} activeMapId={activeMapId} onMapChange={changeMap} />
+          }
+          mapsById={mapsById}
           areaOptions={areaOptions}
           onClearAreas={clearAreas}
-          onMarkerSelect={selectMarker}
-          onSearchQueryChange={setSearchQuery}
+          onMarkerSelect={navigateToMarker}
+          onSearchQueryChange={changeSearchQuery}
           onSearchSuggestionSelect={selectSearchEntry}
           onSelectAllAreas={selectAllAreas}
           onToggleArea={toggleArea}
           markers={filteredMarkers}
           searchQuery={searchQuery}
           searchSuggestions={searchSuggestions}
-          selectedAreas={selectedAreas}
+          selectedAreas={areaFilter}
         />
       </div>
 
@@ -106,12 +149,19 @@ export function AppLayout() {
           className="absolute top-3 right-3 left-3 z-[500] grid grid-cols-[minmax(0,1fr)_auto] gap-2 min-[761px]:hidden"
           aria-label="Compact controls"
         >
+          <div className="col-span-2 rounded-md bg-card p-2 shadow-lg shadow-slate-950/15">
+            <MapSelector
+              maps={maps}
+              activeMapId={activeMapId}
+              onMapChange={changeMap}
+            />
+          </div>
           <SearchAutocomplete
             className="gap-0"
             inputClassName="h-11 !border-border !bg-card text-card-foreground shadow-lg shadow-slate-950/15 placeholder:text-muted-foreground dark:!border-border dark:!bg-card"
             label="Search the map"
             labelClassName="sr-only"
-            onQueryChange={setSearchQuery}
+            onQueryChange={changeSearchQuery}
             onSelect={selectSearchEntry}
             placeholder="Search NPC, resource, monster or area"
             query={searchQuery}
@@ -141,26 +191,29 @@ export function AppLayout() {
                 <SheetTitle>Search, filters, and results</SheetTitle>
               </SheetHeader>
               <Sidebar
+                mapsById={mapsById}
                 areaOptions={areaOptions}
                 onClearAreas={clearAreas}
-                onMarkerSelect={selectMarker}
-                onSearchQueryChange={setSearchQuery}
+                onMarkerSelect={navigateToMarker}
+                onSearchQueryChange={changeSearchQuery}
                 onSearchSuggestionSelect={selectSearchEntry}
                 onSelectAllAreas={selectAllAreas}
                 onToggleArea={toggleArea}
                 markers={filteredMarkers}
                 searchQuery={searchQuery}
                 searchSuggestions={searchSuggestions}
-                selectedAreas={selectedAreas}
+                selectedAreas={areaFilter}
               />
             </SheetContent>
           </Sheet>
         </div>
 
         <GameMapView
-          markers={filteredMarkers}
-          onMarkerSelect={selectMarker}
-          selectedMarkerId={selectedMarkerId}
+          map={activeMap}
+          markers={renderedMarkers}
+          onMarkerSelect={navigateToMarker}
+          selectedMarker={selectedMarker}
+          navigationRequestId={requestId}
         />
       </section>
     </main>

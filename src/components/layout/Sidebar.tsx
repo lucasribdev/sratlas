@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
 import type { SearchEntry } from "@/lib/search-index";
 import { ThemeSelector } from "@/components/layout/ThemeSelector";
@@ -10,6 +12,8 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
 type SidebarProps = {
+  mapsById: ReadonlyMap<string, GameMap>;
+  mapSelector?: ReactNode;
   areaOptions: string[];
   markers: MapMarker[];
   onClearAreas: () => void;
@@ -20,10 +24,12 @@ type SidebarProps = {
   onToggleArea: (area: string) => void;
   searchQuery: string;
   searchSuggestions: SearchEntry[];
-  selectedAreas: ReadonlySet<string>;
+  selectedAreas: ReadonlySet<string> | null;
 };
 
 export function Sidebar({
+  mapsById,
+  mapSelector,
   areaOptions,
   markers,
   onClearAreas,
@@ -36,10 +42,8 @@ export function Sidebar({
   searchSuggestions,
   selectedAreas,
 }: SidebarProps) {
-  const allAreasSelected =
-    areaOptions.length > 0 &&
-    areaOptions.every((area) => selectedAreas.has(area));
-  const noAreasSelected = selectedAreas.size === 0;
+  const allAreasSelected = selectedAreas === null;
+  const noAreasSelected = selectedAreas?.size === 0;
 
   return (
     <aside
@@ -62,6 +66,8 @@ export function Sidebar({
           <ThemeSelector />
         </div>
       </header>
+
+      {mapSelector}
 
       <SearchAutocomplete
         inputClassName="h-10 bg-card"
@@ -125,7 +131,7 @@ export function Sidebar({
                     key={area}
                   >
                     <Checkbox
-                      checked={selectedAreas.has(area)}
+                      checked={selectedAreas === null || selectedAreas.has(area)}
                       onCheckedChange={() => onToggleArea(area)}
                     />
                     <span>{area}</span>
@@ -164,6 +170,7 @@ export function Sidebar({
             <ol className="grid gap-2 pr-2">
               {markers.map((marker) => {
                 const details = [
+                  mapsById.get(marker.mapId)?.name ?? marker.mapId,
                   marker.area,
                   marker.zoneType,
                   marker.level ? `Level ${marker.level}` : undefined,

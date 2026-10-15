@@ -4,12 +4,13 @@ import {
   type Marker as LeafletMarker,
   type Popup as LeafletPopup,
 } from "leaflet";
-import { Marker, Popup, Tooltip } from "react-leaflet";
+import { Marker, Popup, Tooltip, useMap } from "react-leaflet";
 import type { GameMap } from "@/domain/map";
 import type { MapMarker } from "@/domain/marker";
 import { percentageToLeafletLatLng } from "@/lib/coordinates";
 import { markerVisualStyle } from "@/lib/marker-style";
 import { cn } from "@/lib/utils";
+import { focusMarker } from "./focus-marker";
 import { MarkerPopup } from "./MarkerPopup";
 
 type MapMarkersProps = {
@@ -17,6 +18,7 @@ type MapMarkersProps = {
   markers: MapMarker[];
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
   selectedMarkerId?: MapMarker["id"];
+  navigationRequestId: number;
 };
 
 type MapMarkerItemProps = {
@@ -24,6 +26,7 @@ type MapMarkerItemProps = {
   marker: MapMarker;
   onMarkerSelect: (markerId: MapMarker["id"]) => void;
   selectedMarkerId?: MapMarker["id"];
+  navigationRequestId: number;
 };
 
 const markerIconsByKey = new Map<string, ReturnType<typeof divIcon>>();
@@ -54,7 +57,9 @@ function MapMarkerItem({
   marker,
   onMarkerSelect,
   selectedMarkerId,
+  navigationRequestId,
 }: MapMarkerItemProps) {
+  const leafletMap = useMap();
   const markerRef = useRef<LeafletMarker | null>(null);
   const popupRef = useRef<LeafletPopup | null>(null);
   const position = percentageToLeafletLatLng(marker, map);
@@ -69,12 +74,11 @@ function MapMarkerItem({
       return;
     }
 
-    const timeoutId = window.setTimeout(() => {
-      markerRef.current?.openPopup();
-    }, 550);
+    const leafletMarker = markerRef.current;
+    if (!leafletMarker) return;
 
-    return () => window.clearTimeout(timeoutId);
-  }, [isSelected]);
+    return focusMarker(leafletMap, leafletMarker, marker, map);
+  }, [isSelected, navigationRequestId, leafletMap, marker, map]);
 
   return (
     <Marker
@@ -113,16 +117,16 @@ export function MapMarkers({
   markers,
   onMarkerSelect,
   selectedMarkerId,
+  navigationRequestId,
 }: MapMarkersProps) {
-  const mapMarkers = markers.filter((marker) => marker.mapId === map.id);
-
-  return mapMarkers.map((marker) => (
+  return markers.map((marker) => (
     <MapMarkerItem
       key={marker.id}
       map={map}
       marker={marker}
       onMarkerSelect={onMarkerSelect}
       selectedMarkerId={selectedMarkerId}
+      navigationRequestId={navigationRequestId}
     />
   ));
 }

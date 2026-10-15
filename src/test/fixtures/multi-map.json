@@ -1,0 +1,90 @@
+{
+  "maps": [
+    {
+      "id": "surface",
+      "name": "Surface",
+      "imageUrl": "/maps/surface.webp",
+      "width": 1076,
+      "height": 1056
+    },
+    {
+      "id": "caves",
+      "name": "Caves",
+      "imageUrl": "/maps/caves.webp",
+      "width": 1200,
+      "height": 400
+    },
+    {
+      "id": "fixture-empty",
+      "name": "Fixture Empty",
+      "imageUrl": "/maps/surface.webp",
+      "width": 320,
+      "height": 800
+    }
+  ],
+  "markers": [
+    {
+      "id": "fixture-surface-camp",
+      "name": "Fixture Camp",
+      "mapId": "surface",
+      "x": 20,
+      "y": 30,
+      "area": "Outskirts"
+    },
+    {
+      "id": "fixture-caves-camp",
+      "name": "Fixture Camp",
+      "mapId": "caves",
+      "x": 25,
+      "y": 75,
+      "area": "Outskirts"
+    },
+    {
+      "id": "fixture-caves-target",
+      "name": "Fixture Target",
+      "mapId": "caves",
+      "x": 50,
+      "y": 50,
+      "area": "Outskirts",
+      "monsters": [
+        {
+          "name": "Fixture Monster",
+          "drops": [
+            {
+              "name": "Fixture Drop",
+              "dropRate": null
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "type": "Mining",
+          "items": [
+            {
+              "name": "Fixture Ore"
+            }
+          ]
+        }
+      ],
+      "interactables": [
+        {
+          "name": "Fixture NPC"
+        }
+      ]
+    },
+    {
+      "id": "fixture-unassigned",
+      "name": "Fixture Unassigned",
+      "mapId": "caves",
+      "x": 70,
+      "y": 20
+    }
+  ],
+  "areas": [
+    {
+      "name": "Outskirts",
+      "color": "#a7ff9f"
+    }
+  ]
+}
